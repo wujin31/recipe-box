@@ -101,6 +101,8 @@ export function guessCuisine(r) {
   if (r.cuisine) return r.cuisine;
   const native = r.nativeName ?? "";
   for (const [re, name] of SCRIPTS) if (re.test(native)) return name;
+  // Pinyin tone marks (ǔ, ī, à…) mean a Chinese-language name: Taiwanese if it says so, else Chinese.
+  const pinyin = /[āáǎàēéěèīíǐìōóǒòūúǔùǖǘǚǜ]/i.test(`${r.romanized ?? ""} ${r.name ?? ""}`) && /\p{Script=Han}/u.test(`${native} ${r.name ?? ""}`);
   const title = words([r.name, r.englishName, r.romanized].join(" "));
   const body = words([r.description, ...(r.ingredients ?? []).map((i) => i.item ?? i.text)].join(" "));
   let best = null, bestScore = 0;
@@ -109,6 +111,7 @@ export function guessCuisine(r) {
     for (const w of list) score += count(title, w) * 3 + Math.min(count(body, w), 2);
     if (score > bestScore) { best = name; bestScore = score; }
   }
+  if (pinyin) return best === "Taiwanese" ? "Taiwanese" : "Chinese";
   // Han characters alone (no kana) are most likely Chinese.
   if (!best && /\p{Script=Han}/u.test(native)) return "Chinese";
   return best;

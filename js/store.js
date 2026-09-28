@@ -7,7 +7,7 @@
 // GitHub Pages copy of the files. Writes commit straight to the repo with the token.
 // Everything read is also kept in the Cache API so the app works offline.
 
-import { slugify } from "./parser.js";
+import { slugify, parseTitle } from "./parser.js";
 import { guessCuisine, guessEquipment, recipeTime, timerCount, chaptersFrom } from "./cookbook.js";
 
 // ---------- device-local settings ----------
@@ -185,22 +185,24 @@ const json = (v) => JSON.stringify(v, null, 2) + "\n";
 
 export function summarize(r) {
   const time = recipeTime(r);
+  const names = parseTitle(r.name ?? ""); // current title rules, even for recipes saved earlier
   return {
     id: r.id,
     name: r.name,
-    englishName: r.englishName,
-    nativeName: r.nativeName,
-    romanized: r.romanized,
+    englishName: names.englishName,
+    nativeName: names.nativeName,
+    romanized: names.romanized,
     tags: r.tags ?? [],
     favorite: Boolean(r.favorite),
     servings: r.servings ?? null,
     items: r.ingredients.map((i) => i.item).join(" · "),
     chapter: r.chapter ?? null,
-    cuisine: guessCuisine(r),
+    cuisine: guessCuisine({ ...r, ...names }),
     equipment: guessEquipment(r),
     cookSeconds: time.cook,
     waitSeconds: time.wait,
     timerCount: timerCount(r),
+    stepCount: r.steps.length,
     createdAt: r.createdAt,
     updatedAt: r.updatedAt,
     lastCooked: r.log?.length ? r.log[r.log.length - 1].date : null,

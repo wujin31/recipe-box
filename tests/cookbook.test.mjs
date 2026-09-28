@@ -2,7 +2,7 @@ import { test } from "node:test";
 import assert from "node:assert/strict";
 import { readFileSync, readdirSync } from "node:fs";
 import { guessChapter, guessCuisine, guessEquipment, recipeTime, formatTime, chaptersFrom, chapterOf, DEFAULT_CHAPTERS } from "../js/cookbook.js";
-import { parseRecipeInput } from "../js/parser.js";
+import { parseRecipeInput, parseTitle } from "../js/parser.js";
 
 const r = (name, extra = {}) => ({ name, ...parseTitleLike(name), ingredients: [], steps: [], description: "", ...extra });
 function parseTitleLike(name) { return { englishName: name, nativeName: "", romanized: "" }; }
@@ -67,4 +67,26 @@ test("every fixture card gets some chapter guess", () => {
   const dir = new URL("./fixtures/synthetic/", import.meta.url);
   const misses = readdirSync(dir).filter((f) => !guessChapter(parseRecipeInput(readFileSync(new URL(f, dir), "utf8"))));
   assert.ok(misses.length <= 3, `no guess for: ${misses.join(", ")}`);
+});
+
+test("real title shapes split into English, native, romanized, subtitle", () => {
+  const cases = [
+    ["Beef Pepper Rice (ビーフペッパーライス / Bīfu Peppā Raisu) — Pepper Lunch Dupe", "Beef Pepper Rice", "ビーフペッパーライス", "Bīfu Peppā Raisu", "Pepper Lunch Dupe"],
+    ["Black Vinegar Lacquered Spam Donburi (黒酢スパム丼 / kurozu supamu-don)", "Black Vinegar Lacquered Spam Donburi", "黒酢スパム丼", "kurozu supamu-don"],
+    ["Carne Asada Norteña — Citrus Marinade, Stainless Stovetop (v2)", "Carne Asada Norteña", "", "", "Citrus Marinade, Stainless Stovetop (v2)"],
+    ["Gyū Suki-don 牛すき丼 — Beef Sukiyaki Bowl", "Beef Sukiyaki Bowl", "牛すき丼", "Gyū Suki-don"],
+    ["Sumeshi 酢飯 (Sushi Rice)", "Sushi Rice", "酢飯", "Sumeshi"],
+    ["滷肉飯 (lǔròufàn) Oven Braise, 1.25 lb", "Lǔròufàn Oven Braise, 1.25 lb", "滷肉飯", "lǔròufàn"],
+    ["牛肉燥飯 (niúròu zào fàn) — Taiwanese Beef Rice, v2", "Taiwanese Beef Rice, v2", "牛肉燥飯", "niúròu zào fàn"],
+    ["蒜蓉辣椒 Spam 炒飯 (Suànróng Làjiāo Spam Chǎofàn) — Chili Garlic Spam Fried Rice", "Chili Garlic Spam Fried Rice", "蒜蓉辣椒 Spam 炒飯", "Suànróng Làjiāo Spam Chǎofàn"],
+    ["西門町 Spam 起司蛋餅 (Xīméndīng Spam Qǐsī Dàn Bǐng)", "Xīméndīng Spam Qǐsī Dàn Bǐng", "西門町 Spam 起司蛋餅", "Xīméndīng Spam Qǐsī Dàn Bǐng"],
+    ["Bibimbap (비빔밥) · Mixed Rice", "Mixed Rice", "비빔밥", "Bibimbap"],
+    ["Mapo Tofu · 麻婆豆腐", "Mapo Tofu", "麻婆豆腐", ""],
+    ["Cinnamon Rolls · With Cream Cheese Glaze", "Cinnamon Rolls", "", "", "With Cream Cheese Glaze"],
+    ["Chicken (Thai style)", "Chicken (Thai style)", "", ""],
+  ];
+  for (const [title, englishName, nativeName, romanized, subtitle] of cases) {
+    const t = parseTitle(title);
+    assert.deepEqual([t.englishName, t.nativeName, t.romanized, t.subtitle], [englishName, nativeName, romanized, subtitle], title);
+  }
 });
