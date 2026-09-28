@@ -27,7 +27,7 @@ tab bar Cookbook · Search · + · Timers · Tools.
 - [x] Sort screen for unsorted recipes
 - [x] Undo delete
 - [x] "My tweaks" per recipe, separate from Claude's notes
-- [ ] Preview link + QA pass
+- [x] Preview link + QA pass
 
 ## Phase 2: Cooking
 - [ ] Gather step: all ingredients as a checklist before step 1
