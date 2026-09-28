@@ -26,23 +26,27 @@ export function shortDuration(seconds) {
   if (seconds % 3600 === 0) return `${seconds / 3600} hr`;
   if (seconds >= 3600) return `${Math.floor(seconds / 3600)} hr ${Math.round((seconds % 3600) / 60)} min`;
   if (seconds % 60 === 0) return `${seconds / 60} min`;
+  if (seconds > 60) return `${Math.floor(seconds / 60)} min ${seconds % 60} sec`;
   return `${seconds} sec`;
 }
 
-// Start a timer. With the "clock" setting, hand off to the iOS Clock through a Shortcut so it
-// rings even when the app is closed.
-export function startTimer(label, seconds) {
+// Start a timer. `what` is a label, or { label, sub, href } for a recipe step's timer: what it's
+// for ("Braise undisturbed"), where it's from ("Lǔròufàn · step 6") and a link back to that step.
+// With the "clock" setting, hand off to the iOS Clock through a Shortcut so it rings even when
+// the app is closed.
+export function startTimer(what, seconds) {
+  const { label, sub = "", href = "" } = typeof what === "string" ? { label: what } : what;
   const s = getSettings();
   // A double tap (or the chip and the big button) shouldn't start the same timer twice.
   const now = Date.now();
-  if (timers.some((t) => !t.done && t.label === label && t.seconds === seconds && now - (t.endsAt - t.seconds * 1000) < 3000)) return;
+  if (timers.some((t) => !t.done && t.label === label && (t.sub ?? "") === sub && t.seconds === seconds && now - (t.endsAt - t.seconds * 1000) < 3000)) return;
   if (s.timerMode === "clock") {
     const url = `shortcuts://run-shortcut?name=${encodeURIComponent(s.clockShortcut)}&input=text&text=${seconds}`;
     location.href = url;
     return;
   }
   unlockAudio();
-  timers = [...timers, { id: crypto.randomUUID?.() ?? String(Date.now()), label, seconds, endsAt: Date.now() + seconds * 1000, done: false }];
+  timers = [...timers, { id: crypto.randomUUID?.() ?? String(Date.now()), label, sub, href, seconds, endsAt: Date.now() + seconds * 1000, done: false }];
   emit();
 }
 

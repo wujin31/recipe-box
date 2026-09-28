@@ -3,6 +3,14 @@
 import { addTime, cancelTimer, formatDuration, getTimers, onTimersChange } from "../timers.js";
 import { h, iconButton } from "../ui.js";
 
+// A timer's time and what it's for; a recipe step's timer links back to its step.
+export function timerInfo(t, time) {
+  const text = [h("strong", {}, time), h("span", {}, [t.label, t.sub].filter(Boolean).join(" · "))];
+  return t.href
+    ? h("a", { class: "timer-info", href: t.href }, text)
+    : h("div", { class: "timer-info" }, text);
+}
+
 // ---------- timer tray ----------
 
 export function mountTimerTray() {
@@ -21,9 +29,7 @@ export function mountTimerTray() {
     shape = next;
     tray.hidden = !timers.length;
     tray.replaceChildren(...timers.map((t) => h("div", { class: `timer ${t.done ? "done" : ""}` },
-      h("div", { class: "timer-info" },
-        h("strong", {}, remaining(t)),
-        h("span", {}, t.label)),
+      timerInfo(t, remaining(t)),
       t.done ? null : h("button", { class: "link small", onClick: () => addTime(t.id, 60) }, "+1 min"),
       iconButton("close", t.done ? "Dismiss" : "Cancel timer", () => cancelTimer(t.id)))));
   };

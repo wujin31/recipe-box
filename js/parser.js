@@ -176,6 +176,65 @@ export function findTimers(text) {
   return timers;
 }
 
+// What a timer is for, in a few words from its step: "Braise 1 hr 15 min covered" -> "Braise covered",
+// "…, select White/Sushi and start (about 55 minutes)." -> "Select White/Sushi and start".
+const TIMER_SLOT = "\u0000"; // stands in for the timer's own words while the step is trimmed
+const LEAD = /^(?:and|then|or|but|so|now|also)\s+/i;
+const BEFORE = /\s*\b(?:for|about|around|roughly|approximately|approx\.?|at least|another|a further|over|in|within|~)\s*$/i;
+const AFTER = /^\s*(?:more|longer|total|or so|or until\b.*)\b/i;
+// A clause that only talks about the time ("that's 3 minutes total", "or up to 24 hours").
+const REMARK = /^(?:that's|that is|is|it|it's|this|or|up to|total|about|which|takes|preheating)\b/i;
+const RANGE_BEFORE = new RegExp(String.raw`(?:${DURATION})\s*(?:to|or|-|–)\s*$`, "i");
+const RANGE_AFTER = new RegExp(String.raw`^\s*(?:to|or|-|–)\s*(?:${DURATION})`, "i");
+
+export function timerAction(text, t, ingredients = []) {
+  // Ingredients by name only: "15 ml light soy sauce, divided" -> "light soy sauce".
+  let s = text;
+  for (const ing of [...ingredients].sort((a, b) => (b.text?.length ?? 0) - (a.text?.length ?? 0))) {
+    if (!ing.text || !s.includes(ing.text)) continue;
+    const name = (ing.item || ing.text).split(/,|\s\(/)[0].trim();
+    s = s.split(ing.text).join(name);
+  }
+  // The timer's words become one marker; a bracketed aside holding it becomes the marker, other asides go.
+  const at = t.text ? s.indexOf(t.text) : -1;
+  if (at >= 0) s = s.slice(0, at) + TIMER_SLOT + s.slice(at + t.text.length);
+  s = s.replace(/\s*[(\[][^)\]]*[)\]]/g, (m) => (m.includes(TIMER_SLOT) ? ` ${TIMER_SLOT}` : ""));
+  // The sentence with the timer (a ⏱ marker's timer belongs to the step's last sentence), cut into clauses.
+  const sentences = s.match(/[^.!?]+(?:[.!?]+|$)/g) ?? [s];
+  const sentence = sentences.find((x) => x.includes(TIMER_SLOT)) ?? sentences[sentences.length - 1];
+  const clauses = sentence.split(/[,;:]\s+|\s+(?:and\s+)?then\s+|\s+[—–]\s+/i);
+  let k = Math.max(0, clauses.findIndex((c) => c.includes(TIMER_SLOT)));
+  if (!sentence.includes(TIMER_SLOT)) k = clauses.length - 1;
+
+  const clean = (c) => {
+    let [before, after = ""] = c.split(TIMER_SLOT);
+    // "Simmer 1 hr 30 min to 2 hr": each end is its own timer; neither label keeps the other end.
+    before = before.replace(RANGE_BEFORE, "");
+    after = after.replace(RANGE_AFTER, "");
+    for (let prev; prev !== before;) { prev = before; before = before.replace(BEFORE, ""); }
+    after = after.replace(AFTER, "");
+    // "Melt the butter in a pan over medium heat and brown the thighs": the time is for the last action.
+    const and = before.lastIndexOf(" and ");
+    if (`${before} ${after}`.trim().split(/\s+/).length > 6 && and > 0 && before.slice(and + 5).trim().includes(" ")) before = before.slice(and + 5);
+    return `${before} ${after}`.replace(/\s+/g, " ").replace(LEAD, "").trim().replace(/[.,;:!?…]+$/, "").trim();
+  };
+  let action = clean(clauses[k]);
+  while (k > 0 && (!/\p{L}{2}/u.test(action) || REMARK.test(action))) action = clean(clauses[--k]);
+  if (REMARK.test(action) || !/\p{L}{2}/u.test(action)) return "";
+  const words = action.split(" ");
+  action = words.length > 6 ? `${words.slice(0, 5).join(" ")}…` : action;
+  return action.charAt(0).toUpperCase() + action.slice(1);
+}
+
+// A timer you type: "12" is minutes, "1:30" minutes and seconds, "1:05:00" adds hours. Up to 48 hours.
+export function parseDuration(s) {
+  const parts = String(s).trim().split(":").map((p) => p.trim());
+  if (!parts[0] || parts.length > 3 || parts.some((p) => !/^\d+(?:\.\d+)?$/.test(p))) return null;
+  const n = parts.map(Number);
+  const seconds = n.length === 1 ? n[0] * 60 : n.length === 2 ? n[0] * 60 + n[1] : n[0] * 3600 + n[1] * 60 + n[2];
+  return seconds > 0 && seconds <= 48 * 3600 ? Math.round(seconds) : null;
+}
+
 export function formatDurationText(seconds) {
   const h = Math.floor(seconds / 3600);
   const m = Math.floor((seconds % 3600) / 60);

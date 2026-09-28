@@ -89,7 +89,7 @@ test("tab bar navigates and hides in cooking mode", async () => {
   await page.click('.tabbar a[aria-label="Search"]');
   await page.waitForSelector('.tabbar a[aria-label="Search"][aria-current="page"]');
   await app.goto("#/r/dak-juk/cook");
-  await page.waitForSelector(".cook-step");
+  await page.waitForSelector(".cook-foot");
   assert.equal(await page.isVisible(".tabbar"), false);
 });
 

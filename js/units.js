@@ -205,6 +205,26 @@ export function convert(qty, unit, system) {
   return { qty: convertTo(qty, unit, to), unit: to };
 }
 
+// ---------- scaling to what you have ----------
+
+// Units you could measure what you have of an ingredient in: any of the same kind (grams, pounds…
+// for a weight), or just its own unit ("cloves", or none for "3 eggs").
+export function unitsFor(ing) {
+  const kind = UNITS[ing.unit]?.kind;
+  if (!kind) return [ing.unit ?? ""];
+  const same = Object.keys(UNITS).filter((u) => UNITS[u].kind === kind);
+  return [ing.unit, ...same.filter((u) => u !== ing.unit)];
+}
+
+// The scale that turns the recipe's amount into what you have: 600 g against "450 g" is 1.33.
+// A range ("800–1200 g") scales from its low end. Null when it can't be worked out.
+export function factorFor(ing, have, unit = ing.unit) {
+  if (ing.qty == null || !(ing.qty > 0) || !(have > 0)) return null;
+  if ((unit ?? "") === (ing.unit ?? "")) return have / ing.qty;
+  if (!UNITS[unit] || !UNITS[ing.unit] || UNITS[unit].kind !== UNITS[ing.unit].kind) return null;
+  return (have * UNITS[unit].toBase) / (ing.qty * UNITS[ing.unit].toBase);
+}
+
 // Render an ingredient at a scale factor and unit system.
 // Returns a display string, e.g. "1 1/2 cups jasmine rice".
 export function formatIngredient(ing, factor = 1, system = "original") {

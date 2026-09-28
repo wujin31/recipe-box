@@ -59,17 +59,77 @@ test("timer chips start timers; the tray doesn't rebuild every tick", async () =
   assert.ok(await btn.evaluate((b) => b.isConnected));
 });
 
-test("cooking mode steps through and lists each step's ingredients", async () => {
+test("a timer says what it's for and where it's from", async () => {
+  assert.match(await text(".timer .timer-info"), /Drain.*Thai Chicken Biryani · step 2/);
+});
+
+test("cooking mode gathers first, then steps through and lists each step's ingredients", async () => {
   await page.click('a:has-text("Get cooking")');
+  await page.waitForSelector(".gather");
+  assert.equal(await text(".nav-title"), "Gather");
+  assert.equal(await page.locator(".gather .check.done").count(), 1, "the recipe page's check carries over");
+  assert.match(await text(".gather .section-head"), /1 of \d+ out/);
+  await page.click(".gather .ingredients li >> nth=0 >> button");
+  assert.match(await text(".gather .section-head"), /2 of \d+ out/);
+  await page.click('.cook-foot button:has-text("Start cooking")');
   await page.waitForSelector(".cook-step");
   assert.match(await text(".nav-title"), /Step 1 of 7/);
   for (let i = 0; i < 3; i++) await page.click('.cook-foot button:has-text("Next")');
   assert.match(await text(".nav-title"), /Step 4 of 7/);
   assert.equal(await page.locator(".cook-ings li").count(), 1);
+  assert.match(await text(".cook-timers"), /5 min · Brown the thighs skin-side down/);
   await app.shot("cook");
+});
+
+test("tapping a running timer opens its step", async () => {
+  await page.click('button[aria-label="Close cooking mode"]');
+  await page.waitForSelector(".recipe-title");
+  await page.click(".timer a.timer-info");
+  await page.waitForSelector(".cook-step");
+  assert.match(await text(".nav-title"), /Step 2 of 7/);
+  assert.equal(await page.evaluate(() => location.hash), "#/r/khao-mok-kai/cook");
   await page.click('button[aria-label="Close cooking mode"]');
   await page.waitForSelector(".recipe-title");
   await page.click('.timer button[aria-label="Cancel timer"]');
+  // Uncheck both, for the tests that follow.
+  for (const b of await page.$$(".check.done")) await b.click();
+});
+
+test("scale to what you have", async () => {
+  await page.click('button:has-text("Reset amounts")');
+  await page.click('button:has-text("Scale to what I have")');
+  await page.waitForSelector("dialog.sheet select");
+  assert.match(await page.inputValue("dialog.sheet select >> nth=0"), /^\d+$/);
+  assert.match(await text("dialog .scale-result"), /The recipe uses 25 oz bone-in, skin-on chicken thighs/);
+  await page.fill("dialog.sheet input", "1");
+  await page.selectOption("dialog.sheet select >> nth=1", "kg");
+  assert.match(await text("dialog .scale-result"), /×1\.41 · 5\.6 servings/);
+  await page.click('dialog button[type="submit"]');
+  await page.waitForSelector("dialog.sheet", { state: "detached" });
+  assert.equal(await text(".stepper-value strong"), "5.6");
+  await page.click('button:has-text("Reset amounts")');
+});
+
+test("Timers tab: presets, your own timer, recents, and a count on the tab", async () => {
+  await app.goto("#/timers");
+  await page.waitForSelector(".presets");
+  assert.match(await text(".timer-list"), /No timers running/);
+  await page.click('.preset[aria-label="Start a 5 min timer"]');
+  await page.waitForSelector(".timer-list .timer");
+  assert.match(await text(".timer-list"), /5 min timer/);
+  assert.equal(await text(".tabbar .badge"), "1");
+  assert.equal(await page.isVisible(".timer-tray"), false, "the tray doesn't repeat this page's list");
+  await page.fill('input[aria-label="How long"]', "1:30");
+  await page.fill(`input[aria-label="What it's for"]`, "Tea");
+  await page.click('.own-timer button[type="submit"]');
+  await page.waitForFunction(() => document.querySelectorAll(".timer-list .timer").length === 2);
+  assert.match(await text(".timer-list .timer >> nth=1"), /1:(30|29).*Tea/);
+  assert.equal(await text(".chips.wrap .chip"), "Tea · 1 min 30 sec");
+  await page.fill('input[aria-label="How long"]', "soon");
+  await page.click('.own-timer button[type="submit"]');
+  assert.equal(await page.isVisible(".own-timer .warn-text"), true);
+  for (let k = 0; k < 2; k++) await page.click('.timer-list button[aria-label="Cancel timer"]');
+  await page.waitForSelector(".tabbar .badge", { state: "detached" });
 });
 
 test("metric view: spoons back from ml, real ml kept, °F converted, word timers found", async () => {

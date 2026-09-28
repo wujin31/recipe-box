@@ -1,15 +1,15 @@
-// Cooking mode.
+// Cooking mode: a gather step (everything you need, as a checklist), then one step at a time.
 
 import { onLeave, pageSignal } from "../lifecycle.js";
 import { loadLocal, saveLocal } from "../store.js";
 import { keepAwake, shortDuration, startTimer } from "../timers.js";
-import { backButton, displayName, fill, h, icon, iconButton, navbar } from "../ui.js";
+import { backButton, fill, h, icon, iconButton, navbar } from "../ui.js";
 import { formatIngredient } from "../units.js";
-import { getView, loadRecipeOr404, renderStep } from "./shared.js";
+import { getView, ingredientChecklist, loadRecipeOr404, renderStep, timerInfo } from "./shared.js";
 
 // ---------- cooking mode ----------
 
-export async function viewCook(root, id) {
+export async function viewCook(root, id, query = new URLSearchParams()) {
   const r = await loadRecipeOr404(root, id);
   if (!r || !root.isConnected) return; // navigated away while loading
   if (!r.steps.length) {
@@ -17,9 +17,18 @@ export async function viewCook(root, id) {
     return;
   }
   const { factor, units } = getView(id);
-  // Pick up where you left off, unless that was more than 12 hours ago.
+  // Step -1 is gathering the ingredients (when there are any).
+  const first = r.ingredients.length ? -1 : 0;
+  const last = r.steps.length - 1;
+  const clamp = (n) => Math.max(first, Math.min(last, n));
+  // A timer's link opens its step; otherwise pick up where you left off, unless that was more
+  // than 12 hours ago.
   const resume = loadLocal(`step:${id}`, null);
-  let i = resume && Date.now() - resume.at < 12 * 3600e3 ? Math.min(resume.i, r.steps.length - 1) : 0;
+  let i = first;
+  if (query.get("step") != null && Number.isInteger(Number(query.get("step")))) {
+    i = clamp(Number(query.get("step")));
+    history.replaceState(history.state, "", `#/r/${encodeURIComponent(id)}/cook`);
+  } else if (resume && Date.now() - resume.at < 12 * 3600e3) i = clamp(resume.i);
   keepAwake(true);
   onLeave(() => keepAwake(false));
   document.body.classList.add("cooking");
@@ -29,7 +38,7 @@ export async function viewCook(root, id) {
   const progress = h("div", { class: "progress" }, h("div"));
   const counter = h("div", { class: "nav-title" });
   const prev = h("button", { class: "button big", onClick: () => go(i - 1) }, "Back");
-  const next = h("button", { class: "button primary big", onClick: () => (i < r.steps.length - 1 ? go(i + 1) : finish()) });
+  const next = h("button", { class: "button primary big", onClick: () => (i < last ? go(i + 1) : finish()) });
 
   root.append(
     h("header", { class: "nav cook-nav" },
@@ -40,7 +49,7 @@ export async function viewCook(root, id) {
     h("footer", { class: "cook-foot" }, prev, next));
 
   function go(n) {
-    i = Math.max(0, Math.min(r.steps.length - 1, n));
+    i = clamp(n);
     saveLocal(`step:${id}`, { i, at: Date.now() });
     draw();
     window.scrollTo(0, 0);
@@ -51,21 +60,39 @@ export async function viewCook(root, id) {
     location.replace(`#/r/${id}?log=1`); // Back from the recipe shouldn't land in cooking mode again
   }
 
+  function drawGather() {
+    const total = r.ingredients.length;
+    const count = h("span", { class: "muted small" });
+    const showCount = (checked) => {
+      const got = r.ingredients.filter((ing) => checked.has(ing.text)).length;
+      count.textContent = got === total ? "Everything's out ✓" : `${got} of ${total} out`;
+    };
+    showCount(new Set(getView(id).checked));
+    fill(stage,
+      h("div", { class: "gather" },
+        h("div", { class: "section-head" }, h("h2", { class: "flush" }, "Get everything out"), count),
+        ingredientChecklist(r, factor, units, showCount)));
+  }
+
   function draw() {
+    const steps = r.steps.length - first;
+    counter.textContent = i < 0 ? "Gather" : `Step ${i + 1} of ${r.steps.length}`;
+    progress.firstChild.style.width = `${((i - first + 1) / steps) * 100}%`;
+    prev.disabled = i === first;
+    next.textContent = i < 0 ? "Start cooking" : i === last ? "Done" : "Next";
+    if (i < 0) { drawGather(); return; }
     const step = r.steps[i];
-    counter.textContent = `Step ${i + 1} of ${r.steps.length}`;
-    progress.firstChild.style.width = `${((i + 1) / r.steps.length) * 100}%`;
-    prev.disabled = i === 0;
-    next.textContent = i === r.steps.length - 1 ? "Done" : "Next";
     const refs = step.ingredientRefs ?? [];
     fill(stage,
-      h("p", { class: "cook-step" }, renderStep(step, r, factor, units, `${displayName(r)} · step ${i + 1}`)),
+      h("p", { class: "cook-step" }, renderStep(r, i, factor, units)),
       refs.length ? h("div", { class: "cook-ings card" },
         h("h3", {}, "For this step"),
         h("ul", {}, refs.map((k) => h("li", {}, formatIngredient(r.ingredients[k], factor, units))))) : null,
-      step.timers?.length ? h("div", { class: "cook-timers" }, step.timers.map((t) =>
-        h("button", { class: "button big timer-big", onClick: () => startTimer(`${displayName(r)} · step ${i + 1}`, t.seconds) },
-          icon("timer"), `Start ${shortDuration(t.seconds)}`))) : null,
+      step.timers?.length ? h("div", { class: "cook-timers" }, step.timers.map((t) => {
+        const info = timerInfo(r, i, t);
+        return h("button", { class: "button big timer-big", onClick: () => startTimer(info, t.seconds) },
+          icon("timer"), `${shortDuration(t.seconds)} · ${info.label}`);
+      })) : null,
     );
   }
 

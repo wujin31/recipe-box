@@ -72,8 +72,8 @@ test("log a cook", async () => {
 
 test("Done in cooking mode opens the log sheet", async () => {
   await app.goto("#/r/khao-mok-kai/cook");
-  await page.waitForSelector(".cook-step");
-  for (let k = 0; k < 7 && !(await text(".cook-foot button >> nth=1")).includes("Done"); k++) await page.click('.cook-foot button:has-text("Next")');
+  await page.waitForSelector(".cook-foot");
+  for (let k = 0; k < 9 && !(await text(".cook-foot button >> nth=1")).includes("Done"); k++) await page.click(".cook-foot button >> nth=1");
   await page.click('.cook-foot button:has-text("Done")');
   await page.waitForSelector("dialog.sheet[open]");
   assert.ok(page.url().endsWith("#/r/khao-mok-kai"));

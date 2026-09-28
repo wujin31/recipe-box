@@ -1,6 +1,6 @@
 // Pieces shared by the recipe and cooking screens: per-device view state, step rendering, the cook log.
 
-import { recipeToText, refreshRecipe } from "../parser.js";
+import { recipeToText, refreshRecipe, timerAction } from "../parser.js";
 import { getRecipe, getSettings, loadLocal, saveLocal, updateRecipe } from "../store.js";
 import { shortDuration, startTimer } from "../timers.js";
 import { backButton, copyText, displayName, errorMessage, h, icon, navbar, requireWrite, toast } from "../ui.js";
@@ -19,7 +19,8 @@ export function setView(id, patch) {
 
 // Step text with each referenced ingredient replaced by its scaled/converted amount and each
 // time turned into a tap-to-start timer.
-export function renderStep(step, recipe, factor, units, stepLabel) {
+export function renderStep(recipe, stepIndex, factor, units) {
+  const step = recipe.steps[stepIndex];
   const text = step.text;
   const marks = [];
   const refs = [...(step.ingredientRefs ?? [])].sort((a, b) => recipe.ingredients[b].text.length - recipe.ingredients[a].text.length);
@@ -51,22 +52,58 @@ export function renderStep(step, recipe, factor, units, stepLabel) {
     else {
       // Keep "." or "," after a chip on the chip's line.
       const tail = text.slice(m.end).match(/^[.,;:!?)]+/)?.[0] ?? "";
-      out.push(h("span", { class: "nowrap" }, timerChip(m.t, stepLabel, m.t.text), tail));
+      out.push(h("span", { class: "nowrap" }, timerChip(m.t, timerInfo(recipe, stepIndex, m.t), m.t.text), tail));
       m.end += tail.length;
     }
     pos = m.end;
   }
   out.push(convertTemperatures(text.slice(pos), units));
-  for (const t of unplaced) out.push(" ", timerChip(t, stepLabel));
+  for (const t of unplaced) out.push(" ", timerChip(t, timerInfo(recipe, stepIndex, t)));
   return out;
 }
 
-export function timerChip(t, label, text) {
+// What a step's timer shows while it runs: "Braise undisturbed", from "Lǔròufàn · step 6", linking back.
+export function timerInfo(recipe, stepIndex, t) {
+  return {
+    label: timerAction(recipe.steps[stepIndex].text, t, recipe.ingredients) || `Step ${stepIndex + 1}`,
+    sub: `${displayName(recipe)} · step ${stepIndex + 1}`,
+    href: `#/r/${encodeURIComponent(recipe.id)}/cook?step=${stepIndex}`,
+  };
+}
+
+export function timerChip(t, info, text) {
   return h("button", {
     class: "timer-chip",
-    onClick: (e) => { e.stopPropagation(); startTimer(label, t.seconds); },
-    "aria-label": `Start a ${shortDuration(t.seconds)} timer`,
+    onClick: (e) => { e.stopPropagation(); startTimer(info, t.seconds); },
+    "aria-label": `Start a ${shortDuration(t.seconds)} timer: ${info.label}`,
   }, icon("timer"), text ?? shortDuration(t.seconds));
+}
+
+// The ingredients as a checklist (the recipe page and cooking mode's first step share the checks).
+export function ingredientChecklist(r, factor, units, onChange = () => {}) {
+  const checked = new Set(getView(r.id).checked);
+  const groups = [];
+  r.ingredients.forEach((ing) => {
+    const g = ing.group ?? "";
+    if (!groups.length || groups[groups.length - 1].name !== g) groups.push({ name: g, items: [] });
+    groups[groups.length - 1].items.push(ing);
+  });
+  return groups.map((g) => [
+    g.name ? h("h3", {}, g.name) : null,
+    h("ul", { class: "ingredients" }, g.items.map((ing) => {
+      const button = h("button", {
+        class: `check ${checked.has(ing.text) ? "done" : ""}`, role: "checkbox", "aria-checked": String(checked.has(ing.text)),
+        onClick: () => {
+          checked.has(ing.text) ? checked.delete(ing.text) : checked.add(ing.text);
+          button.classList.toggle("done", checked.has(ing.text));
+          button.setAttribute("aria-checked", String(checked.has(ing.text)));
+          setView(r.id, { checked: [...checked] });
+          onChange(checked);
+        },
+      }, h("span", { class: "box" }, icon("check")), h("span", {}, formatIngredient(ing, factor, units)));
+      return h("li", {}, button);
+    })),
+  ]);
 }
 
 export async function loadRecipeOr404(root, id) {

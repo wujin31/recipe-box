@@ -30,10 +30,10 @@ tab bar Cookbook · Search · + · Timers · Tools.
 - [x] Preview link + QA pass
 
 ## Phase 2: Cooking
-- [ ] Gather step: all ingredients as a checklist before step 1
-- [ ] Scale by what you have ("I have 600 g")
-- [ ] Timer labels from the step ("Soak rice · 30 min"); tap a timer to jump to its step
-- [ ] Timers tab: standalone timers, presets, running recipe timers
+- [x] Gather step: all ingredients as a checklist before step 1
+- [x] Scale by what you have ("I have 600 g")
+- [x] Timer labels from the step ("Soak rice · 30 min"); tap a timer to jump to its step
+- [x] Timers tab: standalone timers, presets, running recipe timers
 
 ## Phase 3: Kitchen tools (review point)
 - [ ] Tool framework (`js/tools/`), tools can read the current recipe

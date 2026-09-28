@@ -10,7 +10,8 @@ import { viewHome } from "./views/home.js";
 import { viewChapter } from "./views/chapter.js";
 import { viewSearch } from "./views/search.js";
 import { viewSort } from "./views/sort.js";
-import { viewTimers, viewTools } from "./views/placeholders.js";
+import { viewTools } from "./views/placeholders.js";
+import { viewTimers } from "./views/timers-tab.js";
 import { mountTabBar } from "./views/tabbar.js";
 import { viewRecipe } from "./views/recipe.js";
 import { viewSettings } from "./views/settings.js";
@@ -41,7 +42,7 @@ async function route() {
   if (parts[0] === "r" && parts[1]) {
     let id = "";
     try { id = decodeURIComponent(parts[1]); } catch { /* malformed: shows "not found" */ }
-    if (parts[2] === "cook") await viewCook(root, id);
+    if (parts[2] === "cook") await viewCook(root, id, query);
     else if (parts[2] === "edit") await viewEdit(root, id);
     else await viewRecipe(root, id, query);
   } else if (parts[0] === "c" && parts[1]) await viewChapter(root, parts[1]);

@@ -5,9 +5,10 @@ import { recipeToText } from "../parser.js";
 import { canWrite, deleteRecipe, getChapters, restoreRecipe, safeUrl, updateRecipe } from "../store.js";
 import { chaptersFrom } from "../cookbook.js";
 import { backButton, copyText, displayName, errorMessage, fill, h, icon, iconButton, navbar, requireWrite, segmented, subName, toast } from "../ui.js";
-import { UNITS, formatIngredient } from "../units.js";
+import { UNITS } from "../units.js";
 import { recipeHero } from "./hero.js";
-import { cookLogSection, getView, loadRecipeOr404, openLogSheet, openTweaksSheet, renderStep, setView, shareRecipe } from "./shared.js";
+import { cookLogSection, getView, ingredientChecklist, loadRecipeOr404, openLogSheet, openTweaksSheet, renderStep, setView, shareRecipe } from "./shared.js";
+import { openScaleSheet } from "./scale.js";
 
 export async function viewRecipe(root, id, query) {
   let r = await loadRecipeOr404(root, id);
@@ -59,7 +60,6 @@ export async function viewRecipe(root, id, query) {
   function draw() {
     const { factor, units } = view;
     const checked = new Set(view.checked);
-    const isChecked = (ing) => checked.has(ing.text);
     const servingsNow = r.servings ? Math.round(r.servings * factor * 10) / 10 : null;
     const stepFactor = (dir) => {
       if (r.servings) {
@@ -72,13 +72,7 @@ export async function viewRecipe(root, id, query) {
     };
     const setFactor = (f) => { view = { ...view, factor: f }; setView(id, { factor: f }); draw(); };
     const hasConvertible = r.ingredients.some((i) => i.unit && UNITS[i.unit]);
-
-    const groups = [];
-    r.ingredients.forEach((ing, i) => {
-      const g = ing.group ?? "";
-      if (!groups.length || groups[groups.length - 1].name !== g) groups.push({ name: g, items: [] });
-      groups[groups.length - 1].items.push([ing, i]);
-    });
+    const scalable = r.ingredients.some((i) => i.qty != null);
 
     fill(body,
       recipeHero(r, chapters),
@@ -95,7 +89,9 @@ export async function viewRecipe(root, id, query) {
         hasConvertible ? segmented([["original", "Original"], ["us", "US"], ["metric", "Metric"]], units, (u) => {
           view = { ...view, units: u }; setView(id, { units: u }); draw();
         }) : null,
-        factor !== 1 ? h("button", { class: "link small", onClick: () => setFactor(1) }, "Reset amounts") : null,
+        h("div", { class: "controls-links" },
+          scalable ? h("button", { class: "link small", onClick: () => openScaleSheet(r, setFactor) }, "Scale to what I have") : null,
+          factor !== 1 ? h("button", { class: "link small", onClick: () => setFactor(1) }, "Reset amounts") : null),
       ),
 
       h("a", { class: "button primary big", href: `#/r/${id}/cook` }, "Get cooking"),
@@ -104,23 +100,17 @@ export async function viewRecipe(root, id, query) {
         h("div", { class: "section-head" },
           h("h2", {}, "Ingredients"),
           checked.size ? h("button", { class: "link small", onClick: () => { view.checked = []; setView(id, { checked: [] }); draw(); } }, "Clear checks") : null),
-        groups.map((g) => [
-          g.name ? h("h3", {}, g.name) : null,
-          h("ul", { class: "ingredients" }, g.items.map(([ing, i]) => h("li", {},
-            h("button", {
-              class: `check ${isChecked(ing) ? "done" : ""}`, role: "checkbox", "aria-checked": String(isChecked(ing)),
-              onClick: () => {
-                isChecked(ing) ? checked.delete(ing.text) : checked.add(ing.text);
-                view.checked = [...checked]; setView(id, { checked: view.checked }); draw();
-              },
-            }, h("span", { class: "box" }, icon("check")), h("span", {}, formatIngredient(ing, factor, units)))))),
-        ])),
+        ingredientChecklist(r, factor, units, (now) => {
+          const had = view.checked.length;
+          view.checked = [...now];
+          if (!had !== !now.size) draw(); // show or hide "Clear checks"
+        })),
 
       h("section", {},
         h("h2", {}, "Steps"),
         h("ol", { class: "steps" }, r.steps.map((s, i) => h("li", {},
           h("span", { class: "num" }, i + 1),
-          h("p", {}, renderStep(s, r, factor, units, `${displayName(r)} · step ${i + 1}`)))))),
+          h("p", {}, renderStep(r, i, factor, units)))))),
 
       r.notes ? h("section", {}, h("h2", {}, "Notes"), h("p", { class: "notes" }, r.notes)) : null,
 
