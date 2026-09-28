@@ -1,6 +1,7 @@
 // Recipe Box: router and startup.
 
 import { h } from "./ui.js";
+import { isPreview } from "./store.js";
 import { leavePage, onLeave } from "./lifecycle.js";
 import { mountTimerTray } from "./views/timer-tray.js";
 import { viewCook } from "./views/cook.js";
@@ -53,10 +54,13 @@ async function route() {
 }
 
 // Refuse to run inside another site's frame (clickjacking); the token lives on this origin.
-if (window.top !== window.self) {
+// The read-only preview has no token and is meant to be shown in a frame.
+if (window.top !== window.self && !isPreview()) {
   document.getElementById("app").textContent = "Open Recipe Box directly, not inside another page.";
   throw new Error("framed");
 }
+
+if (isPreview()) document.body.append(h("div", { class: "preview-badge", role: "note" }, "Preview · read-only"));
 
 window.addEventListener("hashchange", route);
 mountTimerTray();

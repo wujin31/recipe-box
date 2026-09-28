@@ -30,8 +30,13 @@ function guessRepo() {
   return m ? { owner: m[1], repo: repo || `${m[1]}.github.io` } : { owner: "", repo: "" };
 }
 
+// A read-only preview build (scripts/preview.mjs marks <html data-preview>): never a token, never saves.
+export const isPreview = () => typeof document !== "undefined" &&
+  (document.documentElement.dataset.preview === "true" || Boolean(document.querySelector('meta[name="recipe-box-preview"]')));
+
 export function getSettings() {
-  return { ...guessRepo(), branch: "main", token: "", units: "original", timerMode: "app", clockShortcut: "Recipe Timer", ...loadLocal("settings", {}) };
+  const s = { ...guessRepo(), branch: "main", token: "", units: "original", timerMode: "app", clockShortcut: "Recipe Timer", ...loadLocal("settings", {}) };
+  return isPreview() ? { ...s, token: "" } : s;
 }
 
 export function setSettings(patch) {

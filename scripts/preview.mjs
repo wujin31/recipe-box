@@ -36,8 +36,24 @@ if (import.meta.url === `file://${process.argv[1]}`) {
   if (!out) throw new Error("usage: preview.mjs <out-dir> [--guess]");
   rmSync(out, { recursive: true, force: true });
   mkdirSync(out, { recursive: true });
-  for (const f of ["index.html", "styles.css", "manifest.webmanifest", "sw.js", ".nojekyll", "js", "icons"]) {
+  // No sw.js: a preview shouldn't install offline caching wherever it's hosted.
+  for (const f of ["styles.css", "manifest.webmanifest", "js", "icons"]) {
     if (existsSync(join(ROOT, f))) cpSync(join(ROOT, f), join(out, f), { recursive: true });
+  }
+  if (process.argv.includes("--artifact")) {
+    // For a host that wraps the page in its own <html>/<head> and sets its own security rules.
+    writeFileSync(join(out, "index.html"), [
+      "<title>Recipe Box Preview</title>",
+      '<meta name="recipe-box-preview" content="true">',
+      '<link rel="stylesheet" href="styles.css">',
+      '<main id="app"></main>',
+      '<script type="module" src="js/app.js"></script>',
+      "",
+    ].join("\n"));
+  } else {
+    const html = readFileSync(join(ROOT, "index.html"), "utf8").replace('<html lang="en">', '<html lang="en" data-preview="true">');
+    if (!html.includes('data-preview="true"')) throw new Error("couldn't mark index.html as a preview");
+    writeFileSync(join(out, "index.html"), html);
   }
   for (const [path, text] of Object.entries(snapshotFiles({ guess: process.argv.includes("--guess") }))) {
     mkdirSync(join(out, path, ".."), { recursive: true });

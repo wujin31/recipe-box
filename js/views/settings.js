@@ -1,6 +1,6 @@
 // Settings.
 
-import { getSettings, setSettings, testConnection } from "../store.js";
+import { getSettings, isPreview, setSettings, testConnection } from "../store.js";
 import { backButton, errorMessage, h, navbar, segmented } from "../ui.js";
 
 // ---------- settings ----------
@@ -18,18 +18,22 @@ export function viewSettings(root) {
       h("h1", { class: "large-title flush" }, "Settings"),
 
       h("h2", {}, "GitHub"),
-      h("p", { class: "muted small" }, "Recipes are saved as files in your GitHub repo. The token stays on this device."),
-      field("Owner", "owner"),
-      field("Repository", "repo"),
-      field("Branch", "branch", {}, "The branch GitHub Pages publishes from."),
-      field("Token", "token", { type: "password", placeholder: "github_pat_…" },
-        "Fine-grained token, only this repository, permission Contents: Read and write."),
-      h("button", { class: "button", onClick: async () => {
-        status.textContent = "Checking…"; status.className = "small";
-        try { status.textContent = `Connected to ${await testConnection()} ✓`; status.className = "small ok-text"; }
-        catch (e) { status.textContent = errorMessage(e); status.className = "small warn-text"; }
-      } }, "Test connection"),
-      status,
+      isPreview()
+        ? h("p", { class: "card warn small" }, "This is a read-only preview with a copy of your recipes. Nothing here saves; don't enter a token.")
+        : [
+          h("p", { class: "muted small" }, "Recipes are saved as files in your GitHub repo. The token stays on this device."),
+          field("Owner", "owner"),
+          field("Repository", "repo"),
+          field("Branch", "branch", {}, "The branch GitHub Pages publishes from."),
+          field("Token", "token", { type: "password", placeholder: "github_pat_…" },
+            "Fine-grained token, only this repository, permission Contents: Read and write."),
+          h("button", { class: "button", onClick: async () => {
+            status.textContent = "Checking…"; status.className = "small";
+            try { status.textContent = `Connected to ${await testConnection()} ✓`; status.className = "small ok-text"; }
+            catch (e) { status.textContent = errorMessage(e); status.className = "small warn-text"; }
+          } }, "Test connection"),
+          status,
+        ],
 
       h("h2", {}, "Units"),
       segmented([["original", "As written"], ["us", "US"], ["metric", "Metric"]], s.units, (u) => { setSettings({ units: u }); root.replaceChildren(); viewSettings(root); }),
