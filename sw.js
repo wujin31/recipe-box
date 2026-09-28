@@ -1,10 +1,12 @@
 // Offline support. The app shell is served from cache and refreshed in the background;
 // recipe data is network-first with the cache as a fallback.
 
-const SHELL = "rb-shell-v3";
+const SHELL = "rb-shell-v4";
 const SHELL_FILES = [
   "./", "index.html", "styles.css", "manifest.webmanifest",
-  "js/app.js", "js/parser.js", "js/units.js", "js/store.js", "js/timers.js",
+  "js/app.js", "js/parser.js", "js/units.js", "js/store.js", "js/timers.js", "js/ui.js", "js/lifecycle.js",
+  "js/views/shared.js", "js/views/library.js", "js/views/recipe.js", "js/views/cook.js",
+  "js/views/form.js", "js/views/settings.js", "js/views/timer-tray.js",
   "icons/apple-touch-icon.png", "icons/icon-192.png",
 ];
 
