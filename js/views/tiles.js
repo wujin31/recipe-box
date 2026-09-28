@@ -30,17 +30,14 @@ export function tile(r, chapters, { chapter = r.chapter } = {}) {
   const native = r.nativeName && !isLatin(r.nativeName) ? r.nativeName : "";
   const big = native || displayName(r);
   const latin = !native;
+  const title = h("span", { class: `tile-big ${latin ? "latin" : "native"}` }, big);
+  title.style.fontSize = `${bigSize(big, latin)}rem`; // CSSOM: inline style attributes are blocked by CSP
   return h("a", { class: `tile ${chapterClass(chapter, chapters)}`, href: `#/r/${r.id}`, "aria-label": displayName(r) },
     r.favorite ? h("span", { class: "tile-fav", "aria-label": "Favorite" }, "★") : null,
-    h("span", { class: `tile-big ${latin ? "latin" : "native"}`, "data-size": bigSize(big, latin) }, big),
+    title,
     h("span", { class: "tile-foot" },
       native ? h("span", { class: "tile-en" }, displayName(r)) : null,
       tileMeta(r) ? h("span", { class: "tile-meta" }, tileMeta(r)) : null));
-}
-
-// CSP forbids inline style attributes, so sizes are applied through the CSSOM.
-export function sizeTiles(root) {
-  root.querySelectorAll(".tile-big[data-size]").forEach((el) => { el.style.fontSize = `${el.dataset.size}rem`; });
 }
 
 // A small square used in lists (search results, continue cooking).

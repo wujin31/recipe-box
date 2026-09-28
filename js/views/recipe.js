@@ -5,7 +5,6 @@ import { recipeToText } from "../parser.js";
 import { canWrite, deleteRecipe, safeUrl, updateRecipe } from "../store.js";
 import { backButton, copyText, displayName, errorMessage, fill, h, icon, iconButton, navbar, requireWrite, segmented, subName, toast } from "../ui.js";
 import { UNITS, formatIngredient } from "../units.js";
-import { libraryState } from "./library.js";
 import { cookLogSection, getView, loadRecipeOr404, openLogSheet, renderStep, setView, shareRecipe } from "./shared.js";
 
 export async function viewRecipe(root, id, query) {
@@ -74,7 +73,7 @@ export async function viewRecipe(root, id, query) {
       h("h1", { class: "recipe-title" }, displayName(r)),
       subName(r) ? h("p", { class: "recipe-sub" }, subName(r)) : null,
       r.description ? h("p", { class: "description" }, r.description) : null,
-      r.tags?.length ? h("div", { class: "row-meta" }, r.tags.map((t) => h("a", { class: "tag", href: "#/", onClick: () => { libraryState.filter = `tag:${t}`; } }, t))) : null,
+      r.tags?.length ? h("div", { class: "row-meta" }, r.tags.map((t) => h("a", { class: "tag", href: `#/search?q=${encodeURIComponent(t)}` }, t))) : null,
 
       h("div", { class: "controls card" },
         h("div", { class: "stepper" },

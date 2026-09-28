@@ -5,7 +5,11 @@ import { leavePage, onLeave } from "./lifecycle.js";
 import { mountTimerTray } from "./views/timer-tray.js";
 import { viewCook } from "./views/cook.js";
 import { viewEdit, viewImport } from "./views/form.js";
-import { viewLibrary } from "./views/library.js";
+import { viewHome } from "./views/home.js";
+import { viewChapter } from "./views/chapter.js";
+import { viewSearch } from "./views/search.js";
+import { viewTimers, viewTools } from "./views/placeholders.js";
+import { mountTabBar } from "./views/tabbar.js";
 import { viewRecipe } from "./views/recipe.js";
 import { viewSettings } from "./views/settings.js";
 
@@ -35,9 +39,13 @@ async function route() {
     if (parts[2] === "cook") await viewCook(root, id);
     else if (parts[2] === "edit") await viewEdit(root, id);
     else await viewRecipe(root, id, query);
-  } else if (parts[0] === "import") viewImport(root, query);
+  } else if (parts[0] === "c" && parts[1]) await viewChapter(root, parts[1]);
+  else if (parts[0] === "search") await viewSearch(root, query);
+  else if (parts[0] === "timers") viewTimers(root);
+  else if (parts[0] === "tools") viewTools(root);
+  else if (parts[0] === "import") viewImport(root, query);
   else if (parts[0] === "settings") viewSettings(root);
-  else await viewLibrary(root);
+  else await viewHome(root);
 
   if (isLibrary && root.isConnected && scrollMemo.has(key)) window.scrollTo(0, scrollMemo.get(key));
 }
@@ -50,6 +58,7 @@ if (window.top !== window.self) {
 
 window.addEventListener("hashchange", route);
 mountTimerTray();
+mountTabBar();
 route();
 
 if ("serviceWorker" in navigator && location.protocol === "https:") {
