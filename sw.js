@@ -1,7 +1,9 @@
 // Offline support. The app shell is served from cache and refreshed in the background;
 // recipe data is network-first with the cache as a fallback.
 
-const SHELL = "rb-shell-v7";
+// Bump this with every change to the app's files: a changed sw.js is how phones learn there's a
+// new version (they then show "Recipe Box was updated · Reload").
+const SHELL = "rb-shell-v8";
 // Every file the app needs. A test checks this list against js/ so a missing file can't break
 // offline installs.
 const SHELL_FILES = [
@@ -16,7 +18,9 @@ const SHELL_FILES = [
 ];
 
 self.addEventListener("install", (e) => {
-  e.waitUntil(caches.open(SHELL).then((c) => c.addAll(SHELL_FILES)).then(() => self.skipWaiting()));
+  // cache: "reload" skips the browser's HTTP cache, so a new version caches new files, not old ones.
+  e.waitUntil(caches.open(SHELL).then((c) => c.addAll(SHELL_FILES.map((f) => new Request(f, { cache: "reload" }))))
+    .then(() => self.skipWaiting()));
 });
 
 self.addEventListener("activate", (e) => {

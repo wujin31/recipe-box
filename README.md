@@ -2,21 +2,29 @@
 
 A home-screen app for keeping the recipe cards Claude makes, and cooking from them.
 
-![Recipe Box on an iPhone: library, recipe card, scaled steps with timers, cooking mode, dark mode](docs/screenshots.png)
+![Recipe Box on an iPhone: the cookbook, a recipe, cooking mode with a timer, the pasta tool, a chapter in dark mode](docs/screenshots.png)
 
 Claude shows recipes as interactive cards, but they live inside a chat. Recipe Box gives them a
 permanent home. Copy a card, paste it in, and it keeps the same interactivity:
 
 - **Servings scaling** that also rescales the amounts written inside the steps
 - **Original / US / Metric** units
-- **Get cooking**: one step at a time, big text, swipe between steps, screen stays on
+- **Get cooking**: gather everything first, then one step at a time, big text, swipe between
+  steps, screen stays on
 - **Tap-to-start timers** on every time mentioned in a step
 
 Plus what a chat can't do:
 
-- a searchable **library** (including non-Latin names like ข้าวหมกไก่ or 닭죽, and ingredients)
-- **tags**, **favorites** and **ingredient check-offs**
+- a **cookbook** in chapters (Breakfast & Brunch, Mains, Soups & Stews, Rice & Noodles, Salads &
+  Sides, Desserts & Baking, Sauces & Basics), each dish shown by its own name: 滷肉飯, 닭죽, ビーフペッパーライス
+- **search** across names in any script, ingredients, cuisines and equipment
+- **scale to what you have**: "I have 700 g of pork belly" scales the whole recipe
+- a **Timers** tab: every running timer says what it's for and opens its step; presets and your own timers
+- **kitchen tools**: pasta water & salt, salt % for brines and ferments, cups ↔ grams, °F/°C and
+  gas marks. Pin them to the 🧰 drawer on every recipe, where they use that recipe's amounts.
+- **favorites**, **tags**, **ingredient check-offs**, and **my tweaks** kept apart from Claude's notes
 - a **cook log** (date, rating, what you changed, how it came out) for tuning a recipe over time
+- the **whole cookbook offline**, not just the recipes you've opened
 
 It's a static site on GitHub Pages with no build step, no dependencies and no server. Your
 recipes are plain JSON files in your own repo, so they're versioned, portable, and never locked
@@ -46,8 +54,12 @@ home-screen app.
 1. In Claude, open the recipe card and **switch it to Metric**. Grams are the card's real
    amounts; its ounce amounts are rounded conversions.
 2. Copy the recipe text.
-3. In Recipe Box tap **+** → **Paste**, set servings (the card text doesn't include them) and
-   tags → **Save recipe**.
+3. In Recipe Box tap **+** → **Paste**, check the chapter (its guess is picked), set servings if
+   the card didn't say, and tags → **Save to &lt;chapter&gt;**.
+
+Pasting a card you've saved before offers to update that recipe, keeping its cook log, favorite,
+tags and tweaks. Recipes saved before chapters existed start in *Unsorted*; the sort screen
+files them one tap each.
 
 A PDF printed from the card also works, since it has the same text, but plain text is cleaner.
 
@@ -73,7 +85,9 @@ When editing a recipe you can add a timer to any step by ending it with `⏱ 10 
 ## Timers
 
 Tap any time in a step (for example **20 minutes**). Timers run in the app and chime while it's
-open, and in cooking mode the screen stays on.
+open, and in cooking mode the screen stays on. Each one is labelled with what it's for ("Braise
+undisturbed · Lǔròufàn, step 9"); tap it to jump back to that step. The **Timers** tab lists them
+all and has presets and timers of your own.
 
 iOS pauses web apps in the background. For timers that ring with the app closed, switch
 Settings → Timers → **iOS Clock** and create a shortcut named `Recipe Timer` in the Shortcuts
@@ -83,16 +97,24 @@ app: *Receive Text input → Get Numbers from Shortcut Input → Start Timer for
 
 ```
 recipes/
-  index.json                 one summary per recipe (what the library loads)
-  <id>/recipe.json           the parsed recipe, tags, servings, favorite, cook log
+  index.json                 one summary per recipe (what the cookbook loads)
+  cookbook.json              optional: your own chapter names and order
+  <id>/recipe.json           the parsed recipe, chapter, tags, servings, favorite, tweaks, cook log
   <id>/source.txt            the card text exactly as pasted, never edited
 ```
 
 Every save is one commit covering all the files it touches. If another device saved in
 between, the app rebuilds on top of that commit instead of overwriting it. Reads use the GitHub
-API when a token is set, and the Pages copy otherwise. Both are cached for offline use.
-Per-device state (checked ingredients, chosen servings and units, running timers) stays on the
-device.
+API when a token is set, and the Pages copy otherwise. Both are cached for offline use, and in
+the background the app keeps a copy of every recipe that changed, so the whole cookbook opens
+offline. Per-device state (checked ingredients, chosen servings and units, running timers,
+pinned tools) stays on the device.
+
+To rename or reorder chapters, add `recipes/cookbook.json`:
+`{ "chapters": [{ "id": "mains", "name": "Dinner" }, …] }`. Chapter ids are what recipes store.
+
+When a new version of the app is published, it downloads in the background and offers
+**Reload**.
 
 ## Security and privacy
 
@@ -122,7 +144,10 @@ device.
 node scripts/recipes.mjs add card.txt --servings 4 --tags thai,dinner   # add a recipe
 node scripts/recipes.mjs reindex                                        # rebuild recipes/index.json
 node scripts/recipes.mjs refresh                                        # re-run the parser over saved recipes
-npm test                                                                 # parser, units, security tests (fixtures in tests/fixtures)
+node scripts/preview.mjs out/ --guess                                    # a read-only copy of the app and recipes, with guessed chapters
+node scripts/screenshots.mjs                                             # rebuild docs/screenshots.png
+npm test                                                                 # parser, units, tools, security tests (fixtures in tests/fixtures)
+npm run test:e2e                                                         # the app in Chromium against a fake GitHub (needs Playwright)
 python3 -m http.server                                                   # run locally on :8000
 ```
 
@@ -132,12 +157,14 @@ python3 -m http.server                                                   # run l
 
 | File | What it does |
 | --- | --- |
-| `parser.js` | Turns Claude recipe card text, or JSON from the export prompt, into a recipe: title parts, ingredients, steps, notes, servings. Links each step to the ingredients it mentions and finds timers. |
-| `units.js` | Quantities, scaling, fractions, US/metric conversion. |
-| `store.js` | Reads and writes recipe files through the GitHub API, plus the offline cache. |
+| `parser.js` | Turns Claude recipe card text, or JSON from the export prompt, into a recipe: title parts, ingredients, steps, notes, servings. Links each step to the ingredients it mentions, finds timers and labels them. |
+| `units.js` | Quantities, scaling (including to what you have), fractions, US/metric conversion. |
+| `cookbook.js` | Chapters, and guessing a recipe's chapter, cuisine, equipment and time. |
+| `store.js` | Reads and writes recipe files through the GitHub API, plus the offline copy. |
 | `timers.js` | Kitchen timers, chime, screen wake lock. |
-| `app.js` | The screens: library, recipe card, cooking mode, import/edit, cook log, settings. |
-| `sw.js` | Service worker for offline use. |
+| `app.js` | The router; screens are in `views/` (cookbook, chapter, search, recipe, cooking, add/edit, sort, timers, tools, settings). |
+| `tools/` | The kitchen tools. Each renders from `{ recipe }`; add one there and in `tools/index.js`. |
+| `sw.js` | Service worker for offline use and updates. Bump `SHELL` with every change to the app's files. |
 
 ## License
 

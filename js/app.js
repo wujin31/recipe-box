@@ -1,6 +1,6 @@
 // Recipe Box: router and startup.
 
-import { h } from "./ui.js";
+import { h, toast } from "./ui.js";
 import { isPreview } from "./store.js";
 import { leavePage, onLeave } from "./lifecycle.js";
 import { mountTimerTray } from "./views/timer-tray.js";
@@ -73,5 +73,18 @@ mountTabBar();
 route();
 
 if ("serviceWorker" in navigator && location.protocol === "https:") {
-  navigator.serviceWorker.register("sw.js").catch(() => {});
+  // A new version installs in the background and takes over at once. This page is still running
+  // the old code, so offer a reload (one, not the two it used to take). Not on the very first
+  // install, when there was no old version.
+  const hadVersion = Boolean(navigator.serviceWorker.controller);
+  navigator.serviceWorker.addEventListener("controllerchange", () => {
+    if (hadVersion) toast("Recipe Box was updated.", "", { label: "Reload", onClick: () => location.reload(), sticky: true });
+  });
+  navigator.serviceWorker.register("sw.js").then((reg) => {
+    // Coming back to the app after a while (it lives for days on a phone) checks for a new version.
+    let checked = Date.now();
+    document.addEventListener("visibilitychange", () => {
+      if (document.visibilityState === "visible" && Date.now() - checked > 30 * 60e3) { checked = Date.now(); reg.update().catch(() => {}); }
+    });
+  }).catch(() => {});
 }

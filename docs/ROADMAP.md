@@ -44,9 +44,9 @@ tab bar Cookbook · Search · + · Timers · Tools.
 - [x] Preview link + QA pass
 
 ## Phase 4: With the merge
-- [ ] "Update available — Reload" instead of needing two reloads
-- [ ] Whole cookbook available offline (prefetched from Pages)
-- [ ] Merge: existing recipes start in Unsorted; sort screen on first open
+- [x] "Update available — Reload" instead of needing two reloads
+- [x] Whole cookbook available offline (prefetched in the background)
+- [x] Merge: existing recipes start in Unsorted; sort screen on first open
 - [ ] Pages → `main`; delete the old branch
 
 ## Later rounds

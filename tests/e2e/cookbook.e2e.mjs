@@ -15,6 +15,27 @@ const paste = async (card, expect) => {
   await page.waitForFunction((t) => document.querySelector(".preview")?.textContent.includes(t), expect);
 };
 
+test("the first open with nothing in a chapter goes straight to sorting, once", async () => {
+  await app.goto("#/");
+  await page.waitForSelector(".sort-card");
+  assert.match(await page.evaluate(() => location.hash), /#\/sort$/);
+  await page.click('a:has-text("Done")');
+  await page.waitForSelector(".sort-banner");
+  await app.goto("#/");
+  await page.waitForSelector(".sort-banner");
+  assert.match(await page.evaluate(() => location.hash), /^#?\/?$/, "not again");
+});
+
+test("the whole cookbook is kept offline, including recipes never opened", async () => {
+  await page.waitForFunction(() => Object.keys(JSON.parse(localStorage.getItem("rb:offlineCopies") ?? "{}")).length === 4, null, { timeout: 10000 });
+  await app.ctx.setOffline(true);
+  try {
+    await page.evaluate(() => { location.hash = "#/r/mu-bap"; });
+    await page.waitForSelector(".recipe-title");
+    assert.match(await page.textContent(".recipe-title"), /Korean Radish Rice/);
+  } finally { await app.ctx.setOffline(false); }
+});
+
 test("adding a recipe: the chapter guess is picked, and can be changed", async () => {
   await app.goto("#/import");
   await paste(fixture("pad-kra-pao-gai.txt"), "Thai Basil");

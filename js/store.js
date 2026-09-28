@@ -101,8 +101,9 @@ export async function testConnection() {
   return repo.full_name;
 }
 
-// Read a text file. `ref` pins it to a commit (used when committing).
-async function readFile(path, ref) {
+// Read a text file. `ref` pins it to a commit (used when committing). With `offline: false`,
+// undefined instead of the offline copy when the network fails.
+async function readFile(path, ref, { offline = true } = {}) {
   if (canWrite()) {
     const s = getSettings();
     try {
@@ -124,7 +125,7 @@ async function readFile(path, ref) {
       return text;
     }
   } catch { /* offline */ }
-  return cacheGet(path);
+  return offline ? cacheGet(path) : undefined;
 }
 
 // Commit several files at once. `files` maps path -> text, or null to delete.
@@ -229,8 +230,33 @@ export async function listRecipes({ fresh = false } = {}) {
     // No index might mean a new, empty library, or a misspelled repo/branch in Settings.
     if (text == null && canWrite()) await checkBranch();
     indexMemo = parseIndex(text);
+    keepOffline(indexMemo.recipes);
   }
   return indexMemo.recipes;
+}
+
+// The whole cookbook offline: in the background, fetch each recipe that changed since this
+// device last saved a copy (by its updatedAt in the index), a few at a time.
+let keeping = null;
+function keepOffline(summaries) {
+  if (keeping || typeof caches === "undefined" || !navigator.onLine) return;
+  const later = globalThis.requestIdleCallback ?? ((fn) => setTimeout(fn, 1500));
+  keeping = new Promise((done) => later(async () => {
+    const saved = loadLocal("offlineCopies", {});
+    const todo = summaries.filter((r) => isRecipeId(r.id) && saved[r.id] !== (r.updatedAt ?? r.createdAt ?? "?"));
+    const next = async () => {
+      for (let r; (r = todo.shift());) {
+        const text = await readFile(recipePath(r.id), undefined, { offline: false }).catch(() => undefined);
+        if (text === undefined) return; // offline now: try again next time
+        saved[r.id] = r.updatedAt ?? r.createdAt ?? "?";
+        saveLocal("offlineCopies", saved);
+      }
+    };
+    await Promise.all([next(), next(), next()]);
+    await readFile("recipes/cookbook.json", undefined, { offline: false }).catch(() => {});
+    keeping = null;
+    done();
+  }));
 }
 
 async function checkBranch() {

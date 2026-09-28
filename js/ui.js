@@ -57,7 +57,7 @@ export function toast(message, kind = "", action = null) {
     action ? h("button", { class: "toast-action", onClick: () => { close(); action.onClick(); } }, action.label) : null);
   document.body.append(el);
   requestAnimationFrame(() => el.classList.add("show"));
-  setTimeout(close, action ? 6000 : kind === "error" ? 5000 : 2500);
+  if (!action?.sticky) setTimeout(close, action ? 6000 : kind === "error" ? 5000 : 2500); // sticky waits for the tap
 }
 
 export function errorMessage(e) {

@@ -1,7 +1,7 @@
 // The cookbook's contents: continue cooking, a shelf per chapter, and the chapter list.
 
 import { UNSORTED, chapterOf } from "../cookbook.js";
-import { getChapters, listRecipes, loadLocal } from "../store.js";
+import { canWrite, getChapters, listRecipes, loadLocal, saveLocal } from "../store.js";
 import { getTimers } from "../timers.js";
 import { displayName, errorMessage, fill, h, iconButton } from "../ui.js";
 import { chapterClass, miniTile, tile } from "./tiles.js";
@@ -57,6 +57,13 @@ export async function viewHome(root) {
   const groups = groupByChapter(recipes, chapters);
   const used = chapters.filter((c) => groups.get(c.id).length);
   const unsorted = groups.get(UNSORTED.id);
+  // The first time the cookbook opens with nothing in a chapter yet (recipes saved before there
+  // were chapters), go straight to sorting them. Once only; after that the banner offers it.
+  if (unsorted.length === recipes.length && recipes.length > 1 && canWrite() && !loadLocal("sortOffered", false)) {
+    saveLocal("sortOffered", true);
+    location.replace("#/sort");
+    return;
+  }
   const cooking = inProgress(recipes);
   const favorites = recipes.filter((r) => r.favorite).sort(byInterest);
   const shelf = (title, list, { href, cls, count = list.length } = {}) => h("section", { class: "shelf-section" },
