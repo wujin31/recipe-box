@@ -43,7 +43,7 @@ export function seedFiles(seed = SEED) {
     files[`recipes/${id}/source.txt`] = fixture(s.file).trim() + "\n";
     summaries.push(summarize(r));
   });
-  files["recipes/index.json"] = JSON.stringify({ version: 1, recipes: summaries.sort((a, b) => a.id.localeCompare(b.id)) }, null, 2) + "\n";
+  files["recipes/index.json"] = JSON.stringify({ version: 2, recipes: summaries.sort((a, b) => a.id.localeCompare(b.id)) }, null, 2) + "\n";
   return files;
 }
 

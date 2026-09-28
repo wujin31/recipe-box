@@ -8,6 +8,7 @@
 // Everything read is also kept in the Cache API so the app works offline.
 
 import { slugify } from "./parser.js";
+import { guessCuisine, guessEquipment, recipeTime, timerCount, chaptersFrom } from "./cookbook.js";
 
 // ---------- device-local settings ----------
 
@@ -183,6 +184,7 @@ export function safeUrl(url) {
 const json = (v) => JSON.stringify(v, null, 2) + "\n";
 
 export function summarize(r) {
+  const time = recipeTime(r);
   return {
     id: r.id,
     name: r.name,
@@ -193,6 +195,12 @@ export function summarize(r) {
     favorite: Boolean(r.favorite),
     servings: r.servings ?? null,
     items: r.ingredients.map((i) => i.item).join(" · "),
+    chapter: r.chapter ?? null,
+    cuisine: guessCuisine(r),
+    equipment: guessEquipment(r),
+    cookSeconds: time.cook,
+    waitSeconds: time.wait,
+    timerCount: timerCount(r),
     createdAt: r.createdAt,
     updatedAt: r.updatedAt,
     lastCooked: r.log?.length ? r.log[r.log.length - 1].date : null,
@@ -201,9 +209,9 @@ export function summarize(r) {
 }
 
 function parseIndex(text) {
-  if (!text) return { version: 1, recipes: [] };
+  if (!text) return { version: 2, recipes: [] };
   const idx = JSON.parse(text);
-  return { version: 1, recipes: idx.recipes ?? [] };
+  return { version: 2, recipes: idx.recipes ?? [] };
 }
 
 let indexMemo = null;
@@ -230,6 +238,11 @@ async function checkBranch() {
       ? `There's no branch “${s.branch}” in ${s.owner}/${s.repo}. Check Branch in Settings.`
       : `Couldn't find the repo ${s.owner}/${s.repo}. Check Owner and Repository in Settings.`);
   }
+}
+
+// The chapter list (recipes/cookbook.json), or the default chapters when there's none.
+export async function getChapters() {
+  try { return chaptersFrom(JSON.parse(await readFile("recipes/cookbook.json"))); } catch { return chaptersFrom(null); }
 }
 
 export async function getRecipe(id) {

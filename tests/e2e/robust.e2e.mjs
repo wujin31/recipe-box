@@ -81,6 +81,16 @@ test("no sideways scrolling at 320 px", async () => {
   await page.setViewportSize({ width: 393, height: 852 });
 });
 
+test("text follows the system text size (rem-based type)", async () => {
+  await app.goto("#/r/khao-mok-kai");
+  await page.waitForSelector(".recipe-title");
+  const size = () => page.evaluate(() => parseFloat(getComputedStyle(document.querySelector(".ingredients li button")).fontSize));
+  const normal = await size();
+  await page.evaluate(() => { document.documentElement.style.fontSize = "150%"; });
+  assert.ok(await size() > normal * 1.3, "ingredient text grows with the root size");
+  await page.evaluate(() => { document.documentElement.style.fontSize = ""; });
+});
+
 test("dark mode renders", async () => {
   await page.emulateMedia({ colorScheme: "dark" });
   await app.goto("#/r/khao-mok-kai");

@@ -11,10 +11,10 @@ tab bar Cookbook · Search · + · Timers · Tools.
 
 ## Phase 0: Foundation
 - [x] Browser tests in the repo (`tests/e2e/`), seeded from fixtures, run in CI
-- [ ] Split `app.js` into one module per screen plus shared UI helpers
-- [ ] Data v2: one `chapter` per recipe; chapter list in `recipes/cookbook.json`; derived
+- [x] Split `app.js` into one module per screen plus shared UI helpers
+- [x] Data v2: one `chapter` per recipe; chapter list in `recipes/cookbook.json`; derived
       cuisine, equipment, total time and timer count; index carries them
-- [ ] Type sizes in rem so iOS text size settings apply
+- [x] Type sizes in rem so iOS text size settings apply
 
 ## Phase 1: Cookbook design (review point)
 - [ ] Tab bar: Cookbook · Search · + · Timers · Tools

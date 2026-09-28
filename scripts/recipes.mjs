@@ -21,7 +21,7 @@ function buildIndex() {
     .filter((d) => d.isDirectory() && existsSync(join(DIR, d.name, "recipe.json")))
     .map((d) => summarize(JSON.parse(readFileSync(join(DIR, d.name, "recipe.json"), "utf8"))))
     .sort((a, b) => a.id.localeCompare(b.id));
-  return json({ version: 1, recipes });
+  return json({ version: 2, recipes });
 }
 
 function flag(args, name) {
