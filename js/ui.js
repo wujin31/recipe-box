@@ -1,6 +1,6 @@
 // Shared UI pieces: the h() DOM helper, icons, toasts, error messages, nav bar.
 
-import { canWrite, getSettings } from "./store.js";
+import { canWrite, getSettings, isPreview } from "./store.js";
 
 // ---------- tiny DOM helper ----------
 
@@ -103,6 +103,13 @@ export async function copyText(text, done = "Copied") {
 
 export function requireWrite() {
   if (canWrite()) return true;
-  toast("Connect GitHub in Settings to save changes.", "error");
+  toast(isPreview() ? "This is a read-only preview, so nothing saves." : "Connect GitHub in Settings to save changes.", "error");
   return false;
+}
+
+// The note on screens that can't work without a token.
+export function notConnected(what) {
+  return isPreview()
+    ? h("p", { class: "card warn small" }, `This is a read-only preview, so ${what} can't be saved here.`)
+    : h("p", { class: "card warn small" }, `GitHub isn't connected yet, so ${what} can't be saved. `, h("a", { href: "#/settings" }, "Open Settings"));
 }

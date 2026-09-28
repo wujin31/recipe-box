@@ -18,6 +18,7 @@ import { viewSettings } from "./views/settings.js";
 // ---------- router ----------
 
 const scrollMemo = new Map();
+let lastKey = "";
 
 async function route() {
   leavePage();
@@ -32,6 +33,8 @@ async function route() {
   window.scrollTo(0, 0);
 
   const key = location.hash || "#/";
+  const cameFrom = lastKey;
+  lastKey = key;
   const isLibrary = !parts.length;
   if (isLibrary) onLeave(() => scrollMemo.set(key, window.scrollY));
 
@@ -50,7 +53,8 @@ async function route() {
   else if (parts[0] === "settings") viewSettings(root);
   else await viewHome(root);
 
-  if (isLibrary && root.isConnected && scrollMemo.has(key)) window.scrollTo(0, scrollMemo.get(key));
+  // Coming back from a recipe or chapter returns to where you were; the Cookbook tab starts at the top.
+  if (isLibrary && root.isConnected && scrollMemo.has(key) && /^#\/[rc]\//.test(cameFrom)) window.scrollTo(0, scrollMemo.get(key));
 }
 
 // Refuse to run inside another site's frame (clickjacking); the token lives on this origin.
@@ -60,7 +64,7 @@ if (window.top !== window.self && !isPreview()) {
   throw new Error("framed");
 }
 
-if (isPreview()) document.body.append(h("div", { class: "preview-badge", role: "note" }, "Preview · read-only"));
+if (isPreview()) document.body.prepend(h("div", { class: "preview-badge", role: "note" }, "Preview · read-only"));
 
 window.addEventListener("hashchange", route);
 mountTimerTray();

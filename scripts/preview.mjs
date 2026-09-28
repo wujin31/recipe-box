@@ -10,7 +10,7 @@ import { cpSync, mkdirSync, readFileSync, readdirSync, rmSync, writeFileSync, ex
 import { join } from "node:path";
 import { refreshRecipe } from "../js/parser.js";
 import { summarize } from "../js/store.js";
-import { guessChapter } from "../js/cookbook.js";
+import { DEFAULT_CHAPTERS, guessChapter } from "../js/cookbook.js";
 
 const ROOT = new URL("..", import.meta.url).pathname;
 
@@ -27,6 +27,9 @@ export function snapshotFiles({ guess = false } = {}) {
     if (existsSync(join(dir, d.name, "source.txt"))) files[`recipes/${d.name}/source.txt`] = readFileSync(join(dir, d.name, "source.txt"), "utf8");
     summaries.push(summarize(r));
   }
+  files["recipes/cookbook.json"] = existsSync(join(dir, "cookbook.json"))
+    ? readFileSync(join(dir, "cookbook.json"), "utf8")
+    : JSON.stringify({ chapters: DEFAULT_CHAPTERS }, null, 2) + "\n";
   files["recipes/index.json"] = JSON.stringify({ version: 2, recipes: summaries.sort((a, b) => a.id.localeCompare(b.id)) }, null, 2) + "\n";
   return files;
 }

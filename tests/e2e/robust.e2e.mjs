@@ -25,6 +25,19 @@ test("search matches ingredients, cuisines and non-Latin names, and highlights t
   await page.fill('input[type="search"]', "");
 });
 
+test("search widens common words, marks accent-free matches, and keeps the query in the address", async () => {
+  await app.goto("#/search");
+  await page.waitForSelector(".result");
+  await page.fill('input[type="search"]', "pasta");
+  assert.match(await page.textContent(".results"), /Penne/, "pasta finds penne");
+  await page.fill('input[type="search"]', "khao mok");
+  assert.deepEqual(await page.locator(".result mark").allTextContents(), ["Khao", "Mok"], "the romanized name is shown and marked");
+  assert.match(await page.evaluate(() => location.hash), /q=khao%20mok/);
+  await page.click(".search-clear");
+  assert.equal(await page.inputValue('input[type="search"]'), "");
+  assert.equal(await page.evaluate(() => location.hash), "#/search");
+});
+
 test("chapters show as shelves; chapter pages filter", async () => {
   // Give the seeded recipes chapters, as sorting would.
   const chapters = { "khao-mok-kai": "rice", "mu-bap": "rice", "dak-juk": "breakfast", "creamy-spicy-vodka-penne-with-hot-italian-sausage": "rice" };
@@ -42,6 +55,33 @@ test("chapters show as shelves; chapter pages filter", async () => {
   await page.click('.chip:has-text("Korean")');
   assert.equal(await page.locator(".grid .tile").count(), 1);
   await app.shot("chapter");
+});
+
+test("tile titles fit their tiles, on shelves and in the grid", async () => {
+  await app.goto("#/");
+  await page.waitForSelector(".tile");
+  const overflowing = await page.evaluate(async () => {
+    const { tile } = await import("./js/views/tiles.js");
+    const names = [
+      ["蒜蓉辣椒 Spam 炒飯", "Chili Garlic Spam Fried Rice"], ["西門町 Spam 起司蛋餅", "Ximending Spam Egg Crepe"],
+      ["ビーフペッパーライス", "Beef Pepper Rice"], ["牛すき丼", "Beef Sukiyaki Bowl"], ["油蔥醬汁雞腿飯", "Chicken Rice"],
+      ["", "Ribeye with Garlic Butter Pan Sauce, Roasted Yukon Golds & Blistered Green Beans"],
+      ["", "Chicken Thigh Fettuccine Alfredo, Bloomed Pepper"], ["", "Spicy Braised Bolognese with Penne"],
+    ];
+    const tiles = () => names.map(([nativeName, englishName], i) =>
+      tile({ id: `t${i}`, nativeName, englishName, name: englishName, cuisine: "Taiwanese", cookSeconds: 11040 }, []));
+    const shelf = Object.assign(document.createElement("div"), { className: "shelf" });
+    const grid = Object.assign(document.createElement("div"), { className: "grid" });
+    shelf.append(...tiles()); grid.append(...tiles());
+    document.getElementById("app").append(shelf, grid);
+    const bad = [...document.querySelectorAll(".shelf .tile-big, .grid .tile-big")]
+      .filter((t) => t.scrollHeight > t.clientHeight + 1 || t.scrollWidth > t.clientWidth + 1 ||
+        t.getBoundingClientRect().bottom > t.nextElementSibling.getBoundingClientRect().top + 1)
+      .map((t) => `${t.closest(".shelf") ? "shelf" : "grid"}: ${t.textContent}`);
+    shelf.remove(); grid.remove();
+    return bad;
+  });
+  assert.deepEqual(overflowing, []);
 });
 
 test("tab bar navigates and hides in cooking mode", async () => {

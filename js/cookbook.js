@@ -44,7 +44,10 @@ const CHAPTER_WORDS = {
     "short rib", "chop", "masala", "paneer", "chana", "dal", "kabsa", "moussaka", "meatball", "stir fry"],
 };
 // Phrases that settle it outright ("sushi rice" is a basic, not a rice dish).
-const OVERRIDES = [["sushi rice", "sauces"], ["fried rice", "rice"], ["rice bowl", "rice"], ["noodle soup", "soups"], ["garlic bread", "salads"]];
+// A "bowl" is a donburi or rice bowl, and pasta is pasta whatever the meat, unless it says otherwise.
+const OVERRIDES = [["sushi rice", "sauces"], ["fried rice", "rice"], ["noodle soup", "soups"], ["garlic bread", "salads"],
+  ["salad bowl", "salads"], ["pasta salad", "salads"], ["noodle salad", "salads"], ["acai bowl", "breakfast"], ["smoothie bowl", "breakfast"],
+  ...["bowl", "pasta", "penne", "fettuccine", "spaghetti", "linguine", "rigatoni", "tagliatelle", "lasagna", "bucatini"].map((w) => [w, "rice"])];
 
 // Lowercase, accents off ("lǔròufàn" -> "lurou fan" still needs its own entry), punctuation to spaces.
 const words = (s) => ` ${String(s ?? "").normalize("NFKD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/[^\p{L}\p{N}]+/gu, " ")} `;
@@ -87,7 +90,7 @@ const SCRIPTS = [
 const CUISINE_WORDS = {
   Korean: ["gochujang", "gochugaru", "doenjang", "kimchi", "bulgogi", "jjigae", "bap", "juk", "banchan", "galbi", "japchae"],
   Japanese: ["miso", "dashi", "mirin", "donburi", "don", "sukiyaki", "teriyaki", "katsu", "furikake", "udon", "soba", "ramen", "kurozu", "sushi", "raisu", "pepper lunch"],
-  Taiwanese: ["lurou", "luroufan", "ximending", "dan bing", "danbing", "gua bao", "niurou zao fan"],
+  Taiwanese: ["lurou", "luroufan", "ximending", "dan bing", "danbing", "gua bao", "niurou zao fan", "din tai fung", "dtf"],
   Chinese: ["chaofan", "chao fan", "doubanjiang", "shaoxing", "mian", "banmian", "mapo", "hongshao", "suanrong", "suanxiang", "niurou"],
   Thai: ["nam pla", "pad thai", "khao", "gaeng", "tom yum", "kra pao"],
   Vietnamese: ["pho", "phở", "banh", "nuoc cham", "bun"],
@@ -121,7 +124,8 @@ export function guessCuisine(r) {
 
 const EQUIPMENT = [
   ["Rice cooker", /rice[- ]cooker|inner pan|zojirushi|select (?:\w+ ){0,2}(?:and|&) start|keep warm/i],
-  ["Oven", /\boven\b|\bbake\b|\bbaking\b|\broast(?:ed|ing)?\b(?! (?:sesame|seaweed|laver))|\bbroil/i],
+  // A Dutch oven is a pot, and "roasted garlic" is an ingredient; roasting as a step means the oven.
+  ["Oven", /(?<!dutch )\boven\b|\bbake\b|\bbaking\b|\broast(?:ing)?\b(?! (?:sesame|seaweed|laver))|\broasted? (?:at|in|for|until|uncovered|covered)\b|\bbroil/i],
   ["Pressure cooker", /pressure cook|instant pot/i],
   ["Air fryer", /air[- ]fr/i],
   ["Grill", /\bgrill(?:ed|ing)?\b/i],

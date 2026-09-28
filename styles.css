@@ -69,6 +69,8 @@ h2 { font-size: 1.294rem; margin: 28px 0 10px; }
 h3 { font-size: 0.882rem; text-transform: uppercase; letter-spacing: .04em; color: var(--muted); margin: 16px 0 6px; }
 p { margin: 0 0 8px; }
 [hidden] { display: none !important; }
+:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+.tile:focus-visible, .pick:focus-visible { outline-color: var(--ink); }
 
 .muted { color: var(--muted); }
 .small { font-size: 0.824rem; }
@@ -133,6 +135,10 @@ p { margin: 0 0 8px; }
   background: var(--surface-2); border-radius: 12px; padding: 0 10px; color: var(--muted);
 }
 .search input { flex: 1; min-width: 0; border: 0; background: none; padding: 10px 0; color: var(--text); outline: none; font-size: 1rem; }
+.search input::-webkit-search-cancel-button { -webkit-appearance: none; appearance: none; }
+.search-clear { border: 0; background: none; color: var(--muted); display: grid; place-items: center; width: 44px; height: 44px; margin-right: -10px; }
+.search-clear .icon { width: 18px; height: 18px; }
+.search:focus-within { box-shadow: 0 0 0 2px var(--accent); }
 .search-row select {
   flex: none; border: 0; background: var(--surface-2); border-radius: 12px; padding: 10px 8px; font-size: 0.882rem; color: var(--muted); max-width: 42%;
 }
@@ -156,7 +162,7 @@ p { margin: 0 0 8px; }
 .row-meta { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; margin-top: 6px; font-size: 0.765rem; }
 .fav-dot { color: var(--accent); font-size: 0.824rem; }
 .chev { color: var(--muted); font-size: 1.412rem; }
-.tag { background: var(--accent-soft); color: var(--accent-text); border-radius: 999px; padding: 2px 10px; text-decoration: none; font-size: 0.765rem; }
+.tag { background: var(--accent-soft); color: var(--accent-text); border-radius: 999px; padding: 7px 12px; text-decoration: none; font-size: 0.765rem; }
 .more { margin-top: 12px; }
 .empty { text-align: center; padding: 48px 16px; display: grid; gap: 8px; justify-items: center; }
 
@@ -279,14 +285,18 @@ body.cooking { padding-bottom: calc(110px + var(--tray-h, 0px) + env(safe-area-i
 body.cooking .timer-tray { bottom: calc(90px + env(safe-area-inset-bottom)); }
 
 /* timers */
+/* The padding keeps the timers' shadows from being clipped by the scroll box; taps pass through it. */
 .timer-tray {
-  max-height: 45vh; overflow-y: auto;
+  max-height: 45vh; overflow-y: auto; pointer-events: none;
   position: fixed; left: 50%; transform: translateX(-50%); bottom: calc(14px + env(safe-area-inset-bottom)); z-index: 30;
-  width: min(560px, calc(100% - 24px)); display: grid; gap: 8px;
+  width: min(584px, 100%); display: grid; gap: 8px; padding: 16px 12px; margin-bottom: -16px;
 }
 .timer {
-  display: flex; align-items: center; gap: 8px; padding: 8px 6px 8px 16px;
-  background: var(--text); color: var(--bg); border-radius: 16px; box-shadow: 0 8px 30px rgb(0 0 0 / 25%);
+  display: flex; align-items: center; gap: 8px; padding: 8px 6px 8px 16px; pointer-events: auto;
+  background: var(--text); color: var(--bg); border-radius: 16px; box-shadow: 0 6px 18px rgb(0 0 0 / 22%);
+}
+@media (prefers-color-scheme: dark) {
+  .timer { background: #3a322b; color: var(--text); border: 1px solid #4d433a; box-shadow: 0 6px 18px rgb(0 0 0 / 45%); }
 }
 .timer .icon-btn { color: inherit; }
 .timer .link { color: inherit; opacity: .8; }
@@ -357,12 +367,15 @@ body.cooking .timer-tray { bottom: calc(90px + env(safe-area-inset-bottom)); }
   flex: none; width: 140px; height: 180px; border-radius: 18px; padding: 14px 12px 12px;
   display: flex; flex-direction: column; justify-content: space-between; gap: 8px; position: relative;
   background: var(--pal); color: var(--ink); text-decoration: none; overflow: hidden;
+  container-type: inline-size; /* the title sizes itself in cqi, a share of the tile's width */
 }
 .tile:active { transform: scale(.98); }
 .tile-big {
   font-family: var(--serif); font-weight: 700; line-height: 1.1; padding-right: 12px;
   overflow: hidden; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 4; overflow-wrap: anywhere;
 }
+/* CJK breaks at spaces ("西門町 Spam 起司蛋餅"), only splitting a word when it can't fit. */
+.tile-big.native, .hero-native { word-break: keep-all; overflow-wrap: anywhere; }
 .tile-foot { display: grid; gap: 2px; }
 .tile-en { font-weight: 700; font-size: 0.824rem; line-height: 1.25; overflow: hidden; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; }
 .tile-meta { font-size: 0.706rem; opacity: .85; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
@@ -377,7 +390,7 @@ body.cooking .timer-tray { bottom: calc(90px + env(safe-area-inset-bottom)); }
 .home .section-head h2 { margin: 0; }
 .shelf-section .section-head h2, .home .section-head h2 { display: flex; align-items: center; gap: 8px; font-size: 1.235rem; }
 .section-head .count { color: var(--muted); font-size: 0.824rem; font-weight: 500; }
-.see-all { color: var(--accent-text); font-weight: 600; font-size: 0.882rem; text-decoration: none; padding: 10px 0; }
+.see-all { color: var(--accent-text); font-weight: 600; font-size: 0.882rem; text-decoration: none; padding: 12px 0 12px 12px; }
 .shelf {
   display: flex; gap: 12px; overflow-x: auto; scroll-snap-type: x proximity; scrollbar-width: none;
   margin: 0 -16px; padding: 0 16px 4px; scroll-padding: 0 16px;
@@ -400,7 +413,7 @@ body.cooking .timer-tray { bottom: calc(90px + env(safe-area-inset-bottom)); }
 .chapter-head { display: grid; gap: 6px; margin: 4px 0 6px; }
 .chapter-head .large-title { margin: 0; }
 .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 12px; margin-top: 8px; }
-.grid .tile { width: auto; height: 172px; }
+.grid .tile { width: auto; height: auto; aspect-ratio: 7 / 9; } /* the shelf tiles' shape, so titles size the same way */
 
 /* Search */
 .home + .search, .tab-title + .search { margin-bottom: 4px; }
@@ -422,7 +435,13 @@ mark { background: var(--accent-soft); color: var(--accent-text); border-radius:
   background: color-mix(in srgb, var(--bg) 92%, transparent); border-top: 1px solid var(--line);
   backdrop-filter: saturate(1.6) blur(18px); -webkit-backdrop-filter: saturate(1.6) blur(18px);
 }
-.tab { flex: 1; display: grid; justify-items: center; gap: 2px; min-height: 48px; color: var(--muted); text-decoration: none; font-size: 0.647rem; font-weight: 600; }
+.tab { flex: 1; display: grid; justify-items: center; gap: 2px; min-height: 48px; color: var(--text); opacity: .72; text-decoration: none; font-size: 0.706rem; font-weight: 600; }
+.tab.on, .tab.add { opacity: 1; }
+/* On a wide screen the tabs sit under the content column rather than across the window. */
+@media (min-width: 760px) {
+  .tabbar { padding-inline: calc((100% - 560px) / 2); }
+  .shelf { mask-image: linear-gradient(to right, #000 calc(100% - 40px), transparent); }
+}
 .tab .icon { width: 26px; height: 26px; }
 .tab.on { color: var(--accent); }
 .tab.add .plus { width: 48px; height: 48px; border-radius: 24px; background: var(--accent); color: var(--on-accent); display: grid; place-items: center; box-shadow: 0 6px 16px rgb(194 65 12 / 30%); }
@@ -433,13 +452,14 @@ body.has-tabbar .timer-tray { bottom: calc(var(--tabbar-h) + 10px); }
 /* Recipe header */
 .hero { background: var(--pal); color: var(--ink); border-radius: 22px; padding: 18px 18px 16px; margin: 4px 0 16px; overflow-wrap: anywhere; }
 .hero-eyebrow { color: inherit; opacity: .85; display: flex; flex-wrap: wrap; }
-.hero-eyebrow a { color: inherit; text-decoration: none; }
+.hero-eyebrow a { color: inherit; text-decoration: none; padding: 13px 0; margin: -13px 0; } /* 44px to tap */
+.hero-eyebrow a:hover { text-decoration: underline; }
 .hero-eyebrow .sep { margin: 0 6px; }
 .hero-native { font-family: var(--serif); font-size: 2.4rem; font-weight: 700; line-height: 1.08; margin: 10px 0 0; }
 .hero .recipe-title { color: inherit; font-size: 1.6rem; margin-top: 6px; }
 .hero .recipe-sub { color: inherit; opacity: .8; font-size: 1rem; margin: 2px 0 0; }
 .facts { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
-.fact { background: color-mix(in srgb, currentColor 12%, transparent); border-radius: 999px; padding: 5px 11px; font-size: 0.765rem; font-weight: 600; }
+.fact { background: color-mix(in srgb, var(--bg) 55%, transparent); border-radius: 999px; padding: 5px 11px; font-size: 0.765rem; font-weight: 700; }
 
 /* Chapter picker (Add, Edit, Sort) */
 .field-label { font-size: 0.882rem; font-weight: 600; color: var(--muted); }
@@ -475,8 +495,8 @@ body.has-tabbar .timer-tray { bottom: calc(var(--tabbar-h) + 10px); }
 .tweaks .notes.card { margin: 0; }
 .nav .link { text-decoration: none; font-weight: 600; }
 
+/* A strip above the page, so it never covers anything. */
 .preview-badge {
-  position: fixed; top: calc(env(safe-area-inset-top) + 8px); left: 50%; transform: translateX(-50%); z-index: 40;
-  background: var(--text); color: var(--bg); border-radius: 999px; padding: 4px 12px; font-size: 0.706rem; font-weight: 700;
-  opacity: .85; pointer-events: none;
+  padding: calc(env(safe-area-inset-top) + 4px) 16px 4px; text-align: center;
+  background: var(--text); color: var(--bg); font-size: 0.706rem; font-weight: 700; letter-spacing: .02em;
 }

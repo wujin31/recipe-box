@@ -3,7 +3,7 @@
 import { EXPORT_PROMPT, parseRecipeInput, recipeToText, slugify } from "../parser.js";
 import { canWrite, createRecipe, getChapters, listRecipes, loadLocal, safeUrl, saveLocal, updateRecipe } from "../store.js";
 import { chaptersFrom, guessChapter, guessCuisine, guessEquipment } from "../cookbook.js";
-import { backButton, copyText, displayName, errorMessage, fill, h, icon, navbar, normalize, requireWrite, splitTags, subName, toast } from "../ui.js";
+import { backButton, copyText, displayName, errorMessage, fill, h, icon, navbar, normalize, notConnected, requireWrite, splitTags, subName, toast } from "../ui.js";
 import { loadRecipeOr404, setView } from "./shared.js";
 import { chapterClass } from "./tiles.js";
 
@@ -151,7 +151,7 @@ export function recipeForm({ title, text = "", draftKey = null, editing = false,
   h("label", {}, "Servings", servingsIn, h("span", { class: "help" }, "Copied card text doesn't include servings; set it so the amounts scale by servings.")),
   h("label", {}, "Tags (optional)", tagsIn, h("span", { class: "help" }, "Cuisine and equipment are added for you.")),
   h("label", {}, "Claude chat link (optional)", chatIn),
-  canWrite() ? null : h("p", { class: "card warn small" }, "GitHub isn't connected yet, so this can't be saved. ", h("a", { href: "#/settings" }, "Open Settings")),
+  canWrite() ? null : notConnected("this"),
   submit);
   update();
   return form;

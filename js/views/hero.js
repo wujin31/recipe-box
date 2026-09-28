@@ -28,7 +28,7 @@ export function recipeHero(r, chapters) {
   return h("header", { class: `hero ${chapterClass(chapterId, chapters)}` },
     h("div", { class: "eyebrow hero-eyebrow" },
       h("a", { href: `#/c/${chapter.id}` }, chapter.name),
-      cuisine ? [sep(), h("a", { href: `#/search?q=${encodeURIComponent(cuisine)}` }, cuisine)] : null,
+      cuisine ? [sep(), h("a", { href: `#/search?cuisine=${encodeURIComponent(cuisine)}` }, cuisine)] : null,
       equipment.map((e) => [sep(), h("span", {}, e)])),
     native ? h("p", { class: "hero-native" }, native) : null,
     h("h1", { class: "recipe-title" }, displayName(r)),

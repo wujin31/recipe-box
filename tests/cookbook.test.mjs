@@ -16,7 +16,9 @@ test("chapter guesses for real recipe titles", () => {
     "Chili Garlic Spam Fried Rice": "rice",
     "Spicy Braised Bolognese with Penne": "rice",
     "Seared Chicken Thigh Rice Bowl with Fried-Shallot Soy Jus": "rice",
-    "Beef Sukiyaki Bowl": "mains",
+    "Beef Sukiyaki Bowl": "rice",
+    "Greek Salad Bowl": "salads",
+    "Italian Sausage Rigatoni": "rice",
     "Ribeye with Garlic Butter Pan Sauce, Roasted Yukon Golds": "mains",
     "Smashed Cucumber Salad": "salads",
     "Lemon Bars": "desserts",
@@ -36,6 +38,7 @@ test("cuisine from script, keywords, and the title's own words", () => {
   assert.equal(guessCuisine({ englishName: "Taiwanese Beef Rice" }), "Taiwanese");
   assert.equal(guessCuisine({ englishName: "Spicy Braised Bolognese with Penne" }), "Italian");
   assert.equal(guessCuisine({ englishName: "Sushi Rice" }), "Japanese");
+  assert.equal(guessCuisine({ englishName: "DTF Cucumber Salad" }), "Taiwanese");
   assert.equal(guessCuisine({ englishName: "Anything", cuisine: "Filipino" }), "Filipino", "an explicit cuisine wins");
   assert.equal(guessCuisine({ englishName: "Jay's Toast" }), null);
 });
@@ -45,6 +48,9 @@ test("equipment from the steps", () => {
   assert.deepEqual(guessEquipment(dak), ["Rice cooker"]);
   assert.deepEqual(guessEquipment({ steps: [{ text: "Bake at 180°C for 20 minutes." }] }), ["Oven"]);
   assert.deepEqual(guessEquipment({ steps: [{ text: "Sprinkle roasted sesame seeds." }] }), []);
+  assert.deepEqual(guessEquipment({ steps: [{ text: "Heat oil in a Dutch oven over medium-high." }] }), []);
+  assert.deepEqual(guessEquipment({ steps: [{ text: "Stir in the roasted garlic." }] }), []);
+  assert.deepEqual(guessEquipment({ steps: [{ text: "Roast at 425°F until golden." }] }), ["Oven"]);
 });
 
 test("time splits cooking from long waits", () => {

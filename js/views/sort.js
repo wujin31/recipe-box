@@ -4,7 +4,7 @@
 import { UNSORTED, chapterOf, guessChapter } from "../cookbook.js";
 import { refreshRecipe } from "../parser.js";
 import { canWrite, getChapters, getRecipe, listRecipes, updateRecipe } from "../store.js";
-import { displayName, errorMessage, fill, h, toast } from "../ui.js";
+import { displayName, errorMessage, fill, h, notConnected, toast } from "../ui.js";
 import { chapterClass } from "./tiles.js";
 
 const isLatin = (s) => /^[\p{Script=Latin}\p{N}\p{P}\p{S}\s]+$/u.test(s);
@@ -21,7 +21,7 @@ export async function viewSort(root) {
     stage);
 
   if (!canWrite()) {
-    fill(stage, h("p", { class: "card warn small" }, "Connect GitHub in Settings to save chapters. ", h("a", { href: "#/settings" }, "Open Settings")));
+    fill(stage, notConnected("chapters"));
     return;
   }
   let recipes, chapters;
