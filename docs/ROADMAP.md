@@ -41,7 +41,7 @@ tab bar Cookbook · Search · + · Timers · Tools.
 - [x] Pasta water & salt (salt densities checked against sources)
 - [x] Salt % (brines, dry brines, ferments)
 - [x] Cups ↔ grams (per ingredient), °F/°C, gas marks
-- [ ] Preview link + QA pass
+- [x] Preview link + QA pass
 
 ## Phase 4: With the merge
 - [ ] "Update available — Reload" instead of needing two reloads
