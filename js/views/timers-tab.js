@@ -63,7 +63,7 @@ export function viewTimers(root) {
     running,
     h("h2", {}, "Quick timers"),
     h("div", { class: "presets" }, PRESETS.map((s) => h("button", {
-      class: "preset", type: "button", "aria-label": `Start a ${shortDuration(s)} timer`,
+      class: "preset", type: "button", "aria-label": `Start ${shortDuration(s)} timer`,
       onClick: () => startTimer(`${shortDuration(s)} timer`, s),
     }, s < 3600 ? h("span", {}, h("strong", {}, s / 60), " min") : h("strong", {}, "1 hr")))),
     h("h2", {}, "Your own"),

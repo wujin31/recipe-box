@@ -24,14 +24,18 @@ export function pastaTool({ recipe }) {
   const draw = () => {
     const pasta = toGrams(amount.get());
     if (!pasta) { fill(out, h("p", { class: "muted" }, "Enter how much pasta you're cooking.")); return; }
+    if (pasta > 10000) { fill(out, h("p", { class: "muted" }, "That's more than 10 kg of pasta. Check the unit?")); return; }
     // At least 2 L, so the pot doesn't stop boiling when the pasta goes in.
-    const litres = Math.max(2, Math.round((pasta / 100) * water.get() * 4) / 4);
+    const ratio = Math.round((pasta / 100) * water.get() * 4) / 4;
+    const litres = Math.max(2, ratio);
+    const pct = +(saltLevel.get() * 100).toFixed(1);
     const salt = litres * 1000 * saltLevel.get();
     const quarts = litres / 0.946353;
     fill(out,
       h("div", { class: "big-figures" },
         h("div", {}, h("span", { class: "label" }, "Water"), h("strong", {}, `${litres} L`), h("span", {}, `${Math.round(quarts * 4) / 4} qt`)),
-        h("div", {}, h("span", { class: "label" }, "Salt"), h("strong", {}, grams(salt)), h("span", {}, `${saltLevel.get() * 100}% of the water`))),
+        h("div", {}, h("span", { class: "label" }, "Salt"), h("strong", {}, grams(salt)), h("span", {}, `${pct}% of the water`))),
+      ratio < 2 ? h("p", { class: "muted small" }, "At least 2 L, so the water keeps boiling when the pasta goes in.") : null,
       h("table", { class: "salt-table" },
         h("tbody", {}, saltBySpoon(salt).map((s) => h("tr", {}, h("th", {}, s.name), h("td", {}, s.spoons))))),
       h("p", { class: "muted small" }, "Salt the water once it's boiling. Taste it: it should taste pleasantly seasoned, not like the sea."));

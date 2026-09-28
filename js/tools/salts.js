@@ -19,13 +19,19 @@ export function spoons(tsp) {
   // Measures a spoon set has: eighths under 1/2 tsp, quarters above.
   if (tsp < 3) return `${formatFraction(tsp < 0.5 ? Math.round(tsp * 8) / 8 : Math.round(tsp * 4) / 4)} tsp`;
   const tbsp = tsp / 3;
-  if (tbsp < 8) return `${formatFraction(Math.round(tbsp * 4) / 4)} tbsp`; // tablespoons up to 1/2 cup
+  if (tbsp < 8) { // tablespoons up to 1/2 cup, and the rest in teaspoons: "2 tbsp + 1 1/4 tsp"
+    let whole = Math.floor(tbsp);
+    let rest = Math.round((tsp - whole * 3) * 4) / 4;
+    if (rest >= 3) { whole += 1; rest = 0; }
+    return rest ? `${whole} tbsp + ${formatFraction(rest)} tsp` : `${whole} tbsp`;
+  }
   const cups = tbsp / 16;
   return `${formatFraction(Math.round(cups * 8) / 8)} cup${cups > 1.06 ? "s" : ""}`;
 }
 
 // "12 g" and what that is by the spoon, per salt.
 export function grams(g) {
+  if (g < 0.1) return "under 0.1 g";
   return g >= 100 ? `${Math.round(g)} g` : g >= 10 ? `${Math.round(g * 2) / 2} g` : `${Math.round(g * 10) / 10} g`;
 }
 export const saltBySpoon = (g) => SALTS.map((s) => ({ ...s, spoons: spoons(g / s.gPerTsp) }));

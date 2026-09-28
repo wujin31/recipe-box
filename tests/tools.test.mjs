@@ -10,7 +10,9 @@ test("salt by the spoon uses each brand's weight", () => {
   assert.equal(g("morton"), 4.8, "Morton's label: 1/4 tsp = 1.2 g");
   assert.ok(g("diamond") < g("morton") && g("morton") < g("table"));
   assert.equal(spoons(10 / g("table")), "1 3/4 tsp");
-  assert.equal(spoons(20 / g("diamond")), "2 1/2 tbsp", "20 g is 2.38 tbsp");
+  assert.equal(spoons(20 / g("diamond")), "2 tbsp + 1 1/4 tsp", "20 g is 7.14 tsp");
+  assert.equal(spoons(9), "3 tbsp");
+  assert.equal(spoons(8.9), "3 tbsp");
   assert.equal(spoons(0.05), "a pinch");
   assert.equal(spoons(96), "2 cups");
 });

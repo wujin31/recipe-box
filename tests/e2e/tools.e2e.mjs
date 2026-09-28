@@ -23,7 +23,10 @@ test("pasta water & salt", async () => {
   await page.waitForSelector(".tool");
   await page.fill('input[aria-label="Pasta"]', "500");
   assert.match(await text(".big-figures"), /Water\s*5 L.*Salt\s*50 g\s*1% of the water/);
-  assert.match(await text(".salt-table"), /Table or fine sea salt\s*2 3\/4 tbsp/);
+  assert.match(await text(".salt-table"), /Table or fine sea salt\s*2 tbsp \+ 2 1\/4 tsp/);
+  await page.click('.choice-btn:has-text("Light")');
+  assert.match(await text(".big-figures"), /0\.7% of the water/);
+  await page.click('.choice-btn:has-text("Standard")');
   await page.click('.choice-btn:has-text("Less water")');
   assert.match(await text(".big-figures"), /2\.5 L.*25 g/);
   await page.fill('input[aria-label="Pasta"]', "100");
@@ -53,8 +56,14 @@ test("cups, grams and oven temperatures", async () => {
   await page.selectOption('select[aria-label="Amount unit"]', "g");
   await page.fill('input[aria-label="Amount"]', "100");
   assert.equal(await text(".tool-line"), "100 g ≈ 7/8 cup");
+  await page.fill('input[aria-label="Amount"]', "5");
+  assert.equal(await text(".tool-line"), "5 g ≈ 2 tsp");
+  await page.fill('input[aria-label="Amount"]', "1,500");
+  assert.equal(await text(".tool-line"), "1500 g ≈ 12 1/2 cups");
   await page.fill('input[aria-label="Fahrenheit"]', "350");
   assert.equal(await page.inputValue('input[aria-label="Celsius"]'), "177");
+  await page.fill('input[aria-label="Celsius"]', "-18");
+  assert.equal(await page.inputValue('input[aria-label="Fahrenheit"]'), "0");
   assert.match(await text(".gas"), /4\s*350\s*180/);
 });
 
@@ -79,8 +88,9 @@ test("the drawer is in cooking mode too, and typing in it doesn't turn the page"
   const before = await text(".nav-title");
   await page.click('button[aria-label="Kitchen tools"]');
   await page.click('dialog.drawer .tool-row:has-text("Salt %")');
-  await page.click('dialog .chip:has-text("454 g penne")');
-  assert.equal(await page.inputValue('dialog input[aria-label="Food"]'), "454");
+  assert.equal(await page.evaluate(() => document.activeElement.closest("dialog") != null), true, "focus stays in the drawer");
+  assert.equal(await page.inputValue('dialog input[aria-label="Food"]'), "454", "prefilled with the sausage");
+  assert.deepEqual(await page.locator("dialog .chip").allTextContents(), ["454 g hot Italian sausage", "115 g baby spinach"], "no pasta, cream or oil");
   await page.press('dialog input[aria-label="Food"]', "ArrowRight");
   await page.click('dialog button:has-text("Done")');
   assert.equal(await text(".nav-title"), before);

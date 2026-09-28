@@ -101,6 +101,11 @@ test("scale to what you have", async () => {
   await page.waitForSelector("dialog.sheet select");
   assert.match(await page.inputValue("dialog.sheet select >> nth=0"), /^\d+$/);
   assert.match(await text("dialog .scale-result"), /The recipe uses 25 oz bone-in, skin-on chicken thighs/);
+  for (const bad of ["Infinity", "1e9", "0", "2"]) {
+    await page.fill("dialog.sheet input", bad);
+    assert.equal(await page.isDisabled('dialog button[type="submit"]'), true, `"${bad}" can't be applied`);
+  }
+  assert.match(await text("dialog .scale-result"), /Scaling works from ×0\.1 to ×20/);
   await page.fill("dialog.sheet input", "1");
   await page.selectOption("dialog.sheet select >> nth=1", "kg");
   assert.match(await text("dialog .scale-result"), /×1\.41 · 5\.6 servings/);
@@ -114,7 +119,7 @@ test("Timers tab: presets, your own timer, recents, and a count on the tab", asy
   await app.goto("#/timers");
   await page.waitForSelector(".presets");
   assert.match(await text(".timer-list"), /No timers running/);
-  await page.click('.preset[aria-label="Start a 5 min timer"]');
+  await page.click('.preset[aria-label="Start 5 min timer"]');
   await page.waitForSelector(".timer-list .timer");
   assert.match(await text(".timer-list"), /5 min timer/);
   assert.equal(await text(".tabbar .badge"), "1");
@@ -128,7 +133,16 @@ test("Timers tab: presets, your own timer, recents, and a count on the tab", asy
   await page.fill('input[aria-label="How long"]', "soon");
   await page.click('.own-timer button[type="submit"]');
   assert.equal(await page.isVisible(".own-timer .warn-text"), true);
-  for (let k = 0; k < 2; k++) await page.click('.timer-list button[aria-label="Cancel timer"]');
+  // Elsewhere the tray shows two, and a link to the rest.
+  await page.click('.preset[aria-label="Start 10 min timer"]');
+  await app.goto("#/");
+  await page.waitForSelector(".timer-tray .timer");
+  assert.equal(await page.locator(".timer-tray .timer").count(), 2);
+  assert.equal(await text(".timer-more"), "+1 more timer");
+  assert.match(await text(".timer-tray .timer >> nth=0"), /Tea/, "soonest first");
+  await app.goto("#/timers");
+  await page.waitForSelector(".timer-list .timer");
+  for (let k = 0; k < 3; k++) await page.click('.timer-list button[aria-label="Cancel timer"] >> nth=0');
   await page.waitForSelector(".tabbar .badge", { state: "detached" });
 });
 

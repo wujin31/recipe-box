@@ -43,7 +43,7 @@ export async function viewCook(root, id, query = new URLSearchParams()) {
 
   root.append(
     h("header", { class: "nav cook-nav" },
-      h("div", { class: "nav-side" }, iconButton("close", "Close cooking mode", () => (location.hash = `#/r/${id}`))),
+      h("div", { class: "nav-side" }, iconButton("close", "Close cooking mode", () => location.replace(`#/r/${id}`))), // Back shouldn't reopen it
       counter,
       h("div", { class: "nav-side right" }, iconButton("tools", "Kitchen tools", () => openToolDrawer(r)))),
     progress, stage,
@@ -89,8 +89,8 @@ export async function viewCook(root, id, query = new URLSearchParams()) {
       refs.length ? h("div", { class: "cook-ings card" },
         h("h3", {}, "For this step"),
         h("ul", {}, refs.map((k) => h("li", {}, formatIngredient(r.ingredients[k], factor, units))))) : null,
-      step.timers?.length ? h("div", { class: "cook-timers" }, step.timers.map((t) => {
-        const info = timerInfo(r, i, t);
+      step.timers?.length ? h("div", { class: "cook-timers" }, step.timers.map((t, k) => {
+        const info = timerInfo(r, i, k);
         return h("button", { class: "button big timer-big", onClick: () => startTimer(info, t.seconds) },
           icon("timer"), `${shortDuration(t.seconds)} · ${info.label}`);
       })) : null,

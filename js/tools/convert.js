@@ -3,6 +3,7 @@
 import { fill, h } from "../ui.js";
 import { UNITS, formatDecimal, formatFraction } from "../units.js";
 import { amountField, readNumber } from "./kit.js";
+import { spoons } from "./salts.js";
 
 // Grams per US cup. Flours and sugars as King Arthur Baking weighs them (spooned into the cup and
 // levelled; scooping packs more in); liquids by density. A cup is 236.6 ml.
@@ -35,7 +36,8 @@ const GAS = [["¼", 225, 110], ["½", 250, 120], ["1", 275, 140], ["2", 300, 150
 export const fToC = (f) => ((f - 32) * 5) / 9;
 export const cToF = (c) => (c * 9) / 5 + 32;
 
-const cupsText = (cups) => `${formatFraction(Math.round(cups * 8) / 8)} cup${cups > 1.06 ? "s" : ""}`;
+// Under 1/4 cup, spoons: "5 g flour" is "1 3/4 tsp", not "0 cups".
+const cupsText = (cups) => (cups < 0.23 ? spoons(cups * 48) : `${formatFraction(Math.round(cups * 8) / 8)} cup${cups > 1.06 ? "s" : ""}`);
 
 // The recipe's ingredients measured in cups or spoons that we know a weight for.
 export function recipeConversions(recipe) {
@@ -56,6 +58,7 @@ export function convertTool({ recipe }) {
     const d = DENSITIES[Number(which.value)];
     const { value, unit } = amount.get();
     if (!(value > 0)) { result.textContent = `1 cup ≈ ${d.g} g`; return; }
+    if (value > 10000) { result.textContent = "That's a lot. Check the unit?"; return; }
     if (unit === "g") result.textContent = `${value} g ≈ ${cupsText(value / d.g)}`;
     else {
       const cups = (value * UNITS[unit].toBase) / UNITS.cup.toBase;
@@ -69,10 +72,12 @@ export function convertTool({ recipe }) {
   const mine = recipeConversions(recipe);
 
   // Temperatures, both ways.
-  const f = h("input", { type: "text", inputmode: "numeric", autocomplete: "off", placeholder: "350", "aria-label": "Fahrenheit" });
-  const c = h("input", { type: "text", inputmode: "numeric", autocomplete: "off", placeholder: "180", "aria-label": "Celsius" });
-  f.addEventListener("input", () => { const v = readNumber(f.value); c.value = Number.isFinite(v) && f.value.trim() ? String(Math.round(fToC(v))) : ""; });
-  c.addEventListener("input", () => { const v = readNumber(c.value); f.value = Number.isFinite(v) && c.value.trim() ? String(Math.round(cToF(v))) : ""; });
+  // A full keyboard, not a number pad: iOS number pads have no minus sign for -18 °C.
+  const f = h("input", { type: "text", autocomplete: "off", placeholder: "350", "aria-label": "Fahrenheit" });
+  const c = h("input", { type: "text", autocomplete: "off", placeholder: "180", "aria-label": "Celsius" });
+  const temp = (s) => { const t = s.trim().replace(/^[−–]/, "-"); const n = t.startsWith("-") ? -readNumber(t.slice(1)) : readNumber(t); return Math.abs(n) < 2000 ? n : NaN; };
+  f.addEventListener("input", () => { const v = temp(f.value); c.value = Number.isFinite(v) ? String(Math.round(fToC(v))) : ""; });
+  c.addEventListener("input", () => { const v = temp(c.value); f.value = Number.isFinite(v) ? String(Math.round(cToF(v))) : ""; });
 
   return h("div", { class: "tool" },
     mine.length ? h("section", {},

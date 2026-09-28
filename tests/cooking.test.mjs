@@ -1,6 +1,6 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import { findTimers, parseDuration, timerAction } from "../js/parser.js";
+import { findTimers, parseDuration, timerAction, timerPositions } from "../js/parser.js";
 import { factorFor, parseIngredientLine, unitsFor } from "../js/units.js";
 
 const label = (text, ingredients = []) => timerAction(text, findTimers(text)[0], ingredients);
@@ -21,8 +21,34 @@ test("ingredients in a label are shortened to their names", () => {
   assert.equal(label("Fry 300 g yellow onion (1 cm wedges) for 8 minutes.", ings), "Fry yellow onion");
 });
 
-test("a clause that only remarks on the time gives no label", () => {
-  assert.equal(label("That's 3 minutes total."), "");
+test("times that aren't something to time aren't timers", () => {
+  const secs = (text) => findTimers(text).map((t) => t.seconds);
+  assert.deepEqual(secs("Simmer, scraping the base every 20–30 minutes."), []);
+  assert.deepEqual(secs("Turn the eggs over at the 15-minute mark."), []);
+  assert.deepEqual(secs("Boil 9 minutes, 2 minutes less than the package time."), [540]);
+  assert.deepEqual(secs("Cook about 1 minute short of the package time."), []);
+  assert.deepEqual(secs("Marinate 2 hours, or up to 24 hours."), [7200]);
+  assert.deepEqual(secs("Marinate at least 1 hour; don't go past 2 hours."), [3600]);
+  assert.deepEqual(secs("If thin, stop at 4 minutes instead."), []);
+  assert.deepEqual(secs("Sear 2 minutes, flip, sear 1 minute. That's 3 minutes total."), [120, 60]);
+  assert.deepEqual(secs("Roast 25 minutes, flip, roast 25 minutes more, about 50 minutes total."), [1500, 1500]);
+  assert.deepEqual(secs("Cook 10 minutes total, stirring."), [600], "a total alone is still the step's time");
+});
+
+test("two timers with the same time get their own labels", () => {
+  const text = "Let the skillet sit off the heat 1 minute. Cook the shallot 1 minute, then add the garlic and stir 1 minute.";
+  const timers = findTimers(text);
+  const at = timerPositions(text, timers);
+  assert.deepEqual(timers.map((t, k) => timerAction(text, t, [], at[k])), ["Let the skillet sit off the heat", "Cook the shallot", "Add the garlic and stir"]);
+  const range = "Cook 4–5 minutes until 175°F. Rest 5 minutes.";
+  const rt = findTimers(range);
+  assert.deepEqual(timerPositions(range, rt), [5, range.indexOf("5 minutes.")], "\"5 minutes\" isn't the end of \"4–5 minutes\"");
+});
+
+test("a label starts with something to do", () => {
+  assert.equal(label("Sear 2 minutes per side, turning once."), "Sear per side");
+  assert.equal(label("Sear the steak, turning once, 3 minutes."), "Sear the steak");
+  assert.deepEqual(findTimers("That's 3 minutes."), []);
 });
 
 test("typed timer durations", () => {
@@ -30,6 +56,7 @@ test("typed timer durations", () => {
   assert.equal(parseDuration("1:30"), 90);
   assert.equal(parseDuration("1:05:00"), 3900);
   assert.equal(parseDuration("0"), null);
+  assert.equal(parseDuration("1:75"), null);
   assert.equal(parseDuration("abc"), null);
   assert.equal(parseDuration("5000"), null, "over 48 hours");
 });

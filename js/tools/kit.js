@@ -4,8 +4,16 @@
 import { h } from "../ui.js";
 import { UNITS, parseNumber } from "../units.js";
 
-// "600", "1 1/2", "1,5" -> number (or NaN).
-export const readNumber = (s) => parseNumber(String(s).trim().replace(/^(\d+),(\d+)$/, "$1.$2"));
+// "600", "1 1/2", "1,500" (thousands), "1,5" (a decimal comma) -> number; NaN for anything else,
+// including "Infinity" and "1e9".
+export function readNumber(s) {
+  let t = String(s).trim();
+  if (/^\d{1,3}(?:,\d{3})+(?:\.\d+)?$/.test(t)) t = t.replace(/,/g, "");
+  else if (/^\d+,\d+$/.test(t)) t = t.replace(",", ".");
+  if (!/^[\d\s./½⅓⅔¼¾⅛⅜⅝⅞]+$/.test(t)) return NaN;
+  const n = parseNumber(t);
+  return Number.isFinite(n) ? n : NaN;
+}
 
 // Amount + unit, calling onChange on every edit. Returns the element, and get() -> { value, unit }.
 export function amountField(label, units, { value = "", unit = units[0], onChange }) {
@@ -38,7 +46,7 @@ export function choices(label, options, current, onPick) {
 
 // Grams from an amount in a weight unit (or ml of a water-like liquid).
 export function toGrams({ value, unit }) {
-  if (!(value > 0)) return null;
+  if (!(value > 0) || value > 1e5) return null; // nobody's weighing out 100,000 of anything
   if (unit === "qt") return value * 946.353;
   if (!UNITS[unit]) return null;
   return value * UNITS[unit].toBase; // g for weights, ml (as g of water) for volumes

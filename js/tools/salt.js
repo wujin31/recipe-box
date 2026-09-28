@@ -4,6 +4,8 @@ import { fill, h } from "../ui.js";
 import { amountField, choices, fromRecipe, readNumber, toGrams, weighedIngredients } from "./kit.js";
 import { grams, saltBySpoon } from "./salts.js";
 
+const PANTRY = /pasta|penne|fettuccine|spaghetti|linguine|rigatoni|noodle|\brice\b|flour|sugar|butter|\boil\b|cheese|parmigiano|parmesan|pecorino|salt|sauce|stock|broth|cream|milk|yogurt|honey|vinegar|wine|paste|starch|spam/i;
+
 // id, label, note, default %, what the % is of.
 const MODES = {
   dry: { label: "Dry brine", note: "salt on the food", pct: 1, of: "food", help: "1% of the meat's weight seasons it through. Rest uncovered in the fridge, 1 hour to 2 days." },
@@ -43,7 +45,12 @@ export function saltTool({ recipe }) {
   const modes = choices("For", Object.entries(MODES).map(([id, m]) => [id, m.label, m.note]), mode, (v) => {
     mode = v; pct.value = String(MODES[v].pct); draw();
   });
-  const picks = recipe ? fromRecipe(recipe, weighedIngredients, (ing) => food.set(String(ing.qty), ing.unit)) : null;
+  // The recipe's meat, fish and vegetables by weight (not its pasta, cheese or butter), the
+  // first one filled in.
+  const brineable = (r) => weighedIngredients(r).filter((i) => !PANTRY.test(i.item ?? i.text));
+  const picks = recipe ? fromRecipe(recipe, brineable, (ing) => food.set(String(ing.qty), ing.unit)) : null;
+  const first = recipe ? brineable(recipe)[0] : null;
+  if (first) { food.input.value = String(first.qty); food.select.value = first.unit; }
   draw();
   return h("div", { class: "tool" },
     modes.el,

@@ -40,7 +40,7 @@ export function viewTools(root, id) {
 // The 🧰 drawer: the pinned tools (all of them if none are pinned), then the chosen tool.
 export function openToolDrawer(recipe) {
   const body = h("div", { class: "drawer-body" });
-  const title = h("strong", {});
+  const title = h("strong", { tabindex: "-1" }); // takes focus when the drawer's content changes
   const back = h("button", { type: "button", class: "link", onClick: () => showList() }, "Tools");
   const close = h("button", { type: "button", class: "link", onClick: () => dialog.close() }, "Done");
 
@@ -49,16 +49,20 @@ export function openToolDrawer(recipe) {
     back.hidden = true;
     const pinned = pinnedIds();
     const tools = pinned.length ? pinned.map(toolById) : TOOLS;
-    fill(body, tools.map((t) => h("button", { type: "button", class: "tool-row card", onClick: () => showTool(t) },
-      h("span", { class: "tool-emoji", "aria-hidden": "true" }, t.emoji),
-      h("span", { class: "tool-text" }, h("strong", {}, t.name), h("span", { class: "muted small" }, t.blurb)))),
-    h("a", { class: "link small", href: "#/tools", onClick: () => dialog.close() }, "All tools and pinning"));
+    fill(body,
+      pinned.length ? null : h("p", { class: "muted small" }, "Nothing's pinned, so here's every tool. Pin favorites on the Tools tab."),
+      tools.map((t) => h("button", { type: "button", class: "tool-row card", onClick: () => showTool(t) },
+        h("span", { class: "tool-emoji", "aria-hidden": "true" }, t.emoji),
+        h("span", { class: "tool-text" }, h("strong", {}, t.name), h("span", { class: "muted small" }, t.blurb)))),
+      h("a", { class: "link small", href: "#/tools", onClick: () => dialog.close() }, "All tools and pinning"));
+    if (dialog.open) title.focus();
   }
   function showTool(t) {
     title.textContent = t.name;
     back.hidden = false;
     fill(body, t.render({ recipe }));
     body.scrollTop = 0;
+    title.focus(); // the tapped button is gone; keep focus in the drawer
   }
 
   const dialog = h("dialog", { class: "sheet drawer", "aria-label": "Kitchen tools" },

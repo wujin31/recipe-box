@@ -167,44 +167,89 @@ function durationSeconds(m) {
 }
 
 // Times written in a step ("about 20 minutes", "for a minute", "1 hr 15 min").
+// Times that aren't something to time: an interval ("every 20 minutes"), a moment ("at the
+// 15-minute mark"), a comparison ("2 minutes less than the package says"), a limit ("up to 24
+// hours", "don't go past 2 hours"), a change of plan ("stop at 4 minutes instead"), or a remark
+// on the total ("that's 3 minutes total"; "50 minutes total" beside the step's own timers).
+const NOT_BEFORE = /\b(?:every|each|at the|up to|past|beyond|no (?:more|longer) than|more than|longer than|at most|stop at|that's|that is)\s+(?:about\s+|around\s+|roughly\s+)?$/i;
+const NOT_AFTER = /^[\s-]*(?:mark\b|(?:less|more|longer|shorter)\s+than\b|short of\b|instead\b)/i;
+const TOTAL = /^\s*(?:total|in all|altogether)\b/i;
+
 export function findTimers(text) {
-  const timers = [];
-  for (const m of normalizeFractions(text).matchAll(TIMER_RE)) {
+  const s = normalizeFractions(text);
+  const found = [];
+  const re = new RegExp(TIMER_RE.source, "gi");
+  for (let m; (m = re.exec(s));) {
+    // "9 minutes, 2 minutes less…" is two times, not one: a second part must be a smaller unit.
+    if (m[5] && unitSeconds(m[6]) >= unitSeconds(m[4])) {
+      const cut = m[0].toLowerCase().indexOf(m[4].toLowerCase(), m[0].indexOf(m[3] ?? m[2]) + 1) + m[4].length;
+      const first = Object.assign([m[0].slice(0, cut), m[1], m[2], m[3], m[4]], { index: m.index });
+      re.lastIndex = m.index + cut;
+      m = first;
+    }
     const seconds = durationSeconds(m);
-    if (seconds > 0) timers.push({ text: m[0], seconds });
+    const before = s.slice(0, m.index), after = s.slice(m.index + m[0].length);
+    if (seconds > 0 && !NOT_BEFORE.test(before) && !NOT_AFTER.test(after)) found.push({ text: m[0], seconds, total: TOTAL.test(after) });
   }
-  return timers;
+  // A total is a timer only when the step has no others.
+  const timers = found.some((t) => !t.total) ? found.filter((t) => !t.total) : found;
+  return timers.map(({ text, seconds }) => ({ text, seconds }));
+}
+
+// Where each of a step's timers sits in its text, in order (-1 for a timer from a ⏱ marker or
+// the card's JSON). Two "1 minute" timers are the first and the second "1 minute", and "5 minutes"
+// is never found inside "4–5 minutes".
+export function timerPositions(text, timers) {
+  let from = 0;
+  return timers.map((t) => {
+    if (!t.text) return -1;
+    for (let at = text.indexOf(t.text, from); at >= 0; at = text.indexOf(t.text, at + 1)) {
+      if (/[\d.\/–-]\s*$/.test(text.slice(Math.max(0, at - 2), at)) && /^\d/.test(t.text)) continue; // inside a range
+      from = at + t.text.length;
+      return at;
+    }
+    return -1;
+  });
 }
 
 // What a timer is for, in a few words from its step: "Braise 1 hr 15 min covered" -> "Braise covered",
 // "…, select White/Sushi and start (about 55 minutes)." -> "Select White/Sushi and start".
 const TIMER_SLOT = "\u0000"; // stands in for the timer's own words while the step is trimmed
-const LEAD = /^(?:and|then|or|but|so|now|also)\s+/i;
+const LEAD = /^(?:and|then|or|but|so|now|also|just)\s+/i;
 const BEFORE = /\s*\b(?:for|about|around|roughly|approximately|approx\.?|at least|another|a further|over|in|within|~)\s*$/i;
 const AFTER = /^\s*(?:more|longer|total|or so|or until\b.*)\b/i;
-// A clause that only talks about the time ("that's 3 minutes total", "or up to 24 hours").
-const REMARK = /^(?:that's|that is|is|it|it's|this|or|up to|total|about|which|takes|preheating)\b/i;
 const RANGE_BEFORE = new RegExp(String.raw`(?:${DURATION})\s*(?:to|or|-|–)\s*$`, "i");
 const RANGE_AFTER = new RegExp(String.raw`^\s*(?:to|or|-|–)\s*(?:${DURATION})`, "i");
+// A label starts with something to do. Clauses that don't ("turning once", "per side", "lidded")
+// give way to the clause before them.
+const VERBS = new Set(`add adjust arrange assemble bake baste beat blanch blend blister bloom boil braise bring brown
+  brush caramelize char check chill chop coat combine cook cool cover crack crisp crush cure cut deglaze dip
+  dissolve drain drizzle drop dry finish flip fluff fold freeze fry garnish give glaze grate grill heat hold
+  keep knead lay leave let lift lower marinate mash melt microwave mix move nestle open pat place poach pound
+  pour preheat press prove proof pull put reduce refrigerate reheat remove render repeat rest return rinse rise
+  roast roll rub run salt saute sauté scatter scrape sear season select serve set shake shape simmer sit skim
+  slice smash soak soften spoon spread sprinkle squeeze stand start steam steep stew stir stir-fry strain submerge
+  swirl take taste thaw tip toast top toss transfer trim turn uncover wait warm whisk wipe wrap`.split(/\s+/));
+const STOP = /\s+(?:of|a|an|the|to|in|on|with|and|for|at|into|onto|over|from|your|until|so|by|as|\d\S*)$/i;
+const startsWithVerb = (s) => VERBS.has(s.split(/[\s,]/)[0].toLowerCase());
 
-export function timerAction(text, t, ingredients = []) {
+export function timerAction(text, t, ingredients = [], at = timerPositions(text, [t])[0]) {
+  // The timer's words become one marker, at the timer's own place in the step.
+  let s = at >= 0 ? text.slice(0, at) + TIMER_SLOT + text.slice(at + t.text.length) : text;
   // Ingredients by name only: "15 ml light soy sauce, divided" -> "light soy sauce".
-  let s = text;
   for (const ing of [...ingredients].sort((a, b) => (b.text?.length ?? 0) - (a.text?.length ?? 0))) {
     if (!ing.text || !s.includes(ing.text)) continue;
     const name = (ing.item || ing.text).split(/,|\s\(/)[0].trim();
     s = s.split(ing.text).join(name);
   }
-  // The timer's words become one marker; a bracketed aside holding it becomes the marker, other asides go.
-  const at = t.text ? s.indexOf(t.text) : -1;
-  if (at >= 0) s = s.slice(0, at) + TIMER_SLOT + s.slice(at + t.text.length);
+  // A bracketed aside holding the timer becomes the marker; other asides go.
   s = s.replace(/\s*[(\[][^)\]]*[)\]]/g, (m) => (m.includes(TIMER_SLOT) ? ` ${TIMER_SLOT}` : ""));
   // The sentence with the timer (a ⏱ marker's timer belongs to the step's last sentence), cut into clauses.
   const sentences = s.match(/[^.!?]+(?:[.!?]+|$)/g) ?? [s];
   const sentence = sentences.find((x) => x.includes(TIMER_SLOT)) ?? sentences[sentences.length - 1];
   const clauses = sentence.split(/[,;:]\s+|\s+(?:and\s+)?then\s+|\s+[—–]\s+/i);
-  let k = Math.max(0, clauses.findIndex((c) => c.includes(TIMER_SLOT)));
-  if (!sentence.includes(TIMER_SLOT)) k = clauses.length - 1;
+  let k = clauses.findIndex((c) => c.includes(TIMER_SLOT));
+  if (k < 0) k = clauses.length - 1;
 
   const clean = (c) => {
     let [before, after = ""] = c.split(TIMER_SLOT);
@@ -214,15 +259,26 @@ export function timerAction(text, t, ingredients = []) {
     for (let prev; prev !== before;) { prev = before; before = before.replace(BEFORE, ""); }
     after = after.replace(AFTER, "");
     // "Melt the butter in a pan over medium heat and brown the thighs": the time is for the last action.
-    const and = before.lastIndexOf(" and ");
-    if (`${before} ${after}`.trim().split(/\s+/).length > 6 && and > 0 && before.slice(and + 5).trim().includes(" ")) before = before.slice(and + 5);
+    if (`${before} ${after}`.replace(LEAD, "").replace(/[^\p{L}\p{N}\s'-]/gu, " ").trim().split(/\s+/).length > 6) {
+      const parts = before.split(" and ");
+      const last = parts[parts.length - 1].trim();
+      if (parts.length > 1 && startsWithVerb(last)) before = last;
+    }
     return `${before} ${after}`.replace(/\s+/g, " ").replace(LEAD, "").trim().replace(/[.,;:!?…]+$/, "").trim();
   };
-  let action = clean(clauses[k]);
-  while (k > 0 && (!/\p{L}{2}/u.test(action) || REMARK.test(action))) action = clean(clauses[--k]);
-  if (REMARK.test(action) || !/\p{L}{2}/u.test(action)) return "";
+  // The timer's clause if it says what to do, else the nearest clause before it that does.
+  let action = "";
+  for (let j = k; j >= 0 && !action; j--) {
+    const c = clean(clauses[j]);
+    if (startsWithVerb(c)) action = c;
+  }
+  if (!action) return "";
   const words = action.split(" ");
-  action = words.length > 6 ? `${words.slice(0, 5).join(" ")}…` : action;
+  if (words.length > 7) {
+    let cut = words.slice(0, 6).join(" ");
+    for (let prev; prev !== cut;) { prev = cut; cut = cut.replace(STOP, ""); }
+    action = `${cut}…`;
+  }
   return action.charAt(0).toUpperCase() + action.slice(1);
 }
 
@@ -231,6 +287,7 @@ export function parseDuration(s) {
   const parts = String(s).trim().split(":").map((p) => p.trim());
   if (!parts[0] || parts.length > 3 || parts.some((p) => !/^\d+(?:\.\d+)?$/.test(p))) return null;
   const n = parts.map(Number);
+  if (n.slice(1).some((x) => x >= 60)) return null; // "1:75" is a typo, not 2:15
   const seconds = n.length === 1 ? n[0] * 60 : n.length === 2 ? n[0] * 60 + n[1] : n[0] * 3600 + n[1] * 60 + n[2];
   return seconds > 0 && seconds <= 48 * 3600 ? Math.round(seconds) : null;
 }

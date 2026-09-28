@@ -1,7 +1,10 @@
 // "Scale to what I have": pick an ingredient, say how much you have, and the recipe scales to it.
 
 import { displayName, h } from "../ui.js";
-import { UNITS, factorFor, formatIngredient, parseNumber, unitsFor } from "../units.js";
+import { readNumber } from "../tools/kit.js";
+import { UNITS, factorFor, formatIngredient, unitsFor } from "../units.js";
+
+const MIN = 0.1, MAX = 20;
 
 // The ingredient you most likely have a set amount of: the first one by weight (the meat, the
 // rice), else the first with an amount.
@@ -26,10 +29,13 @@ export function openScaleSheet(r, apply) {
   };
   const update = () => {
     const ing = ings[Number(pick.value)];
-    factor = factorFor(ing, parseNumber(amount.value.replace(",", ".")), unit.value);
+    const f = factorFor(ing, readNumber(amount.value), unit.value);
+    // Between a tenth and 20 times the recipe: past that it's a typo, or a different recipe.
+    factor = f >= MIN && f <= MAX ? f : null;
     save.disabled = !factor;
     if (!amount.value.trim()) result.textContent = `The recipe uses ${formatIngredient(ing, 1, "original")}.`;
-    else if (!factor) result.textContent = "Enter an amount, like 600 or 1 1/2.";
+    else if (!f) result.textContent = "Enter an amount, like 600 or 1 1/2.";
+    else if (!factor) result.textContent = `That's ×${f < MIN ? +f.toFixed(3) : Math.round(f)}. Scaling works from ×${MIN} to ×${MAX}; check the unit.`;
     else {
       const servings = r.servings ? ` · ${Math.round(r.servings * factor * 10) / 10} servings` : "";
       result.textContent = `×${+factor.toFixed(2)}${servings}`;

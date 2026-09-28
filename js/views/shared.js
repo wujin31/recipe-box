@@ -1,6 +1,6 @@
 // Pieces shared by the recipe and cooking screens: per-device view state, step rendering, the cook log.
 
-import { recipeToText, refreshRecipe, timerAction } from "../parser.js";
+import { recipeToText, refreshRecipe, timerAction, timerPositions } from "../parser.js";
 import { getRecipe, getSettings, loadLocal, saveLocal, updateRecipe } from "../store.js";
 import { shortDuration, startTimer } from "../timers.js";
 import { backButton, copyText, displayName, errorMessage, h, icon, navbar, requireWrite, toast } from "../ui.js";
@@ -37,11 +37,12 @@ export function renderStep(recipe, stepIndex, factor, units) {
     }
   }
   const unplaced = [];
-  for (const t of step.timers ?? []) {
-    const at = t.text ? text.indexOf(t.text) : -1;
-    if (at >= 0 && !overlaps(at, at + t.text.length)) marks.push({ start: at, end: at + t.text.length, kind: "timer", t });
-    else unplaced.push(t);
-  }
+  const positions = timerPositions(text, step.timers ?? []);
+  (step.timers ?? []).forEach((t, k) => {
+    const at = positions[k];
+    if (at >= 0 && !overlaps(at, at + t.text.length)) marks.push({ start: at, end: at + t.text.length, kind: "timer", t, k });
+    else unplaced.push(k);
+  });
   marks.sort((a, b) => a.start - b.start);
 
   const out = [];
@@ -52,20 +53,22 @@ export function renderStep(recipe, stepIndex, factor, units) {
     else {
       // Keep "." or "," after a chip on the chip's line.
       const tail = text.slice(m.end).match(/^[.,;:!?)]+/)?.[0] ?? "";
-      out.push(h("span", { class: "nowrap" }, timerChip(m.t, timerInfo(recipe, stepIndex, m.t), m.t.text), tail));
+      out.push(h("span", { class: "nowrap" }, timerChip(m.t, timerInfo(recipe, stepIndex, m.k), m.t.text), tail));
       m.end += tail.length;
     }
     pos = m.end;
   }
   out.push(convertTemperatures(text.slice(pos), units));
-  for (const t of unplaced) out.push(" ", timerChip(t, timerInfo(recipe, stepIndex, t)));
+  for (const k of unplaced) out.push(" ", timerChip(step.timers[k], timerInfo(recipe, stepIndex, k)));
   return out;
 }
 
-// What a step's timer shows while it runs: "Braise undisturbed", from "Lǔròufàn · step 6", linking back.
-export function timerInfo(recipe, stepIndex, t) {
+// What a step's k-th timer shows while it runs: "Braise undisturbed", from "Lǔròufàn · step 6", linking back.
+export function timerInfo(recipe, stepIndex, k) {
+  const step = recipe.steps[stepIndex];
+  const at = timerPositions(step.text, step.timers)[k];
   return {
-    label: timerAction(recipe.steps[stepIndex].text, t, recipe.ingredients) || `Step ${stepIndex + 1}`,
+    label: timerAction(step.text, step.timers[k], recipe.ingredients, at) || `Step ${stepIndex + 1}`,
     sub: `${displayName(recipe)} · step ${stepIndex + 1}`,
     href: `#/r/${encodeURIComponent(recipe.id)}/cook?step=${stepIndex}`,
   };
@@ -75,7 +78,7 @@ export function timerChip(t, info, text) {
   return h("button", {
     class: "timer-chip",
     onClick: (e) => { e.stopPropagation(); startTimer(info, t.seconds); },
-    "aria-label": `Start a ${shortDuration(t.seconds)} timer: ${info.label}`,
+    "aria-label": `Start ${shortDuration(t.seconds)} timer: ${info.label}`,
   }, icon("timer"), text ?? shortDuration(t.seconds));
 }
 
