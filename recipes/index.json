@@ -105,9 +105,7 @@
       "items": "flank steak (or diezmillo / palomilla), about 1.5–2 cm thick · fresh lime juice (about 2 limes) · fresh orange juice (naranja agria / sour orange if you can find it) · garlic cloves, crushed (marinade) · kosher salt (marinade) · light Mexican lager · Jugo Maggi, optional · neutral high-smoke-point oil (grapeseed, avocado) · coarse or flaky salt (searing) · tomatillos, husked and rinsed (about 8 medium) · serrano chiles · white onion, in one chunk · garlic cloves, unpeeled (salsa) · fine sea salt (salsa, adjust to taste) · green onions (cebollitas cambray) · flour tortillas · limes, halved (to serve)",
       "chapter": null,
       "cuisine": "Mexican",
-      "equipment": [
-        "Oven"
-      ],
+      "equipment": [],
       "cookSeconds": 10200,
       "waitSeconds": 0,
       "timerCount": 15,
@@ -176,7 +174,7 @@
       "servings": 3,
       "items": "Persian cucumbers · kosher salt · granulated sugar · Totole mushroom bouillon powder · house blend oil (5:1 canola to olive) · toasted sesame oil · clear chili oil, from the top of the jar (see notes) · thin slices fresh raw garlic, for topping · thin slices Fresno chili, for topping",
       "chapter": null,
-      "cuisine": null,
+      "cuisine": "Taiwanese",
       "equipment": [],
       "cookSeconds": 5400,
       "waitSeconds": 0,
@@ -391,9 +389,7 @@
       "items": "dried shiitake mushrooms · hot water · olive oil · Italian sausage, casings removed · ground beef (80/20) · medium onion, finely diced · carrots, finely diced · celery stalks, finely diced · garlic cloves, minced · kosher salt, divided · tomato paste · dry red wine · whole milk · arrabbiata sauce · low-sodium chicken stock · fish sauce · bay leaf · Parmesan rind · black pepper · penne · unsalted butter · Parmesan, finely grated, plus more to serve",
       "chapter": null,
       "cuisine": "Italian",
-      "equipment": [
-        "Oven"
-      ],
+      "equipment": [],
       "cookSeconds": 10200,
       "waitSeconds": 0,
       "timerCount": 15,
