@@ -9,6 +9,7 @@ import { UNITS } from "../units.js";
 import { recipeHero } from "./hero.js";
 import { cookLogSection, getView, ingredientChecklist, loadRecipeOr404, openLogSheet, openTweaksSheet, renderStep, setView, shareRecipe } from "./shared.js";
 import { openScaleSheet } from "./scale.js";
+import { openToolDrawer } from "./tools.js";
 
 export async function viewRecipe(root, id, query) {
   let r = await loadRecipeOr404(root, id);
@@ -55,7 +56,8 @@ export async function viewRecipe(root, id, query) {
   document.addEventListener("click", () => (menu.hidden = true), { once: false, signal: pageSignal() });
 
   const body = h("div", { class: "recipe" });
-  root.append(navbar(backButton(), "", h("div", { class: "menu-anchor" }, star, more, menu)), body);
+  const tools = iconButton("tools", "Kitchen tools", () => openToolDrawer(r));
+  root.append(navbar(backButton(), "", h("div", { class: "menu-anchor" }, tools, star, more, menu)), body);
 
   function draw() {
     const { factor, units } = view;

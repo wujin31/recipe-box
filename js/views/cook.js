@@ -6,6 +6,7 @@ import { keepAwake, shortDuration, startTimer } from "../timers.js";
 import { backButton, fill, h, icon, iconButton, navbar } from "../ui.js";
 import { formatIngredient } from "../units.js";
 import { getView, ingredientChecklist, loadRecipeOr404, renderStep, timerInfo } from "./shared.js";
+import { openToolDrawer } from "./tools.js";
 
 // ---------- cooking mode ----------
 
@@ -44,7 +45,7 @@ export async function viewCook(root, id, query = new URLSearchParams()) {
     h("header", { class: "nav cook-nav" },
       h("div", { class: "nav-side" }, iconButton("close", "Close cooking mode", () => (location.hash = `#/r/${id}`))),
       counter,
-      h("div", { class: "nav-side right" })),
+      h("div", { class: "nav-side right" }, iconButton("tools", "Kitchen tools", () => openToolDrawer(r)))),
     progress, stage,
     h("footer", { class: "cook-foot" }, prev, next));
 
@@ -106,6 +107,7 @@ export async function viewCook(root, id, query = new URLSearchParams()) {
     x0 = null;
   });
   document.addEventListener("keydown", (e) => {
+    if (e.target.closest?.("input, select, textarea, dialog")) return; // typing in a tool, not turning pages
     if (e.key === "ArrowRight") go(i + 1);
     if (e.key === "ArrowLeft") go(i - 1);
   }, { signal: pageSignal() });

@@ -10,7 +10,7 @@ import { viewHome } from "./views/home.js";
 import { viewChapter } from "./views/chapter.js";
 import { viewSearch } from "./views/search.js";
 import { viewSort } from "./views/sort.js";
-import { viewTools } from "./views/placeholders.js";
+import { viewTools } from "./views/tools.js";
 import { viewTimers } from "./views/timers-tab.js";
 import { mountTabBar } from "./views/tabbar.js";
 import { viewRecipe } from "./views/recipe.js";
@@ -49,7 +49,7 @@ async function route() {
   else if (parts[0] === "search") await viewSearch(root, query);
   else if (parts[0] === "sort") await viewSort(root);
   else if (parts[0] === "timers") viewTimers(root);
-  else if (parts[0] === "tools") viewTools(root);
+  else if (parts[0] === "tools") viewTools(root, parts[1]);
   else if (parts[0] === "import") viewImport(root, query);
   else if (parts[0] === "settings") viewSettings(root);
   else await viewHome(root);

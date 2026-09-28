@@ -36,11 +36,11 @@ tab bar Cookbook · Search · + · Timers · Tools.
 - [x] Timers tab: standalone timers, presets, running recipe timers
 
 ## Phase 3: Kitchen tools (review point)
-- [ ] Tool framework (`js/tools/`), tools can read the current recipe
-- [ ] Tools tab with pinning; 🧰 drawer on recipes and in cooking mode
-- [ ] Pasta water & salt (salt densities checked against sources)
-- [ ] Salt % (brines, dry brines, ferments)
-- [ ] Cups ↔ grams (per ingredient), °F/°C, gas marks
+- [x] Tool framework (`js/tools/`), tools can read the current recipe
+- [x] Tools tab with pinning; 🧰 drawer on recipes and in cooking mode
+- [x] Pasta water & salt (salt densities checked against sources)
+- [x] Salt % (brines, dry brines, ferments)
+- [x] Cups ↔ grams (per ingredient), °F/°C, gas marks
 - [ ] Preview link + QA pass
 
 ## Phase 4: With the merge

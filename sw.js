@@ -1,7 +1,7 @@
 // Offline support. The app shell is served from cache and refreshed in the background;
 // recipe data is network-first with the cache as a fallback.
 
-const SHELL = "rb-shell-v6";
+const SHELL = "rb-shell-v7";
 // Every file the app needs. A test checks this list against js/ so a missing file can't break
 // offline installs.
 const SHELL_FILES = [
@@ -9,8 +9,9 @@ const SHELL_FILES = [
   "js/app.js", "js/parser.js", "js/units.js", "js/store.js", "js/timers.js", "js/ui.js", "js/lifecycle.js", "js/cookbook.js",
   "js/views/shared.js", "js/views/recipe.js", "js/views/cook.js", "js/views/form.js", "js/views/settings.js",
   "js/views/timer-tray.js", "js/views/home.js", "js/views/chapter.js", "js/views/search.js", "js/views/sort.js",
-  "js/views/tiles.js", "js/views/hero.js", "js/views/tabbar.js", "js/views/placeholders.js",
-  "js/views/scale.js", "js/views/timers-tab.js",
+  "js/views/tiles.js", "js/views/hero.js", "js/views/tabbar.js",
+  "js/views/scale.js", "js/views/timers-tab.js", "js/views/tools.js",
+  "js/tools/index.js", "js/tools/kit.js", "js/tools/salts.js", "js/tools/pasta.js", "js/tools/salt.js", "js/tools/convert.js",
   "icons/apple-touch-icon.png", "icons/icon-192.png",
 ];
 
