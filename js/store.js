@@ -286,27 +286,47 @@ export async function createRecipe(parsed, sourceText, extra = {}) {
 }
 
 // Apply `change(recipe)` to the latest copy of a recipe and commit it.
-export async function updateRecipe(id, message, change) {
+// `source` replaces the recipe's source.txt too (re-importing an updated card).
+export async function updateRecipe(id, message, change, { source } = {}) {
   let saved;
   await commit(message, async (ref) => {
     const current = JSON.parse(await readFile(recipePath(id), ref));
     saved = { ...change(current), id, updatedAt: new Date().toISOString() };
     const next = withSummary(parseIndex(await readFile(INDEX, ref)), saved);
     indexMemo = next;
-    return { [recipePath(id)]: json(saved), [INDEX]: json(next) };
+    return {
+      [recipePath(id)]: json(saved),
+      [INDEX]: json(next),
+      ...(source != null ? { [sourcePath(id)]: source.trim() + "\n" } : {}),
+    };
   });
   return saved;
 }
 
+// Returns what was deleted, so restoreRecipe() can put it back.
 export async function deleteRecipe(id) {
+  const deleted = {};
   await commit(`Delete recipe: ${id}`, async (ref) => {
     const index = parseIndex(await readFile(INDEX, ref));
     const next = { ...index, recipes: index.recipes.filter((r) => r.id !== id) };
     indexMemo = next;
     const files = { [INDEX]: json(next) };
     for (const path of [recipePath(id), sourcePath(id)]) {
-      if ((await readFile(path, ref)) != null) files[path] = null;
+      const text = await readFile(path, ref);
+      if (text != null) { files[path] = null; deleted[path] = text; }
     }
     return files;
   });
+  return { id, files: deleted };
+}
+
+// Undo a delete: put the files back and the recipe back in the index.
+export async function restoreRecipe({ id, files }) {
+  const recipe = JSON.parse(files[recipePath(id)]);
+  await commit(`Restore recipe: ${recipe.englishName || recipe.name}`, async (ref) => {
+    const next = withSummary(parseIndex(await readFile(INDEX, ref)), recipe);
+    indexMemo = next;
+    return { ...files, [INDEX]: json(next) };
+  });
+  return recipe;
 }

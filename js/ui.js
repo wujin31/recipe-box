@@ -48,12 +48,15 @@ export const icon = (name, cls = "") =>
 export const iconButton = (name, label, onClick, cls = "") =>
   h("button", { class: `icon-btn ${cls}`, "aria-label": label, title: label, onClick }, icon(name));
 
-export function toast(message, kind = "") {
+// A short message at the top. `action` adds a button ({ label, onClick }), e.g. Undo.
+export function toast(message, kind = "", action = null) {
   document.querySelectorAll(".toast").forEach((t) => t.remove());
-  const el = h("div", { class: `toast ${kind}`, role: "status" }, message);
+  const close = () => { el.classList.remove("show"); setTimeout(() => el.remove(), 300); };
+  const el = h("div", { class: `toast ${kind} ${action ? "has-action" : ""}`, role: "status" }, message,
+    action ? h("button", { class: "toast-action", onClick: () => { close(); action.onClick(); } }, action.label) : null);
   document.body.append(el);
   requestAnimationFrame(() => el.classList.add("show"));
-  setTimeout(() => { el.classList.remove("show"); setTimeout(() => el.remove(), 300); }, kind === "error" ? 5000 : 2500);
+  setTimeout(close, action ? 6000 : kind === "error" ? 5000 : 2500);
 }
 
 export function errorMessage(e) {

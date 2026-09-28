@@ -8,6 +8,7 @@ import { viewEdit, viewImport } from "./views/form.js";
 import { viewHome } from "./views/home.js";
 import { viewChapter } from "./views/chapter.js";
 import { viewSearch } from "./views/search.js";
+import { viewSort } from "./views/sort.js";
 import { viewTimers, viewTools } from "./views/placeholders.js";
 import { mountTabBar } from "./views/tabbar.js";
 import { viewRecipe } from "./views/recipe.js";
@@ -41,6 +42,7 @@ async function route() {
     else await viewRecipe(root, id, query);
   } else if (parts[0] === "c" && parts[1]) await viewChapter(root, parts[1]);
   else if (parts[0] === "search") await viewSearch(root, query);
+  else if (parts[0] === "sort") await viewSort(root);
   else if (parts[0] === "timers") viewTimers(root);
   else if (parts[0] === "tools") viewTools(root);
   else if (parts[0] === "import") viewImport(root, query);

@@ -143,6 +143,38 @@ export function openLogSheet(r, onSaved) {
   dialog.showModal();
 }
 
+export function openTweaksSheet(r, onSaved) {
+  if (!requireWrite()) return;
+  const text = h("textarea", { rows: 6, value: r.tweaks ?? "", placeholder: "e.g. Use 400 ml water in the Zojirushi. Half the chili for kids." });
+  const save = h("button", { class: "button primary", type: "submit" }, "Save");
+  const dialog = h("dialog", { class: "sheet" },
+    h("form", {
+      method: "dialog",
+      onSubmit: async (e) => {
+        e.preventDefault();
+        save.disabled = true; save.textContent = "Saving…";
+        const tweaks = text.value.trim();
+        try {
+          const next = await updateRecipe(r.id, `Tweaks: ${displayName(r)}`, (cur) => {
+            const { tweaks: _old, ...rest } = cur;
+            return tweaks ? { ...rest, tweaks } : rest;
+          });
+          dialog.close(); toast("Saved"); onSaved(next);
+        } catch (err) {
+          toast(errorMessage(err), "error"); save.disabled = false; save.textContent = "Save";
+        }
+      },
+    },
+    h("div", { class: "sheet-head" },
+      h("button", { type: "button", class: "link", onClick: () => dialog.close() }, "Cancel"),
+      h("strong", {}, "My tweaks"), save),
+    h("label", {}, "Your changes to this recipe", text)));
+  dialog.addEventListener("close", () => dialog.remove());
+  document.body.append(dialog);
+  dialog.showModal();
+  text.focus();
+}
+
 export async function shareRecipe(r) {
   const text = recipeToText(r);
   if (navigator.share) {

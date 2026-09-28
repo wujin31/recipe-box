@@ -2,15 +2,19 @@
 
 import { pageSignal } from "../lifecycle.js";
 import { recipeToText } from "../parser.js";
-import { canWrite, deleteRecipe, safeUrl, updateRecipe } from "../store.js";
+import { canWrite, deleteRecipe, getChapters, restoreRecipe, safeUrl, updateRecipe } from "../store.js";
+import { chaptersFrom } from "../cookbook.js";
 import { backButton, copyText, displayName, errorMessage, fill, h, icon, iconButton, navbar, requireWrite, segmented, subName, toast } from "../ui.js";
 import { UNITS, formatIngredient } from "../units.js";
-import { cookLogSection, getView, loadRecipeOr404, openLogSheet, renderStep, setView, shareRecipe } from "./shared.js";
+import { recipeHero } from "./hero.js";
+import { cookLogSection, getView, loadRecipeOr404, openLogSheet, openTweaksSheet, renderStep, setView, shareRecipe } from "./shared.js";
 
 export async function viewRecipe(root, id, query) {
   let r = await loadRecipeOr404(root, id);
   if (!r || !root.isConnected) return; // navigated away while loading
   let view = getView(id);
+  const chapters = await getChapters().catch(() => chaptersFrom(null));
+  if (!root.isConnected) return;
 
   // Taps flip the wish right away; saves run one at a time and always save the latest wish.
   let wantFavorite = Boolean(r.favorite);
@@ -35,8 +39,15 @@ export async function viewRecipe(root, id, query) {
     h("a", { href: `#/r/${id}/edit` }, "Edit"),
     safeUrl(r.chatUrl) ? h("a", { href: safeUrl(r.chatUrl), target: "_blank", rel: "noopener noreferrer" }, "Open Claude chat") : null,
     h("button", { class: "danger", onClick: async () => {
-      if (!requireWrite() || !confirm(`Delete “${displayName(r)}”? Its cook log goes too.`)) return;
-      try { await deleteRecipe(id); toast("Deleted"); location.hash = "#/"; } catch (e) { toast(errorMessage(e), "error"); }
+      // No "are you sure?": the toast offers Undo instead.
+      if (!requireWrite()) return;
+      try {
+        const deleted = await deleteRecipe(id);
+        location.hash = "#/";
+        toast(`Deleted “${displayName(r)}”`, "", { label: "Undo", onClick: async () => {
+          try { await restoreRecipe(deleted); toast("Restored"); location.hash = `#/r/${id}`; } catch (e) { toast(errorMessage(e), "error"); }
+        } });
+      } catch (e) { toast(errorMessage(e), "error"); }
     } }, "Delete"),
   );
   const more = iconButton("more", "More", (e) => { e.stopPropagation(); menu.hidden = !menu.hidden; });
@@ -70,8 +81,7 @@ export async function viewRecipe(root, id, query) {
     });
 
     fill(body,
-      h("h1", { class: "recipe-title" }, displayName(r)),
-      subName(r) ? h("p", { class: "recipe-sub" }, subName(r)) : null,
+      recipeHero(r, chapters),
       r.description ? h("p", { class: "description" }, r.description) : null,
       r.tags?.length ? h("div", { class: "row-meta" }, r.tags.map((t) => h("a", { class: "tag", href: `#/search?q=${encodeURIComponent(t)}` }, t))) : null,
 
@@ -113,6 +123,13 @@ export async function viewRecipe(root, id, query) {
           h("p", {}, renderStep(s, r, factor, units, `${displayName(r)} · step ${i + 1}`)))))),
 
       r.notes ? h("section", {}, h("h2", {}, "Notes"), h("p", { class: "notes" }, r.notes)) : null,
+
+      // Your own changes, kept apart from Claude's notes so re-importing the card never touches them.
+      h("section", { class: "tweaks" },
+        h("div", { class: "section-head" },
+          h("h2", {}, "My tweaks"),
+          h("button", { class: "button small", onClick: () => openTweaksSheet(r, (next) => { r = next; draw(); }) }, r.tweaks ? "Edit" : "Add")),
+        r.tweaks ? h("p", { class: "notes card" }, r.tweaks) : h("p", { class: "muted small" }, "Your changes to this recipe, like “use 400 ml water”. Re-importing the card keeps them.")),
 
       cookLogSection(r, (next) => { r = next; draw(); }),
 

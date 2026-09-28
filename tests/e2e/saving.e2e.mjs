@@ -29,7 +29,7 @@ test("Test connection reports bad and read-only tokens", async () => {
 test("a read-only save explains the fix, and the paste survives a trip to Settings", async () => {
   await app.goto("#/import");
   await paste("Draft Test · Draft\n\nIngredients\n• 1 egg\n\nSteps\n1. Boil 1 egg for 7 minutes.", "Draft");
-  await page.click('button:has-text("Save recipe")');
+  await page.click('form button[type="submit"]');
   await page.waitForFunction(() => document.querySelector(".toast.error")?.textContent.includes("Contents must be"));
   await app.connect("test-token");
   await app.goto("#/import");
@@ -47,7 +47,7 @@ test("import a card: preview, save, files committed", async () => {
   assert.match(await text(".preview"), /8 ingredients · 4 steps · 3 timers/);
   await page.fill('label:has-text("Servings") input', "2");
   await page.fill('label:has-text("Tags") input', "Thai, quick");
-  await page.click('button:has-text("Save recipe")');
+  await page.click('form button[type="submit"]');
   await page.waitForURL(/#\/r\/pad-kra-pao-gai$/);
   await page.waitForSelector(".recipe-title");
   assert.ok(app.repo.json("recipes/pad-kra-pao-gai/recipe.json"));
@@ -116,7 +116,7 @@ test("JSON from the export prompt keeps timers and servings; edit and copy keep 
   await paste(reply, "Hayashi Rice");
   assert.match(await text(".preview"), /3 ingredients · 3 steps · 2 timers/);
   assert.equal(await page.inputValue('label:has-text("Servings") input'), "4");
-  await page.click('button:has-text("Save recipe")');
+  await page.click('form button[type="submit"]');
   await page.waitForURL(/#\/r\/hayashi-raisu$/);
   await page.waitForSelector(".recipe-title");
   assert.equal(await text(".recipe-title"), "Hayashi Rice");
@@ -146,12 +146,12 @@ test("a save whose reply is lost doesn't duplicate, and saving the same paste ag
   await app.goto("#/import");
   await paste(card, "Lost Reply Soup");
   app.repo.dropNextPatchReply = true;
-  await page.click('button:has-text("Save recipe")');
+  await page.click('form button[type="submit"]');
   await page.waitForURL(/#\/r\/lost-reply-soup$/, { timeout: 10000 });
   assert.equal(index().length, before + 1);
   await app.goto("#/import");
   await paste(card, "Lost Reply Soup");
-  await page.click('button:has-text("Save recipe")');
+  await page.click('form button[type="submit"]');
   await page.waitForURL(/#\/r\/lost-reply-soup$/, { timeout: 10000 });
   assert.equal(app.repo.files()["recipes/lost-reply-soup-2/recipe.json"], undefined);
 });

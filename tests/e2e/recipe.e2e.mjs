@@ -9,18 +9,24 @@ after(async () => { await app.close(); });
 
 const text = (sel) => page.textContent(sel);
 
-test("library lists the seeded recipes", async () => {
+test("home shows the seeded recipes (all unsorted until given chapters)", async () => {
   await app.goto();
-  await page.waitForSelector(".row");
-  assert.equal(await page.locator(".row").count(), 4);
-  assert.match(await text(".list"), /Thai Chicken Biryani/);
-  await app.shot("library");
+  await page.waitForSelector(".tile");
+  assert.equal(await page.locator(".tile").count(), 4);
+  assert.match(await text(".sort-banner"), /4 recipes to sort/);
+  await app.shot("home");
+});
+
+test("recipe header shows its names and facts", async () => {
+  await page.click('.tile[aria-label="Thai Chicken Biryani"]');
+  await page.waitForSelector(".recipe-title");
+  assert.match(await text(".hero-native"), /ข้าวหมกไก่/);
+  assert.equal(await text(".recipe-title"), "Thai Chicken Biryani");
+  assert.match(await text(".hero-eyebrow"), /Unsorted.*Thai/);
+  assert.match(await text(".facts"), /4 servings/);
 });
 
 test("servings stepper, units, and scaled amounts inside steps", async () => {
-  await page.click('.row:has-text("Thai Chicken Biryani")');
-  await page.waitForSelector(".recipe-title");
-  assert.match(await text(".recipe-sub"), /ข้าวหมกไก่/);
   assert.equal(await text(".stepper-value strong"), "4");
   for (let i = 0; i < 3; i++) await page.click('button[aria-label="More servings"]');
   assert.equal(await text(".stepper-value strong"), "7");

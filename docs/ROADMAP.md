@@ -17,16 +17,16 @@ tab bar Cookbook · Search · + · Timers · Tools.
 - [x] Type sizes in rem so iOS text size settings apply
 
 ## Phase 1: Cookbook design (review point)
-- [ ] Tab bar: Cookbook · Search · + · Timers · Tools
-- [ ] Home: continue cooking, chapter shelves, chapter list, Unsorted badge
-- [ ] Chapter page: 2-column grid, filters (cuisine, favorites, under 45 min)
-- [ ] Recipe page header: chapter · cuisine · equipment, servings, time, timers, cooked count
-- [ ] Search tab grouped by chapter, matches highlighted
-- [ ] Add: chapter picker with a guess; cuisine/equipment tags added; re-import offers to
+- [x] Tab bar: Cookbook · Search · + · Timers · Tools
+- [x] Home: continue cooking, chapter shelves, chapter list, Unsorted badge
+- [x] Chapter page: 2-column grid, filters (cuisine, favorites, under 45 min)
+- [x] Recipe page header: chapter · cuisine · equipment, servings, time, timers, cooked count
+- [x] Search tab grouped by chapter, matches highlighted
+- [x] Add: chapter picker with a guess; cuisine/equipment tags added; re-import offers to
       update the existing recipe (keeps log, favorite, tweaks)
-- [ ] Sort screen for unsorted recipes
-- [ ] Undo delete
-- [ ] "My tweaks" per recipe, separate from Claude's notes
+- [x] Sort screen for unsorted recipes
+- [x] Undo delete
+- [x] "My tweaks" per recipe, separate from Claude's notes
 - [ ] Preview link + QA pass
 
 ## Phase 2: Cooking
