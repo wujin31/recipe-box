@@ -341,7 +341,7 @@
       "favorite": false,
       "servings": 4,
       "items": "boneless skinless chicken thighs (about 6) · soy sauce (marinade) · Taiwanese rice wine, 米酒 (mǐjiǔ), or sake · white pepper · shallots, sliced 2 mm thick · lard, 豬油 (zhūyóu), or neutral oil, for frying shallots · short-grain Japanese rice · large eggs · baby bok choy, 青江菜 (qīngjiāng cài), halved · low-sodium or homemade chicken stock · soy sauce (jus) · hon-mirin · fried shallots, for the jus · shallot oil, for finishing the jus · scallions, thinly sliced · kosher salt",
-      "chapter": null,
+      "chapter": "rice",
       "cuisine": "Chinese",
       "equipment": [
         "Rice cooker"
@@ -351,7 +351,7 @@
       "timerCount": 13,
       "stepCount": 12,
       "createdAt": "2026-09-26T05:06:18.497Z",
-      "updatedAt": "2026-09-26T05:06:18.497Z",
+      "updatedAt": "2026-09-29T01:10:09.522Z",
       "lastCooked": null,
       "cookCount": 0
     },
