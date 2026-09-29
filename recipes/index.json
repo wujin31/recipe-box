@@ -149,7 +149,7 @@
       "favorite": false,
       "servings": null,
       "items": "short-grain rice (1 rice-cooker cup) · toasted sesame oil 참기름 (chamgireum) · bone-in, skin-on chicken thighs · garlic cloves, whole · ginger, sliced · scallion whites (keep the greens for garnish) · carrot, finely diced (3 mm) · small onion, finely diced · water · soup soy sauce 국간장 (guk-ganjang) · kosher salt, to taste · scallion greens, sliced · crumbled roasted laver 김가루 (gimgaru) · toasted sesame seeds 깨 (kkae)",
-      "chapter": null,
+      "chapter": "breakfast",
       "cuisine": "Korean",
       "equipment": [
         "Rice cooker"
@@ -159,7 +159,7 @@
       "timerCount": 2,
       "stepCount": 5,
       "createdAt": "2026-09-23T06:03:18.123Z",
-      "updatedAt": "2026-09-23T06:03:36.451Z",
+      "updatedAt": "2026-09-29T01:09:48.182Z",
       "lastCooked": null,
       "cookCount": 0
     },
