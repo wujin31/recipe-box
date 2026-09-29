@@ -173,7 +173,7 @@
       "favorite": false,
       "servings": 3,
       "items": "Persian cucumbers · kosher salt · granulated sugar · Totole mushroom bouillon powder · house blend oil (5:1 canola to olive) · toasted sesame oil · clear chili oil, from the top of the jar (see notes) · thin slices fresh raw garlic, for topping · thin slices Fresno chili, for topping",
-      "chapter": null,
+      "chapter": "salads",
       "cuisine": "Taiwanese",
       "equipment": [],
       "cookSeconds": 5400,
@@ -181,7 +181,7 @@
       "timerCount": 1,
       "stepCount": 6,
       "createdAt": "2026-09-26T04:29:19.292Z",
-      "updatedAt": "2026-09-26T04:29:19.292Z",
+      "updatedAt": "2026-09-29T01:09:50.426Z",
       "lastCooked": null,
       "cookCount": 0
     },
