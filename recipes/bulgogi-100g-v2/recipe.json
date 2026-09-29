@@ -137,10 +137,6 @@
         {
           "text": "20 minutes",
           "seconds": 1200
-        },
-        {
-          "text": "4 hours",
-          "seconds": 14400
         }
       ]
     },
@@ -204,6 +200,6 @@
   "favorite": false,
   "log": [],
   "createdAt": "2026-09-26T05:23:43.841Z",
-  "updatedAt": "2026-09-29T01:09:13.560Z",
-  "chapter": "mains"
+  "updatedAt": "2026-09-29T01:12:18.679Z",
+  "chapter": "rice"
 }
