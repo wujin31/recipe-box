@@ -269,7 +269,7 @@
       "favorite": false,
       "servings": null,
       "items": "short-grain rice (3 rice-cooker cups) · beef chuck or ribeye, julienned · soy sauce (for beef marinade) · minced garlic (for beef marinade) · toasted sesame oil 참기름 (chamgireum) (for beef marinade) · Korean radish 무 (mu), cut into 5 mm matchsticks · kombu 다시마 (dasima), about a 5 cm piece · soy sauce (for yangnyeomjang) · gochugaru 고춧가루 · scallions, finely chopped · minced garlic (for yangnyeomjang) · toasted sesame oil (for yangnyeomjang) · toasted sesame seeds 통깨 (tongkkae), crushed · sugar · Cheongyang chili 청양고추 (cheongyang gochu), minced (optional)",
-      "chapter": "rice",
+      "chapter": "breakfast",
       "cuisine": "Korean",
       "equipment": [
         "Rice cooker"
@@ -279,7 +279,7 @@
       "timerCount": 3,
       "stepCount": 5,
       "createdAt": "2026-09-23T06:03:59.387Z",
-      "updatedAt": "2026-09-29T01:10:01.754Z",
+      "updatedAt": "2026-09-29T01:11:44.815Z",
       "lastCooked": null,
       "cookCount": 0
     },
