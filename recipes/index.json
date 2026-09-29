@@ -453,7 +453,7 @@
       "favorite": false,
       "servings": 4,
       "items": "short-grain Japanese rice (Koshihikari), 3 gō · water (or fill to the 3-cup Sushi line) · sake · kombu (昆布 / konbu), about 5 cm square · pure rice vinegar (純米酢 / junmai-su, e.g. Chidori-su) · sugar · sea salt (粗塩 / arajio)",
-      "chapter": null,
+      "chapter": "sauces",
       "cuisine": "Japanese",
       "equipment": [
         "Rice cooker"
@@ -463,7 +463,7 @@
       "timerCount": 10,
       "stepCount": 9,
       "createdAt": "2026-09-26T04:36:37.251Z",
-      "updatedAt": "2026-09-26T04:36:37.251Z",
+      "updatedAt": "2026-09-29T01:10:22.281Z",
       "lastCooked": null,
       "cookCount": 0
     },
