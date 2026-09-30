@@ -1,0 +1,200 @@
+{
+  "id": "v3-geurinbin-maneul-bokkeum-v3",
+  "name": "그린빈 마늘볶음 v3 / Geurinbin Maneul-bokkeum v3",
+  "nativeName": "그린빈 마늘볶음",
+  "romanized": "v3 / Geurinbin Maneul-bokkeum v3",
+  "englishName": "v3 / Geurinbin Maneul-bokkeum v3",
+  "description": "Blistered garlic green bean banchan, reviewed and corrected: premixed seasoning, fish-sauce savory anchor, doneness check for thick beans.",
+  "ingredients": [
+    {
+      "text": "110 g green beans / 그린빈 (geurinbin), trimmed",
+      "qty": 110,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "green beans / 그린빈 (geurinbin), trimmed"
+    },
+    {
+      "text": "4.9 ml soy sauce / 진간장 (jin-ganjang)",
+      "qty": 4.9,
+      "qtyMax": null,
+      "unit": "ml",
+      "item": "soy sauce / 진간장 (jin-ganjang)"
+    },
+    {
+      "text": "2.5 ml anchovy fish sauce / 멸치액젯 (myeolchi-aekjeot)",
+      "qty": 2.5,
+      "qtyMax": null,
+      "unit": "ml",
+      "item": "anchovy fish sauce / 멸치액젯 (myeolchi-aekjeot)"
+    },
+    {
+      "text": "1.2 ml sugar",
+      "qty": 1.2,
+      "qtyMax": null,
+      "unit": "ml",
+      "item": "sugar"
+    },
+    {
+      "text": "0.62 ml MSG",
+      "qty": 0.62,
+      "qtyMax": null,
+      "unit": "ml",
+      "item": "MSG"
+    },
+    {
+      "text": "15 ml neutral oil",
+      "qty": 15,
+      "qtyMax": null,
+      "unit": "ml",
+      "item": "neutral oil"
+    },
+    {
+      "text": "15 ml water, only if needed",
+      "qty": 15,
+      "qtyMax": null,
+      "unit": "ml",
+      "item": "water, only if needed"
+    },
+    {
+      "text": "3 garlic cloves, thinly sliced / 편마늘 (pyeon-maneul)",
+      "qty": 3,
+      "qtyMax": null,
+      "unit": null,
+      "item": "garlic cloves, thinly sliced / 편마늘 (pyeon-maneul)"
+    },
+    {
+      "text": "2.5 ml toasted sesame oil / 참기름 (chamgireum)",
+      "qty": 2.5,
+      "qtyMax": null,
+      "unit": "ml",
+      "item": "toasted sesame oil / 참기름 (chamgireum)"
+    },
+    {
+      "text": "2.5 ml whole toasted sesame seeds / 통깨 (tongkkae)",
+      "qty": 2.5,
+      "qtyMax": null,
+      "unit": "ml",
+      "item": "whole toasted sesame seeds / 통깨 (tongkkae)"
+    },
+    {
+      "text": "1.2 ml Korean chili flakes / 고추가루 (gochugaru)",
+      "qty": 1.2,
+      "qtyMax": null,
+      "unit": "ml",
+      "item": "Korean chili flakes / 고추가루 (gochugaru)"
+    }
+  ],
+  "steps": [
+    {
+      "text": "Rinse 110 g green beans / 그린빈 (geurinbin), trimmed, then spread them on a towel and pat dry. If any water still clings, let them air-dry for 5 minutes.",
+      "ingredientRefs": [
+        0
+      ],
+      "timers": [
+        {
+          "text": "5 minutes",
+          "seconds": 300
+        }
+      ]
+    },
+    {
+      "text": "In a small dish, stir together 4.9 ml soy sauce / 진간장 (jin-ganjang), 2.5 ml anchovy fish sauce / 멸치액젯 (myeolchi-aekjeot), 1.2 ml sugar, and 0.62 ml MSG until the sugar dissolves. Keep it next to the stove.",
+      "ingredientRefs": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "timers": []
+    },
+    {
+      "text": "Heat 15 ml neutral oil in a stainless skillet over medium-high until shimmering, about 2 minutes.",
+      "ingredientRefs": [
+        5
+      ],
+      "timers": [
+        {
+          "text": "2 minutes",
+          "seconds": 120
+        }
+      ]
+    },
+    {
+      "text": "Add the beans in a single layer and leave them undisturbed for 1 minute.",
+      "ingredientRefs": [],
+      "timers": [
+        {
+          "text": "1 minute",
+          "seconds": 60
+        }
+      ]
+    },
+    {
+      "text": "Continue cooking, tossing occasionally, until brown blistered patches appear and the skins wrinkle, about 6 minutes.",
+      "ingredientRefs": [],
+      "timers": [
+        {
+          "text": "6 minutes",
+          "seconds": 360
+        }
+      ]
+    },
+    {
+      "text": "Bite one bean. If the center is still squeaky and raw, add 15 ml water, only if needed, cover immediately, and steam for 1 minute, then uncover and let any remaining water cook off. Skip this step if the beans are already tender.",
+      "ingredientRefs": [
+        6
+      ],
+      "timers": [
+        {
+          "text": "1 minute",
+          "seconds": 60
+        }
+      ]
+    },
+    {
+      "text": "Lower the heat to medium. Add 3 garlic cloves, thinly sliced / 편마늘 (pyeon-maneul) and toss constantly until pale gold and fragrant, about 45 seconds.",
+      "ingredientRefs": [
+        7
+      ],
+      "timers": [
+        {
+          "text": "45 seconds",
+          "seconds": 45
+        }
+      ]
+    },
+    {
+      "text": "Pour the premixed seasoning into the pan and toss hard until it sizzles away and coats every bean, about 20 seconds.",
+      "ingredientRefs": [],
+      "timers": [
+        {
+          "text": "20 seconds",
+          "seconds": 20
+        }
+      ]
+    },
+    {
+      "text": "Off heat, add 2.5 ml toasted sesame oil / 참기름 (chamgireum), 2.5 ml whole toasted sesame seeds / 통깨 (tongkkae), and 1.2 ml Korean chili flakes / 고추가루 (gochugaru) and toss once. Rest for 5 minutes before serving so the seasoning moves inward.",
+      "ingredientRefs": [
+        8,
+        9,
+        10
+      ],
+      "timers": [
+        {
+          "text": "5 minutes",
+          "seconds": 300
+        }
+      ]
+    }
+  ],
+  "notes": "Ingredient quality. \\uba78\\uce58\\uc561\\uc82f / myeolchi-aekjeot from a Korean producer (\\uccad\\uc815\\uc6d0 / Cheongjeongwon or \\ud558\\uc120\\uc815 / Haseonjeong) is the correct call here. Thai or Vietnamese fish sauces work, but they're sharper and funkier than the Korean style. Choose slender, firm beans; thick, older beans cook unevenly and are why the doneness check exists.\n\nWhy fish sauce instead of salt. It supplies both salt and savory depth, which is exactly what v1 was missing, and it doesn't echo the bulgogi's soy-sugar profile the way doubling the soy would.\n\nWhy premix. The seasoning has to land all at once in a hot pan. Measuring four things into the pan one by one means the first ones scorch before the last go in.\n\nWhy the rest matters. Seasoning on a hot surface stays on the surface. The rest is when it moves in, which is also why banchan taste more seasoned at room temperature.\n\nCalibration variables: 1. Whether the seasoning level landed right now that kosher salt is gone and fish sauce is in. 2. Whether MSG is still doing noticeable work alongside the fish sauce, or can be dropped. 3. Whether your beans needed the steam check.",
+  "servings": 1,
+  "tags": [],
+  "chatUrl": null,
+  "chapter": "salads",
+  "favorite": false,
+  "log": [],
+  "createdAt": "2026-09-30T04:34:08.909Z",
+  "updatedAt": "2026-09-30T04:34:08.909Z"
+}

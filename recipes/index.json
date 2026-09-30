@@ -560,6 +560,28 @@
       "cookCount": 0
     },
     {
+      "id": "v3-geurinbin-maneul-bokkeum-v3",
+      "name": "그린빈 마늘볶음 v3 / Geurinbin Maneul-bokkeum v3",
+      "englishName": "v3 / Geurinbin Maneul-bokkeum v3",
+      "nativeName": "그린빈 마늘볶음",
+      "romanized": "v3 / Geurinbin Maneul-bokkeum v3",
+      "tags": [],
+      "favorite": false,
+      "servings": 1,
+      "items": "green beans / 그린빈 (geurinbin), trimmed · soy sauce / 진간장 (jin-ganjang) · anchovy fish sauce / 멸치액젯 (myeolchi-aekjeot) · sugar · MSG · neutral oil · water, only if needed · garlic cloves, thinly sliced / 편마늘 (pyeon-maneul) · toasted sesame oil / 참기름 (chamgireum) · whole toasted sesame seeds / 통깨 (tongkkae) · Korean chili flakes / 고추가루 (gochugaru)",
+      "chapter": "salads",
+      "cuisine": "Korean",
+      "equipment": [],
+      "cookSeconds": 1265,
+      "waitSeconds": 0,
+      "timerCount": 8,
+      "stepCount": 9,
+      "createdAt": "2026-09-30T04:34:08.909Z",
+      "updatedAt": "2026-09-30T04:34:08.909Z",
+      "lastCooked": null,
+      "cookCount": 0
+    },
+    {
       "id": "ximending-spam-qisi-dan-bing",
       "name": "西門町 Spam 起司蛋餅 (Xīméndīng Spam Qǐsī Dàn Bǐng)",
       "englishName": "Xīméndīng Spam Qǐsī Dàn Bǐng",
