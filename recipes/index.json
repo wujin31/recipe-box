@@ -188,6 +188,28 @@
       "cookCount": 0
     },
     {
+      "id": "din-tai-fung-garlic-green-beans",
+      "name": "Din Tai Fung Garlic Green Beans (蒜香四季豆)",
+      "englishName": "Din Tai Fung Garlic Green Beans",
+      "nativeName": "蒜香四季豆",
+      "romanized": "",
+      "tags": [],
+      "favorite": false,
+      "servings": 2,
+      "items": "green beans (four-season beans), trimmed · garlic, finely minced · neutral oil for shallow-frying · fine salt · white pepper · chicken bouillon powder (optional, for the restaurant umami)",
+      "chapter": "salads",
+      "cuisine": "Taiwanese",
+      "equipment": [],
+      "cookSeconds": 410,
+      "waitSeconds": 0,
+      "timerCount": 3,
+      "stepCount": 6,
+      "createdAt": "2026-09-30T04:28:24.725Z",
+      "updatedAt": "2026-09-30T04:28:24.725Z",
+      "lastCooked": null,
+      "cookCount": 0
+    },
+    {
       "id": "dtf-cucumber-salad",
       "name": "DTF Cucumber Salad — Farmer Method (UNTESTED)",
       "englishName": "DTF Cucumber Salad",
