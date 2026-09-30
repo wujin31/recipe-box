@@ -514,6 +514,28 @@
       "cookCount": 0
     },
     {
+      "id": "taiwanese-shop-style-chili-sauce",
+      "name": "台式辣椒醬 · Taiwanese Shop-Style Chili Sauce",
+      "englishName": "Taiwanese Shop-Style Chili Sauce",
+      "nativeName": "台式辣椒醬",
+      "romanized": "",
+      "tags": [],
+      "favorite": false,
+      "servings": 1,
+      "items": "large red chilis (大紅辣椒), minced · bird's-eye chilis (朝天椒), minced — seeds in for max heat · garlic, minced · shallots (紅蔥頭), minced · fermented black beans (豆豉), rinsed and roughly chopped · dried anchovies / small dried fish (小魚乾), patted dry · neutral oil · soy sauce · sugar · rice wine (米酒)",
+      "chapter": "sauces",
+      "cuisine": "Taiwanese",
+      "equipment": [],
+      "cookSeconds": 1215,
+      "waitSeconds": 0,
+      "timerCount": 4,
+      "stepCount": 7,
+      "createdAt": "2026-09-30T04:30:07.259Z",
+      "updatedAt": "2026-09-30T04:30:07.259Z",
+      "lastCooked": null,
+      "cookCount": 0
+    },
+    {
       "id": "ximending-spam-qisi-dan-bing",
       "name": "西門町 Spam 起司蛋餅 (Xīméndīng Spam Qǐsī Dàn Bǐng)",
       "englishName": "Xīméndīng Spam Qǐsī Dàn Bǐng",
