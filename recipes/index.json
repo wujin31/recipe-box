@@ -538,6 +538,28 @@
       "cookCount": 0
     },
     {
+      "id": "taiwanese-dan-dan-mian",
+      "name": "台式擔擔麵 (Taiwanese Dan Dan Mian) — all-sesame, celery version",
+      "englishName": "all-sesame, celery version",
+      "nativeName": "台式擔擔麵",
+      "romanized": "Taiwanese Dan Dan Mian",
+      "tags": [],
+      "favorite": false,
+      "servings": 2,
+      "items": "關廟麵 or dried thin noodles (陽春麵) · bok choy or baby spinach (青菜) · white sesame paste (白芝麻醬) · soy sauce (醬油) · black vinegar / Zhenjiang vinegar (烏醋 or 鎮江醋) · sugar (砂糖) · garlic, minced to paste (蒜泥) — added raw · sesame oil (香油) · Lao Gan Ma chili crisp (老干媽辣椒醬) — spoon from bottom of jar · Sichuan pepper oil (花椒油) — optional but recommended · cold drinking water (to thin sauce) · ground pork (豬絞肉) · celery, finely diced (西芹) — stands in for 榨菜 · Lao Gan Ma chili crisp (for pork topping) · soy sauce (for pork topping) · Shaoxing rice wine (紹興酒) · sugar (for pork topping) · salt (for celery, to taste) · neutral oil · scallions, thinly sliced (蔥花) · crushed roasted peanuts (花生碎) — optional garnish, omit if avoiding peanuts",
+      "chapter": "rice",
+      "cuisine": "Taiwanese",
+      "equipment": [],
+      "cookSeconds": 240,
+      "waitSeconds": 0,
+      "timerCount": 6,
+      "stepCount": 4,
+      "createdAt": "2026-09-30T04:49:10.396Z",
+      "updatedAt": "2026-09-30T04:49:10.396Z",
+      "lastCooked": null,
+      "cookCount": 0
+    },
+    {
       "id": "taiwanese-shop-style-chili-sauce",
       "name": "台式辣椒醬 · Taiwanese Shop-Style Chili Sauce",
       "englishName": "Taiwanese Shop-Style Chili Sauce",
