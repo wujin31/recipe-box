@@ -26,6 +26,30 @@
       "cookCount": 0
     },
     {
+      "id": "bai-xifan",
+      "name": "白稀飯 (Bái Xīfàn) · Taiwanese Plain Rice Porridge",
+      "englishName": "Taiwanese Plain Rice Porridge",
+      "nativeName": "白稀飯",
+      "romanized": "Bái Xīfàn",
+      "tags": [],
+      "favorite": false,
+      "servings": 4,
+      "items": "kombu 昆布 (konbu), about a 10 × 10 cm piece · cold water (for kombu dashi) · short-grain Japanese rice (1 rice-cooker cup) · Totole mushroom bouillon 蘑菇精 (mógū jīng) · boiling water (for thinning) · pork floss 肉鬆 (ròusōng) · pickled cucumber 醬瓜 (jiàngguā), chopped",
+      "chapter": "breakfast",
+      "cuisine": "Taiwanese",
+      "equipment": [
+        "Rice cooker"
+      ],
+      "cookSeconds": 4020,
+      "waitSeconds": 0,
+      "timerCount": 3,
+      "stepCount": 6,
+      "createdAt": "2026-09-30T04:59:38.382Z",
+      "updatedAt": "2026-09-30T04:59:38.382Z",
+      "lastCooked": null,
+      "cookCount": 0
+    },
+    {
       "id": "beef-sukiyaki-bowl",
       "name": "Gyū Suki-don 牛すき丼 — Beef Sukiyaki Bowl",
       "englishName": "Beef Sukiyaki Bowl",

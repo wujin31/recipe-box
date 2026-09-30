@@ -1,0 +1,126 @@
+{
+  "id": "bai-xifan",
+  "name": "白稀飯 (Bái Xīfàn) · Taiwanese Plain Rice Porridge",
+  "nativeName": "白稀飯",
+  "romanized": "Bái Xīfàn",
+  "englishName": "Taiwanese Plain Rice Porridge",
+  "description": "Loose Taiwanese-style porridge with intact grains, made with kombu dashi. Served with pork floss and pickled cucumber.",
+  "ingredients": [
+    {
+      "text": "10 g kombu 昆布 (konbu), about a 10 × 10 cm piece",
+      "qty": 10,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "kombu 昆布 (konbu), about a 10 × 10 cm piece"
+    },
+    {
+      "text": "990 ml cold water (for kombu dashi)",
+      "qty": 990,
+      "qtyMax": null,
+      "unit": "ml",
+      "item": "cold water (for kombu dashi)"
+    },
+    {
+      "text": "180 ml short-grain Japanese rice (1 rice-cooker cup)",
+      "qty": 180,
+      "qtyMax": null,
+      "unit": "ml",
+      "item": "short-grain Japanese rice (1 rice-cooker cup)"
+    },
+    {
+      "text": "1.2 ml Totole mushroom bouillon 蘑菇精 (mógū jīng)",
+      "qty": 1.2,
+      "qtyMax": null,
+      "unit": "ml",
+      "item": "Totole mushroom bouillon 蘑菇精 (mógū jīng)"
+    },
+    {
+      "text": "800 ml boiling water (for thinning)",
+      "qty": 800,
+      "qtyMax": null,
+      "unit": "ml",
+      "item": "boiling water (for thinning)"
+    },
+    {
+      "text": "59 ml pork floss 肉鬆 (ròusōng)",
+      "qty": 59,
+      "qtyMax": null,
+      "unit": "ml",
+      "item": "pork floss 肉鬆 (ròusōng)"
+    },
+    {
+      "text": "59 ml pickled cucumber 醬瓜 (jiàngguā), chopped",
+      "qty": 59,
+      "qtyMax": null,
+      "unit": "ml",
+      "item": "pickled cucumber 醬瓜 (jiàngguā), chopped"
+    }
+  ],
+  "steps": [
+    {
+      "text": "Put 10 g kombu 昆布 (konbu), about a 10 × 10 cm piece in 990 ml cold water (for kombu dashi) and refrigerate for at least 1 hour, or overnight. Remove the kombu before cooking. Cold extraction pulls out the glutamate without the slimy texture and off-flavors kombu gives off when it boils for a long time.",
+      "ingredientRefs": [
+        0,
+        1
+      ],
+      "timers": [
+        {
+          "text": "1 hour",
+          "seconds": 3600
+        }
+      ]
+    },
+    {
+      "text": "Rinse 180 ml short-grain Japanese rice (1 rice-cooker cup) two or three times, until the water is mostly clear. Drain well.",
+      "ingredientRefs": [
+        2
+      ],
+      "timers": []
+    },
+    {
+      "text": "Put the rice and all of the kombu dashi in the inner pan. Select Porridge and start.",
+      "ingredientRefs": [],
+      "timers": []
+    },
+    {
+      "text": "Near the end of the cycle, boil 800 ml boiling water (for thinning). Dissolve 1.2 ml Totole mushroom bouillon 蘑菇精 (mógū jīng) in the first 450 ml, and keep the rest plain and hot.",
+      "ingredientRefs": [
+        3,
+        4
+      ],
+      "timers": []
+    },
+    {
+      "text": "When the cycle ends, stir in the 450 ml of seasoned water. Add plain boiling water, up to about 350 ml more, until it's as loose as you like: 450 ml total brings you to about 1:8, 800 ml to about 1:10. Close the lid for 5 minutes, then cancel Keep Warm.",
+      "ingredientRefs": [],
+      "timers": [
+        {
+          "text": "5 minutes",
+          "seconds": 300
+        }
+      ]
+    },
+    {
+      "text": "Ladle into bowls. Add 59 ml pork floss 肉鬆 (ròusōng) at the table, just before eating. It dissolves into the porridge within a minute or two, and you want it to stay fluffy. Serve 59 ml pickled cucumber 醬瓜 (jiàngguā), chopped on the side, or spoon a little over the top.",
+      "ingredientRefs": [
+        5,
+        6
+      ],
+      "timers": [
+        {
+          "text": "a minute or two",
+          "seconds": 120
+        }
+      ]
+    }
+  ],
+  "notes": "Calibration variable: the amount of thinning water, and now it's the only one. Portion size: 1 rice cup makes 4 moderate breakfast-sized bowls. Scale up only after checking the maximum porridge line on your inner pan, since overfilling on Porridge can boil over through the steam vent. Contrast: pork floss and 醬瓜 are both sweet-salty, so add something on a different axis, such as richness and fat. A 荷包蛋 (h\\u00e9b\\u0101o d\\u00e0n, fried egg with crisp edges) or 菜脯蛋 (c\\u00e0ip\\u01d4 d\\u00e0n) would do it. Sodium: the Totole is a trace amount, and you can leave it out entirely and keep just the kombu. Meal prep: portion it straight away. It sets firm in the fridge, so reheat each portion with a splash of boiling water and add the toppings fresh.",
+  "servings": 4,
+  "tags": [],
+  "chatUrl": null,
+  "chapter": "breakfast",
+  "favorite": false,
+  "log": [],
+  "createdAt": "2026-09-30T04:59:38.382Z",
+  "updatedAt": "2026-09-30T04:59:38.382Z"
+}
