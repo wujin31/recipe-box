@@ -162,6 +162,30 @@
       "cookCount": 0
     },
     {
+      "id": "crispy-pork-belly-in-salsa-verde-with-refried-beans",
+      "name": "Crispy Pork Belly in Salsa Verde with Refried Beans",
+      "englishName": "Crispy Pork Belly in Salsa Verde with Refried Beans",
+      "nativeName": "",
+      "romanized": "",
+      "tags": [],
+      "favorite": false,
+      "servings": 6,
+      "items": "pork belly, cut in ~5 cm cubes · white onion (for pork) · bay leaves · garlic cloves (for pork) · salt · tomatillos, husked and rinsed · green serrano peppers · garlic cloves (for salsa) · white onion, small chunk · cilantro, packed · salt (for salsa) · cooked pinto beans, with some liquid · lard or reserved pork fat · white onion, minced (for beans) · salt (for beans)",
+      "chapter": "mains",
+      "cuisine": "Mexican",
+      "equipment": [
+        "Oven"
+      ],
+      "cookSeconds": 7080,
+      "waitSeconds": 0,
+      "timerCount": 6,
+      "stepCount": 9,
+      "createdAt": "2026-09-30T04:33:03.457Z",
+      "updatedAt": "2026-09-30T04:33:03.457Z",
+      "lastCooked": null,
+      "cookCount": 0
+    },
+    {
       "id": "dak-juk",
       "name": "닭죽 (Dak-juk) · Korean Chicken Porridge",
       "englishName": "Korean Chicken Porridge",

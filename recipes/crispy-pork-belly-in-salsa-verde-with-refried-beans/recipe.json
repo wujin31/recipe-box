@@ -1,0 +1,222 @@
+{
+  "id": "crispy-pork-belly-in-salsa-verde-with-refried-beans",
+  "name": "Crispy Pork Belly in Salsa Verde with Refried Beans",
+  "nativeName": "",
+  "romanized": "",
+  "englishName": "Crispy Pork Belly in Salsa Verde with Refried Beans",
+  "description": "Carnitas-style pork belly — simmered until tender, then crisped in its own fat — folded into a bright tomatillo-serrano salsa. Served with refried beans.",
+  "ingredients": [
+    {
+      "text": "4 lb pork belly, cut in ~5 cm cubes",
+      "qty": 4,
+      "qtyMax": null,
+      "unit": "lb",
+      "item": "pork belly, cut in ~5 cm cubes"
+    },
+    {
+      "text": "1/2 white onion (for pork)",
+      "qty": 0.5,
+      "qtyMax": null,
+      "unit": null,
+      "item": "white onion (for pork)"
+    },
+    {
+      "text": "4 bay leaves",
+      "qty": 4,
+      "qtyMax": null,
+      "unit": null,
+      "item": "bay leaves"
+    },
+    {
+      "text": "3 garlic cloves (for pork)",
+      "qty": 3,
+      "qtyMax": null,
+      "unit": null,
+      "item": "garlic cloves (for pork)"
+    },
+    {
+      "text": "2 tsp salt",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "salt"
+    },
+    {
+      "text": "15 tomatillos, husked and rinsed",
+      "qty": 15,
+      "qtyMax": null,
+      "unit": null,
+      "item": "tomatillos, husked and rinsed"
+    },
+    {
+      "text": "5 green serrano peppers",
+      "qty": 5,
+      "qtyMax": null,
+      "unit": null,
+      "item": "green serrano peppers"
+    },
+    {
+      "text": "2 garlic cloves (for salsa)",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": null,
+      "item": "garlic cloves (for salsa)"
+    },
+    {
+      "text": "1/4 white onion, small chunk",
+      "qty": 0.25,
+      "qtyMax": null,
+      "unit": null,
+      "item": "white onion, small chunk"
+    },
+    {
+      "text": "1/2 cup cilantro, packed",
+      "qty": 0.5,
+      "qtyMax": null,
+      "unit": "cup",
+      "item": "cilantro, packed"
+    },
+    {
+      "text": "1 tsp salt (for salsa)",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "salt (for salsa)"
+    },
+    {
+      "text": "3 cup cooked pinto beans, with some liquid",
+      "qty": 3,
+      "qtyMax": null,
+      "unit": "cup",
+      "item": "cooked pinto beans, with some liquid"
+    },
+    {
+      "text": "2 tbsp lard or reserved pork fat",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "lard or reserved pork fat"
+    },
+    {
+      "text": "1/4 white onion, minced (for beans)",
+      "qty": 0.25,
+      "qtyMax": null,
+      "unit": null,
+      "item": "white onion, minced (for beans)"
+    },
+    {
+      "text": "1/2 tsp salt (for beans)",
+      "qty": 0.5,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "salt (for beans)"
+    }
+  ],
+  "steps": [
+    {
+      "text": "Cut 4 lb pork belly, cut in ~5 cm cubes into rough 5 cm cubes. Pieces should be even so they cook and crisp at the same rate.",
+      "ingredientRefs": [
+        0
+      ],
+      "timers": []
+    },
+    {
+      "text": "In a heavy pot, add 4 lb pork belly, cut in ~5 cm cubes, 1/2 white onion (for pork), 4 bay leaves, 3 garlic cloves (for pork), and 2 tsp salt. Add water to barely cover. Bring to a boil, then simmer uncovered until the water fully evaporates and the pork is fork-tender. 1 hour.",
+      "ingredientRefs": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "timers": [
+        {
+          "text": "1 hour",
+          "seconds": 3600
+        }
+      ]
+    },
+    {
+      "text": "Once the water is gone, the pork releases its fat and begins to fry in it. Stir occasionally, letting the cubes brown and develop crisp edges. Fish out the onion, bay, and garlic. Remove pork; drain off all but a spoonful of fat. 25 minutes.",
+      "ingredientRefs": [],
+      "timers": [
+        {
+          "text": "25 minutes",
+          "seconds": 1500
+        }
+      ]
+    },
+    {
+      "text": "Meanwhile, boil 15 tomatillos, husked and rinsed and 5 green serrano peppers in water until the tomatillos turn olive-drab and soft. (Or dry-roast them on the comal/pan for a deeper, smokier salsa.) 10 minutes.",
+      "ingredientRefs": [
+        5,
+        6
+      ],
+      "timers": [
+        {
+          "text": "10 minutes",
+          "seconds": 600
+        }
+      ]
+    },
+    {
+      "text": "Blend the tomatillos and serranos with 2 garlic cloves (for salsa), 1/4 white onion, small chunk, 1/2 cup cilantro, packed, and 1 tsp salt (for salsa), adding a splash of the cooking water to loosen. Taste and adjust heat/salt.",
+      "ingredientRefs": [
+        7,
+        8,
+        9,
+        10
+      ],
+      "timers": []
+    },
+    {
+      "text": "Heat the reserved spoonful of pork fat in the pot until shimmering, then pour in the blended salsa — it should sizzle. Simmer to darken and thicken slightly. 8 minutes.",
+      "ingredientRefs": [],
+      "timers": [
+        {
+          "text": "8 minutes",
+          "seconds": 480
+        }
+      ]
+    },
+    {
+      "text": "Fold the crispy pork back into the salsa and warm through just long enough to coat. Add pork last so the edges stay crisp rather than going soft. 5 minutes.",
+      "ingredientRefs": [],
+      "timers": [
+        {
+          "text": "5 minutes",
+          "seconds": 300
+        }
+      ]
+    },
+    {
+      "text": "In a separate pan, fry 1/4 white onion, minced (for beans) in 2 tbsp lard or reserved pork fat until soft. Add 3 cup cooked pinto beans, with some liquid with a little liquid and 1/2 tsp salt (for beans), then mash and fry, stirring, until thick and creamy. 10 minutes.",
+      "ingredientRefs": [
+        11,
+        12,
+        13,
+        14
+      ],
+      "timers": [
+        {
+          "text": "10 minutes",
+          "seconds": 600
+        }
+      ]
+    },
+    {
+      "text": "Plate the pork in salsa alongside the refried beans, with warm tortillas.",
+      "ingredientRefs": [],
+      "timers": []
+    }
+  ],
+  "notes": "Key technique: the pork self-fries in its own rendered fat once the water cooks off — no added oil needed, and in stainless it'll self-release once properly browned, so don't force it early. Salsa can be boiled (cleaner, brighter) or dry-roasted (deeper, smokier) — your call. Frying the blended salsa in a bit of pork fat is what turns it from raw salsa into a proper cooked salsa verde. 4 lb belly is generous for 6; scale down the pork block if cooking for two.\n\nI inferred the refried beans since you didn't spec them — want me to build those out separately, or validate the whole thing against Spanish-language sources (e.g. puerco/panza en salsa verde) before you'd log it?",
+  "servings": 6,
+  "tags": [],
+  "chatUrl": null,
+  "chapter": "mains",
+  "favorite": false,
+  "log": [],
+  "createdAt": "2026-09-30T04:33:03.457Z",
+  "updatedAt": "2026-09-30T04:33:03.457Z"
+}
