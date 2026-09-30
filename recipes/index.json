@@ -2,6 +2,30 @@
   "version": 2,
   "recipes": [
     {
+      "id": "arroz-rojo-short-grain-adaptation",
+      "name": "Arroz Rojo, Short-Grain Adaptation — Zojirushi Neuro Fuzzy",
+      "englishName": "Arroz Rojo, Short-Grain Adaptation",
+      "nativeName": "",
+      "romanized": "",
+      "tags": [],
+      "favorite": false,
+      "servings": 4,
+      "items": "Japanese short-grain rice · neutral oil · medium white onion, finely diced · garlic cloves, minced · tomato purée / passata · chicken broth · tomato bouillon (Knorr Caldo de Tomate) · ground cumin · fine salt · frozen peas & diced carrots (optional) · cilantro, chopped · lime, wedged",
+      "chapter": "rice",
+      "cuisine": null,
+      "equipment": [
+        "Rice cooker"
+      ],
+      "cookSeconds": 1320,
+      "waitSeconds": 0,
+      "timerCount": 5,
+      "stepCount": 7,
+      "createdAt": "2026-09-30T04:24:56.329Z",
+      "updatedAt": "2026-09-30T04:24:56.329Z",
+      "lastCooked": null,
+      "cookCount": 0
+    },
+    {
       "id": "beef-sukiyaki-bowl",
       "name": "Gyū Suki-don 牛すき丼 — Beef Sukiyaki Bowl",
       "englishName": "Beef Sukiyaki Bowl",

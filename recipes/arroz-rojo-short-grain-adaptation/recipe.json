@@ -1,0 +1,184 @@
+{
+  "id": "arroz-rojo-short-grain-adaptation",
+  "name": "Arroz Rojo, Short-Grain Adaptation — Zojirushi Neuro Fuzzy",
+  "nativeName": "",
+  "romanized": "",
+  "englishName": "Arroz Rojo, Short-Grain Adaptation",
+  "subtitle": "Zojirushi Neuro Fuzzy",
+  "description": "Mexican red rice adapted for Japanese short-grain. Rice is rinsed hard and toasted in oil (pilaf-style) to fight short-grain's natural stickiness, then finished in the Neuro Fuzzy on Mixed. Expect a softer, slightly clingy grain — a Mexican-Japanese hybrid, not taquería-fluffy.",
+  "ingredients": [
+    {
+      "text": "2 cup Japanese short-grain rice",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": "cup",
+      "item": "Japanese short-grain rice"
+    },
+    {
+      "text": "3 tbsp neutral oil",
+      "qty": 3,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "neutral oil"
+    },
+    {
+      "text": "1/2 medium white onion, finely diced",
+      "qty": 0.5,
+      "qtyMax": null,
+      "unit": null,
+      "item": "medium white onion, finely diced"
+    },
+    {
+      "text": "3 garlic cloves, minced",
+      "qty": 3,
+      "qtyMax": null,
+      "unit": null,
+      "item": "garlic cloves, minced"
+    },
+    {
+      "text": "3/4 cup tomato purée / passata",
+      "qty": 0.75,
+      "qtyMax": null,
+      "unit": "cup",
+      "item": "tomato purée / passata"
+    },
+    {
+      "text": "1 1/2 cup chicken broth",
+      "qty": 1.5,
+      "qtyMax": null,
+      "unit": "cup",
+      "item": "chicken broth"
+    },
+    {
+      "text": "2 tsp tomato bouillon (Knorr Caldo de Tomate)",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "tomato bouillon (Knorr Caldo de Tomate)"
+    },
+    {
+      "text": "1/2 tsp ground cumin",
+      "qty": 0.5,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "ground cumin"
+    },
+    {
+      "text": "1 tsp fine salt",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "fine salt"
+    },
+    {
+      "text": "1/2 cup frozen peas & diced carrots (optional)",
+      "qty": 0.5,
+      "qtyMax": null,
+      "unit": "cup",
+      "item": "frozen peas & diced carrots (optional)"
+    },
+    {
+      "text": "2 tbsp cilantro, chopped",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "cilantro, chopped"
+    },
+    {
+      "text": "1 lime, wedged",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": null,
+      "item": "lime, wedged"
+    }
+  ],
+  "steps": [
+    {
+      "text": "Rinse 2 cup Japanese short-grain rice thoroughly, swirling and changing the water 3–4 times until it runs mostly clear — short-grain sheds a lot of surface starch and you want it gone. Drain very well and let sit to dry. Do NOT soak.",
+      "ingredientRefs": [
+        0
+      ],
+      "timers": []
+    },
+    {
+      "text": "Heat 3 tbsp neutral oil in your stainless skillet over medium-high. Add 2 cup Japanese short-grain rice and stir constantly until the grains look chalky-white turning faintly golden and smell nutty, about 7 min. This oil coat is your main anti-clump insurance — don't shortcut it. Keep it moving so the starch doesn't scorch on stainless.",
+      "ingredientRefs": [
+        0,
+        1
+      ],
+      "timers": [
+        {
+          "text": "7 min",
+          "seconds": 420
+        }
+      ]
+    },
+    {
+      "text": "Add 1/2 medium white onion, finely diced and cook until soft and translucent, ~3 min. Add 3 garlic cloves, minced and stir 30 seconds until fragrant.",
+      "ingredientRefs": [
+        2,
+        3
+      ],
+      "timers": [
+        {
+          "text": "3 min",
+          "seconds": 180
+        },
+        {
+          "text": "30 seconds",
+          "seconds": 30
+        }
+      ]
+    },
+    {
+      "text": "Stir in 3/4 cup tomato purée / passata, 2 tsp tomato bouillon (Knorr Caldo de Tomate), and 1/2 tsp ground cumin. Cook 2 min until it darkens slightly and goes paste-like, concentrating flavor before liquid.",
+      "ingredientRefs": [
+        4,
+        6,
+        7
+      ],
+      "timers": [
+        {
+          "text": "2 min",
+          "seconds": 120
+        }
+      ]
+    },
+    {
+      "text": "Scrape everything into the Neuro Fuzzy inner pan. Add 1 1/2 cup chicken broth, 1 tsp fine salt, and 1/2 cup frozen peas & diced carrots (optional). Stir once to combine and level the rice under the liquid — then leave it alone.",
+      "ingredientRefs": [
+        5,
+        8,
+        9
+      ],
+      "timers": []
+    },
+    {
+      "text": "Select MIXED (the takikomi-style program — handles the oil and add-ins). If unavailable, use WHITE/SUSHI. Never Quick. Start and keep the lid shut the whole cycle.",
+      "ingredientRefs": [],
+      "timers": []
+    },
+    {
+      "text": "When the cycle ends, leave it on Keep Warm undisturbed for 10 min. Then fluff GENTLY with the paddle — cut and lift, don't stir — fold in 2 tbsp cilantro, chopped, and serve with 1 lime, wedged.",
+      "ingredientRefs": [
+        10,
+        11
+      ],
+      "timers": [
+        {
+          "text": "10 min",
+          "seconds": 600
+        }
+      ]
+    }
+  ],
+  "notes": "⚠️ UNTESTED — needs a real cook before it goes in the compendium.\n\nTexture reality: short-grain will read softer and more cohesive than long-grain arroz rojo. The toast + oil coat is what keeps it from going full sticky-rice. If you want to push it firmer/more separate next time, the levers are (a) toast a minute longer and (b) shave another 2 tbsp off the broth.\n\nLiquid ratio: 2.25 cups total (0.75 purée + 1.5 broth) per 2 cups rice = ~1.125:1. Deliberately lean — short-grain absorbs less than long-grain AND the sealed cooker barely evaporates. Two ways to overshoot into mush here, so I cut aggressively.\n\nDo NOT soak: normal Japanese rice prep soaks, but soaked grains steam instead of toast. Rinse well, drain, toast dry. Skip the soak entirely for this dish.\n\nMixed setting is ideal here — it's essentially the takikomi-gohan program (short-grain + add-ins + seasoning), so it's native to what you're doing. Use it if you have it.\n\nSecret weapon: tomato bouillon (Caldo de Tomate) carries the color and savory depth. Don't skip it.\n\nFluff gently: short-grain sheds starch and turns gluey when agitated hot. Minimal folding at the end.",
+  "servings": 4,
+  "tags": [],
+  "chatUrl": null,
+  "chapter": "rice",
+  "favorite": false,
+  "log": [],
+  "createdAt": "2026-09-30T04:24:56.329Z",
+  "updatedAt": "2026-09-30T04:24:56.329Z"
+}
