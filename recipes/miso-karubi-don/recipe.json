@@ -1,0 +1,184 @@
+{
+  "id": "miso-karubi-don",
+  "name": "味噌カルビ丼 — Miso Karubi Don",
+  "nativeName": "味噌カルビ丼",
+  "romanized": "",
+  "englishName": "Miso Karubi Don",
+  "description": "Yakiniku-style miso-marinated short rib over rice. The miso-gochujang tare is the焼肉屋 (yakiniku-shop) flavor — savory, garlicky, a little sweet, a little spicy.",
+  "ingredients": [
+    {
+      "text": "300 g thin-sliced beef short rib / beef belly (牛カルビ / 牛バラ)",
+      "qty": 300,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "thin-sliced beef short rib / beef belly (牛カルビ / 牛バラ)"
+    },
+    {
+      "text": "1 1/2 tbsp miso (red/awase preferred)",
+      "qty": 1.5,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "miso (red/awase preferred)"
+    },
+    {
+      "text": "1 tbsp gochujang",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "gochujang"
+    },
+    {
+      "text": "1 tbsp sugar",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "sugar"
+    },
+    {
+      "text": "1 tbsp soy sauce",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "soy sauce"
+    },
+    {
+      "text": "1 tbsp mirin",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "mirin"
+    },
+    {
+      "text": "1 tbsp sake",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "sake"
+    },
+    {
+      "text": "1 tsp oyster sauce",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "oyster sauce"
+    },
+    {
+      "text": "1 tbsp sesame oil",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "sesame oil"
+    },
+    {
+      "text": "1 garlic clove, grated",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": null,
+      "item": "garlic clove, grated"
+    },
+    {
+      "text": "1 tsp ginger, grated",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "ginger, grated"
+    },
+    {
+      "text": "1 tbsp grated apple or onion (tenderizer, optional)",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "grated apple or onion (tenderizer, optional)"
+    },
+    {
+      "text": "1 tbsp toasted white sesame seeds",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "toasted white sesame seeds"
+    },
+    {
+      "text": "2 warm cooked white rice (bowls)",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": null,
+      "item": "warm cooked white rice (bowls)"
+    },
+    {
+      "text": "2 scallions, thinly sliced",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": null,
+      "item": "scallions, thinly sliced"
+    },
+    {
+      "text": "2 egg yolks (optional topping)",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": null,
+      "item": "egg yolks (optional topping)"
+    }
+  ],
+  "steps": [
+    {
+      "text": "In a bowl, whisk together 1 1/2 tbsp miso (red/awase preferred), 1 tbsp gochujang, 1 tbsp sugar, 1 tbsp soy sauce, 1 tbsp mirin, 1 tbsp sake, 1 tsp oyster sauce, 1 tbsp sesame oil, 1 garlic clove, grated, and 1 tsp ginger, grated until smooth. If using, stir in 1 tbsp grated apple or onion (tenderizer, optional) — the enzymes tenderize the beef.",
+      "ingredientRefs": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "timers": []
+    },
+    {
+      "text": "Add 300 g thin-sliced beef short rib / beef belly (牛カルビ / 牛バラ) to the tare and massage it in well. Let it sit at least 30 minutes (or up to 2 hours in the fridge) so the flavor soaks in.",
+      "ingredientRefs": [
+        0
+      ],
+      "timers": [
+        {
+          "text": "30 minutes",
+          "seconds": 1800
+        }
+      ]
+    },
+    {
+      "text": "Heat a frying pan over high heat (no extra oil needed — the sesame oil and beef fat are enough). Lay 300 g thin-sliced beef short rib / beef belly (牛カルビ / 牛バラ) out in a single layer and sear, scraping in any tare left in the bowl. Cook just until caramelized and cooked through — don't overstir, you want browning. 5 minutes.",
+      "ingredientRefs": [
+        0
+      ],
+      "timers": [
+        {
+          "text": "5 minutes",
+          "seconds": 300
+        }
+      ]
+    },
+    {
+      "text": "Mound 2 warm cooked white rice (bowls) into bowls. Pile the miso karubi on top and spoon over any pan juices. Scatter with 2 scallions, thinly sliced and 1 tbsp toasted white sesame seeds, and drop an 2 egg yolks (optional topping) in the center if you like. Break the yolk into the hot meat and mix as you eat.",
+      "ingredientRefs": [
+        12,
+        13,
+        14,
+        15
+      ],
+      "timers": []
+    }
+  ],
+  "notes": "Notes: Red or awase miso gives the deepest yakiniku flavor; if you only have white miso, add a little extra soy. For a hotter version bump the gochujang, or add a pinch of doubanjiang (豆板醤) as some shop recipes do. Sear over genuinely high heat and resist stirring — the browned, slightly charred edges are what make it taste like a restaurant. Good with namul, kimchi, or a simple lettuce/sanchu wrap on the side.",
+  "servings": 2,
+  "tags": [],
+  "chatUrl": null,
+  "chapter": "rice",
+  "favorite": false,
+  "log": [],
+  "createdAt": "2026-09-30T04:52:00.851Z",
+  "updatedAt": "2026-09-30T04:52:00.851Z"
+}

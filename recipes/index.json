@@ -328,6 +328,28 @@
       "cookCount": 0
     },
     {
+      "id": "miso-karubi-don",
+      "name": "味噌カルビ丼 — Miso Karubi Don",
+      "englishName": "Miso Karubi Don",
+      "nativeName": "味噌カルビ丼",
+      "romanized": "",
+      "tags": [],
+      "favorite": false,
+      "servings": 2,
+      "items": "thin-sliced beef short rib / beef belly (牛カルビ / 牛バラ) · miso (red/awase preferred) · gochujang · sugar · soy sauce · mirin · sake · oyster sauce · sesame oil · garlic clove, grated · ginger, grated · grated apple or onion (tenderizer, optional) · toasted white sesame seeds · warm cooked white rice (bowls) · scallions, thinly sliced · egg yolks (optional topping)",
+      "chapter": "rice",
+      "cuisine": "Japanese",
+      "equipment": [],
+      "cookSeconds": 2100,
+      "waitSeconds": 0,
+      "timerCount": 2,
+      "stepCount": 4,
+      "createdAt": "2026-09-30T04:52:00.851Z",
+      "updatedAt": "2026-09-30T04:52:00.851Z",
+      "lastCooked": null,
+      "cookCount": 0
+    },
+    {
       "id": "mu-bap",
       "name": "무밥 (Mu-bap) · Korean Radish Rice with Beef",
       "englishName": "Korean Radish Rice with Beef",
