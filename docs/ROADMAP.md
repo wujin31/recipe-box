@@ -54,7 +54,7 @@ tab bar Cookbook · Search · + · Timers · Tools.
 - [x] Aisles (Produce, Meat & Seafood, Dairy & Eggs, Asian pantry, Pantry & Spices, Frozen, Bakery), movable
 - [x] Add from a recipe (staples and what you've checked off left unticked) or from cooking mode's gather step
 - [x] The list: tick off, Got it, clear ticked, your own items, share as text, 🛒 count; on this device
-- [ ] Preview link + QA pass, then merge
+- [x] Preview link + QA pass, then merge
 
 ## Later rounds
 - Cook-log photos (compressed; latest can become the tile)
