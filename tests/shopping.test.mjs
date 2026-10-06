@@ -84,7 +84,7 @@ test("amounts add up across units", () => {
   const e = (line) => ({ ...shoppingKey(ing(line)), qty: ing(line).qty, unit: shoppingKey(ing(line)).unit || null });
   assert.equal(formatAmounts(totals([e("1 lb pork belly"), e("100 g pork belly")])), "555 g (1 1/4 lb)");
   assert.equal(formatAmounts(totals([e("3 garlic cloves"), e("12 ml garlic, minced")])), "6 cloves", "minced garlic counts as cloves");
-  assert.equal(formatAmounts(totals([e("1/2 onion"), e("100 g onion")])), "1/2 + 100 g (3 1/2 oz)");
+  assert.equal(formatAmounts(totals([e("1/2 onion"), e("100 g onion")])), "1 + 100 g (3 1/2 oz)", "you buy whole onions");
   assert.equal(formatAmounts(totals([e("2 limes"), e("1 lime")])), "3");
   assert.equal(formatAmounts(totals([e("2 tbsp mirin"), e("30 ml mirin")]), "us"), "1/4 cup");
 });
@@ -116,4 +116,40 @@ test("the list: add, merge, tick, clear, take a recipe off", () => {
   addRecipe(b, b.ingredients);
   assert.equal(items().find((it) => it.key === "scallion").amount, "2");
   assert.equal(items().find((it) => it.key === "scallion").checked, false);
+});
+
+test("what a cook would buy, not what the recipe measures", () => {
+  const e = (line, recipeId = "r") => ({ ...shoppingKey(ing(line)), recipeId, text: line, qty: ing(line).qty, unit: shoppingKey(ing(line)).unit || null });
+  const show = (lines) => { const es = lines.map((l) => e(l)); return formatAmounts(totals(es), "metric", es[0].key); };
+  assert.equal(show(["2 tbsp lemon juice", "1 lemon, for zest"]), "2", "juice counts toward lemons");
+  assert.equal(shoppingKey(ing("30 ml lime juice")).key, "lime");
+  assert.equal(show(["30 ml unsalted butter", "20 g unsalted butter"]), "49 g (1 3/4 oz)", "butter by weight");
+  assert.equal(show(["1/2 cup cilantro, packed", "2 tbsp cilantro, chopped"]), "1 bunch");
+  assert.equal(show(["2 scallion whites", "2 scallion greens, sliced"]), "2", "the same scallions");
+  assert.equal(show(["1/4 tsp five-spice", "2.5 ml five-spice"]), "3/4 tsp", "spoons for small amounts");
+  assert.equal(show(["1 tbsp grated apple"]), "a little");
+  assert.equal(show(["5 garlic", "2 garlic cloves"]), "7 cloves");
+  assert.equal(show(["3 cup cooked pinto beans"]), "2 cans");
+  assert.notEqual(shoppingKey(ing("800 g hot cooked short-grain rice")).key, shoppingKey(ing("2 cup Japanese short-grain rice")).key, "cooked rice isn't raw rice");
+  assert.equal(aisleFor("flour tortilla", {}), "Bakery");
+  assert.equal(aisleFor("chicken bouillon powder", {}), "Pantry & Spices");
+  assert.equal(aisleFor("spam", {}), "Pantry & Spices");
+});
+
+test("a merged item is named plainly, with a native name only when they all agree", () => {
+  const a = { id: "a", englishName: "A", ingredients: ["2 egg yolks", "1 tbsp soy sauce 醬油 (jiàngyóu)"].map(ing) };
+  const b = { id: "b", englishName: "B", ingredients: ["3 large eggs for 滷蛋 (lǔdàn)", "1 tbsp soy sauce / 진간장 (jin-ganjang)"].map(ing) };
+  addRecipe(a, a.ingredients);
+  addRecipe(b, b.ingredients);
+  const egg = items().find((it) => it.key === "egg");
+  assert.equal(egg.name, "Eggs");
+  assert.equal(egg.native, "");
+  assert.equal(items().find((it) => it.key === "soy sauce").native, "");
+});
+
+test("cooking mode adds to what a recipe already put on the list", () => {
+  const r = { id: "r", englishName: "R", ingredients: ["200 g ground pork", "2 scallions"].map(ing) };
+  addRecipe(r, [r.ingredients[0]]);
+  addRecipe(r, [r.ingredients[1]], 1, { keep: true });
+  assert.deepEqual(items().map((it) => it.key).sort(), ["ground pork", "scallion"]);
 });
