@@ -81,6 +81,8 @@ test("real title shapes split into English, native, romanized, subtitle", () => 
     ["Black Vinegar Lacquered Spam Donburi (黒酢スパム丼 / kurozu supamu-don)", "Black Vinegar Lacquered Spam Donburi", "黒酢スパム丼", "kurozu supamu-don"],
     ["Carne Asada Norteña — Citrus Marinade, Stainless Stovetop (v2)", "Carne Asada Norteña", "", "", "Citrus Marinade, Stainless Stovetop (v2)"],
     ["Gyū Suki-don 牛すき丼 — Beef Sukiyaki Bowl", "Beef Sukiyaki Bowl", "牛すき丼", "Gyū Suki-don"],
+    ["台式擔擔麵 (Taiwanese Dan Dan Mian) — all-sesame, celery version", "Taiwanese Dan Dan Mian", "台式擔擔麵", "", "all-sesame, celery version"],
+    ["그린빈 마늘볶음 v3 / Geurinbin Maneul-bokkeum v3", "Geurinbin Maneul-bokkeum v3", "그린빈 마늘볶음 v3", ""],
     ["Sumeshi 酢飯 (Sushi Rice)", "Sushi Rice", "酢飯", "Sumeshi"],
     ["滷肉飯 (lǔròufàn) Oven Braise, 1.25 lb", "Lǔròufàn Oven Braise, 1.25 lb", "滷肉飯", "lǔròufàn"],
     ["牛肉燥飯 (niúròu zào fàn) — Taiwanese Beef Rice, v2", "Taiwanese Beef Rice, v2", "牛肉燥飯", "niúròu zào fàn"],

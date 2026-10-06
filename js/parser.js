@@ -71,7 +71,8 @@ const cap = (s) => s.charAt(0).toUpperCase() + s.slice(1);
 // "Gyū Suki-don 牛すき丼" -> ["Gyū Suki-don", "牛すき丼"]; interleaved text ("蒜蓉辣椒 Spam 炒飯") stays whole.
 function splitMixed(s) {
   const tokens = s.trim().split(/\s+/);
-  const kinds = tokens.map(hasNative);
+  // A version mark ("v3") belongs with the words before it.
+  const kinds = tokens.map((t, i, all) => (/^v\d+$/i.test(t) && i ? hasNative(all[i - 1]) : hasNative(t)));
   const flips = kinds.filter((k, i) => i && k !== kinds[i - 1]).length;
   if (flips !== 1) return hasNative(s) ? { native: s.trim(), latin: "" } : { native: "", latin: s.trim() };
   const cut = kinds.findIndex((k) => k !== kinds[0]);
@@ -108,9 +109,13 @@ export function parseTitle(title) {
   if (title.length > 200) return plain; // not a real title
   const dot = title.split(/\s+[·•|]\s+/);
   const dash = title.split(/\s+[—–]\s+/);
+  // "그린빈 마늘볶음 v3 / Geurinbin Maneul-bokkeum v3": a slash between a native name and its
+  // romanization, outside any parentheses, works like "·".
+  const slash = title.replace(/\([^)]*\)/g, (m) => m.replace(/\//g, "\u0001")).split(/\s+\/\s+/).map((s) => s.replace(/\u0001/g, "/"));
   let left = title, right = "", kind = "";
   if (dot.length === 2) [left, right, kind] = [dot[0], dot[1], "dot"];
   else if (dash.length === 2) [left, right, kind] = [dash[0], dash[1], "dash"];
+  else if (slash.length === 2 && hasNative(slash[0]) && !hasNative(slash[1])) [left, right, kind] = [slash[0], slash[1], "dot"];
 
   const L = parseSide(left);
   if (!right) {
@@ -122,6 +127,13 @@ export function parseTitle(title) {
   // "Beef Pepper Rice (ビーフペッパーライス / …) — Pepper Lunch Dupe": English already on the left.
   if (kind === "dash" && L.native && L.english) {
     return { nativeName: L.native, romanized: L.romanized, englishName: L.english, subtitle: right.trim() };
+  }
+  // "台式擔擔麵 (Taiwanese Dan Dan Mian) — all-sesame, celery version": a right side in lower case
+  // is a note, not a name, so the parentheses held the English name.
+  if (kind === "dash" && L.native && /^[a-z]/.test(right.trim())) {
+    const english = L.english || L.romanized;
+    const pinyin = /[āáǎàēéěèīíǐìōóǒòūúǔùǖǘǚǜ]/i.test(english);
+    return { nativeName: L.native, romanized: pinyin ? english : "", englishName: english, subtitle: right.trim() };
   }
   // "native side — English", "native (romanized) · English", "Bibimbap (비빔밥) · Mixed Rice",
   // "romanized · English": the right side is the English name.
