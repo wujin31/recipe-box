@@ -22,6 +22,8 @@ Plus what a chat can't do:
 - a **Timers** tab: every running timer says what it's for and opens its step; presets and your own timers
 - **kitchen tools**: pasta water & salt, salt % for brines and ferments, cups ↔ grams, °F/°C and
   gas marks. Pin them to the 🧰 drawer on every recipe, where they use that recipe's amounts.
+- a **shopping list**: add recipes (staples like salt and soy sauce left off), and it combines them
+  ("Garlic · 8 cloves, for Lǔròufàn and Bulgogi"), sorts them by aisle and shares as text
 - **favorites**, **tags**, **ingredient check-offs**, and **my tweaks** kept apart from Claude's notes
 - a **cook log** (date, rating, what you changed, how it came out) for tuning a recipe over time
 - the **whole cookbook offline**, not just the recipes you've opened
@@ -108,7 +110,7 @@ between, the app rebuilds on top of that commit instead of overwriting it. Reads
 API when a token is set, and the Pages copy otherwise. Both are cached for offline use, and in
 the background the app keeps a copy of every recipe that changed, so the whole cookbook opens
 offline. Per-device state (checked ingredients, chosen servings and units, running timers,
-pinned tools) stays on the device.
+pinned tools, the shopping list) stays on the device.
 
 To rename or reorder chapters, add `recipes/cookbook.json`:
 `{ "chapters": [{ "id": "mains", "name": "Dinner" }, …] }`. Chapter ids are what recipes store.
@@ -160,6 +162,7 @@ python3 -m http.server                                                   # run l
 | `parser.js` | Turns Claude recipe card text, or JSON from the export prompt, into a recipe: title parts, ingredients, steps, notes, servings. Links each step to the ingredients it mentions, finds timers and labels them. |
 | `units.js` | Quantities, scaling (including to what you have), fractions, US/metric conversion. |
 | `cookbook.js` | Chapters, and guessing a recipe's chapter, cuisine, equipment and time. |
+| `shopping.js` | The shopping list: names to shop by, merging across recipes and units, aisles. |
 | `store.js` | Reads and writes recipe files through the GitHub API, plus the offline copy. |
 | `timers.js` | Kitchen timers, chime, screen wake lock. |
 | `app.js` | The router; screens are in `views/` (cookbook, chapter, search, recipe, cooking, add/edit, sort, timers, tools, settings). |

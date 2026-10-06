@@ -47,10 +47,16 @@ tab bar Cookbook · Search · + · Timers · Tools.
 - [x] "Update available — Reload" instead of needing two reloads
 - [x] Whole cookbook available offline (prefetched in the background)
 - [x] Merge: existing recipes start in Unsorted; sort screen on first open
-- [ ] Pages → `main`; delete the old branch
+- [x] Pages → `main` (the old branch is yours to delete on GitHub; this session can't delete branches)
+
+## Shopping list
+- [x] Names to shop by (no prep notes or asides; native names kept), merged across recipes and units
+- [x] Aisles (Produce, Meat & Seafood, Dairy & Eggs, Asian pantry, Pantry & Spices, Frozen, Bakery), movable
+- [x] Add from a recipe (staples and what you've checked off left unticked) or from cooking mode's gather step
+- [x] The list: tick off, Got it, clear ticked, your own items, share as text, 🛒 count; on this device
+- [ ] Preview link + QA pass, then merge
 
 ## Later rounds
-- Shopping list (combined, grouped, shareable to Reminders)
 - Cook-log photos (compressed; latest can become the tile)
 - Version history with restore
 - Printable recipe page

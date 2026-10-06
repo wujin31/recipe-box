@@ -470,10 +470,10 @@ body.timers-page .timer-tray { display: none; }
 .cart-btn .badge { top: 4px; right: 2px; }
 .add-to-list { margin-top: 10px; gap: 8px; }
 .add-sheet .add-rows { display: grid; gap: 2px; max-height: 60vh; overflow-y: auto; }
-.add-row { display: flex; gap: 12px; align-items: flex-start; padding: 9px 2px; border-bottom: 1px solid var(--line); font-size: 0.941rem; font-weight: 500; color: var(--text); }
+dialog.sheet .add-row { display: flex; gap: 12px; align-items: flex-start; padding: 10px 2px; border-bottom: 1px solid var(--line); font-size: 0.941rem; font-weight: 500; color: var(--text); }
 .add-row input { width: 22px; height: 22px; flex: none; margin-top: 1px; accent-color: var(--accent); }
 .add-row span { display: grid; gap: 1px; }
-.add-row.muted { color: var(--muted); }
+dialog.sheet .add-row.muted { color: var(--muted); }
 .add-note { font-size: 0.765rem; color: var(--muted); font-weight: 400; }
 .shopping .aisle h3 { margin: 18px 0 2px; }
 .shop-list { list-style: none; margin: 0; padding: 0; }
@@ -481,7 +481,7 @@ body.timers-page .timer-tray { display: none; }
 .shop-item .check { flex: 1; min-width: 0; display: flex; align-items: center; gap: 12px; padding: 10px 0; min-height: 56px; border: 0; background: none; text-align: left; color: inherit; }
 .shop-text { flex: 1; min-width: 0; display: grid; gap: 1px; }
 .shop-name { font-weight: 600; font-size: 1.06rem; overflow-wrap: anywhere; }
-.shop-name .native { font-weight: 500; color: var(--muted); }
+.shop-name .native { font-weight: 500; color: var(--muted); word-break: keep-all; }
 .shop-for { font-size: 0.765rem; color: var(--muted); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .shop-amount { flex: none; font-weight: 700; font-variant-numeric: tabular-nums; text-align: right; max-width: 45%; font-size: 0.941rem; }
 .shop-item.done .shop-name, .shop-item.done .shop-amount { color: var(--muted); text-decoration: line-through; font-weight: 500; }
