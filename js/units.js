@@ -225,6 +225,14 @@ export function factorFor(ing, have, unit = ing.unit) {
   return (have * UNITS[unit].toBase) / (ing.qty * UNITS[ing.unit].toBase);
 }
 
+// Just an amount, in a unit system: (567, "g", "us") -> "1 1/4 lb".
+export function formatMeasure(qty, unit, system = "metric") {
+  let { qty: q, unit: u } = convert(qty, unit, system);
+  if (u === "cup" && q < 0.24) { q = convertTo(q, "cup", "tbsp"); u = "tbsp"; }
+  const amount = formatAmount(q, u);
+  return u ? `${amount} ${unitLabel(u, amount)}` : amount;
+}
+
 // Render an ingredient at a scale factor and unit system.
 // Returns a display string, e.g. "1 1/2 cups jasmine rice".
 export function formatIngredient(ing, factor = 1, system = "original") {

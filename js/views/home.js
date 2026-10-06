@@ -5,6 +5,7 @@ import { canWrite, getChapters, listRecipes, loadLocal, saveLocal } from "../sto
 import { getTimers } from "../timers.js";
 import { displayName, errorMessage, fill, h, iconButton } from "../ui.js";
 import { chapterClass, miniTile, tile } from "./tiles.js";
+import { cartButton } from "./shopping.js";
 
 const SHELF_SIZE = 12;
 
@@ -33,7 +34,7 @@ export async function viewHome(root) {
   const body = h("div", { class: "home" }, h("p", { class: "muted pad" }, "Loading…"));
   root.append(
     h("header", { class: "nav" }, h("div", { class: "nav-side" }), h("div", { class: "nav-title" }),
-      h("div", { class: "nav-side right" }, iconButton("gear", "Settings", () => (location.hash = "#/settings")))),
+      h("div", { class: "nav-side right" }, cartButton(), iconButton("gear", "Settings", () => (location.hash = "#/settings")))),
     h("h1", { class: "large-title" }, "Cookbook"),
     body);
 

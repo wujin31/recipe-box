@@ -7,6 +7,7 @@ import { backButton, fill, h, icon, iconButton, navbar } from "../ui.js";
 import { formatIngredient } from "../units.js";
 import { getView, ingredientChecklist, loadRecipeOr404, renderStep, timerInfo } from "./shared.js";
 import { openToolDrawer } from "./tools.js";
+import { openAddSheet } from "./shopping.js";
 
 // ---------- cooking mode ----------
 
@@ -72,7 +73,12 @@ export async function viewCook(root, id, query = new URLSearchParams()) {
     fill(stage,
       h("div", { class: "gather" },
         h("div", { class: "section-head" }, h("h2", { class: "flush" }, "Get everything out"), count),
-        ingredientChecklist(r, factor, units, showCount)));
+        ingredientChecklist(r, factor, units, showCount),
+        // Whatever isn't out yet is what you're missing.
+        h("button", { class: "link small", onClick: () => {
+          const out = new Set(getView(id).checked);
+          openAddSheet(r, { factor, units, need: r.ingredients.filter((ing) => !out.has(ing.text)) });
+        } }, "Missing something? Add it to the shopping list")));
   }
 
   function draw() {

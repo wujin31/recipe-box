@@ -10,6 +10,7 @@ import { recipeHero } from "./hero.js";
 import { cookLogSection, getView, ingredientChecklist, loadRecipeOr404, openLogSheet, openTweaksSheet, renderStep, setView, shareRecipe } from "./shared.js";
 import { openScaleSheet } from "./scale.js";
 import { openToolDrawer } from "./tools.js";
+import { openAddSheet } from "./shopping.js";
 
 export async function viewRecipe(root, id, query) {
   let r = await loadRecipeOr404(root, id);
@@ -97,6 +98,7 @@ export async function viewRecipe(root, id, query) {
       ),
 
       h("a", { class: "button primary big", href: `#/r/${id}/cook` }, "Get cooking"),
+      h("button", { class: "button big add-to-list", onClick: () => openAddSheet(r) }, icon("cart"), "Add to shopping list"),
 
       h("section", {},
         h("div", { class: "section-head" },

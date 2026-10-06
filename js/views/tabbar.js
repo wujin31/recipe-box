@@ -4,7 +4,7 @@ import { getTimers, onTimersChange } from "../timers.js";
 import { h, icon } from "../ui.js";
 
 const TABS = [
-  ["#/", "book", "Cookbook", (p) => !p[0] || p[0] === "c" || p[0] === "r" || p[0] === "sort"],
+  ["#/", "book", "Cookbook", (p) => !p[0] || p[0] === "c" || p[0] === "r" || p[0] === "sort" || p[0] === "list"],
   ["#/search", "search", "Search", (p) => p[0] === "search"],
   ["#/import", "plus", "Add recipe", (p) => p[0] === "import", "add"],
   ["#/timers", "timer", "Timers", (p) => p[0] === "timers"],
