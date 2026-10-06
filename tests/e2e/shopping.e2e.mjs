@@ -29,7 +29,7 @@ test("adding a recipe ticks what to buy and leaves off staples", async () => {
   assert.match(await text('dialog button[type="submit"]'), /^Add \d+$/);
   await page.click('dialog button[type="submit"]');
   await page.waitForSelector("dialog.add-sheet", { state: "detached" });
-  assert.match(await text(".toast"), /Added \d+ to the shopping list/);
+  assert.match(await text(".toast"), /Added \d+ to the list/);
 });
 
 test("a second recipe's garlic is added to the first's", async () => {
@@ -38,7 +38,7 @@ test("a second recipe's garlic is added to the first's", async () => {
   await app.goto("#/list");
   await page.waitForSelector(".shop-item");
   const garlic = page.locator('.shop-item:has-text("Garlic")');
-  assert.match(await garlic.textContent(), /for Thai Chicken Biryani, .*Penne.*8 cloves/);
+  assert.match(await garlic.textContent(), /8 cloves · for Thai Chicken Biryani, .*Penne/);
   assert.deepEqual((await page.locator(".aisle h3").allTextContents()).slice(0, 3), ["Produce", "Meat & Seafood", "Dairy & Eggs"]);
   assert.equal(await page.locator('.shop-item:has-text("Jasmine rice")').count(), 0, "unticked in the sheet, so not added");
   assert.equal(await page.locator('.shop-item:has-text("Sugar")').count(), 0);

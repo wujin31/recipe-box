@@ -4,14 +4,21 @@ import { onLeave } from "../lifecycle.js";
 import { getSettings } from "../store.js";
 import { keepAwake } from "../timers.js";
 import { copyText, displayName, fill, h, icon, iconButton, navbar, toast } from "../ui.js";
-import { formatIngredient } from "../units.js";
+import { UNITS, formatIngredient } from "../units.js";
 import {
   AISLES, addExtra, addRecipe, clearAll, clearChecked, getList, getStaples, isBought, isStaple, items, listText,
   onListChange, recipesOnList, remaining, removeItem, removeRecipe, setAisle, setStaples, shoppingKey, toggle,
 } from "../shopping.js";
 import { getView } from "./shared.js";
 
-const system = () => (getSettings().units === "us" ? "us" : "metric");
+// The list's units: Settings → Units, or with "As written", whichever most of its amounts use.
+const US = new Set(["cup", "tbsp", "tsp", "oz", "lb", "fl oz"]);
+function system() {
+  const u = getSettings().units;
+  if (u === "us" || u === "metric") return u;
+  const units = getList().entries.map((e) => e.unit).filter((x) => UNITS[x]);
+  return units.filter((x) => US.has(x)).length > units.length / 2 ? "us" : "metric";
+}
 
 // ---------- the 🛒 button ----------
 
@@ -52,10 +59,12 @@ export function openAddSheet(r, { factor = getView(r.id).factor, units = getView
         have.has(ing.text) ? h("span", { class: "add-note" }, "checked off: you have it") : null)) };
   });
   const save = h("button", { class: "button primary", type: "submit" });
+  // From cooking mode (`need`) the ticked ones are added to what's already there; from the recipe
+  // page they replace it, so unticking everything there takes the recipe off.
   const count = () => {
     const n = rows.filter((x) => x.box.checked).length;
-    save.textContent = n ? `Add ${n}` : onList ? "Remove" : "Add";
-    save.disabled = !n && !onList;
+    save.textContent = n ? `Add ${n}` : onList && !need ? "Take off list" : "Add";
+    save.disabled = !n && (!onList || Boolean(need));
   };
   rows.forEach((x) => x.box.addEventListener("change", count));
   count();
@@ -66,18 +75,18 @@ export function openAddSheet(r, { factor = getView(r.id).factor, units = getView
       onSubmit: (e) => {
         e.preventDefault();
         const chosen = rows.filter((x) => x.box.checked).map((x) => x.ing);
-        if (chosen.length) addRecipe(r, chosen, factor);
+        if (chosen.length) addRecipe(r, chosen, factor, { keep: Boolean(need) });
         else removeRecipe(r.id);
         dialog.close();
-        toast(chosen.length ? `Added ${chosen.length} to the shopping list` : "Taken off the shopping list", "",
+        toast(chosen.length ? `Added ${chosen.length} to the list` : "Taken off the list", "",
           chosen.length ? { label: "View", onClick: () => (location.hash = "#/list") } : null);
       },
     },
     h("div", { class: "sheet-head" },
       h("button", { type: "button", class: "link", onClick: () => dialog.close() }, "Cancel"),
       h("strong", {}, "Shopping list"), save),
-    h("p", { class: "muted small" }, onList ? "Already on your list; this replaces what it added. " : "",
-      "Tick what you need to buy."),
+    h("p", { class: "muted small" }, onList && !need ? "Already on your list; this replaces what it added. " : "",
+      need ? "What you haven't got out yet is ticked." : "Tick what you need to buy."),
     h("div", { class: "add-rows" }, rows.map((x) => x.row))));
   dialog.addEventListener("close", () => dialog.remove());
   document.body.append(dialog);
@@ -105,10 +114,12 @@ export function viewList(root) {
   const row = (it) => h("li", { class: `shop-item ${it.checked ? "done" : ""}` },
     h("button", { class: "check", role: "checkbox", "aria-checked": String(it.checked), onClick: () => toggle(it.key) },
       h("span", { class: "box" }, icon("check")),
+      // Name on its own line, then how much and what for: long names never get squeezed.
       h("span", { class: "shop-text" },
-        h("span", { class: "shop-name" }, it.name, it.native ? h("span", { class: "native" }, ` ${it.native}`) : null),
-        it.sources.length ? h("span", { class: "shop-for" }, `for ${it.sources.join(", ")}`) : null),
-      it.amount ? h("span", { class: "shop-amount" }, it.amount) : null),
+        h("span", { class: "shop-name" }, it.name.charAt(0).toUpperCase() + it.name.slice(1), it.native ? h("span", { class: "native" }, ` ${it.native}`) : null),
+        it.amount || it.sources.length ? h("span", { class: "shop-sub" },
+          it.amount ? h("span", { class: "shop-amount" }, it.amount) : null,
+          it.sources.length ? h("span", { class: "shop-for" }, `${it.amount ? " · " : ""}for ${it.sources.join(", ")}`) : null) : null)),
     iconButton("more", `Options for ${it.name}`, () => itemSheet(it), "shop-more"));
 
   function draw() {
@@ -126,8 +137,9 @@ export function viewList(root) {
     const left = all.filter((it) => !it.checked);
     const got = all.filter((it) => it.checked);
     fill(body,
-      onList.length ? h("div", { class: "chips wrap on-list", "aria-label": "Recipes on this list" },
-        onList.map((r) => h("span", { class: "chip" }, h("a", { href: `#/r/${encodeURIComponent(r.id)}` }, r.name),
+      // One scrolling row, however many recipes: the list itself stays near the top.
+      onList.length ? h("div", { class: "chips on-list", role: "list", "aria-label": `${onList.length} recipe${onList.length === 1 ? "" : "s"} on this list` },
+        onList.map((r) => h("span", { class: "chip", role: "listitem" }, h("a", { href: `#/r/${encodeURIComponent(r.id)}` }, r.name),
           h("button", { class: "chip-x", "aria-label": `Take ${r.name} off the list`, onClick: () => removeRecipe(r.id) }, "×")))) : null,
       addForm,
       left.length ? AISLES.map((aisle) => {
@@ -149,7 +161,7 @@ export function viewList(root) {
     const dialog = h("dialog", { class: "sheet", "aria-label": it.name },
       h("form", { method: "dialog" },
         h("div", { class: "sheet-head" }, h("span"), h("strong", {}, it.name),
-          h("button", { type: "button", class: "link", onClick: () => dialog.close() }, "Done")),
+          h("button", { type: "button", class: "link end", onClick: () => dialog.close() }, "Done")),
         it.entries.length ? h("ul", { class: "plain-list small muted" }, it.entries.map((e) => h("li", {}, `${e.recipeName}: ${e.text}`))) : null,
         h("div", { class: "field" }, h("span", {}, "Aisle"),
           h("div", { class: "picker" }, AISLES.map((a) => h("button", {

@@ -116,6 +116,7 @@ export function shoppingKey(ing) {
   ws[ws.length - 1] = singular(ws[ws.length - 1] ?? "");
   const written = ws.join(" "); // before merging synonyms, for piece sizes ("lemon juice" vs "lemon zest")
   key = SAME[key] ?? SAME[written] ?? written;
+  key = key.replace(/(\S+)$/, (w) => singular(w)); // "fried shallots" from the table is "fried shallot"
   // Garlic counted without a unit ("5 garlic") is cloves.
   if (key === "garlic" && !unit) unit = "clove";
   // Scallion whites and greens are the same scallions: don't count them twice.
@@ -215,7 +216,8 @@ export function formatAmounts(map, system = "metric", key = "") {
       parts.push(other && other !== main ? `${main} (${other})` : main);
     } else if (unit === "clove") {
       const n = Math.ceil(qty - 0.05);
-      parts.push(`${n} ${n === 1 ? "clove" : "cloves"}`);
+      // A head of garlic is about 10 cloves.
+      parts.push(`${n} ${n === 1 ? "clove" : "cloves"}${n > 12 ? ` (about ${Math.ceil(n / 10)} heads)` : ""}`);
     } else {
       // You buy whole ones: half an onion is an onion, 2/3 of a lemon's juice is a lemon.
       const n = Math.max(1, Math.ceil(qty - 0.05));

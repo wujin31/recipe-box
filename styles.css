@@ -479,20 +479,22 @@ dialog.sheet .add-row.muted { color: var(--muted); }
 .shop-list { list-style: none; margin: 0; padding: 0; }
 .shop-item { display: flex; align-items: center; border-bottom: 1px solid var(--line); }
 .shop-item .check { flex: 1; min-width: 0; display: flex; align-items: center; gap: 12px; padding: 10px 0; min-height: 56px; border: 0; background: none; text-align: left; color: inherit; }
-.shop-text { flex: 1; min-width: 0; display: grid; gap: 1px; }
+.shop-text { flex: 1; min-width: 0; display: grid; gap: 2px; }
 .shop-name { font-weight: 600; font-size: 1.06rem; overflow-wrap: anywhere; }
 .shop-name .native { font-weight: 500; color: var(--muted); word-break: keep-all; }
-.shop-for { font-size: 0.765rem; color: var(--muted); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-.shop-amount { flex: none; font-weight: 700; font-variant-numeric: tabular-nums; text-align: right; max-width: 45%; font-size: 0.941rem; }
+.shop-sub { font-size: 0.824rem; color: var(--muted); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.shop-amount { font-weight: 700; color: var(--text); font-variant-numeric: tabular-nums; }
 .shop-item.done .shop-name, .shop-item.done .shop-amount { color: var(--muted); text-decoration: line-through; font-weight: 500; }
 .shop-more { color: var(--muted); flex: none; }
 .aisle.got { opacity: .85; }
 .add-extra { display: flex; gap: 8px; margin: 10px 0 4px; }
 .add-extra input { flex: 1; min-width: 0; border: 1px solid var(--line); background: var(--surface); border-radius: 12px; padding: 11px 12px; font-size: 1rem; color: var(--text); }
 .on-list { padding-top: 0; }
-.on-list .chip { display: inline-flex; align-items: center; gap: 2px; padding-right: 4px; background: var(--accent-soft); border-color: transparent; }
-.on-list .chip a { color: var(--accent-text); text-decoration: none; font-weight: 600; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; max-width: 60vw; }
-.chip-x { border: 0; background: none; color: var(--accent-text); font-size: 1.2rem; width: 36px; height: 36px; border-radius: 18px; }
+.on-list .chip { display: inline-flex; align-items: center; padding: 0 0 0 4px; background: var(--accent-soft); border-color: transparent; }
+.on-list .chip a { color: var(--accent-text); text-decoration: none; font-weight: 600; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; max-width: 55vw; padding: 12px 2px 12px 10px; }
+.chip-x { border: 0; background: none; color: var(--accent-text); font-size: 1.2rem; width: 44px; height: 44px; border-radius: 22px; }
+.sheet-head .link.end { justify-self: end; }
+.staples .link { min-height: 44px; padding: 0 6px; }
 .staples { margin-top: 22px; }
 .all-got { font-weight: 700; color: var(--ok); }
 
@@ -611,7 +613,7 @@ body.has-tabbar .timer-tray { bottom: calc(var(--tabbar-h) + 10px); }
 
 /* Toast with an action (Undo) */
 .toast.has-action { display: flex; align-items: center; gap: 14px; }
-.toast-action { border: 0; background: none; color: var(--accent-soft); font-weight: 800; min-height: 36px; padding: 0 4px; }
+.toast-action { border: 0; background: none; color: var(--accent-soft); font-weight: 800; min-height: 44px; padding: 0 8px; }
 @media (prefers-color-scheme: dark) { .toast-action { color: var(--accent); } }
 
 .tweaks .notes.card { margin: 0; }
