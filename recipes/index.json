@@ -917,6 +917,28 @@
       "updatedAt": "2026-09-29T01:10:27.188Z",
       "lastCooked": null,
       "cookCount": 0
+    },
+    {
+      "id": "yakisoba",
+      "name": "焼きそば (Yakisoba) · Japanese Stir-Fried Noodles",
+      "englishName": "Japanese Stir-Fried Noodles",
+      "nativeName": "焼きそば",
+      "romanized": "Yakisoba",
+      "tags": [],
+      "favorite": false,
+      "servings": 3,
+      "items": "Worcestershire sauce · oyster sauce · ketchup · soy sauce · sugar · packs steamed yakisoba noodles (450 g) · neutral oil · thinly sliced pork belly, cut into 4 cm pieces · onion, sliced · carrot, cut into thin strips · green cabbage, cut into 3 cm pieces · bean sprouts · salt · black pepper · aonori (seaweed flakes) · katsuobushi (bonito flakes) · beni shoga (red pickled ginger)",
+      "chapter": "rice",
+      "cuisine": "Japanese",
+      "equipment": [],
+      "cookSeconds": 480,
+      "waitSeconds": 0,
+      "timerCount": 6,
+      "stepCount": 7,
+      "createdAt": "2026-10-07T02:11:27.200Z",
+      "updatedAt": "2026-10-07T02:11:27.200Z",
+      "lastCooked": null,
+      "cookCount": 0
     }
   ]
 }

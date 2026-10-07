@@ -1,0 +1,244 @@
+{
+  "id": "yakisoba",
+  "name": "焼きそば (Yakisoba) · Japanese Stir-Fried Noodles",
+  "nativeName": "焼きそば",
+  "romanized": "Yakisoba",
+  "englishName": "Japanese Stir-Fried Noodles",
+  "description": "Festival-stall yakisoba: steamed wheat noodles fried hard on a hot pan with pork belly and cabbage, tossed in a tangy homemade Worcestershire-based sauce and finished with aonori, katsuobushi and red ginger. Serves 3.",
+  "ingredients": [
+    {
+      "text": "3 tbsp Worcestershire sauce",
+      "qty": 3,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "Worcestershire sauce",
+      "group": "For the sauce"
+    },
+    {
+      "text": "1 tbsp oyster sauce",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "oyster sauce",
+      "group": "For the sauce"
+    },
+    {
+      "text": "1 tbsp ketchup",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "ketchup",
+      "group": "For the sauce"
+    },
+    {
+      "text": "2 tsp soy sauce",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "soy sauce",
+      "group": "For the sauce"
+    },
+    {
+      "text": "2 tsp sugar",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "sugar",
+      "group": "For the sauce"
+    },
+    {
+      "text": "3 packs steamed yakisoba noodles (450 g)",
+      "qty": 3,
+      "qtyMax": null,
+      "unit": null,
+      "item": "packs steamed yakisoba noodles (450 g)",
+      "group": "For the noodles"
+    },
+    {
+      "text": "2 tbsp neutral oil",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "neutral oil",
+      "group": "For the noodles"
+    },
+    {
+      "text": "150 g thinly sliced pork belly, cut into 4 cm pieces",
+      "qty": 150,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "thinly sliced pork belly, cut into 4 cm pieces",
+      "group": "For the noodles"
+    },
+    {
+      "text": "1/2 onion, sliced",
+      "qty": 0.5,
+      "qtyMax": null,
+      "unit": null,
+      "item": "onion, sliced",
+      "group": "For the noodles"
+    },
+    {
+      "text": "1/2 carrot, cut into thin strips",
+      "qty": 0.5,
+      "qtyMax": null,
+      "unit": null,
+      "item": "carrot, cut into thin strips",
+      "group": "For the noodles"
+    },
+    {
+      "text": "200 g green cabbage, cut into 3 cm pieces",
+      "qty": 200,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "green cabbage, cut into 3 cm pieces",
+      "group": "For the noodles"
+    },
+    {
+      "text": "100 g bean sprouts",
+      "qty": 100,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "bean sprouts",
+      "group": "For the noodles"
+    },
+    {
+      "text": "1/4 tsp salt",
+      "qty": 0.25,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "salt",
+      "group": "For the noodles"
+    },
+    {
+      "text": "1/4 tsp black pepper",
+      "qty": 0.25,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "black pepper",
+      "group": "For the noodles"
+    },
+    {
+      "text": "2 tsp aonori (seaweed flakes)",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "aonori (seaweed flakes)",
+      "group": "To serve"
+    },
+    {
+      "text": "5 g katsuobushi (bonito flakes)",
+      "qty": 5,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "katsuobushi (bonito flakes)",
+      "group": "To serve"
+    },
+    {
+      "text": "2 tbsp beni shoga (red pickled ginger)",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "beni shoga (red pickled ginger)",
+      "group": "To serve"
+    }
+  ],
+  "steps": [
+    {
+      "text": "Mix 3 tbsp Worcestershire sauce, 1 tbsp oyster sauce, 1 tbsp ketchup, 2 tsp soy sauce and 2 tsp sugar.",
+      "ingredientRefs": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "timers": []
+    },
+    {
+      "text": "Microwave 3 packs steamed yakisoba noodles (450 g) in their bags for 1 minute, then loosen them with your fingers.",
+      "ingredientRefs": [
+        5
+      ],
+      "timers": [
+        {
+          "text": "1 minute",
+          "seconds": 60
+        }
+      ]
+    },
+    {
+      "text": "Heat 1 tbsp of 2 tbsp neutral oil in a large skillet over medium-high. Spread the noodles out and fry undisturbed for 2 minutes per side, until spotted brown. Transfer to a plate.",
+      "ingredientRefs": [
+        6
+      ],
+      "timers": [
+        {
+          "text": "2 minutes",
+          "seconds": 120
+        }
+      ]
+    },
+    {
+      "text": "Add the rest of the oil and 150 g thinly sliced pork belly, cut into 4 cm pieces. Fry 2 minutes, until the fat renders and the edges crisp. Season with 1/4 tsp salt and 1/4 tsp black pepper.",
+      "ingredientRefs": [
+        7,
+        12,
+        13
+      ],
+      "timers": [
+        {
+          "text": "2 minutes",
+          "seconds": 120
+        }
+      ]
+    },
+    {
+      "text": "Add 1/2 onion, sliced and 1/2 carrot, cut into thin strips and stir-fry 1 minute, then 200 g green cabbage, cut into 3 cm pieces and stir-fry 2 minutes, until just wilted. Add 100 g bean sprouts.",
+      "ingredientRefs": [
+        8,
+        9,
+        10,
+        11
+      ],
+      "timers": [
+        {
+          "text": "1 minute",
+          "seconds": 60
+        },
+        {
+          "text": "2 minutes",
+          "seconds": 120
+        }
+      ]
+    },
+    {
+      "text": "Return the noodles, pour in the sauce and toss over high heat for 1 minute, until the sauce is absorbed and starts to caramelize on the pan.",
+      "ingredientRefs": [],
+      "timers": [
+        {
+          "text": "1 minute",
+          "seconds": 60
+        }
+      ]
+    },
+    {
+      "text": "Plate and top with 2 tsp aonori (seaweed flakes), 5 g katsuobushi (bonito flakes) and 2 tbsp beni shoga (red pickled ginger).",
+      "ingredientRefs": [
+        14,
+        15,
+        16
+      ],
+      "timers": []
+    }
+  ],
+  "notes": "Frying the noodles alone first gives them toasted, chewy edges, the stall flavor. Otafuku or Bull-Dog yakisoba sauce in place of the homemade one is just as authentic: use 5 tbsp. A fried egg on top makes it a meal.",
+  "servings": 3,
+  "tags": [],
+  "chatUrl": null,
+  "chapter": "rice",
+  "favorite": false,
+  "log": [],
+  "createdAt": "2026-10-07T02:11:27.200Z",
+  "updatedAt": "2026-10-07T02:11:27.200Z"
+}
