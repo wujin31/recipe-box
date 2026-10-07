@@ -944,6 +944,30 @@
       "cookCount": 0
     },
     {
+      "id": "mapo-doufu",
+      "name": "麻婆豆腐 (Mápó Dòufu) · Mapo Tofu with Ground Pork",
+      "englishName": "Mapo Tofu with Ground Pork",
+      "nativeName": "麻婆豆腐",
+      "romanized": "Mápó Dòufu",
+      "tags": [
+        "weeknight"
+      ],
+      "favorite": false,
+      "servings": 3,
+      "items": "soft or medium tofu, cut into 2 cm cubes · salt (for blanching) · neutral oil · ground pork · Pixian doubanjiang (郫县豆瓣) · fermented black beans (douchi), rinsed and chopped · Sichuan chili flakes or ground chili · garlic cloves, minced · ginger, minced · chicken stock · soy sauce · sugar · cornstarch mixed with 3 tbsp water · scallions or garlic sprouts, cut into 2 cm lengths · roasted ground Sichuan peppercorns · hot cooked rice",
+      "chapter": "mains",
+      "cuisine": "Chinese",
+      "equipment": [],
+      "cookSeconds": 750,
+      "waitSeconds": 0,
+      "timerCount": 7,
+      "stepCount": 6,
+      "createdAt": "2026-10-07T02:11:37.720Z",
+      "updatedAt": "2026-10-07T02:11:37.720Z",
+      "lastCooked": null,
+      "cookCount": 0
+    },
+    {
       "id": "miso-karubi-don",
       "name": "味噌カルビ丼 — Miso Karubi Don",
       "englishName": "Miso Karubi Don",
