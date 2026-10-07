@@ -1236,6 +1236,30 @@
       "cookCount": 0
     },
     {
+      "id": "miso-butter-pasta",
+      "name": "Miso Butter Pasta",
+      "englishName": "Miso Butter Pasta",
+      "nativeName": "",
+      "romanized": "",
+      "tags": [
+        "to-try"
+      ],
+      "favorite": false,
+      "servings": 2,
+      "items": "spaghetti · salt (for the pasta water) · unsalted butter · garlic cloves, thinly sliced · white miso · soy sauce · black pepper, coarsely ground · Parmesan, finely grated · scallions, thinly sliced · sheet nori, cut into thin strips (optional)",
+      "chapter": "rice",
+      "cuisine": "Japanese",
+      "equipment": [],
+      "cookSeconds": 240,
+      "waitSeconds": 0,
+      "timerCount": 2,
+      "stepCount": 5,
+      "createdAt": "2026-10-07T02:11:42.824Z",
+      "updatedAt": "2026-10-07T02:11:42.824Z",
+      "lastCooked": null,
+      "cookCount": 0
+    },
+    {
       "id": "miso-karubi-don",
       "name": "味噌カルビ丼 — Miso Karubi Don",
       "englishName": "Miso Karubi Don",
