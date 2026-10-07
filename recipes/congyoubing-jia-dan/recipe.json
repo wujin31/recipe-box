@@ -1,0 +1,194 @@
+{
+  "id": "congyoubing-jia-dan",
+  "name": "蔥油餅加蛋 (Cōngyóubǐng Jiā Dàn) · Taiwanese Scallion Pancake with Egg",
+  "nativeName": "蔥油餅加蛋",
+  "romanized": "Cōngyóubǐng Jiā Dàn",
+  "englishName": "Taiwanese Scallion Pancake with Egg",
+  "description": "The Taiwanese breakfast-stall version: a hot-water dough laminated with a scallion oil paste, pan-fried and scrunched to open the layers, with an egg cooked right onto one side. Serves 4.",
+  "ingredients": [
+    {
+      "text": "300 g all-purpose flour",
+      "qty": 300,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "all-purpose flour",
+      "group": "For the dough"
+    },
+    {
+      "text": "1/2 tsp salt",
+      "qty": 0.5,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "salt",
+      "group": "For the dough"
+    },
+    {
+      "text": "150 ml boiling water",
+      "qty": 150,
+      "qtyMax": null,
+      "unit": "ml",
+      "item": "boiling water",
+      "group": "For the dough"
+    },
+    {
+      "text": "70 ml cold water",
+      "qty": 70,
+      "qtyMax": null,
+      "unit": "ml",
+      "item": "cold water",
+      "group": "For the dough"
+    },
+    {
+      "text": "3 tbsp lard or neutral oil",
+      "qty": 3,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "lard or neutral oil",
+      "group": "For the oil paste and filling"
+    },
+    {
+      "text": "1 1/2 tbsp all-purpose flour (for the oil paste)",
+      "qty": 1.5,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "all-purpose flour (for the oil paste)",
+      "group": "For the oil paste and filling"
+    },
+    {
+      "text": "3/4 tsp salt (for the filling)",
+      "qty": 0.75,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "salt (for the filling)",
+      "group": "For the oil paste and filling"
+    },
+    {
+      "text": "1/2 tsp ground white pepper",
+      "qty": 0.5,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "ground white pepper",
+      "group": "For the oil paste and filling"
+    },
+    {
+      "text": "80 g scallions, thinly sliced (about 6)",
+      "qty": 80,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "scallions, thinly sliced (about 6)",
+      "group": "For the oil paste and filling"
+    },
+    {
+      "text": "4 tbsp neutral oil (for frying)",
+      "qty": 4,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "neutral oil (for frying)",
+      "group": "To cook and serve"
+    },
+    {
+      "text": "4 eggs",
+      "qty": 4,
+      "qtyMax": null,
+      "unit": null,
+      "item": "eggs",
+      "group": "To cook and serve"
+    },
+    {
+      "text": "2 tbsp soy paste (醬油膏) or sweet chili sauce, to serve",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "soy paste (醬油膏) or sweet chili sauce, to serve",
+      "group": "To cook and serve"
+    }
+  ],
+  "steps": [
+    {
+      "text": "Mix 300 g all-purpose flour and 1/2 tsp salt in a bowl. Pour in 150 ml boiling water while stirring with chopsticks until shaggy and clumpy, then add 70 ml cold water and work it into a dough. Knead 5 minutes until smooth and soft (it should be slightly tacky). Cover and rest 30 minutes.",
+      "ingredientRefs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "timers": [
+        {
+          "text": "5 minutes",
+          "seconds": 300
+        },
+        {
+          "text": "30 minutes",
+          "seconds": 1800
+        }
+      ]
+    },
+    {
+      "text": "Make the oil paste (油酥): heat 3 tbsp lard or neutral oil until hot, pour it over 1 1/2 tbsp all-purpose flour (for the oil paste) in a small bowl and stir smooth.",
+      "ingredientRefs": [
+        4,
+        5
+      ],
+      "timers": []
+    },
+    {
+      "text": "Divide the dough into 4. Roll one piece into a thin rectangle about 20 × 30 cm. Brush with a quarter of the oil paste, then sprinkle with a quarter of 3/4 tsp salt (for the filling), 1/2 tsp ground white pepper and 80 g scallions, thinly sliced (about 6). Roll it up tightly from the long side into a rope, stretch it slightly, then coil it into a snail and tuck the end under. Repeat, cover and rest the coils 15 minutes so the gluten relaxes.",
+      "ingredientRefs": [
+        6,
+        7,
+        8
+      ],
+      "timers": [
+        {
+          "text": "15 minutes",
+          "seconds": 900
+        }
+      ]
+    },
+    {
+      "text": "Press each coil flat and roll it into a 20 cm round about 5 mm thick. Some scallions will poke through; that's fine.",
+      "ingredientRefs": [],
+      "timers": []
+    },
+    {
+      "text": "Heat 1 tbsp of 4 tbsp neutral oil (for frying) in a nonstick or well-seasoned pan over medium. Fry a pancake 2–3 minutes per side until golden and blistered. Then push the edges toward the center with two spatulas a few times (scrunching) to break the layers open.",
+      "ingredientRefs": [
+        9
+      ],
+      "timers": [
+        {
+          "text": "2–3 minutes",
+          "seconds": 180
+        }
+      ]
+    },
+    {
+      "text": "Crack one of 4 eggs into the pan beside the pancake, break the yolk and spread it to the pancake's size. Lay the pancake straight on top and press so they stick. Cook 1 minute until the egg sets, then flip so the egg side is up.",
+      "ingredientRefs": [
+        10
+      ],
+      "timers": [
+        {
+          "text": "1 minute",
+          "seconds": 60
+        }
+      ]
+    },
+    {
+      "text": "Fold or roll the pancake up, cut into pieces and serve with 2 tbsp soy paste (醬油膏) or sweet chili sauce, to serve. Repeat with the rest, adding oil each time.",
+      "ingredientRefs": [
+        11
+      ],
+      "timers": []
+    }
+  ],
+  "notes": "Hot water gelatinizes part of the flour, which gives the soft, chewy interior and keeps the dough easy to roll thin. The oil paste (fat plus flour) keeps the layers separate instead of soaking in, and the scrunch at the end is the street-stall trick that fluffs them apart.\n\nUncooked coils, or rolled-out rounds stacked between parchment, freeze well. Fry from frozen over medium-low, adding about 2 minutes per side. Taiwanese stalls often add a slice of cheese or basil (九層塔) with the egg.",
+  "servings": 4,
+  "tags": [],
+  "chatUrl": null,
+  "chapter": "breakfast",
+  "favorite": false,
+  "log": [],
+  "createdAt": "2026-10-07T02:11:14.675Z",
+  "updatedAt": "2026-10-07T02:11:14.675Z"
+}

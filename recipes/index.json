@@ -186,6 +186,28 @@
       "cookCount": 0
     },
     {
+      "id": "congyoubing-jia-dan",
+      "name": "蔥油餅加蛋 (Cōngyóubǐng Jiā Dàn) · Taiwanese Scallion Pancake with Egg",
+      "englishName": "Taiwanese Scallion Pancake with Egg",
+      "nativeName": "蔥油餅加蛋",
+      "romanized": "Cōngyóubǐng Jiā Dàn",
+      "tags": [],
+      "favorite": false,
+      "servings": 4,
+      "items": "all-purpose flour · salt · boiling water · cold water · lard or neutral oil · all-purpose flour (for the oil paste) · salt (for the filling) · ground white pepper · scallions, thinly sliced (about 6) · neutral oil (for frying) · eggs · soy paste (醬油膏) or sweet chili sauce, to serve",
+      "chapter": "breakfast",
+      "cuisine": "Taiwanese",
+      "equipment": [],
+      "cookSeconds": 2940,
+      "waitSeconds": 0,
+      "timerCount": 5,
+      "stepCount": 7,
+      "createdAt": "2026-10-07T02:11:14.675Z",
+      "updatedAt": "2026-10-07T02:11:14.675Z",
+      "lastCooked": null,
+      "cookCount": 0
+    },
+    {
       "id": "crispy-pork-belly-in-salsa-verde-with-refried-beans",
       "name": "Crispy Pork Belly in Salsa Verde with Refried Beans",
       "englishName": "Crispy Pork Belly in Salsa Verde with Refried Beans",
