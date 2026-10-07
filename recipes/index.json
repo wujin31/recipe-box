@@ -506,6 +506,28 @@
       "cookCount": 0
     },
     {
+      "id": "duck-breast-asian-glaze",
+      "name": "Seared Duck Breast with Five-Spice Orange-Hoisin Glaze",
+      "englishName": "Seared Duck Breast with Five-Spice Orange-Hoisin Glaze",
+      "nativeName": "",
+      "romanized": "",
+      "tags": [],
+      "favorite": false,
+      "servings": 2,
+      "items": "duck breasts (about 350 g each) · kosher salt · five-spice powder · hoisin sauce · soy sauce · honey · orange juice · grated orange zest · grated ginger · rice vinegar · scallion, thinly sliced · toasted sesame seeds · hot cooked rice · heads baby bok choy, halved",
+      "chapter": "mains",
+      "cuisine": null,
+      "equipment": [],
+      "cookSeconds": 3420,
+      "waitSeconds": 0,
+      "timerCount": 6,
+      "stepCount": 7,
+      "createdAt": "2026-10-07T02:11:36.357Z",
+      "updatedAt": "2026-10-07T02:11:36.357Z",
+      "lastCooked": null,
+      "cookCount": 0
+    },
+    {
       "id": "enfrijoladas",
       "name": "Enfrijoladas — Tortillas in Black Bean Sauce with Cotija and Crema",
       "englishName": "Enfrijoladas",
