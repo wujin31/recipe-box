@@ -1,0 +1,151 @@
+{
+  "id": "gochujang-buttered-noodles",
+  "name": "Gochujang Buttered Noodles",
+  "nativeName": "",
+  "romanized": "",
+  "englishName": "Gochujang Buttered Noodles",
+  "description": "Eric Kim's much-loved pantry pasta: spaghetti tossed in a glossy sauce of butter, a lot of garlic, gochujang, honey and vinegar, reduced until sticky. 20 minutes. Serves 4.",
+  "ingredients": [
+    {
+      "text": "450 g spaghetti (or ramen or any noodle)",
+      "qty": 450,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "spaghetti (or ramen or any noodle)"
+    },
+    {
+      "text": "1 tbsp salt (for the pasta water)",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "salt (for the pasta water)"
+    },
+    {
+      "text": "6 tbsp unsalted butter",
+      "qty": 6,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "unsalted butter"
+    },
+    {
+      "text": "12 garlic cloves, finely chopped",
+      "qty": 12,
+      "qtyMax": null,
+      "unit": null,
+      "item": "garlic cloves, finely chopped"
+    },
+    {
+      "text": "1/4 tsp salt",
+      "qty": 0.25,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "salt"
+    },
+    {
+      "text": "1/2 tsp black pepper",
+      "qty": 0.5,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "black pepper"
+    },
+    {
+      "text": "60 g gochujang (1/4 cup)",
+      "qty": 60,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "gochujang (1/4 cup)"
+    },
+    {
+      "text": "60 ml honey",
+      "qty": 60,
+      "qtyMax": null,
+      "unit": "ml",
+      "item": "honey"
+    },
+    {
+      "text": "60 ml rice vinegar or sherry vinegar",
+      "qty": 60,
+      "qtyMax": null,
+      "unit": "ml",
+      "item": "rice vinegar or sherry vinegar"
+    },
+    {
+      "text": "3 scallions, thinly sliced",
+      "qty": 3,
+      "qtyMax": null,
+      "unit": null,
+      "item": "scallions, thinly sliced"
+    },
+    {
+      "text": "10 g cilantro, chopped",
+      "qty": 10,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "cilantro, chopped"
+    }
+  ],
+  "steps": [
+    {
+      "text": "Boil 450 g spaghetti (or ramen or any noodle) in salted water with 1 tbsp salt (for the pasta water) according to the package. Reserve 240 ml pasta water, drain, and return the pasta to the pot.",
+      "ingredientRefs": [
+        0,
+        1
+      ],
+      "timers": []
+    },
+    {
+      "text": "Meanwhile, melt 4 tbsp of 6 tbsp unsalted butter in a skillet over medium-low. Add 12 garlic cloves, finely chopped, 1/4 tsp salt and 1/2 tsp black pepper and cook 3 minutes, until the garlic softens but doesn't brown.",
+      "ingredientRefs": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "timers": [
+        {
+          "text": "3 minutes",
+          "seconds": 180
+        }
+      ]
+    },
+    {
+      "text": "Stir in 60 g gochujang (1/4 cup), 60 ml honey and 60 ml rice vinegar or sherry vinegar. Raise the heat to medium-high and simmer 4 minutes, stirring constantly, until reduced to a thick, glossy sauce.",
+      "ingredientRefs": [
+        6,
+        7,
+        8
+      ],
+      "timers": [
+        {
+          "text": "4 minutes",
+          "seconds": 240
+        }
+      ]
+    },
+    {
+      "text": "Scrape the sauce into the pasta pot with the remaining butter and toss over low heat, adding splashes of pasta water, until the noodles are coated and saucy.",
+      "ingredientRefs": [],
+      "timers": []
+    },
+    {
+      "text": "Serve topped with 3 scallions, thinly sliced and 10 g cilantro, chopped.",
+      "ingredientRefs": [
+        9,
+        10
+      ],
+      "timers": []
+    }
+  ],
+  "notes": "Adapted from Eric Kim's NYT Cooking recipe. Gochujang brands vary in heat and sweetness; taste the sauce and adjust honey or vinegar. A jammy egg or crispy fried egg on top is excellent.",
+  "servings": 4,
+  "tags": [
+    "to-try"
+  ],
+  "chatUrl": null,
+  "chapter": "rice",
+  "cuisine": "Korean",
+  "favorite": false,
+  "log": [],
+  "createdAt": "2026-10-07T02:11:39.720Z",
+  "updatedAt": "2026-10-07T02:11:39.720Z"
+}

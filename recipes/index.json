@@ -670,6 +670,30 @@
       "cookCount": 0
     },
     {
+      "id": "gochujang-buttered-noodles",
+      "name": "Gochujang Buttered Noodles",
+      "englishName": "Gochujang Buttered Noodles",
+      "nativeName": "",
+      "romanized": "",
+      "tags": [
+        "to-try"
+      ],
+      "favorite": false,
+      "servings": 4,
+      "items": "spaghetti (or ramen or any noodle) · salt (for the pasta water) · unsalted butter · garlic cloves, finely chopped · salt · black pepper · gochujang (1/4 cup) · honey · rice vinegar or sherry vinegar · scallions, thinly sliced · cilantro, chopped",
+      "chapter": "rice",
+      "cuisine": "Korean",
+      "equipment": [],
+      "cookSeconds": 420,
+      "waitSeconds": 0,
+      "timerCount": 2,
+      "stepCount": 5,
+      "createdAt": "2026-10-07T02:11:39.720Z",
+      "updatedAt": "2026-10-07T02:11:39.720Z",
+      "lastCooked": null,
+      "cookCount": 0
+    },
+    {
       "id": "gyudon",
       "name": "牛丼 (Gyūdon) · Japanese Beef Bowl",
       "englishName": "Japanese Beef Bowl",
