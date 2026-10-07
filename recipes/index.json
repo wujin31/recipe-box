@@ -234,6 +234,28 @@
       "cookCount": 0
     },
     {
+      "id": "caldo-de-albondigas",
+      "name": "Caldo de Albóndigas — Mexican Meatball Soup with Mint",
+      "englishName": "Caldo de Albóndigas",
+      "nativeName": "",
+      "romanized": "",
+      "tags": [],
+      "favorite": false,
+      "servings": 6,
+      "items": "ground beef · ground pork · long-grain white rice, rinsed · egg · white onion, minced · garlic clove, minced · fresh mint (hierbabuena), chopped · ground cumin · salt (for the meatballs) · black pepper · Roma tomatoes · white onion · garlic cloves · neutral oil · chicken stock · fresh mint · carrots, sliced · large potato, cubed · Mexican squash or zucchini, cubed · salt, to taste · limes, cut into wedges · corn tortillas, warmed",
+      "chapter": "soups",
+      "cuisine": "Mexican",
+      "equipment": [],
+      "cookSeconds": 1800,
+      "waitSeconds": 0,
+      "timerCount": 4,
+      "stepCount": 6,
+      "createdAt": "2026-10-07T02:11:33.261Z",
+      "updatedAt": "2026-10-07T02:11:33.261Z",
+      "lastCooked": null,
+      "cookCount": 0
+    },
+    {
       "id": "carne-asada-nortena",
       "name": "Carne Asada Norteña — Citrus Marinade, Stainless Stovetop (v2)",
       "englishName": "Carne Asada Norteña",
