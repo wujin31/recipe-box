@@ -1,0 +1,153 @@
+{
+  "id": "kalua-pork-bowl",
+  "name": "Kālua Pork Bowl — Hawaiian Kalua Pig and Cabbage over Rice",
+  "nativeName": "",
+  "romanized": "",
+  "englishName": "Kālua Pork Bowl",
+  "subtitle": "Hawaiian Kalua Pig and Cabbage over Rice",
+  "description": "Oven kalua pig in the style of the imu (underground oven): pork shoulder rubbed with alaea salt and liquid smoke, wrapped in banana leaves and slow-roasted until it shreds, then cooked down with cabbage and served over rice. Serves 8.",
+  "ingredients": [
+    {
+      "text": "2.5 kg bone-in pork shoulder (pork butt)",
+      "qty": 2.5,
+      "qtyMax": null,
+      "unit": "kg",
+      "item": "bone-in pork shoulder (pork butt)",
+      "group": "For the kalua pig"
+    },
+    {
+      "text": "25 g alaea Hawaiian sea salt or coarse sea salt (about 1 1/2 tbsp)",
+      "qty": 25,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "alaea Hawaiian sea salt or coarse sea salt (about 1 1/2 tbsp)",
+      "group": "For the kalua pig"
+    },
+    {
+      "text": "2 tbsp liquid smoke (hickory or mesquite)",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "liquid smoke (hickory or mesquite)",
+      "group": "For the kalua pig"
+    },
+    {
+      "text": "3 large banana leaves or ti leaves (optional)",
+      "qty": 3,
+      "qtyMax": null,
+      "unit": null,
+      "item": "large banana leaves or ti leaves (optional)",
+      "group": "For the kalua pig"
+    },
+    {
+      "text": "240 ml water",
+      "qty": 240,
+      "qtyMax": null,
+      "unit": "ml",
+      "item": "water",
+      "group": "For the kalua pig"
+    },
+    {
+      "text": "1 small green cabbage (about 900 g), cut into 3 cm pieces",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": null,
+      "item": "small green cabbage (about 900 g), cut into 3 cm pieces",
+      "group": "For the bowls"
+    },
+    {
+      "text": "1.8 kg hot cooked white rice",
+      "qty": 1.8,
+      "qtyMax": null,
+      "unit": "kg",
+      "item": "hot cooked white rice",
+      "group": "For the bowls"
+    },
+    {
+      "text": "4 scallions, sliced",
+      "qty": 4,
+      "qtyMax": null,
+      "unit": null,
+      "item": "scallions, sliced",
+      "group": "For the bowls"
+    },
+    {
+      "text": "2 tbsp shoyu, to taste",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "shoyu, to taste",
+      "group": "For the bowls"
+    }
+  ],
+  "steps": [
+    {
+      "text": "Heat the oven to 160°C. Pat 2.5 kg bone-in pork shoulder (pork butt) dry and pierce it all over with a knife, 2 cm deep. Rub in 2 tbsp liquid smoke (hickory or mesquite), then 25 g alaea Hawaiian sea salt or coarse sea salt (about 1 1/2 tbsp), working it into the cuts.",
+      "ingredientRefs": [
+        0,
+        1,
+        2
+      ],
+      "timers": []
+    },
+    {
+      "text": "Wrap the pork in 3 large banana leaves or ti leaves (optional) if using, then wrap tightly in foil. Set it in a roasting pan with 240 ml water and cover the pan with more foil.",
+      "ingredientRefs": [
+        3,
+        4
+      ],
+      "timers": []
+    },
+    {
+      "text": "Roast for 5 hours, until the pork pulls apart easily and the bone slides out.",
+      "ingredientRefs": [],
+      "timers": [
+        {
+          "text": "5 hours",
+          "seconds": 18000
+        }
+      ]
+    },
+    {
+      "text": "Unwrap, shred the meat with forks, discarding the bone and large pieces of fat, and toss it with the pan juices. Taste: it should be well salted. Let it sit 15 minutes to absorb the juices.",
+      "ingredientRefs": [],
+      "timers": [
+        {
+          "text": "15 minutes",
+          "seconds": 900
+        }
+      ]
+    },
+    {
+      "text": "Put a third of the shredded pork and 240 ml of the juices in a large skillet over medium-high. Add 1 small green cabbage (about 900 g), cut into 3 cm pieces and cook 8 minutes, stirring, until the cabbage is tender and the liquid has mostly evaporated. Season with 2 tbsp shoyu, to taste.",
+      "ingredientRefs": [
+        5,
+        8
+      ],
+      "timers": [
+        {
+          "text": "8 minutes",
+          "seconds": 480
+        }
+      ]
+    },
+    {
+      "text": "Spoon the kalua pork and cabbage over 1.8 kg hot cooked white rice and top with 4 scallions, sliced.",
+      "ingredientRefs": [
+        6,
+        7
+      ],
+      "timers": []
+    }
+  ],
+  "notes": "Alaea salt is Hawaiian sea salt mixed with red volcanic clay; it's mild and slightly earthy. Plain coarse sea salt works; don't use table salt (it's much saltier by volume). The banana leaves add a subtle vegetal, tea-like aroma.\n\nSlow cooker: rub the same way, cook on low 16 hours with no added water. Instant Pot: cut into 4 pieces, 90 minutes high pressure with 240 ml water. Leftover kalua pig is excellent in fried rice, quesadillas or eggs benedict.",
+  "servings": 8,
+  "tags": [],
+  "chatUrl": null,
+  "chapter": "rice",
+  "cuisine": "Hawaiian",
+  "favorite": false,
+  "log": [],
+  "createdAt": "2026-10-07T02:11:30.399Z",
+  "updatedAt": "2026-10-07T02:11:30.399Z"
+}

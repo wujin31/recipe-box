@@ -414,6 +414,30 @@
       "cookCount": 0
     },
     {
+      "id": "kalua-pork-bowl",
+      "name": "Kālua Pork Bowl — Hawaiian Kalua Pig and Cabbage over Rice",
+      "englishName": "Kālua Pork Bowl",
+      "nativeName": "",
+      "romanized": "",
+      "tags": [],
+      "favorite": false,
+      "servings": 8,
+      "items": "bone-in pork shoulder (pork butt) · alaea Hawaiian sea salt or coarse sea salt (about 1 1/2 tbsp) · liquid smoke (hickory or mesquite) · large banana leaves or ti leaves (optional) · water · small green cabbage (about 900 g), cut into 3 cm pieces · hot cooked white rice · scallions, sliced · shoyu, to taste",
+      "chapter": "rice",
+      "cuisine": "Hawaiian",
+      "equipment": [
+        "Oven"
+      ],
+      "cookSeconds": 1380,
+      "waitSeconds": 18000,
+      "timerCount": 3,
+      "stepCount": 6,
+      "createdAt": "2026-10-07T02:11:30.399Z",
+      "updatedAt": "2026-10-07T02:11:30.399Z",
+      "lastCooked": null,
+      "cookCount": 0
+    },
+    {
       "id": "karaage",
       "name": "唐揚げ (Karaage) · Japanese Fried Chicken with Kewpie Mayo",
       "englishName": "Japanese Fried Chicken with Kewpie Mayo",
