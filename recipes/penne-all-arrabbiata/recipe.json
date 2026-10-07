@@ -1,0 +1,130 @@
+{
+  "id": "penne-all-arrabbiata",
+  "name": "Penne all'Arrabbiata — Penne in Spicy Tomato Sauce",
+  "nativeName": "",
+  "romanized": "",
+  "englishName": "Penne all'Arrabbiata",
+  "subtitle": "Penne in Spicy Tomato Sauce",
+  "description": "The Roman \"angry\" pasta: whole peeled tomatoes cooked down quickly with garlic and plenty of dried chili in olive oil, tossed with ridged penne and parsley. Serves 4.",
+  "ingredients": [
+    {
+      "text": "400 g penne rigate",
+      "qty": 400,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "penne rigate"
+    },
+    {
+      "text": "1 tbsp salt (for the pasta water)",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "salt (for the pasta water)"
+    },
+    {
+      "text": "60 ml extra-virgin olive oil",
+      "qty": 60,
+      "qtyMax": null,
+      "unit": "ml",
+      "item": "extra-virgin olive oil"
+    },
+    {
+      "text": "3 garlic cloves, thinly sliced",
+      "qty": 3,
+      "qtyMax": null,
+      "unit": null,
+      "item": "garlic cloves, thinly sliced"
+    },
+    {
+      "text": "3 dried peperoncini, crumbled (or 1 tsp red chili flakes)",
+      "qty": 3,
+      "qtyMax": null,
+      "unit": null,
+      "item": "dried peperoncini, crumbled (or 1 tsp red chili flakes)"
+    },
+    {
+      "text": "800 g canned whole peeled tomatoes (San Marzano), crushed by hand",
+      "qty": 800,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "canned whole peeled tomatoes (San Marzano), crushed by hand"
+    },
+    {
+      "text": "1/2 tsp salt (for the sauce)",
+      "qty": 0.5,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "salt (for the sauce)"
+    },
+    {
+      "text": "15 g flat-leaf parsley, chopped",
+      "qty": 15,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "flat-leaf parsley, chopped"
+    }
+  ],
+  "steps": [
+    {
+      "text": "Heat 60 ml extra-virgin olive oil with 3 garlic cloves, thinly sliced and 3 dried peperoncini, crumbled (or 1 tsp red chili flakes) in a large skillet over medium-low for 3 minutes, until the garlic is pale gold and the oil is red-tinged.",
+      "ingredientRefs": [
+        2,
+        3,
+        4
+      ],
+      "timers": [
+        {
+          "text": "3 minutes",
+          "seconds": 180
+        }
+      ]
+    },
+    {
+      "text": "Add 800 g canned whole peeled tomatoes (San Marzano), crushed by hand and 1/2 tsp salt (for the sauce), raise the heat to medium and simmer 20 minutes, stirring now and then, until thick and the oil separates at the edges.",
+      "ingredientRefs": [
+        5,
+        6
+      ],
+      "timers": [
+        {
+          "text": "20 minutes",
+          "seconds": 1200
+        }
+      ]
+    },
+    {
+      "text": "Meanwhile, bring 4 L water to a boil with 1 tbsp salt (for the pasta water) and cook 400 g penne rigate 1 minute less than the package says.",
+      "ingredientRefs": [
+        0,
+        1
+      ],
+      "timers": []
+    },
+    {
+      "text": "Transfer the pasta to the sauce with a splash of pasta water and toss over high heat for 1 minute, until coated and glossy.",
+      "ingredientRefs": [],
+      "timers": [
+        {
+          "text": "1 minute",
+          "seconds": 60
+        }
+      ]
+    },
+    {
+      "text": "Off the heat, toss in 15 g flat-leaf parsley, chopped and serve.",
+      "ingredientRefs": [
+        7
+      ],
+      "timers": []
+    }
+  ],
+  "notes": "The heat should be assertive; that's the name. Crushing the tomatoes by hand gives better texture than purée. Romans don't usually add cheese, but a little grated Pecorino Romano is common elsewhere.",
+  "servings": 4,
+  "tags": [],
+  "chatUrl": null,
+  "chapter": "rice",
+  "favorite": false,
+  "log": [],
+  "createdAt": "2026-10-07T02:11:35.521Z",
+  "updatedAt": "2026-10-07T02:11:35.521Z"
+}

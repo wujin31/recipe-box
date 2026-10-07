@@ -1041,6 +1041,28 @@
       "cookCount": 0
     },
     {
+      "id": "penne-all-arrabbiata",
+      "name": "Penne all'Arrabbiata — Penne in Spicy Tomato Sauce",
+      "englishName": "Penne all'Arrabbiata",
+      "nativeName": "",
+      "romanized": "",
+      "tags": [],
+      "favorite": false,
+      "servings": 4,
+      "items": "penne rigate · salt (for the pasta water) · extra-virgin olive oil · garlic cloves, thinly sliced · dried peperoncini, crumbled (or 1 tsp red chili flakes) · canned whole peeled tomatoes (San Marzano), crushed by hand · salt (for the sauce) · flat-leaf parsley, chopped",
+      "chapter": "rice",
+      "cuisine": "Italian",
+      "equipment": [],
+      "cookSeconds": 1440,
+      "waitSeconds": 0,
+      "timerCount": 3,
+      "stepCount": 5,
+      "createdAt": "2026-10-07T02:11:35.521Z",
+      "updatedAt": "2026-10-07T02:11:35.521Z",
+      "lastCooked": null,
+      "cookCount": 0
+    },
+    {
       "id": "pozole-rojo",
       "name": "Pozole Rojo — Jalisco-Style Red Pork and Hominy Stew",
       "englishName": "Pozole Rojo",
