@@ -1,0 +1,272 @@
+{
+  "id": "paigu-fan",
+  "name": "排骨飯 (Páigǔ Fàn) · Taiwanese Fried Pork Chop Rice",
+  "nativeName": "排骨飯",
+  "romanized": "Páigǔ Fàn",
+  "englishName": "Taiwanese Fried Pork Chop Rice",
+  "description": "The railway-bento classic: thin pork chops marinated with garlic, five-spice and rice wine, coated in coarse sweet potato starch and fried until craggy and crisp, over rice with garlicky cabbage. Serves 4.",
+  "ingredients": [
+    {
+      "text": "4 boneless pork loin chops (about 600 g), 1 cm thick",
+      "qty": 4,
+      "qtyMax": null,
+      "unit": null,
+      "item": "boneless pork loin chops (about 600 g), 1 cm thick",
+      "group": "For the pork"
+    },
+    {
+      "text": "2 tbsp soy sauce",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "soy sauce",
+      "group": "For the pork"
+    },
+    {
+      "text": "1 tbsp Taiwanese rice wine (米酒) or Shaoxing wine",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "Taiwanese rice wine (米酒) or Shaoxing wine",
+      "group": "For the pork"
+    },
+    {
+      "text": "1 tsp sugar",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "sugar",
+      "group": "For the pork"
+    },
+    {
+      "text": "4 garlic cloves, grated",
+      "qty": 4,
+      "qtyMax": null,
+      "unit": null,
+      "item": "garlic cloves, grated",
+      "group": "For the pork"
+    },
+    {
+      "text": "1/2 tsp five-spice powder",
+      "qty": 0.5,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "five-spice powder",
+      "group": "For the pork"
+    },
+    {
+      "text": "1/2 tsp ground white pepper",
+      "qty": 0.5,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "ground white pepper",
+      "group": "For the pork"
+    },
+    {
+      "text": "1 tsp sesame oil",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "sesame oil",
+      "group": "For the pork"
+    },
+    {
+      "text": "1 egg",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": null,
+      "item": "egg",
+      "group": "For the pork"
+    },
+    {
+      "text": "2 tbsp sweet potato starch (for the marinade)",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "sweet potato starch (for the marinade)",
+      "group": "For the pork"
+    },
+    {
+      "text": "120 g coarse sweet potato starch (地瓜粉), for coating",
+      "qty": 120,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "coarse sweet potato starch (地瓜粉), for coating",
+      "group": "For the pork"
+    },
+    {
+      "text": "750 ml neutral oil (for frying)",
+      "qty": 750,
+      "qtyMax": null,
+      "unit": "ml",
+      "item": "neutral oil (for frying)",
+      "group": "For the pork"
+    },
+    {
+      "text": "1/2 tsp ground white pepper (for the pepper salt)",
+      "qty": 0.5,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "ground white pepper (for the pepper salt)",
+      "group": "For the pepper salt"
+    },
+    {
+      "text": "1/4 tsp salt",
+      "qty": 0.25,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "salt",
+      "group": "For the pepper salt"
+    },
+    {
+      "text": "1/8 tsp five-spice powder (for the pepper salt)",
+      "qty": 0.125,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "five-spice powder (for the pepper salt)",
+      "group": "For the pepper salt"
+    },
+    {
+      "text": "800 g hot cooked short-grain rice",
+      "qty": 800,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "hot cooked short-grain rice",
+      "group": "To serve"
+    },
+    {
+      "text": "400 g green cabbage, torn into pieces",
+      "qty": 400,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "green cabbage, torn into pieces",
+      "group": "To serve"
+    },
+    {
+      "text": "2 garlic cloves, sliced (for the cabbage)",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": null,
+      "item": "garlic cloves, sliced (for the cabbage)",
+      "group": "To serve"
+    },
+    {
+      "text": "1 tbsp neutral oil (for the cabbage)",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "neutral oil (for the cabbage)",
+      "group": "To serve"
+    },
+    {
+      "text": "1/2 tsp salt (for the cabbage)",
+      "qty": 0.5,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "salt (for the cabbage)",
+      "group": "To serve"
+    }
+  ],
+  "steps": [
+    {
+      "text": "Snip the fat and connective tissue around the edge of 4 boneless pork loin chops (about 600 g), 1 cm thick every 2 cm so the chops stay flat. Pound both sides with a mallet or the back of a cleaver to about 8 mm.",
+      "ingredientRefs": [
+        0
+      ],
+      "timers": []
+    },
+    {
+      "text": "Mix 2 tbsp soy sauce, 1 tbsp Taiwanese rice wine (米酒) or Shaoxing wine, 1 tsp sugar, 4 garlic cloves, grated, 1/2 tsp five-spice powder, 1/2 tsp ground white pepper, 1 tsp sesame oil, 1 egg and 2 tbsp sweet potato starch (for the marinade) in a bowl. Add the pork, turn to coat, cover and refrigerate at least 1 hour (or overnight).",
+      "ingredientRefs": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "timers": [
+        {
+          "text": "1 hour",
+          "seconds": 3600
+        }
+      ]
+    },
+    {
+      "text": "Put 120 g coarse sweet potato starch (地瓜粉), for coating on a plate. Press each chop firmly into it on both sides so the coarse granules stick. Let the coated chops sit 5 minutes, until the starch looks damp; this keeps the crust from falling off.",
+      "ingredientRefs": [
+        10
+      ],
+      "timers": [
+        {
+          "text": "5 minutes",
+          "seconds": 300
+        }
+      ]
+    },
+    {
+      "text": "Heat 750 ml neutral oil (for frying) in a wok or deep pan to 170°C. Fry two chops at a time for 3 minutes, turning once, until pale gold. Lift out onto a rack.",
+      "ingredientRefs": [
+        11
+      ],
+      "timers": [
+        {
+          "text": "3 minutes",
+          "seconds": 180
+        }
+      ]
+    },
+    {
+      "text": "Raise the oil to 190°C and fry each chop again for 30 seconds to crisp and darken the crust. Drain on the rack and sprinkle with 1/2 tsp ground white pepper (for the pepper salt), 1/4 tsp salt and 1/8 tsp five-spice powder (for the pepper salt) mixed together.",
+      "ingredientRefs": [
+        12,
+        13,
+        14
+      ],
+      "timers": [
+        {
+          "text": "30 seconds",
+          "seconds": 30
+        }
+      ]
+    },
+    {
+      "text": "Heat 1 tbsp neutral oil (for the cabbage) in a wok over high, add 2 garlic cloves, sliced (for the cabbage) for 15 seconds, then 400 g green cabbage, torn into pieces and 1/2 tsp salt (for the cabbage). Stir-fry 3 minutes, until just wilted.",
+      "ingredientRefs": [
+        16,
+        17,
+        18,
+        19
+      ],
+      "timers": [
+        {
+          "text": "15 seconds",
+          "seconds": 15
+        },
+        {
+          "text": "3 minutes",
+          "seconds": 180
+        }
+      ]
+    },
+    {
+      "text": "Cut the chops into strips and serve over 800 g hot cooked short-grain rice with the cabbage.",
+      "ingredientRefs": [
+        15
+      ],
+      "timers": []
+    }
+  ],
+  "notes": "Coarse sweet potato starch (the grainy kind in Taiwanese markets, 粗地瓜粉) is what gives the signature crunchy, pebbly crust; cornstarch makes a smooth, thinner one. The 5-minute rest lets the starch absorb marinade (反潮) so it sticks.\n\nFor the full bento, spoon some lu rou sauce from your 滷肉飯 over the rice and add a braised egg and pickled mustard greens. Bone-in chops work too; add 1 minute to the first fry.",
+  "servings": 4,
+  "tags": [],
+  "chatUrl": null,
+  "chapter": "rice",
+  "favorite": false,
+  "log": [],
+  "createdAt": "2026-10-07T02:11:24.730Z",
+  "updatedAt": "2026-10-07T02:11:24.730Z"
+}

@@ -468,6 +468,28 @@
       "cookCount": 0
     },
     {
+      "id": "paigu-fan",
+      "name": "排骨飯 (Páigǔ Fàn) · Taiwanese Fried Pork Chop Rice",
+      "englishName": "Taiwanese Fried Pork Chop Rice",
+      "nativeName": "排骨飯",
+      "romanized": "Páigǔ Fàn",
+      "tags": [],
+      "favorite": false,
+      "servings": 4,
+      "items": "boneless pork loin chops (about 600 g), 1 cm thick · soy sauce · Taiwanese rice wine (米酒) or Shaoxing wine · sugar · garlic cloves, grated · five-spice powder · ground white pepper · sesame oil · egg · sweet potato starch (for the marinade) · coarse sweet potato starch (地瓜粉), for coating · neutral oil (for frying) · ground white pepper (for the pepper salt) · salt · five-spice powder (for the pepper salt) · hot cooked short-grain rice · green cabbage, torn into pieces · garlic cloves, sliced (for the cabbage) · neutral oil (for the cabbage) · salt (for the cabbage)",
+      "chapter": "rice",
+      "cuisine": "Taiwanese",
+      "equipment": [],
+      "cookSeconds": 4290,
+      "waitSeconds": 0,
+      "timerCount": 6,
+      "stepCount": 7,
+      "createdAt": "2026-10-07T02:11:24.730Z",
+      "updatedAt": "2026-10-07T02:11:24.730Z",
+      "lastCooked": null,
+      "cookCount": 0
+    },
+    {
       "id": "ribeye-with-garlic-butter-pan-sauce-roasted-yukon-golds-blis",
       "name": "Ribeye with Garlic Butter Pan Sauce, Roasted Yukon Golds & Blistered Green Beans",
       "englishName": "Ribeye with Garlic Butter Pan Sauce, Roasted Yukon Golds & Blistered Green Beans",
