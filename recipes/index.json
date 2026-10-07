@@ -234,6 +234,28 @@
       "cookCount": 0
     },
     {
+      "id": "cacio-e-pepe",
+      "name": "Cacio e Pepe — Pecorino and Black Pepper Pasta",
+      "englishName": "Cacio e Pepe",
+      "nativeName": "",
+      "romanized": "",
+      "tags": [],
+      "favorite": false,
+      "servings": 2,
+      "items": "tonnarelli or spaghetti · salt (for the pasta water) · black peppercorns · Pecorino Romano, very finely grated",
+      "chapter": "rice",
+      "cuisine": "Italian",
+      "equipment": [],
+      "cookSeconds": 360,
+      "waitSeconds": 0,
+      "timerCount": 5,
+      "stepCount": 5,
+      "createdAt": "2026-10-07T02:11:36.059Z",
+      "updatedAt": "2026-10-07T02:11:36.059Z",
+      "lastCooked": null,
+      "cookCount": 0
+    },
+    {
       "id": "caldo-de-albondigas",
       "name": "Caldo de Albóndigas — Mexican Meatball Soup with Mint",
       "englishName": "Caldo de Albóndigas",

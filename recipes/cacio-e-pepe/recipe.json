@@ -1,0 +1,106 @@
+{
+  "id": "cacio-e-pepe",
+  "name": "Cacio e Pepe — Pecorino and Black Pepper Pasta",
+  "nativeName": "",
+  "romanized": "",
+  "englishName": "Cacio e Pepe",
+  "subtitle": "Pecorino and Black Pepper Pasta",
+  "description": "Rome's three-ingredient pasta: toasted cracked pepper and finely grated Pecorino Romano emulsified with starchy pasta water into a creamy sauce, with no butter and no cream. Serves 2.",
+  "ingredients": [
+    {
+      "text": "200 g tonnarelli or spaghetti",
+      "qty": 200,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "tonnarelli or spaghetti"
+    },
+    {
+      "text": "1 tsp salt (for the pasta water)",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "salt (for the pasta water)"
+    },
+    {
+      "text": "2 tsp black peppercorns",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "black peppercorns"
+    },
+    {
+      "text": "100 g Pecorino Romano, very finely grated",
+      "qty": 100,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "Pecorino Romano, very finely grated"
+    }
+  ],
+  "steps": [
+    {
+      "text": "Crush 2 tsp black peppercorns coarsely in a mortar. Toast them in a large dry skillet over medium for 1 minute, until fragrant.",
+      "ingredientRefs": [
+        2
+      ],
+      "timers": [
+        {
+          "text": "1 minute",
+          "seconds": 60
+        }
+      ]
+    },
+    {
+      "text": "Bring 1.5 L water to a boil in a wide pot with 1 tsp salt (for the pasta water) (pecorino is salty, so keep it light). Cook 200 g tonnarelli or spaghetti 2 minutes less than the package says. Using less water than usual makes it starchier.",
+      "ingredientRefs": [
+        0,
+        1
+      ],
+      "timers": []
+    },
+    {
+      "text": "Meanwhile, put 100 g Pecorino Romano, very finely grated in a bowl. Ladle a little pasta water into a cup and let it cool 2 minutes, then stir 3–4 tbsp of it into the cheese to make a thick, smooth cream.",
+      "ingredientRefs": [
+        3
+      ],
+      "timers": [
+        {
+          "text": "2 minutes",
+          "seconds": 120
+        }
+      ]
+    },
+    {
+      "text": "Add a ladle of pasta water to the pepper in the skillet. Transfer the pasta and toss over medium heat for 2 minutes, adding water as needed, until al dente and coated in a starchy glaze.",
+      "ingredientRefs": [],
+      "timers": [
+        {
+          "text": "2 minutes",
+          "seconds": 120
+        }
+      ]
+    },
+    {
+      "text": "Take the pan off the heat and wait 30 seconds. Add the cheese cream and toss vigorously for 1 minute, adding pasta water a spoon at a time, until silky. Serve right away.",
+      "ingredientRefs": [],
+      "timers": [
+        {
+          "text": "30 seconds",
+          "seconds": 30
+        },
+        {
+          "text": "1 minute",
+          "seconds": 60
+        }
+      ]
+    }
+  ],
+  "notes": "Temperature is everything: pecorino seizes into clumps above about 70°C, which is why the water for the cheese cream is cooled and the pan comes off the heat. Grate the cheese on the finest rasp; coarse shreds don't melt smoothly.",
+  "servings": 2,
+  "tags": [],
+  "chatUrl": null,
+  "chapter": "rice",
+  "favorite": false,
+  "log": [],
+  "createdAt": "2026-10-07T02:11:36.059Z",
+  "updatedAt": "2026-10-07T02:11:36.059Z"
+}
