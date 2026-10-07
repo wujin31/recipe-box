@@ -598,6 +598,30 @@
       "cookCount": 0
     },
     {
+      "id": "garlic-butter-chicken-thighs-over-rice",
+      "name": "Garlic Butter Chicken Thighs over Rice",
+      "englishName": "Garlic Butter Chicken Thighs over Rice",
+      "nativeName": "",
+      "romanized": "",
+      "tags": [
+        "weeknight"
+      ],
+      "favorite": false,
+      "servings": 4,
+      "items": "boneless skin-on chicken thighs (about 1 kg) · kosher salt · black pepper · smoked paprika · neutral oil · garlic cloves, thinly sliced · butter · chicken stock · lemon, juiced (about 2 tbsp) · red chili flakes · flat-leaf parsley, chopped · hot cooked white rice",
+      "chapter": "rice",
+      "cuisine": "American",
+      "equipment": [],
+      "cookSeconds": 840,
+      "waitSeconds": 0,
+      "timerCount": 4,
+      "stepCount": 5,
+      "createdAt": "2026-10-07T02:11:37.184Z",
+      "updatedAt": "2026-10-07T02:11:37.184Z",
+      "lastCooked": null,
+      "cookCount": 0
+    },
+    {
       "id": "gindara-saikyo-yaki",
       "name": "銀ダラの西京焼き (Gindara no Saikyō-yaki) · Miso-Glazed Black Cod",
       "englishName": "Miso-Glazed Black Cod",
