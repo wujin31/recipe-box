@@ -1,0 +1,210 @@
+{
+  "id": "roasted-salmon-miso-rice-ginger-scallion",
+  "name": "Roasted Salmon with Miso Rice and Ginger-Scallion Vinaigrette",
+  "nativeName": "",
+  "romanized": "",
+  "englishName": "Roasted Salmon with Miso Rice and Ginger-Scallion Vinaigrette",
+  "description": "Rice cooked with white miso whisked into its water for a savory, buttery depth, topped with simply roasted salmon and a bright, sharp vinaigrette of scallion, ginger and rice vinegar. Serves 4.",
+  "ingredients": [
+    {
+      "text": "300 g short-grain rice, rinsed",
+      "qty": 300,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "short-grain rice, rinsed",
+      "group": "For the miso rice"
+    },
+    {
+      "text": "2 tbsp white miso",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "white miso",
+      "group": "For the miso rice"
+    },
+    {
+      "text": "400 ml water",
+      "qty": 400,
+      "qtyMax": null,
+      "unit": "ml",
+      "item": "water",
+      "group": "For the miso rice"
+    },
+    {
+      "text": "1 tbsp butter",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "butter",
+      "group": "For the miso rice"
+    },
+    {
+      "text": "4 skin-on salmon fillets (about 170 g each)",
+      "qty": 4,
+      "qtyMax": null,
+      "unit": null,
+      "item": "skin-on salmon fillets (about 170 g each)",
+      "group": "For the salmon"
+    },
+    {
+      "text": "1 tbsp neutral oil",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "neutral oil",
+      "group": "For the salmon"
+    },
+    {
+      "text": "3/4 tsp salt",
+      "qty": 0.75,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "salt",
+      "group": "For the salmon"
+    },
+    {
+      "text": "1/4 tsp black pepper",
+      "qty": 0.25,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "black pepper",
+      "group": "For the salmon"
+    },
+    {
+      "text": "4 scallions, finely chopped",
+      "qty": 4,
+      "qtyMax": null,
+      "unit": null,
+      "item": "scallions, finely chopped",
+      "group": "For the vinaigrette"
+    },
+    {
+      "text": "2 tbsp finely grated ginger",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "finely grated ginger",
+      "group": "For the vinaigrette"
+    },
+    {
+      "text": "3 tbsp rice vinegar",
+      "qty": 3,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "rice vinegar",
+      "group": "For the vinaigrette"
+    },
+    {
+      "text": "1 tbsp soy sauce",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "soy sauce",
+      "group": "For the vinaigrette"
+    },
+    {
+      "text": "1 tsp toasted sesame oil",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "toasted sesame oil",
+      "group": "For the vinaigrette"
+    },
+    {
+      "text": "3 tbsp neutral oil (for the vinaigrette)",
+      "qty": 3,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "neutral oil (for the vinaigrette)",
+      "group": "For the vinaigrette"
+    },
+    {
+      "text": "1 tsp sugar",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "sugar",
+      "group": "For the vinaigrette"
+    },
+    {
+      "text": "1 English cucumber, sliced",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": null,
+      "item": "English cucumber, sliced",
+      "group": "To serve"
+    }
+  ],
+  "steps": [
+    {
+      "text": "Whisk 2 tbsp white miso into 400 ml water until dissolved. Combine with 300 g short-grain rice, rinsed and 1 tbsp butter in a rice cooker or heavy pot. Cook on the white rice setting (about 45 minutes), or bring to a boil, cover, and cook on low for 15 minutes and rest 10 minutes off the heat.",
+      "ingredientRefs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "timers": [
+        {
+          "text": "45 minutes",
+          "seconds": 2700
+        },
+        {
+          "text": "15 minutes",
+          "seconds": 900
+        },
+        {
+          "text": "10 minutes",
+          "seconds": 600
+        }
+      ]
+    },
+    {
+      "text": "Heat the oven to 220°C. Rub 4 skin-on salmon fillets (about 170 g each) with 1 tbsp neutral oil and season with 3/4 tsp salt and 1/4 tsp black pepper. Roast skin side down on a lined sheet pan for 10 minutes, until just opaque in the center.",
+      "ingredientRefs": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "timers": [
+        {
+          "text": "10 minutes",
+          "seconds": 600
+        }
+      ]
+    },
+    {
+      "text": "Stir together 4 scallions, finely chopped, 2 tbsp finely grated ginger, 3 tbsp rice vinegar, 1 tbsp soy sauce, 1 tsp toasted sesame oil, 3 tbsp neutral oil (for the vinaigrette) and 1 tsp sugar.",
+      "ingredientRefs": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "timers": []
+    },
+    {
+      "text": "Fluff the rice and divide among plates. Top with the salmon and spoon over the vinaigrette. Serve with 1 English cucumber, sliced.",
+      "ingredientRefs": [
+        15
+      ],
+      "timers": []
+    }
+  ],
+  "notes": "Adapted from Kay Chun's NYT Cooking recipe. Miso can scorch at the bottom of a pot, so stir it fully into the water before cooking. The vinaigrette keeps a few days and is great on grilled steak, chicken or tofu.",
+  "servings": 4,
+  "tags": [
+    "to-try"
+  ],
+  "chatUrl": null,
+  "chapter": "mains",
+  "cuisine": "Japanese",
+  "favorite": false,
+  "log": [],
+  "createdAt": "2026-10-07T02:11:41.107Z",
+  "updatedAt": "2026-10-07T02:11:41.107Z"
+}
