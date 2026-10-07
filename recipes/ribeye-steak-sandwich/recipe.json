@@ -1,0 +1,209 @@
+{
+  "id": "ribeye-steak-sandwich",
+  "name": "Ribeye Steak Sandwich — with Caramelized Onions, Provolone and Horseradish Mayo",
+  "nativeName": "",
+  "romanized": "",
+  "englishName": "Ribeye Steak Sandwich",
+  "subtitle": "with Caramelized Onions, Provolone and Horseradish Mayo",
+  "description": "A dry-brined ribeye seared hard and sliced thin, piled on toasted ciabatta with jammy onions, melted provolone, peppery arugula and a sharp horseradish mayo. Serves 2.",
+  "ingredients": [
+    {
+      "text": "450 g boneless ribeye steak, about 2.5 cm thick",
+      "qty": 450,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "boneless ribeye steak, about 2.5 cm thick"
+    },
+    {
+      "text": "1 tsp kosher salt",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "kosher salt"
+    },
+    {
+      "text": "1/2 tsp black pepper",
+      "qty": 0.5,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "black pepper"
+    },
+    {
+      "text": "1 tbsp neutral oil",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "neutral oil"
+    },
+    {
+      "text": "1 tbsp butter",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "butter"
+    },
+    {
+      "text": "1 large yellow onion, thinly sliced",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": null,
+      "item": "large yellow onion, thinly sliced"
+    },
+    {
+      "text": "1 tbsp butter (for the onions)",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "butter (for the onions)"
+    },
+    {
+      "text": "1/4 tsp salt (for the onions)",
+      "qty": 0.25,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "salt (for the onions)"
+    },
+    {
+      "text": "3 tbsp mayonnaise",
+      "qty": 3,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "mayonnaise"
+    },
+    {
+      "text": "1 tbsp prepared horseradish",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "prepared horseradish"
+    },
+    {
+      "text": "1 tsp Dijon mustard",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "Dijon mustard"
+    },
+    {
+      "text": "2 ciabatta rolls, split",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": null,
+      "item": "ciabatta rolls, split"
+    },
+    {
+      "text": "4 slices provolone",
+      "qty": 4,
+      "qtyMax": null,
+      "unit": "slice",
+      "item": "provolone"
+    },
+    {
+      "text": "30 g arugula",
+      "qty": 30,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "arugula"
+    }
+  ],
+  "steps": [
+    {
+      "text": "Season 450 g boneless ribeye steak, about 2.5 cm thick all over with 1 tsp kosher salt and refrigerate uncovered at least 45 minutes (or up to overnight).",
+      "ingredientRefs": [
+        0,
+        1
+      ],
+      "timers": [
+        {
+          "text": "45 minutes",
+          "seconds": 2700
+        }
+      ]
+    },
+    {
+      "text": "Cook 1 large yellow onion, thinly sliced with 1 tbsp butter (for the onions) and 1/4 tsp salt (for the onions) in a skillet over medium-low for 25 minutes, stirring now and then, until deep golden and jammy. Set aside.",
+      "ingredientRefs": [
+        5,
+        6,
+        7
+      ],
+      "timers": [
+        {
+          "text": "25 minutes",
+          "seconds": 1500
+        }
+      ]
+    },
+    {
+      "text": "Mix 3 tbsp mayonnaise, 1 tbsp prepared horseradish and 1 tsp Dijon mustard.",
+      "ingredientRefs": [
+        8,
+        9,
+        10
+      ],
+      "timers": []
+    },
+    {
+      "text": "Pat the steak dry. Heat 1 tbsp neutral oil in a cast-iron pan over high until smoking. Sear the steak 4 minutes per side, flipping every 1 minute for an even crust, until 52°C inside for medium-rare. Add 1 tbsp butter for the last 1 minute and baste. Season with 1/2 tsp black pepper and rest 10 minutes.",
+      "ingredientRefs": [
+        2,
+        3,
+        4
+      ],
+      "timers": [
+        {
+          "text": "4 minutes",
+          "seconds": 240
+        },
+        {
+          "text": "1 minute",
+          "seconds": 60
+        },
+        {
+          "text": "10 minutes",
+          "seconds": 600
+        }
+      ]
+    },
+    {
+      "text": "Toast the cut sides of 2 ciabatta rolls, split in the steak pan for 1 minute, until golden.",
+      "ingredientRefs": [
+        11
+      ],
+      "timers": [
+        {
+          "text": "1 minute",
+          "seconds": 60
+        }
+      ]
+    },
+    {
+      "text": "Slice the steak thinly against the grain. Pile it on the bottom halves with the onions and 4 slices provolone, and broil 1 minute to melt the cheese.",
+      "ingredientRefs": [
+        12
+      ],
+      "timers": [
+        {
+          "text": "1 minute",
+          "seconds": 60
+        }
+      ]
+    },
+    {
+      "text": "Spread the tops with horseradish mayo, add 30 g arugula, close and cut in half.",
+      "ingredientRefs": [
+        13
+      ],
+      "timers": []
+    }
+  ],
+  "notes": "Slicing thin against the grain is what makes a steak sandwich bite cleanly instead of pulling out in one piece. Drizzle the resting juices over the meat before closing the sandwich.",
+  "servings": 2,
+  "tags": [],
+  "chatUrl": null,
+  "chapter": "mains",
+  "favorite": false,
+  "log": [],
+  "createdAt": "2026-10-07T02:11:34.677Z",
+  "updatedAt": "2026-10-07T02:11:34.677Z"
+}
