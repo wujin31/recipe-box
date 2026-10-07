@@ -1232,6 +1232,32 @@
       "cookCount": 0
     },
     {
+      "id": "old-fashioned-beef-stew",
+      "name": "Old-Fashioned Beef Stew",
+      "englishName": "Old-Fashioned Beef Stew",
+      "nativeName": "",
+      "romanized": "",
+      "tags": [
+        "to-try"
+      ],
+      "favorite": false,
+      "servings": 6,
+      "items": "boneless beef chuck, cut into 4 cm cubes · kosher salt · black pepper · all-purpose flour · neutral oil · onions, chopped · celery stalks, chopped · garlic cloves, minced · tomato paste · dry red wine · beef stock · Worcestershire sauce · fresh thyme · bay leaves · carrots, cut into 3 cm chunks · Yukon Gold potatoes, cut into 4 cm chunks · frozen peas · parsley, chopped",
+      "chapter": "soups",
+      "cuisine": "American",
+      "equipment": [
+        "Oven"
+      ],
+      "cookSeconds": 10080,
+      "waitSeconds": 0,
+      "timerCount": 7,
+      "stepCount": 7,
+      "createdAt": "2026-10-07T02:11:39.991Z",
+      "updatedAt": "2026-10-07T02:11:39.991Z",
+      "lastCooked": null,
+      "cookCount": 0
+    },
+    {
       "id": "onigiri",
       "name": "おにぎり (Onigiri) · Rice Balls with Salmon, Tuna Mayo and Kombu",
       "englishName": "Rice Balls with Salmon, Tuna Mayo and Kombu",
