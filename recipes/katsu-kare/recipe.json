@@ -1,0 +1,330 @@
+{
+  "id": "katsu-kare",
+  "name": "カツカレー (Katsu Karē) · Japanese Curry with Chicken and Spam Katsu",
+  "nativeName": "カツカレー",
+  "romanized": "Katsu Karē",
+  "englishName": "Japanese Curry with Chicken and Spam Katsu",
+  "description": "Japanese curry from a homemade roux, simmered with onion, carrot, potato and grated apple, served with rice and two katsu: panko chicken thigh and crispy Spam. Serves 4.",
+  "ingredients": [
+    {
+      "text": "60 g unsalted butter",
+      "qty": 60,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "unsalted butter",
+      "group": "For the curry roux"
+    },
+    {
+      "text": "60 g all-purpose flour (for the roux)",
+      "qty": 60,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "all-purpose flour (for the roux)",
+      "group": "For the curry roux"
+    },
+    {
+      "text": "2 tbsp Japanese curry powder (S&B)",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "Japanese curry powder (S&B)",
+      "group": "For the curry roux"
+    },
+    {
+      "text": "1 tsp garam masala",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "garam masala",
+      "group": "For the curry roux"
+    },
+    {
+      "text": "1/4 tsp cayenne pepper",
+      "qty": 0.25,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "cayenne pepper",
+      "group": "For the curry roux"
+    },
+    {
+      "text": "1 tbsp neutral oil",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "neutral oil",
+      "group": "For the curry"
+    },
+    {
+      "text": "2 onions, thinly sliced",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": null,
+      "item": "onions, thinly sliced",
+      "group": "For the curry"
+    },
+    {
+      "text": "1 carrot, cut into chunks",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": null,
+      "item": "carrot, cut into chunks",
+      "group": "For the curry"
+    },
+    {
+      "text": "2 Yukon Gold potatoes (about 350 g), cut into chunks",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": null,
+      "item": "Yukon Gold potatoes (about 350 g), cut into chunks",
+      "group": "For the curry"
+    },
+    {
+      "text": "800 ml chicken stock",
+      "qty": 800,
+      "qtyMax": null,
+      "unit": "ml",
+      "item": "chicken stock",
+      "group": "For the curry"
+    },
+    {
+      "text": "1/2 apple, grated",
+      "qty": 0.5,
+      "qtyMax": null,
+      "unit": null,
+      "item": "apple, grated",
+      "group": "For the curry"
+    },
+    {
+      "text": "1 tbsp ketchup",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "ketchup",
+      "group": "For the curry"
+    },
+    {
+      "text": "1 tbsp tonkatsu sauce or Worcestershire sauce",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "tonkatsu sauce or Worcestershire sauce",
+      "group": "For the curry"
+    },
+    {
+      "text": "1 tsp soy sauce",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "soy sauce",
+      "group": "For the curry"
+    },
+    {
+      "text": "1 tbsp honey",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "honey",
+      "group": "For the curry"
+    },
+    {
+      "text": "1/2 tsp salt, to taste",
+      "qty": 0.5,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "salt, to taste",
+      "group": "For the curry"
+    },
+    {
+      "text": "2 boneless skinless chicken thighs (about 300 g)",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": null,
+      "item": "boneless skinless chicken thighs (about 300 g)",
+      "group": "For the katsu"
+    },
+    {
+      "text": "1 can Spam (340 g), cut into 4 slices 1.5 cm thick",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "can",
+      "item": "Spam (340 g), cut into 4 slices 1.5 cm thick",
+      "group": "For the katsu"
+    },
+    {
+      "text": "1/2 tsp salt (for the chicken)",
+      "qty": 0.5,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "salt (for the chicken)",
+      "group": "For the katsu"
+    },
+    {
+      "text": "1/4 tsp black pepper",
+      "qty": 0.25,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "black pepper",
+      "group": "For the katsu"
+    },
+    {
+      "text": "40 g all-purpose flour (for dredging)",
+      "qty": 40,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "all-purpose flour (for dredging)",
+      "group": "For the katsu"
+    },
+    {
+      "text": "2 eggs, beaten",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": null,
+      "item": "eggs, beaten",
+      "group": "For the katsu"
+    },
+    {
+      "text": "100 g panko",
+      "qty": 100,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "panko",
+      "group": "For the katsu"
+    },
+    {
+      "text": "1 L neutral oil (for frying)",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "l",
+      "item": "neutral oil (for frying)",
+      "group": "For the katsu"
+    },
+    {
+      "text": "900 g hot cooked short-grain rice",
+      "qty": 900,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "hot cooked short-grain rice",
+      "group": "To serve"
+    },
+    {
+      "text": "4 tbsp fukujinzuke (red pickled relish)",
+      "qty": 4,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "fukujinzuke (red pickled relish)",
+      "group": "To serve"
+    }
+  ],
+  "steps": [
+    {
+      "text": "Make the roux: melt 60 g unsalted butter in a small pan over medium-low, add 60 g all-purpose flour (for the roux) and stir constantly for 15 minutes, until the color of peanut butter. Off the heat, stir in 2 tbsp Japanese curry powder (S&B), 1 tsp garam masala and 1/4 tsp cayenne pepper. Set aside.",
+      "ingredientRefs": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "timers": [
+        {
+          "text": "15 minutes",
+          "seconds": 900
+        }
+      ]
+    },
+    {
+      "text": "Heat 1 tbsp neutral oil in a heavy pot over medium and cook 2 onions, thinly sliced for 15 minutes, stirring, until soft and golden brown.",
+      "ingredientRefs": [
+        5,
+        6
+      ],
+      "timers": [
+        {
+          "text": "15 minutes",
+          "seconds": 900
+        }
+      ]
+    },
+    {
+      "text": "Add 1 carrot, cut into chunks, 2 Yukon Gold potatoes (about 350 g), cut into chunks and 800 ml chicken stock. Bring to a boil, skim, and simmer covered for 15 minutes, until the potatoes are just tender.",
+      "ingredientRefs": [
+        7,
+        8,
+        9
+      ],
+      "timers": [
+        {
+          "text": "15 minutes",
+          "seconds": 900
+        }
+      ]
+    },
+    {
+      "text": "Ladle a cup of the hot stock into the roux and whisk smooth, then stir it back into the pot. Add 1/2 apple, grated, 1 tbsp ketchup, 1 tbsp tonkatsu sauce or Worcestershire sauce, 1 tsp soy sauce and 1 tbsp honey. Simmer on low for 10 minutes, stirring often so it doesn't catch, until thick and glossy. Season with 1/2 tsp salt, to taste.",
+      "ingredientRefs": [
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "timers": [
+        {
+          "text": "10 minutes",
+          "seconds": 600
+        }
+      ]
+    },
+    {
+      "text": "Pound 2 boneless skinless chicken thighs (about 300 g) to an even 1.5 cm and season with 1/2 tsp salt (for the chicken) and 1/4 tsp black pepper. Dredge the chicken and 1 can Spam (340 g), cut into 4 slices 1.5 cm thick in 40 g all-purpose flour (for dredging), dip in 2 eggs, beaten, and press firmly into 100 g panko.",
+      "ingredientRefs": [
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "timers": []
+    },
+    {
+      "text": "Heat 1 L neutral oil (for frying) to 170°C. Fry the chicken 6 minutes, turning once, until deep golden and 74°C inside. Fry the Spam 2 minutes, until golden. Drain on a rack and rest the chicken 3 minutes before slicing.",
+      "ingredientRefs": [
+        23
+      ],
+      "timers": [
+        {
+          "text": "6 minutes",
+          "seconds": 360
+        },
+        {
+          "text": "2 minutes",
+          "seconds": 120
+        },
+        {
+          "text": "3 minutes",
+          "seconds": 180
+        }
+      ]
+    },
+    {
+      "text": "Plate 900 g hot cooked short-grain rice on one side, ladle curry on the other, and lay the sliced katsu over the line between them. Serve with 4 tbsp fukujinzuke (red pickled relish).",
+      "ingredientRefs": [
+        24,
+        25
+      ],
+      "timers": []
+    }
+  ],
+  "notes": "Store-bought roux (Golden Curry, Vermont or Java) is how most Japanese homes do it: skip step 1 and stir in 115 g (half a box) at step 4, off the heat. The homemade roux lets you control the spice and avoids the palm oil.\n\nCurry is famously better the next day; reheat gently with a splash of water. Spam is already cooked and salty, so it needs no seasoning, only a hot fry to crisp the panko.",
+  "servings": 4,
+  "tags": [],
+  "chatUrl": null,
+  "chapter": "rice",
+  "favorite": false,
+  "log": [],
+  "createdAt": "2026-10-07T02:11:26.396Z",
+  "updatedAt": "2026-10-07T02:11:26.396Z"
+}

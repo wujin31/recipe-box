@@ -346,6 +346,28 @@
       "cookCount": 0
     },
     {
+      "id": "katsu-kare",
+      "name": "カツカレー (Katsu Karē) · Japanese Curry with Chicken and Spam Katsu",
+      "englishName": "Japanese Curry with Chicken and Spam Katsu",
+      "nativeName": "カツカレー",
+      "romanized": "Katsu Karē",
+      "tags": [],
+      "favorite": false,
+      "servings": 4,
+      "items": "unsalted butter · all-purpose flour (for the roux) · Japanese curry powder (S&B) · garam masala · cayenne pepper · neutral oil · onions, thinly sliced · carrot, cut into chunks · Yukon Gold potatoes (about 350 g), cut into chunks · chicken stock · apple, grated · ketchup · tonkatsu sauce or Worcestershire sauce · soy sauce · honey · salt, to taste · boneless skinless chicken thighs (about 300 g) · Spam (340 g), cut into 4 slices 1.5 cm thick · salt (for the chicken) · black pepper · all-purpose flour (for dredging) · eggs, beaten · panko · neutral oil (for frying) · hot cooked short-grain rice · fukujinzuke (red pickled relish)",
+      "chapter": "rice",
+      "cuisine": "Japanese",
+      "equipment": [],
+      "cookSeconds": 3660,
+      "waitSeconds": 0,
+      "timerCount": 7,
+      "stepCount": 7,
+      "createdAt": "2026-10-07T02:11:26.396Z",
+      "updatedAt": "2026-10-07T02:11:26.396Z",
+      "lastCooked": null,
+      "cookCount": 0
+    },
+    {
       "id": "luroufan-oven-braise-1-25-lb",
       "name": "滷肉飯 (lǔròufàn) Oven Braise, 1.25 lb",
       "englishName": "Lǔròufàn Oven Braise, 1.25 lb",
