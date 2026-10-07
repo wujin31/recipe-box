@@ -118,6 +118,28 @@
       "cookCount": 0
     },
     {
+      "id": "budae-jjigae",
+      "name": "부대찌개 (Budae Jjigae) · Korean Army Base Stew",
+      "englishName": "Korean Army Base Stew",
+      "nativeName": "부대찌개",
+      "romanized": "Budae Jjigae",
+      "tags": [],
+      "favorite": false,
+      "servings": 4,
+      "items": "gochugaru (Korean chili flakes) · gochujang · soy sauce · mirin · minced garlic · sugar · black pepper · anchovy-kelp stock, beef stock or chicken stock · well-fermented kimchi, chopped · Spam (1/2 can), sliced 5 mm thick · hot dogs, sliced on the diagonal · firm tofu, sliced 1 cm thick · onion, sliced · enoki or shiitake mushrooms · sliced rice cakes (tteok), soaked if hard · canned baked beans · scallions, cut into 5 cm lengths · pack instant ramen noodles (discard the seasoning or use half) · American cheese",
+      "chapter": "soups",
+      "cuisine": "Korean",
+      "equipment": [],
+      "cookSeconds": 660,
+      "waitSeconds": 0,
+      "timerCount": 2,
+      "stepCount": 5,
+      "createdAt": "2026-10-07T02:11:29.294Z",
+      "updatedAt": "2026-10-07T02:11:29.294Z",
+      "lastCooked": null,
+      "cookCount": 0
+    },
+    {
       "id": "bulgogi-100g-v2",
       "name": "Bulgogi 100g, v2",
       "englishName": "Bulgogi 100g, v2",
