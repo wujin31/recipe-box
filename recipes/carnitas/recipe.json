@@ -1,0 +1,196 @@
+{
+  "id": "carnitas",
+  "name": "Carnitas Michoacanas — Lard-Simmered Pork",
+  "nativeName": "",
+  "romanized": "",
+  "englishName": "Carnitas Michoacanas",
+  "subtitle": "Lard-Simmered Pork",
+  "description": "Quiroga-style carnitas: pork shoulder confited in lard with orange, garlic and bay until tender, then browned in the same fat with a splash of Mexican Coke and milk until crisp-edged and golden. Serves 8.",
+  "ingredients": [
+    {
+      "text": "2 kg boneless pork shoulder, cut into 6 cm chunks",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": "kg",
+      "item": "boneless pork shoulder, cut into 6 cm chunks"
+    },
+    {
+      "text": "1 tbsp salt",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "salt"
+    },
+    {
+      "text": "1 kg lard",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "kg",
+      "item": "lard"
+    },
+    {
+      "text": "1 orange, halved",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": null,
+      "item": "orange, halved"
+    },
+    {
+      "text": "1 white onion, halved",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": null,
+      "item": "white onion, halved"
+    },
+    {
+      "text": "6 garlic cloves, smashed",
+      "qty": 6,
+      "qtyMax": null,
+      "unit": null,
+      "item": "garlic cloves, smashed"
+    },
+    {
+      "text": "3 bay leaves",
+      "qty": 3,
+      "qtyMax": null,
+      "unit": null,
+      "item": "bay leaves"
+    },
+    {
+      "text": "1 tsp Mexican oregano",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "Mexican oregano"
+    },
+    {
+      "text": "120 ml Mexican Coca-Cola",
+      "qty": 120,
+      "qtyMax": null,
+      "unit": "ml",
+      "item": "Mexican Coca-Cola"
+    },
+    {
+      "text": "120 ml whole milk",
+      "qty": 120,
+      "qtyMax": null,
+      "unit": "ml",
+      "item": "whole milk"
+    },
+    {
+      "text": "24 corn tortillas, warmed",
+      "qty": 24,
+      "qtyMax": null,
+      "unit": null,
+      "item": "corn tortillas, warmed"
+    },
+    {
+      "text": "1 white onion, finely chopped (to serve)",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": null,
+      "item": "white onion, finely chopped (to serve)"
+    },
+    {
+      "text": "1 bunch cilantro, chopped",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "bunch",
+      "item": "cilantro, chopped"
+    },
+    {
+      "text": "250 ml salsa verde",
+      "qty": 250,
+      "qtyMax": null,
+      "unit": "ml",
+      "item": "salsa verde"
+    },
+    {
+      "text": "4 limes, cut into wedges",
+      "qty": 4,
+      "qtyMax": null,
+      "unit": null,
+      "item": "limes, cut into wedges"
+    }
+  ],
+  "steps": [
+    {
+      "text": "Toss 2 kg boneless pork shoulder, cut into 6 cm chunks with 1 tbsp salt and leave 30 minutes while you prepare everything else.",
+      "ingredientRefs": [
+        0,
+        1
+      ],
+      "timers": [
+        {
+          "text": "30 minutes",
+          "seconds": 1800
+        }
+      ]
+    },
+    {
+      "text": "Melt 1 kg lard in a large heavy Dutch oven over medium. Add the pork; it should be mostly submerged. Squeeze in the juice of 1 orange, halved and drop in the rinds, with 1 white onion, halved, 6 garlic cloves, smashed, 3 bay leaves and 1 tsp Mexican oregano.",
+      "ingredientRefs": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "timers": []
+    },
+    {
+      "text": "Cook at a gentle bubble, uncovered, for 2 hours 30 minutes, stirring now and then, until the pork is tender enough to break with a spoon. Adjust the heat to keep small, lazy bubbles.",
+      "ingredientRefs": [],
+      "timers": [
+        {
+          "text": "2 hours 30 minutes",
+          "seconds": 9000
+        }
+      ]
+    },
+    {
+      "text": "Pour in 120 ml Mexican Coca-Cola and 120 ml whole milk slowly and carefully (it will sputter), and cook 20 minutes, until the liquid has evaporated and the pork begins to brown.",
+      "ingredientRefs": [
+        8,
+        9
+      ],
+      "timers": [
+        {
+          "text": "20 minutes",
+          "seconds": 1200
+        }
+      ]
+    },
+    {
+      "text": "Raise the heat to medium-high and fry 10 minutes, turning, until the outside is deep golden and crisp at the edges.",
+      "ingredientRefs": [],
+      "timers": [
+        {
+          "text": "10 minutes",
+          "seconds": 600
+        }
+      ]
+    },
+    {
+      "text": "Lift out the pork with a slotted spoon, drain, and chop or pull into pieces, mixing crisp and tender bits. Serve with 24 corn tortillas, warmed, 1 white onion, finely chopped (to serve), 1 bunch cilantro, chopped, 250 ml salsa verde and 4 limes, cut into wedges.",
+      "ingredientRefs": [
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "timers": []
+    }
+  ],
+  "notes": "The milk and Coke are Michoacán touches: their sugars brown the pork and give the signature color. Strain and refrigerate the lard afterward; it's seasoned for refried beans or the next batch.\n\nIn Michoacán, carnitas are a mix of cuts: add ribs, skin (cueritos) or belly for variety. Without enough lard, use Diana Kennedy's method: just cover the pork with water and salt, simmer uncovered until the water evaporates (about 1 hr 30 min), then fry it in its own rendered fat for 20 minutes.",
+  "servings": 8,
+  "tags": [],
+  "chatUrl": null,
+  "chapter": "mains",
+  "favorite": false,
+  "log": [],
+  "createdAt": "2026-10-07T02:11:33.827Z",
+  "updatedAt": "2026-10-07T02:11:33.827Z"
+}

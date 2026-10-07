@@ -324,6 +324,28 @@
       "cookCount": 0
     },
     {
+      "id": "carnitas",
+      "name": "Carnitas Michoacanas — Lard-Simmered Pork",
+      "englishName": "Carnitas Michoacanas",
+      "nativeName": "",
+      "romanized": "",
+      "tags": [],
+      "favorite": false,
+      "servings": 8,
+      "items": "boneless pork shoulder, cut into 6 cm chunks · salt · lard · orange, halved · white onion, halved · garlic cloves, smashed · bay leaves · Mexican oregano · Mexican Coca-Cola · whole milk · corn tortillas, warmed · white onion, finely chopped (to serve) · cilantro, chopped · salsa verde · limes, cut into wedges",
+      "chapter": "mains",
+      "cuisine": "Mexican",
+      "equipment": [],
+      "cookSeconds": 12600,
+      "waitSeconds": 0,
+      "timerCount": 4,
+      "stepCount": 6,
+      "createdAt": "2026-10-07T02:11:33.827Z",
+      "updatedAt": "2026-10-07T02:11:33.827Z",
+      "lastCooked": null,
+      "cookCount": 0
+    },
+    {
       "id": "chicken-thigh-fettuccine-alfredo-bloomed-pepper",
       "name": "Chicken Thigh Fettuccine Alfredo, Bloomed Pepper",
       "englishName": "Chicken Thigh Fettuccine Alfredo, Bloomed Pepper",
