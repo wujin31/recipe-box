@@ -1,0 +1,165 @@
+{
+  "id": "danhua-tang-zhurou",
+  "name": "豬肉蛋花湯 (Zhūròu Dànhuā Tāng) · Egg Drop Soup with Ground Pork",
+  "nativeName": "豬肉蛋花湯",
+  "romanized": "Zhūròu Dànhuā Tāng",
+  "englishName": "Egg Drop Soup with Ground Pork",
+  "description": "A light, silky Chinese home-style soup: seasoned ground pork poached in ginger-scented chicken stock, lightly thickened, with ribbons of egg drizzled in at the end. 15 minutes. Serves 4.",
+  "ingredients": [
+    {
+      "text": "150 g ground pork",
+      "qty": 150,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "ground pork"
+    },
+    {
+      "text": "1 tsp soy sauce (for the pork)",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "soy sauce (for the pork)"
+    },
+    {
+      "text": "1/2 tsp cornstarch (for the pork)",
+      "qty": 0.5,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "cornstarch (for the pork)"
+    },
+    {
+      "text": "1 tsp Shaoxing wine",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "Shaoxing wine"
+    },
+    {
+      "text": "1.2 L chicken stock",
+      "qty": 1.2,
+      "qtyMax": null,
+      "unit": "l",
+      "item": "chicken stock"
+    },
+    {
+      "text": "3 slices ginger",
+      "qty": 3,
+      "qtyMax": null,
+      "unit": "slice",
+      "item": "ginger"
+    },
+    {
+      "text": "2 tbsp cornstarch mixed with 3 tbsp water",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "cornstarch mixed with 3 tbsp water"
+    },
+    {
+      "text": "3 eggs, beaten",
+      "qty": 3,
+      "qtyMax": null,
+      "unit": null,
+      "item": "eggs, beaten"
+    },
+    {
+      "text": "1/2 tsp salt, to taste",
+      "qty": 0.5,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "salt, to taste"
+    },
+    {
+      "text": "1/4 tsp ground white pepper",
+      "qty": 0.25,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "ground white pepper"
+    },
+    {
+      "text": "1 tsp sesame oil",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "sesame oil"
+    },
+    {
+      "text": "2 scallions, thinly sliced",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": null,
+      "item": "scallions, thinly sliced"
+    }
+  ],
+  "steps": [
+    {
+      "text": "Mix 150 g ground pork with 1 tsp soy sauce (for the pork), 1/2 tsp cornstarch (for the pork) and 1 tsp Shaoxing wine.",
+      "ingredientRefs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "timers": []
+    },
+    {
+      "text": "Bring 1.2 L chicken stock and 3 slices ginger to a boil. Drop in the pork in small pinches and simmer 3 minutes, skimming any foam, until cooked through.",
+      "ingredientRefs": [
+        4,
+        5
+      ],
+      "timers": [
+        {
+          "text": "3 minutes",
+          "seconds": 180
+        }
+      ]
+    },
+    {
+      "text": "Stir 2 tbsp cornstarch mixed with 3 tbsp water and drizzle it in while stirring. Simmer 30 seconds, until slightly thickened. Season with 1/2 tsp salt, to taste and 1/4 tsp ground white pepper.",
+      "ingredientRefs": [
+        6,
+        8,
+        9
+      ],
+      "timers": [
+        {
+          "text": "30 seconds",
+          "seconds": 30
+        }
+      ]
+    },
+    {
+      "text": "Turn the heat to low. Stir the soup slowly in one direction and pour 3 eggs, beaten in a thin stream from high up, so they set into ribbons. Leave 10 seconds before stirring again.",
+      "ingredientRefs": [
+        7
+      ],
+      "timers": [
+        {
+          "text": "10 seconds",
+          "seconds": 10
+        }
+      ]
+    },
+    {
+      "text": "Turn off the heat, add 1 tsp sesame oil and 2 scallions, thinly sliced, and serve.",
+      "ingredientRefs": [
+        10,
+        11
+      ],
+      "timers": []
+    }
+  ],
+  "notes": "Thickening the soup before adding the egg is what suspends the ribbons rather than letting them sink into clumps. For 番茄蛋花湯 (tomato egg drop), add 2 diced tomatoes with the pork; for a silken tofu version, add 200 g cubed tofu after the pork.",
+  "servings": 4,
+  "tags": [
+    "weeknight"
+  ],
+  "chatUrl": null,
+  "chapter": "soups",
+  "cuisine": "Chinese",
+  "favorite": false,
+  "log": [],
+  "createdAt": "2026-10-07T02:11:38.575Z",
+  "updatedAt": "2026-10-07T02:11:38.575Z"
+}

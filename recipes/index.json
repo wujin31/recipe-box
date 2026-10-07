@@ -462,6 +462,30 @@
       "cookCount": 0
     },
     {
+      "id": "danhua-tang-zhurou",
+      "name": "豬肉蛋花湯 (Zhūròu Dànhuā Tāng) · Egg Drop Soup with Ground Pork",
+      "englishName": "Egg Drop Soup with Ground Pork",
+      "nativeName": "豬肉蛋花湯",
+      "romanized": "Zhūròu Dànhuā Tāng",
+      "tags": [
+        "weeknight"
+      ],
+      "favorite": false,
+      "servings": 4,
+      "items": "ground pork · soy sauce (for the pork) · cornstarch (for the pork) · Shaoxing wine · chicken stock · ginger · cornstarch mixed with 3 tbsp water · eggs, beaten · salt, to taste · ground white pepper · sesame oil · scallions, thinly sliced",
+      "chapter": "soups",
+      "cuisine": "Chinese",
+      "equipment": [],
+      "cookSeconds": 220,
+      "waitSeconds": 0,
+      "timerCount": 3,
+      "stepCount": 5,
+      "createdAt": "2026-10-07T02:11:38.575Z",
+      "updatedAt": "2026-10-07T02:11:38.575Z",
+      "lastCooked": null,
+      "cookCount": 0
+    },
+    {
       "id": "din-tai-fung-garlic-green-beans",
       "name": "Din Tai Fung Garlic Green Beans (蒜香四季豆)",
       "englishName": "Din Tai Fung Garlic Green Beans",
