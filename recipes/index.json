@@ -1379,6 +1379,30 @@
       "cookCount": 0
     },
     {
+      "id": "soy-glazed-salmon-bowl",
+      "name": "Soy-Glazed Salmon Bowl",
+      "englishName": "Soy-Glazed Salmon Bowl",
+      "nativeName": "",
+      "romanized": "",
+      "tags": [
+        "weeknight"
+      ],
+      "favorite": false,
+      "servings": 2,
+      "items": "skin-on salmon fillets (about 300 g) · salt · neutral oil · soy sauce · honey · mirin · grated ginger · garlic clove, grated · Persian cucumber, thinly sliced · rice vinegar · sugar · salt (for the cucumber) · hot cooked short-grain rice · avocado, sliced · scallions, thinly sliced · toasted sesame seeds",
+      "chapter": "rice",
+      "cuisine": "Japanese",
+      "equipment": [],
+      "cookSeconds": 960,
+      "waitSeconds": 0,
+      "timerCount": 4,
+      "stepCount": 5,
+      "createdAt": "2026-10-07T02:11:37.439Z",
+      "updatedAt": "2026-10-07T02:11:37.439Z",
+      "lastCooked": null,
+      "cookCount": 0
+    },
+    {
       "id": "spaghetti-aglio-olio",
       "name": "Spaghetti Aglio, Olio e Peperoncino — Garlic, Oil and Chili Pasta",
       "englishName": "Spaghetti Aglio, Olio e Peperoncino",

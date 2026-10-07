@@ -1,0 +1,200 @@
+{
+  "id": "soy-glazed-salmon-bowl",
+  "name": "Soy-Glazed Salmon Bowl",
+  "nativeName": "",
+  "romanized": "",
+  "englishName": "Soy-Glazed Salmon Bowl",
+  "description": "Pan-seared salmon lacquered in a soy, honey and ginger glaze, over rice with quick-pickled cucumber, avocado and scallions. 25 minutes. Serves 2.",
+  "ingredients": [
+    {
+      "text": "2 skin-on salmon fillets (about 300 g)",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": null,
+      "item": "skin-on salmon fillets (about 300 g)"
+    },
+    {
+      "text": "1/4 tsp salt",
+      "qty": 0.25,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "salt"
+    },
+    {
+      "text": "1 tsp neutral oil",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "neutral oil"
+    },
+    {
+      "text": "2 tbsp soy sauce",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "soy sauce"
+    },
+    {
+      "text": "1 tbsp honey",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "honey"
+    },
+    {
+      "text": "1 tbsp mirin",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "mirin"
+    },
+    {
+      "text": "1 tsp grated ginger",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "grated ginger"
+    },
+    {
+      "text": "1 garlic clove, grated",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": null,
+      "item": "garlic clove, grated"
+    },
+    {
+      "text": "1 Persian cucumber, thinly sliced",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": null,
+      "item": "Persian cucumber, thinly sliced"
+    },
+    {
+      "text": "1 tbsp rice vinegar",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "rice vinegar"
+    },
+    {
+      "text": "1/2 tsp sugar",
+      "qty": 0.5,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "sugar"
+    },
+    {
+      "text": "1/4 tsp salt (for the cucumber)",
+      "qty": 0.25,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "salt (for the cucumber)"
+    },
+    {
+      "text": "450 g hot cooked short-grain rice",
+      "qty": 450,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "hot cooked short-grain rice"
+    },
+    {
+      "text": "1 avocado, sliced",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": null,
+      "item": "avocado, sliced"
+    },
+    {
+      "text": "2 scallions, thinly sliced",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": null,
+      "item": "scallions, thinly sliced"
+    },
+    {
+      "text": "1 tsp toasted sesame seeds",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "toasted sesame seeds"
+    }
+  ],
+  "steps": [
+    {
+      "text": "Toss 1 Persian cucumber, thinly sliced with 1 tbsp rice vinegar, 1/2 tsp sugar and 1/4 tsp salt (for the cucumber) and set aside for 10 minutes.",
+      "ingredientRefs": [
+        8,
+        9,
+        10,
+        11
+      ],
+      "timers": [
+        {
+          "text": "10 minutes",
+          "seconds": 600
+        }
+      ]
+    },
+    {
+      "text": "Mix 2 tbsp soy sauce, 1 tbsp honey, 1 tbsp mirin, 1 tsp grated ginger and 1 garlic clove, grated.",
+      "ingredientRefs": [
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "timers": []
+    },
+    {
+      "text": "Pat 2 skin-on salmon fillets (about 300 g) dry and season with 1/4 tsp salt. Heat 1 tsp neutral oil in a nonstick skillet over medium-high and cook the salmon skin side down for 5 minutes, until the skin is crisp. Flip and cook 1 minute.",
+      "ingredientRefs": [
+        0,
+        1,
+        2
+      ],
+      "timers": [
+        {
+          "text": "5 minutes",
+          "seconds": 300
+        },
+        {
+          "text": "1 minute",
+          "seconds": 60
+        }
+      ]
+    },
+    {
+      "text": "Lower the heat to medium, pour in the glaze and cook 1 minute, spooning it over the salmon, until thick and shiny.",
+      "ingredientRefs": [],
+      "timers": [
+        {
+          "text": "1 minute",
+          "seconds": 60
+        }
+      ]
+    },
+    {
+      "text": "Divide 450 g hot cooked short-grain rice between bowls and top with the salmon, the drained cucumber, 1 avocado, sliced, 2 scallions, thinly sliced and 1 tsp toasted sesame seeds. Drizzle with the pan glaze.",
+      "ingredientRefs": [
+        12,
+        13,
+        14,
+        15
+      ],
+      "timers": []
+    }
+  ],
+  "notes": "Take the salmon off when the center is still slightly translucent (about 50°C); it carries over to medium as it sits. Kimchi, edamame or a fried egg are easy extras.",
+  "servings": 2,
+  "tags": [
+    "weeknight"
+  ],
+  "chatUrl": null,
+  "chapter": "rice",
+  "cuisine": "Japanese",
+  "favorite": false,
+  "log": [],
+  "createdAt": "2026-10-07T02:11:37.439Z",
+  "updatedAt": "2026-10-07T02:11:37.439Z"
+}
