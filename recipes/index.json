@@ -1658,6 +1658,32 @@
       "cookCount": 0
     },
     {
+      "id": "sf-garlic-noodles",
+      "name": "SF Garlic Noodles — San Francisco-Style Vietnamese Garlic Noodles",
+      "englishName": "SF Garlic Noodles",
+      "nativeName": "",
+      "romanized": "",
+      "tags": [
+        "to-try"
+      ],
+      "favorite": false,
+      "servings": 4,
+      "items": "fresh egg noodles or spaghetti · unsalted butter · garlic cloves, finely minced · oyster sauce · fish sauce · Maggi seasoning or soy sauce · sugar · Parmesan, finely grated · scallions, thinly sliced",
+      "chapter": "rice",
+      "cuisine": "Vietnamese",
+      "equipment": [
+        "Oven"
+      ],
+      "cookSeconds": 300,
+      "waitSeconds": 0,
+      "timerCount": 3,
+      "stepCount": 5,
+      "createdAt": "2026-10-07T02:11:42.542Z",
+      "updatedAt": "2026-10-07T02:11:42.542Z",
+      "lastCooked": null,
+      "cookCount": 0
+    },
+    {
       "id": "shakshuka",
       "name": "Shakshuka — Eggs Poached in Spiced Tomato and Pepper Sauce",
       "englishName": "Shakshuka",
