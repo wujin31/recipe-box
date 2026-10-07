@@ -460,6 +460,32 @@
       "cookCount": 0
     },
     {
+      "id": "crispy-gnocchi-burst-tomatoes-mozzarella",
+      "name": "Crispy Gnocchi with Burst Tomatoes and Mozzarella",
+      "englishName": "Crispy Gnocchi with Burst Tomatoes and Mozzarella",
+      "nativeName": "",
+      "romanized": "",
+      "tags": [
+        "to-try"
+      ],
+      "favorite": false,
+      "servings": 3,
+      "items": "extra-virgin olive oil · shelf-stable or refrigerated potato gnocchi · unsalted butter · garlic cloves, thinly sliced · red chili flakes · salt · black pepper · cherry or grape tomatoes · water · basil leaves · fresh mozzarella, torn into pieces",
+      "chapter": "rice",
+      "cuisine": "Italian",
+      "equipment": [
+        "Oven"
+      ],
+      "cookSeconds": 780,
+      "waitSeconds": 0,
+      "timerCount": 6,
+      "stepCount": 6,
+      "createdAt": "2026-10-07T02:11:41.989Z",
+      "updatedAt": "2026-10-07T02:11:41.989Z",
+      "lastCooked": null,
+      "cookCount": 0
+    },
+    {
       "id": "crispy-pork-belly-in-salsa-verde-with-refried-beans",
       "name": "Crispy Pork Belly in Salsa Verde with Refried Beans",
       "englishName": "Crispy Pork Belly in Salsa Verde with Refried Beans",

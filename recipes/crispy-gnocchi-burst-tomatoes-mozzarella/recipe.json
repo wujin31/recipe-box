@@ -1,0 +1,174 @@
+{
+  "id": "crispy-gnocchi-burst-tomatoes-mozzarella",
+  "name": "Crispy Gnocchi with Burst Tomatoes and Mozzarella",
+  "nativeName": "",
+  "romanized": "",
+  "englishName": "Crispy Gnocchi with Burst Tomatoes and Mozzarella",
+  "description": "Pan-seared crispy gnocchi folded into cherry tomatoes burst in garlicky butter, topped with fresh mozzarella and basil and broiled until bubbling and browned in spots. 25 minutes. Serves 3.",
+  "ingredients": [
+    {
+      "text": "3 tbsp extra-virgin olive oil",
+      "qty": 3,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "extra-virgin olive oil"
+    },
+    {
+      "text": "500 g shelf-stable or refrigerated potato gnocchi",
+      "qty": 500,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "shelf-stable or refrigerated potato gnocchi"
+    },
+    {
+      "text": "2 tbsp unsalted butter",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "unsalted butter"
+    },
+    {
+      "text": "3 garlic cloves, thinly sliced",
+      "qty": 3,
+      "qtyMax": null,
+      "unit": null,
+      "item": "garlic cloves, thinly sliced"
+    },
+    {
+      "text": "1/2 tsp red chili flakes",
+      "qty": 0.5,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "red chili flakes"
+    },
+    {
+      "text": "1/2 tsp salt",
+      "qty": 0.5,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "salt"
+    },
+    {
+      "text": "1/4 tsp black pepper",
+      "qty": 0.25,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "black pepper"
+    },
+    {
+      "text": "450 g cherry or grape tomatoes",
+      "qty": 450,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "cherry or grape tomatoes"
+    },
+    {
+      "text": "60 ml water",
+      "qty": 60,
+      "qtyMax": null,
+      "unit": "ml",
+      "item": "water"
+    },
+    {
+      "text": "15 g basil leaves",
+      "qty": 15,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "basil leaves"
+    },
+    {
+      "text": "225 g fresh mozzarella, torn into pieces",
+      "qty": 225,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "fresh mozzarella, torn into pieces"
+    }
+  ],
+  "steps": [
+    {
+      "text": "Heat the broiler with a rack 15 cm from the heat.",
+      "ingredientRefs": [],
+      "timers": []
+    },
+    {
+      "text": "Heat 2 tbsp of 3 tbsp extra-virgin olive oil in a large ovenproof skillet over medium-high. Add 500 g shelf-stable or refrigerated potato gnocchi in one layer, cover, and cook 4 minutes, until golden underneath. Stir and cook 2 minutes more. Transfer to a plate.",
+      "ingredientRefs": [
+        0,
+        1
+      ],
+      "timers": [
+        {
+          "text": "4 minutes",
+          "seconds": 240
+        },
+        {
+          "text": "2 minutes",
+          "seconds": 120
+        }
+      ]
+    },
+    {
+      "text": "Lower the heat to medium, add 2 tbsp unsalted butter and cook 1 minute, until golden-brown. Add 3 garlic cloves, thinly sliced, 1/2 tsp red chili flakes, 1/2 tsp salt and 1/4 tsp black pepper and stir 30 seconds.",
+      "ingredientRefs": [
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "timers": [
+        {
+          "text": "1 minute",
+          "seconds": 60
+        },
+        {
+          "text": "30 seconds",
+          "seconds": 30
+        }
+      ]
+    },
+    {
+      "text": "Add 450 g cherry or grape tomatoes and 60 ml water, cover and cook 5 minutes, until the tomatoes soften and start to burst. Press them with a spoon to release their juices.",
+      "ingredientRefs": [
+        7,
+        8
+      ],
+      "timers": [
+        {
+          "text": "5 minutes",
+          "seconds": 300
+        }
+      ]
+    },
+    {
+      "text": "Stir in the gnocchi and most of 15 g basil leaves. Top with 225 g fresh mozzarella, torn into pieces and drizzle with the remaining oil.",
+      "ingredientRefs": [
+        9,
+        10
+      ],
+      "timers": []
+    },
+    {
+      "text": "Broil 3 minutes, until the cheese is melted and browned in spots. Scatter with the rest of the basil and serve from the pan.",
+      "ingredientRefs": [],
+      "timers": [
+        {
+          "text": "3 minutes",
+          "seconds": 180
+        }
+      ]
+    }
+  ],
+  "notes": "Inspired by Ali Slagle's NYT Cooking recipe. Use an ovenproof skillet (cast iron is ideal). Pat the mozzarella dry so it browns rather than weeps.",
+  "servings": 3,
+  "tags": [
+    "to-try"
+  ],
+  "chatUrl": null,
+  "chapter": "rice",
+  "cuisine": "Italian",
+  "favorite": false,
+  "log": [],
+  "createdAt": "2026-10-07T02:11:41.989Z",
+  "updatedAt": "2026-10-07T02:11:41.989Z"
+}
