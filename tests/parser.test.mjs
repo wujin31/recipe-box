@@ -1,7 +1,9 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
-import { parseRecipeText, recipeToText, slugify, findTimers, parseTitle } from "../js/parser.js";
+import { parseRecipeText, recipeToText, slugify } from "../js/parser.js";
+import { findTimers } from "../js/durations.js";
+import { parseTitle } from "../js/titles.js";
 import { parseIngredientLine, formatIngredient, formatFraction } from "../js/units.js";
 import { isRecipeId, safeUrl } from "../js/store.js";
 

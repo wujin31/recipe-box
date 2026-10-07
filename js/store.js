@@ -7,7 +7,8 @@
 // GitHub Pages copy of the files. Writes commit straight to the repo with the token.
 // Everything read is also kept in the Cache API so the app works offline.
 
-import { slugify, parseTitle } from "./parser.js";
+import { slugify } from "./parser.js";
+import { parseTitle } from "./titles.js";
 import { guessCuisine, guessEquipment, recipeTime, timerCount, chaptersFrom } from "./cookbook.js";
 
 // ---------- device-local settings ----------

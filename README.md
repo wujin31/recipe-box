@@ -159,13 +159,16 @@ python3 -m http.server                                                   # run l
 
 | File | What it does |
 | --- | --- |
-| `parser.js` | Turns Claude recipe card text, or JSON from the export prompt, into a recipe: title parts, ingredients, steps, notes, servings. Links each step to the ingredients it mentions, finds timers and labels them. |
+| `parser.js` | Turns Claude recipe card text, or JSON from the export prompt, into a recipe: ingredients, steps, notes, servings. Links each step to the ingredients it mentions. |
+| `titles.js` | Splits a recipe title into its own-script name, romanization, English name and subtitle. |
+| `durations.js` | Finds the timers in a step, tells them from times that aren't timers, and labels them ("Braise undisturbed"). |
 | `units.js` | Quantities, scaling (including to what you have), fractions, US/metric conversion. |
 | `cookbook.js` | Chapters, and guessing a recipe's chapter, cuisine, equipment and time. |
 | `shopping.js` | The shopping list: names to shop by, merging across recipes and units, aisles. |
 | `store.js` | Reads and writes recipe files through the GitHub API, plus the offline copy. |
 | `timers.js` | Kitchen timers, chime, screen wake lock. |
-| `app.js` | The router; screens are in `views/` (cookbook, chapter, search, recipe, cooking, add/edit, sort, timers, tools, settings). |
+| `ui.js` | The `h()` DOM helper, icons, toasts, bottom sheets. |
+| `app.js` | The router; screens are in `views/` (cookbook, chapter, search, recipe, cooking, add/edit, sort, shopping list, timers, tools, settings). |
 | `tools/` | The kitchen tools. Each renders from `{ recipe }`; add one there and in `tools/index.js`. |
 | `sw.js` | Service worker for offline use and updates. Bump `SHELL` with every change to the app's files. |
 

@@ -1,6 +1,7 @@
 // Pieces shared by the recipe and cooking screens: per-device view state, step rendering, the cook log.
 
-import { recipeToText, refreshRecipe, timerAction, timerPositions } from "../parser.js";
+import { timerAction, timerPositions } from "../durations.js";
+import { recipeToText, refreshRecipe } from "../parser.js";
 import { getRecipe, getSettings, loadLocal, saveLocal, updateRecipe } from "../store.js";
 import { shortDuration, startTimer } from "../timers.js";
 import { backButton, copyText, displayName, errorMessage, h, icon, navbar, openSheet, requireWrite, saving, toast } from "../ui.js";

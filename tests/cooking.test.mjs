@@ -1,6 +1,6 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import { findTimers, parseDuration, timerAction, timerPositions } from "../js/parser.js";
+import { findTimers, parseDuration, timerAction, timerPositions } from "../js/durations.js";
 import { factorFor, parseIngredientLine, unitsFor } from "../js/units.js";
 
 const label = (text, ingredients = []) => timerAction(text, findTimers(text)[0], ingredients);

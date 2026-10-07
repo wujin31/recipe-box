@@ -1,7 +1,9 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
 import { readFileSync, readdirSync } from "node:fs";
-import { parseRecipeInput, recipeToText, findTimers, parseTitle, EXPORT_PROMPT } from "../js/parser.js";
+import { parseRecipeInput, recipeToText, EXPORT_PROMPT } from "../js/parser.js";
+import { findTimers } from "../js/durations.js";
+import { parseTitle } from "../js/titles.js";
 import { parseIngredientLine, formatIngredient, convertTemperatures } from "../js/units.js";
 
 const fixtures = new URL("./fixtures/", import.meta.url);

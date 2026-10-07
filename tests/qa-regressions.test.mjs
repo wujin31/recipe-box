@@ -2,7 +2,9 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
 import { readFileSync, readdirSync } from "node:fs";
-import { parseRecipeInput, recipeToText, findTimers, parseTitle } from "../js/parser.js";
+import { parseRecipeInput, recipeToText } from "../js/parser.js";
+import { findTimers } from "../js/durations.js";
+import { parseTitle } from "../js/titles.js";
 import { parseIngredientLine, formatIngredient } from "../js/units.js";
 
 const dir = new URL("./fixtures/synthetic/", import.meta.url);

@@ -2,7 +2,8 @@ import { test } from "node:test";
 import assert from "node:assert/strict";
 import { readFileSync, readdirSync } from "node:fs";
 import { guessChapter, guessCuisine, guessEquipment, recipeTime, formatTime, chaptersFrom, chapterOf, DEFAULT_CHAPTERS } from "../js/cookbook.js";
-import { parseRecipeInput, parseTitle } from "../js/parser.js";
+import { parseRecipeInput } from "../js/parser.js";
+import { parseTitle } from "../js/titles.js";
 
 const r = (name, extra = {}) => ({ name, ...parseTitleLike(name), ingredients: [], steps: [], description: "", ...extra });
 function parseTitleLike(name) { return { englishName: name, nativeName: "", romanized: "" }; }

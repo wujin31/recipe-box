@@ -2,7 +2,7 @@
 // timer of your own with a label.
 
 import { onLeave } from "../lifecycle.js";
-import { parseDuration } from "../parser.js";
+import { parseDuration } from "../durations.js";
 import { loadLocal, saveLocal } from "../store.js";
 import { addTime, cancelTimer, formatDuration, getTimers, onTimersChange, shortDuration, startTimer } from "../timers.js";
 import { fill, h, iconButton } from "../ui.js";
