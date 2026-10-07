@@ -514,6 +514,28 @@
       "cookCount": 0
     },
     {
+      "id": "roumo-shao-doufu",
+      "name": "肉末燒豆腐 (Ròumò Shāo Dòufu) · Soy-Braised Tofu with Ground Pork",
+      "englishName": "Soy-Braised Tofu with Ground Pork",
+      "nativeName": "肉末燒豆腐",
+      "romanized": "Ròumò Shāo Dòufu",
+      "tags": [],
+      "favorite": false,
+      "servings": 3,
+      "items": "firm tofu, cut into 2 cm thick squares · neutral oil · ground pork · garlic cloves, minced · ginger, minced · scallions, whites and greens sliced separately · Shaoxing wine · soy sauce · oyster sauce · dark soy sauce · sugar · ground white pepper · water or chicken stock · cornstarch · water (for the slurry) · sesame oil",
+      "chapter": "mains",
+      "cuisine": "Taiwanese",
+      "equipment": [],
+      "cookSeconds": 870,
+      "waitSeconds": 0,
+      "timerCount": 5,
+      "stepCount": 5,
+      "createdAt": "2026-10-07T02:11:25.606Z",
+      "updatedAt": "2026-10-07T02:11:25.606Z",
+      "lastCooked": null,
+      "cookCount": 0
+    },
+    {
       "id": "sanbeiji",
       "name": "三杯雞 (Sānbēijī) · Taiwanese Three-Cup Chicken",
       "englishName": "Taiwanese Three-Cup Chicken",
