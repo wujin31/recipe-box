@@ -1761,6 +1761,32 @@
       "cookCount": 0
     },
     {
+      "id": "sticky-miso-salmon-bowl",
+      "name": "Sticky Miso Salmon Bowl",
+      "englishName": "Sticky Miso Salmon Bowl",
+      "nativeName": "",
+      "romanized": "",
+      "tags": [
+        "to-try"
+      ],
+      "favorite": false,
+      "servings": 4,
+      "items": "white miso · honey · neutral oil · grated ginger · grapefruit or orange, zested and juiced (about 60 ml juice) · skinless salmon fillet, cut into 4 cm pieces · salt · hot cooked short-grain rice · Persian cucumbers, sliced · avocado, sliced · pickled sushi ginger · scallions, thinly sliced · toasted sesame seeds",
+      "chapter": "rice",
+      "cuisine": "Japanese",
+      "equipment": [
+        "Oven"
+      ],
+      "cookSeconds": 1260,
+      "waitSeconds": 0,
+      "timerCount": 2,
+      "stepCount": 5,
+      "createdAt": "2026-10-07T02:11:40.810Z",
+      "updatedAt": "2026-10-07T02:11:40.810Z",
+      "lastCooked": null,
+      "cookCount": 0
+    },
+    {
       "id": "suanrong-lajiao-spam-chaofan",
       "name": "蒜蓉辣椒 Spam 炒飯 (Suànróng Làjiāo Spam Chǎofàn) — Chili Garlic Spam Fried Rice",
       "englishName": "Chili Garlic Spam Fried Rice",
