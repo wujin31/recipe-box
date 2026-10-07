@@ -1507,6 +1507,32 @@
       "cookCount": 0
     },
     {
+      "id": "oven-roasted-chicken-shawarma",
+      "name": "Oven-Roasted Chicken Shawarma",
+      "englishName": "Oven-Roasted Chicken Shawarma",
+      "nativeName": "",
+      "romanized": "",
+      "tags": [
+        "to-try"
+      ],
+      "favorite": false,
+      "servings": 6,
+      "items": "boneless skinless chicken thighs · olive oil · lemon juice · garlic cloves, grated · plain yogurt · ground cumin · ground coriander · paprika · ground turmeric · ground cinnamon · ground allspice · ground cardamom · cayenne pepper · salt · black pepper · red onion, cut into wedges · Greek yogurt · tahini · lemon juice (for the sauce) · garlic clove, grated (for the sauce) · salt (for the sauce) · pitas, warmed · tomatoes, diced · cucumber, diced · pickled turnips or dill pickles · parsley, chopped",
+      "chapter": "mains",
+      "cuisine": "Middle Eastern",
+      "equipment": [
+        "Oven"
+      ],
+      "cookSeconds": 9000,
+      "waitSeconds": 0,
+      "timerCount": 5,
+      "stepCount": 6,
+      "createdAt": "2026-10-07T02:11:44.249Z",
+      "updatedAt": "2026-10-07T02:11:44.249Z",
+      "lastCooked": null,
+      "cookCount": 0
+    },
+    {
       "id": "oyakodon",
       "name": "親子丼 (Oyakodon) · Chicken and Egg Rice Bowl",
       "englishName": "Chicken and Egg Rice Bowl",
