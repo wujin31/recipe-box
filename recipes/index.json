@@ -859,6 +859,28 @@
       "cookCount": 0
     },
     {
+      "id": "quesabirria-tacos",
+      "name": "Quesabirria Tacos — Birria Tacos with Consommé",
+      "englishName": "Quesabirria Tacos",
+      "nativeName": "",
+      "romanized": "",
+      "tags": [],
+      "favorite": false,
+      "servings": 4,
+      "items": "shredded birria meat (from Birria de Res) · red fat skimmed from the birria consommé · birria consommé · corn tortillas · Oaxaca cheese, shredded (or low-moisture mozzarella) · white onion, finely chopped · cilantro, chopped · limes, cut into wedges · salsa de chile de árbol or salsa roja, to serve",
+      "chapter": "mains",
+      "cuisine": "Mexican",
+      "equipment": [],
+      "cookSeconds": 180,
+      "waitSeconds": 0,
+      "timerCount": 2,
+      "stepCount": 5,
+      "createdAt": "2026-10-07T02:11:32.117Z",
+      "updatedAt": "2026-10-07T02:11:32.117Z",
+      "lastCooked": null,
+      "cookCount": 0
+    },
+    {
       "id": "ribeye-with-garlic-butter-pan-sauce-roasted-yukon-golds-blis",
       "name": "Ribeye with Garlic Butter Pan Sauce, Roasted Yukon Golds & Blistered Green Beans",
       "englishName": "Ribeye with Garlic Butter Pan Sauce, Roasted Yukon Golds & Blistered Green Beans",
