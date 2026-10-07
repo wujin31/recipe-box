@@ -1,0 +1,131 @@
+{
+  "id": "spam-musubi",
+  "name": "Spam Musubi — Hawaiian Spam Rice Block",
+  "nativeName": "",
+  "romanized": "",
+  "englishName": "Spam Musubi",
+  "subtitle": "Hawaiian Spam Rice Block",
+  "description": "Hawaii's convenience-store staple: Spam fried crisp and glazed in a sweet shoyu sauce, pressed onto a block of rice and wrapped with nori. Serves 8 (8 musubi).",
+  "ingredients": [
+    {
+      "text": "1 can Spam (340 g), cut into 8 slices",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "can",
+      "item": "Spam (340 g), cut into 8 slices"
+    },
+    {
+      "text": "3 tbsp shoyu (soy sauce)",
+      "qty": 3,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "shoyu (soy sauce)"
+    },
+    {
+      "text": "3 tbsp sugar",
+      "qty": 3,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "sugar"
+    },
+    {
+      "text": "2 tbsp mirin",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "mirin"
+    },
+    {
+      "text": "900 g hot cooked short-grain rice",
+      "qty": 900,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "hot cooked short-grain rice"
+    },
+    {
+      "text": "1 tbsp rice vinegar",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "rice vinegar"
+    },
+    {
+      "text": "2 tbsp furikake (optional)",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "furikake (optional)"
+    },
+    {
+      "text": "4 sheets nori, cut in half crosswise",
+      "qty": 4,
+      "qtyMax": null,
+      "unit": null,
+      "item": "sheets nori, cut in half crosswise"
+    }
+  ],
+  "steps": [
+    {
+      "text": "Stir 1 tbsp rice vinegar into 900 g hot cooked short-grain rice and keep it covered and warm.",
+      "ingredientRefs": [
+        4,
+        5
+      ],
+      "timers": []
+    },
+    {
+      "text": "Mix 3 tbsp shoyu (soy sauce), 3 tbsp sugar and 2 tbsp mirin.",
+      "ingredientRefs": [
+        1,
+        2,
+        3
+      ],
+      "timers": []
+    },
+    {
+      "text": "Fry 1 can Spam (340 g), cut into 8 slices in a dry nonstick pan over medium-high for 2 minutes per side, until browned and crisp.",
+      "ingredientRefs": [
+        0
+      ],
+      "timers": [
+        {
+          "text": "2 minutes",
+          "seconds": 120
+        }
+      ]
+    },
+    {
+      "text": "Turn the heat to low, pour in the sauce and turn the slices for 1 minute, until the sauce is syrupy and coats the Spam.",
+      "ingredientRefs": [],
+      "timers": [
+        {
+          "text": "1 minute",
+          "seconds": 60
+        }
+      ]
+    },
+    {
+      "text": "Lay a half sheet of 4 sheets nori, cut in half crosswise shiny side down with a musubi mold across its center. Press in about 110 g rice firmly, sprinkle with 2 tbsp furikake (optional), top with a Spam slice and press again.",
+      "ingredientRefs": [
+        6,
+        7
+      ],
+      "timers": []
+    },
+    {
+      "text": "Push the musubi out of the mold, fold the nori up and over, and seal the end with a grain of rice. Repeat with the rest.",
+      "ingredientRefs": [],
+      "timers": []
+    }
+  ],
+  "notes": "No mold? Use the empty Spam can, both ends cut off and lined with plastic wrap. Wrapped tightly in plastic, musubi keep at room temperature for the day; don't refrigerate, as the rice hardens.\n\nPopular add-ons: a slice of tamagoyaki between the rice and Spam, or a layer of rice on top too (double-decker).",
+  "servings": 8,
+  "tags": [],
+  "chatUrl": null,
+  "chapter": "rice",
+  "cuisine": "Hawaiian",
+  "favorite": false,
+  "log": [],
+  "createdAt": "2026-10-07T02:11:30.128Z",
+  "updatedAt": "2026-10-07T02:11:30.128Z"
+}

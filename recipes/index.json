@@ -877,6 +877,28 @@
       "cookCount": 0
     },
     {
+      "id": "spam-musubi",
+      "name": "Spam Musubi — Hawaiian Spam Rice Block",
+      "englishName": "Spam Musubi",
+      "nativeName": "",
+      "romanized": "",
+      "tags": [],
+      "favorite": false,
+      "servings": 8,
+      "items": "Spam (340 g), cut into 8 slices · shoyu (soy sauce) · sugar · mirin · hot cooked short-grain rice · rice vinegar · furikake (optional) · sheets nori, cut in half crosswise",
+      "chapter": "rice",
+      "cuisine": "Hawaiian",
+      "equipment": [],
+      "cookSeconds": 180,
+      "waitSeconds": 0,
+      "timerCount": 2,
+      "stepCount": 6,
+      "createdAt": "2026-10-07T02:11:30.128Z",
+      "updatedAt": "2026-10-07T02:11:30.128Z",
+      "lastCooked": null,
+      "cookCount": 0
+    },
+    {
       "id": "spicy-braised-bolognese-with-penne",
       "name": "Spicy Braised Bolognese with Penne",
       "englishName": "Spicy Braised Bolognese with Penne",
