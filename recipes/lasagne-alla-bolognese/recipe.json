@@ -1,0 +1,321 @@
+{
+  "id": "lasagne-alla-bolognese",
+  "name": "Lasagne alla Bolognese — Classic Lasagna with Ragù and Béchamel",
+  "nativeName": "",
+  "romanized": "",
+  "englishName": "Lasagne alla Bolognese",
+  "subtitle": "Classic Lasagna with Ragù and Béchamel",
+  "description": "The lasagna of Bologna, as codified by the Accademia Italiana della Cucina: thin egg pasta layered with slow-cooked ragù bolognese, béchamel and Parmigiano-Reggiano. No ricotta, no mozzarella. Serves 8.",
+  "ingredients": [
+    {
+      "text": "150 g pancetta, finely chopped",
+      "qty": 150,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "pancetta, finely chopped",
+      "group": "For the ragù"
+    },
+    {
+      "text": "2 tbsp olive oil",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "olive oil",
+      "group": "For the ragù"
+    },
+    {
+      "text": "1 onion, finely chopped",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": null,
+      "item": "onion, finely chopped",
+      "group": "For the ragù"
+    },
+    {
+      "text": "1 carrot, finely chopped",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": null,
+      "item": "carrot, finely chopped",
+      "group": "For the ragù"
+    },
+    {
+      "text": "1 celery stalk, finely chopped",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": null,
+      "item": "celery stalk, finely chopped",
+      "group": "For the ragù"
+    },
+    {
+      "text": "500 g coarsely ground beef chuck",
+      "qty": 500,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "coarsely ground beef chuck",
+      "group": "For the ragù"
+    },
+    {
+      "text": "250 g ground pork",
+      "qty": 250,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "ground pork",
+      "group": "For the ragù"
+    },
+    {
+      "text": "180 ml dry white wine",
+      "qty": 180,
+      "qtyMax": null,
+      "unit": "ml",
+      "item": "dry white wine",
+      "group": "For the ragù"
+    },
+    {
+      "text": "400 g tomato passata",
+      "qty": 400,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "tomato passata",
+      "group": "For the ragù"
+    },
+    {
+      "text": "1 tbsp tomato paste",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "tomato paste",
+      "group": "For the ragù"
+    },
+    {
+      "text": "500 ml beef or chicken stock",
+      "qty": 500,
+      "qtyMax": null,
+      "unit": "ml",
+      "item": "beef or chicken stock",
+      "group": "For the ragù"
+    },
+    {
+      "text": "180 ml whole milk",
+      "qty": 180,
+      "qtyMax": null,
+      "unit": "ml",
+      "item": "whole milk",
+      "group": "For the ragù"
+    },
+    {
+      "text": "1 1/2 tsp salt",
+      "qty": 1.5,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "salt",
+      "group": "For the ragù"
+    },
+    {
+      "text": "1/2 tsp black pepper",
+      "qty": 0.5,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "black pepper",
+      "group": "For the ragù"
+    },
+    {
+      "text": "80 g butter",
+      "qty": 80,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "butter",
+      "group": "For the béchamel"
+    },
+    {
+      "text": "80 g all-purpose flour",
+      "qty": 80,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "all-purpose flour",
+      "group": "For the béchamel"
+    },
+    {
+      "text": "1 L whole milk, warmed",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "l",
+      "item": "whole milk, warmed",
+      "group": "For the béchamel"
+    },
+    {
+      "text": "1/4 tsp grated nutmeg",
+      "qty": 0.25,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "grated nutmeg",
+      "group": "For the béchamel"
+    },
+    {
+      "text": "1 tsp salt (for the béchamel)",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "salt (for the béchamel)",
+      "group": "For the béchamel"
+    },
+    {
+      "text": "500 g fresh egg lasagna sheets (or spinach sheets for lasagne verdi)",
+      "qty": 500,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "fresh egg lasagna sheets (or spinach sheets for lasagne verdi)",
+      "group": "To assemble"
+    },
+    {
+      "text": "150 g Parmigiano-Reggiano, grated",
+      "qty": 150,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "Parmigiano-Reggiano, grated",
+      "group": "To assemble"
+    },
+    {
+      "text": "2 tbsp butter, in small pieces",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "butter, in small pieces",
+      "group": "To assemble"
+    }
+  ],
+  "steps": [
+    {
+      "text": "Cook 150 g pancetta, finely chopped with 2 tbsp olive oil in a heavy pot over medium for 5 minutes, until the fat renders. Add 1 onion, finely chopped, 1 carrot, finely chopped and 1 celery stalk, finely chopped and cook 10 minutes, until soft and golden.",
+      "ingredientRefs": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "timers": [
+        {
+          "text": "5 minutes",
+          "seconds": 300
+        },
+        {
+          "text": "10 minutes",
+          "seconds": 600
+        }
+      ]
+    },
+    {
+      "text": "Raise the heat, add 500 g coarsely ground beef chuck and 250 g ground pork and cook 10 minutes, breaking it up, until the liquid has evaporated and the meat browns.",
+      "ingredientRefs": [
+        5,
+        6
+      ],
+      "timers": [
+        {
+          "text": "10 minutes",
+          "seconds": 600
+        }
+      ]
+    },
+    {
+      "text": "Add 180 ml dry white wine and simmer 5 minutes, until evaporated. Stir in 400 g tomato passata, 1 tbsp tomato paste and half of 500 ml beef or chicken stock.",
+      "ingredientRefs": [
+        7,
+        8,
+        9,
+        10
+      ],
+      "timers": [
+        {
+          "text": "5 minutes",
+          "seconds": 300
+        }
+      ]
+    },
+    {
+      "text": "Simmer uncovered on the lowest heat for 2 hours 30 minutes, adding stock as it thickens. Stir in 180 ml whole milk for the last 30 minutes. Season with 1 1/2 tsp salt and 1/2 tsp black pepper. It should be thick and rich, not soupy.",
+      "ingredientRefs": [
+        11,
+        12,
+        13
+      ],
+      "timers": [
+        {
+          "text": "2 hours 30 minutes",
+          "seconds": 9000
+        },
+        {
+          "text": "30 minutes",
+          "seconds": 1800
+        }
+      ]
+    },
+    {
+      "text": "Make the béchamel: melt 80 g butter over medium, whisk in 80 g all-purpose flour and cook 2 minutes. Whisk in 1 L whole milk, warmed gradually and simmer 8 minutes, whisking, until it coats a spoon. Season with 1/4 tsp grated nutmeg and 1 tsp salt (for the béchamel).",
+      "ingredientRefs": [
+        14,
+        15,
+        16,
+        17,
+        18
+      ],
+      "timers": [
+        {
+          "text": "2 minutes",
+          "seconds": 120
+        },
+        {
+          "text": "8 minutes",
+          "seconds": 480
+        }
+      ]
+    },
+    {
+      "text": "Heat the oven to 180°C. If the sheets of 500 g fresh egg lasagna sheets (or spinach sheets for lasagne verdi) are fresh, blanch them 30 seconds in boiling salted water and lay them on towels.",
+      "ingredientRefs": [
+        19
+      ],
+      "timers": [
+        {
+          "text": "30 seconds",
+          "seconds": 30
+        }
+      ]
+    },
+    {
+      "text": "In a 23 × 33 cm dish, spread a thin layer of béchamel, then layer pasta, ragù, béchamel and a handful of 150 g Parmigiano-Reggiano, grated. Repeat for 5 or 6 layers, finishing with béchamel and Parmigiano. Dot with 2 tbsp butter, in small pieces.",
+      "ingredientRefs": [
+        20,
+        21
+      ],
+      "timers": []
+    },
+    {
+      "text": "Bake 40 minutes, until bubbling and golden-brown on top. Rest 20 minutes before cutting.",
+      "ingredientRefs": [],
+      "timers": [
+        {
+          "text": "40 minutes",
+          "seconds": 2400
+        },
+        {
+          "text": "20 minutes",
+          "seconds": 1200
+        }
+      ]
+    }
+  ],
+  "notes": "In Bologna the layers are thin and many: a light hand with each sauce makes a lasagna that holds its shape. The milk in the ragù softens the acidity and tenderizes the meat.\n\nDried lasagna sheets work: use no-boil sheets or boil regular ones 2 minutes less than the package says. The whole dish can be assembled a day ahead and baked from the fridge (add 15 minutes). The ragù alone, with tagliatelle, is the real tagliatelle alla bolognese.",
+  "servings": 8,
+  "tags": [
+    "to-try"
+  ],
+  "chatUrl": null,
+  "chapter": "rice",
+  "cuisine": "Italian",
+  "favorite": false,
+  "log": [],
+  "createdAt": "2026-10-07T02:11:43.670Z",
+  "updatedAt": "2026-10-07T02:11:43.670Z"
+}

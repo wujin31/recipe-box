@@ -1144,6 +1144,32 @@
       "cookCount": 0
     },
     {
+      "id": "lasagne-alla-bolognese",
+      "name": "Lasagne alla Bolognese — Classic Lasagna with Ragù and Béchamel",
+      "englishName": "Lasagne alla Bolognese",
+      "nativeName": "",
+      "romanized": "",
+      "tags": [
+        "to-try"
+      ],
+      "favorite": false,
+      "servings": 8,
+      "items": "pancetta, finely chopped · olive oil · onion, finely chopped · carrot, finely chopped · celery stalk, finely chopped · coarsely ground beef chuck · ground pork · dry white wine · tomato passata · tomato paste · beef or chicken stock · whole milk · salt · black pepper · butter · all-purpose flour · whole milk, warmed · grated nutmeg · salt (for the béchamel) · fresh egg lasagna sheets (or spinach sheets for lasagne verdi) · Parmigiano-Reggiano, grated · butter, in small pieces",
+      "chapter": "rice",
+      "cuisine": "Italian",
+      "equipment": [
+        "Oven"
+      ],
+      "cookSeconds": 13410,
+      "waitSeconds": 0,
+      "timerCount": 11,
+      "stepCount": 8,
+      "createdAt": "2026-10-07T02:11:43.670Z",
+      "updatedAt": "2026-10-07T02:11:43.670Z",
+      "lastCooked": null,
+      "cookCount": 0
+    },
+    {
       "id": "lemon-chicken-pasta",
       "name": "Lemon Chicken Pasta",
       "englishName": "Lemon Chicken Pasta",
