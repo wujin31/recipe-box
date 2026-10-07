@@ -390,6 +390,30 @@
       "cookCount": 0
     },
     {
+      "id": "coconut-miso-salmon-curry",
+      "name": "Coconut-Miso Salmon Curry",
+      "englishName": "Coconut-Miso Salmon Curry",
+      "nativeName": "",
+      "romanized": "",
+      "tags": [
+        "to-try"
+      ],
+      "favorite": false,
+      "servings": 4,
+      "items": "neutral oil · red onion, halved and thickly sliced · ginger, minced · garlic cloves, minced · salt · black pepper · white miso (1/4 cup) · full-fat coconut milk · water · skinless salmon fillet, cut into 5 cm pieces · baby spinach · lime juice, plus wedges to serve · basil leaves, torn · cilantro, chopped · hot cooked rice",
+      "chapter": "soups",
+      "cuisine": "Japanese",
+      "equipment": [],
+      "cookSeconds": 900,
+      "waitSeconds": 0,
+      "timerCount": 4,
+      "stepCount": 6,
+      "createdAt": "2026-10-07T02:11:40.539Z",
+      "updatedAt": "2026-10-07T02:11:40.539Z",
+      "lastCooked": null,
+      "cookCount": 0
+    },
+    {
       "id": "congyoubing-jia-dan",
       "name": "蔥油餅加蛋 (Cōngyóubǐng Jiā Dàn) · Taiwanese Scallion Pancake with Egg",
       "englishName": "Taiwanese Scallion Pancake with Egg",
