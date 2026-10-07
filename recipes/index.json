@@ -436,6 +436,30 @@
       "cookCount": 0
     },
     {
+      "id": "la-galbi",
+      "name": "갈비 (Galbi) · LA-Style Korean BBQ Short Ribs",
+      "englishName": "LA-Style Korean BBQ Short Ribs",
+      "nativeName": "갈비",
+      "romanized": "Galbi",
+      "tags": [],
+      "favorite": false,
+      "servings": 4,
+      "items": "flanken-cut beef short ribs (LA galbi), 1 cm thick · soy sauce · rice wine or water · honey or 70 g brown sugar · ground black pepper · Korean (Asian) pear, peeled and chopped · onion, chopped · garlic cloves · minced ginger · toasted sesame oil · scallions, chopped · toasted sesame seeds · head red-leaf lettuce, leaves separated (to serve) · hot cooked short-grain rice",
+      "chapter": "mains",
+      "cuisine": "Korean",
+      "equipment": [
+        "Grill"
+      ],
+      "cookSeconds": 1980,
+      "waitSeconds": 28800,
+      "timerCount": 3,
+      "stepCount": 5,
+      "createdAt": "2026-10-07T02:11:29.022Z",
+      "updatedAt": "2026-10-07T02:11:29.022Z",
+      "lastCooked": null,
+      "cookCount": 0
+    },
+    {
       "id": "luroufan-oven-braise-1-25-lb",
       "name": "滷肉飯 (lǔròufàn) Oven Braise, 1.25 lb",
       "englishName": "Lǔròufàn Oven Braise, 1.25 lb",
