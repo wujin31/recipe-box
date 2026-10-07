@@ -96,6 +96,30 @@
       "cookCount": 0
     },
     {
+      "id": "birria-de-res",
+      "name": "Birria de Res — Jalisco-Style Braised Beef in Chile Consommé",
+      "englishName": "Birria de Res",
+      "nativeName": "",
+      "romanized": "",
+      "tags": [],
+      "favorite": false,
+      "servings": 8,
+      "items": "guajillo chiles, stemmed and seeded · ancho chiles, stemmed and seeded · chiles de árbol (optional, for heat) · Roma tomatoes · white onion · garlic cloves · apple cider vinegar · cumin seeds · whole cloves · black peppercorns · small stick Mexican cinnamon (canela), about 5 cm · Mexican oregano · dried thyme · ginger · salt · beef chuck roast, cut into 8 cm pieces · bone-in beef shank or oxtail · salt (for the meat) · bay leaves · water or beef broth · white onion, finely chopped · cilantro, chopped · limes, cut into wedges · corn tortillas, warmed",
+      "chapter": "soups",
+      "cuisine": "Mexican",
+      "equipment": [
+        "Oven"
+      ],
+      "cookSeconds": 1680,
+      "waitSeconds": 27000,
+      "timerCount": 6,
+      "stepCount": 7,
+      "createdAt": "2026-10-07T02:11:31.819Z",
+      "updatedAt": "2026-10-07T02:11:31.819Z",
+      "lastCooked": null,
+      "cookCount": 0
+    },
+    {
       "id": "black-vinegar-lacquered-spam-donburi-kurozu-supamu-don",
       "name": "Black Vinegar Lacquered Spam Donburi (黒酢スパム丼 / kurozu supamu-don)",
       "englishName": "Black Vinegar Lacquered Spam Donburi",
