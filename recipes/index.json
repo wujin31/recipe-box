@@ -826,6 +826,28 @@
       "cookCount": 0
     },
     {
+      "id": "la-street-hot-dogs",
+      "name": "LA Street Dogs — Bacon-Wrapped Hot Dogs with Grilled Onions and Peppers",
+      "englishName": "LA Street Dogs",
+      "nativeName": "",
+      "romanized": "",
+      "tags": [],
+      "favorite": false,
+      "servings": 4,
+      "items": "all-beef hot dogs · thin-cut bacon · soft hot dog buns · large white onion, sliced · green bell pepper, sliced · jalapeños · salt · mayonnaise · ketchup · yellow mustard · tomato, finely diced · white onion, finely diced · chopped cilantro",
+      "chapter": "mains",
+      "cuisine": "American",
+      "equipment": [],
+      "cookSeconds": 1260,
+      "waitSeconds": 0,
+      "timerCount": 4,
+      "stepCount": 5,
+      "createdAt": "2026-10-07T02:11:36.634Z",
+      "updatedAt": "2026-10-07T02:11:36.634Z",
+      "lastCooked": null,
+      "cookCount": 0
+    },
+    {
       "id": "loco-moco",
       "name": "Loco Moco — Hawaiian Hamburger, Egg and Gravy Rice Bowl",
       "englishName": "Loco Moco",
