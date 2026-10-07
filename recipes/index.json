@@ -302,6 +302,28 @@
       "cookCount": 0
     },
     {
+      "id": "hongshao-niurou-mian",
+      "name": "紅燒牛肉麵 (Hóngshāo Niúròu Miàn) · Taiwanese Red-Braised Beef Noodle Soup",
+      "englishName": "Taiwanese Red-Braised Beef Noodle Soup",
+      "nativeName": "紅燒牛肉麵",
+      "romanized": "Hóngshāo Niúròu Miàn",
+      "tags": [],
+      "favorite": false,
+      "servings": 6,
+      "items": "boneless beef shank, cut into 4 cm chunks · beef tendon, left whole (optional) · neutral oil · ginger, sliced · garlic cloves, smashed · scallions, cut into 5 cm lengths · onion, cut into wedges · spicy doubanjiang (辣豆瓣醬) · tomatoes, cut into wedges · rock sugar or 1 1/2 tbsp sugar · Shaoxing wine or Taiwanese rice wine (米酒) · soy sauce · dark soy sauce · water · salt, to taste · star anise · cinnamon stick · bay leaves · Sichuan peppercorns · fennel seeds · dried red chilies · pickled mustard greens (酸菜), rinsed and chopped · neutral oil (for the greens) · sugar (for the greens) · fresh wide wheat noodles · baby bok choy, halved · scallions, finely chopped · small bunch cilantro, chopped",
+      "chapter": "soups",
+      "cuisine": "Taiwanese",
+      "equipment": [],
+      "cookSeconds": 7980,
+      "waitSeconds": 0,
+      "timerCount": 11,
+      "stepCount": 8,
+      "createdAt": "2026-10-07T02:11:24.442Z",
+      "updatedAt": "2026-10-07T02:11:24.442Z",
+      "lastCooked": null,
+      "cookCount": 0
+    },
+    {
       "id": "jay-s-sauce",
       "name": "Jay's Sauce",
       "englishName": "Jay's Sauce",

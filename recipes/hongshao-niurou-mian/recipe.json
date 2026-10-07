@@ -1,0 +1,371 @@
+{
+  "id": "hongshao-niurou-mian",
+  "name": "紅燒牛肉麵 (Hóngshāo Niúròu Miàn) · Taiwanese Red-Braised Beef Noodle Soup",
+  "nativeName": "紅燒牛肉麵",
+  "romanized": "Hóngshāo Niúròu Miàn",
+  "englishName": "Taiwanese Red-Braised Beef Noodle Soup",
+  "description": "Taiwan's national dish: beef shank and tendon braised with spicy doubanjiang, tomato, soy and warm spices until tender, served over chewy wheat noodles with bok choy and pickled mustard greens. Serves 6.",
+  "ingredients": [
+    {
+      "text": "1.2 kg boneless beef shank, cut into 4 cm chunks",
+      "qty": 1.2,
+      "qtyMax": null,
+      "unit": "kg",
+      "item": "boneless beef shank, cut into 4 cm chunks",
+      "group": "For the braise"
+    },
+    {
+      "text": "500 g beef tendon, left whole (optional)",
+      "qty": 500,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "beef tendon, left whole (optional)",
+      "group": "For the braise"
+    },
+    {
+      "text": "2 tbsp neutral oil",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "neutral oil",
+      "group": "For the braise"
+    },
+    {
+      "text": "40 g ginger, sliced",
+      "qty": 40,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "ginger, sliced",
+      "group": "For the braise"
+    },
+    {
+      "text": "10 garlic cloves, smashed",
+      "qty": 10,
+      "qtyMax": null,
+      "unit": null,
+      "item": "garlic cloves, smashed",
+      "group": "For the braise"
+    },
+    {
+      "text": "6 scallions, cut into 5 cm lengths",
+      "qty": 6,
+      "qtyMax": null,
+      "unit": null,
+      "item": "scallions, cut into 5 cm lengths",
+      "group": "For the braise"
+    },
+    {
+      "text": "1 onion, cut into wedges",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": null,
+      "item": "onion, cut into wedges",
+      "group": "For the braise"
+    },
+    {
+      "text": "3 tbsp spicy doubanjiang (辣豆瓣醬)",
+      "qty": 3,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "spicy doubanjiang (辣豆瓣醬)",
+      "group": "For the braise"
+    },
+    {
+      "text": "2 tomatoes, cut into wedges",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": null,
+      "item": "tomatoes, cut into wedges",
+      "group": "For the braise"
+    },
+    {
+      "text": "20 g rock sugar or 1 1/2 tbsp sugar",
+      "qty": 20,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "rock sugar or 1 1/2 tbsp sugar",
+      "group": "For the braise"
+    },
+    {
+      "text": "80 ml Shaoxing wine or Taiwanese rice wine (米酒)",
+      "qty": 80,
+      "qtyMax": null,
+      "unit": "ml",
+      "item": "Shaoxing wine or Taiwanese rice wine (米酒)",
+      "group": "For the braise"
+    },
+    {
+      "text": "80 ml soy sauce",
+      "qty": 80,
+      "qtyMax": null,
+      "unit": "ml",
+      "item": "soy sauce",
+      "group": "For the braise"
+    },
+    {
+      "text": "2 tbsp dark soy sauce",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "dark soy sauce",
+      "group": "For the braise"
+    },
+    {
+      "text": "2.5 L water",
+      "qty": 2.5,
+      "qtyMax": null,
+      "unit": "l",
+      "item": "water",
+      "group": "For the braise"
+    },
+    {
+      "text": "1 tsp salt, to taste",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "salt, to taste",
+      "group": "For the braise"
+    },
+    {
+      "text": "3 star anise",
+      "qty": 3,
+      "qtyMax": null,
+      "unit": null,
+      "item": "star anise",
+      "group": "For the spice bag"
+    },
+    {
+      "text": "1 cinnamon stick",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": null,
+      "item": "cinnamon stick",
+      "group": "For the spice bag"
+    },
+    {
+      "text": "3 bay leaves",
+      "qty": 3,
+      "qtyMax": null,
+      "unit": null,
+      "item": "bay leaves",
+      "group": "For the spice bag"
+    },
+    {
+      "text": "1 tsp Sichuan peppercorns",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "Sichuan peppercorns",
+      "group": "For the spice bag"
+    },
+    {
+      "text": "1 tsp fennel seeds",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "fennel seeds",
+      "group": "For the spice bag"
+    },
+    {
+      "text": "3 dried red chilies",
+      "qty": 3,
+      "qtyMax": null,
+      "unit": null,
+      "item": "dried red chilies",
+      "group": "For the spice bag"
+    },
+    {
+      "text": "150 g pickled mustard greens (酸菜), rinsed and chopped",
+      "qty": 150,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "pickled mustard greens (酸菜), rinsed and chopped",
+      "group": "For the pickled mustard greens"
+    },
+    {
+      "text": "1 tbsp neutral oil (for the greens)",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "neutral oil (for the greens)",
+      "group": "For the pickled mustard greens"
+    },
+    {
+      "text": "2 tsp sugar (for the greens)",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "sugar (for the greens)",
+      "group": "For the pickled mustard greens"
+    },
+    {
+      "text": "750 g fresh wide wheat noodles",
+      "qty": 750,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "fresh wide wheat noodles",
+      "group": "To serve"
+    },
+    {
+      "text": "300 g baby bok choy, halved",
+      "qty": 300,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "baby bok choy, halved",
+      "group": "To serve"
+    },
+    {
+      "text": "3 scallions, finely chopped",
+      "qty": 3,
+      "qtyMax": null,
+      "unit": null,
+      "item": "scallions, finely chopped",
+      "group": "To serve"
+    },
+    {
+      "text": "1 small bunch cilantro, chopped",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": null,
+      "item": "small bunch cilantro, chopped",
+      "group": "To serve"
+    }
+  ],
+  "steps": [
+    {
+      "text": "Put 1.2 kg boneless beef shank, cut into 4 cm chunks and 500 g beef tendon, left whole (optional) in a large pot, cover with cold water and bring to a boil. Boil 5 minutes, then drain and rinse off the scum.",
+      "ingredientRefs": [
+        0,
+        1
+      ],
+      "timers": [
+        {
+          "text": "5 minutes",
+          "seconds": 300
+        }
+      ]
+    },
+    {
+      "text": "Tie 3 star anise, 1 cinnamon stick, 3 bay leaves, 1 tsp Sichuan peppercorns, 1 tsp fennel seeds and 3 dried red chilies in a spice bag or cheesecloth.",
+      "ingredientRefs": [
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "timers": []
+    },
+    {
+      "text": "Heat 2 tbsp neutral oil in a large heavy pot over medium. Fry 40 g ginger, sliced, 10 garlic cloves, smashed and 6 scallions, cut into 5 cm lengths for 2 minutes until fragrant, add 1 onion, cut into wedges and cook 3 minutes. Add 3 tbsp spicy doubanjiang (辣豆瓣醬) and fry 1 minute, until the oil turns red. Add 2 tomatoes, cut into wedges and 20 g rock sugar or 1 1/2 tbsp sugar and cook 3 minutes, until the tomatoes start to break down.",
+      "ingredientRefs": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "timers": [
+        {
+          "text": "2 minutes",
+          "seconds": 120
+        },
+        {
+          "text": "3 minutes",
+          "seconds": 180
+        },
+        {
+          "text": "1 minute",
+          "seconds": 60
+        },
+        {
+          "text": "3 minutes",
+          "seconds": 180
+        }
+      ]
+    },
+    {
+      "text": "Add the blanched beef and tendon and stir to coat. Pour in 80 ml Shaoxing wine or Taiwanese rice wine (米酒), 80 ml soy sauce and 2 tbsp dark soy sauce, and let it bubble 1 minute. Add 2.5 L water and the spice bag, bring to a boil, then cover and simmer on low for 2 hours, until the shank is tender. If using tendon, take out the shank and keep simmering the tendon for 1 hour more (or until a chopstick slides through), then return the shank.",
+      "ingredientRefs": [
+        10,
+        11,
+        12,
+        13
+      ],
+      "timers": [
+        {
+          "text": "1 minute",
+          "seconds": 60
+        },
+        {
+          "text": "2 hours",
+          "seconds": 7200
+        },
+        {
+          "text": "1 hour",
+          "seconds": 3600
+        }
+      ]
+    },
+    {
+      "text": "Discard the spice bag, the scallion and as much of the ginger as you can find. Skim the fat, slice the tendon into pieces, and season the broth with 1 tsp salt, to taste.",
+      "ingredientRefs": [
+        14
+      ],
+      "timers": []
+    },
+    {
+      "text": "Meanwhile, stir-fry 150 g pickled mustard greens (酸菜), rinsed and chopped in 1 tbsp neutral oil (for the greens) over high heat for 2 minutes with 2 tsp sugar (for the greens) until dry and fragrant.",
+      "ingredientRefs": [
+        21,
+        22,
+        23
+      ],
+      "timers": [
+        {
+          "text": "2 minutes",
+          "seconds": 120
+        }
+      ]
+    },
+    {
+      "text": "Boil 750 g fresh wide wheat noodles in a separate pot of unsalted water for 3 minutes (or per the package), adding 300 g baby bok choy, halved for the last 1 minute. Drain.",
+      "ingredientRefs": [
+        24,
+        25
+      ],
+      "timers": [
+        {
+          "text": "3 minutes",
+          "seconds": 180
+        },
+        {
+          "text": "1 minute",
+          "seconds": 60
+        }
+      ]
+    },
+    {
+      "text": "Divide the noodles and bok choy among large bowls, ladle over the hot broth with beef and tendon, and top with 3 scallions, finely chopped, 1 small bunch cilantro, chopped and the pickled mustard greens.",
+      "ingredientRefs": [
+        26,
+        27
+      ],
+      "timers": []
+    }
+  ],
+  "notes": "The doubanjiang is what makes it taste Taiwanese rather than generic Chinese braised beef: fry it in oil until red before any liquid goes in. Shank gives gelatinous, sliceable meat; chuck works but falls apart.\n\nIt's better the next day. Chill the broth and lift off the fat cap. Pressure cooker: after step 4's liquids, cook on high 45 minutes (tendon 70 minutes), then release naturally. Chili oil and a splash of black vinegar at the table are common.",
+  "servings": 6,
+  "tags": [],
+  "chatUrl": null,
+  "chapter": "soups",
+  "cuisine": "Taiwanese",
+  "favorite": false,
+  "log": [],
+  "createdAt": "2026-10-07T02:11:24.442Z",
+  "updatedAt": "2026-10-07T02:11:24.442Z"
+}
