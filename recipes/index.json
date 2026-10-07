@@ -256,6 +256,30 @@
       "cookCount": 0
     },
     {
+      "id": "carne-en-su-jugo",
+      "name": "Carne en Su Jugo — Guadalajara Beef in Its Juices",
+      "englishName": "Carne en Su Jugo",
+      "nativeName": "",
+      "romanized": "",
+      "tags": [],
+      "favorite": false,
+      "servings": 4,
+      "items": "tomatillos, husked and rinsed · serrano chiles · white onion · garlic cloves · cilantro · beef broth · bacon, diced · top sirloin, cut into 1 cm pieces · salt · black pepper · Maggi seasoning or Worcestershire sauce · cooked pinto beans (frijoles de la olla), with some broth · white onion, finely chopped · cilantro, chopped · radishes, thinly sliced · limes, cut into wedges · green onions (cebollitas), grilled (optional) · corn tortillas, warmed",
+      "chapter": "soups",
+      "cuisine": "Mexican",
+      "equipment": [
+        "Grill"
+      ],
+      "cookSeconds": 2340,
+      "waitSeconds": 0,
+      "timerCount": 4,
+      "stepCount": 6,
+      "createdAt": "2026-10-07T02:11:32.971Z",
+      "updatedAt": "2026-10-07T02:11:32.971Z",
+      "lastCooked": null,
+      "cookCount": 0
+    },
+    {
       "id": "chicken-thigh-fettuccine-alfredo-bloomed-pepper",
       "name": "Chicken Thigh Fettuccine Alfredo, Bloomed Pepper",
       "englishName": "Chicken Thigh Fettuccine Alfredo, Bloomed Pepper",
