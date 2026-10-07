@@ -536,6 +536,28 @@
       "cookCount": 0
     },
     {
+      "id": "nikujaga",
+      "name": "肉じゃが (Nikujaga) · Japanese Meat and Potato Stew",
+      "englishName": "Japanese Meat and Potato Stew",
+      "nativeName": "肉じゃが",
+      "romanized": "Nikujaga",
+      "tags": [],
+      "favorite": false,
+      "servings": 4,
+      "items": "thinly sliced beef (chuck or ribeye), cut into 5 cm pieces · Yukon Gold potatoes (about 450 g), cut into large chunks · onion, cut into 1 cm wedges · carrot, cut into chunks · shirataki noodles, drained · snow peas, trimmed · neutral oil · dashi · sake · sugar · mirin · soy sauce",
+      "chapter": "mains",
+      "cuisine": "Japanese",
+      "equipment": [],
+      "cookSeconds": 2220,
+      "waitSeconds": 0,
+      "timerCount": 8,
+      "stepCount": 6,
+      "createdAt": "2026-10-07T02:11:28.484Z",
+      "updatedAt": "2026-10-07T02:11:28.484Z",
+      "lastCooked": null,
+      "cookCount": 0
+    },
+    {
       "id": "niurou-zao-fan",
       "name": "牛肉燥飯 (niúròu zào fàn) — Taiwanese Beef Rice, v2",
       "englishName": "Taiwanese Beef Rice, v2",

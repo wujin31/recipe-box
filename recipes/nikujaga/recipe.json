@@ -1,0 +1,188 @@
+{
+  "id": "nikujaga",
+  "name": "肉じゃが (Nikujaga) · Japanese Meat and Potato Stew",
+  "nativeName": "肉じゃが",
+  "romanized": "Nikujaga",
+  "englishName": "Japanese Meat and Potato Stew",
+  "description": "The definitive Japanese home-cooked dish: thin beef, potatoes, onion, carrot and shirataki simmered under a drop lid in a sweet soy and dashi broth until the potatoes soak it up. Serves 4.",
+  "ingredients": [
+    {
+      "text": "250 g thinly sliced beef (chuck or ribeye), cut into 5 cm pieces",
+      "qty": 250,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "thinly sliced beef (chuck or ribeye), cut into 5 cm pieces"
+    },
+    {
+      "text": "3 Yukon Gold potatoes (about 450 g), cut into large chunks",
+      "qty": 3,
+      "qtyMax": null,
+      "unit": null,
+      "item": "Yukon Gold potatoes (about 450 g), cut into large chunks"
+    },
+    {
+      "text": "1 onion, cut into 1 cm wedges",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": null,
+      "item": "onion, cut into 1 cm wedges"
+    },
+    {
+      "text": "1 carrot, cut into chunks",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": null,
+      "item": "carrot, cut into chunks"
+    },
+    {
+      "text": "200 g shirataki noodles, drained",
+      "qty": 200,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "shirataki noodles, drained"
+    },
+    {
+      "text": "8 snow peas, trimmed",
+      "qty": 8,
+      "qtyMax": null,
+      "unit": null,
+      "item": "snow peas, trimmed"
+    },
+    {
+      "text": "1 tbsp neutral oil",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "neutral oil"
+    },
+    {
+      "text": "480 ml dashi",
+      "qty": 480,
+      "qtyMax": null,
+      "unit": "ml",
+      "item": "dashi"
+    },
+    {
+      "text": "2 tbsp sake",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "sake"
+    },
+    {
+      "text": "1 tbsp sugar",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "sugar"
+    },
+    {
+      "text": "4 tbsp mirin",
+      "qty": 4,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "mirin"
+    },
+    {
+      "text": "4 tbsp soy sauce",
+      "qty": 4,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "soy sauce"
+    }
+  ],
+  "steps": [
+    {
+      "text": "Soak 3 Yukon Gold potatoes (about 450 g), cut into large chunks in water for 5 minutes to remove surface starch, then drain. Blanch 200 g shirataki noodles, drained in boiling water for 1 minute, drain and cut into shorter lengths. Blanch 8 snow peas, trimmed for 1 minute and set aside.",
+      "ingredientRefs": [
+        1,
+        4,
+        5
+      ],
+      "timers": [
+        {
+          "text": "5 minutes",
+          "seconds": 300
+        },
+        {
+          "text": "1 minute",
+          "seconds": 60
+        },
+        {
+          "text": "1 minute",
+          "seconds": 60
+        }
+      ]
+    },
+    {
+      "text": "Heat 1 tbsp neutral oil in a medium pot over medium. Cook 1 onion, cut into 1 cm wedges 2 minutes, add 250 g thinly sliced beef (chuck or ribeye), cut into 5 cm pieces and cook 1 minute, until it changes color.",
+      "ingredientRefs": [
+        0,
+        2,
+        6
+      ],
+      "timers": [
+        {
+          "text": "2 minutes",
+          "seconds": 120
+        },
+        {
+          "text": "1 minute",
+          "seconds": 60
+        }
+      ]
+    },
+    {
+      "text": "Add the potatoes, 1 carrot, cut into chunks and shirataki and stir to coat. Add 480 ml dashi, 2 tbsp sake, 1 tbsp sugar and 4 tbsp mirin, bring to a boil and skim.",
+      "ingredientRefs": [
+        3,
+        7,
+        8,
+        9,
+        10
+      ],
+      "timers": []
+    },
+    {
+      "text": "Cover with a drop lid (otoshibuta, or a round of parchment with a hole in the center) and simmer on medium-low for 5 minutes.",
+      "ingredientRefs": [],
+      "timers": [
+        {
+          "text": "5 minutes",
+          "seconds": 300
+        }
+      ]
+    },
+    {
+      "text": "Add 4 tbsp soy sauce, replace the drop lid and simmer 15 minutes, until the potatoes are tender and the liquid has reduced by about a third.",
+      "ingredientRefs": [
+        11
+      ],
+      "timers": [
+        {
+          "text": "15 minutes",
+          "seconds": 900
+        }
+      ]
+    },
+    {
+      "text": "Turn off the heat and leave it covered for 10 minutes; the potatoes absorb the broth as it cools. Serve topped with the snow peas.",
+      "ingredientRefs": [],
+      "timers": [
+        {
+          "text": "10 minutes",
+          "seconds": 600
+        }
+      ]
+    }
+  ],
+  "notes": "Soy goes in after the sugar and mirin because salt tightens the potatoes; sweet first lets the seasoning soak in. Don't stir after the drop lid goes on, or the potatoes break. In Kanto, pork is common instead of beef. Like most simmered dishes, it's even better the next day.",
+  "servings": 4,
+  "tags": [],
+  "chatUrl": null,
+  "chapter": "mains",
+  "favorite": false,
+  "log": [],
+  "createdAt": "2026-10-07T02:11:28.484Z",
+  "updatedAt": "2026-10-07T02:11:28.484Z"
+}
