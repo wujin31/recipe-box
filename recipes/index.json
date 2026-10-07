@@ -1223,6 +1223,28 @@
       "cookCount": 0
     },
     {
+      "id": "spaghetti-aglio-olio",
+      "name": "Spaghetti Aglio, Olio e Peperoncino — Garlic, Oil and Chili Pasta",
+      "englishName": "Spaghetti Aglio, Olio e Peperoncino",
+      "nativeName": "",
+      "romanized": "",
+      "tags": [],
+      "favorite": false,
+      "servings": 2,
+      "items": "spaghetti · salt (for the pasta water) · extra-virgin olive oil · garlic cloves, thinly sliced · dried peperoncino, crumbled (or 1/2 tsp red chili flakes) · flat-leaf parsley, finely chopped · extra-virgin olive oil (to finish)",
+      "chapter": "rice",
+      "cuisine": "Italian",
+      "equipment": [],
+      "cookSeconds": 360,
+      "waitSeconds": 0,
+      "timerCount": 3,
+      "stepCount": 5,
+      "createdAt": "2026-10-07T02:11:34.963Z",
+      "updatedAt": "2026-10-07T02:11:34.963Z",
+      "lastCooked": null,
+      "cookCount": 0
+    },
+    {
       "id": "spam-musubi",
       "name": "Spam Musubi — Hawaiian Spam Rice Block",
       "englishName": "Spam Musubi",
