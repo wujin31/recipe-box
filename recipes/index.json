@@ -1127,6 +1127,28 @@
       "cookCount": 0
     },
     {
+      "id": "teriyaki-beef-plate-lunch",
+      "name": "Teriyaki Beef Plate Lunch — Hawaiian Plate with Two Scoops Rice and Mac Salad",
+      "englishName": "Teriyaki Beef Plate Lunch",
+      "nativeName": "",
+      "romanized": "",
+      "tags": [],
+      "favorite": false,
+      "servings": 4,
+      "items": "chuck flap, top sirloin or flank steak, sliced 6 mm thick against the grain · shoyu (soy sauce) · brown sugar · water · mirin · grated ginger · garlic cloves, grated · pineapple juice · toasted sesame oil · black pepper · neutral oil · scallions, sliced · toasted sesame seeds · elbow macaroni · salt (for the pasta water) · cider vinegar · small carrot, finely grated · grated onion · mayonnaise (Best Foods/Hellmann's) · whole milk · sugar · black pepper (for the salad) · salt, to taste · hot cooked white rice",
+      "chapter": "mains",
+      "cuisine": "Hawaiian",
+      "equipment": [],
+      "cookSeconds": 240,
+      "waitSeconds": 28800,
+      "timerCount": 4,
+      "stepCount": 6,
+      "createdAt": "2026-10-07T02:11:31.542Z",
+      "updatedAt": "2026-10-07T02:11:31.542Z",
+      "lastCooked": null,
+      "cookCount": 0
+    },
+    {
       "id": "teriyaki-chicken",
       "name": "照り焼きチキン (Teriyaki Chikin) · Chicken Teriyaki with Rice",
       "englishName": "Chicken Teriyaki with Rice",
