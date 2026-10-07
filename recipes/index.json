@@ -995,6 +995,28 @@
       "cookCount": 0
     },
     {
+      "id": "pozole-rojo",
+      "name": "Pozole Rojo — Jalisco-Style Red Pork and Hominy Stew",
+      "englishName": "Pozole Rojo",
+      "nativeName": "",
+      "romanized": "",
+      "tags": [],
+      "favorite": false,
+      "servings": 8,
+      "items": "boneless pork shoulder, cut into 5 cm chunks · pork neck bones or a split trotter · water · white onion · head garlic, halved · bay leaves · salt · guajillo chiles, stemmed and seeded · ancho chiles, stemmed and seeded · chiles de árbol (optional) · garlic cloves · white onion · Mexican oregano · ground cumin · lard or oil · canned white hominy, drained and rinsed · green cabbage, finely shredded · radishes, thinly sliced · white onion, finely chopped · Mexican oregano, crumbled · limes, cut into wedges · chile piquín or chile de árbol powder, to serve · tostadas",
+      "chapter": "soups",
+      "cuisine": "Mexican",
+      "equipment": [],
+      "cookSeconds": 8400,
+      "waitSeconds": 0,
+      "timerCount": 6,
+      "stepCount": 6,
+      "createdAt": "2026-10-07T02:11:34.118Z",
+      "updatedAt": "2026-10-07T02:11:34.118Z",
+      "lastCooked": null,
+      "cookCount": 0
+    },
+    {
       "id": "quesabirria-tacos",
       "name": "Quesabirria Tacos — Birria Tacos with Consommé",
       "englishName": "Quesabirria Tacos",
