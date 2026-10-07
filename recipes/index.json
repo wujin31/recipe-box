@@ -810,6 +810,30 @@
       "cookCount": 0
     },
     {
+      "id": "jollof-rice",
+      "name": "Jollof Rice — Nigerian Party Jollof",
+      "englishName": "Jollof Rice",
+      "nativeName": "",
+      "romanized": "",
+      "tags": [
+        "to-try"
+      ],
+      "favorite": false,
+      "servings": 6,
+      "items": "plum tomatoes · red bell peppers, seeded · onion, roughly chopped · Scotch bonnet chiles, stemmed · vegetable oil · onion, thinly sliced · tomato paste · Nigerian-style curry powder · dried thyme · bay leaves · bouillon cubes (Knorr or Maggi), crumbled · salt, to taste · long-grain parboiled rice · chicken stock · butter · tomatoes, sliced (to finish) · onion, sliced into rings (to finish)",
+      "chapter": "rice",
+      "cuisine": "West African",
+      "equipment": [],
+      "cookSeconds": 4380,
+      "waitSeconds": 0,
+      "timerCount": 8,
+      "stepCount": 7,
+      "createdAt": "2026-10-07T02:11:39.162Z",
+      "updatedAt": "2026-10-07T02:11:39.162Z",
+      "lastCooked": null,
+      "cookCount": 0
+    },
+    {
       "id": "kalua-pork-bowl",
       "name": "Kālua Pork Bowl — Hawaiian Kalua Pig and Cabbage over Rice",
       "englishName": "Kālua Pork Bowl",
