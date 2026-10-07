@@ -910,6 +910,32 @@
       "cookCount": 0
     },
     {
+      "id": "jalapeno-grilled-pork-chops",
+      "name": "Jalapeño Grilled Pork Chops",
+      "englishName": "Jalapeño Grilled Pork Chops",
+      "nativeName": "",
+      "romanized": "",
+      "tags": [
+        "to-try"
+      ],
+      "favorite": false,
+      "servings": 4,
+      "items": "jalapeños, stemmed and roughly chopped · garlic cloves · coriander seeds, toasted · apple cider vinegar · lime juice · honey · olive oil · kosher salt · bone-in pork rib chops, 2.5 cm thick (about 1.2 kg) · jalapeños (for charring) · scallions · olive oil (for the salsa) · lime juice (for the salsa) · cilantro, chopped · salt (for the salsa)",
+      "chapter": "mains",
+      "cuisine": "American",
+      "equipment": [
+        "Grill"
+      ],
+      "cookSeconds": 8160,
+      "waitSeconds": 0,
+      "timerCount": 5,
+      "stepCount": 5,
+      "createdAt": "2026-10-07T02:11:43.123Z",
+      "updatedAt": "2026-10-07T02:11:43.123Z",
+      "lastCooked": null,
+      "cookCount": 0
+    },
+    {
       "id": "jay-s-sauce",
       "name": "Jay's Sauce",
       "englishName": "Jay's Sauce",
