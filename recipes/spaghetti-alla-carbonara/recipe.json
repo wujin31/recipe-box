@@ -1,0 +1,130 @@
+{
+  "id": "spaghetti-alla-carbonara",
+  "name": "Spaghetti alla Carbonara — Guanciale, Egg and Pecorino",
+  "nativeName": "",
+  "romanized": "",
+  "englishName": "Spaghetti alla Carbonara",
+  "subtitle": "Guanciale, Egg and Pecorino",
+  "description": "The Roman original with five ingredients and no cream: crisp guanciale, a thick paste of yolks, Pecorino Romano and black pepper, and pasta water, tossed off the heat into a glossy, silky sauce. Serves 4.",
+  "ingredients": [
+    {
+      "text": "400 g spaghetti or rigatoni",
+      "qty": 400,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "spaghetti or rigatoni"
+    },
+    {
+      "text": "1 tbsp salt (for the pasta water)",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "salt (for the pasta water)"
+    },
+    {
+      "text": "150 g guanciale, rind removed, cut into 1 cm strips",
+      "qty": 150,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "guanciale, rind removed, cut into 1 cm strips"
+    },
+    {
+      "text": "4 egg yolks",
+      "qty": 4,
+      "qtyMax": null,
+      "unit": null,
+      "item": "egg yolks"
+    },
+    {
+      "text": "2 whole eggs",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": null,
+      "item": "whole eggs"
+    },
+    {
+      "text": "80 g Pecorino Romano, finely grated, plus more to serve",
+      "qty": 80,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "Pecorino Romano, finely grated, plus more to serve"
+    },
+    {
+      "text": "2 tsp freshly ground black pepper",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "freshly ground black pepper"
+    }
+  ],
+  "steps": [
+    {
+      "text": "Put 150 g guanciale, rind removed, cut into 1 cm strips in a cold large skillet and set over medium-low. Cook 10 minutes, stirring, until the fat has rendered and the strips are crisp outside but still a little tender. Turn off the heat.",
+      "ingredientRefs": [
+        2
+      ],
+      "timers": [
+        {
+          "text": "10 minutes",
+          "seconds": 600
+        }
+      ]
+    },
+    {
+      "text": "Whisk 4 egg yolks, 2 whole eggs, 80 g Pecorino Romano, finely grated, plus more to serve and most of 2 tsp freshly ground black pepper into a thick paste.",
+      "ingredientRefs": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "timers": []
+    },
+    {
+      "text": "Bring 3 L water to a boil with 1 tbsp salt (for the pasta water) (use less salt than usual; the cheese and guanciale are salty). Cook 400 g spaghetti or rigatoni 1 minute less than the package says.",
+      "ingredientRefs": [
+        0,
+        1
+      ],
+      "timers": []
+    },
+    {
+      "text": "Transfer the pasta to the skillet with the guanciale and its fat, add a splash of pasta water, and toss over low heat for 1 minute to coat. Take the pan off the heat and wait 30 seconds.",
+      "ingredientRefs": [],
+      "timers": [
+        {
+          "text": "1 minute",
+          "seconds": 60
+        },
+        {
+          "text": "30 seconds",
+          "seconds": 30
+        }
+      ]
+    },
+    {
+      "text": "Whisk 2 tbsp of hot pasta water into the egg paste, then pour it over the pasta and toss vigorously for 1 minute, adding pasta water a tablespoon at a time, until the sauce is creamy and glossy, not scrambled.",
+      "ingredientRefs": [],
+      "timers": [
+        {
+          "text": "1 minute",
+          "seconds": 60
+        }
+      ]
+    },
+    {
+      "text": "Serve immediately with the rest of the pepper and more Pecorino.",
+      "ingredientRefs": [],
+      "timers": []
+    }
+  ],
+  "notes": "The eggs set at about 70°C. The pan should be warm, not hot: off the heat after the 30-second wait. If the sauce stays runny, set the pan over the pasta pot for a few seconds while tossing (a bain-marie). Pancetta works if you can't find guanciale; bacon is smoky and not traditional.",
+  "servings": 4,
+  "tags": [],
+  "chatUrl": null,
+  "chapter": "rice",
+  "favorite": false,
+  "log": [],
+  "createdAt": "2026-10-07T02:11:35.791Z",
+  "updatedAt": "2026-10-07T02:11:35.791Z"
+}

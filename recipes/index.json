@@ -1289,6 +1289,28 @@
       "cookCount": 0
     },
     {
+      "id": "spaghetti-alla-carbonara",
+      "name": "Spaghetti alla Carbonara — Guanciale, Egg and Pecorino",
+      "englishName": "Spaghetti alla Carbonara",
+      "nativeName": "",
+      "romanized": "",
+      "tags": [],
+      "favorite": false,
+      "servings": 4,
+      "items": "spaghetti or rigatoni · salt (for the pasta water) · guanciale, rind removed, cut into 1 cm strips · egg yolks · whole eggs · Pecorino Romano, finely grated, plus more to serve · freshly ground black pepper",
+      "chapter": "rice",
+      "cuisine": "Italian",
+      "equipment": [],
+      "cookSeconds": 720,
+      "waitSeconds": 0,
+      "timerCount": 4,
+      "stepCount": 6,
+      "createdAt": "2026-10-07T02:11:35.791Z",
+      "updatedAt": "2026-10-07T02:11:35.791Z",
+      "lastCooked": null,
+      "cookCount": 0
+    },
+    {
       "id": "spam-musubi",
       "name": "Spam Musubi — Hawaiian Spam Rice Block",
       "englishName": "Spam Musubi",
