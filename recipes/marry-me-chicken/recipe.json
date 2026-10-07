@@ -1,0 +1,203 @@
+{
+  "id": "marry-me-chicken",
+  "name": "Marry Me Chicken",
+  "nativeName": "",
+  "romanized": "",
+  "englishName": "Marry Me Chicken",
+  "description": "Golden seared chicken cutlets simmered in a creamy Parmesan sauce with sun-dried tomatoes, garlic, thyme and chili flakes, finished with basil. Serves 4.",
+  "ingredients": [
+    {
+      "text": "2 large boneless skinless chicken breasts (about 700 g), halved horizontally into cutlets",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": null,
+      "item": "large boneless skinless chicken breasts (about 700 g), halved horizontally into cutlets"
+    },
+    {
+      "text": "1 tsp salt",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "salt"
+    },
+    {
+      "text": "1/2 tsp black pepper",
+      "qty": 0.5,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "black pepper"
+    },
+    {
+      "text": "2 tbsp all-purpose flour",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "all-purpose flour"
+    },
+    {
+      "text": "2 tbsp olive oil",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "olive oil"
+    },
+    {
+      "text": "2 tbsp butter",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "butter"
+    },
+    {
+      "text": "4 garlic cloves, minced",
+      "qty": 4,
+      "qtyMax": null,
+      "unit": null,
+      "item": "garlic cloves, minced"
+    },
+    {
+      "text": "1 tsp fresh thyme leaves (or 1/2 tsp dried oregano)",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "fresh thyme leaves (or 1/2 tsp dried oregano)"
+    },
+    {
+      "text": "1/2 tsp red chili flakes",
+      "qty": 0.5,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "red chili flakes"
+    },
+    {
+      "text": "1/2 tsp paprika",
+      "qty": 0.5,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "paprika"
+    },
+    {
+      "text": "180 ml chicken stock",
+      "qty": 180,
+      "qtyMax": null,
+      "unit": "ml",
+      "item": "chicken stock"
+    },
+    {
+      "text": "240 ml heavy cream",
+      "qty": 240,
+      "qtyMax": null,
+      "unit": "ml",
+      "item": "heavy cream"
+    },
+    {
+      "text": "60 g oil-packed sun-dried tomatoes, chopped",
+      "qty": 60,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "oil-packed sun-dried tomatoes, chopped"
+    },
+    {
+      "text": "40 g Parmigiano-Reggiano, finely grated",
+      "qty": 40,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "Parmigiano-Reggiano, finely grated"
+    },
+    {
+      "text": "10 g basil leaves, torn",
+      "qty": 10,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "basil leaves, torn"
+    }
+  ],
+  "steps": [
+    {
+      "text": "Season 2 large boneless skinless chicken breasts (about 700 g), halved horizontally into cutlets with 1 tsp salt and 1/2 tsp black pepper and dust lightly with 2 tbsp all-purpose flour.",
+      "ingredientRefs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "timers": []
+    },
+    {
+      "text": "Heat 2 tbsp olive oil in a large skillet over medium-high. Sear the chicken 4 minutes per side, until golden and nearly cooked through. Transfer to a plate.",
+      "ingredientRefs": [
+        4
+      ],
+      "timers": [
+        {
+          "text": "4 minutes",
+          "seconds": 240
+        }
+      ]
+    },
+    {
+      "text": "Lower the heat to medium and melt 2 tbsp butter. Add 4 garlic cloves, minced, 1 tsp fresh thyme leaves (or 1/2 tsp dried oregano), 1/2 tsp red chili flakes and 1/2 tsp paprika and stir 1 minute.",
+      "ingredientRefs": [
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "timers": [
+        {
+          "text": "1 minute",
+          "seconds": 60
+        }
+      ]
+    },
+    {
+      "text": "Pour in 180 ml chicken stock, scraping up the browned bits, and simmer 2 minutes. Add 240 ml heavy cream and 60 g oil-packed sun-dried tomatoes, chopped and simmer 3 minutes, until slightly thickened. Stir in 40 g Parmigiano-Reggiano, finely grated.",
+      "ingredientRefs": [
+        10,
+        11,
+        12,
+        13
+      ],
+      "timers": [
+        {
+          "text": "2 minutes",
+          "seconds": 120
+        },
+        {
+          "text": "3 minutes",
+          "seconds": 180
+        }
+      ]
+    },
+    {
+      "text": "Return the chicken and its juices and simmer 4 minutes, spooning the sauce over, until the chicken is 74°C inside.",
+      "ingredientRefs": [],
+      "timers": [
+        {
+          "text": "4 minutes",
+          "seconds": 240
+        }
+      ]
+    },
+    {
+      "text": "Scatter with 10 g basil leaves, torn and serve with pasta, rice or crusty bread.",
+      "ingredientRefs": [
+        14
+      ],
+      "timers": []
+    }
+  ],
+  "notes": "Slicing the breasts into thin cutlets means they cook through in the time it takes to brown, so they stay juicy. A spoonful of the sun-dried tomato oil in place of some of the olive oil deepens the flavor.",
+  "servings": 4,
+  "tags": [
+    "to-try"
+  ],
+  "chatUrl": null,
+  "chapter": "mains",
+  "cuisine": "American",
+  "favorite": false,
+  "log": [],
+  "createdAt": "2026-10-07T02:11:44.836Z",
+  "updatedAt": "2026-10-07T02:11:44.836Z"
+}

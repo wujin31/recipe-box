@@ -1316,6 +1316,30 @@
       "cookCount": 0
     },
     {
+      "id": "marry-me-chicken",
+      "name": "Marry Me Chicken",
+      "englishName": "Marry Me Chicken",
+      "nativeName": "",
+      "romanized": "",
+      "tags": [
+        "to-try"
+      ],
+      "favorite": false,
+      "servings": 4,
+      "items": "large boneless skinless chicken breasts (about 700 g), halved horizontally into cutlets · salt · black pepper · all-purpose flour · olive oil · butter · garlic cloves, minced · fresh thyme leaves (or 1/2 tsp dried oregano) · red chili flakes · paprika · chicken stock · heavy cream · oil-packed sun-dried tomatoes, chopped · Parmigiano-Reggiano, finely grated · basil leaves, torn",
+      "chapter": "mains",
+      "cuisine": "American",
+      "equipment": [],
+      "cookSeconds": 720,
+      "waitSeconds": 0,
+      "timerCount": 5,
+      "stepCount": 6,
+      "createdAt": "2026-10-07T02:11:44.836Z",
+      "updatedAt": "2026-10-07T02:11:44.836Z",
+      "lastCooked": null,
+      "cookCount": 0
+    },
+    {
       "id": "mercimek-corbasi",
       "name": "Mercimek Çorbası — Turkish Red Lentil Soup",
       "englishName": "Mercimek Çorbası",
