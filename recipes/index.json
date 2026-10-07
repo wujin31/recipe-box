@@ -324,6 +324,30 @@
       "cookCount": 0
     },
     {
+      "id": "furikake-salmon-onigiri",
+      "name": "Furikake Salmon Onigiri — Hawaiian Furikake Salmon Rice Balls",
+      "englishName": "Furikake Salmon Onigiri",
+      "nativeName": "",
+      "romanized": "",
+      "tags": [],
+      "favorite": false,
+      "servings": 4,
+      "items": "skinless salmon fillet · salt · Kewpie mayonnaise · shoyu (soy sauce) · sugar · nori komi furikake · Kewpie mayonnaise (for the filling) · hot cooked short-grain rice · salt (for your hands) · sheets nori, each cut into 4 strips",
+      "chapter": "rice",
+      "cuisine": "Hawaiian",
+      "equipment": [
+        "Oven"
+      ],
+      "cookSeconds": 720,
+      "waitSeconds": 0,
+      "timerCount": 2,
+      "stepCount": 6,
+      "createdAt": "2026-10-07T02:11:30.667Z",
+      "updatedAt": "2026-10-07T02:11:30.667Z",
+      "lastCooked": null,
+      "cookCount": 0
+    },
+    {
       "id": "gindara-saikyo-yaki",
       "name": "銀ダラの西京焼き (Gindara no Saikyō-yaki) · Miso-Glazed Black Cod",
       "englishName": "Miso-Glazed Black Cod",

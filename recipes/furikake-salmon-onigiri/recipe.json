@@ -1,0 +1,148 @@
+{
+  "id": "furikake-salmon-onigiri",
+  "name": "Furikake Salmon Onigiri — Hawaiian Furikake Salmon Rice Balls",
+  "nativeName": "",
+  "romanized": "",
+  "englishName": "Furikake Salmon Onigiri",
+  "subtitle": "Hawaiian Furikake Salmon Rice Balls",
+  "description": "The Hawaii potluck favorite, furikake salmon (baked under a mayo and furikake crust), flaked with Kewpie and tucked into rice balls rolled in more furikake. Serves 4 (8 onigiri).",
+  "ingredients": [
+    {
+      "text": "350 g skinless salmon fillet",
+      "qty": 350,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "skinless salmon fillet"
+    },
+    {
+      "text": "1/4 tsp salt",
+      "qty": 0.25,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "salt"
+    },
+    {
+      "text": "3 tbsp Kewpie mayonnaise",
+      "qty": 3,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "Kewpie mayonnaise"
+    },
+    {
+      "text": "2 tsp shoyu (soy sauce)",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "shoyu (soy sauce)"
+    },
+    {
+      "text": "1 tsp sugar",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "sugar"
+    },
+    {
+      "text": "6 tbsp nori komi furikake",
+      "qty": 6,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "nori komi furikake"
+    },
+    {
+      "text": "1 tbsp Kewpie mayonnaise (for the filling)",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "Kewpie mayonnaise (for the filling)"
+    },
+    {
+      "text": "800 g hot cooked short-grain rice",
+      "qty": 800,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "hot cooked short-grain rice"
+    },
+    {
+      "text": "1 tsp salt (for your hands)",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "salt (for your hands)"
+    },
+    {
+      "text": "2 sheets nori, each cut into 4 strips",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": null,
+      "item": "sheets nori, each cut into 4 strips"
+    }
+  ],
+  "steps": [
+    {
+      "text": "Heat the oven to 200°C. Pat 350 g skinless salmon fillet dry and sprinkle with 1/4 tsp salt. Set it on a lined baking sheet.",
+      "ingredientRefs": [
+        0,
+        1
+      ],
+      "timers": []
+    },
+    {
+      "text": "Mix 3 tbsp Kewpie mayonnaise, 2 tsp shoyu (soy sauce) and 1 tsp sugar, spread it over the top of the salmon, and press 2 tbsp of 6 tbsp nori komi furikake over the mayo.",
+      "ingredientRefs": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "timers": []
+    },
+    {
+      "text": "Bake 12 minutes, until the salmon is just cooked and the topping is browned. Cool 5 minutes, then flake it and fold in 1 tbsp Kewpie mayonnaise (for the filling).",
+      "ingredientRefs": [
+        6
+      ],
+      "timers": [
+        {
+          "text": "12 minutes",
+          "seconds": 720
+        },
+        {
+          "text": "5 minutes",
+          "seconds": 300
+        }
+      ]
+    },
+    {
+      "text": "Gently mix 2 tbsp of the remaining furikake into 800 g hot cooked short-grain rice.",
+      "ingredientRefs": [
+        7
+      ],
+      "timers": []
+    },
+    {
+      "text": "Wet your hands and rub them with a pinch of 1 tsp salt (for your hands). Take about 100 g rice, add a spoonful of salmon in the center, close and press into a triangle.",
+      "ingredientRefs": [
+        8
+      ],
+      "timers": []
+    },
+    {
+      "text": "Dip the edges in the remaining furikake and wrap with a strip of 2 sheets nori, each cut into 4 strips.",
+      "ingredientRefs": [
+        9
+      ],
+      "timers": []
+    }
+  ],
+  "notes": "Nori komi furikake (sesame and seaweed) is the Hawaii standard; avoid the varieties with bonito if you want the classic flavor. The baked furikake salmon is also a dinner on its own: serve the whole fillet with rice. For musubi-style blocks, press the rice and salmon in a musubi mold instead.",
+  "servings": 4,
+  "tags": [],
+  "chatUrl": null,
+  "chapter": "rice",
+  "cuisine": "Hawaiian",
+  "favorite": false,
+  "log": [],
+  "createdAt": "2026-10-07T02:11:30.667Z",
+  "updatedAt": "2026-10-07T02:11:30.667Z"
+}
