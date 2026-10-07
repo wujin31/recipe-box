@@ -484,6 +484,30 @@
       "cookCount": 0
     },
     {
+      "id": "enfrijoladas",
+      "name": "Enfrijoladas — Tortillas in Black Bean Sauce with Cotija and Crema",
+      "englishName": "Enfrijoladas",
+      "nativeName": "",
+      "romanized": "",
+      "tags": [],
+      "favorite": false,
+      "servings": 4,
+      "items": "cooked black beans (or 2 cans, 425 g each), with their liquid · water or bean broth · lard or neutral oil · white onion, chopped · garlic cloves · chipotle in adobo (or 2 toasted chiles de árbol) · dried avocado leaves, toasted (optional) · salt, to taste · neutral oil (for the tortillas) · corn tortillas · queso fresco, crumbled · Mexican crema · cotija cheese, finely crumbled · white onion, sliced into thin rings · cilantro, chopped · avocado, sliced",
+      "chapter": "mains",
+      "cuisine": "Mexican",
+      "equipment": [
+        "Rice cooker"
+      ],
+      "cookSeconds": 545,
+      "waitSeconds": 0,
+      "timerCount": 4,
+      "stepCount": 6,
+      "createdAt": "2026-10-07T02:11:34.393Z",
+      "updatedAt": "2026-10-07T02:11:34.393Z",
+      "lastCooked": null,
+      "cookCount": 0
+    },
+    {
       "id": "furikake-salmon-onigiri",
       "name": "Furikake Salmon Onigiri — Hawaiian Furikake Salmon Rice Balls",
       "englishName": "Furikake Salmon Onigiri",
