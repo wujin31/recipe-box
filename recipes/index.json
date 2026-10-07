@@ -694,6 +694,30 @@
       "cookCount": 0
     },
     {
+      "id": "honey-garlic-pork-belly-bites",
+      "name": "Honey Garlic Pork Belly Bites",
+      "englishName": "Honey Garlic Pork Belly Bites",
+      "nativeName": "",
+      "romanized": "",
+      "tags": [
+        "weeknight"
+      ],
+      "favorite": false,
+      "servings": 4,
+      "items": "skinless pork belly, cut into 2.5 cm cubes · salt · black pepper · cornstarch · garlic cloves, minced · honey · soy sauce · rice vinegar · water · red chili flakes (optional) · scallions, sliced · toasted sesame seeds · hot cooked rice",
+      "chapter": "mains",
+      "cuisine": null,
+      "equipment": [],
+      "cookSeconds": 1050,
+      "waitSeconds": 0,
+      "timerCount": 3,
+      "stepCount": 5,
+      "createdAt": "2026-10-07T02:11:38.275Z",
+      "updatedAt": "2026-10-07T02:11:38.275Z",
+      "lastCooked": null,
+      "cookCount": 0
+    },
+    {
       "id": "hongshao-niurou-mian",
       "name": "紅燒牛肉麵 (Hóngshāo Niúròu Miàn) · Taiwanese Red-Braised Beef Noodle Soup",
       "englishName": "Taiwanese Red-Braised Beef Noodle Soup",

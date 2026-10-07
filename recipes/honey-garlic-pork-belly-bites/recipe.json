@@ -1,0 +1,171 @@
+{
+  "id": "honey-garlic-pork-belly-bites",
+  "name": "Honey Garlic Pork Belly Bites",
+  "nativeName": "",
+  "romanized": "",
+  "englishName": "Honey Garlic Pork Belly Bites",
+  "description": "Cubes of pork belly rendered in a skillet until crisp and golden outside and tender inside, then tossed in a sticky honey, soy and garlic glaze. Serves 4.",
+  "ingredients": [
+    {
+      "text": "700 g skinless pork belly, cut into 2.5 cm cubes",
+      "qty": 700,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "skinless pork belly, cut into 2.5 cm cubes"
+    },
+    {
+      "text": "1/2 tsp salt",
+      "qty": 0.5,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "salt"
+    },
+    {
+      "text": "1/2 tsp black pepper",
+      "qty": 0.5,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "black pepper"
+    },
+    {
+      "text": "2 tbsp cornstarch",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "cornstarch"
+    },
+    {
+      "text": "6 garlic cloves, minced",
+      "qty": 6,
+      "qtyMax": null,
+      "unit": null,
+      "item": "garlic cloves, minced"
+    },
+    {
+      "text": "3 tbsp honey",
+      "qty": 3,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "honey"
+    },
+    {
+      "text": "2 tbsp soy sauce",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "soy sauce"
+    },
+    {
+      "text": "1 tbsp rice vinegar",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "rice vinegar"
+    },
+    {
+      "text": "1 tbsp water",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "water"
+    },
+    {
+      "text": "1/4 tsp red chili flakes (optional)",
+      "qty": 0.25,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "red chili flakes (optional)"
+    },
+    {
+      "text": "2 scallions, sliced",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": null,
+      "item": "scallions, sliced"
+    },
+    {
+      "text": "1 tsp toasted sesame seeds",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "toasted sesame seeds"
+    },
+    {
+      "text": "900 g hot cooked rice",
+      "qty": 900,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "hot cooked rice"
+    }
+  ],
+  "steps": [
+    {
+      "text": "Pat 700 g skinless pork belly, cut into 2.5 cm cubes dry, season with 1/2 tsp salt and 1/2 tsp black pepper, and toss with 2 tbsp cornstarch.",
+      "ingredientRefs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "timers": []
+    },
+    {
+      "text": "Spread the pork in a large cold skillet in one layer and set over medium heat. Cook 15 minutes, turning every few minutes, until the fat has rendered and the cubes are deep golden and crisp on all sides.",
+      "ingredientRefs": [],
+      "timers": [
+        {
+          "text": "15 minutes",
+          "seconds": 900
+        }
+      ]
+    },
+    {
+      "text": "Pour off all but 1 tbsp fat. Add 6 garlic cloves, minced and cook 30 seconds, until fragrant.",
+      "ingredientRefs": [
+        4
+      ],
+      "timers": [
+        {
+          "text": "30 seconds",
+          "seconds": 30
+        }
+      ]
+    },
+    {
+      "text": "Add 3 tbsp honey, 2 tbsp soy sauce, 1 tbsp rice vinegar, 1 tbsp water and 1/4 tsp red chili flakes (optional). Simmer 2 minutes, tossing, until the glaze is sticky and coats each piece.",
+      "ingredientRefs": [
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "timers": [
+        {
+          "text": "2 minutes",
+          "seconds": 120
+        }
+      ]
+    },
+    {
+      "text": "Scatter with 2 scallions, sliced and 1 tsp toasted sesame seeds and serve with 900 g hot cooked rice.",
+      "ingredientRefs": [
+        10,
+        11,
+        12
+      ],
+      "timers": []
+    }
+  ],
+  "notes": "Starting in a cold pan renders the fat gradually so the pork crisps instead of seizing. Keep the poured-off fat for fried rice. Air fryer: toss the coated cubes and cook at 200°C for 18 minutes, shaking halfway, then glaze in a pan.",
+  "servings": 4,
+  "tags": [
+    "weeknight"
+  ],
+  "chatUrl": null,
+  "chapter": "mains",
+  "favorite": false,
+  "log": [],
+  "createdAt": "2026-10-07T02:11:38.275Z",
+  "updatedAt": "2026-10-07T02:11:38.275Z"
+}
