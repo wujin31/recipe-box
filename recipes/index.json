@@ -514,6 +514,31 @@
       "cookCount": 0
     },
     {
+      "id": "onigiri",
+      "name": "おにぎり (Onigiri) · Rice Balls with Salmon, Tuna Mayo and Kombu",
+      "englishName": "Rice Balls with Salmon, Tuna Mayo and Kombu",
+      "nativeName": "おにぎり",
+      "romanized": "Onigiri",
+      "tags": [],
+      "favorite": false,
+      "servings": 3,
+      "items": "uncooked Japanese short-grain rice (3 rice-cooker cups) · water (for the rice) · salt (for your hands) · sheets nori, each cut into 3 strips · salmon fillet (about 150 g), skin on · salt (for the salmon) · tuna in oil (140 g), well drained · Kewpie mayonnaise · soy sauce · kombu tsukudani or shio kombu",
+      "chapter": "rice",
+      "cuisine": "Japanese",
+      "equipment": [
+        "Rice cooker",
+        "Oven"
+      ],
+      "cookSeconds": 4800,
+      "waitSeconds": 0,
+      "timerCount": 5,
+      "stepCount": 7,
+      "createdAt": "2026-10-07T02:11:26.653Z",
+      "updatedAt": "2026-10-07T02:11:26.653Z",
+      "lastCooked": null,
+      "cookCount": 0
+    },
+    {
       "id": "paigu-fan",
       "name": "排骨飯 (Páigǔ Fàn) · Taiwanese Fried Pork Chop Rice",
       "englishName": "Taiwanese Fried Pork Chop Rice",
