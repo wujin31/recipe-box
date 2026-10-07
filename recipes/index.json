@@ -392,6 +392,28 @@
       "cookCount": 0
     },
     {
+      "id": "karaage",
+      "name": "唐揚げ (Karaage) · Japanese Fried Chicken with Kewpie Mayo",
+      "englishName": "Japanese Fried Chicken with Kewpie Mayo",
+      "nativeName": "唐揚げ",
+      "romanized": "Karaage",
+      "tags": [],
+      "favorite": false,
+      "servings": 4,
+      "items": "boneless skin-on chicken thighs, cut into 5 cm pieces · soy sauce · sake · grated ginger · garlic clove, grated · sesame oil · sugar · potato starch (katakuriko) · neutral oil (for frying) · Kewpie mayonnaise · lemon, cut into wedges · green cabbage, finely shredded · shichimi togarashi, to serve",
+      "chapter": "mains",
+      "cuisine": "Japanese",
+      "equipment": [],
+      "cookSeconds": 2100,
+      "waitSeconds": 0,
+      "timerCount": 4,
+      "stepCount": 5,
+      "createdAt": "2026-10-07T02:11:28.750Z",
+      "updatedAt": "2026-10-07T02:11:28.750Z",
+      "lastCooked": null,
+      "cookCount": 0
+    },
+    {
       "id": "katsu-kare",
       "name": "カツカレー (Katsu Karē) · Japanese Curry with Chicken and Spam Katsu",
       "englishName": "Japanese Curry with Chicken and Spam Katsu",

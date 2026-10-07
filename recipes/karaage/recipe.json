@@ -1,0 +1,172 @@
+{
+  "id": "karaage",
+  "name": "唐揚げ (Karaage) · Japanese Fried Chicken with Kewpie Mayo",
+  "nativeName": "唐揚げ",
+  "romanized": "Karaage",
+  "englishName": "Japanese Fried Chicken with Kewpie Mayo",
+  "description": "Skin-on chicken thighs marinated in soy, sake, ginger and garlic, coated in potato starch and double-fried for a thin, shattering crust and juicy middle. Served with lemon and Kewpie. Serves 4.",
+  "ingredients": [
+    {
+      "text": "600 g boneless skin-on chicken thighs, cut into 5 cm pieces",
+      "qty": 600,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "boneless skin-on chicken thighs, cut into 5 cm pieces"
+    },
+    {
+      "text": "2 tbsp soy sauce",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "soy sauce"
+    },
+    {
+      "text": "1 tbsp sake",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "sake"
+    },
+    {
+      "text": "2 tsp grated ginger",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "grated ginger"
+    },
+    {
+      "text": "1 garlic clove, grated",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": null,
+      "item": "garlic clove, grated"
+    },
+    {
+      "text": "1/2 tsp sesame oil",
+      "qty": 0.5,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "sesame oil"
+    },
+    {
+      "text": "1/2 tsp sugar",
+      "qty": 0.5,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "sugar"
+    },
+    {
+      "text": "60 g potato starch (katakuriko)",
+      "qty": 60,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "potato starch (katakuriko)"
+    },
+    {
+      "text": "1 L neutral oil (for frying)",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "l",
+      "item": "neutral oil (for frying)"
+    },
+    {
+      "text": "4 tbsp Kewpie mayonnaise",
+      "qty": 4,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "Kewpie mayonnaise"
+    },
+    {
+      "text": "1/2 lemon, cut into wedges",
+      "qty": 0.5,
+      "qtyMax": null,
+      "unit": null,
+      "item": "lemon, cut into wedges"
+    },
+    {
+      "text": "150 g green cabbage, finely shredded",
+      "qty": 150,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "green cabbage, finely shredded"
+    },
+    {
+      "text": "shichimi togarashi, to serve",
+      "qty": null,
+      "qtyMax": null,
+      "unit": null,
+      "item": "shichimi togarashi, to serve"
+    }
+  ],
+  "steps": [
+    {
+      "text": "Mix 600 g boneless skin-on chicken thighs, cut into 5 cm pieces with 2 tbsp soy sauce, 1 tbsp sake, 2 tsp grated ginger, 1 garlic clove, grated, 1/2 tsp sesame oil and 1/2 tsp sugar. Marinate in the fridge for 30 minutes (up to 2 hours).",
+      "ingredientRefs": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "timers": [
+        {
+          "text": "30 minutes",
+          "seconds": 1800
+        }
+      ]
+    },
+    {
+      "text": "Heat 1 L neutral oil (for frying) to 160°C. Drain the chicken and toss in 60 g potato starch (katakuriko) until each piece is fully coated, squeezing the starch on so the pieces hold a craggy shape.",
+      "ingredientRefs": [
+        7,
+        8
+      ],
+      "timers": []
+    },
+    {
+      "text": "Fry in batches for 3 minutes, until pale and just cooked. Lift onto a rack and rest 4 minutes.",
+      "ingredientRefs": [],
+      "timers": [
+        {
+          "text": "3 minutes",
+          "seconds": 180
+        },
+        {
+          "text": "4 minutes",
+          "seconds": 240
+        }
+      ]
+    },
+    {
+      "text": "Raise the oil to 190°C and fry again for 1 minute, until deep golden and crisp. Drain on the rack.",
+      "ingredientRefs": [],
+      "timers": [
+        {
+          "text": "1 minute",
+          "seconds": 60
+        }
+      ]
+    },
+    {
+      "text": "Serve hot with 150 g green cabbage, finely shredded, 1/2 lemon, cut into wedges and 4 tbsp Kewpie mayonnaise, with shichimi togarashi, to serve sprinkled over the mayo if you like.",
+      "ingredientRefs": [
+        9,
+        10,
+        11,
+        12
+      ],
+      "timers": []
+    }
+  ],
+  "notes": "Potato starch fries lighter and crisper than flour or cornstarch. The rest between fries lets residual heat finish the inside gently, so the second fry only has to crisp. Skin-on thigh is essential; breast dries out.",
+  "servings": 4,
+  "tags": [],
+  "chatUrl": null,
+  "chapter": "mains",
+  "favorite": false,
+  "log": [],
+  "createdAt": "2026-10-07T02:11:28.750Z",
+  "updatedAt": "2026-10-07T02:11:28.750Z"
+}
