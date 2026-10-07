@@ -416,6 +416,30 @@
       "cookCount": 0
     },
     {
+      "id": "huli-huli-chicken",
+      "name": "Huli Huli Chicken — Hawaiian Grilled Chicken with Pineapple-Shoyu Glaze",
+      "englishName": "Huli Huli Chicken",
+      "nativeName": "",
+      "romanized": "",
+      "tags": [],
+      "favorite": false,
+      "servings": 6,
+      "items": "bone-in, skin-on chicken thighs and drumsticks · pineapple juice · shoyu (soy sauce) · brown sugar · ketchup · rice vinegar · grated ginger · garlic cloves, grated · sriracha (optional) · neutral oil (for the grill) · scallions, sliced",
+      "chapter": "mains",
+      "cuisine": "Hawaiian",
+      "equipment": [
+        "Grill"
+      ],
+      "cookSeconds": 3180,
+      "waitSeconds": 14400,
+      "timerCount": 5,
+      "stepCount": 6,
+      "createdAt": "2026-10-07T02:11:30.953Z",
+      "updatedAt": "2026-10-07T02:11:30.953Z",
+      "lastCooked": null,
+      "cookCount": 0
+    },
+    {
       "id": "jay-s-sauce",
       "name": "Jay's Sauce",
       "englishName": "Jay's Sauce",

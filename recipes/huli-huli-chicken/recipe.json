@@ -1,0 +1,170 @@
+{
+  "id": "huli-huli-chicken",
+  "name": "Huli Huli Chicken — Hawaiian Grilled Chicken with Pineapple-Shoyu Glaze",
+  "nativeName": "",
+  "romanized": "",
+  "englishName": "Huli Huli Chicken",
+  "subtitle": "Hawaiian Grilled Chicken with Pineapple-Shoyu Glaze",
+  "description": "The roadside fundraiser classic: chicken marinated in shoyu, pineapple juice, brown sugar, ketchup and ginger, grilled and turned (\"huli\" means turn) while basted with the reduced glaze. Serves 6.",
+  "ingredients": [
+    {
+      "text": "1.6 kg bone-in, skin-on chicken thighs and drumsticks",
+      "qty": 1.6,
+      "qtyMax": null,
+      "unit": "kg",
+      "item": "bone-in, skin-on chicken thighs and drumsticks"
+    },
+    {
+      "text": "240 ml pineapple juice",
+      "qty": 240,
+      "qtyMax": null,
+      "unit": "ml",
+      "item": "pineapple juice"
+    },
+    {
+      "text": "120 ml shoyu (soy sauce)",
+      "qty": 120,
+      "qtyMax": null,
+      "unit": "ml",
+      "item": "shoyu (soy sauce)"
+    },
+    {
+      "text": "110 g brown sugar",
+      "qty": 110,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "brown sugar"
+    },
+    {
+      "text": "80 ml ketchup",
+      "qty": 80,
+      "qtyMax": null,
+      "unit": "ml",
+      "item": "ketchup"
+    },
+    {
+      "text": "2 tbsp rice vinegar",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "rice vinegar"
+    },
+    {
+      "text": "2 tbsp grated ginger",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "grated ginger"
+    },
+    {
+      "text": "4 garlic cloves, grated",
+      "qty": 4,
+      "qtyMax": null,
+      "unit": null,
+      "item": "garlic cloves, grated"
+    },
+    {
+      "text": "1 tsp sriracha (optional)",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "sriracha (optional)"
+    },
+    {
+      "text": "1 tbsp neutral oil (for the grill)",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "neutral oil (for the grill)"
+    },
+    {
+      "text": "3 scallions, sliced",
+      "qty": 3,
+      "qtyMax": null,
+      "unit": null,
+      "item": "scallions, sliced"
+    }
+  ],
+  "steps": [
+    {
+      "text": "Whisk 240 ml pineapple juice, 120 ml shoyu (soy sauce), 110 g brown sugar, 80 ml ketchup, 2 tbsp rice vinegar, 2 tbsp grated ginger, 4 garlic cloves, grated and 1 tsp sriracha (optional). Set aside 250 ml for the glaze.",
+      "ingredientRefs": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "timers": []
+    },
+    {
+      "text": "Put 1.6 kg bone-in, skin-on chicken thighs and drumsticks in a zip bag with the rest of the marinade and refrigerate at least 4 hours or overnight.",
+      "ingredientRefs": [
+        0
+      ],
+      "timers": [
+        {
+          "text": "4 hours",
+          "seconds": 14400
+        }
+      ]
+    },
+    {
+      "text": "Simmer the reserved sauce in a small pan for 10 minutes, until reduced by about half and syrupy.",
+      "ingredientRefs": [],
+      "timers": [
+        {
+          "text": "10 minutes",
+          "seconds": 600
+        }
+      ]
+    },
+    {
+      "text": "Set up a grill for two-zone cooking (one side hot, one side off) and oil the grates with 1 tbsp neutral oil (for the grill). Grill the chicken skin side up over indirect heat, lid closed, for 30 minutes, turning once.",
+      "ingredientRefs": [
+        9
+      ],
+      "timers": [
+        {
+          "text": "30 minutes",
+          "seconds": 1800
+        }
+      ]
+    },
+    {
+      "text": "Move the chicken over direct heat and grill 8 minutes, turning every 2 minutes and brushing with the glaze each time, until lacquered, charred in spots and 80°C at the bone.",
+      "ingredientRefs": [],
+      "timers": [
+        {
+          "text": "8 minutes",
+          "seconds": 480
+        }
+      ]
+    },
+    {
+      "text": "Rest 5 minutes, brush with the last of the glaze and scatter with 3 scallions, sliced. Serve with rice and mac salad.",
+      "ingredientRefs": [
+        10
+      ],
+      "timers": [
+        {
+          "text": "5 minutes",
+          "seconds": 300
+        }
+      ]
+    }
+  ],
+  "notes": "The sugar in the marinade burns over direct heat, which is why the chicken cooks through on the cool side first and only gets glazed at the end. Oven method: bake at 200°C for 35 minutes, then broil 5 minutes, brushing with glaze every 2 minutes.\n\nBoneless thighs work too: grill 5 minutes per side over medium-direct heat, then glaze. Mesquite or kiawe wood chips get closer to the roadside flavor.",
+  "servings": 6,
+  "tags": [],
+  "chatUrl": null,
+  "chapter": "mains",
+  "cuisine": "Hawaiian",
+  "favorite": false,
+  "log": [],
+  "createdAt": "2026-10-07T02:11:30.953Z",
+  "updatedAt": "2026-10-07T02:11:30.953Z"
+}
