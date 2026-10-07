@@ -1,0 +1,240 @@
+{
+  "id": "mongolian-beef",
+  "name": "蒙古牛肉 (Ménggǔ Niúròu) · Mongolian Beef",
+  "nativeName": "蒙古牛肉",
+  "romanized": "Ménggǔ Niúròu",
+  "englishName": "Mongolian Beef",
+  "description": "The Chinese-American takeout classic (which has nothing to do with Mongolia): velveted flank steak fried crisp in cornstarch, tossed in a glossy soy and brown sugar glaze with scallions and dried chilies. Serves 4.",
+  "ingredients": [
+    {
+      "text": "450 g flank steak, sliced against the grain 6 mm thick",
+      "qty": 450,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "flank steak, sliced against the grain 6 mm thick",
+      "group": "For the beef"
+    },
+    {
+      "text": "1/4 tsp baking soda",
+      "qty": 0.25,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "baking soda",
+      "group": "For the beef"
+    },
+    {
+      "text": "1 tbsp water (for the marinade)",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "water (for the marinade)",
+      "group": "For the beef"
+    },
+    {
+      "text": "1 tsp cornstarch (for the marinade)",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "cornstarch (for the marinade)",
+      "group": "For the beef"
+    },
+    {
+      "text": "1 tsp neutral oil (for the marinade)",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "neutral oil (for the marinade)",
+      "group": "For the beef"
+    },
+    {
+      "text": "40 g cornstarch (for dredging)",
+      "qty": 40,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "cornstarch (for dredging)",
+      "group": "For the beef"
+    },
+    {
+      "text": "160 ml neutral oil (for frying)",
+      "qty": 160,
+      "qtyMax": null,
+      "unit": "ml",
+      "item": "neutral oil (for frying)",
+      "group": "For the beef"
+    },
+    {
+      "text": "60 ml soy sauce",
+      "qty": 60,
+      "qtyMax": null,
+      "unit": "ml",
+      "item": "soy sauce",
+      "group": "For the sauce"
+    },
+    {
+      "text": "1 tsp dark soy sauce",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "dark soy sauce",
+      "group": "For the sauce"
+    },
+    {
+      "text": "50 g brown sugar",
+      "qty": 50,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "brown sugar",
+      "group": "For the sauce"
+    },
+    {
+      "text": "120 ml hot water",
+      "qty": 120,
+      "qtyMax": null,
+      "unit": "ml",
+      "item": "hot water",
+      "group": "For the sauce"
+    },
+    {
+      "text": "2 tsp cornstarch mixed with 2 tbsp water",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "cornstarch mixed with 2 tbsp water",
+      "group": "For the sauce"
+    },
+    {
+      "text": "1 tsp ginger, minced",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "ginger, minced",
+      "group": "For the sauce"
+    },
+    {
+      "text": "4 garlic cloves, minced",
+      "qty": 4,
+      "qtyMax": null,
+      "unit": null,
+      "item": "garlic cloves, minced",
+      "group": "For the sauce"
+    },
+    {
+      "text": "6 dried red chilies",
+      "qty": 6,
+      "qtyMax": null,
+      "unit": null,
+      "item": "dried red chilies",
+      "group": "For the sauce"
+    },
+    {
+      "text": "5 scallions, cut into 5 cm lengths, whites and greens apart",
+      "qty": 5,
+      "qtyMax": null,
+      "unit": null,
+      "item": "scallions, cut into 5 cm lengths, whites and greens apart",
+      "group": "For the sauce"
+    }
+  ],
+  "steps": [
+    {
+      "text": "Toss 450 g flank steak, sliced against the grain 6 mm thick with 1/4 tsp baking soda and 1 tbsp water (for the marinade), then 1 tsp cornstarch (for the marinade) and 1 tsp neutral oil (for the marinade). Marinate 30 minutes.",
+      "ingredientRefs": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "timers": [
+        {
+          "text": "30 minutes",
+          "seconds": 1800
+        }
+      ]
+    },
+    {
+      "text": "Stir together 60 ml soy sauce, 1 tsp dark soy sauce, 50 g brown sugar and 120 ml hot water until the sugar dissolves.",
+      "ingredientRefs": [
+        7,
+        8,
+        9,
+        10
+      ],
+      "timers": []
+    },
+    {
+      "text": "Toss the beef in 40 g cornstarch (for dredging) until every slice is coated, shaking off excess.",
+      "ingredientRefs": [
+        5
+      ],
+      "timers": []
+    },
+    {
+      "text": "Heat 160 ml neutral oil (for frying) in a wok over high until just shy of smoking. Spread the beef out in a single layer (in 2 batches if needed) and fry 1 minute per side, until crisp. Transfer to a plate and pour off all but 1 tbsp oil.",
+      "ingredientRefs": [
+        6
+      ],
+      "timers": [
+        {
+          "text": "1 minute",
+          "seconds": 60
+        }
+      ]
+    },
+    {
+      "text": "Over medium heat, fry 1 tsp ginger, minced and 6 dried red chilies for 15 seconds, add 4 garlic cloves, minced and the scallion whites from 5 scallions, cut into 5 cm lengths, whites and greens apart and stir 15 seconds.",
+      "ingredientRefs": [
+        12,
+        13,
+        14,
+        15
+      ],
+      "timers": [
+        {
+          "text": "15 seconds",
+          "seconds": 15
+        },
+        {
+          "text": "15 seconds",
+          "seconds": 15
+        }
+      ]
+    },
+    {
+      "text": "Pour in the sauce and simmer 2 minutes, then stir in 2 tsp cornstarch mixed with 2 tbsp water and cook until it coats a spoon, about 30 seconds.",
+      "ingredientRefs": [
+        11
+      ],
+      "timers": [
+        {
+          "text": "2 minutes",
+          "seconds": 120
+        },
+        {
+          "text": "30 seconds",
+          "seconds": 30
+        }
+      ]
+    },
+    {
+      "text": "Return the beef with the scallion greens and toss 30 seconds, just to glaze. Serve right away with rice.",
+      "ingredientRefs": [],
+      "timers": [
+        {
+          "text": "30 seconds",
+          "seconds": 30
+        }
+      ]
+    }
+  ],
+  "notes": "The baking soda velveting is what makes flank steak tender at this thickness; don't skip the 30 minutes. Fry hot and fast and toss briefly at the end so the coating stays crisp under the glaze. The sauce is meant to be sweet; drop the sugar to 35 g if you prefer it more savory.",
+  "servings": 4,
+  "tags": [],
+  "chatUrl": null,
+  "chapter": "mains",
+  "cuisine": "Chinese-American",
+  "favorite": false,
+  "log": [],
+  "createdAt": "2026-10-07T02:11:25.853Z",
+  "updatedAt": "2026-10-07T02:11:25.853Z"
+}

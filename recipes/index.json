@@ -418,6 +418,30 @@
       "cookCount": 0
     },
     {
+      "id": "mongolian-beef",
+      "name": "蒙古牛肉 (Ménggǔ Niúròu) · Mongolian Beef",
+      "englishName": "Mongolian Beef",
+      "nativeName": "蒙古牛肉",
+      "romanized": "Ménggǔ Niúròu",
+      "tags": [],
+      "favorite": false,
+      "servings": 4,
+      "items": "flank steak, sliced against the grain 6 mm thick · baking soda · water (for the marinade) · cornstarch (for the marinade) · neutral oil (for the marinade) · cornstarch (for dredging) · neutral oil (for frying) · soy sauce · dark soy sauce · brown sugar · hot water · cornstarch mixed with 2 tbsp water · ginger, minced · garlic cloves, minced · dried red chilies · scallions, cut into 5 cm lengths, whites and greens apart",
+      "chapter": "mains",
+      "cuisine": "Chinese-American",
+      "equipment": [
+        "Oven"
+      ],
+      "cookSeconds": 2025,
+      "waitSeconds": 0,
+      "timerCount": 7,
+      "stepCount": 7,
+      "createdAt": "2026-10-07T02:11:25.853Z",
+      "updatedAt": "2026-10-07T02:11:25.853Z",
+      "lastCooked": null,
+      "cookCount": 0
+    },
+    {
       "id": "mu-bap",
       "name": "무밥 (Mu-bap) · Korean Radish Rice with Beef",
       "englishName": "Korean Radish Rice with Beef",
