@@ -668,6 +668,32 @@
       "cookCount": 0
     },
     {
+      "id": "haoyou-niurou-bok-choy",
+      "name": "蠔油牛肉炒白菜 (Háoyóu Niúròu Chǎo Báicài) · Stir-Fried Beef with Oyster Sauce and Bok Choy",
+      "englishName": "Stir-Fried Beef with Oyster Sauce and Bok Choy",
+      "nativeName": "蠔油牛肉炒白菜",
+      "romanized": "Háoyóu Niúròu Chǎo Báicài",
+      "tags": [
+        "weeknight"
+      ],
+      "favorite": false,
+      "servings": 3,
+      "items": "flank steak, sliced against the grain 5 mm thick · baking soda · water (for the marinade) · soy sauce (for the marinade) · Shaoxing wine · cornstarch (for the marinade) · neutral oil (for the marinade) · oyster sauce · soy sauce · dark soy sauce · sugar · sesame oil · chicken stock or water · cornstarch · neutral oil · baby bok choy, halved or quartered · garlic cloves, sliced · ginger · hot cooked rice",
+      "chapter": "mains",
+      "cuisine": "Chinese",
+      "equipment": [
+        "Oven"
+      ],
+      "cookSeconds": 1350,
+      "waitSeconds": 0,
+      "timerCount": 7,
+      "stepCount": 5,
+      "createdAt": "2026-10-07T02:11:37.989Z",
+      "updatedAt": "2026-10-07T02:11:37.989Z",
+      "lastCooked": null,
+      "cookCount": 0
+    },
+    {
       "id": "hongshao-niurou-mian",
       "name": "紅燒牛肉麵 (Hóngshāo Niúròu Miàn) · Taiwanese Red-Braised Beef Noodle Soup",
       "englishName": "Taiwanese Red-Braised Beef Noodle Soup",
