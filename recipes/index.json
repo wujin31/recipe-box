@@ -1311,6 +1311,28 @@
       "cookCount": 0
     },
     {
+      "id": "smash-burgers",
+      "name": "Smash Burgers — Double Cheeseburgers with Special Sauce",
+      "englishName": "Smash Burgers",
+      "nativeName": "",
+      "romanized": "",
+      "tags": [],
+      "favorite": false,
+      "servings": 4,
+      "items": "ground chuck (80/20), cold · kosher salt · black pepper · American cheese · potato buns · butter, softened · white onion, very thinly sliced (optional) · dill pickle chips · mayonnaise · ketchup · chopped dill pickles · yellow mustard · pickle brine",
+      "chapter": "mains",
+      "cuisine": "American",
+      "equipment": [],
+      "cookSeconds": 480,
+      "waitSeconds": 0,
+      "timerCount": 4,
+      "stepCount": 6,
+      "createdAt": "2026-10-07T02:11:36.921Z",
+      "updatedAt": "2026-10-07T02:11:36.921Z",
+      "lastCooked": null,
+      "cookCount": 0
+    },
+    {
       "id": "sopa-de-fideo-con-pollo",
       "name": "Sopa de Fideo con Pollo",
       "englishName": "Sopa de Fideo con Pollo",
