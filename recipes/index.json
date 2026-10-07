@@ -1533,6 +1533,32 @@
       "cookCount": 0
     },
     {
+      "id": "sheet-pan-bibimbap",
+      "name": "Sheet-Pan Bibimbap",
+      "englishName": "Sheet-Pan Bibimbap",
+      "nativeName": "",
+      "romanized": "",
+      "tags": [
+        "to-try"
+      ],
+      "favorite": false,
+      "servings": 4,
+      "items": "thinly sliced ribeye or sirloin (bulgogi cut) · soy sauce · brown sugar · toasted sesame oil · garlic cloves, grated · carrots, cut into matchsticks · zucchini, cut into half-moons · shiitake mushrooms, sliced · neutral oil · salt · baby spinach · toasted sesame oil (for the spinach) · gochujang · toasted sesame oil (for the sauce) · rice vinegar · honey · water · hot cooked short-grain rice · eggs · kimchi · toasted sesame seeds",
+      "chapter": "rice",
+      "cuisine": "Korean",
+      "equipment": [
+        "Oven"
+      ],
+      "cookSeconds": 1320,
+      "waitSeconds": 0,
+      "timerCount": 4,
+      "stepCount": 6,
+      "createdAt": "2026-10-07T02:11:40.275Z",
+      "updatedAt": "2026-10-07T02:11:40.275Z",
+      "lastCooked": null,
+      "cookCount": 0
+    },
+    {
       "id": "shoyu-poke-bowl",
       "name": "Shoyu Poke Bowl — Hawaiian Ahi or Salmon Poke over Rice",
       "englishName": "Shoyu Poke Bowl",
