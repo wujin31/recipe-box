@@ -831,6 +831,28 @@
       "cookCount": 0
     },
     {
+      "id": "tonkatsu",
+      "name": "とんかつ (Tonkatsu) · Panko Pork Cutlet with Shredded Cabbage",
+      "englishName": "Panko Pork Cutlet with Shredded Cabbage",
+      "nativeName": "とんかつ",
+      "romanized": "Tonkatsu",
+      "tags": [],
+      "favorite": false,
+      "servings": 2,
+      "items": "boneless pork loin chops (about 350 g), 2 cm thick · salt · black pepper · all-purpose flour · egg, beaten with 1 tsp oil · panko (fresh panko if you can find it) · neutral oil (for frying) · green cabbage (about 250 g) · tonkatsu sauce (Bull-Dog) · toasted white sesame seeds · karashi (Japanese mustard) · lemon, cut into wedges · hot cooked short-grain rice",
+      "chapter": "mains",
+      "cuisine": "Japanese",
+      "equipment": [],
+      "cookSeconds": 630,
+      "waitSeconds": 0,
+      "timerCount": 5,
+      "stepCount": 7,
+      "createdAt": "2026-10-07T02:11:27.440Z",
+      "updatedAt": "2026-10-07T02:11:27.440Z",
+      "lastCooked": null,
+      "cookCount": 0
+    },
+    {
       "id": "tonkotsu-ramen",
       "name": "豚骨ラーメン (Tonkotsu Rāmen) · Hakata-Style Tonkotsu Ramen",
       "englishName": "Hakata-Style Tonkotsu Ramen",

@@ -1,0 +1,190 @@
+{
+  "id": "tonkatsu",
+  "name": "とんかつ (Tonkatsu) · Panko Pork Cutlet with Shredded Cabbage",
+  "nativeName": "とんかつ",
+  "romanized": "Tonkatsu",
+  "englishName": "Panko Pork Cutlet with Shredded Cabbage",
+  "description": "Thick pork loin in a crisp, airy panko crust, fried and rested so it stays juicy, with a mound of ice-cold shredded cabbage, tonkatsu sauce, karashi and lemon. Serves 2.",
+  "ingredients": [
+    {
+      "text": "2 boneless pork loin chops (about 350 g), 2 cm thick",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": null,
+      "item": "boneless pork loin chops (about 350 g), 2 cm thick"
+    },
+    {
+      "text": "1/2 tsp salt",
+      "qty": 0.5,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "salt"
+    },
+    {
+      "text": "1/4 tsp black pepper",
+      "qty": 0.25,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "black pepper"
+    },
+    {
+      "text": "30 g all-purpose flour",
+      "qty": 30,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "all-purpose flour"
+    },
+    {
+      "text": "1 egg, beaten with 1 tsp oil",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": null,
+      "item": "egg, beaten with 1 tsp oil"
+    },
+    {
+      "text": "80 g panko (fresh panko if you can find it)",
+      "qty": 80,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "panko (fresh panko if you can find it)"
+    },
+    {
+      "text": "1 L neutral oil (for frying)",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "l",
+      "item": "neutral oil (for frying)"
+    },
+    {
+      "text": "1/4 green cabbage (about 250 g)",
+      "qty": 0.25,
+      "qtyMax": null,
+      "unit": null,
+      "item": "green cabbage (about 250 g)"
+    },
+    {
+      "text": "4 tbsp tonkatsu sauce (Bull-Dog)",
+      "qty": 4,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "tonkatsu sauce (Bull-Dog)"
+    },
+    {
+      "text": "1 tbsp toasted white sesame seeds",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "toasted white sesame seeds"
+    },
+    {
+      "text": "2 tsp karashi (Japanese mustard)",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "karashi (Japanese mustard)"
+    },
+    {
+      "text": "1/2 lemon, cut into wedges",
+      "qty": 0.5,
+      "qtyMax": null,
+      "unit": null,
+      "item": "lemon, cut into wedges"
+    },
+    {
+      "text": "300 g hot cooked short-grain rice",
+      "qty": 300,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "hot cooked short-grain rice"
+    }
+  ],
+  "steps": [
+    {
+      "text": "Shred 1/4 green cabbage (about 250 g) as finely as you can (a mandoline helps) and soak in ice water for 5 minutes. Drain and spin very dry, then refrigerate.",
+      "ingredientRefs": [
+        7
+      ],
+      "timers": [
+        {
+          "text": "5 minutes",
+          "seconds": 300
+        }
+      ]
+    },
+    {
+      "text": "Cut slits through the fat and silverskin along the edge of 2 boneless pork loin chops (about 350 g), 2 cm thick every 2 cm so it doesn't curl. Pound lightly to even out, reshape, and season with 1/2 tsp salt and 1/4 tsp black pepper.",
+      "ingredientRefs": [
+        0,
+        1,
+        2
+      ],
+      "timers": []
+    },
+    {
+      "text": "Dredge in 30 g all-purpose flour, shaking off excess, dip into 1 egg, beaten with 1 tsp oil, then press gently into 80 g panko (fresh panko if you can find it) so the flakes stand up rather than flattening.",
+      "ingredientRefs": [
+        3,
+        4,
+        5
+      ],
+      "timers": []
+    },
+    {
+      "text": "Heat 1 L neutral oil (for frying) to 170°C. Fry the chops for 3 minutes per side, until light golden. Lift onto a rack and rest 4 minutes; the carryover heat finishes the center.",
+      "ingredientRefs": [
+        6
+      ],
+      "timers": [
+        {
+          "text": "3 minutes",
+          "seconds": 180
+        },
+        {
+          "text": "4 minutes",
+          "seconds": 240
+        }
+      ]
+    },
+    {
+      "text": "Raise the oil to 180°C and fry again for 30 seconds per side, until deep golden and crisp.",
+      "ingredientRefs": [],
+      "timers": [
+        {
+          "text": "30 seconds",
+          "seconds": 30
+        }
+      ]
+    },
+    {
+      "text": "Drain upright for 1 minute, then slice into 2 cm strips. Grind 1 tbsp toasted white sesame seeds and stir into 4 tbsp tonkatsu sauce (Bull-Dog) for dipping.",
+      "ingredientRefs": [
+        8,
+        9
+      ],
+      "timers": [
+        {
+          "text": "1 minute",
+          "seconds": 60
+        }
+      ]
+    },
+    {
+      "text": "Serve with the cabbage, 2 tsp karashi (Japanese mustard), 1/2 lemon, cut into wedges and 300 g hot cooked short-grain rice.",
+      "ingredientRefs": [
+        10,
+        11,
+        12
+      ],
+      "timers": []
+    }
+  ],
+  "notes": "The rest between fries keeps the pork pink-blushed and juicy while the crust gets a second crisp. Look for loin with a fat cap (rosu katsu); tenderloin (hire katsu) works but fry it 2 minutes per side.\n\nDress the cabbage with sesame dressing or more tonkatsu sauce. Leftover katsu becomes katsudon: simmer slices with onion in the oyakodon sauce and set with egg.",
+  "servings": 2,
+  "tags": [],
+  "chatUrl": null,
+  "chapter": "mains",
+  "favorite": false,
+  "log": [],
+  "createdAt": "2026-10-07T02:11:27.440Z",
+  "updatedAt": "2026-10-07T02:11:27.440Z"
+}
