@@ -1,0 +1,143 @@
+{
+  "id": "miso-butter-pasta",
+  "name": "Miso Butter Pasta",
+  "nativeName": "",
+  "romanized": "",
+  "englishName": "Miso Butter Pasta",
+  "description": "Japanese wafu-style pasta: spaghetti glossed with white miso and butter emulsified in pasta water, with sautéed garlic, lots of black pepper, Parmesan and scallions. 20 minutes. Serves 2.",
+  "ingredients": [
+    {
+      "text": "200 g spaghetti",
+      "qty": 200,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "spaghetti"
+    },
+    {
+      "text": "1 tsp salt (for the pasta water)",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "salt (for the pasta water)"
+    },
+    {
+      "text": "3 tbsp unsalted butter",
+      "qty": 3,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "unsalted butter"
+    },
+    {
+      "text": "2 garlic cloves, thinly sliced",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": null,
+      "item": "garlic cloves, thinly sliced"
+    },
+    {
+      "text": "2 tbsp white miso",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "white miso"
+    },
+    {
+      "text": "1 tsp soy sauce",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "soy sauce"
+    },
+    {
+      "text": "1/2 tsp black pepper, coarsely ground",
+      "qty": 0.5,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "black pepper, coarsely ground"
+    },
+    {
+      "text": "20 g Parmesan, finely grated",
+      "qty": 20,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "Parmesan, finely grated"
+    },
+    {
+      "text": "2 scallions, thinly sliced",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": null,
+      "item": "scallions, thinly sliced"
+    },
+    {
+      "text": "1/2 sheet nori, cut into thin strips (optional)",
+      "qty": 0.5,
+      "qtyMax": null,
+      "unit": null,
+      "item": "sheet nori, cut into thin strips (optional)"
+    }
+  ],
+  "steps": [
+    {
+      "text": "Cook 200 g spaghetti in boiling water with 1 tsp salt (for the pasta water) (less salt than usual; miso is salty) 1 minute less than the package says. Reserve 240 ml pasta water.",
+      "ingredientRefs": [
+        0,
+        1
+      ],
+      "timers": []
+    },
+    {
+      "text": "Meanwhile, melt 1 tbsp of 3 tbsp unsalted butter in a large skillet over medium-low and cook 2 garlic cloves, thinly sliced for 2 minutes, until pale gold.",
+      "ingredientRefs": [
+        2,
+        3
+      ],
+      "timers": [
+        {
+          "text": "2 minutes",
+          "seconds": 120
+        }
+      ]
+    },
+    {
+      "text": "Whisk 2 tbsp white miso and 1 tsp soy sauce with 120 ml pasta water until smooth and add it to the skillet.",
+      "ingredientRefs": [
+        4,
+        5
+      ],
+      "timers": []
+    },
+    {
+      "text": "Add the pasta and the remaining butter and toss over medium heat for 2 minutes, adding pasta water as needed, until the noodles are glossy and coated.",
+      "ingredientRefs": [],
+      "timers": [
+        {
+          "text": "2 minutes",
+          "seconds": 120
+        }
+      ]
+    },
+    {
+      "text": "Off the heat, toss in 1/2 tsp black pepper, coarsely ground and 20 g Parmesan, finely grated. Serve topped with 2 scallions, thinly sliced and 1/2 sheet nori, cut into thin strips (optional).",
+      "ingredientRefs": [
+        6,
+        7,
+        8,
+        9
+      ],
+      "timers": []
+    }
+  ],
+  "notes": "Dissolve the miso in water before it goes in the pan so it doesn't clump. Sautéed mushrooms, bacon or a soft egg are common additions in Japanese cafés.",
+  "servings": 2,
+  "tags": [
+    "to-try"
+  ],
+  "chatUrl": null,
+  "chapter": "rice",
+  "cuisine": "Japanese",
+  "favorite": false,
+  "log": [],
+  "createdAt": "2026-10-07T02:11:42.824Z",
+  "updatedAt": "2026-10-07T02:11:42.824Z"
+}

@@ -1,0 +1,264 @@
+{
+  "id": "caldo-de-res",
+  "name": "Caldo de Res — Mexican Beef and Vegetable Soup",
+  "nativeName": "",
+  "romanized": "",
+  "englishName": "Caldo de Res",
+  "subtitle": "Mexican Beef and Vegetable Soup",
+  "description": "Bone-in beef shank simmered into a clear, beefy broth, then loaded with corn on the cob, carrots, potatoes, chayote, zucchini and cabbage. Served with lime, onion, cilantro and rice. Serves 6.",
+  "ingredients": [
+    {
+      "text": "1.5 kg bone-in beef shank (chambarete), cut into thick slices",
+      "qty": 1.5,
+      "qtyMax": null,
+      "unit": "kg",
+      "item": "bone-in beef shank (chambarete), cut into thick slices",
+      "group": "For the broth"
+    },
+    {
+      "text": "4 L water",
+      "qty": 4,
+      "qtyMax": null,
+      "unit": "l",
+      "item": "water",
+      "group": "For the broth"
+    },
+    {
+      "text": "1/2 white onion",
+      "qty": 0.5,
+      "qtyMax": null,
+      "unit": null,
+      "item": "white onion",
+      "group": "For the broth"
+    },
+    {
+      "text": "1 head garlic, halved",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": null,
+      "item": "head garlic, halved",
+      "group": "For the broth"
+    },
+    {
+      "text": "2 bay leaves",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": null,
+      "item": "bay leaves",
+      "group": "For the broth"
+    },
+    {
+      "text": "1 tsp black peppercorns",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "black peppercorns",
+      "group": "For the broth"
+    },
+    {
+      "text": "1 tbsp salt",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "salt",
+      "group": "For the broth"
+    },
+    {
+      "text": "2 Roma tomatoes",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": null,
+      "item": "Roma tomatoes",
+      "group": "For the vegetables"
+    },
+    {
+      "text": "3 ears corn, cut into 5 cm pieces",
+      "qty": 3,
+      "qtyMax": null,
+      "unit": null,
+      "item": "ears corn, cut into 5 cm pieces",
+      "group": "For the vegetables"
+    },
+    {
+      "text": "3 carrots, cut into chunks",
+      "qty": 3,
+      "qtyMax": null,
+      "unit": null,
+      "item": "carrots, cut into chunks",
+      "group": "For the vegetables"
+    },
+    {
+      "text": "3 potatoes, quartered",
+      "qty": 3,
+      "qtyMax": null,
+      "unit": null,
+      "item": "potatoes, quartered",
+      "group": "For the vegetables"
+    },
+    {
+      "text": "2 chayotes, cut into wedges",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": null,
+      "item": "chayotes, cut into wedges",
+      "group": "For the vegetables"
+    },
+    {
+      "text": "2 Mexican squash or zucchini, cut into chunks",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": null,
+      "item": "Mexican squash or zucchini, cut into chunks",
+      "group": "For the vegetables"
+    },
+    {
+      "text": "1/4 green cabbage, cut into wedges",
+      "qty": 0.25,
+      "qtyMax": null,
+      "unit": null,
+      "item": "green cabbage, cut into wedges",
+      "group": "For the vegetables"
+    },
+    {
+      "text": "4 sprigs cilantro",
+      "qty": 4,
+      "qtyMax": null,
+      "unit": "sprig",
+      "item": "cilantro",
+      "group": "For the vegetables"
+    },
+    {
+      "text": "1/2 white onion, finely chopped",
+      "qty": 0.5,
+      "qtyMax": null,
+      "unit": null,
+      "item": "white onion, finely chopped",
+      "group": "To serve"
+    },
+    {
+      "text": "1/2 bunch cilantro, chopped",
+      "qty": 0.5,
+      "qtyMax": null,
+      "unit": "bunch",
+      "item": "cilantro, chopped",
+      "group": "To serve"
+    },
+    {
+      "text": "2 serrano chiles, chopped",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": null,
+      "item": "serrano chiles, chopped",
+      "group": "To serve"
+    },
+    {
+      "text": "3 limes, cut into wedges",
+      "qty": 3,
+      "qtyMax": null,
+      "unit": null,
+      "item": "limes, cut into wedges",
+      "group": "To serve"
+    },
+    {
+      "text": "600 g Mexican red rice or white rice",
+      "qty": 600,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "Mexican red rice or white rice",
+      "group": "To serve"
+    },
+    {
+      "text": "12 corn tortillas, warmed",
+      "qty": 12,
+      "qtyMax": null,
+      "unit": null,
+      "item": "corn tortillas, warmed",
+      "group": "To serve"
+    }
+  ],
+  "steps": [
+    {
+      "text": "Put 1.5 kg bone-in beef shank (chambarete), cut into thick slices, 4 L water, 1/2 white onion, 1 head garlic, halved, 2 bay leaves, 1 tsp black peppercorns and 1 tbsp salt in a large pot. Bring to a boil, skimming the foam for the first 10 minutes, then simmer gently, partly covered, for 2 hours, until the meat is tender.",
+      "ingredientRefs": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "timers": [
+        {
+          "text": "10 minutes",
+          "seconds": 600
+        },
+        {
+          "text": "2 hours",
+          "seconds": 7200
+        }
+      ]
+    },
+    {
+      "text": "Blend 2 Roma tomatoes with a ladle of broth and stir it into the pot.",
+      "ingredientRefs": [
+        7
+      ],
+      "timers": []
+    },
+    {
+      "text": "Add 3 ears corn, cut into 5 cm pieces, 3 carrots, cut into chunks and 3 potatoes, quartered and simmer 15 minutes.",
+      "ingredientRefs": [
+        8,
+        9,
+        10
+      ],
+      "timers": [
+        {
+          "text": "15 minutes",
+          "seconds": 900
+        }
+      ]
+    },
+    {
+      "text": "Add 2 chayotes, cut into wedges and simmer 10 minutes, then add 2 Mexican squash or zucchini, cut into chunks, 1/4 green cabbage, cut into wedges and 4 sprigs cilantro and simmer 8 minutes more, until everything is tender. Taste for salt.",
+      "ingredientRefs": [
+        11,
+        12,
+        13,
+        14
+      ],
+      "timers": [
+        {
+          "text": "10 minutes",
+          "seconds": 600
+        },
+        {
+          "text": "8 minutes",
+          "seconds": 480
+        }
+      ]
+    },
+    {
+      "text": "Serve a piece of meat and some of every vegetable in each bowl with plenty of broth. Pass 1/2 white onion, finely chopped, 1/2 bunch cilantro, chopped, 2 serrano chiles, chopped, 3 limes, cut into wedges, 600 g Mexican red rice or white rice and 12 corn tortillas, warmed at the table.",
+      "ingredientRefs": [
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "timers": []
+    }
+  ],
+  "notes": "A gentle simmer and skimming keep the broth clear. The marrow in the shank bones is a prize: spread it on a tortilla with salt. Many families spoon rice straight into the bowl. It's even better the next day.",
+  "servings": 6,
+  "tags": [],
+  "chatUrl": null,
+  "chapter": "soups",
+  "favorite": false,
+  "log": [],
+  "createdAt": "2026-10-07T02:11:33.544Z",
+  "updatedAt": "2026-10-07T02:11:33.544Z"
+}

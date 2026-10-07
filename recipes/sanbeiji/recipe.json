@@ -1,0 +1,181 @@
+{
+  "id": "sanbeiji",
+  "name": "三杯雞 (Sānbēijī) · Taiwanese Three-Cup Chicken",
+  "nativeName": "三杯雞",
+  "romanized": "Sānbēijī",
+  "englishName": "Taiwanese Three-Cup Chicken",
+  "description": "Chicken thighs cooked down in black sesame oil, rice wine and soy (the \"three cups\") with heaps of ginger and whole garlic until sticky, then finished with Thai basil. Serves 4.",
+  "ingredients": [
+    {
+      "text": "900 g bone-in chicken thighs, chopped into 4 cm pieces (or boneless thighs)",
+      "qty": 900,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "bone-in chicken thighs, chopped into 4 cm pieces (or boneless thighs)"
+    },
+    {
+      "text": "60 ml black sesame oil (胡麻油) or toasted sesame oil",
+      "qty": 60,
+      "qtyMax": null,
+      "unit": "ml",
+      "item": "black sesame oil (胡麻油) or toasted sesame oil"
+    },
+    {
+      "text": "60 g ginger, unpeeled, sliced 3 mm thick",
+      "qty": 60,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "ginger, unpeeled, sliced 3 mm thick"
+    },
+    {
+      "text": "15 garlic cloves, peeled and left whole",
+      "qty": 15,
+      "qtyMax": null,
+      "unit": null,
+      "item": "garlic cloves, peeled and left whole"
+    },
+    {
+      "text": "4 scallions, cut into 5 cm lengths, whites and greens apart",
+      "qty": 4,
+      "qtyMax": null,
+      "unit": null,
+      "item": "scallions, cut into 5 cm lengths, whites and greens apart"
+    },
+    {
+      "text": "2 red chilies, sliced",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": null,
+      "item": "red chilies, sliced"
+    },
+    {
+      "text": "60 ml Taiwanese rice wine (米酒) or Shaoxing wine",
+      "qty": 60,
+      "qtyMax": null,
+      "unit": "ml",
+      "item": "Taiwanese rice wine (米酒) or Shaoxing wine"
+    },
+    {
+      "text": "45 ml soy sauce",
+      "qty": 45,
+      "qtyMax": null,
+      "unit": "ml",
+      "item": "soy sauce"
+    },
+    {
+      "text": "15 ml soy paste (醬油膏) or oyster sauce",
+      "qty": 15,
+      "qtyMax": null,
+      "unit": "ml",
+      "item": "soy paste (醬油膏) or oyster sauce"
+    },
+    {
+      "text": "1 tbsp rock sugar or sugar",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "rock sugar or sugar"
+    },
+    {
+      "text": "30 g Thai basil (九層塔) leaves",
+      "qty": 30,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "Thai basil (九層塔) leaves"
+    },
+    {
+      "text": "1 tbsp rice wine (to finish)",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "rice wine (to finish)"
+    }
+  ],
+  "steps": [
+    {
+      "text": "Pat 900 g bone-in chicken thighs, chopped into 4 cm pieces (or boneless thighs) dry.",
+      "ingredientRefs": [
+        0
+      ],
+      "timers": []
+    },
+    {
+      "text": "Put 60 ml black sesame oil (胡麻油) or toasted sesame oil and 60 g ginger, unpeeled, sliced 3 mm thick in a wok or clay pot over medium-low and fry slowly for 5 minutes, until the ginger edges curl and look dry. Add 15 garlic cloves, peeled and left whole and fry 3 minutes more, until golden. Keep the heat moderate; black sesame oil turns bitter if it smokes.",
+      "ingredientRefs": [
+        1,
+        2,
+        3
+      ],
+      "timers": [
+        {
+          "text": "5 minutes",
+          "seconds": 300
+        },
+        {
+          "text": "3 minutes",
+          "seconds": 180
+        }
+      ]
+    },
+    {
+      "text": "Turn the heat to medium-high, add the chicken skin side down and sear 5 minutes, until browned, then toss with the scallion whites from 4 scallions, cut into 5 cm lengths, whites and greens apart and 2 red chilies, sliced.",
+      "ingredientRefs": [
+        4,
+        5
+      ],
+      "timers": [
+        {
+          "text": "5 minutes",
+          "seconds": 300
+        }
+      ]
+    },
+    {
+      "text": "Add 60 ml Taiwanese rice wine (米酒) or Shaoxing wine, 45 ml soy sauce, 15 ml soy paste (醬油膏) or oyster sauce and 1 tbsp rock sugar or sugar. Bring to a boil, cover and simmer over medium-low for 10 minutes.",
+      "ingredientRefs": [
+        6,
+        7,
+        8,
+        9
+      ],
+      "timers": [
+        {
+          "text": "10 minutes",
+          "seconds": 600
+        }
+      ]
+    },
+    {
+      "text": "Uncover, turn the heat to high and cook 5 minutes, stirring, until the sauce reduces to a thick glaze that coats the chicken.",
+      "ingredientRefs": [],
+      "timers": [
+        {
+          "text": "5 minutes",
+          "seconds": 300
+        }
+      ]
+    },
+    {
+      "text": "Off the heat, toss in 30 g Thai basil (九層塔) leaves and the scallion greens, splash 1 tbsp rice wine (to finish) around the edge of the pan, cover for 1 minute and serve with rice.",
+      "ingredientRefs": [
+        10,
+        11
+      ],
+      "timers": [
+        {
+          "text": "1 minute",
+          "seconds": 60
+        }
+      ]
+    }
+  ],
+  "notes": "\"Three cups\" is the ratio, not the measure: equal-ish parts sesame oil, rice wine and soy; most Taiwanese cooks now go lighter on the soy and sweeten with rock sugar. Black sesame oil (胡麻油, pressed from roasted black sesame) is the traditional fat and tastes deeper than regular toasted sesame oil.\n\nThai basil is not optional; it's the dish's aroma. Italian basil is a poor substitute. Serve straight from the clay pot if you have one. The same method works with squid, mushrooms (三杯杏鮑菇) or tofu.",
+  "servings": 4,
+  "tags": [],
+  "chatUrl": null,
+  "chapter": "mains",
+  "favorite": false,
+  "log": [],
+  "createdAt": "2026-10-07T02:11:25.036Z",
+  "updatedAt": "2026-10-07T02:11:25.036Z"
+}

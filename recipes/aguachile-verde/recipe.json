@@ -1,0 +1,145 @@
+{
+  "id": "aguachile-verde",
+  "name": "Aguachile Verde — Sinaloa-Style Shrimp in Green Chile-Lime",
+  "nativeName": "",
+  "romanized": "",
+  "englishName": "Aguachile Verde",
+  "subtitle": "Sinaloa-Style Shrimp in Green Chile-Lime",
+  "description": "Butterflied raw shrimp \"cooked\" briefly in a blended lime, serrano and cilantro water, piled with cucumber and red onion and eaten right away on tostadas. Serves 4 as a starter.",
+  "ingredients": [
+    {
+      "text": "450 g large raw shrimp, peeled and deveined",
+      "qty": 450,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "large raw shrimp, peeled and deveined"
+    },
+    {
+      "text": "1 tsp salt",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "salt"
+    },
+    {
+      "text": "180 ml fresh lime juice (about 8 limes)",
+      "qty": 180,
+      "qtyMax": null,
+      "unit": "ml",
+      "item": "fresh lime juice (about 8 limes)"
+    },
+    {
+      "text": "3 serrano chiles, stemmed",
+      "qty": 3,
+      "qtyMax": null,
+      "unit": null,
+      "item": "serrano chiles, stemmed"
+    },
+    {
+      "text": "20 g cilantro, with stems",
+      "qty": 20,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "cilantro, with stems"
+    },
+    {
+      "text": "1 small garlic clove",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": null,
+      "item": "small garlic clove"
+    },
+    {
+      "text": "60 ml cold water",
+      "qty": 60,
+      "qtyMax": null,
+      "unit": "ml",
+      "item": "cold water"
+    },
+    {
+      "text": "1 cucumber, peeled, seeded and sliced into half-moons",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": null,
+      "item": "cucumber, peeled, seeded and sliced into half-moons"
+    },
+    {
+      "text": "1/2 red onion, very thinly sliced",
+      "qty": 0.5,
+      "qtyMax": null,
+      "unit": null,
+      "item": "red onion, very thinly sliced"
+    },
+    {
+      "text": "1 avocado, sliced",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": null,
+      "item": "avocado, sliced"
+    },
+    {
+      "text": "8 tostadas or saltine crackers",
+      "qty": 8,
+      "qtyMax": null,
+      "unit": null,
+      "item": "tostadas or saltine crackers"
+    }
+  ],
+  "steps": [
+    {
+      "text": "Butterfly 450 g large raw shrimp, peeled and deveined: cut almost all the way through along the back and open them flat. Put them on a chilled platter in a single layer and sprinkle with 1 tsp salt.",
+      "ingredientRefs": [
+        0,
+        1
+      ],
+      "timers": []
+    },
+    {
+      "text": "Blend 180 ml fresh lime juice (about 8 limes), 3 serrano chiles, stemmed, 20 g cilantro, with stems, 1 small garlic clove and 60 ml cold water for 30 seconds, until bright green and smooth.",
+      "ingredientRefs": [
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "timers": [
+        {
+          "text": "30 seconds",
+          "seconds": 30
+        }
+      ]
+    },
+    {
+      "text": "Pour the chile-lime water over the shrimp and scatter 1/2 red onion, very thinly sliced and 1 cucumber, peeled, seeded and sliced into half-moons on top. Refrigerate 15 minutes, until the shrimp turn just pink-opaque at the edges but stay translucent in the center.",
+      "ingredientRefs": [
+        7,
+        8
+      ],
+      "timers": [
+        {
+          "text": "15 minutes",
+          "seconds": 900
+        }
+      ]
+    },
+    {
+      "text": "Top with 1 avocado, sliced and serve immediately with 8 tostadas or saltine crackers.",
+      "ingredientRefs": [
+        9,
+        10
+      ],
+      "timers": []
+    }
+  ],
+  "notes": "Unlike ceviche, aguachile isn't left to marinate: in Sinaloa it's served within minutes, so the shrimp stays tender and sweet. Use the freshest shrimp you can find (frozen-at-sea shrimp, thawed in the fridge, are often fresher than \"fresh\"). A dash of Maggi or Clamato in the blender is a popular local touch.",
+  "servings": 4,
+  "tags": [],
+  "chatUrl": null,
+  "chapter": "mains",
+  "cuisine": "Mexican",
+  "favorite": false,
+  "log": [],
+  "createdAt": "2026-10-07T02:11:32.684Z",
+  "updatedAt": "2026-10-07T02:11:32.684Z"
+}

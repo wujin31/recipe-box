@@ -1,0 +1,203 @@
+{
+  "id": "baked-mac-and-cheese",
+  "name": "Baked Mac and Cheese",
+  "nativeName": "",
+  "romanized": "",
+  "englishName": "Baked Mac and Cheese",
+  "description": "The classic American bake: pasta folded into a velvety béchamel loaded with sharp cheddar and Gruyère, topped with buttery Parmesan panko and baked until bubbling and golden. Serves 8.",
+  "ingredients": [
+    {
+      "text": "450 g elbow macaroni or cavatappi",
+      "qty": 450,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "elbow macaroni or cavatappi"
+    },
+    {
+      "text": "1 tbsp salt (for the pasta water)",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "salt (for the pasta water)"
+    },
+    {
+      "text": "6 tbsp butter",
+      "qty": 6,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "butter"
+    },
+    {
+      "text": "45 g all-purpose flour",
+      "qty": 45,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "all-purpose flour"
+    },
+    {
+      "text": "950 ml whole milk, warmed",
+      "qty": 950,
+      "qtyMax": null,
+      "unit": "ml",
+      "item": "whole milk, warmed"
+    },
+    {
+      "text": "1 tsp dry mustard powder",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "dry mustard powder"
+    },
+    {
+      "text": "1/2 tsp smoked paprika",
+      "qty": 0.5,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "smoked paprika"
+    },
+    {
+      "text": "1/8 tsp cayenne pepper",
+      "qty": 0.125,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "cayenne pepper"
+    },
+    {
+      "text": "1 1/2 tsp salt",
+      "qty": 1.5,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "salt"
+    },
+    {
+      "text": "1/2 tsp black pepper",
+      "qty": 0.5,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "black pepper"
+    },
+    {
+      "text": "340 g extra-sharp cheddar, grated",
+      "qty": 340,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "extra-sharp cheddar, grated"
+    },
+    {
+      "text": "115 g Gruyère, grated",
+      "qty": 115,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "Gruyère, grated"
+    },
+    {
+      "text": "50 g panko",
+      "qty": 50,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "panko"
+    },
+    {
+      "text": "2 tbsp butter, melted (for the topping)",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "butter, melted (for the topping)"
+    },
+    {
+      "text": "30 g Parmesan, grated",
+      "qty": 30,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "Parmesan, grated"
+    }
+  ],
+  "steps": [
+    {
+      "text": "Heat the oven to 190°C and butter a 23 × 33 cm baking dish.",
+      "ingredientRefs": [],
+      "timers": []
+    },
+    {
+      "text": "Boil 450 g elbow macaroni or cavatappi in water with 1 tbsp salt (for the pasta water) 2 minutes less than the package says. Drain and rinse briefly to stop the cooking.",
+      "ingredientRefs": [
+        0,
+        1
+      ],
+      "timers": []
+    },
+    {
+      "text": "Melt 6 tbsp butter in a large pot over medium. Whisk in 45 g all-purpose flour and cook 2 minutes, until bubbling but not browned.",
+      "ingredientRefs": [
+        2,
+        3
+      ],
+      "timers": [
+        {
+          "text": "2 minutes",
+          "seconds": 120
+        }
+      ]
+    },
+    {
+      "text": "Slowly whisk in 950 ml whole milk, warmed, then add 1 tsp dry mustard powder, 1/2 tsp smoked paprika, 1/8 tsp cayenne pepper, 1 1/2 tsp salt and 1/2 tsp black pepper. Simmer 5 minutes, whisking, until it coats a spoon.",
+      "ingredientRefs": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "timers": [
+        {
+          "text": "5 minutes",
+          "seconds": 300
+        }
+      ]
+    },
+    {
+      "text": "Off the heat, stir in 340 g extra-sharp cheddar, grated and 115 g Gruyère, grated until smooth. Fold in the pasta and pour into the dish.",
+      "ingredientRefs": [
+        10,
+        11
+      ],
+      "timers": []
+    },
+    {
+      "text": "Toss 50 g panko with 2 tbsp butter, melted (for the topping) and 30 g Parmesan, grated and scatter over the top.",
+      "ingredientRefs": [
+        12,
+        13,
+        14
+      ],
+      "timers": []
+    },
+    {
+      "text": "Bake 25 minutes, until bubbling at the edges and golden on top. Rest 10 minutes before serving.",
+      "ingredientRefs": [],
+      "timers": [
+        {
+          "text": "25 minutes",
+          "seconds": 1500
+        },
+        {
+          "text": "10 minutes",
+          "seconds": 600
+        }
+      ]
+    }
+  ],
+  "notes": "Grate the cheese yourself; pre-shredded cheese contains starch that makes the sauce grainy. Add the cheese off the heat so it melts smoothly instead of breaking. Undercooking the pasta lets it absorb sauce in the oven without turning soft.",
+  "servings": 8,
+  "tags": [
+    "to-try"
+  ],
+  "chatUrl": null,
+  "chapter": "rice",
+  "cuisine": "American",
+  "favorite": false,
+  "log": [],
+  "createdAt": "2026-10-07T02:11:43.396Z",
+  "updatedAt": "2026-10-07T02:11:43.396Z"
+}

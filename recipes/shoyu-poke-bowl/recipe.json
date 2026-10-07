@@ -1,0 +1,155 @@
+{
+  "id": "shoyu-poke-bowl",
+  "name": "Shoyu Poke Bowl — Hawaiian Ahi or Salmon Poke over Rice",
+  "nativeName": "",
+  "romanized": "",
+  "englishName": "Shoyu Poke Bowl",
+  "subtitle": "Hawaiian Ahi or Salmon Poke over Rice",
+  "description": "Hawaii-style shoyu poke, not the build-your-own mainland kind: sashimi-grade ahi (or salmon) dressed with shoyu, sesame oil, sweet onion, limu and inamona, served over rice. Serves 3.",
+  "ingredients": [
+    {
+      "text": "450 g sashimi-grade ahi tuna or salmon, cut into 2 cm cubes",
+      "qty": 450,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "sashimi-grade ahi tuna or salmon, cut into 2 cm cubes"
+    },
+    {
+      "text": "3 tbsp shoyu (soy sauce)",
+      "qty": 3,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "shoyu (soy sauce)"
+    },
+    {
+      "text": "1 tsp toasted sesame oil",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "toasted sesame oil"
+    },
+    {
+      "text": "1/4 sweet onion (Maui or Walla Walla), thinly slivered",
+      "qty": 0.25,
+      "qtyMax": null,
+      "unit": null,
+      "item": "sweet onion (Maui or Walla Walla), thinly slivered"
+    },
+    {
+      "text": "2 scallions, sliced",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": null,
+      "item": "scallions, sliced"
+    },
+    {
+      "text": "15 g ogo (limu) seaweed, chopped (optional)",
+      "qty": 15,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "ogo (limu) seaweed, chopped (optional)"
+    },
+    {
+      "text": "1 tsp inamona or 1 tbsp crushed toasted macadamia nuts",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "inamona or 1 tbsp crushed toasted macadamia nuts"
+    },
+    {
+      "text": "1 tsp toasted sesame seeds",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "toasted sesame seeds"
+    },
+    {
+      "text": "1/4 tsp Hawaiian sea salt",
+      "qty": 0.25,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "Hawaiian sea salt"
+    },
+    {
+      "text": "1/4 tsp red chili flakes",
+      "qty": 0.25,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "red chili flakes"
+    },
+    {
+      "text": "600 g warm cooked short-grain rice",
+      "qty": 600,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "warm cooked short-grain rice"
+    },
+    {
+      "text": "1 Persian cucumber, sliced",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": null,
+      "item": "Persian cucumber, sliced"
+    },
+    {
+      "text": "1 tbsp furikake",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "furikake"
+    }
+  ],
+  "steps": [
+    {
+      "text": "Pat 450 g sashimi-grade ahi tuna or salmon, cut into 2 cm cubes dry and put it in a chilled bowl.",
+      "ingredientRefs": [
+        0
+      ],
+      "timers": []
+    },
+    {
+      "text": "Add 1/4 sweet onion (Maui or Walla Walla), thinly slivered, 2 scallions, sliced, 15 g ogo (limu) seaweed, chopped (optional), 1 tsp inamona or 1 tbsp crushed toasted macadamia nuts, 1 tsp toasted sesame seeds, 1/4 tsp Hawaiian sea salt and 1/4 tsp red chili flakes. Drizzle with 3 tbsp shoyu (soy sauce) and 1 tsp toasted sesame oil and fold gently.",
+      "ingredientRefs": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "timers": []
+    },
+    {
+      "text": "Cover and refrigerate for 30 minutes (no more than 2 hours) so the flavors meld.",
+      "ingredientRefs": [],
+      "timers": [
+        {
+          "text": "30 minutes",
+          "seconds": 1800
+        }
+      ]
+    },
+    {
+      "text": "Divide 600 g warm cooked short-grain rice among bowls, top with the poke and 1 Persian cucumber, sliced, and sprinkle with 1 tbsp furikake.",
+      "ingredientRefs": [
+        10,
+        11,
+        12
+      ],
+      "timers": []
+    }
+  ],
+  "notes": "Buy fish labeled sashimi or sushi grade from a counter you trust, and keep everything cold. Poke is best the day it's made. Inamona is roasted, crushed kukui nut with salt; macadamia is the usual substitute. For spicy ahi, swap the shoyu dressing for 3 tbsp Kewpie mixed with 1 tbsp sriracha and 1/2 tsp sesame oil.",
+  "servings": 3,
+  "tags": [],
+  "chatUrl": null,
+  "chapter": "rice",
+  "cuisine": "Hawaiian",
+  "favorite": false,
+  "log": [],
+  "createdAt": "2026-10-07T02:11:31.269Z",
+  "updatedAt": "2026-10-07T02:11:31.269Z"
+}

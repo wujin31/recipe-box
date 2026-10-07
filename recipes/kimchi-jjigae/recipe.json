@@ -1,0 +1,220 @@
+{
+  "id": "kimchi-jjigae",
+  "name": "김치찌개 (Kimchi Jjigae) · Kimchi Stew with Pork Belly",
+  "nativeName": "김치찌개",
+  "romanized": "Kimchi Jjigae",
+  "englishName": "Kimchi Stew with Pork Belly",
+  "description": "Korea's everyday stew: sour, well-fermented kimchi fried with pork belly in sesame oil, then simmered in anchovy stock with gochugaru and soft tofu. Serves 3.",
+  "ingredients": [
+    {
+      "text": "6 large dried anchovies, heads and guts removed",
+      "qty": 6,
+      "qtyMax": null,
+      "unit": null,
+      "item": "large dried anchovies, heads and guts removed",
+      "group": "For the anchovy stock"
+    },
+    {
+      "text": "10 g kombu (a 10 cm square)",
+      "qty": 10,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "kombu (a 10 cm square)",
+      "group": "For the anchovy stock"
+    },
+    {
+      "text": "700 ml water",
+      "qty": 700,
+      "qtyMax": null,
+      "unit": "ml",
+      "item": "water",
+      "group": "For the anchovy stock"
+    },
+    {
+      "text": "250 g pork belly or shoulder, sliced 5 mm thick",
+      "qty": 250,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "pork belly or shoulder, sliced 5 mm thick",
+      "group": "For the stew"
+    },
+    {
+      "text": "1 tbsp toasted sesame oil",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "toasted sesame oil",
+      "group": "For the stew"
+    },
+    {
+      "text": "400 g sour, well-fermented kimchi, cut into bite-size pieces",
+      "qty": 400,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "sour, well-fermented kimchi, cut into bite-size pieces",
+      "group": "For the stew"
+    },
+    {
+      "text": "60 ml kimchi brine",
+      "qty": 60,
+      "qtyMax": null,
+      "unit": "ml",
+      "item": "kimchi brine",
+      "group": "For the stew"
+    },
+    {
+      "text": "1/2 onion, sliced",
+      "qty": 0.5,
+      "qtyMax": null,
+      "unit": null,
+      "item": "onion, sliced",
+      "group": "For the stew"
+    },
+    {
+      "text": "1 tbsp minced garlic",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "minced garlic",
+      "group": "For the stew"
+    },
+    {
+      "text": "1 tbsp gochugaru (Korean chili flakes)",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "gochugaru (Korean chili flakes)",
+      "group": "For the stew"
+    },
+    {
+      "text": "1 tbsp gochujang",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "gochujang",
+      "group": "For the stew"
+    },
+    {
+      "text": "1 tsp sugar",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "sugar",
+      "group": "For the stew"
+    },
+    {
+      "text": "300 g medium-firm tofu, sliced 1.5 cm thick",
+      "qty": 300,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "medium-firm tofu, sliced 1.5 cm thick",
+      "group": "For the stew"
+    },
+    {
+      "text": "2 scallions, sliced on the diagonal",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": null,
+      "item": "scallions, sliced on the diagonal",
+      "group": "For the stew"
+    },
+    {
+      "text": "1/4 tsp salt, to taste",
+      "qty": 0.25,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "salt, to taste",
+      "group": "For the stew"
+    },
+    {
+      "text": "600 g hot cooked short-grain rice",
+      "qty": 600,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "hot cooked short-grain rice",
+      "group": "For the stew"
+    }
+  ],
+  "steps": [
+    {
+      "text": "Put 6 large dried anchovies, heads and guts removed, 10 g kombu (a 10 cm square) and 700 ml water in a pot and boil 15 minutes, then strain. You need about 500 ml.",
+      "ingredientRefs": [
+        0,
+        1,
+        2
+      ],
+      "timers": [
+        {
+          "text": "15 minutes",
+          "seconds": 900
+        }
+      ]
+    },
+    {
+      "text": "Heat a heavy pot or earthenware ttukbaegi over medium-high. Fry 250 g pork belly or shoulder, sliced 5 mm thick for 3 minutes, until it renders and browns slightly.",
+      "ingredientRefs": [
+        3
+      ],
+      "timers": [
+        {
+          "text": "3 minutes",
+          "seconds": 180
+        }
+      ]
+    },
+    {
+      "text": "Add 1 tbsp toasted sesame oil, 400 g sour, well-fermented kimchi, cut into bite-size pieces and 1/2 onion, sliced, and fry 5 minutes, until the kimchi softens and turns translucent.",
+      "ingredientRefs": [
+        4,
+        5,
+        7
+      ],
+      "timers": [
+        {
+          "text": "5 minutes",
+          "seconds": 300
+        }
+      ]
+    },
+    {
+      "text": "Stir in 1 tbsp minced garlic, 1 tbsp gochugaru (Korean chili flakes), 1 tbsp gochujang and 1 tsp sugar, then add 60 ml kimchi brine and the stock. Bring to a boil, cover and simmer on medium-low for 20 minutes.",
+      "ingredientRefs": [
+        6,
+        8,
+        9,
+        10,
+        11
+      ],
+      "timers": [
+        {
+          "text": "20 minutes",
+          "seconds": 1200
+        }
+      ]
+    },
+    {
+      "text": "Lay 300 g medium-firm tofu, sliced 1.5 cm thick on top and simmer 5 minutes more. Taste and add 1/4 tsp salt, to taste if needed (it depends on the kimchi). Add 2 scallions, sliced on the diagonal and serve bubbling with 600 g hot cooked short-grain rice.",
+      "ingredientRefs": [
+        12,
+        13,
+        14,
+        15
+      ],
+      "timers": [
+        {
+          "text": "5 minutes",
+          "seconds": 300
+        }
+      ]
+    }
+  ],
+  "notes": "The kimchi has to be sour: at least 3 to 4 weeks old. Fresh kimchi gives a flat, raw-tasting stew. If yours is young, add 1 tsp rice vinegar with the brine.\n\nFrying the kimchi in pork fat and sesame oil before the liquid goes in is what gives the stew its depth. Canned tuna in place of the pork (chamchi kimchi jjigae) is the classic pantry version: add it with the tofu.",
+  "servings": 3,
+  "tags": [],
+  "chatUrl": null,
+  "chapter": "soups",
+  "favorite": false,
+  "log": [],
+  "createdAt": "2026-10-07T02:11:29.560Z",
+  "updatedAt": "2026-10-07T02:11:29.560Z"
+}

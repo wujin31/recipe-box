@@ -1,0 +1,195 @@
+{
+  "id": "shakshuka",
+  "name": "Shakshuka — Eggs Poached in Spiced Tomato and Pepper Sauce",
+  "nativeName": "",
+  "romanized": "",
+  "englishName": "Shakshuka",
+  "subtitle": "Eggs Poached in Spiced Tomato and Pepper Sauce",
+  "description": "The North African dish adopted across Israel and the Middle East: onion, red peppers and garlic stewed with cumin, paprika and harissa into a thick tomato sauce, with eggs nestled in to poach. Serves 3.",
+  "ingredients": [
+    {
+      "text": "3 tbsp extra-virgin olive oil",
+      "qty": 3,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "extra-virgin olive oil"
+    },
+    {
+      "text": "1 onion, thinly sliced",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": null,
+      "item": "onion, thinly sliced"
+    },
+    {
+      "text": "2 red bell peppers, thinly sliced",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": null,
+      "item": "red bell peppers, thinly sliced"
+    },
+    {
+      "text": "3/4 tsp salt",
+      "qty": 0.75,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "salt"
+    },
+    {
+      "text": "4 garlic cloves, sliced",
+      "qty": 4,
+      "qtyMax": null,
+      "unit": null,
+      "item": "garlic cloves, sliced"
+    },
+    {
+      "text": "1 tsp ground cumin",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "ground cumin"
+    },
+    {
+      "text": "2 tsp sweet paprika",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "sweet paprika"
+    },
+    {
+      "text": "1 tbsp harissa (or 1/2 tsp cayenne)",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "harissa (or 1/2 tsp cayenne)"
+    },
+    {
+      "text": "1 tbsp tomato paste",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "tomato paste"
+    },
+    {
+      "text": "800 g canned whole peeled tomatoes, crushed by hand",
+      "qty": 800,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "canned whole peeled tomatoes, crushed by hand"
+    },
+    {
+      "text": "1/2 tsp sugar",
+      "qty": 0.5,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "sugar"
+    },
+    {
+      "text": "6 eggs",
+      "qty": 6,
+      "qtyMax": null,
+      "unit": null,
+      "item": "eggs"
+    },
+    {
+      "text": "60 g feta, crumbled (optional)",
+      "qty": 60,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "feta, crumbled (optional)"
+    },
+    {
+      "text": "10 g cilantro or parsley, chopped",
+      "qty": 10,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "cilantro or parsley, chopped"
+    },
+    {
+      "text": "1 loaf crusty bread or pita, to serve",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": null,
+      "item": "loaf crusty bread or pita, to serve"
+    }
+  ],
+  "steps": [
+    {
+      "text": "Heat 3 tbsp extra-virgin olive oil in a 28 cm skillet over medium. Cook 1 onion, thinly sliced, 2 red bell peppers, thinly sliced and 3/4 tsp salt for 12 minutes, stirring, until very soft and starting to brown.",
+      "ingredientRefs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "timers": [
+        {
+          "text": "12 minutes",
+          "seconds": 720
+        }
+      ]
+    },
+    {
+      "text": "Add 4 garlic cloves, sliced, 1 tsp ground cumin, 2 tsp sweet paprika, 1 tbsp harissa (or 1/2 tsp cayenne) and 1 tbsp tomato paste and stir 1 minute, until fragrant and brick red.",
+      "ingredientRefs": [
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "timers": [
+        {
+          "text": "1 minute",
+          "seconds": 60
+        }
+      ]
+    },
+    {
+      "text": "Add 800 g canned whole peeled tomatoes, crushed by hand and 1/2 tsp sugar and simmer 15 minutes, stirring now and then, until thick enough that a spoon leaves a trail. Taste and adjust salt and heat.",
+      "ingredientRefs": [
+        9,
+        10
+      ],
+      "timers": [
+        {
+          "text": "15 minutes",
+          "seconds": 900
+        }
+      ]
+    },
+    {
+      "text": "Make 6 wells in the sauce and crack one of 6 eggs into each. Cover and cook on medium-low for 7 minutes, until the whites are set but the yolks still runny.",
+      "ingredientRefs": [
+        11
+      ],
+      "timers": [
+        {
+          "text": "7 minutes",
+          "seconds": 420
+        }
+      ]
+    },
+    {
+      "text": "Scatter with 60 g feta, crumbled (optional) and 10 g cilantro or parsley, chopped and serve straight from the pan with 1 loaf crusty bread or pita, to serve.",
+      "ingredientRefs": [
+        12,
+        13,
+        14
+      ],
+      "timers": []
+    }
+  ],
+  "notes": "Cook the sauce down properly; watery sauce makes watery eggs. Spoon a little sauce over the edges of the whites to help them set before the yolks overcook. Tunisian versions often add preserved lemon or merguez sausage; Israeli cafés serve it with tahini.",
+  "servings": 3,
+  "tags": [
+    "to-try"
+  ],
+  "chatUrl": null,
+  "chapter": "breakfast",
+  "cuisine": "Middle Eastern",
+  "favorite": false,
+  "log": [],
+  "createdAt": "2026-10-07T02:11:38.846Z",
+  "updatedAt": "2026-10-07T02:11:38.846Z"
+}

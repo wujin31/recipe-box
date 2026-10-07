@@ -1,0 +1,153 @@
+{
+  "id": "xiandan-zheng-roubing",
+  "name": "鹹蛋蒸肉餅 (Xiándàn Zhēng Ròubǐng) · Steamed Pork Patty with Salted Duck Egg",
+  "nativeName": "鹹蛋蒸肉餅",
+  "romanized": "Xiándàn Zhēng Ròubǐng",
+  "englishName": "Steamed Pork Patty with Salted Duck Egg",
+  "description": "A soft, juicy pork patty with crunchy water chestnut, seasoned with salted egg white and crowned with the rich yolks, steamed in its own savory juices to spoon over rice. Serves 4.",
+  "ingredients": [
+    {
+      "text": "450 g ground pork (about 25% fat)",
+      "qty": 450,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "ground pork (about 25% fat)"
+    },
+    {
+      "text": "2 raw salted duck eggs",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": null,
+      "item": "raw salted duck eggs"
+    },
+    {
+      "text": "60 g water chestnuts, finely chopped",
+      "qty": 60,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "water chestnuts, finely chopped"
+    },
+    {
+      "text": "1 tbsp light soy sauce",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "light soy sauce"
+    },
+    {
+      "text": "1 tsp Shaoxing wine",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "Shaoxing wine"
+    },
+    {
+      "text": "1/2 tsp sugar",
+      "qty": 0.5,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "sugar"
+    },
+    {
+      "text": "1/4 tsp ground white pepper",
+      "qty": 0.25,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "ground white pepper"
+    },
+    {
+      "text": "2 tsp cornstarch",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "cornstarch"
+    },
+    {
+      "text": "45 ml cold water",
+      "qty": 45,
+      "qtyMax": null,
+      "unit": "ml",
+      "item": "cold water"
+    },
+    {
+      "text": "1 tsp sesame oil",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "sesame oil"
+    },
+    {
+      "text": "1 scallion, finely chopped",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": null,
+      "item": "scallion, finely chopped"
+    }
+  ],
+  "steps": [
+    {
+      "text": "Crack 2 raw salted duck eggs, putting the whites in a large bowl and the yolks in a small dish. Cut each yolk in half.",
+      "ingredientRefs": [
+        1
+      ],
+      "timers": []
+    },
+    {
+      "text": "Add 450 g ground pork (about 25% fat), 1 tbsp light soy sauce, 1 tsp Shaoxing wine, 1/2 tsp sugar, 1/4 tsp ground white pepper and 2 tsp cornstarch to the egg whites. Stir hard in one direction for 2 minutes, adding 45 ml cold water a little at a time, until the meat turns sticky and springy. Lift and slap it into the bowl a few times to firm it up.",
+      "ingredientRefs": [
+        0,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "timers": [
+        {
+          "text": "2 minutes",
+          "seconds": 120
+        }
+      ]
+    },
+    {
+      "text": "Fold in 60 g water chestnuts, finely chopped and 1 tsp sesame oil. Don't add salt; the salted egg white seasons the meat.",
+      "ingredientRefs": [
+        2,
+        9
+      ],
+      "timers": []
+    },
+    {
+      "text": "Spread the mixture into a shallow heatproof dish about 2 cm thick. Press the yolk halves into the top.",
+      "ingredientRefs": [],
+      "timers": []
+    },
+    {
+      "text": "Steam over boiling water on high heat for 18 minutes, until the patty is firm and the juices run clear (71°C in the center).",
+      "ingredientRefs": [],
+      "timers": [
+        {
+          "text": "18 minutes",
+          "seconds": 1080
+        }
+      ]
+    },
+    {
+      "text": "Scatter with 1 scallion, finely chopped and serve from the dish, spooning the juices over rice.",
+      "ingredientRefs": [
+        10
+      ],
+      "timers": []
+    }
+  ],
+  "notes": "Spread it thin and wide rather than thick so it cooks evenly and makes more juice. Steaming it on top of the rice in a rice cooker (put the dish in when the water is absorbed) is the classic weeknight shortcut.\n\nIf you can only find cooked salted eggs, chop them and fold the white in with the pork, then press the yolks on top. Taiwanese cooks make the same patty with pickled cucumbers instead (瓜仔肉): fold in 60 g chopped 醬瓜 with a spoon of its liquid and skip the egg.",
+  "servings": 4,
+  "tags": [],
+  "chatUrl": null,
+  "chapter": "mains",
+  "favorite": false,
+  "log": [],
+  "createdAt": "2026-10-07T02:11:25.311Z",
+  "updatedAt": "2026-10-07T02:11:25.311Z"
+}

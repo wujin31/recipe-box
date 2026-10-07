@@ -1,0 +1,274 @@
+{
+  "id": "caldo-de-albondigas",
+  "name": "Caldo de Albóndigas — Mexican Meatball Soup with Mint",
+  "nativeName": "",
+  "romanized": "",
+  "englishName": "Caldo de Albóndigas",
+  "subtitle": "Mexican Meatball Soup with Mint",
+  "description": "Soft beef and pork meatballs studded with rice and hierbabuena, simmered in a light tomato broth with carrot, potato and zucchini. Serves 6.",
+  "ingredients": [
+    {
+      "text": "450 g ground beef",
+      "qty": 450,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "ground beef",
+      "group": "For the meatballs"
+    },
+    {
+      "text": "225 g ground pork",
+      "qty": 225,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "ground pork",
+      "group": "For the meatballs"
+    },
+    {
+      "text": "60 g long-grain white rice, rinsed",
+      "qty": 60,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "long-grain white rice, rinsed",
+      "group": "For the meatballs"
+    },
+    {
+      "text": "1 egg",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": null,
+      "item": "egg",
+      "group": "For the meatballs"
+    },
+    {
+      "text": "1/4 white onion, minced",
+      "qty": 0.25,
+      "qtyMax": null,
+      "unit": null,
+      "item": "white onion, minced",
+      "group": "For the meatballs"
+    },
+    {
+      "text": "1 garlic clove, minced",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": null,
+      "item": "garlic clove, minced",
+      "group": "For the meatballs"
+    },
+    {
+      "text": "2 tbsp fresh mint (hierbabuena), chopped",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "fresh mint (hierbabuena), chopped",
+      "group": "For the meatballs"
+    },
+    {
+      "text": "1/2 tsp ground cumin",
+      "qty": 0.5,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "ground cumin",
+      "group": "For the meatballs"
+    },
+    {
+      "text": "1 tsp salt (for the meatballs)",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "salt (for the meatballs)",
+      "group": "For the meatballs"
+    },
+    {
+      "text": "1/4 tsp black pepper",
+      "qty": 0.25,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "black pepper",
+      "group": "For the meatballs"
+    },
+    {
+      "text": "3 Roma tomatoes",
+      "qty": 3,
+      "qtyMax": null,
+      "unit": null,
+      "item": "Roma tomatoes",
+      "group": "For the broth"
+    },
+    {
+      "text": "1/4 white onion",
+      "qty": 0.25,
+      "qtyMax": null,
+      "unit": null,
+      "item": "white onion",
+      "group": "For the broth"
+    },
+    {
+      "text": "2 garlic cloves",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": null,
+      "item": "garlic cloves",
+      "group": "For the broth"
+    },
+    {
+      "text": "1 tbsp neutral oil",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "neutral oil",
+      "group": "For the broth"
+    },
+    {
+      "text": "2 L chicken stock",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": "l",
+      "item": "chicken stock",
+      "group": "For the broth"
+    },
+    {
+      "text": "2 sprigs fresh mint",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": "sprig",
+      "item": "fresh mint",
+      "group": "For the broth"
+    },
+    {
+      "text": "2 carrots, sliced",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": null,
+      "item": "carrots, sliced",
+      "group": "For the broth"
+    },
+    {
+      "text": "1 large potato, cubed",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": null,
+      "item": "large potato, cubed",
+      "group": "For the broth"
+    },
+    {
+      "text": "2 Mexican squash or zucchini, cubed",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": null,
+      "item": "Mexican squash or zucchini, cubed",
+      "group": "For the broth"
+    },
+    {
+      "text": "1 tsp salt, to taste",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "salt, to taste",
+      "group": "For the broth"
+    },
+    {
+      "text": "2 limes, cut into wedges",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": null,
+      "item": "limes, cut into wedges",
+      "group": "To serve"
+    },
+    {
+      "text": "12 corn tortillas, warmed",
+      "qty": 12,
+      "qtyMax": null,
+      "unit": null,
+      "item": "corn tortillas, warmed",
+      "group": "To serve"
+    }
+  ],
+  "steps": [
+    {
+      "text": "Mix 450 g ground beef, 225 g ground pork, 60 g long-grain white rice, rinsed, 1 egg, 1/4 white onion, minced, 1 garlic clove, minced, 2 tbsp fresh mint (hierbabuena), chopped, 1/2 tsp ground cumin, 1 tsp salt (for the meatballs) and 1/4 tsp black pepper with your hands until well combined. Roll into 4 cm balls (about 24).",
+      "ingredientRefs": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "timers": []
+    },
+    {
+      "text": "Blend 3 Roma tomatoes, 1/4 white onion and 2 garlic cloves with 120 ml water until smooth.",
+      "ingredientRefs": [
+        10,
+        11,
+        12
+      ],
+      "timers": []
+    },
+    {
+      "text": "Heat 1 tbsp neutral oil in a large pot over medium and fry the tomato purée for 5 minutes, until it darkens slightly. Add 2 L chicken stock and 2 sprigs fresh mint and bring to a boil.",
+      "ingredientRefs": [
+        13,
+        14,
+        15
+      ],
+      "timers": [
+        {
+          "text": "5 minutes",
+          "seconds": 300
+        }
+      ]
+    },
+    {
+      "text": "Lower in the meatballs one at a time and simmer gently, uncovered, for 10 minutes without stirring so they set.",
+      "ingredientRefs": [],
+      "timers": [
+        {
+          "text": "10 minutes",
+          "seconds": 600
+        }
+      ]
+    },
+    {
+      "text": "Add 2 carrots, sliced and 1 large potato, cubed and simmer 15 minutes. Add 2 Mexican squash or zucchini, cubed and simmer 10 minutes more, until the vegetables are tender and the rice in the meatballs is cooked. Season with 1 tsp salt, to taste.",
+      "ingredientRefs": [
+        16,
+        17,
+        18,
+        19
+      ],
+      "timers": [
+        {
+          "text": "15 minutes",
+          "seconds": 900
+        },
+        {
+          "text": "10 minutes",
+          "seconds": 600
+        }
+      ]
+    },
+    {
+      "text": "Serve in deep bowls with 2 limes, cut into wedges and 12 corn tortillas, warmed.",
+      "ingredientRefs": [
+        20,
+        21
+      ],
+      "timers": []
+    }
+  ],
+  "notes": "Raw rice cooks inside the meatballs as they simmer, keeping them light. The mint (hierbabuena, spearmint) is the signature; don't skip it. A chipotle in adobo blended with the tomatoes is a common smoky variation.",
+  "servings": 6,
+  "tags": [],
+  "chatUrl": null,
+  "chapter": "soups",
+  "favorite": false,
+  "log": [],
+  "createdAt": "2026-10-07T02:11:33.261Z",
+  "updatedAt": "2026-10-07T02:11:33.261Z"
+}

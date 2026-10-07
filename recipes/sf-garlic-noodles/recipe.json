@@ -1,0 +1,142 @@
+{
+  "id": "sf-garlic-noodles",
+  "name": "SF Garlic Noodles — San Francisco-Style Vietnamese Garlic Noodles",
+  "nativeName": "",
+  "romanized": "",
+  "englishName": "SF Garlic Noodles",
+  "subtitle": "San Francisco-Style Vietnamese Garlic Noodles",
+  "description": "The Vietnamese-American classic made famous at Thanh Long and Crustacean: noodles tossed in a lot of butter and garlic with oyster sauce, fish sauce, Maggi and Parmesan, glossy and savory. 20 minutes. Serves 4.",
+  "ingredients": [
+    {
+      "text": "450 g fresh egg noodles or spaghetti",
+      "qty": 450,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "fresh egg noodles or spaghetti"
+    },
+    {
+      "text": "115 g unsalted butter",
+      "qty": 115,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "unsalted butter"
+    },
+    {
+      "text": "12 garlic cloves, finely minced",
+      "qty": 12,
+      "qtyMax": null,
+      "unit": null,
+      "item": "garlic cloves, finely minced"
+    },
+    {
+      "text": "2 tbsp oyster sauce",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "oyster sauce"
+    },
+    {
+      "text": "1 tbsp fish sauce",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "fish sauce"
+    },
+    {
+      "text": "2 tsp Maggi seasoning or soy sauce",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "Maggi seasoning or soy sauce"
+    },
+    {
+      "text": "1 tsp sugar",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "sugar"
+    },
+    {
+      "text": "40 g Parmesan, finely grated",
+      "qty": 40,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "Parmesan, finely grated"
+    },
+    {
+      "text": "3 scallions, thinly sliced",
+      "qty": 3,
+      "qtyMax": null,
+      "unit": null,
+      "item": "scallions, thinly sliced"
+    }
+  ],
+  "steps": [
+    {
+      "text": "Cook 450 g fresh egg noodles or spaghetti in boiling water until just tender (about 2 minutes for fresh egg noodles, or per the package). Reserve 120 ml cooking water and drain.",
+      "ingredientRefs": [
+        0
+      ],
+      "timers": [
+        {
+          "text": "2 minutes",
+          "seconds": 120
+        }
+      ]
+    },
+    {
+      "text": "Melt 115 g unsalted butter in a large skillet over medium-low. Add 12 garlic cloves, finely minced and cook 2 minutes, stirring, until fragrant and just turning pale gold.",
+      "ingredientRefs": [
+        1,
+        2
+      ],
+      "timers": [
+        {
+          "text": "2 minutes",
+          "seconds": 120
+        }
+      ]
+    },
+    {
+      "text": "Stir in 2 tbsp oyster sauce, 1 tbsp fish sauce, 2 tsp Maggi seasoning or soy sauce, 1 tsp sugar and 60 ml of the cooking water.",
+      "ingredientRefs": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "timers": []
+    },
+    {
+      "text": "Add the noodles and 40 g Parmesan, finely grated and toss over medium heat for 1 minute, until the sauce clings to the noodles rather than pooling. Add more water if it's tight.",
+      "ingredientRefs": [
+        7
+      ],
+      "timers": [
+        {
+          "text": "1 minute",
+          "seconds": 60
+        }
+      ]
+    },
+    {
+      "text": "Top with 3 scallions, thinly sliced and serve, traditionally with roast Dungeness crab or garlic butter shrimp.",
+      "ingredientRefs": [
+        8
+      ],
+      "timers": []
+    }
+  ],
+  "notes": "The garlic should be soft and fragrant, not browned; browned garlic turns bitter in this much butter. Garlic chips (thinly sliced garlic fried separately in oil until golden) scattered on top are a good restaurant-style finish.",
+  "servings": 4,
+  "tags": [
+    "to-try"
+  ],
+  "chatUrl": null,
+  "chapter": "rice",
+  "cuisine": "Vietnamese",
+  "favorite": false,
+  "log": [],
+  "createdAt": "2026-10-07T02:11:42.542Z",
+  "updatedAt": "2026-10-07T02:11:42.542Z"
+}

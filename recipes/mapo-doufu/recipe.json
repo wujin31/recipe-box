@@ -1,0 +1,221 @@
+{
+  "id": "mapo-doufu",
+  "name": "麻婆豆腐 (Mápó Dòufu) · Mapo Tofu with Ground Pork",
+  "nativeName": "麻婆豆腐",
+  "romanized": "Mápó Dòufu",
+  "englishName": "Mapo Tofu with Ground Pork",
+  "description": "The Sichuan classic: soft tofu simmered in a fiery, glossy sauce of Pixian doubanjiang, fermented black beans and chili with crisp ground pork, finished with a numbing dust of roasted Sichuan pepper. Serves 3.",
+  "ingredients": [
+    {
+      "text": "450 g soft or medium tofu, cut into 2 cm cubes",
+      "qty": 450,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "soft or medium tofu, cut into 2 cm cubes"
+    },
+    {
+      "text": "1 tsp salt (for blanching)",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "salt (for blanching)"
+    },
+    {
+      "text": "2 tbsp neutral oil",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "neutral oil"
+    },
+    {
+      "text": "150 g ground pork",
+      "qty": 150,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "ground pork"
+    },
+    {
+      "text": "2 tbsp Pixian doubanjiang (郫县豆瓣)",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "Pixian doubanjiang (郫县豆瓣)"
+    },
+    {
+      "text": "1 tbsp fermented black beans (douchi), rinsed and chopped",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "fermented black beans (douchi), rinsed and chopped"
+    },
+    {
+      "text": "1 tbsp Sichuan chili flakes or ground chili",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "Sichuan chili flakes or ground chili"
+    },
+    {
+      "text": "3 garlic cloves, minced",
+      "qty": 3,
+      "qtyMax": null,
+      "unit": null,
+      "item": "garlic cloves, minced"
+    },
+    {
+      "text": "10 g ginger, minced",
+      "qty": 10,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "ginger, minced"
+    },
+    {
+      "text": "300 ml chicken stock",
+      "qty": 300,
+      "qtyMax": null,
+      "unit": "ml",
+      "item": "chicken stock"
+    },
+    {
+      "text": "1 tsp soy sauce",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "soy sauce"
+    },
+    {
+      "text": "1/2 tsp sugar",
+      "qty": 0.5,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "sugar"
+    },
+    {
+      "text": "2 tsp cornstarch mixed with 3 tbsp water",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "cornstarch mixed with 3 tbsp water"
+    },
+    {
+      "text": "3 scallions or garlic sprouts, cut into 2 cm lengths",
+      "qty": 3,
+      "qtyMax": null,
+      "unit": null,
+      "item": "scallions or garlic sprouts, cut into 2 cm lengths"
+    },
+    {
+      "text": "1 tsp roasted ground Sichuan peppercorns",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "roasted ground Sichuan peppercorns"
+    },
+    {
+      "text": "600 g hot cooked rice",
+      "qty": 600,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "hot cooked rice"
+    }
+  ],
+  "steps": [
+    {
+      "text": "Bring a pot of water to a simmer with 1 tsp salt (for blanching). Slide in 450 g soft or medium tofu, cut into 2 cm cubes and simmer gently for 2 minutes, then leave it in the hot water while you start the sauce.",
+      "ingredientRefs": [
+        0,
+        1
+      ],
+      "timers": [
+        {
+          "text": "2 minutes",
+          "seconds": 120
+        }
+      ]
+    },
+    {
+      "text": "Heat 2 tbsp neutral oil in a wok over medium-high. Fry 150 g ground pork for 4 minutes, breaking it up, until browned and crisp.",
+      "ingredientRefs": [
+        2,
+        3
+      ],
+      "timers": [
+        {
+          "text": "4 minutes",
+          "seconds": 240
+        }
+      ]
+    },
+    {
+      "text": "Lower the heat to medium-low, push the pork aside and fry 2 tbsp Pixian doubanjiang (郫县豆瓣) in the oil for 1 minute, until the oil turns red. Add 1 tbsp fermented black beans (douchi), rinsed and chopped, 1 tbsp Sichuan chili flakes or ground chili, 3 garlic cloves, minced and 10 g ginger, minced and stir 30 seconds.",
+      "ingredientRefs": [
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "timers": [
+        {
+          "text": "1 minute",
+          "seconds": 60
+        },
+        {
+          "text": "30 seconds",
+          "seconds": 30
+        }
+      ]
+    },
+    {
+      "text": "Add 300 ml chicken stock, 1 tsp soy sauce and 1/2 tsp sugar and bring to a boil. Drain the tofu and slide it in. Simmer 5 minutes, gently pushing (not stirring) with the back of a spatula so the tofu doesn't break.",
+      "ingredientRefs": [
+        9,
+        10,
+        11
+      ],
+      "timers": [
+        {
+          "text": "5 minutes",
+          "seconds": 300
+        }
+      ]
+    },
+    {
+      "text": "Stir 2 tsp cornstarch mixed with 3 tbsp water and add it in three additions, 30 seconds apart, nudging the tofu, until the sauce clings and the oil pools red at the edges. Add 3 scallions or garlic sprouts, cut into 2 cm lengths for the last 30 seconds.",
+      "ingredientRefs": [
+        12,
+        13
+      ],
+      "timers": [
+        {
+          "text": "30 seconds",
+          "seconds": 30
+        },
+        {
+          "text": "30 seconds",
+          "seconds": 30
+        }
+      ]
+    },
+    {
+      "text": "Transfer to a bowl, sprinkle with 1 tsp roasted ground Sichuan peppercorns and serve with 600 g hot cooked rice.",
+      "ingredientRefs": [
+        14,
+        15
+      ],
+      "timers": []
+    }
+  ],
+  "notes": "Blanching the tofu in salted water seasons it and firms the surface so the cubes survive the wok. Pixian doubanjiang is the irreplaceable ingredient; fry it slowly so it reddens the oil without scorching.\n\nBeef is the traditional Chengdu meat; pork is the common home version. Roast whole Sichuan peppercorns in a dry pan for 2 minutes, then grind; pre-ground loses its tingle quickly.",
+  "servings": 3,
+  "tags": [
+    "weeknight"
+  ],
+  "chatUrl": null,
+  "chapter": "mains",
+  "cuisine": "Chinese",
+  "favorite": false,
+  "log": [],
+  "createdAt": "2026-10-07T02:11:37.720Z",
+  "updatedAt": "2026-10-07T02:11:37.720Z"
+}

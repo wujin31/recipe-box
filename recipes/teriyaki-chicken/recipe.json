@@ -1,0 +1,144 @@
+{
+  "id": "teriyaki-chicken",
+  "name": "照り焼きチキン (Teriyaki Chikin) · Chicken Teriyaki with Rice",
+  "nativeName": "照り焼きチキン",
+  "romanized": "Teriyaki Chikin",
+  "englishName": "Chicken Teriyaki with Rice",
+  "description": "Real teriyaki has no bottled sauce: crisp-skinned chicken thigh glazed in the pan with equal parts soy, sake and mirin plus a little sugar, reduced until lacquered. Salmon variation in the notes. Serves 2.",
+  "ingredients": [
+    {
+      "text": "2 boneless skin-on chicken thighs (about 500 g)",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": null,
+      "item": "boneless skin-on chicken thighs (about 500 g)"
+    },
+    {
+      "text": "1/4 tsp salt",
+      "qty": 0.25,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "salt"
+    },
+    {
+      "text": "1 tsp neutral oil",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "neutral oil"
+    },
+    {
+      "text": "2 tbsp soy sauce",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "soy sauce"
+    },
+    {
+      "text": "2 tbsp sake",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "sake"
+    },
+    {
+      "text": "2 tbsp mirin",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "mirin"
+    },
+    {
+      "text": "1 tbsp sugar",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "sugar"
+    },
+    {
+      "text": "450 g hot cooked short-grain rice",
+      "qty": 450,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "hot cooked short-grain rice"
+    },
+    {
+      "text": "1 tsp toasted sesame seeds",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "toasted sesame seeds"
+    },
+    {
+      "text": "1 scallion, thinly sliced",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": null,
+      "item": "scallion, thinly sliced"
+    }
+  ],
+  "steps": [
+    {
+      "text": "Pat 2 boneless skin-on chicken thighs (about 500 g) dry, prick the skin all over with a fork, and season with 1/4 tsp salt. Mix 2 tbsp soy sauce, 2 tbsp sake, 2 tbsp mirin and 1 tbsp sugar.",
+      "ingredientRefs": [
+        0,
+        1,
+        3,
+        4,
+        5,
+        6
+      ],
+      "timers": []
+    },
+    {
+      "text": "Heat 1 tsp neutral oil in a skillet over medium and lay the chicken in skin side down. Press with a spatula and cook 7 minutes, until the skin is deep golden and crisp.",
+      "ingredientRefs": [
+        2
+      ],
+      "timers": [
+        {
+          "text": "7 minutes",
+          "seconds": 420
+        }
+      ]
+    },
+    {
+      "text": "Flip and cook 3 minutes. Wipe out the rendered fat with paper towels.",
+      "ingredientRefs": [],
+      "timers": [
+        {
+          "text": "3 minutes",
+          "seconds": 180
+        }
+      ]
+    },
+    {
+      "text": "Pour in the sauce and let it bubble for 2 minutes, spooning it over the chicken and turning it, until it reduces to a thick, shiny glaze.",
+      "ingredientRefs": [],
+      "timers": [
+        {
+          "text": "2 minutes",
+          "seconds": 120
+        }
+      ]
+    },
+    {
+      "text": "Slice and serve over 450 g hot cooked short-grain rice, spooning the glaze over, with 1 tsp toasted sesame seeds and 1 scallion, thinly sliced.",
+      "ingredientRefs": [
+        7,
+        8,
+        9
+      ],
+      "timers": []
+    }
+  ],
+  "notes": "Teriyaki means \"shine-grilled\": the glaze comes from reducing the sauce on the meat, not from cornstarch. Wiping out the fat lets the sauce reduce cleanly instead of frying.\n\nSalmon: use 2 fillets (about 300 g), salt them 10 minutes, pat dry and dust lightly with flour. Fry skin side down 3 minutes and the other side 2 minutes, then glaze the same way for 1 minute. Serve with blanched broccoli or a cucumber sunomono.",
+  "servings": 2,
+  "tags": [],
+  "chatUrl": null,
+  "chapter": "mains",
+  "favorite": false,
+  "log": [],
+  "createdAt": "2026-10-07T02:11:27.707Z",
+  "updatedAt": "2026-10-07T02:11:27.707Z"
+}

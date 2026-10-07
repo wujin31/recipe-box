@@ -1,0 +1,380 @@
+{
+  "id": "tonkotsu-ramen",
+  "name": "豚骨ラーメン (Tonkotsu Rāmen) · Hakata-Style Tonkotsu Ramen",
+  "nativeName": "豚骨ラーメン",
+  "romanized": "Tonkotsu Rāmen",
+  "englishName": "Hakata-Style Tonkotsu Ramen",
+  "description": "Pork bones boiled hard for 12 hours into a milky, collagen-rich broth, seasoned with a kombu and bonito shio tare, with rolled chashu, marinated soft eggs and thin straight noodles. A weekend project. Serves 6.",
+  "ingredients": [
+    {
+      "text": "1.5 kg pork trotters, split (ask the butcher)",
+      "qty": 1.5,
+      "qtyMax": null,
+      "unit": "kg",
+      "item": "pork trotters, split (ask the butcher)",
+      "group": "For the broth"
+    },
+    {
+      "text": "1 kg pork neck bones or femur bones, cracked",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "kg",
+      "item": "pork neck bones or femur bones, cracked",
+      "group": "For the broth"
+    },
+    {
+      "text": "6 L water, plus more to top up",
+      "qty": 6,
+      "qtyMax": null,
+      "unit": "l",
+      "item": "water, plus more to top up",
+      "group": "For the broth"
+    },
+    {
+      "text": "1 onion, halved, skin on",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": null,
+      "item": "onion, halved, skin on",
+      "group": "For the broth"
+    },
+    {
+      "text": "1 head garlic, halved crosswise",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": null,
+      "item": "head garlic, halved crosswise",
+      "group": "For the broth"
+    },
+    {
+      "text": "50 g ginger, sliced",
+      "qty": 50,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "ginger, sliced",
+      "group": "For the broth"
+    },
+    {
+      "text": "1 leek or 6 scallions, green parts",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": null,
+      "item": "leek or 6 scallions, green parts",
+      "group": "For the broth"
+    },
+    {
+      "text": "1 kg skinless pork belly, in one slab",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "kg",
+      "item": "skinless pork belly, in one slab",
+      "group": "For the chashu and eggs"
+    },
+    {
+      "text": "200 ml soy sauce",
+      "qty": 200,
+      "qtyMax": null,
+      "unit": "ml",
+      "item": "soy sauce",
+      "group": "For the chashu and eggs"
+    },
+    {
+      "text": "200 ml sake",
+      "qty": 200,
+      "qtyMax": null,
+      "unit": "ml",
+      "item": "sake",
+      "group": "For the chashu and eggs"
+    },
+    {
+      "text": "100 ml mirin",
+      "qty": 100,
+      "qtyMax": null,
+      "unit": "ml",
+      "item": "mirin",
+      "group": "For the chashu and eggs"
+    },
+    {
+      "text": "50 g sugar",
+      "qty": 50,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "sugar",
+      "group": "For the chashu and eggs"
+    },
+    {
+      "text": "400 ml water (for the chashu)",
+      "qty": 400,
+      "qtyMax": null,
+      "unit": "ml",
+      "item": "water (for the chashu)",
+      "group": "For the chashu and eggs"
+    },
+    {
+      "text": "20 g ginger, sliced (for the chashu)",
+      "qty": 20,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "ginger, sliced (for the chashu)",
+      "group": "For the chashu and eggs"
+    },
+    {
+      "text": "6 eggs",
+      "qty": 6,
+      "qtyMax": null,
+      "unit": null,
+      "item": "eggs",
+      "group": "For the chashu and eggs"
+    },
+    {
+      "text": "250 ml water (for the tare)",
+      "qty": 250,
+      "qtyMax": null,
+      "unit": "ml",
+      "item": "water (for the tare)",
+      "group": "For the shio tare"
+    },
+    {
+      "text": "10 g kombu",
+      "qty": 10,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "kombu",
+      "group": "For the shio tare"
+    },
+    {
+      "text": "10 g katsuobushi (bonito flakes)",
+      "qty": 10,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "katsuobushi (bonito flakes)",
+      "group": "For the shio tare"
+    },
+    {
+      "text": "35 g salt",
+      "qty": 35,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "salt",
+      "group": "For the shio tare"
+    },
+    {
+      "text": "2 tbsp mirin (for the tare)",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "mirin (for the tare)",
+      "group": "For the shio tare"
+    },
+    {
+      "text": "2 tbsp sake (for the tare)",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "sake (for the tare)",
+      "group": "For the shio tare"
+    },
+    {
+      "text": "6 portions thin straight ramen noodles (about 720 g fresh)",
+      "qty": 6,
+      "qtyMax": null,
+      "unit": null,
+      "item": "portions thin straight ramen noodles (about 720 g fresh)",
+      "group": "To serve"
+    },
+    {
+      "text": "20 g dried kikurage (wood ear), soaked and sliced",
+      "qty": 20,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "dried kikurage (wood ear), soaked and sliced",
+      "group": "To serve"
+    },
+    {
+      "text": "4 scallions, thinly sliced",
+      "qty": 4,
+      "qtyMax": null,
+      "unit": null,
+      "item": "scallions, thinly sliced",
+      "group": "To serve"
+    },
+    {
+      "text": "4 tbsp beni shoga (red pickled ginger)",
+      "qty": 4,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "beni shoga (red pickled ginger)",
+      "group": "To serve"
+    },
+    {
+      "text": "2 tbsp toasted sesame seeds",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "toasted sesame seeds",
+      "group": "To serve"
+    },
+    {
+      "text": "6 sheets nori, quartered",
+      "qty": 6,
+      "qtyMax": null,
+      "unit": null,
+      "item": "sheets nori, quartered",
+      "group": "To serve"
+    }
+  ],
+  "steps": [
+    {
+      "text": "Put 1.5 kg pork trotters, split (ask the butcher) and 1 kg pork neck bones or femur bones, cracked in your largest stockpot, cover with cold water and bring to a boil. Boil 10 minutes, then drain. Scrub every piece under running water, removing dark clots and scum, and wash the pot.",
+      "ingredientRefs": [
+        0,
+        1
+      ],
+      "timers": [
+        {
+          "text": "10 minutes",
+          "seconds": 600
+        }
+      ]
+    },
+    {
+      "text": "Return the bones to the clean pot with 6 L water, plus more to top up. Bring to a hard, rolling boil and keep it there, lid ajar, for 12 hours. Top up with boiling water every 1 hour to keep the bones covered. The violent boil is what emulsifies the fat and collagen into a white broth; a simmer gives a clear one.",
+      "ingredientRefs": [
+        2
+      ],
+      "timers": [
+        {
+          "text": "12 hours",
+          "seconds": 43200
+        }
+      ]
+    },
+    {
+      "text": "While the broth boils, make the chashu. Roll 1 kg skinless pork belly, in one slab up tightly lengthwise and tie it with butcher's twine every 2 cm. Sear it in a dry heavy pot over medium-high, turning, for 8 minutes until browned all over.",
+      "ingredientRefs": [
+        7
+      ],
+      "timers": [
+        {
+          "text": "8 minutes",
+          "seconds": 480
+        }
+      ]
+    },
+    {
+      "text": "Add 200 ml soy sauce, 200 ml sake, 100 ml mirin, 50 g sugar, 400 ml water (for the chashu) and 20 g ginger, sliced (for the chashu). Bring to a boil, then cover with the lid ajar and simmer on low for 2 hours, turning the roll every 30 minutes. Let it cool in the liquid, then chill overnight so it slices cleanly.",
+      "ingredientRefs": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "timers": [
+        {
+          "text": "2 hours",
+          "seconds": 7200
+        }
+      ]
+    },
+    {
+      "text": "Boil 6 eggs for 6 minutes 30 seconds, then plunge into ice water for 5 minutes and peel. Put them in a zip bag with 200 ml of the cooled chashu liquid (diluted with 100 ml water) and refrigerate at least 8 hours.",
+      "ingredientRefs": [
+        14
+      ],
+      "timers": [
+        {
+          "text": "6 minutes 30 seconds",
+          "seconds": 390
+        },
+        {
+          "text": "5 minutes",
+          "seconds": 300
+        },
+        {
+          "text": "8 hours",
+          "seconds": 28800
+        }
+      ]
+    },
+    {
+      "text": "Make the tare: soak 10 g kombu in 250 ml water (for the tare) for 30 minutes, then heat until just simmering and remove the kombu. Add 10 g katsuobushi (bonito flakes), simmer 1 minute, and strain. Stir in 35 g salt, 2 tbsp mirin (for the tare) and 2 tbsp sake (for the tare) until dissolved.",
+      "ingredientRefs": [
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "timers": [
+        {
+          "text": "30 minutes",
+          "seconds": 1800
+        },
+        {
+          "text": "1 minute",
+          "seconds": 60
+        }
+      ]
+    },
+    {
+      "text": "For the broth's last 1 hour, add 1 onion, halved, skin on, 1 head garlic, halved crosswise, 50 g ginger, sliced and 1 leek or 6 scallions, green parts. Strain through a fine sieve. You want about 2.5 L of thick, opaque broth; boil it down further if thinner.",
+      "ingredientRefs": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "timers": [
+        {
+          "text": "1 hour",
+          "seconds": 3600
+        }
+      ]
+    },
+    {
+      "text": "To serve, slice the chashu 5 mm thick and sear the slices in a hot pan 30 seconds per side. Halve the eggs. Warm 30 ml tare in each bowl and add 350 ml boiling broth, whisking.",
+      "ingredientRefs": [],
+      "timers": [
+        {
+          "text": "30 seconds",
+          "seconds": 30
+        }
+      ]
+    },
+    {
+      "text": "Cook 6 portions thin straight ramen noodles (about 720 g fresh) in plenty of boiling unsalted water for 1 minute (Hakata noodles are served firm), drain hard, and add to the bowls.",
+      "ingredientRefs": [
+        21
+      ],
+      "timers": [
+        {
+          "text": "1 minute",
+          "seconds": 60
+        }
+      ]
+    },
+    {
+      "text": "Top with chashu, an egg, 20 g dried kikurage (wood ear), soaked and sliced, 4 scallions, thinly sliced, 4 tbsp beni shoga (red pickled ginger), 2 tbsp toasted sesame seeds and 6 sheets nori, quartered. Serve immediately.",
+      "ingredientRefs": [
+        22,
+        23,
+        24,
+        25,
+        26
+      ],
+      "timers": []
+    }
+  ],
+  "notes": "Taste for salt by the bowl: tonkotsu broth itself is unseasoned, so the tare does all the work. Add more 5 ml at a time.\n\nThe broth, tare and chashu all freeze well; making them over two days is normal. A pressure cooker gets close in 3 hours on high (after blanching), then boil uncovered 30 minutes to emulsify. In Hakata, ask for 替え玉 (kaedama): a second portion of noodles dropped into the leftover broth.",
+  "servings": 6,
+  "tags": [],
+  "chatUrl": null,
+  "chapter": "soups",
+  "favorite": false,
+  "log": [],
+  "createdAt": "2026-10-07T02:11:26.107Z",
+  "updatedAt": "2026-10-07T02:11:26.107Z"
+}

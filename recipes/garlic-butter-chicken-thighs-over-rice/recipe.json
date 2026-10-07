@@ -1,0 +1,169 @@
+{
+  "id": "garlic-butter-chicken-thighs-over-rice",
+  "name": "Garlic Butter Chicken Thighs over Rice",
+  "nativeName": "",
+  "romanized": "",
+  "englishName": "Garlic Butter Chicken Thighs over Rice",
+  "description": "Skin-on chicken thighs seared until crackling, then finished in a lemony garlic-butter pan sauce made from the fond, spooned over rice. About 30 minutes. Serves 4.",
+  "ingredients": [
+    {
+      "text": "8 boneless skin-on chicken thighs (about 1 kg)",
+      "qty": 8,
+      "qtyMax": null,
+      "unit": null,
+      "item": "boneless skin-on chicken thighs (about 1 kg)"
+    },
+    {
+      "text": "1 1/4 tsp kosher salt",
+      "qty": 1.25,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "kosher salt"
+    },
+    {
+      "text": "1/2 tsp black pepper",
+      "qty": 0.5,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "black pepper"
+    },
+    {
+      "text": "1/2 tsp smoked paprika",
+      "qty": 0.5,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "smoked paprika"
+    },
+    {
+      "text": "1 tbsp neutral oil",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "neutral oil"
+    },
+    {
+      "text": "8 garlic cloves, thinly sliced",
+      "qty": 8,
+      "qtyMax": null,
+      "unit": null,
+      "item": "garlic cloves, thinly sliced"
+    },
+    {
+      "text": "4 tbsp butter",
+      "qty": 4,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "butter"
+    },
+    {
+      "text": "180 ml chicken stock",
+      "qty": 180,
+      "qtyMax": null,
+      "unit": "ml",
+      "item": "chicken stock"
+    },
+    {
+      "text": "1 lemon, juiced (about 2 tbsp)",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": null,
+      "item": "lemon, juiced (about 2 tbsp)"
+    },
+    {
+      "text": "1/4 tsp red chili flakes",
+      "qty": 0.25,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "red chili flakes"
+    },
+    {
+      "text": "10 g flat-leaf parsley, chopped",
+      "qty": 10,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "flat-leaf parsley, chopped"
+    },
+    {
+      "text": "900 g hot cooked white rice",
+      "qty": 900,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "hot cooked white rice"
+    }
+  ],
+  "steps": [
+    {
+      "text": "Pat 8 boneless skin-on chicken thighs (about 1 kg) very dry and season with 1 1/4 tsp kosher salt, 1/2 tsp black pepper and 1/2 tsp smoked paprika.",
+      "ingredientRefs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "timers": []
+    },
+    {
+      "text": "Heat 1 tbsp neutral oil in a large skillet over medium-high. Lay the thighs in skin side down and press flat. Cook 10 minutes without moving, until the skin is deep golden and crisp. Flip and cook 4 minutes, until 74°C inside. Transfer skin side up to a plate.",
+      "ingredientRefs": [
+        4
+      ],
+      "timers": [
+        {
+          "text": "10 minutes",
+          "seconds": 600
+        },
+        {
+          "text": "4 minutes",
+          "seconds": 240
+        }
+      ]
+    },
+    {
+      "text": "Pour off all but 1 tbsp fat. Lower the heat to medium, add 1 tbsp of 4 tbsp butter and 8 garlic cloves, thinly sliced, and cook 1 minute, until golden at the edges. Add 1/4 tsp red chili flakes.",
+      "ingredientRefs": [
+        5,
+        6,
+        9
+      ],
+      "timers": [
+        {
+          "text": "1 minute",
+          "seconds": 60
+        }
+      ]
+    },
+    {
+      "text": "Pour in 180 ml chicken stock and scrape up the browned bits. Simmer 3 minutes, until reduced by half. Off the heat, swirl in the remaining butter and 1 lemon, juiced (about 2 tbsp) until glossy.",
+      "ingredientRefs": [
+        7,
+        8
+      ],
+      "timers": [
+        {
+          "text": "3 minutes",
+          "seconds": 180
+        }
+      ]
+    },
+    {
+      "text": "Spoon 900 g hot cooked white rice onto plates, top with the chicken (skin side up, so it stays crisp) and pour the garlic butter sauce around it. Scatter with 10 g flat-leaf parsley, chopped.",
+      "ingredientRefs": [
+        10,
+        11
+      ],
+      "timers": []
+    }
+  ],
+  "notes": "Don't move the chicken in the first 10 minutes; the skin releases on its own when it's crisp. Pour the sauce around the chicken, not over the skin. Steamed green beans or broccoli tossed in the pan sauce make it a full plate.",
+  "servings": 4,
+  "tags": [
+    "weeknight"
+  ],
+  "chatUrl": null,
+  "chapter": "rice",
+  "cuisine": "American",
+  "favorite": false,
+  "log": [],
+  "createdAt": "2026-10-07T02:11:37.184Z",
+  "updatedAt": "2026-10-07T02:11:37.184Z"
+}

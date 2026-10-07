@@ -1,0 +1,307 @@
+{
+  "id": "birria-de-res",
+  "name": "Birria de Res — Jalisco-Style Braised Beef in Chile Consommé",
+  "nativeName": "",
+  "romanized": "",
+  "englishName": "Birria de Res",
+  "subtitle": "Jalisco-Style Braised Beef in Chile Consommé",
+  "description": "Beef chuck and bone-in shank marinated in a guajillo-ancho adobo with vinegar and warm spices, then braised until it falls apart in a deep red consommé. Served in bowls with onion, cilantro and lime, and the base for quesabirria tacos. Serves 8.",
+  "ingredients": [
+    {
+      "text": "8 guajillo chiles, stemmed and seeded",
+      "qty": 8,
+      "qtyMax": null,
+      "unit": null,
+      "item": "guajillo chiles, stemmed and seeded",
+      "group": "For the adobo"
+    },
+    {
+      "text": "3 ancho chiles, stemmed and seeded",
+      "qty": 3,
+      "qtyMax": null,
+      "unit": null,
+      "item": "ancho chiles, stemmed and seeded",
+      "group": "For the adobo"
+    },
+    {
+      "text": "3 chiles de árbol (optional, for heat)",
+      "qty": 3,
+      "qtyMax": null,
+      "unit": null,
+      "item": "chiles de árbol (optional, for heat)",
+      "group": "For the adobo"
+    },
+    {
+      "text": "2 Roma tomatoes",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": null,
+      "item": "Roma tomatoes",
+      "group": "For the adobo"
+    },
+    {
+      "text": "1/2 white onion",
+      "qty": 0.5,
+      "qtyMax": null,
+      "unit": null,
+      "item": "white onion",
+      "group": "For the adobo"
+    },
+    {
+      "text": "6 garlic cloves",
+      "qty": 6,
+      "qtyMax": null,
+      "unit": null,
+      "item": "garlic cloves",
+      "group": "For the adobo"
+    },
+    {
+      "text": "60 ml apple cider vinegar",
+      "qty": 60,
+      "qtyMax": null,
+      "unit": "ml",
+      "item": "apple cider vinegar",
+      "group": "For the adobo"
+    },
+    {
+      "text": "1 tsp cumin seeds",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "cumin seeds",
+      "group": "For the adobo"
+    },
+    {
+      "text": "4 whole cloves",
+      "qty": 4,
+      "qtyMax": null,
+      "unit": null,
+      "item": "whole cloves",
+      "group": "For the adobo"
+    },
+    {
+      "text": "1 tsp black peppercorns",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "black peppercorns",
+      "group": "For the adobo"
+    },
+    {
+      "text": "1 small stick Mexican cinnamon (canela), about 5 cm",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": null,
+      "item": "small stick Mexican cinnamon (canela), about 5 cm",
+      "group": "For the adobo"
+    },
+    {
+      "text": "1 tbsp Mexican oregano",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "Mexican oregano",
+      "group": "For the adobo"
+    },
+    {
+      "text": "1/2 tsp dried thyme",
+      "qty": 0.5,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "dried thyme",
+      "group": "For the adobo"
+    },
+    {
+      "text": "10 g ginger",
+      "qty": 10,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "ginger",
+      "group": "For the adobo"
+    },
+    {
+      "text": "1 tbsp salt",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "salt",
+      "group": "For the adobo"
+    },
+    {
+      "text": "1.5 kg beef chuck roast, cut into 8 cm pieces",
+      "qty": 1.5,
+      "qtyMax": null,
+      "unit": "kg",
+      "item": "beef chuck roast, cut into 8 cm pieces",
+      "group": "For the braise"
+    },
+    {
+      "text": "1 kg bone-in beef shank or oxtail",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "kg",
+      "item": "bone-in beef shank or oxtail",
+      "group": "For the braise"
+    },
+    {
+      "text": "2 tsp salt (for the meat)",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "salt (for the meat)",
+      "group": "For the braise"
+    },
+    {
+      "text": "3 bay leaves",
+      "qty": 3,
+      "qtyMax": null,
+      "unit": null,
+      "item": "bay leaves",
+      "group": "For the braise"
+    },
+    {
+      "text": "1.5 L water or beef broth",
+      "qty": 1.5,
+      "qtyMax": null,
+      "unit": "l",
+      "item": "water or beef broth",
+      "group": "For the braise"
+    },
+    {
+      "text": "1 white onion, finely chopped",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": null,
+      "item": "white onion, finely chopped",
+      "group": "To serve"
+    },
+    {
+      "text": "1 bunch cilantro, chopped",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "bunch",
+      "item": "cilantro, chopped",
+      "group": "To serve"
+    },
+    {
+      "text": "4 limes, cut into wedges",
+      "qty": 4,
+      "qtyMax": null,
+      "unit": null,
+      "item": "limes, cut into wedges",
+      "group": "To serve"
+    },
+    {
+      "text": "16 corn tortillas, warmed",
+      "qty": 16,
+      "qtyMax": null,
+      "unit": null,
+      "item": "corn tortillas, warmed",
+      "group": "To serve"
+    }
+  ],
+  "steps": [
+    {
+      "text": "Toast 8 guajillo chiles, stemmed and seeded, 3 ancho chiles, stemmed and seeded and 3 chiles de árbol (optional, for heat) in a dry skillet over medium for 30 seconds per side, until fragrant and pliable (don't let them blacken). Cover with boiling water and soak 20 minutes.",
+      "ingredientRefs": [
+        0,
+        1,
+        2
+      ],
+      "timers": [
+        {
+          "text": "30 seconds",
+          "seconds": 30
+        },
+        {
+          "text": "20 minutes",
+          "seconds": 1200
+        }
+      ]
+    },
+    {
+      "text": "In the same skillet, char 2 Roma tomatoes, 1/2 white onion and 6 garlic cloves for 8 minutes, turning, until blistered. Toast 1 tsp cumin seeds, 4 whole cloves, 1 tsp black peppercorns and 1 small stick Mexican cinnamon (canela), about 5 cm for 1 minute.",
+      "ingredientRefs": [
+        3,
+        4,
+        5,
+        7,
+        8,
+        9,
+        10
+      ],
+      "timers": [
+        {
+          "text": "8 minutes",
+          "seconds": 480
+        },
+        {
+          "text": "1 minute",
+          "seconds": 60
+        }
+      ]
+    },
+    {
+      "text": "Drain the chiles and blend with the charred vegetables, toasted spices, 60 ml apple cider vinegar, 1 tbsp Mexican oregano, 1/2 tsp dried thyme, 10 g ginger, 1 tbsp salt and 250 ml of the soaking liquid until completely smooth. Strain through a sieve.",
+      "ingredientRefs": [
+        6,
+        11,
+        12,
+        13,
+        14
+      ],
+      "timers": []
+    },
+    {
+      "text": "Season 1.5 kg beef chuck roast, cut into 8 cm pieces and 1 kg bone-in beef shank or oxtail with 2 tsp salt (for the meat), coat them in the adobo, and refrigerate at least 4 hours or overnight.",
+      "ingredientRefs": [
+        15,
+        16,
+        17
+      ],
+      "timers": [
+        {
+          "text": "4 hours",
+          "seconds": 14400
+        }
+      ]
+    },
+    {
+      "text": "Heat the oven to 160°C. Put the meat and all the adobo in a large Dutch oven with 3 bay leaves and 1.5 L water or beef broth. Bring to a simmer on the stove, cover tightly (seal with foil under the lid), and braise in the oven for 3 hours 30 minutes, until the meat shreds easily.",
+      "ingredientRefs": [
+        18,
+        19
+      ],
+      "timers": [
+        {
+          "text": "3 hours 30 minutes",
+          "seconds": 12600
+        }
+      ]
+    },
+    {
+      "text": "Lift out the meat and shred it, discarding bones. Skim the red fat from the consommé into a bowl and save it for tacos. Taste the consommé and season with salt.",
+      "ingredientRefs": [],
+      "timers": []
+    },
+    {
+      "text": "Serve the meat in bowls with hot consommé ladled over, topped with 1 white onion, finely chopped, 1 bunch cilantro, chopped and 4 limes, cut into wedges, with 16 corn tortillas, warmed on the side.",
+      "ingredientRefs": [
+        20,
+        21,
+        22,
+        23
+      ],
+      "timers": []
+    }
+  ],
+  "notes": "Birria was originally goat (chivo), and many Jalisco cooks still use it or mutton; this beef version is the Tijuana-to-LA standard. Using a mix of cuts matters: chuck for meat, shank or oxtail for gelatin that gives the consommé its body.\n\nThe skimmed red fat is what you fry the tortillas in for quesabirria. Birria freezes very well, meat and consommé together. Salsa de chile de árbol on the side is traditional.",
+  "servings": 8,
+  "tags": [],
+  "chatUrl": null,
+  "chapter": "soups",
+  "favorite": false,
+  "log": [],
+  "createdAt": "2026-10-07T02:11:31.819Z",
+  "updatedAt": "2026-10-07T02:11:31.819Z"
+}

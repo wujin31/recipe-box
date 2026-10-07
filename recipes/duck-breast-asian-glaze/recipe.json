@@ -1,0 +1,201 @@
+{
+  "id": "duck-breast-asian-glaze",
+  "name": "Seared Duck Breast with Five-Spice Orange-Hoisin Glaze",
+  "nativeName": "",
+  "romanized": "",
+  "englishName": "Seared Duck Breast with Five-Spice Orange-Hoisin Glaze",
+  "description": "Duck breast started skin-down in a cold pan and rendered slowly until the skin is thin and crackling, cooked to rosy medium-rare, and brushed with a reduced glaze of hoisin, orange, honey and five-spice. Serves 2.",
+  "ingredients": [
+    {
+      "text": "2 duck breasts (about 350 g each)",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": null,
+      "item": "duck breasts (about 350 g each)"
+    },
+    {
+      "text": "1 tsp kosher salt",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "kosher salt"
+    },
+    {
+      "text": "1/4 tsp five-spice powder",
+      "qty": 0.25,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "five-spice powder"
+    },
+    {
+      "text": "2 tbsp hoisin sauce",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "hoisin sauce"
+    },
+    {
+      "text": "1 tbsp soy sauce",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "soy sauce"
+    },
+    {
+      "text": "1 tbsp honey",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "honey"
+    },
+    {
+      "text": "60 ml orange juice",
+      "qty": 60,
+      "qtyMax": null,
+      "unit": "ml",
+      "item": "orange juice"
+    },
+    {
+      "text": "1 tsp grated orange zest",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "grated orange zest"
+    },
+    {
+      "text": "1 tsp grated ginger",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "grated ginger"
+    },
+    {
+      "text": "1 tsp rice vinegar",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "rice vinegar"
+    },
+    {
+      "text": "1 scallion, thinly sliced",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": null,
+      "item": "scallion, thinly sliced"
+    },
+    {
+      "text": "1 tsp toasted sesame seeds",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "toasted sesame seeds"
+    },
+    {
+      "text": "300 g hot cooked rice",
+      "qty": 300,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "hot cooked rice"
+    },
+    {
+      "text": "2 heads baby bok choy, halved",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": null,
+      "item": "heads baby bok choy, halved"
+    }
+  ],
+  "steps": [
+    {
+      "text": "Pat 2 duck breasts (about 350 g each) dry. Score the skin in a crosshatch 1 cm apart, cutting through the fat but not into the meat. Rub with 1 tsp kosher salt and 1/4 tsp five-spice powder and refrigerate uncovered at least 30 minutes (overnight is better).",
+      "ingredientRefs": [
+        0,
+        1,
+        2
+      ],
+      "timers": [
+        {
+          "text": "30 minutes",
+          "seconds": 1800
+        }
+      ]
+    },
+    {
+      "text": "Mix 2 tbsp hoisin sauce, 1 tbsp soy sauce, 1 tbsp honey, 60 ml orange juice, 1 tsp grated orange zest, 1 tsp grated ginger and 1 tsp rice vinegar.",
+      "ingredientRefs": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "timers": []
+    },
+    {
+      "text": "Lay the duck skin side down in a cold, dry skillet. Set over medium-low heat and cook 15 minutes, pouring off the fat into a jar every 5 minutes, until the skin is deep golden, thin and crisp.",
+      "ingredientRefs": [],
+      "timers": [
+        {
+          "text": "15 minutes",
+          "seconds": 900
+        }
+      ]
+    },
+    {
+      "text": "Flip and cook 2 minutes, until 54°C in the thickest part for medium-rare. Transfer skin side up to a board and rest 8 minutes.",
+      "ingredientRefs": [],
+      "timers": [
+        {
+          "text": "2 minutes",
+          "seconds": 120
+        },
+        {
+          "text": "8 minutes",
+          "seconds": 480
+        }
+      ]
+    },
+    {
+      "text": "Pour off all but 1 tsp fat, add 2 heads baby bok choy, halved cut side down and cook 2 minutes, until charred and just tender. Remove.",
+      "ingredientRefs": [
+        13
+      ],
+      "timers": [
+        {
+          "text": "2 minutes",
+          "seconds": 120
+        }
+      ]
+    },
+    {
+      "text": "Add the glaze to the pan and simmer 2 minutes, until reduced to a syrup.",
+      "ingredientRefs": [],
+      "timers": [
+        {
+          "text": "2 minutes",
+          "seconds": 120
+        }
+      ]
+    },
+    {
+      "text": "Slice the duck, brush with glaze, and scatter 1 scallion, thinly sliced and 1 tsp toasted sesame seeds. Serve over 300 g hot cooked rice with the bok choy and the rest of the glaze.",
+      "ingredientRefs": [
+        10,
+        11,
+        12
+      ],
+      "timers": []
+    }
+  ],
+  "notes": "The cold pan is the key: the fat renders gradually as the pan heats, so the skin crisps instead of burning before the fat is gone. Save the duck fat for roasting potatoes or frying rice. Brush the glaze on only after cooking; the sugar burns if it goes on in the pan.",
+  "servings": 2,
+  "tags": [],
+  "chatUrl": null,
+  "chapter": "mains",
+  "favorite": false,
+  "log": [],
+  "createdAt": "2026-10-07T02:11:36.357Z",
+  "updatedAt": "2026-10-07T02:11:36.357Z"
+}

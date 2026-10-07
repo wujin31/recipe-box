@@ -1,0 +1,294 @@
+{
+  "id": "teriyaki-beef-plate-lunch",
+  "name": "Teriyaki Beef Plate Lunch — Hawaiian Plate with Two Scoops Rice and Mac Salad",
+  "nativeName": "",
+  "romanized": "",
+  "englishName": "Teriyaki Beef Plate Lunch",
+  "subtitle": "Hawaiian Plate with Two Scoops Rice and Mac Salad",
+  "description": "Local-style teri beef, sweeter and saltier than Japanese teriyaki: thin-sliced beef marinated overnight in shoyu, brown sugar, ginger and pineapple, seared until lacquered, with two scoops rice and creamy Hawaiian macaroni salad. Serves 4.",
+  "ingredients": [
+    {
+      "text": "900 g chuck flap, top sirloin or flank steak, sliced 6 mm thick against the grain",
+      "qty": 900,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "chuck flap, top sirloin or flank steak, sliced 6 mm thick against the grain",
+      "group": "For the beef"
+    },
+    {
+      "text": "180 ml shoyu (soy sauce)",
+      "qty": 180,
+      "qtyMax": null,
+      "unit": "ml",
+      "item": "shoyu (soy sauce)",
+      "group": "For the beef"
+    },
+    {
+      "text": "150 g brown sugar",
+      "qty": 150,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "brown sugar",
+      "group": "For the beef"
+    },
+    {
+      "text": "120 ml water",
+      "qty": 120,
+      "qtyMax": null,
+      "unit": "ml",
+      "item": "water",
+      "group": "For the beef"
+    },
+    {
+      "text": "60 ml mirin",
+      "qty": 60,
+      "qtyMax": null,
+      "unit": "ml",
+      "item": "mirin",
+      "group": "For the beef"
+    },
+    {
+      "text": "2 tbsp grated ginger",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "grated ginger",
+      "group": "For the beef"
+    },
+    {
+      "text": "4 garlic cloves, grated",
+      "qty": 4,
+      "qtyMax": null,
+      "unit": null,
+      "item": "garlic cloves, grated",
+      "group": "For the beef"
+    },
+    {
+      "text": "3 tbsp pineapple juice",
+      "qty": 3,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "pineapple juice",
+      "group": "For the beef"
+    },
+    {
+      "text": "1 tsp toasted sesame oil",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "toasted sesame oil",
+      "group": "For the beef"
+    },
+    {
+      "text": "1 tsp black pepper",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "black pepper",
+      "group": "For the beef"
+    },
+    {
+      "text": "1 tbsp neutral oil",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "neutral oil",
+      "group": "For the beef"
+    },
+    {
+      "text": "2 scallions, sliced",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": null,
+      "item": "scallions, sliced",
+      "group": "For the beef"
+    },
+    {
+      "text": "1 tsp toasted sesame seeds",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "toasted sesame seeds",
+      "group": "For the beef"
+    },
+    {
+      "text": "225 g elbow macaroni",
+      "qty": 225,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "elbow macaroni",
+      "group": "For the mac salad"
+    },
+    {
+      "text": "1 tbsp salt (for the pasta water)",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "salt (for the pasta water)",
+      "group": "For the mac salad"
+    },
+    {
+      "text": "2 tbsp cider vinegar",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "cider vinegar",
+      "group": "For the mac salad"
+    },
+    {
+      "text": "1 small carrot, finely grated",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": null,
+      "item": "small carrot, finely grated",
+      "group": "For the mac salad"
+    },
+    {
+      "text": "1 tbsp grated onion",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "grated onion",
+      "group": "For the mac salad"
+    },
+    {
+      "text": "240 g mayonnaise (Best Foods/Hellmann's)",
+      "qty": 240,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "mayonnaise (Best Foods/Hellmann's)",
+      "group": "For the mac salad"
+    },
+    {
+      "text": "120 ml whole milk",
+      "qty": 120,
+      "qtyMax": null,
+      "unit": "ml",
+      "item": "whole milk",
+      "group": "For the mac salad"
+    },
+    {
+      "text": "1 tsp sugar",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "sugar",
+      "group": "For the mac salad"
+    },
+    {
+      "text": "1/2 tsp black pepper (for the salad)",
+      "qty": 0.5,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "black pepper (for the salad)",
+      "group": "For the mac salad"
+    },
+    {
+      "text": "1/2 tsp salt, to taste",
+      "qty": 0.5,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "salt, to taste",
+      "group": "For the mac salad"
+    },
+    {
+      "text": "900 g hot cooked white rice",
+      "qty": 900,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "hot cooked white rice",
+      "group": "To serve"
+    }
+  ],
+  "steps": [
+    {
+      "text": "Whisk 180 ml shoyu (soy sauce), 150 g brown sugar, 120 ml water, 60 ml mirin, 2 tbsp grated ginger, 4 garlic cloves, grated, 3 tbsp pineapple juice, 1 tsp toasted sesame oil and 1 tsp black pepper until the sugar dissolves. Set aside 120 ml for the glaze. Add 900 g chuck flap, top sirloin or flank steak, sliced 6 mm thick against the grain to the rest, cover and refrigerate overnight (at least 4 hours).",
+      "ingredientRefs": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "timers": [
+        {
+          "text": "4 hours",
+          "seconds": 14400
+        }
+      ]
+    },
+    {
+      "text": "Make the mac salad first, since it needs to chill: boil 225 g elbow macaroni in water with 1 tbsp salt (for the pasta water) for 2 minutes longer than the package says, until soft. Drain, toss with 2 tbsp cider vinegar, 1 small carrot, finely grated and 1 tbsp grated onion, and cool completely.",
+      "ingredientRefs": [
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "timers": []
+    },
+    {
+      "text": "Whisk 240 g mayonnaise (Best Foods/Hellmann's), 120 ml whole milk, 1 tsp sugar and 1/2 tsp black pepper (for the salad), fold into the macaroni, season with 1/2 tsp salt, to taste, and refrigerate 4 hours. It will thicken; stir in a splash of milk before serving.",
+      "ingredientRefs": [
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "timers": [
+        {
+          "text": "4 hours",
+          "seconds": 14400
+        }
+      ]
+    },
+    {
+      "text": "Simmer the reserved marinade in a small pan for 3 minutes, until slightly syrupy.",
+      "ingredientRefs": [],
+      "timers": [
+        {
+          "text": "3 minutes",
+          "seconds": 180
+        }
+      ]
+    },
+    {
+      "text": "Heat 1 tbsp neutral oil in a cast-iron pan or griddle over high. Shake excess marinade off the beef and sear in batches, 1 minute per side, until caramelized at the edges.",
+      "ingredientRefs": [
+        10
+      ],
+      "timers": [
+        {
+          "text": "1 minute",
+          "seconds": 60
+        }
+      ]
+    },
+    {
+      "text": "Brush the beef with the glaze, scatter with 2 scallions, sliced and 1 tsp toasted sesame seeds, and plate with two scoops of 900 g hot cooked white rice and one scoop of mac salad.",
+      "ingredientRefs": [
+        11,
+        12,
+        23
+      ],
+      "timers": []
+    }
+  ],
+  "notes": "Mac salad is meant to be soft and creamy, not al dente: overcooking the pasta and dressing it with vinegar while hot lets it absorb the dressing. Plain mayo and milk only; no mustard, relish or celery in the classic plate-lunch version.\n\nGrilling over charcoal is the other traditional way: 2 minutes per side over high heat.",
+  "servings": 4,
+  "tags": [],
+  "chatUrl": null,
+  "chapter": "mains",
+  "cuisine": "Hawaiian",
+  "favorite": false,
+  "log": [],
+  "createdAt": "2026-10-07T02:11:31.542Z",
+  "updatedAt": "2026-10-07T02:11:31.542Z"
+}

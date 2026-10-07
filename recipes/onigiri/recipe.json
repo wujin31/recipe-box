@@ -1,0 +1,171 @@
+{
+  "id": "onigiri",
+  "name": "おにぎり (Onigiri) · Rice Balls with Salmon, Tuna Mayo and Kombu",
+  "nativeName": "おにぎり",
+  "romanized": "Onigiri",
+  "englishName": "Rice Balls with Salmon, Tuna Mayo and Kombu",
+  "description": "Freshly cooked short-grain rice shaped with salted hands around three classic fillings: flaked salted salmon (shiozake), tuna mayo and kombu tsukudani, wrapped in nori. Serves 3 (9 onigiri).",
+  "ingredients": [
+    {
+      "text": "450 g uncooked Japanese short-grain rice (3 rice-cooker cups)",
+      "qty": 450,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "uncooked Japanese short-grain rice (3 rice-cooker cups)"
+    },
+    {
+      "text": "540 ml water (for the rice)",
+      "qty": 540,
+      "qtyMax": null,
+      "unit": "ml",
+      "item": "water (for the rice)"
+    },
+    {
+      "text": "1 1/2 tsp salt (for your hands)",
+      "qty": 1.5,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "salt (for your hands)"
+    },
+    {
+      "text": "3 sheets nori, each cut into 3 strips",
+      "qty": 3,
+      "qtyMax": null,
+      "unit": null,
+      "item": "sheets nori, each cut into 3 strips"
+    },
+    {
+      "text": "1 salmon fillet (about 150 g), skin on",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": null,
+      "item": "salmon fillet (about 150 g), skin on",
+      "group": "For the salmon"
+    },
+    {
+      "text": "1 tsp salt (for the salmon)",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "salt (for the salmon)",
+      "group": "For the salmon"
+    },
+    {
+      "text": "1 can tuna in oil (140 g), well drained",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "can",
+      "item": "tuna in oil (140 g), well drained",
+      "group": "For the tuna mayo"
+    },
+    {
+      "text": "2 tbsp Kewpie mayonnaise",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "Kewpie mayonnaise",
+      "group": "For the tuna mayo"
+    },
+    {
+      "text": "1 tsp soy sauce",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "soy sauce",
+      "group": "For the tuna mayo"
+    },
+    {
+      "text": "45 g kombu tsukudani or shio kombu",
+      "qty": 45,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "kombu tsukudani or shio kombu",
+      "group": "For the kombu"
+    }
+  ],
+  "steps": [
+    {
+      "text": "Rinse 450 g uncooked Japanese short-grain rice (3 rice-cooker cups) until the water runs nearly clear, drain, and soak in 540 ml water (for the rice) in the rice cooker for 30 minutes. Cook on the white rice setting (about 45 minutes).",
+      "ingredientRefs": [
+        0,
+        1
+      ],
+      "timers": [
+        {
+          "text": "30 minutes",
+          "seconds": 1800
+        },
+        {
+          "text": "45 minutes",
+          "seconds": 2700
+        }
+      ]
+    },
+    {
+      "text": "Rub 1 salmon fillet (about 150 g), skin on with 1 tsp salt (for the salmon) and refrigerate 30 minutes. Pat dry and broil or pan-fry about 4 minutes per side, until cooked and lightly charred. Flake, discarding skin and bones.",
+      "ingredientRefs": [
+        4,
+        5
+      ],
+      "timers": [
+        {
+          "text": "30 minutes",
+          "seconds": 1800
+        },
+        {
+          "text": "4 minutes",
+          "seconds": 240
+        }
+      ]
+    },
+    {
+      "text": "Mix 1 can tuna in oil (140 g), well drained, 2 tbsp Kewpie mayonnaise and 1 tsp soy sauce.",
+      "ingredientRefs": [
+        6,
+        7,
+        8
+      ],
+      "timers": []
+    },
+    {
+      "text": "When the rice is done, fluff it and let it steam off for 5 minutes so it's hot but handleable. Set out a bowl of water and 1 1/2 tsp salt (for your hands).",
+      "ingredientRefs": [
+        2
+      ],
+      "timers": [
+        {
+          "text": "5 minutes",
+          "seconds": 300
+        }
+      ]
+    },
+    {
+      "text": "Wet your hands and rub a pinch of salt over your palms. Take about 100 g rice, make a dent in the center, and add a spoonful of salmon, tuna mayo or 45 g kombu tsukudani or shio kombu. Close the rice over the filling.",
+      "ingredientRefs": [
+        9
+      ],
+      "timers": []
+    },
+    {
+      "text": "Cup one hand into a \"V\" and use the other to press the top, rotating the ball 3 or 4 times into a triangle. Press firmly enough to hold, lightly enough that the rice isn't mashed.",
+      "ingredientRefs": [],
+      "timers": []
+    },
+    {
+      "text": "Wrap with a strip of 3 sheets nori, each cut into 3 strips just before eating (so it stays crisp), or right away for a softer bento-style wrap.",
+      "ingredientRefs": [
+        3
+      ],
+      "timers": []
+    }
+  ],
+  "notes": "Salt goes on the hands, not in the rice: that seasons the outside, which is what you taste first. Use rice that's still warm; cold rice won't stick.\n\nWrap leftovers tightly in plastic and keep at cool room temperature for the day. Refrigerated onigiri harden; microwave 20 seconds to soften. Shake a little of the filling on top so you can tell them apart.",
+  "servings": 3,
+  "tags": [],
+  "chatUrl": null,
+  "chapter": "rice",
+  "favorite": false,
+  "log": [],
+  "createdAt": "2026-10-07T02:11:26.653Z",
+  "updatedAt": "2026-10-07T02:11:26.653Z"
+}

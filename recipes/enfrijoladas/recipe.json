@@ -1,0 +1,221 @@
+{
+  "id": "enfrijoladas",
+  "name": "Enfrijoladas — Tortillas in Black Bean Sauce with Cotija and Crema",
+  "nativeName": "",
+  "romanized": "",
+  "englishName": "Enfrijoladas",
+  "subtitle": "Tortillas in Black Bean Sauce with Cotija and Crema",
+  "description": "The Oaxacan home classic: corn tortillas flashed in hot oil, dipped in a silky black bean sauce with chipotle, folded around crumbled cheese and topped with crema, cotija and raw onion. Serves 4.",
+  "ingredients": [
+    {
+      "text": "750 g cooked black beans (or 2 cans, 425 g each), with their liquid",
+      "qty": 750,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "cooked black beans (or 2 cans, 425 g each), with their liquid",
+      "group": "For the bean sauce"
+    },
+    {
+      "text": "250 ml water or bean broth",
+      "qty": 250,
+      "qtyMax": null,
+      "unit": "ml",
+      "item": "water or bean broth",
+      "group": "For the bean sauce"
+    },
+    {
+      "text": "1 tbsp lard or neutral oil",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "lard or neutral oil",
+      "group": "For the bean sauce"
+    },
+    {
+      "text": "1/4 white onion, chopped",
+      "qty": 0.25,
+      "qtyMax": null,
+      "unit": null,
+      "item": "white onion, chopped",
+      "group": "For the bean sauce"
+    },
+    {
+      "text": "2 garlic cloves",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": null,
+      "item": "garlic cloves",
+      "group": "For the bean sauce"
+    },
+    {
+      "text": "1 chipotle in adobo (or 2 toasted chiles de árbol)",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": null,
+      "item": "chipotle in adobo (or 2 toasted chiles de árbol)",
+      "group": "For the bean sauce"
+    },
+    {
+      "text": "2 dried avocado leaves, toasted (optional)",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": null,
+      "item": "dried avocado leaves, toasted (optional)",
+      "group": "For the bean sauce"
+    },
+    {
+      "text": "1/2 tsp salt, to taste",
+      "qty": 0.5,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "salt, to taste",
+      "group": "For the bean sauce"
+    },
+    {
+      "text": "60 ml neutral oil (for the tortillas)",
+      "qty": 60,
+      "qtyMax": null,
+      "unit": "ml",
+      "item": "neutral oil (for the tortillas)",
+      "group": "For the enfrijoladas"
+    },
+    {
+      "text": "12 corn tortillas",
+      "qty": 12,
+      "qtyMax": null,
+      "unit": null,
+      "item": "corn tortillas",
+      "group": "For the enfrijoladas"
+    },
+    {
+      "text": "200 g queso fresco, crumbled",
+      "qty": 200,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "queso fresco, crumbled",
+      "group": "For the enfrijoladas"
+    },
+    {
+      "text": "120 ml Mexican crema",
+      "qty": 120,
+      "qtyMax": null,
+      "unit": "ml",
+      "item": "Mexican crema",
+      "group": "To serve"
+    },
+    {
+      "text": "60 g cotija cheese, finely crumbled",
+      "qty": 60,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "cotija cheese, finely crumbled",
+      "group": "To serve"
+    },
+    {
+      "text": "1/2 white onion, sliced into thin rings",
+      "qty": 0.5,
+      "qtyMax": null,
+      "unit": null,
+      "item": "white onion, sliced into thin rings",
+      "group": "To serve"
+    },
+    {
+      "text": "1/4 bunch cilantro, chopped",
+      "qty": 0.25,
+      "qtyMax": null,
+      "unit": "bunch",
+      "item": "cilantro, chopped",
+      "group": "To serve"
+    },
+    {
+      "text": "1 avocado, sliced",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": null,
+      "item": "avocado, sliced",
+      "group": "To serve"
+    }
+  ],
+  "steps": [
+    {
+      "text": "Heat 1 tbsp lard or neutral oil in a wide skillet over medium. Fry 1/4 white onion, chopped for 4 minutes, until soft, adding 2 garlic cloves for the last 1 minute.",
+      "ingredientRefs": [
+        2,
+        3,
+        4
+      ],
+      "timers": [
+        {
+          "text": "4 minutes",
+          "seconds": 240
+        },
+        {
+          "text": "1 minute",
+          "seconds": 60
+        }
+      ]
+    },
+    {
+      "text": "Blend the onion and garlic with 750 g cooked black beans (or 2 cans, 425 g each), with their liquid, 250 ml water or bean broth, 1 chipotle in adobo (or 2 toasted chiles de árbol) and 2 dried avocado leaves, toasted (optional) until completely smooth.",
+      "ingredientRefs": [
+        0,
+        1,
+        5,
+        6
+      ],
+      "timers": []
+    },
+    {
+      "text": "Pour the purée into the skillet (it will splatter) and simmer 5 minutes, stirring, until it's the thickness of heavy cream. Season with 1/2 tsp salt, to taste. Thin with water if needed; it thickens as it stands. Keep warm over low heat.",
+      "ingredientRefs": [
+        7
+      ],
+      "timers": [
+        {
+          "text": "5 minutes",
+          "seconds": 300
+        }
+      ]
+    },
+    {
+      "text": "Heat 60 ml neutral oil (for the tortillas) in another skillet over medium-high. Pass each of 12 corn tortillas through the oil for 5 seconds per side, just to soften and seal, and drain on paper towels.",
+      "ingredientRefs": [
+        8,
+        9
+      ],
+      "timers": [
+        {
+          "text": "5 seconds",
+          "seconds": 5
+        }
+      ]
+    },
+    {
+      "text": "Dip each tortilla in the bean sauce to coat both sides, fold it in half, fill with some of 200 g queso fresco, crumbled, and fold again into quarters. Arrange on plates.",
+      "ingredientRefs": [
+        10
+      ],
+      "timers": []
+    },
+    {
+      "text": "Spoon more sauce over the top, then drizzle with 120 ml Mexican crema and scatter with 60 g cotija cheese, finely crumbled, 1/2 white onion, sliced into thin rings, 1/4 bunch cilantro, chopped and 1 avocado, sliced. Serve right away.",
+      "ingredientRefs": [
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "timers": []
+    }
+  ],
+  "notes": "The quick fry seals the tortillas so they don't fall apart in the sauce. Avocado leaves give the Oaxacan anise note; a pinch of ground anise or a sprig of epazote does something similar.\n\nFor a fuller meal, fill them with shredded chicken or chorizo and potato, or top with a fried egg for breakfast.",
+  "servings": 4,
+  "tags": [],
+  "chatUrl": null,
+  "chapter": "mains",
+  "favorite": false,
+  "log": [],
+  "createdAt": "2026-10-07T02:11:34.393Z",
+  "updatedAt": "2026-10-07T02:11:34.393Z"
+}

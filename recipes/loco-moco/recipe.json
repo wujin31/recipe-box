@@ -1,0 +1,245 @@
+{
+  "id": "loco-moco",
+  "name": "Loco Moco — Hawaiian Hamburger, Egg and Gravy Rice Bowl",
+  "nativeName": "",
+  "romanized": "",
+  "englishName": "Loco Moco",
+  "subtitle": "Hawaiian Hamburger, Egg and Gravy Rice Bowl",
+  "description": "Hilo's 1949 invention: a juicy seasoned beef patty on rice, smothered in onion-mushroom brown gravy made in the same pan and crowned with a sunny-side-up egg. Serves 4.",
+  "ingredients": [
+    {
+      "text": "680 g ground beef (80/20)",
+      "qty": 680,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "ground beef (80/20)",
+      "group": "For the patties"
+    },
+    {
+      "text": "30 g panko",
+      "qty": 30,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "panko",
+      "group": "For the patties"
+    },
+    {
+      "text": "1 egg",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": null,
+      "item": "egg",
+      "group": "For the patties"
+    },
+    {
+      "text": "1/2 onion, grated",
+      "qty": 0.5,
+      "qtyMax": null,
+      "unit": null,
+      "item": "onion, grated",
+      "group": "For the patties"
+    },
+    {
+      "text": "1 tbsp shoyu (soy sauce)",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "shoyu (soy sauce)",
+      "group": "For the patties"
+    },
+    {
+      "text": "3/4 tsp salt",
+      "qty": 0.75,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "salt",
+      "group": "For the patties"
+    },
+    {
+      "text": "1/2 tsp black pepper",
+      "qty": 0.5,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "black pepper",
+      "group": "For the patties"
+    },
+    {
+      "text": "1 tbsp neutral oil",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "neutral oil",
+      "group": "For the patties"
+    },
+    {
+      "text": "2 tbsp butter",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "butter",
+      "group": "For the gravy"
+    },
+    {
+      "text": "1/2 onion, thinly sliced (for the gravy)",
+      "qty": 0.5,
+      "qtyMax": null,
+      "unit": null,
+      "item": "onion, thinly sliced (for the gravy)",
+      "group": "For the gravy"
+    },
+    {
+      "text": "150 g button mushrooms, sliced",
+      "qty": 150,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "button mushrooms, sliced",
+      "group": "For the gravy"
+    },
+    {
+      "text": "2 tbsp all-purpose flour",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "all-purpose flour",
+      "group": "For the gravy"
+    },
+    {
+      "text": "480 ml beef stock",
+      "qty": 480,
+      "qtyMax": null,
+      "unit": "ml",
+      "item": "beef stock",
+      "group": "For the gravy"
+    },
+    {
+      "text": "1 tbsp shoyu (for the gravy)",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "shoyu (for the gravy)",
+      "group": "For the gravy"
+    },
+    {
+      "text": "1 tsp Worcestershire sauce",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "Worcestershire sauce",
+      "group": "For the gravy"
+    },
+    {
+      "text": "4 eggs",
+      "qty": 4,
+      "qtyMax": null,
+      "unit": null,
+      "item": "eggs",
+      "group": "To serve"
+    },
+    {
+      "text": "900 g hot cooked white rice",
+      "qty": 900,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "hot cooked white rice",
+      "group": "To serve"
+    },
+    {
+      "text": "2 scallions, sliced",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": null,
+      "item": "scallions, sliced",
+      "group": "To serve"
+    }
+  ],
+  "steps": [
+    {
+      "text": "Mix 680 g ground beef (80/20), 30 g panko, 1 egg, 1/2 onion, grated, 1 tbsp shoyu (soy sauce), 3/4 tsp salt and 1/2 tsp black pepper just until combined. Shape into 4 patties about 2 cm thick, with a dimple in the center so they stay flat.",
+      "ingredientRefs": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "timers": []
+    },
+    {
+      "text": "Heat 1 tbsp neutral oil in a large skillet over medium-high and cook the patties 4 minutes per side, until browned and cooked through. Transfer to a plate and pour off all but 1 tbsp fat.",
+      "ingredientRefs": [
+        7
+      ],
+      "timers": [
+        {
+          "text": "4 minutes",
+          "seconds": 240
+        }
+      ]
+    },
+    {
+      "text": "Add 2 tbsp butter to the pan with 1/2 onion, thinly sliced (for the gravy) and 150 g button mushrooms, sliced. Cook 5 minutes over medium, scraping up the browned bits, until the mushrooms are golden.",
+      "ingredientRefs": [
+        8,
+        9,
+        10
+      ],
+      "timers": [
+        {
+          "text": "5 minutes",
+          "seconds": 300
+        }
+      ]
+    },
+    {
+      "text": "Sprinkle in 2 tbsp all-purpose flour and stir 1 minute. Whisk in 480 ml beef stock, 1 tbsp shoyu (for the gravy) and 1 tsp Worcestershire sauce, bring to a simmer and cook 3 minutes, until thick enough to coat a spoon. Return the patties to the gravy to warm through.",
+      "ingredientRefs": [
+        11,
+        12,
+        13,
+        14
+      ],
+      "timers": [
+        {
+          "text": "1 minute",
+          "seconds": 60
+        },
+        {
+          "text": "3 minutes",
+          "seconds": 180
+        }
+      ]
+    },
+    {
+      "text": "In a separate pan, fry 4 eggs sunny side up, about 3 minutes, until the whites are set and the yolks runny.",
+      "ingredientRefs": [
+        15
+      ],
+      "timers": [
+        {
+          "text": "3 minutes",
+          "seconds": 180
+        }
+      ]
+    },
+    {
+      "text": "Scoop 900 g hot cooked white rice into bowls, top each with a patty, plenty of gravy and an egg. Scatter with 2 scallions, sliced.",
+      "ingredientRefs": [
+        16,
+        17
+      ],
+      "timers": []
+    }
+  ],
+  "notes": "The gravy is the point: make it in the patty pan so it picks up the fond. Add a splash more stock if it tightens while standing. Shoyu in both the patty and the gravy is the local touch. Some spots add Spam or Portuguese sausage alongside.",
+  "servings": 4,
+  "tags": [],
+  "chatUrl": null,
+  "chapter": "rice",
+  "cuisine": "Hawaiian",
+  "favorite": false,
+  "log": [],
+  "createdAt": "2026-10-07T02:11:29.847Z",
+  "updatedAt": "2026-10-07T02:11:29.847Z"
+}

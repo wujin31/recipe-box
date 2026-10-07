@@ -1,0 +1,204 @@
+{
+  "id": "roumo-shao-doufu",
+  "name": "肉末燒豆腐 (Ròumò Shāo Dòufu) · Soy-Braised Tofu with Ground Pork",
+  "nativeName": "肉末燒豆腐",
+  "romanized": "Ròumò Shāo Dòufu",
+  "englishName": "Soy-Braised Tofu with Ground Pork",
+  "description": "Everyday Taiwanese home cooking: firm tofu pan-fried until golden, then simmered with ground pork in a soy and oyster sauce braise until it drinks up the sauce. Serves 3.",
+  "ingredients": [
+    {
+      "text": "450 g firm tofu, cut into 2 cm thick squares",
+      "qty": 450,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "firm tofu, cut into 2 cm thick squares"
+    },
+    {
+      "text": "2 tbsp neutral oil",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "neutral oil"
+    },
+    {
+      "text": "150 g ground pork",
+      "qty": 150,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "ground pork"
+    },
+    {
+      "text": "3 garlic cloves, minced",
+      "qty": 3,
+      "qtyMax": null,
+      "unit": null,
+      "item": "garlic cloves, minced"
+    },
+    {
+      "text": "10 g ginger, minced",
+      "qty": 10,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "ginger, minced"
+    },
+    {
+      "text": "3 scallions, whites and greens sliced separately",
+      "qty": 3,
+      "qtyMax": null,
+      "unit": null,
+      "item": "scallions, whites and greens sliced separately"
+    },
+    {
+      "text": "1 tbsp Shaoxing wine",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "Shaoxing wine"
+    },
+    {
+      "text": "2 tbsp soy sauce",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "soy sauce"
+    },
+    {
+      "text": "1 tbsp oyster sauce",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "oyster sauce"
+    },
+    {
+      "text": "1/2 tsp dark soy sauce",
+      "qty": 0.5,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "dark soy sauce"
+    },
+    {
+      "text": "1 tsp sugar",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "sugar"
+    },
+    {
+      "text": "1/4 tsp ground white pepper",
+      "qty": 0.25,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "ground white pepper"
+    },
+    {
+      "text": "180 ml water or chicken stock",
+      "qty": 180,
+      "qtyMax": null,
+      "unit": "ml",
+      "item": "water or chicken stock"
+    },
+    {
+      "text": "1 tsp cornstarch",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "cornstarch"
+    },
+    {
+      "text": "1 tbsp water (for the slurry)",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "water (for the slurry)"
+    },
+    {
+      "text": "1/2 tsp sesame oil",
+      "qty": 0.5,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "sesame oil"
+    }
+  ],
+  "steps": [
+    {
+      "text": "Pat 450 g firm tofu, cut into 2 cm thick squares very dry with paper towels.",
+      "ingredientRefs": [
+        0
+      ],
+      "timers": []
+    },
+    {
+      "text": "Heat 2 tbsp neutral oil in a nonstick or well-seasoned pan over medium-high. Fry the tofu 3 minutes per side, until golden, then set aside.",
+      "ingredientRefs": [
+        1
+      ],
+      "timers": [
+        {
+          "text": "3 minutes",
+          "seconds": 180
+        }
+      ]
+    },
+    {
+      "text": "Add 150 g ground pork to the same pan and break it up. Cook 3 minutes, until browned. Add 3 garlic cloves, minced, 10 g ginger, minced and the scallion whites from 3 scallions, whites and greens sliced separately and stir 30 seconds.",
+      "ingredientRefs": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "timers": [
+        {
+          "text": "3 minutes",
+          "seconds": 180
+        },
+        {
+          "text": "30 seconds",
+          "seconds": 30
+        }
+      ]
+    },
+    {
+      "text": "Pour in 1 tbsp Shaoxing wine, then add 2 tbsp soy sauce, 1 tbsp oyster sauce, 1/2 tsp dark soy sauce, 1 tsp sugar, 1/4 tsp ground white pepper and 180 ml water or chicken stock. Return the tofu, bring to a boil and simmer over medium-low for 8 minutes, turning the tofu once, until the sauce has reduced by half.",
+      "ingredientRefs": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "timers": [
+        {
+          "text": "8 minutes",
+          "seconds": 480
+        }
+      ]
+    },
+    {
+      "text": "Stir 1 tsp cornstarch into 1 tbsp water (for the slurry), pour it in and simmer 30 seconds until glossy. Drizzle with 1/2 tsp sesame oil, scatter the scallion greens and serve with rice.",
+      "ingredientRefs": [
+        13,
+        14,
+        15
+      ],
+      "timers": [
+        {
+          "text": "30 seconds",
+          "seconds": 30
+        }
+      ]
+    }
+  ],
+  "notes": "Frying the tofu first gives it a skin that holds together and soaks up sauce like a sponge. A few sliced rehydrated shiitake (add with the pork) or a spoon of doubanjiang (with the aromatics, for 家常豆腐 style) are common additions.",
+  "servings": 3,
+  "tags": [],
+  "chatUrl": null,
+  "chapter": "mains",
+  "cuisine": "Taiwanese",
+  "favorite": false,
+  "log": [],
+  "createdAt": "2026-10-07T02:11:25.606Z",
+  "updatedAt": "2026-10-07T02:11:25.606Z"
+}

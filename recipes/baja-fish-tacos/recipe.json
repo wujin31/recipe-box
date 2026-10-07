@@ -1,0 +1,281 @@
+{
+  "id": "baja-fish-tacos",
+  "name": "Baja Fish Tacos — Ensenada-Style Beer-Battered Tacos de Pescado",
+  "nativeName": "",
+  "romanized": "",
+  "englishName": "Baja Fish Tacos",
+  "subtitle": "Ensenada-Style Beer-Battered Tacos de Pescado",
+  "description": "Ensenada street-cart fish tacos: strips of white fish in a light, crackly beer batter, fried and tucked into warm corn tortillas with shredded cabbage, thin crema, salsa bandera and lime. Serves 4 (12 tacos).",
+  "ingredients": [
+    {
+      "text": "680 g firm white fish (cod, halibut, rockfish or mahi-mahi), cut into 2 × 10 cm strips",
+      "qty": 680,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "firm white fish (cod, halibut, rockfish or mahi-mahi), cut into 2 × 10 cm strips",
+      "group": "For the fish"
+    },
+    {
+      "text": "1 tsp salt (for the fish)",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "salt (for the fish)",
+      "group": "For the fish"
+    },
+    {
+      "text": "130 g all-purpose flour",
+      "qty": 130,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "all-purpose flour",
+      "group": "For the fish"
+    },
+    {
+      "text": "1/2 tsp baking powder",
+      "qty": 0.5,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "baking powder",
+      "group": "For the fish"
+    },
+    {
+      "text": "1 tsp salt (for the batter)",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "salt (for the batter)",
+      "group": "For the fish"
+    },
+    {
+      "text": "1/2 tsp Mexican oregano",
+      "qty": 0.5,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "Mexican oregano",
+      "group": "For the fish"
+    },
+    {
+      "text": "1 tsp yellow mustard",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "yellow mustard",
+      "group": "For the fish"
+    },
+    {
+      "text": "250 ml cold Mexican lager",
+      "qty": 250,
+      "qtyMax": null,
+      "unit": "ml",
+      "item": "cold Mexican lager",
+      "group": "For the fish"
+    },
+    {
+      "text": "40 g all-purpose flour (for dredging)",
+      "qty": 40,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "all-purpose flour (for dredging)",
+      "group": "For the fish"
+    },
+    {
+      "text": "1 L neutral oil (for frying)",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "l",
+      "item": "neutral oil (for frying)",
+      "group": "For the fish"
+    },
+    {
+      "text": "120 ml Mexican crema",
+      "qty": 120,
+      "qtyMax": null,
+      "unit": "ml",
+      "item": "Mexican crema",
+      "group": "For the crema"
+    },
+    {
+      "text": "2 tbsp mayonnaise",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "mayonnaise",
+      "group": "For the crema"
+    },
+    {
+      "text": "1 tbsp lime juice",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "lime juice",
+      "group": "For the crema"
+    },
+    {
+      "text": "1 tbsp milk",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "milk",
+      "group": "For the crema"
+    },
+    {
+      "text": "2 Roma tomatoes, finely diced",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": null,
+      "item": "Roma tomatoes, finely diced",
+      "group": "For the salsa bandera"
+    },
+    {
+      "text": "1/2 white onion, finely diced",
+      "qty": 0.5,
+      "qtyMax": null,
+      "unit": null,
+      "item": "white onion, finely diced",
+      "group": "For the salsa bandera"
+    },
+    {
+      "text": "1 serrano chile, minced",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": null,
+      "item": "serrano chile, minced",
+      "group": "For the salsa bandera"
+    },
+    {
+      "text": "1/2 bunch cilantro, chopped",
+      "qty": 0.5,
+      "qtyMax": null,
+      "unit": "bunch",
+      "item": "cilantro, chopped",
+      "group": "For the salsa bandera"
+    },
+    {
+      "text": "1 tbsp lime juice (for the salsa)",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "lime juice (for the salsa)",
+      "group": "For the salsa bandera"
+    },
+    {
+      "text": "1/2 tsp salt (for the salsa)",
+      "qty": 0.5,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "salt (for the salsa)",
+      "group": "For the salsa bandera"
+    },
+    {
+      "text": "200 g green cabbage, very finely shredded",
+      "qty": 200,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "green cabbage, very finely shredded",
+      "group": "To serve"
+    },
+    {
+      "text": "12 corn tortillas",
+      "qty": 12,
+      "qtyMax": null,
+      "unit": null,
+      "item": "corn tortillas",
+      "group": "To serve"
+    },
+    {
+      "text": "2 limes, cut into wedges",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": null,
+      "item": "limes, cut into wedges",
+      "group": "To serve"
+    }
+  ],
+  "steps": [
+    {
+      "text": "Mix 2 Roma tomatoes, finely diced, 1/2 white onion, finely diced, 1 serrano chile, minced, 1/2 bunch cilantro, chopped, 1 tbsp lime juice (for the salsa) and 1/2 tsp salt (for the salsa) for the salsa. Whisk 120 ml Mexican crema, 2 tbsp mayonnaise, 1 tbsp lime juice and 1 tbsp milk until pourable.",
+      "ingredientRefs": [
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "timers": []
+    },
+    {
+      "text": "Pat 680 g firm white fish (cod, halibut, rockfish or mahi-mahi), cut into 2 × 10 cm strips dry and season with 1 tsp salt (for the fish).",
+      "ingredientRefs": [
+        0,
+        1
+      ],
+      "timers": []
+    },
+    {
+      "text": "Whisk 130 g all-purpose flour, 1/2 tsp baking powder, 1 tsp salt (for the batter) and 1/2 tsp Mexican oregano. Add 1 tsp yellow mustard and 250 ml cold Mexican lager and whisk just until smooth, like thin pancake batter. Don't overmix.",
+      "ingredientRefs": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "timers": []
+    },
+    {
+      "text": "Heat 1 L neutral oil (for frying) in a deep pot to 185°C.",
+      "ingredientRefs": [
+        9
+      ],
+      "timers": []
+    },
+    {
+      "text": "Dust the fish strips in 40 g all-purpose flour (for dredging), dip in the batter and let the excess drip off, then lower them into the oil away from you. Fry 4 at a time for 4 minutes, turning once, until deep golden and crisp. Drain on a rack.",
+      "ingredientRefs": [
+        8
+      ],
+      "timers": [
+        {
+          "text": "4 minutes",
+          "seconds": 240
+        }
+      ]
+    },
+    {
+      "text": "Warm 12 corn tortillas on a hot comal or dry pan for 30 seconds per side, stacking them in a towel.",
+      "ingredientRefs": [
+        21
+      ],
+      "timers": [
+        {
+          "text": "30 seconds",
+          "seconds": 30
+        }
+      ]
+    },
+    {
+      "text": "Put a piece of fish in each tortilla (doubled if thin), top with 200 g green cabbage, very finely shredded, a drizzle of crema and salsa, and serve with 2 limes, cut into wedges.",
+      "ingredientRefs": [
+        20,
+        22
+      ],
+      "timers": []
+    }
+  ],
+  "notes": "The batter should be cold and freshly mixed: the beer's bubbles and the baking powder are what make it lacy and light. Let the oil come back to 185°C between batches.\n\nEnsenada stands also set out pickled jalapeños and carrots, guacamole and bottled hot sauce. Shrimp work the same way (tacos de camarón): fry 2 minutes.",
+  "servings": 4,
+  "tags": [],
+  "chatUrl": null,
+  "chapter": "mains",
+  "favorite": false,
+  "log": [],
+  "createdAt": "2026-10-07T02:11:32.417Z",
+  "updatedAt": "2026-10-07T02:11:32.417Z"
+}

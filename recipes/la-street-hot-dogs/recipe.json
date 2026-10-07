@@ -1,0 +1,175 @@
+{
+  "id": "la-street-hot-dogs",
+  "name": "LA Street Dogs — Bacon-Wrapped Hot Dogs with Grilled Onions and Peppers",
+  "nativeName": "",
+  "romanized": "",
+  "englishName": "LA Street Dogs",
+  "subtitle": "Bacon-Wrapped Hot Dogs with Grilled Onions and Peppers",
+  "description": "The Los Angeles \"danger dog\" from the carts outside concerts and ballgames: bacon-wrapped franks griddled crisp, piled with onions and peppers cooked in the bacon fat, mayo, ketchup, mustard and a charred whole jalapeño. Serves 4 (8 dogs).",
+  "ingredients": [
+    {
+      "text": "8 all-beef hot dogs",
+      "qty": 8,
+      "qtyMax": null,
+      "unit": null,
+      "item": "all-beef hot dogs"
+    },
+    {
+      "text": "8 slices thin-cut bacon",
+      "qty": 8,
+      "qtyMax": null,
+      "unit": "slice",
+      "item": "thin-cut bacon"
+    },
+    {
+      "text": "8 soft hot dog buns",
+      "qty": 8,
+      "qtyMax": null,
+      "unit": null,
+      "item": "soft hot dog buns"
+    },
+    {
+      "text": "1 large white onion, sliced",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": null,
+      "item": "large white onion, sliced"
+    },
+    {
+      "text": "1 green bell pepper, sliced",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": null,
+      "item": "green bell pepper, sliced"
+    },
+    {
+      "text": "8 jalapeños",
+      "qty": 8,
+      "qtyMax": null,
+      "unit": null,
+      "item": "jalapeños"
+    },
+    {
+      "text": "1/4 tsp salt",
+      "qty": 0.25,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "salt"
+    },
+    {
+      "text": "4 tbsp mayonnaise",
+      "qty": 4,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "mayonnaise"
+    },
+    {
+      "text": "4 tbsp ketchup",
+      "qty": 4,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "ketchup"
+    },
+    {
+      "text": "4 tbsp yellow mustard",
+      "qty": 4,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "yellow mustard"
+    },
+    {
+      "text": "1 tomato, finely diced",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": null,
+      "item": "tomato, finely diced"
+    },
+    {
+      "text": "1/4 white onion, finely diced",
+      "qty": 0.25,
+      "qtyMax": null,
+      "unit": null,
+      "item": "white onion, finely diced"
+    },
+    {
+      "text": "2 tbsp chopped cilantro",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "chopped cilantro"
+    }
+  ],
+  "steps": [
+    {
+      "text": "Wrap each of 8 all-beef hot dogs in a slice of 8 slices thin-cut bacon in a tight spiral, tucking or pinning the ends with toothpicks.",
+      "ingredientRefs": [
+        0,
+        1
+      ],
+      "timers": []
+    },
+    {
+      "text": "Heat a griddle or large cast-iron pan over medium. Cook the dogs seam side down first, turning, for 10 minutes, until the bacon is crisp all over.",
+      "ingredientRefs": [],
+      "timers": [
+        {
+          "text": "10 minutes",
+          "seconds": 600
+        }
+      ]
+    },
+    {
+      "text": "Push the dogs to the side and cook 1 large white onion, sliced, 1 green bell pepper, sliced and 1/4 tsp salt in the rendered bacon fat for 10 minutes, stirring, until soft and charred in spots. At the same time, char 8 jalapeños whole for 8 minutes, turning.",
+      "ingredientRefs": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "timers": [
+        {
+          "text": "10 minutes",
+          "seconds": 600
+        },
+        {
+          "text": "8 minutes",
+          "seconds": 480
+        }
+      ]
+    },
+    {
+      "text": "Warm 8 soft hot dog buns on the griddle for 1 minute. Mix 1 tomato, finely diced, 1/4 white onion, finely diced and 2 tbsp chopped cilantro for a quick pico.",
+      "ingredientRefs": [
+        2,
+        10,
+        11,
+        12
+      ],
+      "timers": [
+        {
+          "text": "1 minute",
+          "seconds": 60
+        }
+      ]
+    },
+    {
+      "text": "Spread the buns with 4 tbsp mayonnaise, add a dog, pile on onions and peppers, then zigzag 4 tbsp ketchup and 4 tbsp yellow mustard on top and spoon on the pico. Serve each with a charred jalapeño on the side.",
+      "ingredientRefs": [
+        7,
+        8,
+        9
+      ],
+      "timers": []
+    }
+  ],
+  "notes": "Thin bacon crisps in the same time it takes the hot dog to heat through; thick bacon stays flabby. Remove the toothpicks before serving. Bolillo rolls are the other popular bun.",
+  "servings": 4,
+  "tags": [],
+  "chatUrl": null,
+  "chapter": "mains",
+  "cuisine": "American",
+  "favorite": false,
+  "log": [],
+  "createdAt": "2026-10-07T02:11:36.634Z",
+  "updatedAt": "2026-10-07T02:11:36.634Z"
+}

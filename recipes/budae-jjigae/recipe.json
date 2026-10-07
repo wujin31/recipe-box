@@ -1,0 +1,231 @@
+{
+  "id": "budae-jjigae",
+  "name": "부대찌개 (Budae Jjigae) · Korean Army Base Stew",
+  "nativeName": "부대찌개",
+  "romanized": "Budae Jjigae",
+  "englishName": "Korean Army Base Stew",
+  "description": "The postwar stew born from US army rations: Spam, hot dogs, kimchi, tofu and baked beans arranged in a shallow pot with a spicy gochugaru sauce, boiled at the table and finished with instant ramen and American cheese. Serves 4.",
+  "ingredients": [
+    {
+      "text": "2 tbsp gochugaru (Korean chili flakes)",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "gochugaru (Korean chili flakes)",
+      "group": "For the sauce"
+    },
+    {
+      "text": "1 tbsp gochujang",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "gochujang",
+      "group": "For the sauce"
+    },
+    {
+      "text": "1 tbsp soy sauce",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "soy sauce",
+      "group": "For the sauce"
+    },
+    {
+      "text": "1 tbsp mirin",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "mirin",
+      "group": "For the sauce"
+    },
+    {
+      "text": "1 tbsp minced garlic",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "minced garlic",
+      "group": "For the sauce"
+    },
+    {
+      "text": "1 tsp sugar",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "sugar",
+      "group": "For the sauce"
+    },
+    {
+      "text": "1/4 tsp black pepper",
+      "qty": 0.25,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "black pepper",
+      "group": "For the sauce"
+    },
+    {
+      "text": "1 L anchovy-kelp stock, beef stock or chicken stock",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "l",
+      "item": "anchovy-kelp stock, beef stock or chicken stock",
+      "group": "For the stew"
+    },
+    {
+      "text": "200 g well-fermented kimchi, chopped",
+      "qty": 200,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "well-fermented kimchi, chopped",
+      "group": "For the stew"
+    },
+    {
+      "text": "170 g Spam (1/2 can), sliced 5 mm thick",
+      "qty": 170,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "Spam (1/2 can), sliced 5 mm thick",
+      "group": "For the stew"
+    },
+    {
+      "text": "2 hot dogs, sliced on the diagonal",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": null,
+      "item": "hot dogs, sliced on the diagonal",
+      "group": "For the stew"
+    },
+    {
+      "text": "200 g firm tofu, sliced 1 cm thick",
+      "qty": 200,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "firm tofu, sliced 1 cm thick",
+      "group": "For the stew"
+    },
+    {
+      "text": "1/2 onion, sliced",
+      "qty": 0.5,
+      "qtyMax": null,
+      "unit": null,
+      "item": "onion, sliced",
+      "group": "For the stew"
+    },
+    {
+      "text": "100 g enoki or shiitake mushrooms",
+      "qty": 100,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "enoki or shiitake mushrooms",
+      "group": "For the stew"
+    },
+    {
+      "text": "100 g sliced rice cakes (tteok), soaked if hard",
+      "qty": 100,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "sliced rice cakes (tteok), soaked if hard",
+      "group": "For the stew"
+    },
+    {
+      "text": "3 tbsp canned baked beans",
+      "qty": 3,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "canned baked beans",
+      "group": "For the stew"
+    },
+    {
+      "text": "3 scallions, cut into 5 cm lengths",
+      "qty": 3,
+      "qtyMax": null,
+      "unit": null,
+      "item": "scallions, cut into 5 cm lengths",
+      "group": "For the stew"
+    },
+    {
+      "text": "1 pack instant ramen noodles (discard the seasoning or use half)",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": null,
+      "item": "pack instant ramen noodles (discard the seasoning or use half)",
+      "group": "For the stew"
+    },
+    {
+      "text": "1 slice American cheese",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "slice",
+      "item": "American cheese",
+      "group": "For the stew"
+    }
+  ],
+  "steps": [
+    {
+      "text": "Mix 2 tbsp gochugaru (Korean chili flakes), 1 tbsp gochujang, 1 tbsp soy sauce, 1 tbsp mirin, 1 tbsp minced garlic, 1 tsp sugar and 1/4 tsp black pepper into a paste.",
+      "ingredientRefs": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "timers": []
+    },
+    {
+      "text": "In a wide shallow pot, arrange 200 g well-fermented kimchi, chopped, 170 g Spam (1/2 can), sliced 5 mm thick, 2 hot dogs, sliced on the diagonal, 200 g firm tofu, sliced 1 cm thick, 1/2 onion, sliced, 100 g enoki or shiitake mushrooms and 100 g sliced rice cakes (tteok), soaked if hard in neat sections around the edge. Spoon 3 tbsp canned baked beans and the sauce into the center and lay 3 scallions, cut into 5 cm lengths on top.",
+      "ingredientRefs": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "timers": []
+    },
+    {
+      "text": "Pour in 1 L anchovy-kelp stock, beef stock or chicken stock around the edge, bring to a boil over high heat and boil 8 minutes, gently stirring the sauce into the broth.",
+      "ingredientRefs": [
+        7
+      ],
+      "timers": [
+        {
+          "text": "8 minutes",
+          "seconds": 480
+        }
+      ]
+    },
+    {
+      "text": "Add 1 pack instant ramen noodles (discard the seasoning or use half) and cook 3 minutes, until the noodles loosen and are just tender. Lay 1 slice American cheese on top and let it melt into the broth.",
+      "ingredientRefs": [
+        17,
+        18
+      ],
+      "timers": [
+        {
+          "text": "3 minutes",
+          "seconds": 180
+        }
+      ]
+    },
+    {
+      "text": "Serve straight from the pot at the table, ladling into bowls with rice on the side.",
+      "ingredientRefs": [],
+      "timers": []
+    }
+  ],
+  "notes": "Anchovy-kelp stock is traditional (soak 6 dried anchovies and a 10 cm piece of kombu in 1.2 L water, boil 15 minutes, strain), but beef bone broth (sagol) is what many restaurants use. Spam and kimchi are salty, so taste before adding any salt.\n\nA portable burner at the table is the proper way to eat it: keep it bubbling and add more stock, noodles or rice cakes as it goes.",
+  "servings": 4,
+  "tags": [],
+  "chatUrl": null,
+  "chapter": "soups",
+  "favorite": false,
+  "log": [],
+  "createdAt": "2026-10-07T02:11:29.294Z",
+  "updatedAt": "2026-10-07T02:11:29.294Z"
+}

@@ -1,0 +1,204 @@
+{
+  "id": "weeknight-fancy-chicken-and-rice",
+  "name": "Weeknight Fancy Chicken and Rice — One-Pan Saffron Chicken with Herbs",
+  "nativeName": "",
+  "romanized": "",
+  "englishName": "Weeknight Fancy Chicken and Rice",
+  "subtitle": "One-Pan Saffron Chicken with Herbs",
+  "description": "Crisp-skinned chicken thighs baked on top of saffron and lemon rice that cooks in the chicken drippings, finished with a pile of fresh herbs, toasted almonds and garlicky yogurt. One pan. Serves 4.",
+  "ingredients": [
+    {
+      "text": "8 bone-in, skin-on chicken thighs (about 1.4 kg)",
+      "qty": 8,
+      "qtyMax": null,
+      "unit": null,
+      "item": "bone-in, skin-on chicken thighs (about 1.4 kg)"
+    },
+    {
+      "text": "2 tsp kosher salt",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "kosher salt"
+    },
+    {
+      "text": "1/2 tsp black pepper",
+      "qty": 0.5,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "black pepper"
+    },
+    {
+      "text": "1 tsp ground cumin",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "ground cumin"
+    },
+    {
+      "text": "1 tbsp olive oil",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "olive oil"
+    },
+    {
+      "text": "1 onion, finely chopped",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": null,
+      "item": "onion, finely chopped"
+    },
+    {
+      "text": "4 garlic cloves, minced",
+      "qty": 4,
+      "qtyMax": null,
+      "unit": null,
+      "item": "garlic cloves, minced"
+    },
+    {
+      "text": "300 g basmati rice, rinsed",
+      "qty": 300,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "basmati rice, rinsed"
+    },
+    {
+      "text": "1 large pinch saffron, crumbled into 2 tbsp hot water",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": null,
+      "item": "large pinch saffron, crumbled into 2 tbsp hot water"
+    },
+    {
+      "text": "600 ml chicken stock",
+      "qty": 600,
+      "qtyMax": null,
+      "unit": "ml",
+      "item": "chicken stock"
+    },
+    {
+      "text": "1 lemon, zested, then cut into wedges",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": null,
+      "item": "lemon, zested, then cut into wedges"
+    },
+    {
+      "text": "30 g mixed herbs (parsley, dill, cilantro, mint), chopped",
+      "qty": 30,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "mixed herbs (parsley, dill, cilantro, mint), chopped"
+    },
+    {
+      "text": "40 g sliced almonds, toasted",
+      "qty": 40,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "sliced almonds, toasted"
+    },
+    {
+      "text": "200 g plain Greek yogurt",
+      "qty": 200,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "plain Greek yogurt"
+    },
+    {
+      "text": "1 small garlic clove, grated (for the yogurt)",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": null,
+      "item": "small garlic clove, grated (for the yogurt)"
+    }
+  ],
+  "steps": [
+    {
+      "text": "Heat the oven to 200°C. Pat 8 bone-in, skin-on chicken thighs (about 1.4 kg) dry and season with 2 tsp kosher salt, 1/2 tsp black pepper and 1 tsp ground cumin.",
+      "ingredientRefs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "timers": []
+    },
+    {
+      "text": "Heat 1 tbsp olive oil in a large ovenproof skillet or braiser over medium-high. Cook the thighs skin side down for 8 minutes, until the skin is deep golden and crisp. Transfer to a plate skin side up. Pour off all but 2 tbsp fat.",
+      "ingredientRefs": [
+        4
+      ],
+      "timers": [
+        {
+          "text": "8 minutes",
+          "seconds": 480
+        }
+      ]
+    },
+    {
+      "text": "Lower the heat to medium. Cook 1 onion, finely chopped for 5 minutes, until soft. Add 4 garlic cloves, minced and 300 g basmati rice, rinsed and stir 2 minutes, until the grains are coated and translucent at the edges.",
+      "ingredientRefs": [
+        5,
+        6,
+        7
+      ],
+      "timers": [
+        {
+          "text": "5 minutes",
+          "seconds": 300
+        },
+        {
+          "text": "2 minutes",
+          "seconds": 120
+        }
+      ]
+    },
+    {
+      "text": "Add 600 ml chicken stock, 1 large pinch saffron, crumbled into 2 tbsp hot water with its water and the zest of 1 lemon, zested, then cut into wedges. Bring to a simmer and season with a pinch of salt.",
+      "ingredientRefs": [
+        8,
+        9,
+        10
+      ],
+      "timers": []
+    },
+    {
+      "text": "Nestle the chicken on top, skin side up and above the liquid. Bake uncovered for 35 minutes, until the rice is tender, the liquid absorbed and the chicken 80°C at the bone.",
+      "ingredientRefs": [],
+      "timers": [
+        {
+          "text": "35 minutes",
+          "seconds": 2100
+        }
+      ]
+    },
+    {
+      "text": "Rest 10 minutes. Stir 1 small garlic clove, grated (for the yogurt) and a pinch of salt into 200 g plain Greek yogurt. Scatter 30 g mixed herbs (parsley, dill, cilantro, mint), chopped and 40 g sliced almonds, toasted over the pan and serve with the yogurt and lemon wedges.",
+      "ingredientRefs": [
+        11,
+        12,
+        13,
+        14
+      ],
+      "timers": [
+        {
+          "text": "10 minutes",
+          "seconds": 600
+        }
+      ]
+    }
+  ],
+  "notes": "Keep the chicken skin above the liquid so it stays crisp in the oven. The crust that forms on the bottom of the pan is a bonus, like a tahdig. Golden raisins or barberries stirred into the rice are a nice Persian-leaning touch.",
+  "servings": 4,
+  "tags": [
+    "to-try"
+  ],
+  "chatUrl": null,
+  "chapter": "rice",
+  "cuisine": "Middle Eastern",
+  "favorite": false,
+  "log": [],
+  "createdAt": "2026-10-07T02:11:43.956Z",
+  "updatedAt": "2026-10-07T02:11:43.956Z"
+}

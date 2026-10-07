@@ -1,0 +1,268 @@
+{
+  "id": "sheet-pan-bibimbap",
+  "name": "Sheet-Pan Bibimbap",
+  "nativeName": "",
+  "romanized": "",
+  "englishName": "Sheet-Pan Bibimbap",
+  "description": "A weeknight bibimbap: marinated beef and the vegetables roasted on one sheet pan instead of stir-fried one by one, piled on rice with fried eggs and a sesame gochujang sauce. Serves 4.",
+  "ingredients": [
+    {
+      "text": "450 g thinly sliced ribeye or sirloin (bulgogi cut)",
+      "qty": 450,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "thinly sliced ribeye or sirloin (bulgogi cut)",
+      "group": "For the beef"
+    },
+    {
+      "text": "2 tbsp soy sauce",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "soy sauce",
+      "group": "For the beef"
+    },
+    {
+      "text": "1 tbsp brown sugar",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "brown sugar",
+      "group": "For the beef"
+    },
+    {
+      "text": "1 tbsp toasted sesame oil",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "toasted sesame oil",
+      "group": "For the beef"
+    },
+    {
+      "text": "2 garlic cloves, grated",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": null,
+      "item": "garlic cloves, grated",
+      "group": "For the beef"
+    },
+    {
+      "text": "2 carrots, cut into matchsticks",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": null,
+      "item": "carrots, cut into matchsticks",
+      "group": "For the vegetables"
+    },
+    {
+      "text": "1 zucchini, cut into half-moons",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": null,
+      "item": "zucchini, cut into half-moons",
+      "group": "For the vegetables"
+    },
+    {
+      "text": "200 g shiitake mushrooms, sliced",
+      "qty": 200,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "shiitake mushrooms, sliced",
+      "group": "For the vegetables"
+    },
+    {
+      "text": "3 tbsp neutral oil",
+      "qty": 3,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "neutral oil",
+      "group": "For the vegetables"
+    },
+    {
+      "text": "1/2 tsp salt",
+      "qty": 0.5,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "salt",
+      "group": "For the vegetables"
+    },
+    {
+      "text": "200 g baby spinach",
+      "qty": 200,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "baby spinach",
+      "group": "For the vegetables"
+    },
+    {
+      "text": "1 tsp toasted sesame oil (for the spinach)",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "toasted sesame oil (for the spinach)",
+      "group": "For the vegetables"
+    },
+    {
+      "text": "3 tbsp gochujang",
+      "qty": 3,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "gochujang",
+      "group": "For the sauce"
+    },
+    {
+      "text": "1 tbsp toasted sesame oil (for the sauce)",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "toasted sesame oil (for the sauce)",
+      "group": "For the sauce"
+    },
+    {
+      "text": "1 tbsp rice vinegar",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "rice vinegar",
+      "group": "For the sauce"
+    },
+    {
+      "text": "1 tbsp honey",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "honey",
+      "group": "For the sauce"
+    },
+    {
+      "text": "1 tbsp water",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "water",
+      "group": "For the sauce"
+    },
+    {
+      "text": "900 g hot cooked short-grain rice",
+      "qty": 900,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "hot cooked short-grain rice",
+      "group": "To serve"
+    },
+    {
+      "text": "4 eggs",
+      "qty": 4,
+      "qtyMax": null,
+      "unit": null,
+      "item": "eggs",
+      "group": "To serve"
+    },
+    {
+      "text": "200 g kimchi",
+      "qty": 200,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "kimchi",
+      "group": "To serve"
+    },
+    {
+      "text": "1 tbsp toasted sesame seeds",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "toasted sesame seeds",
+      "group": "To serve"
+    }
+  ],
+  "steps": [
+    {
+      "text": "Heat the oven to 230°C. Toss 450 g thinly sliced ribeye or sirloin (bulgogi cut) with 2 tbsp soy sauce, 1 tbsp brown sugar, 1 tbsp toasted sesame oil and 2 garlic cloves, grated and marinate while you prep.",
+      "ingredientRefs": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "timers": []
+    },
+    {
+      "text": "Toss 2 carrots, cut into matchsticks, 1 zucchini, cut into half-moons and 200 g shiitake mushrooms, sliced separately with 3 tbsp neutral oil and 1/2 tsp salt, and spread them in their own sections on a large sheet pan. Roast 12 minutes.",
+      "ingredientRefs": [
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "timers": [
+        {
+          "text": "12 minutes",
+          "seconds": 720
+        }
+      ]
+    },
+    {
+      "text": "Push the vegetables together and spread the beef on the free part of the pan in a thin layer. Roast 6 minutes more, until the beef is cooked and the vegetables are browned at the edges.",
+      "ingredientRefs": [],
+      "timers": [
+        {
+          "text": "6 minutes",
+          "seconds": 360
+        }
+      ]
+    },
+    {
+      "text": "Meanwhile, wilt 200 g baby spinach in a hot pan for 1 minute and toss with 1 tsp toasted sesame oil (for the spinach) and a pinch of salt. Whisk 3 tbsp gochujang, 1 tbsp toasted sesame oil (for the sauce), 1 tbsp rice vinegar, 1 tbsp honey and 1 tbsp water.",
+      "ingredientRefs": [
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "timers": [
+        {
+          "text": "1 minute",
+          "seconds": 60
+        }
+      ]
+    },
+    {
+      "text": "Fry 4 eggs sunny side up for 3 minutes, until the whites are crisp at the edges.",
+      "ingredientRefs": [
+        18
+      ],
+      "timers": [
+        {
+          "text": "3 minutes",
+          "seconds": 180
+        }
+      ]
+    },
+    {
+      "text": "Divide 900 g hot cooked short-grain rice among bowls and arrange the beef, vegetables, spinach and 200 g kimchi on top in sections. Top with an egg, sauce and 1 tbsp toasted sesame seeds. Mix everything together before eating.",
+      "ingredientRefs": [
+        17,
+        19,
+        20
+      ],
+      "timers": []
+    }
+  ],
+  "notes": "For dolsot-style crispy rice, press the rice into a hot oiled cast-iron pan and cook undisturbed for 8 minutes before topping. Bean sprouts (blanched 2 minutes, dressed with sesame oil and salt) are a classic addition.",
+  "servings": 4,
+  "tags": [
+    "to-try"
+  ],
+  "chatUrl": null,
+  "chapter": "rice",
+  "cuisine": "Korean",
+  "favorite": false,
+  "log": [],
+  "createdAt": "2026-10-07T02:11:40.275Z",
+  "updatedAt": "2026-10-07T02:11:40.275Z"
+}

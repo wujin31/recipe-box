@@ -1,0 +1,120 @@
+{
+  "id": "spaghetti-aglio-olio",
+  "name": "Spaghetti Aglio, Olio e Peperoncino — Garlic, Oil and Chili Pasta",
+  "nativeName": "",
+  "romanized": "",
+  "englishName": "Spaghetti Aglio, Olio e Peperoncino",
+  "subtitle": "Garlic, Oil and Chili Pasta",
+  "description": "The Roman late-night pantry pasta: garlic gently sizzled in plenty of olive oil with dried chili, emulsified with starchy pasta water into a light, clinging sauce. Serves 2.",
+  "ingredients": [
+    {
+      "text": "200 g spaghetti",
+      "qty": 200,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "spaghetti"
+    },
+    {
+      "text": "1 tbsp salt (for the pasta water)",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "salt (for the pasta water)"
+    },
+    {
+      "text": "60 ml extra-virgin olive oil",
+      "qty": 60,
+      "qtyMax": null,
+      "unit": "ml",
+      "item": "extra-virgin olive oil"
+    },
+    {
+      "text": "4 garlic cloves, thinly sliced",
+      "qty": 4,
+      "qtyMax": null,
+      "unit": null,
+      "item": "garlic cloves, thinly sliced"
+    },
+    {
+      "text": "1 dried peperoncino, crumbled (or 1/2 tsp red chili flakes)",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": null,
+      "item": "dried peperoncino, crumbled (or 1/2 tsp red chili flakes)"
+    },
+    {
+      "text": "10 g flat-leaf parsley, finely chopped",
+      "qty": 10,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "flat-leaf parsley, finely chopped"
+    },
+    {
+      "text": "1 tbsp extra-virgin olive oil (to finish)",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "extra-virgin olive oil (to finish)"
+    }
+  ],
+  "steps": [
+    {
+      "text": "Bring 2 L water to a boil with 1 tbsp salt (for the pasta water). Add 200 g spaghetti and cook 2 minutes less than the package time.",
+      "ingredientRefs": [
+        0,
+        1
+      ],
+      "timers": []
+    },
+    {
+      "text": "Meanwhile, put 60 ml extra-virgin olive oil and 4 garlic cloves, thinly sliced in a large cold skillet and set over low heat. Cook 4 minutes, swirling, until the garlic is pale golden at the edges; don't let it brown. Add 1 dried peperoncino, crumbled (or 1/2 tsp red chili flakes) for the last 30 seconds.",
+      "ingredientRefs": [
+        2,
+        3,
+        4
+      ],
+      "timers": [
+        {
+          "text": "4 minutes",
+          "seconds": 240
+        },
+        {
+          "text": "30 seconds",
+          "seconds": 30
+        }
+      ]
+    },
+    {
+      "text": "Add a ladle of pasta water to the skillet; it will sputter and turn cloudy.",
+      "ingredientRefs": [],
+      "timers": []
+    },
+    {
+      "text": "Transfer the pasta to the skillet with tongs and toss over medium-high heat for 2 minutes, adding splashes of pasta water, until the pasta is al dente and the sauce is creamy and clings.",
+      "ingredientRefs": [],
+      "timers": [
+        {
+          "text": "2 minutes",
+          "seconds": 120
+        }
+      ]
+    },
+    {
+      "text": "Off the heat, toss in 10 g flat-leaf parsley, finely chopped and drizzle with 1 tbsp extra-virgin olive oil (to finish). Serve immediately.",
+      "ingredientRefs": [
+        5,
+        6
+      ],
+      "timers": []
+    }
+  ],
+  "notes": "Start the garlic in cold oil so it infuses before it colors; browned garlic turns bitter and is the most common mistake. The emulsion is the dish: keep tossing and adding water until the oil and water turn into a glossy coating rather than a puddle.\n\nNo cheese in the Roman original. Toasted breadcrumbs (pangrattato) are the southern Italian \"poor man's parmesan\" if you want crunch.",
+  "servings": 2,
+  "tags": [],
+  "chatUrl": null,
+  "chapter": "rice",
+  "favorite": false,
+  "log": [],
+  "createdAt": "2026-10-07T02:11:34.963Z",
+  "updatedAt": "2026-10-07T02:11:34.963Z"
+}

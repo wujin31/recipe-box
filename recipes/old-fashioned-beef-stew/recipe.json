@@ -1,0 +1,243 @@
+{
+  "id": "old-fashioned-beef-stew",
+  "name": "Old-Fashioned Beef Stew",
+  "nativeName": "",
+  "romanized": "",
+  "englishName": "Old-Fashioned Beef Stew",
+  "description": "The Sunday classic: well-browned chuck braised low and slow in red wine and stock with tomato paste, thyme and bay, with carrots, potatoes and peas added late so they stay whole. Serves 6.",
+  "ingredients": [
+    {
+      "text": "1.4 kg boneless beef chuck, cut into 4 cm cubes",
+      "qty": 1.4,
+      "qtyMax": null,
+      "unit": "kg",
+      "item": "boneless beef chuck, cut into 4 cm cubes"
+    },
+    {
+      "text": "2 tsp kosher salt",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "kosher salt"
+    },
+    {
+      "text": "1 tsp black pepper",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "black pepper"
+    },
+    {
+      "text": "3 tbsp all-purpose flour",
+      "qty": 3,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "all-purpose flour"
+    },
+    {
+      "text": "3 tbsp neutral oil",
+      "qty": 3,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "neutral oil"
+    },
+    {
+      "text": "2 onions, chopped",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": null,
+      "item": "onions, chopped"
+    },
+    {
+      "text": "2 celery stalks, chopped",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": null,
+      "item": "celery stalks, chopped"
+    },
+    {
+      "text": "4 garlic cloves, minced",
+      "qty": 4,
+      "qtyMax": null,
+      "unit": null,
+      "item": "garlic cloves, minced"
+    },
+    {
+      "text": "2 tbsp tomato paste",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "tomato paste"
+    },
+    {
+      "text": "250 ml dry red wine",
+      "qty": 250,
+      "qtyMax": null,
+      "unit": "ml",
+      "item": "dry red wine"
+    },
+    {
+      "text": "1 L beef stock",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "l",
+      "item": "beef stock"
+    },
+    {
+      "text": "1 tbsp Worcestershire sauce",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "Worcestershire sauce"
+    },
+    {
+      "text": "4 sprigs fresh thyme",
+      "qty": 4,
+      "qtyMax": null,
+      "unit": "sprig",
+      "item": "fresh thyme"
+    },
+    {
+      "text": "2 bay leaves",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": null,
+      "item": "bay leaves"
+    },
+    {
+      "text": "4 carrots, cut into 3 cm chunks",
+      "qty": 4,
+      "qtyMax": null,
+      "unit": null,
+      "item": "carrots, cut into 3 cm chunks"
+    },
+    {
+      "text": "700 g Yukon Gold potatoes, cut into 4 cm chunks",
+      "qty": 700,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "Yukon Gold potatoes, cut into 4 cm chunks"
+    },
+    {
+      "text": "150 g frozen peas",
+      "qty": 150,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "frozen peas"
+    },
+    {
+      "text": "10 g parsley, chopped",
+      "qty": 10,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "parsley, chopped"
+    }
+  ],
+  "steps": [
+    {
+      "text": "Heat the oven to 160°C. Pat 1.4 kg boneless beef chuck, cut into 4 cm cubes dry, season with 2 tsp kosher salt and 1 tsp black pepper, and toss with 3 tbsp all-purpose flour.",
+      "ingredientRefs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "timers": []
+    },
+    {
+      "text": "Heat 1 tbsp of 3 tbsp neutral oil in a large Dutch oven over medium-high. Brown the beef in three batches, 6 minutes each, until deeply browned on at least two sides, adding more oil as needed. Transfer to a bowl.",
+      "ingredientRefs": [
+        4
+      ],
+      "timers": [
+        {
+          "text": "6 minutes",
+          "seconds": 360
+        }
+      ]
+    },
+    {
+      "text": "Lower the heat to medium. Add 2 onions, chopped and 2 celery stalks, chopped and cook 6 minutes, scraping up the browned bits. Add 4 garlic cloves, minced and 2 tbsp tomato paste and stir 2 minutes, until the paste darkens.",
+      "ingredientRefs": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "timers": [
+        {
+          "text": "6 minutes",
+          "seconds": 360
+        },
+        {
+          "text": "2 minutes",
+          "seconds": 120
+        }
+      ]
+    },
+    {
+      "text": "Pour in 250 ml dry red wine and simmer 3 minutes, scraping the bottom, until reduced by half. Add 1 L beef stock, 1 tbsp Worcestershire sauce, 4 sprigs fresh thyme, 2 bay leaves and the beef with its juices. Bring to a simmer.",
+      "ingredientRefs": [
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "timers": [
+        {
+          "text": "3 minutes",
+          "seconds": 180
+        }
+      ]
+    },
+    {
+      "text": "Cover and braise in the oven for 1 hour 30 minutes.",
+      "ingredientRefs": [],
+      "timers": [
+        {
+          "text": "1 hour 30 minutes",
+          "seconds": 5400
+        }
+      ]
+    },
+    {
+      "text": "Stir in 4 carrots, cut into 3 cm chunks and 700 g Yukon Gold potatoes, cut into 4 cm chunks, cover and return to the oven for 1 hour, until the beef is fork-tender and the vegetables are cooked.",
+      "ingredientRefs": [
+        14,
+        15
+      ],
+      "timers": [
+        {
+          "text": "1 hour",
+          "seconds": 3600
+        }
+      ]
+    },
+    {
+      "text": "Remove the thyme stems and bay. Stir in 150 g frozen peas and simmer on the stove for 3 minutes. Season with salt and pepper and scatter with 10 g parsley, chopped.",
+      "ingredientRefs": [
+        16,
+        17
+      ],
+      "timers": [
+        {
+          "text": "3 minutes",
+          "seconds": 180
+        }
+      ]
+    }
+  ],
+  "notes": "Browning in batches is the most important step: crowded beef steams and the stew tastes flat. Adding the vegetables halfway keeps them from turning to mush. Like most braises, it's better the next day; skim the fat once chilled.",
+  "servings": 6,
+  "tags": [
+    "to-try"
+  ],
+  "chatUrl": null,
+  "chapter": "soups",
+  "cuisine": "American",
+  "favorite": false,
+  "log": [],
+  "createdAt": "2026-10-07T02:11:39.991Z",
+  "updatedAt": "2026-10-07T02:11:39.991Z"
+}

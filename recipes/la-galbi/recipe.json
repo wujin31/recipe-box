@@ -1,0 +1,176 @@
+{
+  "id": "la-galbi",
+  "name": "갈비 (Galbi) · LA-Style Korean BBQ Short Ribs",
+  "nativeName": "갈비",
+  "romanized": "Galbi",
+  "englishName": "LA-Style Korean BBQ Short Ribs",
+  "description": "Thin cross-cut (flanken) beef short ribs marinated overnight in soy, Asian pear, onion and garlic, then grilled hot and fast until caramelized at the edges. Serves 4.",
+  "ingredients": [
+    {
+      "text": "1.4 kg flanken-cut beef short ribs (LA galbi), 1 cm thick",
+      "qty": 1.4,
+      "qtyMax": null,
+      "unit": "kg",
+      "item": "flanken-cut beef short ribs (LA galbi), 1 cm thick"
+    },
+    {
+      "text": "80 ml soy sauce",
+      "qty": 80,
+      "qtyMax": null,
+      "unit": "ml",
+      "item": "soy sauce"
+    },
+    {
+      "text": "80 ml rice wine or water",
+      "qty": 80,
+      "qtyMax": null,
+      "unit": "ml",
+      "item": "rice wine or water"
+    },
+    {
+      "text": "60 ml honey or 70 g brown sugar",
+      "qty": 60,
+      "qtyMax": null,
+      "unit": "ml",
+      "item": "honey or 70 g brown sugar"
+    },
+    {
+      "text": "1 tsp ground black pepper",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "ground black pepper"
+    },
+    {
+      "text": "1 Korean (Asian) pear, peeled and chopped",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": null,
+      "item": "Korean (Asian) pear, peeled and chopped"
+    },
+    {
+      "text": "1 onion, chopped",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": null,
+      "item": "onion, chopped"
+    },
+    {
+      "text": "8 garlic cloves",
+      "qty": 8,
+      "qtyMax": null,
+      "unit": null,
+      "item": "garlic cloves"
+    },
+    {
+      "text": "1 tsp minced ginger",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "minced ginger"
+    },
+    {
+      "text": "2 tbsp toasted sesame oil",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "toasted sesame oil"
+    },
+    {
+      "text": "2 scallions, chopped",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": null,
+      "item": "scallions, chopped"
+    },
+    {
+      "text": "1 tbsp toasted sesame seeds",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "toasted sesame seeds"
+    },
+    {
+      "text": "1 head red-leaf lettuce, leaves separated (to serve)",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": null,
+      "item": "head red-leaf lettuce, leaves separated (to serve)"
+    },
+    {
+      "text": "900 g hot cooked short-grain rice",
+      "qty": 900,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "hot cooked short-grain rice"
+    }
+  ],
+  "steps": [
+    {
+      "text": "Soak 1.4 kg flanken-cut beef short ribs (LA galbi), 1 cm thick in cold water for 30 minutes to draw out blood and bone fragments, then rinse each piece and drain well.",
+      "ingredientRefs": [
+        0
+      ],
+      "timers": [
+        {
+          "text": "30 minutes",
+          "seconds": 1800
+        }
+      ]
+    },
+    {
+      "text": "Blend 1 Korean (Asian) pear, peeled and chopped, 1 onion, chopped, 8 garlic cloves and 1 tsp minced ginger until smooth and creamy. Stir in 80 ml soy sauce, 80 ml rice wine or water, 60 ml honey or 70 g brown sugar, 1 tsp ground black pepper and 2 tbsp toasted sesame oil.",
+      "ingredientRefs": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "timers": []
+    },
+    {
+      "text": "Layer the ribs in a container, pouring marinade over each layer. Cover and refrigerate at least 8 hours or overnight (up to 24 hours).",
+      "ingredientRefs": [],
+      "timers": [
+        {
+          "text": "8 hours",
+          "seconds": 28800
+        }
+      ]
+    },
+    {
+      "text": "Heat a grill or a cast-iron pan to high. Shake off excess marinade and cook the ribs 3 minutes per side, until charred at the edges and just cooked through. Work in batches; don't crowd the pan.",
+      "ingredientRefs": [],
+      "timers": [
+        {
+          "text": "3 minutes",
+          "seconds": 180
+        }
+      ]
+    },
+    {
+      "text": "Cut between the bones into pieces with kitchen scissors, sprinkle with 2 scallions, chopped and 1 tbsp toasted sesame seeds, and serve with 1 head red-leaf lettuce, leaves separated (to serve) for wrapping and 900 g hot cooked short-grain rice.",
+      "ingredientRefs": [
+        10,
+        11,
+        12,
+        13
+      ],
+      "timers": []
+    }
+  ],
+  "notes": "The pear's enzyme tenderizes the meat; don't go past 24 hours or the texture turns mushy. Kiwi works the same way but much faster: use 1/2 kiwi in place of the pear and marinate only 2 to 4 hours.\n\nThe sugar burns quickly; if the outside chars before the inside cooks, lower the heat a notch. Serve with ssamjang, kimchi and banchan.",
+  "servings": 4,
+  "tags": [],
+  "chatUrl": null,
+  "chapter": "mains",
+  "favorite": false,
+  "log": [],
+  "createdAt": "2026-10-07T02:11:29.022Z",
+  "updatedAt": "2026-10-07T02:11:29.022Z"
+}

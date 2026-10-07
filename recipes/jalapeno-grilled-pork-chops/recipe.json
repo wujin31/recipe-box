@@ -1,0 +1,211 @@
+{
+  "id": "jalapeno-grilled-pork-chops",
+  "name": "Jalapeño Grilled Pork Chops",
+  "nativeName": "",
+  "romanized": "",
+  "englishName": "Jalapeño Grilled Pork Chops",
+  "description": "Thick bone-in pork chops marinated in a tangy blend of jalapeño, garlic, lime, cider vinegar, toasted coriander and honey, grilled over high heat and served with a charred jalapeño and scallion salsa. Serves 4.",
+  "ingredients": [
+    {
+      "text": "2 jalapeños, stemmed and roughly chopped",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": null,
+      "item": "jalapeños, stemmed and roughly chopped",
+      "group": "For the marinade"
+    },
+    {
+      "text": "4 garlic cloves",
+      "qty": 4,
+      "qtyMax": null,
+      "unit": null,
+      "item": "garlic cloves",
+      "group": "For the marinade"
+    },
+    {
+      "text": "1 tbsp coriander seeds, toasted",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "coriander seeds, toasted",
+      "group": "For the marinade"
+    },
+    {
+      "text": "60 ml apple cider vinegar",
+      "qty": 60,
+      "qtyMax": null,
+      "unit": "ml",
+      "item": "apple cider vinegar",
+      "group": "For the marinade"
+    },
+    {
+      "text": "2 tbsp lime juice",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "lime juice",
+      "group": "For the marinade"
+    },
+    {
+      "text": "2 tbsp honey",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "honey",
+      "group": "For the marinade"
+    },
+    {
+      "text": "60 ml olive oil",
+      "qty": 60,
+      "qtyMax": null,
+      "unit": "ml",
+      "item": "olive oil",
+      "group": "For the marinade"
+    },
+    {
+      "text": "2 tsp kosher salt",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "kosher salt",
+      "group": "For the marinade"
+    },
+    {
+      "text": "4 bone-in pork rib chops, 2.5 cm thick (about 1.2 kg)",
+      "qty": 4,
+      "qtyMax": null,
+      "unit": null,
+      "item": "bone-in pork rib chops, 2.5 cm thick (about 1.2 kg)",
+      "group": "For the pork"
+    },
+    {
+      "text": "4 jalapeños (for charring)",
+      "qty": 4,
+      "qtyMax": null,
+      "unit": null,
+      "item": "jalapeños (for charring)",
+      "group": "For the salsa"
+    },
+    {
+      "text": "6 scallions",
+      "qty": 6,
+      "qtyMax": null,
+      "unit": null,
+      "item": "scallions",
+      "group": "For the salsa"
+    },
+    {
+      "text": "2 tbsp olive oil (for the salsa)",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "olive oil (for the salsa)",
+      "group": "For the salsa"
+    },
+    {
+      "text": "1 tbsp lime juice (for the salsa)",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "lime juice (for the salsa)",
+      "group": "For the salsa"
+    },
+    {
+      "text": "10 g cilantro, chopped",
+      "qty": 10,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "cilantro, chopped",
+      "group": "For the salsa"
+    },
+    {
+      "text": "1/2 tsp salt (for the salsa)",
+      "qty": 0.5,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "salt (for the salsa)",
+      "group": "For the salsa"
+    }
+  ],
+  "steps": [
+    {
+      "text": "Blend 2 jalapeños, stemmed and roughly chopped, 4 garlic cloves, 1 tbsp coriander seeds, toasted, 60 ml apple cider vinegar, 2 tbsp lime juice, 2 tbsp honey, 60 ml olive oil and 2 tsp kosher salt until smooth.",
+      "ingredientRefs": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "timers": []
+    },
+    {
+      "text": "Put 4 bone-in pork rib chops, 2.5 cm thick (about 1.2 kg) in a dish, pour over the marinade and turn to coat. Refrigerate at least 2 hours (up to 8 hours).",
+      "ingredientRefs": [
+        8
+      ],
+      "timers": [
+        {
+          "text": "2 hours",
+          "seconds": 7200
+        }
+      ]
+    },
+    {
+      "text": "Heat a grill to medium-high. Grill 4 jalapeños (for charring) and 6 scallions for 6 minutes, turning, until blistered and charred. Chop, removing seeds from the jalapeños for less heat, and mix with 2 tbsp olive oil (for the salsa), 1 tbsp lime juice (for the salsa), 10 g cilantro, chopped and 1/2 tsp salt (for the salsa).",
+      "ingredientRefs": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "timers": [
+        {
+          "text": "6 minutes",
+          "seconds": 360
+        }
+      ]
+    },
+    {
+      "text": "Scrape most of the marinade off the chops. Grill 5 minutes per side over direct heat, until charred, then move to the cooler side and cook 4 minutes more, until 60°C near the bone.",
+      "ingredientRefs": [],
+      "timers": [
+        {
+          "text": "5 minutes",
+          "seconds": 300
+        },
+        {
+          "text": "4 minutes",
+          "seconds": 240
+        }
+      ]
+    },
+    {
+      "text": "Rest 5 minutes and serve with the charred salsa.",
+      "ingredientRefs": [],
+      "timers": [
+        {
+          "text": "5 minutes",
+          "seconds": 300
+        }
+      ]
+    }
+  ],
+  "notes": "Inspired by Bon Appétit's jalapeño-marinated chops. Rib chops with a fat cap stay juicier than center-cut loin. Pull them at 60°C; they rise to a rosy 63°C as they rest. Don't marinate more than 8 hours; the vinegar starts to cure the meat.",
+  "servings": 4,
+  "tags": [
+    "to-try"
+  ],
+  "chatUrl": null,
+  "chapter": "mains",
+  "cuisine": "American",
+  "favorite": false,
+  "log": [],
+  "createdAt": "2026-10-07T02:11:43.123Z",
+  "updatedAt": "2026-10-07T02:11:43.123Z"
+}

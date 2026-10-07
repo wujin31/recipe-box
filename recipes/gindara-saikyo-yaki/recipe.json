@@ -1,0 +1,139 @@
+{
+  "id": "gindara-saikyo-yaki",
+  "name": "銀ダラの西京焼き (Gindara no Saikyō-yaki) · Miso-Glazed Black Cod",
+  "nativeName": "銀ダラの西京焼き",
+  "romanized": "Gindara no Saikyō-yaki",
+  "englishName": "Miso-Glazed Black Cod",
+  "description": "Nobu's famous dish, from the old Kyoto tradition of saikyo-yaki: black cod cured for 2 to 3 days in sweet white miso, sake and mirin, then broiled until caramelized and finished in the oven. Serves 4.",
+  "ingredients": [
+    {
+      "text": "4 black cod (sablefish) fillets, about 170 g each, skin on",
+      "qty": 4,
+      "qtyMax": null,
+      "unit": null,
+      "item": "black cod (sablefish) fillets, about 170 g each, skin on"
+    },
+    {
+      "text": "60 ml sake",
+      "qty": 60,
+      "qtyMax": null,
+      "unit": "ml",
+      "item": "sake"
+    },
+    {
+      "text": "60 ml mirin",
+      "qty": 60,
+      "qtyMax": null,
+      "unit": "ml",
+      "item": "mirin"
+    },
+    {
+      "text": "180 g white miso (saikyo miso if possible)",
+      "qty": 180,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "white miso (saikyo miso if possible)"
+    },
+    {
+      "text": "90 g sugar",
+      "qty": 90,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "sugar"
+    },
+    {
+      "text": "1/2 tsp salt",
+      "qty": 0.5,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "salt"
+    },
+    {
+      "text": "4 hajikami (pickled ginger shoots) or pickled ginger, to serve",
+      "qty": 4,
+      "qtyMax": null,
+      "unit": null,
+      "item": "hajikami (pickled ginger shoots) or pickled ginger, to serve"
+    }
+  ],
+  "steps": [
+    {
+      "text": "Bring 60 ml sake and 60 ml mirin to a boil in a saucepan and boil 20 seconds to cook off the alcohol. Turn the heat to low and whisk in 180 g white miso (saikyo miso if possible) until smooth. Raise the heat, add 90 g sugar and stir until it dissolves, about 1 minute. Cool completely.",
+      "ingredientRefs": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "timers": [
+        {
+          "text": "20 seconds",
+          "seconds": 20
+        },
+        {
+          "text": "1 minute",
+          "seconds": 60
+        }
+      ]
+    },
+    {
+      "text": "Sprinkle 4 black cod (sablefish) fillets, about 170 g each, skin on lightly with 1/2 tsp salt, leave 20 minutes, then pat dry.",
+      "ingredientRefs": [
+        0,
+        5
+      ],
+      "timers": [
+        {
+          "text": "20 minutes",
+          "seconds": 1200
+        }
+      ]
+    },
+    {
+      "text": "Spread a third of the marinade in a dish, lay in the fish and cover with the rest. Cover tightly and refrigerate 2 to 3 days.",
+      "ingredientRefs": [],
+      "timers": []
+    },
+    {
+      "text": "Heat the oven to 200°C. Wipe the excess marinade off the fish with your fingers and paper towels; don't rinse it.",
+      "ingredientRefs": [],
+      "timers": []
+    },
+    {
+      "text": "Broil the fillets skin side down on an oiled rack 15 cm from the heat for 4 minutes, until the top is browned and blackened in spots.",
+      "ingredientRefs": [],
+      "timers": [
+        {
+          "text": "4 minutes",
+          "seconds": 240
+        }
+      ]
+    },
+    {
+      "text": "Move to the middle of the oven and bake 10 minutes, until the fish flakes and is just opaque.",
+      "ingredientRefs": [],
+      "timers": [
+        {
+          "text": "10 minutes",
+          "seconds": 600
+        }
+      ]
+    },
+    {
+      "text": "Serve with 4 hajikami (pickled ginger shoots) or pickled ginger, to serve.",
+      "ingredientRefs": [
+        6
+      ],
+      "timers": []
+    }
+  ],
+  "notes": "The salting step and 2 to 3 day cure season the fish all the way through and firm its texture. One day works but is milder. Watch the broiler closely: the sugar in the miso goes from caramelized to burnt fast.\n\nBlack cod (sablefish) is rich enough to stay silky; salmon, Chilean sea bass or mackerel work too, with 1 day of cure. Leftover marinade keeps a week for a second batch.",
+  "servings": 4,
+  "tags": [],
+  "chatUrl": null,
+  "chapter": "mains",
+  "favorite": false,
+  "log": [],
+  "createdAt": "2026-10-07T02:11:28.221Z",
+  "updatedAt": "2026-10-07T02:11:28.221Z"
+}

@@ -1,0 +1,315 @@
+{
+  "id": "oven-roasted-chicken-shawarma",
+  "name": "Oven-Roasted Chicken Shawarma",
+  "nativeName": "",
+  "romanized": "",
+  "englishName": "Oven-Roasted Chicken Shawarma",
+  "description": "Chicken thighs marinated in lemon, garlic and a warm Levantine spice blend, roasted hot until charred at the edges, then sliced and crisped. Served in pita with garlicky tahini yogurt, pickles and salad. Serves 6.",
+  "ingredients": [
+    {
+      "text": "1.2 kg boneless skinless chicken thighs",
+      "qty": 1.2,
+      "qtyMax": null,
+      "unit": "kg",
+      "item": "boneless skinless chicken thighs",
+      "group": "For the chicken"
+    },
+    {
+      "text": "60 ml olive oil",
+      "qty": 60,
+      "qtyMax": null,
+      "unit": "ml",
+      "item": "olive oil",
+      "group": "For the chicken"
+    },
+    {
+      "text": "3 tbsp lemon juice",
+      "qty": 3,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "lemon juice",
+      "group": "For the chicken"
+    },
+    {
+      "text": "4 garlic cloves, grated",
+      "qty": 4,
+      "qtyMax": null,
+      "unit": null,
+      "item": "garlic cloves, grated",
+      "group": "For the chicken"
+    },
+    {
+      "text": "2 tbsp plain yogurt",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "plain yogurt",
+      "group": "For the chicken"
+    },
+    {
+      "text": "2 tsp ground cumin",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "ground cumin",
+      "group": "For the chicken"
+    },
+    {
+      "text": "2 tsp ground coriander",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "ground coriander",
+      "group": "For the chicken"
+    },
+    {
+      "text": "2 tsp paprika",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "paprika",
+      "group": "For the chicken"
+    },
+    {
+      "text": "1 tsp ground turmeric",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "ground turmeric",
+      "group": "For the chicken"
+    },
+    {
+      "text": "1/2 tsp ground cinnamon",
+      "qty": 0.5,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "ground cinnamon",
+      "group": "For the chicken"
+    },
+    {
+      "text": "1/2 tsp ground allspice",
+      "qty": 0.5,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "ground allspice",
+      "group": "For the chicken"
+    },
+    {
+      "text": "1/4 tsp ground cardamom",
+      "qty": 0.25,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "ground cardamom",
+      "group": "For the chicken"
+    },
+    {
+      "text": "1/4 tsp cayenne pepper",
+      "qty": 0.25,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "cayenne pepper",
+      "group": "For the chicken"
+    },
+    {
+      "text": "1 1/2 tsp salt",
+      "qty": 1.5,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "salt",
+      "group": "For the chicken"
+    },
+    {
+      "text": "1/2 tsp black pepper",
+      "qty": 0.5,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "black pepper",
+      "group": "For the chicken"
+    },
+    {
+      "text": "1 red onion, cut into wedges",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": null,
+      "item": "red onion, cut into wedges",
+      "group": "For the chicken"
+    },
+    {
+      "text": "240 g Greek yogurt",
+      "qty": 240,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "Greek yogurt",
+      "group": "For the sauce"
+    },
+    {
+      "text": "2 tbsp tahini",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "tahini",
+      "group": "For the sauce"
+    },
+    {
+      "text": "1 tbsp lemon juice (for the sauce)",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "lemon juice (for the sauce)",
+      "group": "For the sauce"
+    },
+    {
+      "text": "1 garlic clove, grated (for the sauce)",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": null,
+      "item": "garlic clove, grated (for the sauce)",
+      "group": "For the sauce"
+    },
+    {
+      "text": "1/4 tsp salt (for the sauce)",
+      "qty": 0.25,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "salt (for the sauce)",
+      "group": "For the sauce"
+    },
+    {
+      "text": "6 pitas, warmed",
+      "qty": 6,
+      "qtyMax": null,
+      "unit": null,
+      "item": "pitas, warmed",
+      "group": "To serve"
+    },
+    {
+      "text": "2 tomatoes, diced",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": null,
+      "item": "tomatoes, diced",
+      "group": "To serve"
+    },
+    {
+      "text": "1 cucumber, diced",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": null,
+      "item": "cucumber, diced",
+      "group": "To serve"
+    },
+    {
+      "text": "120 g pickled turnips or dill pickles",
+      "qty": 120,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "pickled turnips or dill pickles",
+      "group": "To serve"
+    },
+    {
+      "text": "15 g parsley, chopped",
+      "qty": 15,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "parsley, chopped",
+      "group": "To serve"
+    }
+  ],
+  "steps": [
+    {
+      "text": "Mix 60 ml olive oil, 3 tbsp lemon juice, 4 garlic cloves, grated, 2 tbsp plain yogurt, 2 tsp ground cumin, 2 tsp ground coriander, 2 tsp paprika, 1 tsp ground turmeric, 1/2 tsp ground cinnamon, 1/2 tsp ground allspice, 1/4 tsp ground cardamom, 1/4 tsp cayenne pepper, 1 1/2 tsp salt and 1/2 tsp black pepper. Toss with 1.2 kg boneless skinless chicken thighs and refrigerate at least 2 hours, or overnight.",
+      "ingredientRefs": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "timers": [
+        {
+          "text": "2 hours",
+          "seconds": 7200
+        }
+      ]
+    },
+    {
+      "text": "Heat the oven to 220°C. Spread the chicken and 1 red onion, cut into wedges on a lined sheet pan in one layer.",
+      "ingredientRefs": [
+        15
+      ],
+      "timers": []
+    },
+    {
+      "text": "Roast 25 minutes, until cooked through and charred at the edges. Turn on the broiler and broil 3 minutes for extra char.",
+      "ingredientRefs": [],
+      "timers": [
+        {
+          "text": "25 minutes",
+          "seconds": 1500
+        },
+        {
+          "text": "3 minutes",
+          "seconds": 180
+        }
+      ]
+    },
+    {
+      "text": "Whisk 240 g Greek yogurt, 2 tbsp tahini, 1 tbsp lemon juice (for the sauce), 1 garlic clove, grated (for the sauce) and 1/4 tsp salt (for the sauce) with a splash of water until spoonable.",
+      "ingredientRefs": [
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "timers": []
+    },
+    {
+      "text": "Rest the chicken 5 minutes, then slice thinly. For the shawarma-shop texture, crisp the slices in a hot dry skillet for 2 minutes with the pan juices.",
+      "ingredientRefs": [],
+      "timers": [
+        {
+          "text": "5 minutes",
+          "seconds": 300
+        },
+        {
+          "text": "2 minutes",
+          "seconds": 120
+        }
+      ]
+    },
+    {
+      "text": "Fill 6 pitas, warmed with chicken, onions, sauce, 2 tomatoes, diced, 1 cucumber, diced, 120 g pickled turnips or dill pickles and 15 g parsley, chopped.",
+      "ingredientRefs": [
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      "timers": []
+    }
+  ],
+  "notes": "The broil and the final skillet crisp mimic the caramelized edges shaved off a vertical spit. Toum (Lebanese whipped garlic sauce) is the traditional pairing if you want to make it; the tahini-yogurt sauce is a quicker stand-in. Also great over rice with salad.",
+  "servings": 6,
+  "tags": [
+    "to-try"
+  ],
+  "chatUrl": null,
+  "chapter": "mains",
+  "cuisine": "Middle Eastern",
+  "favorite": false,
+  "log": [],
+  "createdAt": "2026-10-07T02:11:44.249Z",
+  "updatedAt": "2026-10-07T02:11:44.249Z"
+}

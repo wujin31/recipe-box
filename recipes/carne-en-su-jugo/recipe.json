@@ -1,0 +1,239 @@
+{
+  "id": "carne-en-su-jugo",
+  "name": "Carne en Su Jugo — Guadalajara Beef in Its Juices",
+  "nativeName": "",
+  "romanized": "",
+  "englishName": "Carne en Su Jugo",
+  "subtitle": "Guadalajara Beef in Its Juices",
+  "description": "The Guadalajara classic from Karne Garibaldi: finely cut steak and bacon simmered in a tangy tomatillo broth, ladled over pinto beans and piled with onion, cilantro, radish and crisp bacon. Serves 4.",
+  "ingredients": [
+    {
+      "text": "450 g tomatillos, husked and rinsed",
+      "qty": 450,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "tomatillos, husked and rinsed",
+      "group": "For the broth"
+    },
+    {
+      "text": "2 serrano chiles",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": null,
+      "item": "serrano chiles",
+      "group": "For the broth"
+    },
+    {
+      "text": "1/4 white onion",
+      "qty": 0.25,
+      "qtyMax": null,
+      "unit": null,
+      "item": "white onion",
+      "group": "For the broth"
+    },
+    {
+      "text": "2 garlic cloves",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": null,
+      "item": "garlic cloves",
+      "group": "For the broth"
+    },
+    {
+      "text": "15 g cilantro",
+      "qty": 15,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "cilantro",
+      "group": "For the broth"
+    },
+    {
+      "text": "1 L beef broth",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "l",
+      "item": "beef broth",
+      "group": "For the broth"
+    },
+    {
+      "text": "200 g bacon, diced",
+      "qty": 200,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "bacon, diced",
+      "group": "For the meat"
+    },
+    {
+      "text": "700 g top sirloin, cut into 1 cm pieces",
+      "qty": 700,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "top sirloin, cut into 1 cm pieces",
+      "group": "For the meat"
+    },
+    {
+      "text": "1 tsp salt",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "salt",
+      "group": "For the meat"
+    },
+    {
+      "text": "1/2 tsp black pepper",
+      "qty": 0.5,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "black pepper",
+      "group": "For the meat"
+    },
+    {
+      "text": "1 tbsp Maggi seasoning or Worcestershire sauce",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "Maggi seasoning or Worcestershire sauce",
+      "group": "For the meat"
+    },
+    {
+      "text": "500 g cooked pinto beans (frijoles de la olla), with some broth",
+      "qty": 500,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "cooked pinto beans (frijoles de la olla), with some broth",
+      "group": "To serve"
+    },
+    {
+      "text": "1/2 white onion, finely chopped",
+      "qty": 0.5,
+      "qtyMax": null,
+      "unit": null,
+      "item": "white onion, finely chopped",
+      "group": "To serve"
+    },
+    {
+      "text": "1/2 bunch cilantro, chopped",
+      "qty": 0.5,
+      "qtyMax": null,
+      "unit": "bunch",
+      "item": "cilantro, chopped",
+      "group": "To serve"
+    },
+    {
+      "text": "6 radishes, thinly sliced",
+      "qty": 6,
+      "qtyMax": null,
+      "unit": null,
+      "item": "radishes, thinly sliced",
+      "group": "To serve"
+    },
+    {
+      "text": "2 limes, cut into wedges",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": null,
+      "item": "limes, cut into wedges",
+      "group": "To serve"
+    },
+    {
+      "text": "8 green onions (cebollitas), grilled (optional)",
+      "qty": 8,
+      "qtyMax": null,
+      "unit": null,
+      "item": "green onions (cebollitas), grilled (optional)",
+      "group": "To serve"
+    },
+    {
+      "text": "8 corn tortillas, warmed",
+      "qty": 8,
+      "qtyMax": null,
+      "unit": null,
+      "item": "corn tortillas, warmed",
+      "group": "To serve"
+    }
+  ],
+  "steps": [
+    {
+      "text": "Simmer 450 g tomatillos, husked and rinsed and 2 serrano chiles in water for 8 minutes, until the tomatillos turn olive green. Drain and blend with 1/4 white onion, 2 garlic cloves, 15 g cilantro and 250 ml of 1 L beef broth until smooth.",
+      "ingredientRefs": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "timers": [
+        {
+          "text": "8 minutes",
+          "seconds": 480
+        }
+      ]
+    },
+    {
+      "text": "Cook 200 g bacon, diced in a heavy pot over medium for 8 minutes, until crisp. Lift it out, leaving the fat.",
+      "ingredientRefs": [
+        6
+      ],
+      "timers": [
+        {
+          "text": "8 minutes",
+          "seconds": 480
+        }
+      ]
+    },
+    {
+      "text": "Season 700 g top sirloin, cut into 1 cm pieces with 1 tsp salt and 1/2 tsp black pepper. Brown it in the bacon fat in two batches over high heat, 3 minutes each, adding 1 tbsp Maggi seasoning or Worcestershire sauce at the end.",
+      "ingredientRefs": [
+        7,
+        8,
+        9,
+        10
+      ],
+      "timers": [
+        {
+          "text": "3 minutes",
+          "seconds": 180
+        }
+      ]
+    },
+    {
+      "text": "Return all the beef, add the tomatillo sauce and the rest of the broth, and simmer on low for 20 minutes, until the beef is tender and the broth tastes rich. Season with salt.",
+      "ingredientRefs": [],
+      "timers": [
+        {
+          "text": "20 minutes",
+          "seconds": 1200
+        }
+      ]
+    },
+    {
+      "text": "Warm 500 g cooked pinto beans (frijoles de la olla), with some broth. Spoon beans into deep bowls, ladle the beef and broth over, and top with the crisp bacon, 1/2 white onion, finely chopped, 1/2 bunch cilantro, chopped and 6 radishes, thinly sliced.",
+      "ingredientRefs": [
+        11,
+        12,
+        13,
+        14
+      ],
+      "timers": []
+    },
+    {
+      "text": "Serve with 2 limes, cut into wedges, 8 green onions (cebollitas), grilled (optional) and 8 corn tortillas, warmed.",
+      "ingredientRefs": [
+        15,
+        16,
+        17
+      ],
+      "timers": []
+    }
+  ],
+  "notes": "Cut the beef small (1 cm), as in Guadalajara; it should be spoonable. Grilling the cebollitas (green onions brushed with oil and salt, 5 minutes over high heat) is the traditional side. The broth should taste tart and beefy; add a squeeze of lime if it tastes flat.",
+  "servings": 4,
+  "tags": [],
+  "chatUrl": null,
+  "chapter": "soups",
+  "favorite": false,
+  "log": [],
+  "createdAt": "2026-10-07T02:11:32.971Z",
+  "updatedAt": "2026-10-07T02:11:32.971Z"
+}

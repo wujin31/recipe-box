@@ -1,0 +1,257 @@
+{
+  "id": "haoyou-niurou-bok-choy",
+  "name": "蠔油牛肉炒白菜 (Háoyóu Niúròu Chǎo Báicài) · Stir-Fried Beef with Oyster Sauce and Bok Choy",
+  "nativeName": "蠔油牛肉炒白菜",
+  "romanized": "Háoyóu Niúròu Chǎo Báicài",
+  "englishName": "Stir-Fried Beef with Oyster Sauce and Bok Choy",
+  "description": "The everyday Cantonese stir-fry: velveted flank steak seared fast over high heat, tossed with crisp-tender bok choy in a glossy oyster sauce gravy. 20 minutes. Serves 3.",
+  "ingredients": [
+    {
+      "text": "340 g flank steak, sliced against the grain 5 mm thick",
+      "qty": 340,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "flank steak, sliced against the grain 5 mm thick",
+      "group": "For the beef"
+    },
+    {
+      "text": "1/4 tsp baking soda",
+      "qty": 0.25,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "baking soda",
+      "group": "For the beef"
+    },
+    {
+      "text": "1 tbsp water (for the marinade)",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "water (for the marinade)",
+      "group": "For the beef"
+    },
+    {
+      "text": "1 tsp soy sauce (for the marinade)",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "soy sauce (for the marinade)",
+      "group": "For the beef"
+    },
+    {
+      "text": "1 tsp Shaoxing wine",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "Shaoxing wine",
+      "group": "For the beef"
+    },
+    {
+      "text": "2 tsp cornstarch (for the marinade)",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "cornstarch (for the marinade)",
+      "group": "For the beef"
+    },
+    {
+      "text": "1 tsp neutral oil (for the marinade)",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "neutral oil (for the marinade)",
+      "group": "For the beef"
+    },
+    {
+      "text": "2 tbsp oyster sauce",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "oyster sauce",
+      "group": "For the sauce"
+    },
+    {
+      "text": "1 tsp soy sauce",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "soy sauce",
+      "group": "For the sauce"
+    },
+    {
+      "text": "1/2 tsp dark soy sauce",
+      "qty": 0.5,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "dark soy sauce",
+      "group": "For the sauce"
+    },
+    {
+      "text": "1 tsp sugar",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "sugar",
+      "group": "For the sauce"
+    },
+    {
+      "text": "1/2 tsp sesame oil",
+      "qty": 0.5,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "sesame oil",
+      "group": "For the sauce"
+    },
+    {
+      "text": "80 ml chicken stock or water",
+      "qty": 80,
+      "qtyMax": null,
+      "unit": "ml",
+      "item": "chicken stock or water",
+      "group": "For the sauce"
+    },
+    {
+      "text": "1 tsp cornstarch",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "cornstarch",
+      "group": "For the sauce"
+    },
+    {
+      "text": "2 tbsp neutral oil",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "neutral oil",
+      "group": "For the stir-fry"
+    },
+    {
+      "text": "450 g baby bok choy, halved or quartered",
+      "qty": 450,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "baby bok choy, halved or quartered",
+      "group": "For the stir-fry"
+    },
+    {
+      "text": "3 garlic cloves, sliced",
+      "qty": 3,
+      "qtyMax": null,
+      "unit": null,
+      "item": "garlic cloves, sliced",
+      "group": "For the stir-fry"
+    },
+    {
+      "text": "4 slices ginger",
+      "qty": 4,
+      "qtyMax": null,
+      "unit": "slice",
+      "item": "ginger",
+      "group": "For the stir-fry"
+    },
+    {
+      "text": "600 g hot cooked rice",
+      "qty": 600,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "hot cooked rice",
+      "group": "For the stir-fry"
+    }
+  ],
+  "steps": [
+    {
+      "text": "Toss 340 g flank steak, sliced against the grain 5 mm thick with 1/4 tsp baking soda and 1 tbsp water (for the marinade) until absorbed, then with 1 tsp soy sauce (for the marinade), 1 tsp Shaoxing wine and 2 tsp cornstarch (for the marinade). Stir in 1 tsp neutral oil (for the marinade) and marinate 20 minutes.",
+      "ingredientRefs": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "timers": [
+        {
+          "text": "20 minutes",
+          "seconds": 1200
+        }
+      ]
+    },
+    {
+      "text": "Whisk 2 tbsp oyster sauce, 1 tsp soy sauce, 1/2 tsp dark soy sauce, 1 tsp sugar, 1/2 tsp sesame oil, 80 ml chicken stock or water and 1 tsp cornstarch.",
+      "ingredientRefs": [
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "timers": []
+    },
+    {
+      "text": "Heat a wok over high heat until smoking. Add 1 tbsp of 2 tbsp neutral oil, spread the beef in one layer and sear 1 minute without moving, then toss 30 seconds, until just browned but still pink in places. Transfer to a plate.",
+      "ingredientRefs": [
+        14
+      ],
+      "timers": [
+        {
+          "text": "1 minute",
+          "seconds": 60
+        },
+        {
+          "text": "30 seconds",
+          "seconds": 30
+        }
+      ]
+    },
+    {
+      "text": "Add the rest of the oil, 4 slices ginger and 3 garlic cloves, sliced and stir 15 seconds. Add 450 g baby bok choy, halved or quartered and stir-fry 1 minute, then add 2 tbsp water and cover for 1 minute, until the stems are crisp-tender.",
+      "ingredientRefs": [
+        15,
+        16,
+        17
+      ],
+      "timers": [
+        {
+          "text": "15 seconds",
+          "seconds": 15
+        },
+        {
+          "text": "1 minute",
+          "seconds": 60
+        },
+        {
+          "text": "1 minute",
+          "seconds": 60
+        }
+      ]
+    },
+    {
+      "text": "Return the beef, stir the sauce and pour it in, and toss 30 seconds, until thick and glossy. Serve with 600 g hot cooked rice.",
+      "ingredientRefs": [
+        18
+      ],
+      "timers": [
+        {
+          "text": "30 seconds",
+          "seconds": 30
+        }
+      ]
+    }
+  ],
+  "notes": "Velveting with baking soda and cornstarch keeps flank steak tender even when it's cooked through. The wok must be very hot and the beef in a single layer; crowding makes it steam and turn grey. Gai lan or choy sum are classic swaps for the bok choy.",
+  "servings": 3,
+  "tags": [
+    "weeknight"
+  ],
+  "chatUrl": null,
+  "chapter": "mains",
+  "cuisine": "Chinese",
+  "favorite": false,
+  "log": [],
+  "createdAt": "2026-10-07T02:11:37.989Z",
+  "updatedAt": "2026-10-07T02:11:37.989Z"
+}

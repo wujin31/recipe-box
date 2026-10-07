@@ -1,0 +1,157 @@
+{
+  "id": "oyakodon",
+  "name": "親子丼 (Oyakodon) · Chicken and Egg Rice Bowl",
+  "nativeName": "親子丼",
+  "romanized": "Oyakodon",
+  "englishName": "Chicken and Egg Rice Bowl",
+  "description": "\"Parent and child\" bowl: chicken thigh and onion simmered in dashi, soy and mirin, then set with softly beaten egg and slid over rice. Serves 2.",
+  "ingredients": [
+    {
+      "text": "300 g boneless chicken thighs, cut into bite-size pieces",
+      "qty": 300,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "boneless chicken thighs, cut into bite-size pieces"
+    },
+    {
+      "text": "1/2 onion, thinly sliced",
+      "qty": 0.5,
+      "qtyMax": null,
+      "unit": null,
+      "item": "onion, thinly sliced"
+    },
+    {
+      "text": "160 ml dashi",
+      "qty": 160,
+      "qtyMax": null,
+      "unit": "ml",
+      "item": "dashi"
+    },
+    {
+      "text": "2 tbsp soy sauce",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "soy sauce"
+    },
+    {
+      "text": "2 tbsp mirin",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "mirin"
+    },
+    {
+      "text": "2 tbsp sake",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "sake"
+    },
+    {
+      "text": "2 tsp sugar",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "sugar"
+    },
+    {
+      "text": "4 eggs",
+      "qty": 4,
+      "qtyMax": null,
+      "unit": null,
+      "item": "eggs"
+    },
+    {
+      "text": "450 g hot cooked short-grain rice",
+      "qty": 450,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "hot cooked short-grain rice"
+    },
+    {
+      "text": "a few sprigs mitsuba or 1 scallion, chopped",
+      "qty": null,
+      "qtyMax": null,
+      "unit": null,
+      "item": "a few sprigs mitsuba or 1 scallion, chopped"
+    },
+    {
+      "text": "shichimi togarashi, to serve",
+      "qty": null,
+      "qtyMax": null,
+      "unit": null,
+      "item": "shichimi togarashi, to serve"
+    }
+  ],
+  "steps": [
+    {
+      "text": "Put 160 ml dashi, 2 tbsp soy sauce, 2 tbsp mirin, 2 tbsp sake and 2 tsp sugar in a small skillet (an oyakodon pan or 20 cm frying pan) and bring to a simmer.",
+      "ingredientRefs": [
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "timers": []
+    },
+    {
+      "text": "Add 1/2 onion, thinly sliced and simmer 3 minutes, until softened. Add 300 g boneless chicken thighs, cut into bite-size pieces in a single layer and simmer 5 minutes, turning once, until cooked through. Skim any foam.",
+      "ingredientRefs": [
+        0,
+        1
+      ],
+      "timers": [
+        {
+          "text": "3 minutes",
+          "seconds": 180
+        },
+        {
+          "text": "5 minutes",
+          "seconds": 300
+        }
+      ]
+    },
+    {
+      "text": "Lightly beat 4 eggs with chopsticks, just 10 strokes, so streaks of white and yolk remain.",
+      "ingredientRefs": [
+        7
+      ],
+      "timers": []
+    },
+    {
+      "text": "Pour two-thirds of the egg over the chicken in a circle, cover and cook on medium-low for 30 seconds. Pour in the rest, add a few sprigs mitsuba or 1 scallion, chopped, cover and turn off the heat. Leave 30 seconds, until the egg is just set but still glossy.",
+      "ingredientRefs": [
+        9
+      ],
+      "timers": [
+        {
+          "text": "30 seconds",
+          "seconds": 30
+        },
+        {
+          "text": "30 seconds",
+          "seconds": 30
+        }
+      ]
+    },
+    {
+      "text": "Divide 450 g hot cooked short-grain rice between deep bowls and slide half of the chicken and egg over each, with its sauce. Serve with shichimi togarashi, to serve.",
+      "ingredientRefs": [
+        8,
+        10
+      ],
+      "timers": []
+    }
+  ],
+  "notes": "For individual bowls, cook in two batches with half the sauce each so the egg can be slid neatly onto the rice. The two-stage egg pour gives both set and runny egg, the hallmark of a good oyakodon. Use pasteurized eggs if you're worried about the soft finish.",
+  "servings": 2,
+  "tags": [],
+  "chatUrl": null,
+  "chapter": "rice",
+  "favorite": false,
+  "log": [],
+  "createdAt": "2026-10-07T02:11:26.915Z",
+  "updatedAt": "2026-10-07T02:11:26.915Z"
+}

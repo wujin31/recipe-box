@@ -1,0 +1,170 @@
+{
+  "id": "gyudon",
+  "name": "牛丼 (Gyūdon) · Japanese Beef Bowl",
+  "nativeName": "牛丼",
+  "romanized": "Gyūdon",
+  "englishName": "Japanese Beef Bowl",
+  "description": "The Yoshinoya-style bowl: paper-thin beef and onion simmered in a sweet dashi-soy broth and ladled over rice with plenty of sauce, topped with red ginger and an egg yolk. Serves 2.",
+  "ingredients": [
+    {
+      "text": "340 g thinly sliced beef ribeye or chuck (shabu-shabu cut)",
+      "qty": 340,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "thinly sliced beef ribeye or chuck (shabu-shabu cut)"
+    },
+    {
+      "text": "1 onion, sliced 5 mm thick",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": null,
+      "item": "onion, sliced 5 mm thick"
+    },
+    {
+      "text": "120 ml dashi",
+      "qty": 120,
+      "qtyMax": null,
+      "unit": "ml",
+      "item": "dashi"
+    },
+    {
+      "text": "1 tbsp sake",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "sake"
+    },
+    {
+      "text": "1 tbsp sugar",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "sugar"
+    },
+    {
+      "text": "2 tbsp mirin",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "mirin"
+    },
+    {
+      "text": "2 tbsp soy sauce",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "soy sauce"
+    },
+    {
+      "text": "1 tsp grated ginger",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "grated ginger"
+    },
+    {
+      "text": "450 g hot cooked short-grain rice",
+      "qty": 450,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "hot cooked short-grain rice"
+    },
+    {
+      "text": "2 egg yolks or onsen tamago (optional)",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": null,
+      "item": "egg yolks or onsen tamago (optional)"
+    },
+    {
+      "text": "2 tbsp beni shoga (red pickled ginger)",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "beni shoga (red pickled ginger)"
+    },
+    {
+      "text": "1 scallion, thinly sliced",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": null,
+      "item": "scallion, thinly sliced"
+    },
+    {
+      "text": "shichimi togarashi, to serve",
+      "qty": null,
+      "qtyMax": null,
+      "unit": null,
+      "item": "shichimi togarashi, to serve"
+    }
+  ],
+  "steps": [
+    {
+      "text": "Put 120 ml dashi, 1 tbsp sake, 1 tbsp sugar, 2 tbsp mirin and 2 tbsp soy sauce in a skillet, cover and bring to a boil.",
+      "ingredientRefs": [
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "timers": []
+    },
+    {
+      "text": "Add 1 onion, sliced 5 mm thick in an even layer, cover and simmer on medium for 5 minutes, until soft and translucent.",
+      "ingredientRefs": [
+        1
+      ],
+      "timers": [
+        {
+          "text": "5 minutes",
+          "seconds": 300
+        }
+      ]
+    },
+    {
+      "text": "Spread 340 g thinly sliced beef ribeye or chuck (shabu-shabu cut) over the onion, separating the slices, and add 1 tsp grated ginger. Simmer 2 minutes, until no longer pink, skimming the scum and fat from the surface.",
+      "ingredientRefs": [
+        0,
+        7
+      ],
+      "timers": [
+        {
+          "text": "2 minutes",
+          "seconds": 120
+        }
+      ]
+    },
+    {
+      "text": "Turn off the heat and let it sit 2 minutes so the beef absorbs the broth.",
+      "ingredientRefs": [],
+      "timers": [
+        {
+          "text": "2 minutes",
+          "seconds": 120
+        }
+      ]
+    },
+    {
+      "text": "Divide 450 g hot cooked short-grain rice between bowls, top with the beef and onion and spoon over generous sauce (\"tsuyudaku\" style). Add 2 egg yolks or onsen tamago (optional), 2 tbsp beni shoga (red pickled ginger), 1 scallion, thinly sliced and shichimi togarashi, to serve.",
+      "ingredientRefs": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "timers": []
+    }
+  ],
+  "notes": "Partially frozen beef slices paper-thin with a sharp knife; or buy shabu-shabu beef at a Japanese or Korean market. Chuck with good marbling gives the closest chain-restaurant flavor. Don't boil the beef long; it toughens quickly.",
+  "servings": 2,
+  "tags": [],
+  "chatUrl": null,
+  "chapter": "rice",
+  "cuisine": "Japanese",
+  "favorite": false,
+  "log": [],
+  "createdAt": "2026-10-07T02:11:27.974Z",
+  "updatedAt": "2026-10-07T02:11:27.974Z"
+}

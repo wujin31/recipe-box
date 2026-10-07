@@ -1,0 +1,133 @@
+{
+  "id": "quesabirria-tacos",
+  "name": "Quesabirria Tacos — Birria Tacos with Consommé",
+  "nativeName": "",
+  "romanized": "",
+  "englishName": "Quesabirria Tacos",
+  "subtitle": "Birria Tacos with Consommé",
+  "description": "Corn tortillas dipped in birria's red fat, griddled crisp with melted Oaxaca cheese and shredded birria, folded and served with a cup of hot consommé for dipping. Uses the Birria de Res recipe. Serves 4 (12 tacos).",
+  "ingredients": [
+    {
+      "text": "700 g shredded birria meat (from Birria de Res)",
+      "qty": 700,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "shredded birria meat (from Birria de Res)"
+    },
+    {
+      "text": "120 ml red fat skimmed from the birria consommé",
+      "qty": 120,
+      "qtyMax": null,
+      "unit": "ml",
+      "item": "red fat skimmed from the birria consommé"
+    },
+    {
+      "text": "1 L birria consommé",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "l",
+      "item": "birria consommé"
+    },
+    {
+      "text": "12 corn tortillas",
+      "qty": 12,
+      "qtyMax": null,
+      "unit": null,
+      "item": "corn tortillas"
+    },
+    {
+      "text": "300 g Oaxaca cheese, shredded (or low-moisture mozzarella)",
+      "qty": 300,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "Oaxaca cheese, shredded (or low-moisture mozzarella)"
+    },
+    {
+      "text": "1/2 white onion, finely chopped",
+      "qty": 0.5,
+      "qtyMax": null,
+      "unit": null,
+      "item": "white onion, finely chopped"
+    },
+    {
+      "text": "1/2 bunch cilantro, chopped",
+      "qty": 0.5,
+      "qtyMax": null,
+      "unit": "bunch",
+      "item": "cilantro, chopped"
+    },
+    {
+      "text": "2 limes, cut into wedges",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": null,
+      "item": "limes, cut into wedges"
+    },
+    {
+      "text": "120 ml salsa de chile de árbol or salsa roja, to serve",
+      "qty": 120,
+      "qtyMax": null,
+      "unit": "ml",
+      "item": "salsa de chile de árbol or salsa roja, to serve"
+    }
+  ],
+  "steps": [
+    {
+      "text": "Warm 1 L birria consommé in a pot and keep it hot. Warm 700 g shredded birria meat (from Birria de Res) in a splash of consommé. Mix half of 1/2 white onion, finely chopped with half of 1/2 bunch cilantro, chopped for the filling.",
+      "ingredientRefs": [
+        0,
+        2,
+        5,
+        6
+      ],
+      "timers": []
+    },
+    {
+      "text": "Heat a griddle or large cast-iron pan over medium. Dip one of 12 corn tortillas in 120 ml red fat skimmed from the birria consommé so both sides are coated, and lay it on the griddle.",
+      "ingredientRefs": [
+        1,
+        3
+      ],
+      "timers": []
+    },
+    {
+      "text": "Scatter about 25 g of 300 g Oaxaca cheese, shredded (or low-moisture mozzarella) over the tortilla, then a layer of meat and a pinch of the onion and cilantro. Cook 2 minutes, until the cheese melts and the bottom crisps.",
+      "ingredientRefs": [
+        4
+      ],
+      "timers": [
+        {
+          "text": "2 minutes",
+          "seconds": 120
+        }
+      ]
+    },
+    {
+      "text": "Fold the taco in half, press, and cook 1 minute per side, until crisp and deep red. Repeat with the rest (several at a time).",
+      "ingredientRefs": [],
+      "timers": [
+        {
+          "text": "1 minute",
+          "seconds": 60
+        }
+      ]
+    },
+    {
+      "text": "Ladle the consommé into cups and top with the remaining onion and cilantro. Serve the tacos with the consommé for dipping, 2 limes, cut into wedges and 120 ml salsa de chile de árbol or salsa roja, to serve.",
+      "ingredientRefs": [
+        7,
+        8
+      ],
+      "timers": []
+    }
+  ],
+  "notes": "Keep the griddle at medium: the fat-soaked tortillas burn quickly on high. Corn tortillas that are a day old hold up better. For mulitas, sandwich the cheese and meat between two tortillas; for a vampiro, griddle the cheese alone until it forms a crust.",
+  "servings": 4,
+  "tags": [],
+  "chatUrl": null,
+  "chapter": "mains",
+  "favorite": false,
+  "log": [],
+  "createdAt": "2026-10-07T02:11:32.117Z",
+  "updatedAt": "2026-10-07T02:11:32.117Z"
+}

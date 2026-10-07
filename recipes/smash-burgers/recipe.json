@@ -1,0 +1,182 @@
+{
+  "id": "smash-burgers",
+  "name": "Smash Burgers — Double Cheeseburgers with Special Sauce",
+  "nativeName": "",
+  "romanized": "",
+  "englishName": "Smash Burgers",
+  "subtitle": "Double Cheeseburgers with Special Sauce",
+  "description": "Balls of 80/20 chuck smashed thin onto a ripping-hot cast-iron pan for a lacy, deeply browned crust, stacked as doubles with American cheese on toasted potato buns. Serves 4.",
+  "ingredients": [
+    {
+      "text": "680 g ground chuck (80/20), cold",
+      "qty": 680,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "ground chuck (80/20), cold"
+    },
+    {
+      "text": "1 tsp kosher salt",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "kosher salt"
+    },
+    {
+      "text": "1/2 tsp black pepper",
+      "qty": 0.5,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "black pepper"
+    },
+    {
+      "text": "8 slices American cheese",
+      "qty": 8,
+      "qtyMax": null,
+      "unit": "slice",
+      "item": "American cheese"
+    },
+    {
+      "text": "4 potato buns",
+      "qty": 4,
+      "qtyMax": null,
+      "unit": null,
+      "item": "potato buns"
+    },
+    {
+      "text": "1 tbsp butter, softened",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "butter, softened"
+    },
+    {
+      "text": "1/2 white onion, very thinly sliced (optional)",
+      "qty": 0.5,
+      "qtyMax": null,
+      "unit": null,
+      "item": "white onion, very thinly sliced (optional)"
+    },
+    {
+      "text": "12 dill pickle chips",
+      "qty": 12,
+      "qtyMax": null,
+      "unit": null,
+      "item": "dill pickle chips"
+    },
+    {
+      "text": "4 tbsp mayonnaise",
+      "qty": 4,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "mayonnaise"
+    },
+    {
+      "text": "2 tbsp ketchup",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "ketchup"
+    },
+    {
+      "text": "1 tbsp chopped dill pickles",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "chopped dill pickles"
+    },
+    {
+      "text": "1 tsp yellow mustard",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "yellow mustard"
+    },
+    {
+      "text": "1 tsp pickle brine",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "pickle brine"
+    }
+  ],
+  "steps": [
+    {
+      "text": "Mix 4 tbsp mayonnaise, 2 tbsp ketchup, 1 tbsp chopped dill pickles, 1 tsp yellow mustard and 1 tsp pickle brine for the sauce.",
+      "ingredientRefs": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "timers": []
+    },
+    {
+      "text": "Divide 680 g ground chuck (80/20), cold into 8 loose balls (85 g each) without packing them. Keep them cold.",
+      "ingredientRefs": [
+        0
+      ],
+      "timers": []
+    },
+    {
+      "text": "Spread 1 tbsp butter, softened on the cut sides of 4 potato buns and toast in a large cast-iron pan over medium for 1 minute, until golden. Set aside.",
+      "ingredientRefs": [
+        4,
+        5
+      ],
+      "timers": [
+        {
+          "text": "1 minute",
+          "seconds": 60
+        }
+      ]
+    },
+    {
+      "text": "Heat the pan over high for 5 minutes, until smoking. Place 2 or 3 balls in the pan and immediately smash each one as thin as possible (about 6 mm) with a stiff spatula, pressing down with a second spatula or a heavy pan (a square of parchment on top stops sticking). Season with 1 tsp kosher salt and 1/2 tsp black pepper, and press a few slices of 1/2 white onion, very thinly sliced (optional) into the raw side if using.",
+      "ingredientRefs": [
+        1,
+        2,
+        6
+      ],
+      "timers": [
+        {
+          "text": "5 minutes",
+          "seconds": 300
+        }
+      ]
+    },
+    {
+      "text": "Cook without moving for 2 minutes, until the edges are lacy and deep brown. Scrape under each patty to keep the crust and flip. Put a slice of 8 slices American cheese on each and cook 30 seconds more.",
+      "ingredientRefs": [
+        3
+      ],
+      "timers": [
+        {
+          "text": "2 minutes",
+          "seconds": 120
+        },
+        {
+          "text": "30 seconds",
+          "seconds": 30
+        }
+      ]
+    },
+    {
+      "text": "Stack two patties per burger. Spread the buns with sauce, add 12 dill pickle chips and the patties, and serve right away. Repeat with the remaining balls, wiping the pan between batches.",
+      "ingredientRefs": [
+        7
+      ],
+      "timers": []
+    }
+  ],
+  "notes": "Smash in the first 10 seconds while the fat is cold; smashing later squeezes out juice. A stiff, sharp-edged metal spatula is essential for scraping up the crust. Kenji's rule: if the pan isn't smoking, it isn't hot enough.",
+  "servings": 4,
+  "tags": [],
+  "chatUrl": null,
+  "chapter": "mains",
+  "cuisine": "American",
+  "favorite": false,
+  "log": [],
+  "createdAt": "2026-10-07T02:11:36.921Z",
+  "updatedAt": "2026-10-07T02:11:36.921Z"
+}
