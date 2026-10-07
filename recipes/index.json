@@ -302,6 +302,28 @@
       "cookCount": 0
     },
     {
+      "id": "gyudon",
+      "name": "牛丼 (Gyūdon) · Japanese Beef Bowl",
+      "englishName": "Japanese Beef Bowl",
+      "nativeName": "牛丼",
+      "romanized": "Gyūdon",
+      "tags": [],
+      "favorite": false,
+      "servings": 2,
+      "items": "thinly sliced beef ribeye or chuck (shabu-shabu cut) · onion, sliced 5 mm thick · dashi · sake · sugar · mirin · soy sauce · grated ginger · hot cooked short-grain rice · egg yolks or onsen tamago (optional) · beni shoga (red pickled ginger) · scallion, thinly sliced · shichimi togarashi, to serve",
+      "chapter": "rice",
+      "cuisine": "Japanese",
+      "equipment": [],
+      "cookSeconds": 540,
+      "waitSeconds": 0,
+      "timerCount": 3,
+      "stepCount": 5,
+      "createdAt": "2026-10-07T02:11:27.974Z",
+      "updatedAt": "2026-10-07T02:11:27.974Z",
+      "lastCooked": null,
+      "cookCount": 0
+    },
+    {
       "id": "hongshao-niurou-mian",
       "name": "紅燒牛肉麵 (Hóngshāo Niúròu Miàn) · Taiwanese Red-Braised Beef Noodle Soup",
       "englishName": "Taiwanese Red-Braised Beef Noodle Soup",
