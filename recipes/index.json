@@ -418,6 +418,32 @@
       "cookCount": 0
     },
     {
+      "id": "cheesy-potato-gratin",
+      "name": "Cheesy Potato Gratin — Gratin with Gruyère and Thyme",
+      "englishName": "Cheesy Potato Gratin",
+      "nativeName": "",
+      "romanized": "",
+      "tags": [
+        "to-try"
+      ],
+      "favorite": false,
+      "servings": 8,
+      "items": "Yukon Gold potatoes, peeled and sliced 3 mm thick · heavy cream · whole milk · garlic cloves, smashed · fresh thyme · salt · black pepper · grated nutmeg · butter (for the dish) · Gruyère, grated · Parmigiano-Reggiano, grated",
+      "chapter": "salads",
+      "cuisine": "French",
+      "equipment": [
+        "Oven"
+      ],
+      "cookSeconds": 4080,
+      "waitSeconds": 0,
+      "timerCount": 3,
+      "stepCount": 5,
+      "createdAt": "2026-10-07T02:11:44.525Z",
+      "updatedAt": "2026-10-07T02:11:44.525Z",
+      "lastCooked": null,
+      "cookCount": 0
+    },
+    {
       "id": "chicken-thigh-fettuccine-alfredo-bloomed-pepper",
       "name": "Chicken Thigh Fettuccine Alfredo, Bloomed Pepper",
       "englishName": "Chicken Thigh Fettuccine Alfredo, Bloomed Pepper",

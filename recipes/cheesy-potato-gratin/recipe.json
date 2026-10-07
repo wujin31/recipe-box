@@ -1,0 +1,156 @@
+{
+  "id": "cheesy-potato-gratin",
+  "name": "Cheesy Potato Gratin — Gratin with Gruyère and Thyme",
+  "nativeName": "",
+  "romanized": "",
+  "englishName": "Cheesy Potato Gratin",
+  "subtitle": "Gratin with Gruyère and Thyme",
+  "description": "Thin slices of Yukon Gold simmered briefly in garlic- and thyme-infused cream and milk, layered with Gruyère and baked until tender, bubbling and deeply browned. Serves 8.",
+  "ingredients": [
+    {
+      "text": "1.4 kg Yukon Gold potatoes, peeled and sliced 3 mm thick",
+      "qty": 1.4,
+      "qtyMax": null,
+      "unit": "kg",
+      "item": "Yukon Gold potatoes, peeled and sliced 3 mm thick"
+    },
+    {
+      "text": "480 ml heavy cream",
+      "qty": 480,
+      "qtyMax": null,
+      "unit": "ml",
+      "item": "heavy cream"
+    },
+    {
+      "text": "240 ml whole milk",
+      "qty": 240,
+      "qtyMax": null,
+      "unit": "ml",
+      "item": "whole milk"
+    },
+    {
+      "text": "2 garlic cloves, smashed",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": null,
+      "item": "garlic cloves, smashed"
+    },
+    {
+      "text": "4 sprigs fresh thyme",
+      "qty": 4,
+      "qtyMax": null,
+      "unit": "sprig",
+      "item": "fresh thyme"
+    },
+    {
+      "text": "1 1/2 tsp salt",
+      "qty": 1.5,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "salt"
+    },
+    {
+      "text": "1/2 tsp black pepper",
+      "qty": 0.5,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "black pepper"
+    },
+    {
+      "text": "1/8 tsp grated nutmeg",
+      "qty": 0.125,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "grated nutmeg"
+    },
+    {
+      "text": "1 tbsp butter (for the dish)",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "butter (for the dish)"
+    },
+    {
+      "text": "170 g Gruyère, grated",
+      "qty": 170,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "Gruyère, grated"
+    },
+    {
+      "text": "30 g Parmigiano-Reggiano, grated",
+      "qty": 30,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "Parmigiano-Reggiano, grated"
+    }
+  ],
+  "steps": [
+    {
+      "text": "Heat the oven to 190°C and rub a 23 × 33 cm baking dish with 1 tbsp butter (for the dish).",
+      "ingredientRefs": [
+        8
+      ],
+      "timers": []
+    },
+    {
+      "text": "Put 480 ml heavy cream, 240 ml whole milk, 2 garlic cloves, smashed, 4 sprigs fresh thyme, 1 1/2 tsp salt, 1/2 tsp black pepper and 1/8 tsp grated nutmeg in a large pot and add 1.4 kg Yukon Gold potatoes, peeled and sliced 3 mm thick. Bring to a simmer over medium, stirring gently, and cook 8 minutes, until the potatoes start to soften and the liquid thickens from their starch. Remove the garlic and thyme stems.",
+      "ingredientRefs": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "timers": [
+        {
+          "text": "8 minutes",
+          "seconds": 480
+        }
+      ]
+    },
+    {
+      "text": "Spoon a third of the potatoes and cream into the dish, scatter with a third of 170 g Gruyère, grated, and repeat twice. Top with 30 g Parmigiano-Reggiano, grated.",
+      "ingredientRefs": [
+        9,
+        10
+      ],
+      "timers": []
+    },
+    {
+      "text": "Bake 45 minutes, until a knife slides through the potatoes easily and the top is deep golden-brown.",
+      "ingredientRefs": [],
+      "timers": [
+        {
+          "text": "45 minutes",
+          "seconds": 2700
+        }
+      ]
+    },
+    {
+      "text": "Rest 15 minutes before serving so the cream sets.",
+      "ingredientRefs": [],
+      "timers": [
+        {
+          "text": "15 minutes",
+          "seconds": 900
+        }
+      ]
+    }
+  ],
+  "notes": "Don't rinse the sliced potatoes: their starch thickens the cream. A mandoline gives even slices that cook at the same rate. The classic gratin dauphinois has no cheese; this is closer to a gratin savoyard. It can be baked a day ahead and reheated at 180°C for 20 minutes.",
+  "servings": 8,
+  "tags": [
+    "to-try"
+  ],
+  "chatUrl": null,
+  "chapter": "salads",
+  "cuisine": "French",
+  "favorite": false,
+  "log": [],
+  "createdAt": "2026-10-07T02:11:44.525Z",
+  "updatedAt": "2026-10-07T02:11:44.525Z"
+}
