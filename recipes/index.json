@@ -1411,6 +1411,30 @@
       "cookCount": 0
     },
     {
+      "id": "shakshuka",
+      "name": "Shakshuka — Eggs Poached in Spiced Tomato and Pepper Sauce",
+      "englishName": "Shakshuka",
+      "nativeName": "",
+      "romanized": "",
+      "tags": [
+        "to-try"
+      ],
+      "favorite": false,
+      "servings": 3,
+      "items": "extra-virgin olive oil · onion, thinly sliced · red bell peppers, thinly sliced · salt · garlic cloves, sliced · ground cumin · sweet paprika · harissa (or 1/2 tsp cayenne) · tomato paste · canned whole peeled tomatoes, crushed by hand · sugar · eggs · feta, crumbled (optional) · cilantro or parsley, chopped · loaf crusty bread or pita, to serve",
+      "chapter": "breakfast",
+      "cuisine": "Middle Eastern",
+      "equipment": [],
+      "cookSeconds": 2100,
+      "waitSeconds": 0,
+      "timerCount": 4,
+      "stepCount": 5,
+      "createdAt": "2026-10-07T02:11:38.846Z",
+      "updatedAt": "2026-10-07T02:11:38.846Z",
+      "lastCooked": null,
+      "cookCount": 0
+    },
+    {
       "id": "shoyu-poke-bowl",
       "name": "Shoyu Poke Bowl — Hawaiian Ahi or Salmon Poke over Rice",
       "englishName": "Shoyu Poke Bowl",
