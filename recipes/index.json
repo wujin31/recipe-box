@@ -762,6 +762,28 @@
       "cookCount": 0
     },
     {
+      "id": "tonkotsu-ramen",
+      "name": "豚骨ラーメン (Tonkotsu Rāmen) · Hakata-Style Tonkotsu Ramen",
+      "englishName": "Hakata-Style Tonkotsu Ramen",
+      "nativeName": "豚骨ラーメン",
+      "romanized": "Tonkotsu Rāmen",
+      "tags": [],
+      "favorite": false,
+      "servings": 6,
+      "items": "pork trotters, split (ask the butcher) · pork neck bones or femur bones, cracked · water, plus more to top up · onion, halved, skin on · head garlic, halved crosswise · ginger, sliced · leek or 6 scallions, green parts · skinless pork belly, in one slab · soy sauce · sake · mirin · sugar · water (for the chashu) · ginger, sliced (for the chashu) · eggs · water (for the tare) · kombu · katsuobushi (bonito flakes) · salt · mirin (for the tare) · sake (for the tare) · portions thin straight ramen noodles (about 720 g fresh) · dried kikurage (wood ear), soaked and sliced · scallions, thinly sliced · beni shoga (red pickled ginger) · toasted sesame seeds · sheets nori, quartered",
+      "chapter": "soups",
+      "cuisine": "Japanese",
+      "equipment": [],
+      "cookSeconds": 13770,
+      "waitSeconds": 72000,
+      "timerCount": 12,
+      "stepCount": 10,
+      "createdAt": "2026-10-07T02:11:26.107Z",
+      "updatedAt": "2026-10-07T02:11:26.107Z",
+      "lastCooked": null,
+      "cookCount": 0
+    },
+    {
       "id": "v3-geurinbin-maneul-bokkeum-v3",
       "name": "그린빈 마늘볶음 v3 / Geurinbin Maneul-bokkeum v3",
       "englishName": "Geurinbin Maneul-bokkeum v3",
