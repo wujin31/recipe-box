@@ -302,6 +302,30 @@
       "cookCount": 0
     },
     {
+      "id": "gindara-saikyo-yaki",
+      "name": "銀ダラの西京焼き (Gindara no Saikyō-yaki) · Miso-Glazed Black Cod",
+      "englishName": "Miso-Glazed Black Cod",
+      "nativeName": "銀ダラの西京焼き",
+      "romanized": "Gindara no Saikyō-yaki",
+      "tags": [],
+      "favorite": false,
+      "servings": 4,
+      "items": "black cod (sablefish) fillets, about 170 g each, skin on · sake · mirin · white miso (saikyo miso if possible) · sugar · salt · hajikami (pickled ginger shoots) or pickled ginger, to serve",
+      "chapter": "mains",
+      "cuisine": "Japanese",
+      "equipment": [
+        "Oven"
+      ],
+      "cookSeconds": 2100,
+      "waitSeconds": 0,
+      "timerCount": 5,
+      "stepCount": 7,
+      "createdAt": "2026-10-07T02:11:28.221Z",
+      "updatedAt": "2026-10-07T02:11:28.221Z",
+      "lastCooked": null,
+      "cookCount": 0
+    },
+    {
       "id": "gyudon",
       "name": "牛丼 (Gyūdon) · Japanese Beef Bowl",
       "englishName": "Japanese Beef Bowl",
