@@ -1018,6 +1018,30 @@
       "cookCount": 0
     },
     {
+      "id": "lemon-chicken-pasta",
+      "name": "Lemon Chicken Pasta",
+      "englishName": "Lemon Chicken Pasta",
+      "nativeName": "",
+      "romanized": "",
+      "tags": [
+        "to-try"
+      ],
+      "favorite": false,
+      "servings": 4,
+      "items": "boneless skinless chicken thighs · salt (for the chicken) · black pepper · olive oil · spaghetti · salt (for the pasta water) · garlic cloves, thinly sliced · butter · lemons, zested and juiced (about 80 ml juice) · Parmigiano-Reggiano, finely grated · parsley, chopped · red chili flakes",
+      "chapter": "rice",
+      "cuisine": "Italian",
+      "equipment": [],
+      "cookSeconds": 480,
+      "waitSeconds": 0,
+      "timerCount": 3,
+      "stepCount": 6,
+      "createdAt": "2026-10-07T02:11:41.421Z",
+      "updatedAt": "2026-10-07T02:11:41.421Z",
+      "lastCooked": null,
+      "cookCount": 0
+    },
+    {
       "id": "loco-moco",
       "name": "Loco Moco — Hawaiian Hamburger, Egg and Gravy Rice Bowl",
       "englishName": "Loco Moco",
