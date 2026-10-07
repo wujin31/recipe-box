@@ -41,7 +41,11 @@ export function mountTimerTray() {
   onTimersChange(draw);
   draw(getTimers());
   // Pages pad their bottom by the tray's height so nothing ends up underneath it.
-  const measure = () => document.documentElement.style.setProperty("--tray-h", `${tray.hidden ? 0 : tray.offsetHeight + 12}px`);
+  let height = null;
+  const measure = () => {
+    const next = `${tray.hidden ? 0 : tray.offsetHeight + 12}px`;
+    if (next !== height) document.documentElement.style.setProperty("--tray-h", (height = next)); // only when it changes
+  };
   new ResizeObserver(measure).observe(tray);
   onTimersChange(measure);
 }

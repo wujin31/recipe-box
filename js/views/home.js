@@ -1,7 +1,7 @@
 // The cookbook's contents: continue cooking, a shelf per chapter, and the chapter list.
 
 import { UNSORTED, chapterOf } from "../cookbook.js";
-import { canWrite, getChapters, listRecipes, loadLocal, saveLocal } from "../store.js";
+import { canWrite, getChapters, lastLoaded, listRecipes, loadLocal, saveLocal } from "../store.js";
 import { getTimers } from "../timers.js";
 import { displayName, errorMessage, fill, h, iconButton } from "../ui.js";
 import { chapterClass, miniTile, tile } from "./tiles.js";
@@ -38,15 +38,22 @@ export async function viewHome(root) {
     h("h1", { class: "large-title" }, "Cookbook"),
     body);
 
-  let recipes, chapters;
-  try {
-    [recipes, chapters] = await Promise.all([listRecipes({ fresh: true }), getChapters()]);
-  } catch (e) {
-    fill(body, h("p", { class: "muted pad" }, "Couldn't load recipes. ", errorMessage(e)));
-    return;
-  }
-  if (!root.isConnected) return;
+  // Coming back to the cookbook shows what it showed last time at once, and redraws only if a
+  // fresh copy (from another device, say) is different. The first visit waits for it.
+  const shown = lastLoaded();
+  const refresh = Promise.all([listRecipes({ fresh: true }), getChapters()]).then(([recipes, chapters]) => {
+    if (!root.isConnected) return;
+    if (!shown || JSON.stringify([recipes, chapters]) !== JSON.stringify([shown.recipes, shown.chapters])) draw(body, recipes, chapters);
+  }, (e) => {
+    // Offline isn't an error here (the saved copy is used), so this is real: a misspelled repo or
+    // branch in Settings. Say so, even over what was shown before.
+    if (root.isConnected) fill(body, h("p", { class: "muted pad" }, "Couldn't load recipes. ", errorMessage(e)));
+  });
+  if (shown) draw(body, shown.recipes, shown.chapters);
+  else await refresh;
+}
 
+function draw(body, recipes, chapters) {
   if (!recipes.length) {
     fill(body, h("div", { class: "empty" },
       h("p", {}, "Your cookbook is empty."),

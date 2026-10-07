@@ -130,6 +130,26 @@ test("refuses to run inside another site's frame", async () => {
   await framed.close();
 });
 
+test("coming back to the cookbook doesn't wait for the network", async () => {
+  await app.goto("#/");
+  await page.waitForSelector(".tile");
+  await page.evaluate(() => { location.hash = "#/r/mu-bap"; });
+  await page.waitForSelector(".recipe-title");
+  // GitHub is slow now; the cookbook should still be there at once. (Held on the browser
+  // context, so letting go passes them on to the fake GitHub, not the real one.)
+  const slow = async (route) => { await new Promise((ok) => setTimeout(ok, 2000)); await route.fallback(); };
+  await app.ctx.route("https://api.github.com/**", slow);
+  await app.ctx.route(`${app.base}recipes/**`, slow);
+  try {
+    await page.evaluate(() => { location.hash = "#/"; });
+    await page.waitForSelector(".tile", { timeout: 1000 });
+  } finally {
+    await page.waitForTimeout(2500); // the held requests finish
+    await app.ctx.unroute("https://api.github.com/**", slow);
+    await app.ctx.unroute(`${app.base}recipes/**`, slow);
+  }
+});
+
 test("a misspelled branch shows an error, not an empty library", async () => {
   await page.goto(`${app.base}#/settings`);
   await page.fill('label:has-text("Branch") input', "mian");

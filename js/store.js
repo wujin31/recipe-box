@@ -277,9 +277,14 @@ async function checkBranch() {
 }
 
 // The chapter list (recipes/cookbook.json), or the default chapters when there's none.
+let chaptersMemo = null;
 export async function getChapters() {
-  try { return chaptersFrom(JSON.parse(await readFile("recipes/cookbook.json"))); } catch { return chaptersFrom(null); }
+  try { chaptersMemo = chaptersFrom(JSON.parse(await readFile("recipes/cookbook.json"))); } catch { chaptersMemo = chaptersFrom(null); }
+  return chaptersMemo;
 }
+
+// What was loaded last, to show at once while a fresh copy loads (null before the first load).
+export const lastLoaded = () => (indexMemo && chaptersMemo ? { recipes: indexMemo.recipes, chapters: chaptersMemo } : null);
 
 export async function getRecipe(id) {
   if (!isRecipeId(id)) return null;

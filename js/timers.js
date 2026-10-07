@@ -90,6 +90,7 @@ function chime() {
 }
 
 setInterval(() => {
+  if (!timers.length) return; // nothing to tick: don't wake the tray, tab bar and pages every second
   let changed = false;
   timers = timers.map((t) => {
     if (!t.done && Date.now() >= t.endsAt) { changed = true; chime(); return { ...t, done: true }; }
