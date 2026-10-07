@@ -150,7 +150,6 @@ export function recipeTime(r) {
   }
   return { cook, wait };
 }
-export const totalSeconds = (r) => { const { cook, wait } = recipeTime(r); return cook + wait; };
 
 export const timerCount = (r) => (r.steps ?? []).reduce((n, s) => n + (s.timers?.length ?? 0), 0);
 

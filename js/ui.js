@@ -84,6 +84,8 @@ export const backButton = (to = "#/") => iconButton("back", "Back", () => (locat
 // ---------- rendering helpers ----------
 
 export const displayName = (r) => r.englishName || r.name;
+// The dish's own-script name (滷肉飯, 닭죽), or "" when it only has Latin-script names.
+export const nativeOf = (r) => (r.nativeName && !/^[\p{Script=Latin}\p{N}\p{P}\p{S}\s]+$/u.test(r.nativeName) ? r.nativeName : "");
 export const subName = (r) => [r.nativeName, r.romanized].filter(Boolean).join(" · ");
 
 export function segmented(options, value, onChange) {

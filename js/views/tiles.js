@@ -1,7 +1,7 @@
 // Recipe tiles and chapter colors, shared by home, chapter pages and search.
 
 import { UNSORTED, formatTotal } from "../cookbook.js";
-import { h, displayName } from "../ui.js";
+import { h, displayName, nativeOf } from "../ui.js";
 
 // Chapters are colored by position (7 palettes, then they repeat); Unsorted is neutral.
 export function chapterClass(id, chapters) {
@@ -9,8 +9,6 @@ export function chapterClass(id, chapters) {
   const i = chapters.findIndex((c) => c.id === id);
   return `pal-${(i < 0 ? 0 : i) % 7}`;
 }
-
-const isLatin = (s) => /^[\p{Script=Latin}\p{N}\p{P}\p{S}\s]+$/u.test(s);
 
 const WIDE = /[\p{Script=Han}\p{Script=Hiragana}\p{Script=Katakana}\p{Script=Hangul}ー]/u;
 const ems = (s) => [...s].reduce((n, c) => n + (WIDE.test(c) ? 1 : c === " " ? 0.3 : 0.64), 0); // bold serif Latin runs wide
@@ -62,7 +60,7 @@ export const tileName = (r) => displayName(r).split(/,\s/)[0];
 
 // A tile: the dish's own-script name large (or its English name when it has none).
 export function tile(r, chapters, { chapter = r.chapter } = {}) {
-  const native = r.nativeName && !isLatin(r.nativeName) ? r.nativeName : "";
+  const native = nativeOf(r);
   const big = native || tileName(r);
   const title = h("span", { class: `tile-big ${native ? "native" : "latin"}` }, big);
   // CSSOM: inline style attributes are blocked by CSP. cqi is % of the tile's inner width.
@@ -77,7 +75,7 @@ export function tile(r, chapters, { chapter = r.chapter } = {}) {
 
 // A small square used in lists (search results, continue cooking): the name's first character.
 export function miniTile(r, chapters) {
-  const native = r.nativeName && !isLatin(r.nativeName) ? r.nativeName : "";
+  const native = nativeOf(r);
   const text = [...(native || displayName(r))][0] ?? "";
   return h("span", { class: `mini ${chapterClass(r.chapter, chapters)}`, "aria-hidden": "true" }, text);
 }

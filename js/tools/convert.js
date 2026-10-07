@@ -1,6 +1,6 @@
 // Cups ↔ grams for common ingredients, °F ↔ °C, and gas marks.
 
-import { fill, h } from "../ui.js";
+import { h } from "../ui.js";
 import { UNITS, formatDecimal, formatFraction } from "../units.js";
 import { amountField, readNumber } from "./kit.js";
 import { spoons } from "./salts.js";

@@ -4,10 +4,8 @@
 import { UNSORTED, chapterOf, guessChapter } from "../cookbook.js";
 import { refreshRecipe } from "../parser.js";
 import { canWrite, getChapters, getRecipe, listRecipes, updateRecipe } from "../store.js";
-import { displayName, errorMessage, fill, h, notConnected, toast } from "../ui.js";
+import { displayName, errorMessage, fill, h, nativeOf, notConnected, toast } from "../ui.js";
 import { chapterClass } from "./tiles.js";
-
-const isLatin = (s) => /^[\p{Script=Latin}\p{N}\p{P}\p{S}\s]+$/u.test(s);
 
 export async function viewSort(root) {
   const counter = h("span", { class: "muted small" });
@@ -53,7 +51,7 @@ export async function viewSort(root) {
     try { r = refreshRecipe(await getRecipe(summary.id)); } catch { r = { ...summary, ingredients: [], steps: [] }; }
     if (!root.isConnected) return;
     const guess = guessChapter(r, chapters);
-    const native = r.nativeName && !isLatin(r.nativeName) ? r.nativeName : "";
+    const native = nativeOf(r);
 
     const choose = (chapterId) => {
       sorted++;

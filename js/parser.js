@@ -53,8 +53,6 @@ function joinWrapped(prev, next) {
   return /[-–]$/.test(prev) ? prev + next : prev + " " + next;
 }
 
-const isLatin = (s) => /^[\p{Script=Latin}\p{N}\p{P}\p{S}\s]+$/u.test(s);
-
 // Claude titles recipes in many shapes; all of these split into native name, romanization,
 // English name and (sometimes) a subtitle:
 //   "ข้าวหมกไก่ (Khao Mok Kai) · Thai Chicken Biryani"      native (romanized) · English

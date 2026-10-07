@@ -4,7 +4,7 @@ import { pageSignal } from "../lifecycle.js";
 import { recipeToText } from "../parser.js";
 import { canWrite, deleteRecipe, getChapters, restoreRecipe, safeUrl, updateRecipe } from "../store.js";
 import { chaptersFrom } from "../cookbook.js";
-import { backButton, copyText, displayName, errorMessage, fill, h, icon, iconButton, navbar, requireWrite, segmented, subName, toast } from "../ui.js";
+import { backButton, copyText, displayName, errorMessage, fill, h, icon, iconButton, navbar, requireWrite, segmented, toast } from "../ui.js";
 import { UNITS } from "../units.js";
 import { recipeHero } from "./hero.js";
 import { cookLogSection, getView, ingredientChecklist, loadRecipeOr404, openLogSheet, openTweaksSheet, renderStep, setView, shareRecipe } from "./shared.js";

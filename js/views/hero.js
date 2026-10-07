@@ -1,17 +1,15 @@
 // The recipe page's header: where the recipe sits in the cookbook, its names, and quick facts.
 
 import { UNSORTED, chapterOf, formatTime, guessCuisine, guessEquipment, recipeTime, timerCount } from "../cookbook.js";
-import { displayName, h } from "../ui.js";
+import { displayName, h, nativeOf } from "../ui.js";
 import { chapterClass } from "./tiles.js";
-
-const isLatin = (s) => /^[\p{Script=Latin}\p{N}\p{P}\p{S}\s]+$/u.test(s);
 
 export function recipeHero(r, chapters) {
   const chapterId = chapterOf(r, chapters);
   const chapter = chapters.find((c) => c.id === chapterId) ?? UNSORTED;
   const cuisine = guessCuisine(r);
   const equipment = guessEquipment(r);
-  const native = r.nativeName && !isLatin(r.nativeName) ? r.nativeName : "";
+  const native = nativeOf(r);
   const time = formatTime(recipeTime(r));
   const timers = timerCount(r);
   const cooked = r.log?.length ?? 0;

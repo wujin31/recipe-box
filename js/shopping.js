@@ -5,7 +5,7 @@
 // again; the list you see merges entries with the same key ("garlic" from three recipes).
 
 import { loadLocal, saveLocal } from "./store.js";
-import { UNITS, formatFraction, formatMeasure } from "./units.js";
+import { UNITS, formatMeasure } from "./units.js";
 
 // ---------- names ----------
 
