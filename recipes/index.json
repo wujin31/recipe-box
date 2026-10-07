@@ -831,6 +831,28 @@
       "cookCount": 0
     },
     {
+      "id": "teriyaki-chicken",
+      "name": "照り焼きチキン (Teriyaki Chikin) · Chicken Teriyaki with Rice",
+      "englishName": "Chicken Teriyaki with Rice",
+      "nativeName": "照り焼きチキン",
+      "romanized": "Teriyaki Chikin",
+      "tags": [],
+      "favorite": false,
+      "servings": 2,
+      "items": "boneless skin-on chicken thighs (about 500 g) · salt · neutral oil · soy sauce · sake · mirin · sugar · hot cooked short-grain rice · toasted sesame seeds · scallion, thinly sliced",
+      "chapter": "mains",
+      "cuisine": "Japanese",
+      "equipment": [],
+      "cookSeconds": 720,
+      "waitSeconds": 0,
+      "timerCount": 3,
+      "stepCount": 5,
+      "createdAt": "2026-10-07T02:11:27.707Z",
+      "updatedAt": "2026-10-07T02:11:27.707Z",
+      "lastCooked": null,
+      "cookCount": 0
+    },
+    {
       "id": "tonkatsu",
       "name": "とんかつ (Tonkatsu) · Panko Pork Cutlet with Shredded Cabbage",
       "englishName": "Panko Pork Cutlet with Shredded Cabbage",
