@@ -458,6 +458,28 @@
       "cookCount": 0
     },
     {
+      "id": "kimchi-jjigae",
+      "name": "김치찌개 (Kimchi Jjigae) · Kimchi Stew with Pork Belly",
+      "englishName": "Kimchi Stew with Pork Belly",
+      "nativeName": "김치찌개",
+      "romanized": "Kimchi Jjigae",
+      "tags": [],
+      "favorite": false,
+      "servings": 3,
+      "items": "large dried anchovies, heads and guts removed · kombu (a 10 cm square) · water · pork belly or shoulder, sliced 5 mm thick · toasted sesame oil · sour, well-fermented kimchi, cut into bite-size pieces · kimchi brine · onion, sliced · minced garlic · gochugaru (Korean chili flakes) · gochujang · sugar · medium-firm tofu, sliced 1.5 cm thick · scallions, sliced on the diagonal · salt, to taste · hot cooked short-grain rice",
+      "chapter": "soups",
+      "cuisine": "Korean",
+      "equipment": [],
+      "cookSeconds": 2880,
+      "waitSeconds": 0,
+      "timerCount": 5,
+      "stepCount": 5,
+      "createdAt": "2026-10-07T02:11:29.560Z",
+      "updatedAt": "2026-10-07T02:11:29.560Z",
+      "lastCooked": null,
+      "cookCount": 0
+    },
+    {
       "id": "la-galbi",
       "name": "갈비 (Galbi) · LA-Style Korean BBQ Short Ribs",
       "englishName": "LA-Style Korean BBQ Short Ribs",
