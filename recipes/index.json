@@ -2262,6 +2262,32 @@
       "cookCount": 0
     },
     {
+      "id": "weeknight-fancy-chicken-and-rice",
+      "name": "Weeknight Fancy Chicken and Rice — One-Pan Saffron Chicken with Herbs",
+      "englishName": "Weeknight Fancy Chicken and Rice",
+      "nativeName": "",
+      "romanized": "",
+      "tags": [
+        "to-try"
+      ],
+      "favorite": false,
+      "servings": 4,
+      "items": "bone-in, skin-on chicken thighs (about 1.4 kg) · kosher salt · black pepper · ground cumin · olive oil · onion, finely chopped · garlic cloves, minced · basmati rice, rinsed · large pinch saffron, crumbled into 2 tbsp hot water · chicken stock · lemon, zested, then cut into wedges · mixed herbs (parsley, dill, cilantro, mint), chopped · sliced almonds, toasted · plain Greek yogurt · small garlic clove, grated (for the yogurt)",
+      "chapter": "rice",
+      "cuisine": "Middle Eastern",
+      "equipment": [
+        "Oven"
+      ],
+      "cookSeconds": 3480,
+      "waitSeconds": 0,
+      "timerCount": 5,
+      "stepCount": 6,
+      "createdAt": "2026-10-07T02:11:43.956Z",
+      "updatedAt": "2026-10-07T02:11:43.956Z",
+      "lastCooked": null,
+      "cookCount": 0
+    },
+    {
       "id": "xiandan-zheng-roubing",
       "name": "鹹蛋蒸肉餅 (Xiándàn Zhēng Ròubǐng) · Steamed Pork Patty with Salted Duck Egg",
       "englishName": "Steamed Pork Patty with Salted Duck Egg",
