@@ -50,6 +50,30 @@
       "cookCount": 0
     },
     {
+      "id": "baja-fish-tacos",
+      "name": "Baja Fish Tacos — Ensenada-Style Beer-Battered Tacos de Pescado",
+      "englishName": "Baja Fish Tacos",
+      "nativeName": "",
+      "romanized": "",
+      "tags": [],
+      "favorite": false,
+      "servings": 4,
+      "items": "firm white fish (cod, halibut, rockfish or mahi-mahi), cut into 2 × 10 cm strips · salt (for the fish) · all-purpose flour · baking powder · salt (for the batter) · Mexican oregano · yellow mustard · cold Mexican lager · all-purpose flour (for dredging) · neutral oil (for frying) · Mexican crema · mayonnaise · lime juice · milk · Roma tomatoes, finely diced · white onion, finely diced · serrano chile, minced · cilantro, chopped · lime juice (for the salsa) · salt (for the salsa) · green cabbage, very finely shredded · corn tortillas · limes, cut into wedges",
+      "chapter": "mains",
+      "cuisine": "Mexican",
+      "equipment": [
+        "Oven"
+      ],
+      "cookSeconds": 270,
+      "waitSeconds": 0,
+      "timerCount": 2,
+      "stepCount": 7,
+      "createdAt": "2026-10-07T02:11:32.417Z",
+      "updatedAt": "2026-10-07T02:11:32.417Z",
+      "lastCooked": null,
+      "cookCount": 0
+    },
+    {
       "id": "beef-sukiyaki-bowl",
       "name": "Gyū Suki-don 牛すき丼 — Beef Sukiyaki Bowl",
       "englishName": "Beef Sukiyaki Bowl",
