@@ -1,0 +1,174 @@
+{
+  "id": "french-onion-grilled-cheese",
+  "name": "French Onion Grilled Cheese",
+  "nativeName": "",
+  "romanized": "",
+  "englishName": "French Onion Grilled Cheese",
+  "description": "French onion soup as a sandwich: onions caramelized slowly and deglazed with sherry and beef stock until jammy, layered with nutty Gruyère between buttery sourdough, griddled with a frico-crisp Parmesan crust. Serves 2.",
+  "ingredients": [
+    {
+      "text": "2 large yellow onions (about 500 g), thinly sliced",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": null,
+      "item": "large yellow onions (about 500 g), thinly sliced"
+    },
+    {
+      "text": "2 tbsp butter (for the onions)",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "butter (for the onions)"
+    },
+    {
+      "text": "1/4 tsp salt",
+      "qty": 0.25,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "salt"
+    },
+    {
+      "text": "1/2 tsp fresh thyme leaves",
+      "qty": 0.5,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "fresh thyme leaves"
+    },
+    {
+      "text": "60 ml dry sherry or dry white wine",
+      "qty": 60,
+      "qtyMax": null,
+      "unit": "ml",
+      "item": "dry sherry or dry white wine"
+    },
+    {
+      "text": "120 ml beef stock",
+      "qty": 120,
+      "qtyMax": null,
+      "unit": "ml",
+      "item": "beef stock"
+    },
+    {
+      "text": "1/2 tsp Worcestershire sauce",
+      "qty": 0.5,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "Worcestershire sauce"
+    },
+    {
+      "text": "1/4 tsp black pepper",
+      "qty": 0.25,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "black pepper"
+    },
+    {
+      "text": "4 slices sourdough bread, 1.5 cm thick",
+      "qty": 4,
+      "qtyMax": null,
+      "unit": "slice",
+      "item": "sourdough bread, 1.5 cm thick"
+    },
+    {
+      "text": "2 tbsp softened butter (for the bread)",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "softened butter (for the bread)"
+    },
+    {
+      "text": "150 g Gruyère, grated",
+      "qty": 150,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "Gruyère, grated"
+    },
+    {
+      "text": "20 g Parmigiano-Reggiano, finely grated",
+      "qty": 20,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "Parmigiano-Reggiano, finely grated"
+    }
+  ],
+  "steps": [
+    {
+      "text": "Melt 2 tbsp butter (for the onions) in a wide skillet over medium. Add 2 large yellow onions (about 500 g), thinly sliced and 1/4 tsp salt and cook 10 minutes, stirring, until soft. Lower the heat to medium-low and cook 35 minutes more, stirring every few minutes and scraping the browned bits, until deep amber and jammy. Add a splash of water if they start to catch.",
+      "ingredientRefs": [
+        0,
+        1,
+        2
+      ],
+      "timers": [
+        {
+          "text": "10 minutes",
+          "seconds": 600
+        },
+        {
+          "text": "35 minutes",
+          "seconds": 2100
+        }
+      ]
+    },
+    {
+      "text": "Add 1/2 tsp fresh thyme leaves and 60 ml dry sherry or dry white wine and scrape the pan as it bubbles away, about 1 minute. Add 120 ml beef stock and 1/2 tsp Worcestershire sauce and simmer 4 minutes, until almost dry. Season with 1/4 tsp black pepper.",
+      "ingredientRefs": [
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "timers": [
+        {
+          "text": "1 minute",
+          "seconds": 60
+        },
+        {
+          "text": "4 minutes",
+          "seconds": 240
+        }
+      ]
+    },
+    {
+      "text": "Spread 2 tbsp softened butter (for the bread) on one side of each slice of 4 slices sourdough bread, 1.5 cm thick and sprinkle 20 g Parmigiano-Reggiano, finely grated over the butter, pressing it in.",
+      "ingredientRefs": [
+        8,
+        9,
+        11
+      ],
+      "timers": []
+    },
+    {
+      "text": "Flip two slices over and top each with a quarter of 150 g Gruyère, grated, half the onions and another quarter of the cheese. Close with the other slices, Parmesan side out.",
+      "ingredientRefs": [
+        10
+      ],
+      "timers": []
+    },
+    {
+      "text": "Cook in a skillet over medium-low, covered, for 4 minutes per side, until the crust is deep golden and the cheese has melted. Rest 1 minute, then cut.",
+      "ingredientRefs": [],
+      "timers": [
+        {
+          "text": "4 minutes",
+          "seconds": 240
+        },
+        {
+          "text": "1 minute",
+          "seconds": 60
+        }
+      ]
+    }
+  ],
+  "notes": "Caramelizing takes time: 45 minutes is not padding. The onions keep for a week in the fridge, so make a double batch. Warm extra beef stock with a splash of sherry for dipping, like a soup and sandwich in one.",
+  "servings": 2,
+  "tags": [],
+  "chatUrl": null,
+  "chapter": "mains",
+  "cuisine": "American",
+  "favorite": false,
+  "log": [],
+  "createdAt": "2026-10-07T02:11:35.250Z",
+  "updatedAt": "2026-10-07T02:11:35.250Z"
+}
