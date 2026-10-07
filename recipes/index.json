@@ -96,6 +96,32 @@
       "cookCount": 0
     },
     {
+      "id": "baked-mac-and-cheese",
+      "name": "Baked Mac and Cheese",
+      "englishName": "Baked Mac and Cheese",
+      "nativeName": "",
+      "romanized": "",
+      "tags": [
+        "to-try"
+      ],
+      "favorite": false,
+      "servings": 8,
+      "items": "elbow macaroni or cavatappi · salt (for the pasta water) · butter · all-purpose flour · whole milk, warmed · dry mustard powder · smoked paprika · cayenne pepper · salt · black pepper · extra-sharp cheddar, grated · Gruyère, grated · panko · butter, melted (for the topping) · Parmesan, grated",
+      "chapter": "rice",
+      "cuisine": "American",
+      "equipment": [
+        "Oven"
+      ],
+      "cookSeconds": 1920,
+      "waitSeconds": 0,
+      "timerCount": 4,
+      "stepCount": 7,
+      "createdAt": "2026-10-07T02:11:43.396Z",
+      "updatedAt": "2026-10-07T02:11:43.396Z",
+      "lastCooked": null,
+      "cookCount": 0
+    },
+    {
       "id": "beef-sukiyaki-bowl",
       "name": "Gyū Suki-don 牛すき丼 — Beef Sukiyaki Bowl",
       "englishName": "Beef Sukiyaki Bowl",
