@@ -738,6 +738,28 @@
       "cookCount": 0
     },
     {
+      "id": "xiandan-zheng-roubing",
+      "name": "鹹蛋蒸肉餅 (Xiándàn Zhēng Ròubǐng) · Steamed Pork Patty with Salted Duck Egg",
+      "englishName": "Steamed Pork Patty with Salted Duck Egg",
+      "nativeName": "鹹蛋蒸肉餅",
+      "romanized": "Xiándàn Zhēng Ròubǐng",
+      "tags": [],
+      "favorite": false,
+      "servings": 4,
+      "items": "ground pork (about 25% fat) · raw salted duck eggs · water chestnuts, finely chopped · light soy sauce · Shaoxing wine · sugar · ground white pepper · cornstarch · cold water · sesame oil · scallion, finely chopped",
+      "chapter": "mains",
+      "cuisine": "Chinese",
+      "equipment": [],
+      "cookSeconds": 1200,
+      "waitSeconds": 0,
+      "timerCount": 2,
+      "stepCount": 6,
+      "createdAt": "2026-10-07T02:11:25.311Z",
+      "updatedAt": "2026-10-07T02:11:25.311Z",
+      "lastCooked": null,
+      "cookCount": 0
+    },
+    {
       "id": "ximending-spam-qisi-dan-bing",
       "name": "西門町 Spam 起司蛋餅 (Xīméndīng Spam Qǐsī Dàn Bǐng)",
       "englishName": "Xīméndīng Spam Qǐsī Dàn Bǐng",
