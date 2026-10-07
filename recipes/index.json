@@ -504,6 +504,28 @@
       "cookCount": 0
     },
     {
+      "id": "loco-moco",
+      "name": "Loco Moco — Hawaiian Hamburger, Egg and Gravy Rice Bowl",
+      "englishName": "Loco Moco",
+      "nativeName": "",
+      "romanized": "",
+      "tags": [],
+      "favorite": false,
+      "servings": 4,
+      "items": "ground beef (80/20) · panko · egg · onion, grated · shoyu (soy sauce) · salt · black pepper · neutral oil · butter · onion, thinly sliced (for the gravy) · button mushrooms, sliced · all-purpose flour · beef stock · shoyu (for the gravy) · Worcestershire sauce · eggs · hot cooked white rice · scallions, sliced",
+      "chapter": "rice",
+      "cuisine": "Hawaiian",
+      "equipment": [],
+      "cookSeconds": 900,
+      "waitSeconds": 0,
+      "timerCount": 5,
+      "stepCount": 6,
+      "createdAt": "2026-10-07T02:11:29.847Z",
+      "updatedAt": "2026-10-07T02:11:29.847Z",
+      "lastCooked": null,
+      "cookCount": 0
+    },
+    {
       "id": "luroufan-oven-braise-1-25-lb",
       "name": "滷肉飯 (lǔròufàn) Oven Braise, 1.25 lb",
       "englishName": "Lǔròufàn Oven Braise, 1.25 lb",
