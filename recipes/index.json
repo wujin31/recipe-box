@@ -2,6 +2,28 @@
   "version": 2,
   "recipes": [
     {
+      "id": "aguachile-verde",
+      "name": "Aguachile Verde — Sinaloa-Style Shrimp in Green Chile-Lime",
+      "englishName": "Aguachile Verde",
+      "nativeName": "",
+      "romanized": "",
+      "tags": [],
+      "favorite": false,
+      "servings": 4,
+      "items": "large raw shrimp, peeled and deveined · salt · fresh lime juice (about 8 limes) · serrano chiles, stemmed · cilantro, with stems · small garlic clove · cold water · cucumber, peeled, seeded and sliced into half-moons · red onion, very thinly sliced · avocado, sliced · tostadas or saltine crackers",
+      "chapter": "mains",
+      "cuisine": "Mexican",
+      "equipment": [],
+      "cookSeconds": 930,
+      "waitSeconds": 0,
+      "timerCount": 2,
+      "stepCount": 4,
+      "createdAt": "2026-10-07T02:11:32.684Z",
+      "updatedAt": "2026-10-07T02:11:32.684Z",
+      "lastCooked": null,
+      "cookCount": 0
+    },
+    {
       "id": "arroz-rojo-short-grain-adaptation",
       "name": "Arroz Rojo, Short-Grain Adaptation — Zojirushi Neuro Fuzzy",
       "englishName": "Arroz Rojo, Short-Grain Adaptation",
