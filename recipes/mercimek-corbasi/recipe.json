@@ -1,0 +1,209 @@
+{
+  "id": "mercimek-corbasi",
+  "name": "Mercimek Çorbası — Turkish Red Lentil Soup",
+  "nativeName": "",
+  "romanized": "",
+  "englishName": "Mercimek Çorbası",
+  "subtitle": "Turkish Red Lentil Soup",
+  "description": "Turkey's everyday soup: red lentils simmered with onion, carrot and potato into a smooth, velvety purée, finished with lemon and a sizzle of butter bloomed with dried mint and pul biber. Serves 6.",
+  "ingredients": [
+    {
+      "text": "2 tbsp olive oil",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "olive oil",
+      "group": "For the soup"
+    },
+    {
+      "text": "1 onion, chopped",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": null,
+      "item": "onion, chopped",
+      "group": "For the soup"
+    },
+    {
+      "text": "1 carrot, chopped",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": null,
+      "item": "carrot, chopped",
+      "group": "For the soup"
+    },
+    {
+      "text": "1 small potato, peeled and chopped",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": null,
+      "item": "small potato, peeled and chopped",
+      "group": "For the soup"
+    },
+    {
+      "text": "2 garlic cloves",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": null,
+      "item": "garlic cloves",
+      "group": "For the soup"
+    },
+    {
+      "text": "1 tbsp tomato paste or Turkish pepper paste (biber salçası)",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "tomato paste or Turkish pepper paste (biber salçası)",
+      "group": "For the soup"
+    },
+    {
+      "text": "1 tsp ground cumin",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "ground cumin",
+      "group": "For the soup"
+    },
+    {
+      "text": "250 g red lentils, rinsed",
+      "qty": 250,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "red lentils, rinsed",
+      "group": "For the soup"
+    },
+    {
+      "text": "1.5 L chicken or vegetable stock (or water)",
+      "qty": 1.5,
+      "qtyMax": null,
+      "unit": "l",
+      "item": "chicken or vegetable stock (or water)",
+      "group": "For the soup"
+    },
+    {
+      "text": "1 tsp salt, to taste",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "salt, to taste",
+      "group": "For the soup"
+    },
+    {
+      "text": "1/2 tsp black pepper",
+      "qty": 0.5,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "black pepper",
+      "group": "For the soup"
+    },
+    {
+      "text": "3 tbsp butter",
+      "qty": 3,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "butter",
+      "group": "For the finish"
+    },
+    {
+      "text": "1 tsp dried mint",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "dried mint",
+      "group": "For the finish"
+    },
+    {
+      "text": "1 tsp pul biber (Aleppo pepper) or sweet paprika",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "pul biber (Aleppo pepper) or sweet paprika",
+      "group": "For the finish"
+    },
+    {
+      "text": "2 lemons, cut into wedges",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": null,
+      "item": "lemons, cut into wedges",
+      "group": "For the finish"
+    }
+  ],
+  "steps": [
+    {
+      "text": "Heat 2 tbsp olive oil in a large pot over medium. Cook 1 onion, chopped, 1 carrot, chopped and 1 small potato, peeled and chopped for 6 minutes, until the onion is soft. Add 2 garlic cloves, 1 tbsp tomato paste or Turkish pepper paste (biber salçası) and 1 tsp ground cumin and stir 1 minute.",
+      "ingredientRefs": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "timers": [
+        {
+          "text": "6 minutes",
+          "seconds": 360
+        },
+        {
+          "text": "1 minute",
+          "seconds": 60
+        }
+      ]
+    },
+    {
+      "text": "Add 250 g red lentils, rinsed and 1.5 L chicken or vegetable stock (or water), bring to a boil and skim. Simmer partly covered for 25 minutes, until the lentils have collapsed and the vegetables are soft.",
+      "ingredientRefs": [
+        7,
+        8
+      ],
+      "timers": [
+        {
+          "text": "25 minutes",
+          "seconds": 1500
+        }
+      ]
+    },
+    {
+      "text": "Blend until completely smooth. Season with 1 tsp salt, to taste and 1/2 tsp black pepper, adding water if it's thicker than heavy cream.",
+      "ingredientRefs": [
+        9,
+        10
+      ],
+      "timers": []
+    },
+    {
+      "text": "Melt 3 tbsp butter in a small pan until foaming, about 1 minute. Off the heat, stir in 1 tsp dried mint and 1 tsp pul biber (Aleppo pepper) or sweet paprika.",
+      "ingredientRefs": [
+        11,
+        12,
+        13
+      ],
+      "timers": [
+        {
+          "text": "1 minute",
+          "seconds": 60
+        }
+      ]
+    },
+    {
+      "text": "Ladle the soup into bowls, drizzle with the red butter, and serve with 2 lemons, cut into wedges to squeeze in.",
+      "ingredientRefs": [
+        14
+      ],
+      "timers": []
+    }
+  ],
+  "notes": "The lemon is not a garnish: a good squeeze is how it's eaten in Turkey. A tablespoon of rice or bulgur cooked with the lentils is a common addition for body. Serve with crusty bread.",
+  "servings": 6,
+  "tags": [
+    "to-try"
+  ],
+  "chatUrl": null,
+  "chapter": "soups",
+  "cuisine": "Turkish",
+  "favorite": false,
+  "log": [],
+  "createdAt": "2026-10-07T02:11:39.456Z",
+  "updatedAt": "2026-10-07T02:11:39.456Z"
+}

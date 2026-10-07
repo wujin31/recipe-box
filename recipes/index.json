@@ -1066,6 +1066,30 @@
       "cookCount": 0
     },
     {
+      "id": "mercimek-corbasi",
+      "name": "Mercimek Çorbası — Turkish Red Lentil Soup",
+      "englishName": "Mercimek Çorbası",
+      "nativeName": "",
+      "romanized": "",
+      "tags": [
+        "to-try"
+      ],
+      "favorite": false,
+      "servings": 6,
+      "items": "olive oil · onion, chopped · carrot, chopped · small potato, peeled and chopped · garlic cloves · tomato paste or Turkish pepper paste (biber salçası) · ground cumin · red lentils, rinsed · chicken or vegetable stock (or water) · salt, to taste · black pepper · butter · dried mint · pul biber (Aleppo pepper) or sweet paprika · lemons, cut into wedges",
+      "chapter": "soups",
+      "cuisine": "Turkish",
+      "equipment": [],
+      "cookSeconds": 1920,
+      "waitSeconds": 0,
+      "timerCount": 4,
+      "stepCount": 5,
+      "createdAt": "2026-10-07T02:11:39.456Z",
+      "updatedAt": "2026-10-07T02:11:39.456Z",
+      "lastCooked": null,
+      "cookCount": 0
+    },
+    {
       "id": "miso-karubi-don",
       "name": "味噌カルビ丼 — Miso Karubi Don",
       "englishName": "Miso Karubi Don",
