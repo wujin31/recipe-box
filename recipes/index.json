@@ -256,6 +256,28 @@
       "cookCount": 0
     },
     {
+      "id": "caldo-de-res",
+      "name": "Caldo de Res — Mexican Beef and Vegetable Soup",
+      "englishName": "Caldo de Res",
+      "nativeName": "",
+      "romanized": "",
+      "tags": [],
+      "favorite": false,
+      "servings": 6,
+      "items": "bone-in beef shank (chambarete), cut into thick slices · water · white onion · head garlic, halved · bay leaves · black peppercorns · salt · Roma tomatoes · ears corn, cut into 5 cm pieces · carrots, cut into chunks · potatoes, quartered · chayotes, cut into wedges · Mexican squash or zucchini, cut into chunks · green cabbage, cut into wedges · cilantro · white onion, finely chopped · cilantro, chopped · serrano chiles, chopped · limes, cut into wedges · Mexican red rice or white rice · corn tortillas, warmed",
+      "chapter": "soups",
+      "cuisine": "Mexican",
+      "equipment": [],
+      "cookSeconds": 8700,
+      "waitSeconds": 0,
+      "timerCount": 5,
+      "stepCount": 5,
+      "createdAt": "2026-10-07T02:11:33.544Z",
+      "updatedAt": "2026-10-07T02:11:33.544Z",
+      "lastCooked": null,
+      "cookCount": 0
+    },
+    {
       "id": "carne-asada-nortena",
       "name": "Carne Asada Norteña — Citrus Marinade, Stainless Stovetop (v2)",
       "englishName": "Carne Asada Norteña",
