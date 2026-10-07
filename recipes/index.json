@@ -514,6 +514,28 @@
       "cookCount": 0
     },
     {
+      "id": "sanbeiji",
+      "name": "三杯雞 (Sānbēijī) · Taiwanese Three-Cup Chicken",
+      "englishName": "Taiwanese Three-Cup Chicken",
+      "nativeName": "三杯雞",
+      "romanized": "Sānbēijī",
+      "tags": [],
+      "favorite": false,
+      "servings": 4,
+      "items": "bone-in chicken thighs, chopped into 4 cm pieces (or boneless thighs) · black sesame oil (胡麻油) or toasted sesame oil · ginger, unpeeled, sliced 3 mm thick · garlic cloves, peeled and left whole · scallions, cut into 5 cm lengths, whites and greens apart · red chilies, sliced · Taiwanese rice wine (米酒) or Shaoxing wine · soy sauce · soy paste (醬油膏) or oyster sauce · rock sugar or sugar · Thai basil (九層塔) leaves · rice wine (to finish)",
+      "chapter": "mains",
+      "cuisine": "Taiwanese",
+      "equipment": [],
+      "cookSeconds": 1560,
+      "waitSeconds": 0,
+      "timerCount": 6,
+      "stepCount": 6,
+      "createdAt": "2026-10-07T02:11:25.036Z",
+      "updatedAt": "2026-10-07T02:11:25.036Z",
+      "lastCooked": null,
+      "cookCount": 0
+    },
+    {
       "id": "seared-chicken-thigh-rice-bowl-with-fried-shallot-soy-jus-yo",
       "name": "Seared Chicken Thigh Rice Bowl with Fried-Shallot Soy Jus (油蔥醬汁雞腿飯 / yóucōng jiàngzhī jītuǐ fàn)",
       "englishName": "Seared Chicken Thigh Rice Bowl with Fried-Shallot Soy Jus",
