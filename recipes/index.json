@@ -539,6 +539,28 @@
       "cookCount": 0
     },
     {
+      "id": "oyakodon",
+      "name": "親子丼 (Oyakodon) · Chicken and Egg Rice Bowl",
+      "englishName": "Chicken and Egg Rice Bowl",
+      "nativeName": "親子丼",
+      "romanized": "Oyakodon",
+      "tags": [],
+      "favorite": false,
+      "servings": 2,
+      "items": "boneless chicken thighs, cut into bite-size pieces · onion, thinly sliced · dashi · soy sauce · mirin · sake · sugar · eggs · hot cooked short-grain rice · a few sprigs mitsuba or 1 scallion, chopped · shichimi togarashi, to serve",
+      "chapter": "rice",
+      "cuisine": "Japanese",
+      "equipment": [],
+      "cookSeconds": 330,
+      "waitSeconds": 0,
+      "timerCount": 4,
+      "stepCount": 5,
+      "createdAt": "2026-10-07T02:11:26.915Z",
+      "updatedAt": "2026-10-07T02:11:26.915Z",
+      "lastCooked": null,
+      "cookCount": 0
+    },
+    {
       "id": "paigu-fan",
       "name": "排骨飯 (Páigǔ Fàn) · Taiwanese Fried Pork Chop Rice",
       "englishName": "Taiwanese Fried Pork Chop Rice",
