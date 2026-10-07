@@ -436,6 +436,30 @@
       "cookCount": 0
     },
     {
+      "id": "crispy-gnocchi-brussels-sprouts-brown-butter",
+      "name": "Crispy Gnocchi with Brown Butter and Brussels Sprouts",
+      "englishName": "Crispy Gnocchi with Brown Butter and Brussels Sprouts",
+      "nativeName": "",
+      "romanized": "",
+      "tags": [
+        "to-try"
+      ],
+      "favorite": false,
+      "servings": 3,
+      "items": "Brussels sprouts, trimmed and halved · extra-virgin olive oil · salt · black pepper · shelf-stable or refrigerated potato gnocchi · unsalted butter, cut into pieces · sage leaves (optional) · red chili flakes · lemon, zested and juiced · honey · Parmigiano-Reggiano, finely grated",
+      "chapter": "rice",
+      "cuisine": "Italian",
+      "equipment": [],
+      "cookSeconds": 720,
+      "waitSeconds": 0,
+      "timerCount": 6,
+      "stepCount": 5,
+      "createdAt": "2026-10-07T02:11:41.716Z",
+      "updatedAt": "2026-10-07T02:11:41.716Z",
+      "lastCooked": null,
+      "cookCount": 0
+    },
+    {
       "id": "crispy-pork-belly-in-salsa-verde-with-refried-beans",
       "name": "Crispy Pork Belly in Salsa Verde with Refried Beans",
       "englishName": "Crispy Pork Belly in Salsa Verde with Refried Beans",

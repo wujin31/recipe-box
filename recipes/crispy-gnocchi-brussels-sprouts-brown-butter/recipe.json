@@ -1,0 +1,169 @@
+{
+  "id": "crispy-gnocchi-brussels-sprouts-brown-butter",
+  "name": "Crispy Gnocchi with Brown Butter and Brussels Sprouts",
+  "nativeName": "",
+  "romanized": "",
+  "englishName": "Crispy Gnocchi with Brown Butter and Brussels Sprouts",
+  "description": "Store-bought gnocchi seared straight from the package until golden and crisp outside, chewy within, with charred Brussels sprouts, nutty brown butter, lemon zest, chili flakes and Parmesan. 25 minutes. Serves 3.",
+  "ingredients": [
+    {
+      "text": "450 g Brussels sprouts, trimmed and halved",
+      "qty": 450,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "Brussels sprouts, trimmed and halved"
+    },
+    {
+      "text": "4 tbsp extra-virgin olive oil",
+      "qty": 4,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "extra-virgin olive oil"
+    },
+    {
+      "text": "3/4 tsp salt",
+      "qty": 0.75,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "salt"
+    },
+    {
+      "text": "1/2 tsp black pepper",
+      "qty": 0.5,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "black pepper"
+    },
+    {
+      "text": "500 g shelf-stable or refrigerated potato gnocchi",
+      "qty": 500,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "shelf-stable or refrigerated potato gnocchi"
+    },
+    {
+      "text": "6 tbsp unsalted butter, cut into pieces",
+      "qty": 6,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "unsalted butter, cut into pieces"
+    },
+    {
+      "text": "8 sage leaves (optional)",
+      "qty": 8,
+      "qtyMax": null,
+      "unit": null,
+      "item": "sage leaves (optional)"
+    },
+    {
+      "text": "1/2 tsp red chili flakes",
+      "qty": 0.5,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "red chili flakes"
+    },
+    {
+      "text": "1 lemon, zested and juiced",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": null,
+      "item": "lemon, zested and juiced"
+    },
+    {
+      "text": "1/2 tsp honey",
+      "qty": 0.5,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "honey"
+    },
+    {
+      "text": "30 g Parmigiano-Reggiano, finely grated",
+      "qty": 30,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "Parmigiano-Reggiano, finely grated"
+    }
+  ],
+  "steps": [
+    {
+      "text": "Heat 2 tbsp of 4 tbsp extra-virgin olive oil in a large skillet over medium-high. Add 450 g Brussels sprouts, trimmed and halved cut side down with half of 3/4 tsp salt and 1/2 tsp black pepper. Cook 5 minutes without moving, until deeply browned, then stir and cook 2 minutes more, until just tender. Transfer to a bowl.",
+      "ingredientRefs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "timers": [
+        {
+          "text": "5 minutes",
+          "seconds": 300
+        },
+        {
+          "text": "2 minutes",
+          "seconds": 120
+        }
+      ]
+    },
+    {
+      "text": "Add the remaining oil and 500 g shelf-stable or refrigerated potato gnocchi, breaking apart any that are stuck together. Spread in one layer, cover, and cook 4 minutes, until golden underneath. Stir and cook 3 minutes more, until crisp on several sides. Add to the sprouts.",
+      "ingredientRefs": [
+        4
+      ],
+      "timers": [
+        {
+          "text": "4 minutes",
+          "seconds": 240
+        },
+        {
+          "text": "3 minutes",
+          "seconds": 180
+        }
+      ]
+    },
+    {
+      "text": "Lower the heat to medium and add 6 tbsp unsalted butter, cut into pieces. Cook 3 minutes, swirling, until the foam turns golden and smells nutty. Add 8 sage leaves (optional) and 1/2 tsp red chili flakes for the last 30 seconds.",
+      "ingredientRefs": [
+        5,
+        6,
+        7
+      ],
+      "timers": [
+        {
+          "text": "3 minutes",
+          "seconds": 180
+        },
+        {
+          "text": "30 seconds",
+          "seconds": 30
+        }
+      ]
+    },
+    {
+      "text": "Off the heat, stir in the zest of 1 lemon, zested and juiced, 1 tbsp lemon juice, 1/2 tsp honey and the rest of the salt.",
+      "ingredientRefs": [
+        8,
+        9
+      ],
+      "timers": []
+    },
+    {
+      "text": "Return the gnocchi and sprouts to the pan and toss in the brown butter. Serve with 30 g Parmigiano-Reggiano, finely grated.",
+      "ingredientRefs": [
+        10
+      ],
+      "timers": []
+    }
+  ],
+  "notes": "Inspired by Ali Slagle's NYT Cooking recipe. Don't boil the gnocchi first: seared straight from the package they get a crisp crust. Covering the pan briefly helps them cook through without burning.",
+  "servings": 3,
+  "tags": [
+    "to-try"
+  ],
+  "chatUrl": null,
+  "chapter": "rice",
+  "cuisine": "Italian",
+  "favorite": false,
+  "log": [],
+  "createdAt": "2026-10-07T02:11:41.716Z",
+  "updatedAt": "2026-10-07T02:11:41.716Z"
+}
