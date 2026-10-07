@@ -444,6 +444,32 @@
       "cookCount": 0
     },
     {
+      "id": "chicken-parmesan",
+      "name": "Chicken Parmesan",
+      "englishName": "Chicken Parmesan",
+      "nativeName": "",
+      "romanized": "",
+      "tags": [
+        "to-try"
+      ],
+      "favorite": false,
+      "servings": 4,
+      "items": "olive oil (for the sauce) · garlic cloves, thinly sliced · red chili flakes · canned whole peeled tomatoes, crushed by hand · salt (for the sauce) · basil leaves, plus more to serve · large boneless skinless chicken breasts (about 700 g) · salt · black pepper · all-purpose flour · eggs, beaten · dried breadcrumbs or panko · Parmigiano-Reggiano, finely grated (for the breading) · neutral oil (for frying) · low-moisture mozzarella, grated · Parmigiano-Reggiano, grated · spaghetti, cooked (optional, to serve)",
+      "chapter": "mains",
+      "cuisine": "Italian-American",
+      "equipment": [
+        "Oven"
+      ],
+      "cookSeconds": 1560,
+      "waitSeconds": 0,
+      "timerCount": 4,
+      "stepCount": 6,
+      "createdAt": "2026-10-07T02:11:45.171Z",
+      "updatedAt": "2026-10-07T02:11:45.171Z",
+      "lastCooked": null,
+      "cookCount": 0
+    },
+    {
       "id": "chicken-thigh-fettuccine-alfredo-bloomed-pepper",
       "name": "Chicken Thigh Fettuccine Alfredo, Bloomed Pepper",
       "englishName": "Chicken Thigh Fettuccine Alfredo, Bloomed Pepper",

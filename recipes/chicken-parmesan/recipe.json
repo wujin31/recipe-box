@@ -1,0 +1,232 @@
+{
+  "id": "chicken-parmesan",
+  "name": "Chicken Parmesan",
+  "nativeName": "",
+  "romanized": "",
+  "englishName": "Chicken Parmesan",
+  "description": "The Italian-American red-sauce classic: thin chicken cutlets breaded with Parmigiano and breadcrumbs, shallow-fried until crisp, then topped with a quick marinara and melted mozzarella and broiled until bubbling. Serves 4.",
+  "ingredients": [
+    {
+      "text": "3 tbsp olive oil (for the sauce)",
+      "qty": 3,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "olive oil (for the sauce)",
+      "group": "For the marinara"
+    },
+    {
+      "text": "3 garlic cloves, thinly sliced",
+      "qty": 3,
+      "qtyMax": null,
+      "unit": null,
+      "item": "garlic cloves, thinly sliced",
+      "group": "For the marinara"
+    },
+    {
+      "text": "1/4 tsp red chili flakes",
+      "qty": 0.25,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "red chili flakes",
+      "group": "For the marinara"
+    },
+    {
+      "text": "800 g canned whole peeled tomatoes, crushed by hand",
+      "qty": 800,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "canned whole peeled tomatoes, crushed by hand",
+      "group": "For the marinara"
+    },
+    {
+      "text": "1/2 tsp salt (for the sauce)",
+      "qty": 0.5,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "salt (for the sauce)",
+      "group": "For the marinara"
+    },
+    {
+      "text": "6 basil leaves, plus more to serve",
+      "qty": 6,
+      "qtyMax": null,
+      "unit": null,
+      "item": "basil leaves, plus more to serve",
+      "group": "For the marinara"
+    },
+    {
+      "text": "2 large boneless skinless chicken breasts (about 700 g)",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": null,
+      "item": "large boneless skinless chicken breasts (about 700 g)",
+      "group": "For the chicken"
+    },
+    {
+      "text": "1 tsp salt",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "salt",
+      "group": "For the chicken"
+    },
+    {
+      "text": "1/2 tsp black pepper",
+      "qty": 0.5,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "black pepper",
+      "group": "For the chicken"
+    },
+    {
+      "text": "60 g all-purpose flour",
+      "qty": 60,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "all-purpose flour",
+      "group": "For the chicken"
+    },
+    {
+      "text": "2 eggs, beaten",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": null,
+      "item": "eggs, beaten",
+      "group": "For the chicken"
+    },
+    {
+      "text": "100 g dried breadcrumbs or panko",
+      "qty": 100,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "dried breadcrumbs or panko",
+      "group": "For the chicken"
+    },
+    {
+      "text": "30 g Parmigiano-Reggiano, finely grated (for the breading)",
+      "qty": 30,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "Parmigiano-Reggiano, finely grated (for the breading)",
+      "group": "For the chicken"
+    },
+    {
+      "text": "240 ml neutral oil (for frying)",
+      "qty": 240,
+      "qtyMax": null,
+      "unit": "ml",
+      "item": "neutral oil (for frying)",
+      "group": "For the chicken"
+    },
+    {
+      "text": "225 g low-moisture mozzarella, grated",
+      "qty": 225,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "low-moisture mozzarella, grated",
+      "group": "To finish"
+    },
+    {
+      "text": "30 g Parmigiano-Reggiano, grated",
+      "qty": 30,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "Parmigiano-Reggiano, grated",
+      "group": "To finish"
+    },
+    {
+      "text": "400 g spaghetti, cooked (optional, to serve)",
+      "qty": 400,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "spaghetti, cooked (optional, to serve)",
+      "group": "To finish"
+    }
+  ],
+  "steps": [
+    {
+      "text": "Heat 3 tbsp olive oil (for the sauce) with 3 garlic cloves, thinly sliced and 1/4 tsp red chili flakes in a saucepan over medium for 2 minutes, until the garlic is pale gold. Add 800 g canned whole peeled tomatoes, crushed by hand, 1/2 tsp salt (for the sauce) and 6 basil leaves, plus more to serve and simmer 20 minutes, until thickened.",
+      "ingredientRefs": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "timers": [
+        {
+          "text": "2 minutes",
+          "seconds": 120
+        },
+        {
+          "text": "20 minutes",
+          "seconds": 1200
+        }
+      ]
+    },
+    {
+      "text": "Halve 2 large boneless skinless chicken breasts (about 700 g) horizontally into 4 cutlets and pound to an even 1 cm. Season with 1 tsp salt and 1/2 tsp black pepper.",
+      "ingredientRefs": [
+        6,
+        7,
+        8
+      ],
+      "timers": []
+    },
+    {
+      "text": "Set up 60 g all-purpose flour, 2 eggs, beaten, and 100 g dried breadcrumbs or panko mixed with 30 g Parmigiano-Reggiano, finely grated (for the breading) in three shallow dishes. Coat each cutlet in flour, then egg, then the crumbs, pressing to adhere.",
+      "ingredientRefs": [
+        9,
+        10,
+        11,
+        12
+      ],
+      "timers": []
+    },
+    {
+      "text": "Heat 240 ml neutral oil (for frying) in a large skillet over medium-high to 175°C. Fry the cutlets 3 minutes per side, until golden and cooked through. Drain on a rack.",
+      "ingredientRefs": [
+        13
+      ],
+      "timers": [
+        {
+          "text": "3 minutes",
+          "seconds": 180
+        }
+      ]
+    },
+    {
+      "text": "Heat the broiler. Arrange the cutlets on a sheet pan, spoon a stripe of sauce down the center of each (leaving the edges crisp), and top with 225 g low-moisture mozzarella, grated and 30 g Parmigiano-Reggiano, grated.",
+      "ingredientRefs": [
+        14,
+        15
+      ],
+      "timers": []
+    },
+    {
+      "text": "Broil 3 minutes, until the cheese is bubbling and browned in spots. Serve with basil, the rest of the sauce, and 400 g spaghetti, cooked (optional, to serve).",
+      "ingredientRefs": [
+        16
+      ],
+      "timers": [
+        {
+          "text": "3 minutes",
+          "seconds": 180
+        }
+      ]
+    }
+  ],
+  "notes": "Leaving some crust uncovered by sauce keeps the cutlets crisp. Low-moisture mozzarella browns and doesn't weep like fresh. Leftovers make an excellent chicken parm sandwich on a hero roll.",
+  "servings": 4,
+  "tags": [
+    "to-try"
+  ],
+  "chatUrl": null,
+  "chapter": "mains",
+  "cuisine": "Italian-American",
+  "favorite": false,
+  "log": [],
+  "createdAt": "2026-10-07T02:11:45.171Z",
+  "updatedAt": "2026-10-07T02:11:45.171Z"
+}
