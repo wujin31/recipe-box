@@ -2,7 +2,7 @@
 // over a recipe or cooking mode, where they can use that recipe's amounts.
 
 import { TOOLS, pinnedIds, setPinned, toolById } from "../tools/index.js";
-import { backButton, fill, h, icon, navbar } from "../ui.js";
+import { backButton, fill, h, icon, navbar, openSheet } from "../ui.js";
 
 export function viewTools(root, id) {
   if (id) {
@@ -40,9 +40,8 @@ export function viewTools(root, id) {
 // The 🧰 drawer: the pinned tools (all of them if none are pinned), then the chosen tool.
 export function openToolDrawer(recipe) {
   const body = h("div", { class: "drawer-body" });
-  const title = h("strong", { tabindex: "-1" }); // takes focus when the drawer's content changes
   const back = h("button", { type: "button", class: "link", onClick: () => showList() }, "Tools");
-  const close = h("button", { type: "button", class: "link", onClick: () => dialog.close() }, "Done");
+  const { dialog, close, title } = openSheet({ title: "Kitchen tools", left: back, body, cls: "drawer" });
 
   function showList() {
     title.textContent = "Kitchen tools";
@@ -54,22 +53,16 @@ export function openToolDrawer(recipe) {
       tools.map((t) => h("button", { type: "button", class: "tool-row card", onClick: () => showTool(t) },
         h("span", { class: "tool-emoji", "aria-hidden": "true" }, t.emoji),
         h("span", { class: "tool-text" }, h("strong", {}, t.name), h("span", { class: "muted small" }, t.blurb)))),
-      h("a", { class: "link small", href: "#/tools", onClick: () => dialog.close() }, "All tools and pinning"));
-    if (dialog.open) title.focus();
+      h("a", { class: "link small", href: "#/tools", onClick: close }, "All tools and pinning"));
+    title.focus(); // the tapped button is gone; keep focus in the drawer
   }
   function showTool(t) {
     title.textContent = t.name;
     back.hidden = false;
     fill(body, t.render({ recipe }));
     body.scrollTop = 0;
-    title.focus(); // the tapped button is gone; keep focus in the drawer
+    title.focus();
   }
-
-  const dialog = h("dialog", { class: "sheet drawer", "aria-label": "Kitchen tools" },
-    h("div", { class: "sheet-head" }, h("div", {}, back), title, h("div", { class: "right" }, close)),
-    body);
-  dialog.addEventListener("close", () => dialog.remove());
-  document.body.append(dialog);
   showList();
-  dialog.showModal();
+  return dialog;
 }

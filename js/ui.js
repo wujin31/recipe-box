@@ -76,6 +76,34 @@ export function errorMessage(e) {
   return e.message || String(e);
 }
 
+// A bottom sheet: [left] title [right] over the body, removed once closed. `left` defaults to
+// Cancel, `right` to Done; pass `onSubmit` to make the body a form (its submit button goes in
+// `right`). Returns { dialog, close }.
+export function openSheet({ title, label = title, body, left, right, onSubmit, cls = "" }) {
+  const dialog = h("dialog", { class: `sheet ${cls}`, "aria-label": label });
+  const close = () => dialog.close();
+  const head = h("div", { class: "sheet-head" },
+    left === undefined ? h("button", { type: "button", class: "link", onClick: close }, "Cancel") : left ?? h("span"),
+    h("strong", { tabindex: "-1" }, title),
+    right === undefined ? h("button", { type: "button", class: "link end", onClick: close }, "Done") : right ?? h("span"));
+  dialog.append(onSubmit
+    ? h("form", { method: "dialog", onSubmit: (e) => { e.preventDefault(); onSubmit(close); } }, head, body)
+    : h("div", { class: "sheet-body" }, head, body));
+  dialog.addEventListener("close", () => dialog.remove());
+  document.body.append(dialog);
+  dialog.showModal();
+  return { dialog, close, title: head.children[1] };
+}
+
+// Runs a save from a sheet: the button says "Saving…" and can't be tapped twice; on failure it
+// comes back and the error shows. Resolves to the result, or undefined if it failed.
+export async function saving(button, work) {
+  const label = button.textContent;
+  button.disabled = true; button.textContent = "Saving…";
+  try { return await work(); }
+  catch (e) { toast(errorMessage(e), "error"); button.disabled = false; button.textContent = label; return undefined; }
+}
+
 export const navbar = (left, title, right) =>
   h("header", { class: "nav" }, h("div", { class: "nav-side" }, left), h("div", { class: "nav-title" }, title ?? ""), h("div", { class: "nav-side right" }, right));
 

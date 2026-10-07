@@ -3,7 +3,7 @@
 import { recipeToText, refreshRecipe, timerAction, timerPositions } from "../parser.js";
 import { getRecipe, getSettings, loadLocal, saveLocal, updateRecipe } from "../store.js";
 import { shortDuration, startTimer } from "../timers.js";
-import { backButton, copyText, displayName, errorMessage, h, icon, navbar, requireWrite, toast } from "../ui.js";
+import { backButton, copyText, displayName, errorMessage, h, icon, navbar, openSheet, requireWrite, saving, toast } from "../ui.js";
 import { convertTemperatures, formatIngredient } from "../units.js";
 
 // ---------- per-recipe view state (this device only) ----------
@@ -155,63 +155,37 @@ export function openLogSheet(r, onSaved) {
   const variables = h("textarea", { rows: 2, placeholder: last?.variables ? `Last time: ${last.variables}` : "e.g. liquid 540 ml, bottom scorched slightly" });
   const notes = h("textarea", { rows: 3, placeholder: "How did it turn out? What to change next time?" });
   const save = h("button", { class: "button primary", type: "submit" }, "Save");
-
-  const dialog = h("dialog", { class: "sheet" },
-    h("form", {
-      method: "dialog",
-      onSubmit: async (e) => {
-        e.preventDefault();
-        save.disabled = true; save.textContent = "Saving…";
-        const entry = { date: date.value, rating, variables: variables.value.trim(), notes: notes.value.trim(), scale: Math.round(getView(r.id).factor * 1000) / 1000 };
-        try {
-          const next = await updateRecipe(r.id, `Log cook: ${displayName(r)}`, (cur) => ({ ...cur, log: [...(cur.log ?? []), entry] }));
-          dialog.close(); toast("Logged"); onSaved(next);
-        } catch (err) {
-          toast(errorMessage(err), "error"); save.disabled = false; save.textContent = "Save";
-        }
-      },
+  openSheet({
+    title: "Log a cook", right: save,
+    body: [
+      h("label", {}, "Date", date),
+      h("div", { class: "field", role: "group", "aria-label": "Rating" }, h("span", {}, "Rating"), stars),
+      h("label", {}, "Variables", variables),
+      h("label", {}, "Notes", notes)],
+    onSubmit: async (close) => {
+      const entry = { date: date.value, rating, variables: variables.value.trim(), notes: notes.value.trim(), scale: Math.round(getView(r.id).factor * 1000) / 1000 };
+      const next = await saving(save, () => updateRecipe(r.id, `Log cook: ${displayName(r)}`, (cur) => ({ ...cur, log: [...(cur.log ?? []), entry] })));
+      if (next) { close(); toast("Logged"); onSaved(next); }
     },
-    h("div", { class: "sheet-head" },
-      h("button", { type: "button", class: "link", onClick: () => dialog.close() }, "Cancel"),
-      h("strong", {}, "Log a cook"), save),
-    h("label", {}, "Date", date),
-    h("div", { class: "field", role: "group", "aria-label": "Rating" }, h("span", {}, "Rating"), stars),
-    h("label", {}, "Variables", variables),
-    h("label", {}, "Notes", notes)));
-  dialog.addEventListener("close", () => dialog.remove());
-  document.body.append(dialog);
-  dialog.showModal();
+  });
 }
 
 export function openTweaksSheet(r, onSaved) {
   if (!requireWrite()) return;
   const text = h("textarea", { rows: 6, value: r.tweaks ?? "", placeholder: "e.g. Use 400 ml water in the Zojirushi. Half the chili for kids." });
   const save = h("button", { class: "button primary", type: "submit" }, "Save");
-  const dialog = h("dialog", { class: "sheet" },
-    h("form", {
-      method: "dialog",
-      onSubmit: async (e) => {
-        e.preventDefault();
-        save.disabled = true; save.textContent = "Saving…";
-        const tweaks = text.value.trim();
-        try {
-          const next = await updateRecipe(r.id, `Tweaks: ${displayName(r)}`, (cur) => {
-            const { tweaks: _old, ...rest } = cur;
-            return tweaks ? { ...rest, tweaks } : rest;
-          });
-          dialog.close(); toast("Saved"); onSaved(next);
-        } catch (err) {
-          toast(errorMessage(err), "error"); save.disabled = false; save.textContent = "Save";
-        }
-      },
+  openSheet({
+    title: "My tweaks", right: save,
+    body: h("label", {}, "Your changes to this recipe", text),
+    onSubmit: async (close) => {
+      const tweaks = text.value.trim();
+      const next = await saving(save, () => updateRecipe(r.id, `Tweaks: ${displayName(r)}`, (cur) => {
+        const { tweaks: _old, ...rest } = cur;
+        return tweaks ? { ...rest, tweaks } : rest;
+      }));
+      if (next) { close(); toast("Saved"); onSaved(next); }
     },
-    h("div", { class: "sheet-head" },
-      h("button", { type: "button", class: "link", onClick: () => dialog.close() }, "Cancel"),
-      h("strong", {}, "My tweaks"), save),
-    h("label", {}, "Your changes to this recipe", text)));
-  dialog.addEventListener("close", () => dialog.remove());
-  document.body.append(dialog);
-  dialog.showModal();
+  });
   text.focus();
 }
 

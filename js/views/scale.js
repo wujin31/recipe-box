@@ -1,6 +1,6 @@
 // "Scale to what I have": pick an ingredient, say how much you have, and the recipe scales to it.
 
-import { displayName, h } from "../ui.js";
+import { displayName, h, openSheet } from "../ui.js";
 import { readNumber } from "../tools/kit.js";
 import { UNITS, factorFor, formatIngredient, unitsFor } from "../units.js";
 
@@ -46,24 +46,17 @@ export function openScaleSheet(r, apply) {
   unit.addEventListener("change", update);
   fillUnits(); update();
 
-  const dialog = h("dialog", { class: "sheet", "aria-label": `Scale ${displayName(r)}` },
-    h("form", {
-      method: "dialog",
-      onSubmit: (e) => {
-        e.preventDefault();
-        if (!factor) return;
-        apply(Math.round(factor * 1000) / 1000);
-        dialog.close();
-      },
+  openSheet({
+    title: "Scale to what I have", label: `Scale ${displayName(r)}`, right: save,
+    body: [
+      h("label", {}, "Ingredient", pick),
+      h("div", { class: "field" }, h("span", {}, "I have"), h("div", { class: "have" }, amount, unit)),
+      result],
+    onSubmit: (close) => {
+      if (!factor) return;
+      apply(Math.round(factor * 1000) / 1000);
+      close();
     },
-    h("div", { class: "sheet-head" },
-      h("button", { type: "button", class: "link", onClick: () => dialog.close() }, "Cancel"),
-      h("strong", {}, "Scale to what I have"), save),
-    h("label", {}, "Ingredient", pick),
-    h("div", { class: "field" }, h("span", {}, "I have"), h("div", { class: "have" }, amount, unit)),
-    result));
-  dialog.addEventListener("close", () => dialog.remove());
-  document.body.append(dialog);
-  dialog.showModal();
+  });
   amount.focus();
 }

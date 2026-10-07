@@ -89,6 +89,9 @@ async function gh(path, { method = "GET", body, raw = false } = {}) {
 export async function testConnection() {
   const s = getSettings();
   const repo = await gh("");
+  // A renamed or transferred repo still answers at its old name; save the new one.
+  const [owner, name] = repo.full_name.split("/");
+  if (owner !== s.owner || name !== s.repo) setSettings({ owner, repo: name });
   await gh(`/git/ref/heads/${encodeURIComponent(s.branch)}`);
   // repo.permissions reflects the account, not the token, so prove the token can write by
   // storing a blob. Nothing references it, so it never shows up in the repo.
@@ -292,7 +295,7 @@ function withSummary(index, recipe) {
 // Save a newly imported recipe. Returns the saved recipe (with its id).
 export async function createRecipe(parsed, sourceText, extra = {}) {
   const now = new Date().toISOString();
-  let saved;
+  let saved, nextIndex = null;
   await commit(`Add recipe: ${parsed.englishName || parsed.name}`, async (ref) => {
     const index = parseIndex(await readFile(INDEX, ref));
     const taken = new Set(index.recipes.map((r) => r.id));
@@ -309,55 +312,57 @@ export async function createRecipe(parsed, sourceText, extra = {}) {
     let id = base;
     for (let n = 2; taken.has(id); n++) id = `${base}-${n}`;
     saved = { id, ...parsed, ...extra, favorite: false, log: [], createdAt: now, updatedAt: now };
-    const next = withSummary(index, saved);
-    indexMemo = next;
-    return { [recipePath(id)]: json(saved), [sourcePath(id)]: source, [INDEX]: json(next) };
+    nextIndex = withSummary(index, saved);
+    return { [recipePath(id)]: json(saved), [sourcePath(id)]: source, [INDEX]: json(nextIndex) };
   });
+  if (nextIndex) indexMemo = nextIndex; // only once it's saved
   return saved;
 }
 
 // Apply `change(recipe)` to the latest copy of a recipe and commit it.
 // `source` replaces the recipe's source.txt too (re-importing an updated card).
 export async function updateRecipe(id, message, change, { source } = {}) {
-  let saved;
+  let saved, nextIndex;
   await commit(message, async (ref) => {
     const current = JSON.parse(await readFile(recipePath(id), ref));
     saved = { ...change(current), id, updatedAt: new Date().toISOString() };
-    const next = withSummary(parseIndex(await readFile(INDEX, ref)), saved);
-    indexMemo = next;
+    nextIndex = withSummary(parseIndex(await readFile(INDEX, ref)), saved);
     return {
       [recipePath(id)]: json(saved),
-      [INDEX]: json(next),
+      [INDEX]: json(nextIndex),
       ...(source != null ? { [sourcePath(id)]: source.trim() + "\n" } : {}),
     };
   });
+  indexMemo = nextIndex;
   return saved;
 }
 
 // Returns what was deleted, so restoreRecipe() can put it back.
 export async function deleteRecipe(id) {
   const deleted = {};
+  let nextIndex;
   await commit(`Delete recipe: ${id}`, async (ref) => {
     const index = parseIndex(await readFile(INDEX, ref));
-    const next = { ...index, recipes: index.recipes.filter((r) => r.id !== id) };
-    indexMemo = next;
-    const files = { [INDEX]: json(next) };
+    nextIndex = { ...index, recipes: index.recipes.filter((r) => r.id !== id) };
+    const files = { [INDEX]: json(nextIndex) };
     for (const path of [recipePath(id), sourcePath(id)]) {
       const text = await readFile(path, ref);
       if (text != null) { files[path] = null; deleted[path] = text; }
     }
     return files;
   });
+  indexMemo = nextIndex;
   return { id, files: deleted };
 }
 
 // Undo a delete: put the files back and the recipe back in the index.
 export async function restoreRecipe({ id, files }) {
   const recipe = JSON.parse(files[recipePath(id)]);
+  let nextIndex;
   await commit(`Restore recipe: ${recipe.englishName || recipe.name}`, async (ref) => {
-    const next = withSummary(parseIndex(await readFile(INDEX, ref)), recipe);
-    indexMemo = next;
-    return { ...files, [INDEX]: json(next) };
+    nextIndex = withSummary(parseIndex(await readFile(INDEX, ref)), recipe);
+    return { ...files, [INDEX]: json(nextIndex) };
   });
+  indexMemo = nextIndex;
   return recipe;
 }

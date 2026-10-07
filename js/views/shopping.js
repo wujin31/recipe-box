@@ -3,7 +3,7 @@
 import { onLeave } from "../lifecycle.js";
 import { getSettings } from "../store.js";
 import { keepAwake } from "../timers.js";
-import { copyText, displayName, fill, h, icon, iconButton, navbar, toast } from "../ui.js";
+import { copyText, displayName, fill, h, icon, iconButton, navbar, openSheet, toast } from "../ui.js";
 import { UNITS, formatIngredient } from "../units.js";
 import {
   AISLES, addExtra, addRecipe, clearAll, clearChecked, getList, getStaples, isBought, isStaple, items, listText,
@@ -69,28 +69,21 @@ export function openAddSheet(r, { factor = getView(r.id).factor, units = getView
   rows.forEach((x) => x.box.addEventListener("change", count));
   count();
 
-  const dialog = h("dialog", { class: "sheet add-sheet", "aria-label": `Add ${displayName(r)} to the shopping list` },
-    h("form", {
-      method: "dialog",
-      onSubmit: (e) => {
-        e.preventDefault();
-        const chosen = rows.filter((x) => x.box.checked).map((x) => x.ing);
-        if (chosen.length) addRecipe(r, chosen, factor, { keep: Boolean(need) });
-        else removeRecipe(r.id);
-        dialog.close();
-        toast(chosen.length ? `Added ${chosen.length} to the list` : "Taken off the list", "",
-          chosen.length ? { label: "View", onClick: () => (location.hash = "#/list") } : null);
-      },
+  openSheet({
+    title: "Shopping list", label: `Add ${displayName(r)} to the shopping list`, right: save, cls: "add-sheet",
+    body: [
+      h("p", { class: "muted small" }, onList && !need ? "Already on your list; this replaces what it added. " : "",
+        need ? "What you haven't got out yet is ticked." : "Tick what you need to buy."),
+      h("div", { class: "add-rows" }, rows.map((x) => x.row))],
+    onSubmit: (close) => {
+      const chosen = rows.filter((x) => x.box.checked).map((x) => x.ing);
+      if (chosen.length) addRecipe(r, chosen, factor, { keep: Boolean(need) });
+      else removeRecipe(r.id);
+      close();
+      toast(chosen.length ? `Added ${chosen.length} to the list` : "Taken off the list", "",
+        chosen.length ? { label: "View", onClick: () => (location.hash = "#/list") } : null);
     },
-    h("div", { class: "sheet-head" },
-      h("button", { type: "button", class: "link", onClick: () => dialog.close() }, "Cancel"),
-      h("strong", {}, "Shopping list"), save),
-    h("p", { class: "muted small" }, onList && !need ? "Already on your list; this replaces what it added. " : "",
-      need ? "What you haven't got out yet is ticked." : "Tick what you need to buy."),
-    h("div", { class: "add-rows" }, rows.map((x) => x.row))));
-  dialog.addEventListener("close", () => dialog.remove());
-  document.body.append(dialog);
-  dialog.showModal();
+  });
 }
 
 // ---------- the list ----------
@@ -158,20 +151,17 @@ export function viewList(root) {
 
   // One item's options: move it to another aisle, or take it off.
   function itemSheet(it) {
-    const dialog = h("dialog", { class: "sheet", "aria-label": it.name },
-      h("form", { method: "dialog" },
-        h("div", { class: "sheet-head" }, h("span"), h("strong", {}, it.name),
-          h("button", { type: "button", class: "link end", onClick: () => dialog.close() }, "Done")),
+    const { close } = openSheet({
+      title: it.name, left: null,
+      body: [
         it.entries.length ? h("ul", { class: "plain-list small muted" }, it.entries.map((e) => h("li", {}, `${e.recipeName}: ${e.text}`))) : null,
         h("div", { class: "field" }, h("span", {}, "Aisle"),
           h("div", { class: "picker" }, AISLES.map((a) => h("button", {
             type: "button", class: `pick ${a === it.aisle ? "on" : ""}`, "aria-pressed": String(a === it.aisle),
-            onClick: () => { setAisle(it.key, a); dialog.close(); draw(); },
+            onClick: () => { setAisle(it.key, a); close(); draw(); },
           }, a)))),
-        h("button", { type: "button", class: "button", onClick: () => { removeItem(it.key); dialog.close(); } }, "Take it off the list")));
-    dialog.addEventListener("close", () => dialog.remove());
-    document.body.append(dialog);
-    dialog.showModal();
+        h("button", { type: "button", class: "button", onClick: () => { removeItem(it.key); close(); } }, "Take it off the list")],
+    });
   }
 
   function staplesNote() {
@@ -181,18 +171,14 @@ export function viewList(root) {
 
   function editStaples() {
     const text = h("textarea", { rows: 4, value: getStaples().join(", ") });
-    const dialog = h("dialog", { class: "sheet", "aria-label": "Staples" },
-      h("form", { method: "dialog", onSubmit: (e) => {
-        e.preventDefault();
+    openSheet({
+      title: "Staples", right: h("button", { class: "button primary", type: "submit" }, "Save"),
+      body: h("label", {}, "Things you always have, so recipes don't add them (you can still tick them)", text),
+      onSubmit: (close) => {
         setStaples(text.value.split(/[,\n]/).map((s) => s.trim().toLowerCase()).filter(Boolean));
-        dialog.close(); draw();
-      } },
-        h("div", { class: "sheet-head" }, h("button", { type: "button", class: "link", onClick: () => dialog.close() }, "Cancel"),
-          h("strong", {}, "Staples"), h("button", { class: "button primary", type: "submit" }, "Save")),
-        h("label", {}, "Things you always have, so recipes don't add them (you can still tick them)", text)));
-    dialog.addEventListener("close", () => dialog.remove());
-    document.body.append(dialog);
-    dialog.showModal();
+        close(); draw();
+      },
+    });
   }
 
   onLeave(onListChange(draw));
