@@ -1,0 +1,350 @@
+{
+  "id": "salmon-burger-rice-bowls-with-sesame-soy-roasted-carrots",
+  "name": "Salmon Burger Rice Bowls with Sesame-Soy Roasted Carrots",
+  "nativeName": "",
+  "romanized": "",
+  "englishName": "Salmon Burger Rice Bowls with Sesame-Soy Roasted Carrots",
+  "description": "Seared, flaked salmon tossed in a Shaoxing-soy garlic-onion glaze over steamed white rice with Kewpie spicy mayo, furikake and honey-soy roasted carrots.",
+  "ingredients": [
+    {
+      "text": "4 Trident Alaska salmon burger patties, thawed overnight in the fridge",
+      "qty": 4,
+      "qtyMax": null,
+      "unit": null,
+      "item": "Trident Alaska salmon burger patties, thawed overnight in the fridge"
+    },
+    {
+      "text": "1 tablespoon neutral oil (avocado or canola), for searing",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "neutral oil (avocado or canola), for searing"
+    },
+    {
+      "text": "1 medium yellow onion, thinly sliced",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": null,
+      "item": "medium yellow onion, thinly sliced"
+    },
+    {
+      "text": "4 garlic cloves, minced",
+      "qty": 4,
+      "qtyMax": null,
+      "unit": null,
+      "item": "garlic cloves, minced"
+    },
+    {
+      "text": "2 tablespoons Shaoxing wine",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "Shaoxing wine"
+    },
+    {
+      "text": "2 tablespoons soy sauce (for the salmon glaze)",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "soy sauce (for the salmon glaze)"
+    },
+    {
+      "text": "1 teaspoon rice vinegar (for the salmon glaze)",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "rice vinegar (for the salmon glaze)"
+    },
+    {
+      "text": "2 teaspoons honey (for the salmon glaze)",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "honey (for the salmon glaze)"
+    },
+    {
+      "text": "0.5 teaspoons toasted sesame oil (for the salmon)",
+      "qty": 0.5,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "toasted sesame oil (for the salmon)"
+    },
+    {
+      "text": "480 milliliters long-grain white rice (jasmine)",
+      "qty": 480,
+      "qtyMax": null,
+      "unit": "ml",
+      "item": "long-grain white rice (jasmine)"
+    },
+    {
+      "text": "600 milliliters water for the rice cooker",
+      "qty": 600,
+      "qtyMax": null,
+      "unit": "ml",
+      "item": "water for the rice cooker"
+    },
+    {
+      "text": "453.59 grams carrots, peeled and cut on a bias into 1/2-inch slices",
+      "qty": 453.59,
+      "qtyMax": null,
+      "unit": "g",
+      "item": "carrots, peeled and cut on a bias into 1/2-inch slices"
+    },
+    {
+      "text": "1 tablespoon neutral oil (for the carrots)",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "neutral oil (for the carrots)"
+    },
+    {
+      "text": "1 pinch kosher salt (for the carrots)",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "pinch",
+      "item": "kosher salt (for the carrots)"
+    },
+    {
+      "text": "1 tablespoon honey (for the carrots)",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "honey (for the carrots)"
+    },
+    {
+      "text": "1 tablespoon soy sauce (for the carrots)",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "soy sauce (for the carrots)"
+    },
+    {
+      "text": "1 teaspoon toasted sesame oil (for the carrots)",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "toasted sesame oil (for the carrots)"
+    },
+    {
+      "text": "1 teaspoon fresh ginger, finely grated",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "fresh ginger, finely grated"
+    },
+    {
+      "text": "120 milliliters Kewpie mayo",
+      "qty": 120,
+      "qtyMax": null,
+      "unit": "ml",
+      "item": "Kewpie mayo"
+    },
+    {
+      "text": "1.5 tablespoons sriracha, adjust to taste",
+      "qty": 1.5,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "sriracha, adjust to taste"
+    },
+    {
+      "text": "1 teaspoon lime juice",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tsp",
+      "item": "lime juice"
+    },
+    {
+      "text": "1 ripe avocado, diced",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": null,
+      "item": "ripe avocado, diced"
+    },
+    {
+      "text": "2 small Persian cucumber, thinly sliced",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": null,
+      "item": "small Persian cucumber, thinly sliced"
+    },
+    {
+      "text": "2 tablespoons furikake",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "furikake"
+    },
+    {
+      "text": "3 green onions, thinly sliced",
+      "qty": 3,
+      "qtyMax": null,
+      "unit": null,
+      "item": "green onions, thinly sliced"
+    },
+    {
+      "text": "1 tablespoon toasted sesame seeds",
+      "qty": 1,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "toasted sesame seeds"
+    },
+    {
+      "text": "2 tablespoons masago or tobiko (optional)",
+      "qty": 2,
+      "qtyMax": null,
+      "unit": "tbsp",
+      "item": "masago or tobiko (optional)"
+    },
+    {
+      "text": "8 roasted seaweed snack sheets, for scooping",
+      "qty": 8,
+      "qtyMax": null,
+      "unit": null,
+      "item": "roasted seaweed snack sheets, for scooping"
+    }
+  ],
+  "steps": [
+    {
+      "text": "Rinse the rice 1m Rinse the white rice in cold water, swirling and draining 2–3 times, for about 1 minute total, until the water runs mostly clear. Drain well.",
+      "ingredientRefs": [],
+      "timers": [
+        {
+          "text": "1 minute",
+          "seconds": 60
+        }
+      ]
+    },
+    {
+      "text": "Cook the rice 40m Add the rinsed rice and 2.5 cups water to the rice cooker, select White Rice and start (about 40 minutes). When it finishes, leave it covered to steam for 10 minutes, then fluff with a paddle.",
+      "ingredientRefs": [],
+      "timers": [
+        {
+          "text": "40 minutes",
+          "seconds": 2400
+        },
+        {
+          "text": "10 minutes",
+          "seconds": 600
+        }
+      ]
+    },
+    {
+      "text": "Preheat the oven 15m While the rice cooks, preheat the oven to 425°F (220°C), about 15 minutes, with a rimmed baking sheet inside.",
+      "ingredientRefs": [],
+      "timers": [
+        {
+          "text": "15 minutes",
+          "seconds": 900
+        }
+      ]
+    },
+    {
+      "text": "Start the carrots 15m Toss the carrots with the oil and salt, spread in a single layer on the hot baking sheet, and roast for 15 minutes until starting to brown at the edges.",
+      "ingredientRefs": [],
+      "timers": [
+        {
+          "text": "15 minutes",
+          "seconds": 900
+        }
+      ]
+    },
+    {
+      "text": "Glaze the carrots 10m Whisk the honey, soy sauce, sesame oil and ginger. Pull the pan out, toss the carrots in the mixture, and roast 8–10 minutes more until tender and caramelized. Sprinkle with half the sesame seeds.",
+      "ingredientRefs": [],
+      "timers": [
+        {
+          "text": "8–10 minutes",
+          "seconds": 600
+        }
+      ]
+    },
+    {
+      "text": "Make the spicy mayo 15m Stir together the Kewpie mayo, sriracha and lime juice. Refrigerate at least 15 minutes so the flavors meld.",
+      "ingredientRefs": [],
+      "timers": [
+        {
+          "text": "15 minutes",
+          "seconds": 900
+        }
+      ]
+    },
+    {
+      "text": "Sear the salmon 8m Pat the thawed patties very dry. Heat the oil in a large skillet over medium-high for about 2 minutes until shimmering. Sear the patties about 3–4 minutes per side until deeply browned and cooked through (145°F / 63°C in the center). Move to a plate and leave the fond in the pan.",
+      "ingredientRefs": [],
+      "timers": [
+        {
+          "text": "2 minutes",
+          "seconds": 120
+        },
+        {
+          "text": "3–4 minutes",
+          "seconds": 240
+        }
+      ]
+    },
+    {
+      "text": "Cook the onion 6m Reduce heat to medium. Add the sliced onion to the same pan and cook, stirring, for 5–6 minutes until soft and golden at the edges.",
+      "ingredientRefs": [],
+      "timers": [
+        {
+          "text": "5–6 minutes",
+          "seconds": 360
+        }
+      ]
+    },
+    {
+      "text": "Add the garlic 30s Add the minced garlic and cook, stirring constantly, for 30 seconds until fragrant but not browned.",
+      "ingredientRefs": [],
+      "timers": [
+        {
+          "text": "30 seconds",
+          "seconds": 30
+        }
+      ]
+    },
+    {
+      "text": "Deglaze 20s Pour in the Shaoxing wine; it will sizzle hard. Scrape up the browned bits and cook about 20 seconds until the wine is mostly evaporated.",
+      "ingredientRefs": [],
+      "timers": [
+        {
+          "text": "20 seconds",
+          "seconds": 20
+        }
+      ]
+    },
+    {
+      "text": "Reduce the glaze 3m Add the soy sauce, rice vinegar and honey. Simmer 2–3 minutes until syrupy and coating the onions.",
+      "ingredientRefs": [],
+      "timers": [
+        {
+          "text": "2–3 minutes",
+          "seconds": 180
+        }
+      ]
+    },
+    {
+      "text": "Flake and toss the salmon 1m Flake the seared patties into bite-size chunks with a fork and add them to the pan. Toss gently off the heat for 1 minute to coat, then stir in the toasted sesame oil.",
+      "ingredientRefs": [],
+      "timers": [
+        {
+          "text": "1 minute",
+          "seconds": 60
+        }
+      ]
+    },
+    {
+      "text": "Assemble the bowls Divide the rice among 4 bowls. Top with the glazed salmon, onion and garlic, then the avocado and cucumber, with the roasted carrots on the side or on top. Drizzle generously with the spicy mayo, then finish with furikake, green onions, remaining sesame seeds and masago if using. Serve with seaweed sheets for scooping.",
+      "ingredientRefs": [],
+      "timers": []
+    }
+  ],
+  "notes": "Plain white rice is a good canvas here since the glaze, mayo and furikake carry the flavor, so leave the rice unseasoned. The patties are already seasoned, so taste before adding any extra salt. If you want the sushi-bake tang, stir a teaspoon of rice vinegar into the cooked rice. Any leftover carrot glaze works on broccoli or green beans: roast those at 425\\u00b0F (220\\u00b0C) in the same way. For an extra-sweet finish, drizzle eel sauce (3 tbsp soy, 3 tbsp mirin, 1 tbsp sugar, reduced separately) over the top.",
+  "servings": 4,
+  "tags": [],
+  "chatUrl": null,
+  "chapter": "mains",
+  "favorite": false,
+  "log": [],
+  "createdAt": "2026-11-03T02:53:49.913Z",
+  "updatedAt": "2026-11-03T02:53:49.913Z"
+}

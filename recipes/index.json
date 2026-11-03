@@ -1816,6 +1816,31 @@
       "cookCount": 0
     },
     {
+      "id": "salmon-burger-rice-bowls-with-sesame-soy-roasted-carrots",
+      "name": "Salmon Burger Rice Bowls with Sesame-Soy Roasted Carrots",
+      "englishName": "Salmon Burger Rice Bowls with Sesame-Soy Roasted Carrots",
+      "nativeName": "",
+      "romanized": "",
+      "tags": [],
+      "favorite": false,
+      "servings": 4,
+      "items": "Trident Alaska salmon burger patties, thawed overnight in the fridge · neutral oil (avocado or canola), for searing · medium yellow onion, thinly sliced · garlic cloves, minced · Shaoxing wine · soy sauce (for the salmon glaze) · rice vinegar (for the salmon glaze) · honey (for the salmon glaze) · toasted sesame oil (for the salmon) · long-grain white rice (jasmine) · water for the rice cooker · carrots, peeled and cut on a bias into 1/2-inch slices · neutral oil (for the carrots) · kosher salt (for the carrots) · honey (for the carrots) · soy sauce (for the carrots) · toasted sesame oil (for the carrots) · fresh ginger, finely grated · Kewpie mayo · sriracha, adjust to taste · lime juice · ripe avocado, diced · small Persian cucumber, thinly sliced · furikake · green onions, thinly sliced · toasted sesame seeds · masago or tobiko (optional) · roasted seaweed snack sheets, for scooping",
+      "chapter": "mains",
+      "cuisine": "Japanese",
+      "equipment": [
+        "Rice cooker",
+        "Oven"
+      ],
+      "cookSeconds": 6650,
+      "waitSeconds": 0,
+      "timerCount": 14,
+      "stepCount": 13,
+      "createdAt": "2026-11-03T02:53:49.913Z",
+      "updatedAt": "2026-11-03T02:53:49.913Z",
+      "lastCooked": null,
+      "cookCount": 0
+    },
+    {
       "id": "sanbeiji",
       "name": "三杯雞 (Sānbēijī) · Taiwanese Three-Cup Chicken",
       "englishName": "Taiwanese Three-Cup Chicken",
