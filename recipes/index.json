@@ -706,6 +706,28 @@
       "cookCount": 0
     },
     {
+      "id": "dtf-spicy-chili-oil-cucumber-salad",
+      "name": "鼎泰豐 辣味黃瓜 — DTF Spicy Chili Oil Cucumber Salad",
+      "englishName": "DTF Spicy Chili Oil Cucumber Salad",
+      "nativeName": "鼎泰豐 辣味黃瓜",
+      "romanized": "",
+      "tags": [],
+      "favorite": false,
+      "servings": 4,
+      "items": "Persian or Taiwanese mini cucumbers (小黃瓜) · kosher salt (for 殺青) · garlic cloves, smashed and minced (大蒜) · granulated sugar · toasted sesame oil (香油) · chili oil (辣油) — DTF brand, homemade 油潑辣子, or Lao Gan Ma · sushi vinegar 壽司醋 (or white rice vinegar) · red chili pepper, seeded and sliced into strips (辣椒絲)",
+      "chapter": "salads",
+      "cuisine": "Taiwanese",
+      "equipment": [],
+      "cookSeconds": 1200,
+      "waitSeconds": 10800,
+      "timerCount": 5,
+      "stepCount": 7,
+      "createdAt": "2026-11-03T03:49:36.265Z",
+      "updatedAt": "2026-11-03T03:49:36.265Z",
+      "lastCooked": null,
+      "cookCount": 0
+    },
+    {
       "id": "duck-breast-asian-glaze",
       "name": "Seared Duck Breast with Five-Spice Orange-Hoisin Glaze",
       "englishName": "Seared Duck Breast with Five-Spice Orange-Hoisin Glaze",
