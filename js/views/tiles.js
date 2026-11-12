@@ -11,7 +11,7 @@ export function chapterClass(id, chapters) {
 }
 
 const WIDE = /[\p{Script=Han}\p{Script=Hiragana}\p{Script=Katakana}\p{Script=Hangul}ー]/u;
-const ems = (s) => [...s].reduce((n, c) => n + (WIDE.test(c) ? 1 : c === " " ? 0.3 : 0.64), 0); // bold serif Latin runs wide
+const ems = (s) => [...s].reduce((n, c) => n + (WIDE.test(c) ? 1 : c === " " ? 0.3 : 0.64), 0); // bold Latin runs wide
 
 // Lines the words take when a line holds `room` ems, breaking only between words.
 function lineCount(words, room) {
@@ -36,7 +36,7 @@ export function bigSize(text) {
   });
   const TEXT = 0.88, HEIGHT = 0.8; // the title's width and height, as shares of the tile's inner width
   let share = TEXT / Math.max(1, ...words.map(ems));
-  const fits = (lines) => lines <= 4 && lines * 1.1 * share <= HEIGHT; // 4: the CSS line clamp
+  const fits = (lines) => lines <= 4 && lines * 1.2 * share <= HEIGHT; // 4: the CSS line clamp; 1.2: its line height
   while (!fits(lineCount(words, TEXT / share))) share *= 0.95;
   return +(share * 100).toFixed(1);
 }

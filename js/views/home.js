@@ -33,7 +33,7 @@ export function groupByChapter(recipes, chapters) {
 export async function viewHome(root) {
   const body = h("div", { class: "home" }, h("p", { class: "muted pad" }, "Loading…"));
   root.append(
-    h("header", { class: "nav" }, h("div", { class: "nav-side" }), h("div", { class: "nav-title" }),
+    h("header", { class: "nav" }, h("div", { class: "nav-side" }, h("img", { class: "seal-mark", src: "icons/favicon.svg", alt: "", width: 28, height: 28 })), h("div", { class: "nav-title" }),
       h("div", { class: "nav-side right" }, cartButton(), iconButton("gear", "Settings", () => (location.hash = "#/settings")))),
     h("h1", { class: "large-title" }, "Cookbook"),
     body);
