@@ -1,6 +1,7 @@
-/* Recipe Box in Indigo Ledger: indigo cloth by default, ledger green by day, a high-contrast and a
-   calm theme. Colors come from the design system's tokens; panels are set apart by tone, not by
-   borders or shadows; indigo marks the one primary action or selected thing in a view. */
+/* Recipe Box in Indigo Ledger (v11): indigo cloth by default, ledger green by day, a high-contrast
+   and a calm theme. Pages have rhythm: quiet reading sections broken by full-bleed color bands with
+   giant cropped hanzi, big condensed headlines, paper cards with hard offset shadows, and a faint
+   print grain. Calm and high contrast turn the decoration off. */
 
 @font-face {
   font-family: "IBM Plex Sans"; font-style: normal; font-display: swap; font-weight: 100 700;
@@ -15,10 +16,22 @@
 @font-face {
   font-family: "IBM Plex Sans Condensed"; font-style: normal; font-display: swap; font-weight: 600;
   src: url(fonts/plex-condensed-600.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "IBM Plex Sans Condensed"; font-style: normal; font-display: swap; font-weight: 600;
+  src: url(fonts/plex-condensed-600-ext.woff2) format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 @font-face {
   font-family: "IBM Plex Sans Condensed"; font-style: normal; font-display: swap; font-weight: 700;
   src: url(fonts/plex-condensed-700.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "IBM Plex Sans Condensed"; font-style: normal; font-display: swap; font-weight: 700;
+  src: url(fonts/plex-condensed-700-ext.woff2) format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 
 /* Theme colors (Indigo Ledger tokens.json). js/boot.js sets data-theme before the page draws. */
@@ -45,6 +58,24 @@
   --amber-ink: #f0c56e;
   --titlecard: #0e131c;
   --titlecard-ink: #f4f0e6;
+  --band-indigo: #22406f;
+  --band-indigo-ink: #f4f0e6;
+  --band-indigo-mark: #2b4c80;
+  --band-shu: #b13a22;
+  --band-shu-ink: #fbf4ec;
+  --band-shu-mark: #be472e;
+  --band-tile: #a9cdbf;
+  --band-tile-ink: #13221c;
+  --band-tile-mark: #9ac1b2;
+  --band-ledger: #e6ebe2;
+  --band-ledger-ink: #1b1f24;
+  --band-ledger-mark: #d6ddd0;
+  --band-ink: #0b0f16;
+  --band-ink-ink: #f4f0e6;
+  --band-ink-mark: #161d29;
+  --shadow-paper: 4px 4px 0 #2e4c78;
+  --shadow-paper-lift: 7px 7px 0 #2e4c78;
+  --shadow-riso: 3px 3px 0 #b13a22;
   color-scheme: dark;
 }
 :root[data-theme="light"] {
@@ -70,6 +101,24 @@
   --amber-ink: #734700;
   --titlecard: #0e131c;
   --titlecard-ink: #f4f0e6;
+  --band-indigo: #23395b;
+  --band-indigo-ink: #f4f0e6;
+  --band-indigo-mark: #2c456b;
+  --band-shu: #b13a22;
+  --band-shu-ink: #fbf4ec;
+  --band-shu-mark: #be472e;
+  --band-tile: #a9cdbf;
+  --band-tile-ink: #13221c;
+  --band-tile-mark: #9ac1b2;
+  --band-ledger: #dde4d8;
+  --band-ledger-ink: #1b1f24;
+  --band-ledger-mark: #cdd6c6;
+  --band-ink: #14181d;
+  --band-ink-ink: #f4f0e6;
+  --band-ink-mark: #20262e;
+  --shadow-paper: 4px 4px 0 #1b1f24;
+  --shadow-paper-lift: 7px 7px 0 #1b1f24;
+  --shadow-riso: 3px 3px 0 #a9cdbf;
   color-scheme: light;
 }
 :root[data-theme="contrast"] {
@@ -95,6 +144,24 @@
   --amber-ink: #ffe3a6;
   --titlecard: #0e131c;
   --titlecard-ink: #f4f0e6;
+  --band-indigo: #1b3566;
+  --band-indigo-ink: #ffffff;
+  --band-indigo-mark: #1b3566;
+  --band-shu: #9e2f1a;
+  --band-shu-ink: #ffffff;
+  --band-shu-mark: #9e2f1a;
+  --band-tile: #bfe6d6;
+  --band-tile-ink: #000000;
+  --band-tile-mark: #bfe6d6;
+  --band-ledger: #ffffff;
+  --band-ledger-ink: #000000;
+  --band-ledger-mark: #ffffff;
+  --band-ink: #000000;
+  --band-ink-ink: #ffffff;
+  --band-ink-mark: #000000;
+  --shadow-paper: 4px 4px 0 #b9cdf2;
+  --shadow-paper-lift: 7px 7px 0 #b9cdf2;
+  --shadow-riso: none;
   color-scheme: dark;
 }
 :root[data-theme="calm"] {
@@ -120,6 +187,24 @@
   --amber-ink: #63502a;
   --titlecard: #3a4048;
   --titlecard-ink: #ecebe6;
+  --band-indigo: #3e516d;
+  --band-indigo-ink: #f0f1ef;
+  --band-indigo-mark: #3e516d;
+  --band-shu: #8e4a3e;
+  --band-shu-ink: #f0f1ef;
+  --band-shu-mark: #8e4a3e;
+  --band-tile: #c3d2cb;
+  --band-tile-ink: #33383e;
+  --band-tile-mark: #c3d2cb;
+  --band-ledger: #f0f1ef;
+  --band-ledger-ink: #33383e;
+  --band-ledger-mark: #f0f1ef;
+  --band-ink: #3a4048;
+  --band-ink-ink: #ecebe6;
+  --band-ink-mark: #3a4048;
+  --shadow-paper: none;
+  --shadow-paper-lift: none;
+  --shadow-riso: none;
   color-scheme: light;
 }
 
@@ -155,6 +240,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -webkit-tap-highlight-color: transparent;
   padding-bottom: calc(32px + var(--tray-h, 0px) + env(safe-area-inset-bottom));
+  overflow-x: clip; /* bands run 100vw wide */
 }
 main {
   max-width: 680px;
@@ -165,7 +251,7 @@ a { color: var(--indigo); text-decoration-thickness: 1px; text-underline-offset:
 button, input, select, textarea { font: inherit; color: inherit; }
 button { cursor: pointer; }
 h1, h2, h3 { line-height: 1.2; margin: 0; font-weight: 600; text-wrap: balance; }
-h2 { font-size: 1.25rem; margin: var(--space-10) 0 var(--space-3); }
+h2 { font-family: var(--font-condensed); font-size: 1.75rem; line-height: 1.05; margin: var(--space-10) 0 var(--space-3); }
 h3 { font-size: 1rem; color: var(--ink); margin: var(--space-4) 0 var(--space-1); }
 p { margin: 0 0 8px; text-wrap: pretty; }
 [hidden] { display: none !important; }
@@ -204,7 +290,11 @@ p { margin: 0 0 8px; text-wrap: pretty; }
 .icon-btn.star.on { color: var(--indigo); }
 .icon-btn.star.on svg { fill: currentColor; }
 
-.large-title { font-size: 1.75rem; font-weight: 600; letter-spacing: -.01em; margin: 4px 0 12px; }
+/* Each page's headline: big condensed type with a misregistered second ink (riso). */
+.large-title {
+  font-family: var(--font-condensed); font-size: 3rem; line-height: .95; font-weight: 700; letter-spacing: -.01em;
+  margin: 8px 0 16px; text-shadow: var(--shadow-riso);
+}
 .large-title.flush { margin: 0; }
 
 /* buttons: keycaps. A heavier bottom edge, and a 1px press. */
@@ -284,7 +374,7 @@ p { margin: 0 0 8px; text-wrap: pretty; }
 .segmented button.on { background: var(--indigo); color: var(--on-indigo); }
 
 .section-head { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
-.section-head h2 { margin-bottom: 10px; }
+.section-head h2 { margin-bottom: 12px; }
 
 .ingredients { list-style: none; margin: 0; padding: 0; }
 .ingredients li { border-bottom: 1px solid var(--hairline); }
@@ -447,12 +537,14 @@ body.cooking .timer-tray { bottom: calc(90px + env(safe-area-inset-bottom)); }
   display: flex; flex-direction: column; justify-content: space-between; gap: 8px; position: relative;
   background: var(--surface-raised); color: var(--ink); text-decoration: none; overflow: hidden;
   container-type: inline-size; /* the title sizes itself in cqi, a share of the tile's width */
-  transition: background-color var(--duration-press) ease-out, transform var(--duration-press) var(--ease-press);
+  /* Paper: a sheet lying on another sheet. A hard offset, never a blur. */
+  box-shadow: var(--shadow-paper); outline: 1px solid var(--hairline); outline-offset: -1px;
+  transition: transform var(--duration-press) var(--ease-press), box-shadow var(--duration-press) var(--ease-press);
 }
-@media (hover: hover) { .tile:hover { background: var(--indigo-soft); } }
-.tile:active { transform: translateY(1px); }
+@media (hover: hover) { .tile:hover { transform: translate(-3px, -3px); box-shadow: var(--shadow-paper-lift); } }
+.tile:active { transform: translate(2px, 2px); box-shadow: 2px 2px 0 var(--hairline); }
 .tile-big {
-  font-weight: 600; line-height: 1.2; padding: 0 12px 4px 0; margin-bottom: -4px; letter-spacing: -.01em;
+  font-family: var(--font-condensed); font-weight: 700; line-height: 1.2; padding: 0 12px 4px 0; margin-bottom: -4px; letter-spacing: -.01em;
   overflow: hidden; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 4; overflow-wrap: anywhere;
 }
 /* Plex comes first so Latin words inside a native name ("西門町 Spam 起司蛋餅") stay in Plex; it has
@@ -473,16 +565,16 @@ body.cooking .timer-tray { bottom: calc(90px + env(safe-area-inset-bottom)); }
 /* Home */
 .home .section-head { align-items: center; margin-top: 12px; }
 .home .section-head h2 { margin: 0; }
-.shelf-section .section-head h2, .home .section-head h2 { display: flex; align-items: baseline; gap: 8px; font-size: 1.25rem; }
-.section-head .count { color: var(--ink-muted); font-size: 0.875rem; font-weight: 400; }
+.shelf-section .section-head h2, .home .section-head h2 { display: flex; align-items: baseline; gap: 8px; font-size: 1.75rem; }
+.section-head .count { color: var(--ink-muted); font-family: var(--font-sans); font-size: 0.875rem; font-weight: 400; }
 .see-all { color: var(--indigo); font-weight: 500; font-size: 0.875rem; padding: 12px 0 12px 12px; }
 .shelf {
-  display: flex; gap: 8px; overflow-x: auto; scroll-snap-type: x proximity; scrollbar-width: none;
-  margin: 0 -16px; padding: 0 16px 4px; scroll-padding: 0 16px;
+  display: flex; gap: 12px; overflow-x: auto; scroll-snap-type: x proximity; scrollbar-width: none;
+  margin: 0 -16px; padding: 0 16px 12px; scroll-padding: 0 16px; /* room for the paper shadows */
 }
 .shelf::-webkit-scrollbar { display: none; }
 .shelf .tile { scroll-snap-align: start; }
-.continue { display: flex; gap: 12px; align-items: center; color: inherit; text-decoration: none; margin-bottom: 6px; }
+.continue { display: flex; gap: 12px; align-items: center; color: inherit; text-decoration: none; margin: 16px 0 10px; box-shadow: var(--shadow-paper); outline: 1px solid var(--hairline); outline-offset: -1px; }
 .continue-text { display: grid; gap: 2px; flex: 1; min-width: 0; }
 .continue .progress { display: block; height: 4px; margin: 6px 0 0; background: var(--surface); }
 .progress-fill { display: block; height: 100%; background: var(--indigo); }
@@ -498,9 +590,12 @@ body.cooking .timer-tray { bottom: calc(90px + env(safe-area-inset-bottom)); }
 @media (hover: hover) { .toc-row:hover .toc-name { color: var(--indigo); text-decoration: underline; text-underline-offset: 3px; } }
 
 /* Chapter page */
-.chapter-head { display: grid; gap: 6px; margin: 4px 0 6px; }
+.chapter-head { margin: 0 0 4px; }
+.chapter-head .eyebrow { color: inherit; opacity: .85; margin-bottom: 8px; }
 .chapter-head .large-title { margin: 0; }
-.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 8px; margin-top: 8px; }
+.chapter-head .button { margin-top: 16px; }
+.band .button.primary { background: var(--bt); border-color: var(--bt); color: var(--bb); }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 14px 12px; margin-top: 8px; padding-bottom: 6px; }
 .grid .tile { width: auto; height: auto; aspect-ratio: 7 / 9; } /* the shelf tiles' shape, so titles size the same way */
 
 /* Search */
@@ -582,6 +677,8 @@ dialog.sheet .add-row.muted { color: var(--ink-muted); }
 
 /* Kitchen tools */
 .tool-list { display: grid; gap: 8px; }
+.tool-list .tool-row { box-shadow: var(--shadow-paper); outline: 1px solid var(--hairline); outline-offset: -1px; }
+.tool-list { gap: 14px; }
 .tool-row { display: flex; align-items: center; gap: 12px; padding: 12px 8px 12px 14px; color: inherit; text-decoration: none; text-align: left; width: 100%; font: inherit; }
 button.tool-row { cursor: pointer; }
 .tool-open { display: flex; align-items: center; gap: 12px; flex: 1; min-width: 0; color: inherit; text-decoration: none; min-height: 44px; }
@@ -658,27 +755,25 @@ dialog.drawer .sheet-head { padding: 12px 16px 8px; }
 body.has-tabbar { padding-bottom: calc(32px + var(--tabbar-h) + var(--tray-h, 0px)); }
 body.has-tabbar .timer-tray { bottom: calc(var(--tabbar-h) + 10px); }
 
-/* Recipe header: the page's one loud moment. A title card: black, with the dish's own name in a
-   heavy serif, squeezed the way 90s title cards set it. */
-.hero {
-  background: var(--titlecard); color: var(--titlecard-ink); border-radius: var(--radius-lg);
-  padding: 18px 18px 16px; margin: 4px 0 16px; overflow: hidden; overflow-wrap: anywhere;
-}
-.hero-eyebrow { color: inherit; opacity: .8; display: flex; flex-wrap: wrap; }
+/* Recipe header: a full-bleed band in the chapter's color, the dish's first character cropped
+   huge behind it, the chapter's Chinese name down the margin (on wider screens), and the dish's own
+   name in a heavy, squeezed serif. */
+.hero { margin: 0 0 20px; overflow-wrap: anywhere; }
+.hero-eyebrow { color: inherit; opacity: .85; display: flex; flex-wrap: wrap; font-size: 0.875rem; }
 .hero-eyebrow a { color: inherit; text-decoration: none; padding: 13px 0; margin: -13px 0; } /* 44px to tap */
 .hero-eyebrow a:hover { text-decoration: underline; }
 .hero-eyebrow .sep { margin: 0 6px; }
 .hero-native {
-  font-family: "IBM Plex Sans", var(--font-serif-tc); font-size: 2.75rem; font-weight: 900; line-height: 1.05; margin: 10px 0 0;
-  width: calc(100% / .82); transform: scaleX(.82); transform-origin: left center;
+  font-family: "IBM Plex Sans", var(--font-serif-tc); font-size: 3.5rem; font-weight: 900; line-height: 1.02; margin: 10px 0 0;
+  width: calc(100% / .82); transform: scaleX(.82); transform-origin: left center; text-shadow: var(--riso);
 }
-.hero .recipe-title { color: inherit; font-size: 1.5rem; margin-top: 8px; }
-/* No own-script name: the English name is the headline, set in the condensed poster face. */
-.hero-eyebrow + .recipe-title { font-family: var(--font-condensed); font-weight: 700; font-size: 2.5rem; line-height: 1; letter-spacing: -.01em; margin-top: 12px; }
-.hero .recipe-sub { color: inherit; opacity: .8; font-size: 1rem; margin: 4px 0 0; }
-.facts { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; }
-.fact { border: 1px solid color-mix(in srgb, var(--titlecard-ink) 40%, transparent); border-radius: var(--radius-sm); padding: 3px 9px; font-size: 0.8125rem; font-weight: 500; }
-[data-theme="calm"] .hero-native { transform: none; width: auto; font-size: 2.25rem; }
+.hero .recipe-title { color: inherit; font-family: var(--font-condensed); font-weight: 600; font-size: 1.75rem; line-height: 1.05; letter-spacing: 0; margin-top: 10px; }
+/* No own-script name: the English name is the headline, in the condensed poster face. */
+.hero-eyebrow + .recipe-title { font-weight: 700; font-size: 3rem; line-height: .92; letter-spacing: -.01em; margin-top: 14px; text-shadow: var(--riso); }
+.hero .recipe-sub { color: inherit; opacity: .85; font-size: 1rem; margin: 6px 0 0; }
+.facts { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 18px; }
+.fact { border: 1.5px solid color-mix(in srgb, currentColor 55%, transparent); border-radius: var(--radius-sm); padding: 3px 9px; font-size: 0.8125rem; font-weight: 600; }
+[data-theme="calm"] .hero-native { transform: none; width: auto; font-size: 2.75rem; }
 
 /* Chapter picker (Add, Edit, Sort) */
 .field-label { font-size: 0.875rem; font-weight: 500; color: var(--ink); }
@@ -705,7 +800,7 @@ body.has-tabbar .timer-tray { bottom: calc(var(--tabbar-h) + 10px); }
 
 /* Sorting */
 .sort-card { display: grid; gap: 8px; margin: 8px 0 18px; padding: 20px; min-height: 200px; align-content: center; border-radius: var(--radius-lg); }
-.sort-card .hero-native { color: var(--ink-muted); font-size: 2rem; margin: 0; }
+.sort-card .hero-native { color: var(--ink-muted); font-size: 2rem; margin: 0; text-shadow: none; }
 .sort-title { font-size: 1.75rem; line-height: 1.15; margin: 0; overflow-wrap: anywhere; }
 .sort-desc { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 4; overflow: hidden; margin: 0; }
 
@@ -728,3 +823,75 @@ body.has-tabbar .timer-tray { bottom: calc(var(--tabbar-h) + 10px); }
   padding: calc(env(safe-area-inset-top) + 4px) 16px 4px; text-align: center;
   background: var(--ink); color: var(--surface); font-size: 0.75rem; font-weight: 600;
 }
+
+/* ================= v11: bands, grain ================= */
+
+/* Grain and cloth textures, drawn by SVG noise filters (images allowed as data: URIs). */
+:root {
+  --grain: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .5  0 0 0 0 .5  0 0 0 0 .5  0 0 0 1.4 -.45'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url%28%23n%29'/%3E%3C/svg%3E");
+  --mottle: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='400'%3E%3Cfilter id='m'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.008 .02' numOctaves='3' seed='7' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .55  0 0 0 0 .65  0 0 0 0 .85  0 0 0 1.6 -.75'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url%28%23m%29'/%3E%3C/svg%3E");
+}
+/* A faint print grain over the whole page. It never takes taps. */
+body::after { content: ""; position: fixed; inset: 0; pointer-events: none; z-index: 2147483000; background-image: var(--grain); background-size: 180px; opacity: .07; mix-blend-mode: overlay; }
+[data-theme="light"] body::after { opacity: .12; mix-blend-mode: multiply; }
+
+/* Band: a full-bleed color block, like a shop sign or a magazine section opener. */
+.band {
+  position: relative; isolation: isolate; overflow: hidden;
+  width: 100vw; margin-left: calc(50% - 50vw); padding: var(--space-10) 0;
+  background: var(--bb); color: var(--bt);
+  --riso: var(--shadow-riso);
+}
+.band-indigo { --bb: var(--band-indigo); --bt: var(--band-indigo-ink); --bm: var(--band-indigo-mark); }
+.band-indigo::before { content: ""; position: absolute; inset: 0; z-index: -1; background-image: var(--mottle); background-size: 600px 400px; opacity: .35; mix-blend-mode: screen; }
+.band-shu { --bb: var(--band-shu); --bt: var(--band-shu-ink); --bm: var(--band-shu-mark); --riso: 3px 3px 0 var(--titlecard); }
+.band-tile { --bb: var(--band-tile); --bt: var(--band-tile-ink); --bm: var(--band-tile-mark); }
+.band-ledger { --bb: var(--band-ledger); --bt: var(--band-ledger-ink); --bm: var(--band-ledger-mark); }
+.band-ink { --bb: var(--band-ink); --bt: var(--band-ink-ink); --bm: var(--band-ink-mark); }
+/* The light theme's riso ink is mint, which disappears on the light bands. */
+[data-theme="light"] .band-tile, [data-theme="light"] .band-ledger { --riso: 3px 3px 0 var(--band-shu); }
+.band-inner {
+  position: relative; max-width: 680px; margin: 0 auto;
+  padding: 0 max(16px, env(safe-area-inset-right)) 0 max(16px, env(safe-area-inset-left));
+  display: grid; grid-template-columns: minmax(0, 1fr);
+}
+.band-v { display: none; }
+@media (min-width: 600px) {
+  .band { padding: var(--space-16) 0; }
+  .band-inner { grid-template-columns: 40px minmax(0, 1fr); gap: var(--space-6); }
+  .band-v {
+    display: block; writing-mode: vertical-rl; align-self: start;
+    font-family: var(--font-serif-tc); font-weight: 900; font-size: 1.625rem; letter-spacing: .12em; line-height: 40px;
+    border-left: 2px solid currentColor; padding-left: 6px;
+  }
+}
+.band a { color: inherit; }
+/* A giant character cropped by the band's edge, drifting a little as you scroll past. */
+.band-hanzi {
+  position: absolute; z-index: -1; right: -.06em; bottom: -.22em; pointer-events: none; user-select: none;
+  font-family: var(--font-serif-tc); font-weight: 900; font-size: clamp(220px, 62vw, 440px); line-height: 1; color: var(--bm);
+}
+@supports (animation-timeline: view()) {
+  @media (prefers-reduced-motion: no-preference) {
+    .band-hanzi { animation: drift linear both; animation-timeline: view(); animation-range: cover; }
+  }
+}
+@keyframes drift { from { transform: translateY(32px); } to { transform: translateY(-32px); } }
+.band .large-title { margin: 0; font-size: 4rem; line-height: .9; text-shadow: var(--riso); }
+.band .sub { color: inherit; opacity: .85; margin: 10px 0 0; font-size: 1rem; }
+
+/* Home: the indigo opening band, and the chapter list on a mint band further down. */
+.home-band { margin-top: 4px; }
+.toc-band { margin-top: var(--space-10); }
+.toc-band h2 { margin: 0 0 8px; }
+.toc-band .toc-row { border-bottom-color: color-mix(in srgb, currentColor 22%, transparent); }
+.toc-band .toc-count, .toc-band .toc-row.empty-chapter .toc-name { color: inherit; opacity: .7; }
+@media (hover: hover) { .toc-band .toc-row:hover .toc-name { color: inherit; } }
+
+/* Calm and high contrast: no grain, no cloth texture, no giant characters, no riso ink. The bands
+   stay as plain color blocks. */
+[data-theme="calm"] body::after, [data-theme="contrast"] body::after,
+[data-theme="calm"] .band-hanzi, [data-theme="contrast"] .band-hanzi,
+[data-theme="calm"] .band-indigo::before, [data-theme="contrast"] .band-indigo::before { display: none; }
+[data-theme="calm"] .band, [data-theme="contrast"] .band { --riso: none; }
+@media (prefers-contrast: more) { body::after { display: none; } }

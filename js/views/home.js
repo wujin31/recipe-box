@@ -32,10 +32,17 @@ export function groupByChapter(recipes, chapters) {
 
 export async function viewHome(root) {
   const body = h("div", { class: "home" }, h("p", { class: "muted pad" }, "Loading…"));
+  const count = h("p", { class: "sub" });
   root.append(
     h("header", { class: "nav" }, h("div", { class: "nav-side" }, h("img", { class: "seal-mark", src: "icons/favicon.svg", alt: "", width: 28, height: 28 })), h("div", { class: "nav-title" }),
       h("div", { class: "nav-side right" }, cartButton(), iconButton("gear", "Settings", () => (location.hash = "#/settings")))),
-    h("h1", { class: "large-title" }, "Cookbook"),
+    // The opening band: the page's headline, with 食 (food) cropped huge behind it and 食譜
+    // (recipe book) down the margin on wider screens.
+    h("section", { class: "band band-indigo home-band" },
+      h("span", { class: "band-hanzi", "aria-hidden": "true" }, "食"),
+      h("div", { class: "band-inner" },
+        h("span", { class: "band-v", lang: "zh-Hant-TW", "aria-hidden": "true" }, "食譜"),
+        h("div", {}, h("h1", { class: "large-title" }, "Cookbook"), count))),
     body);
 
   // Coming back to the cookbook shows what it showed last time at once, and redraws only if a
@@ -43,17 +50,18 @@ export async function viewHome(root) {
   const shown = lastLoaded();
   const refresh = Promise.all([listRecipes({ fresh: true }), getChapters()]).then(([recipes, chapters]) => {
     if (!root.isConnected) return;
-    if (!shown || JSON.stringify([recipes, chapters]) !== JSON.stringify([shown.recipes, shown.chapters])) draw(body, recipes, chapters);
+    if (!shown || JSON.stringify([recipes, chapters]) !== JSON.stringify([shown.recipes, shown.chapters])) draw(body, recipes, chapters, count);
   }, (e) => {
     // Offline isn't an error here (the saved copy is used), so this is real: a misspelled repo or
     // branch in Settings. Say so, even over what was shown before.
     if (root.isConnected) fill(body, h("p", { class: "muted pad" }, "Couldn't load recipes. ", errorMessage(e)));
   });
-  if (shown) draw(body, shown.recipes, shown.chapters);
+  if (shown) draw(body, shown.recipes, shown.chapters, count);
   else await refresh;
 }
 
-function draw(body, recipes, chapters) {
+function draw(body, recipes, chapters, count) {
+  count.textContent = "";
   if (!recipes.length) {
     fill(body, h("div", { class: "empty" },
       h("p", {}, "Your cookbook is empty."),
@@ -64,6 +72,7 @@ function draw(body, recipes, chapters) {
 
   const groups = groupByChapter(recipes, chapters);
   const used = chapters.filter((c) => groups.get(c.id).length);
+  count.textContent = `${recipes.length} recipe${recipes.length === 1 ? "" : "s"} · ${used.length} chapter${used.length === 1 ? "" : "s"}`;
   const unsorted = groups.get(UNSORTED.id);
   // The first time the cookbook opens with nothing in a chapter yet (recipes saved before there
   // were chapters), go straight to sorting them. Once only; after that the banner offers it.
@@ -81,7 +90,6 @@ function draw(body, recipes, chapters) {
     h("div", { class: "shelf", role: "list" }, list.slice(0, SHELF_SIZE).map((r) => tile(r, chapters))));
 
   fill(body, 
-    h("p", { class: "sub" }, `${recipes.length} recipe${recipes.length === 1 ? "" : "s"} · ${used.length} chapter${used.length === 1 ? "" : "s"}`),
 
     cooking ? h("a", { class: "continue card", href: `#/r/${cooking.r.id}/cook` },
       miniTile(cooking.r, chapters),
@@ -102,7 +110,12 @@ function draw(body, recipes, chapters) {
     used.map((c) => shelf(c.name, groups.get(c.id).sort(byInterest), { href: `#/c/${c.id}`, cls: chapterClass(c.id, chapters) })),
     unsorted.length ? shelf("Unsorted", unsorted.sort(byInterest), { href: `#/c/${UNSORTED.id}`, cls: "pal-unsorted" }) : null,
 
-    h("section", {},
+    // The chapter list on a mint band, 目錄 (table of contents) cropped behind it.
+    h("section", { class: "band band-tile toc-band" },
+      h("span", { class: "band-hanzi", "aria-hidden": "true" }, "目"),
+      h("div", { class: "band-inner" },
+        h("span", { class: "band-v", lang: "zh-Hant-TW", "aria-hidden": "true" }, "目錄"),
+        h("div", {},
       h("div", { class: "section-head" }, h("h2", {}, "All chapters")),
       h("nav", { class: "toc", "aria-label": "Chapters" },
         [...chapters, ...(unsorted.length ? [UNSORTED] : [])].map((c) => h("a", {
@@ -110,7 +123,7 @@ function draw(body, recipes, chapters) {
         },
         h("span", { class: `dot ${chapterClass(c.id, chapters)}`, "aria-hidden": "true" }),
         h("span", { class: "toc-name" }, c.name),
-        h("span", { class: "toc-count" }, groups.get(c.id).length || "—"))))),
+        h("span", { class: "toc-count" }, groups.get(c.id).length || "—"))))))),
   );
 }
 
