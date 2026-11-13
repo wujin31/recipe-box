@@ -23,7 +23,7 @@ export function viewSettings(root) {
       h("h2", {}, "Reading"),
       h("span", { class: "field-label" }, "Colors"),
       segmented(THEMES, reading.theme, (theme) => { setReading({ theme }); redraw(); }),
-      h("p", { class: "muted small" }, "Calm is low contrast and also stops all motion."),
+      h("p", { class: "muted small" }, "Calm is low contrast, stops all motion, and turns off the print grain, textures and large background characters."),
       h("span", { class: "field-label" }, "Text size"),
       segmented(TEXT_SIZES, reading.text, (text) => { setReading({ text }); redraw(); }),
       h("button", {

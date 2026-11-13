@@ -10,8 +10,8 @@ export function chapterClass(id, chapters) {
   return `pal-${(i < 0 ? 0 : i) % 7}`;
 }
 
-const WIDE = /[\p{Script=Han}\p{Script=Hiragana}\p{Script=Katakana}\p{Script=Hangul}ー]/u;
-const ems = (s) => [...s].reduce((n, c) => n + (WIDE.test(c) ? 1 : c === " " ? 0.3 : 0.64), 0); // bold Latin runs wide
+export const WIDE = /[\p{Script=Han}\p{Script=Hiragana}\p{Script=Katakana}\p{Script=Hangul}ー]/u;
+const ems = (s) => [...s].reduce((n, c) => n + (WIDE.test(c) ? 1 : c === " " ? 0.3 : 0.56), 0); // condensed bold Latin
 
 // Lines the words take when a line holds `room` ems, breaking only between words.
 function lineCount(words, room) {
@@ -53,6 +53,20 @@ export const recipeTime = (r) => formatTotal(r.cookSeconds ?? 0);
 
 export function tileMeta(r, { short = false } = {}) {
   return [r.cuisine, short ? shortTime(r.cookSeconds ?? 0) : recipeTime(r)].filter(Boolean).join(" · ");
+}
+
+// Each chapter's band: its color, the character cropped huge behind a recipe's header when the dish
+// has no own-script name, and its Chinese name for the band's margin. Chapters from cookbook.json
+// that aren't listed here take the tones in turn.
+const BANDS = {
+  breakfast: ["ledger", "早", "早餐"], mains: ["shu", "菜", "主菜"], soups: ["indigo", "湯", "湯品"],
+  rice: ["ink", "飯", "飯麵"], salads: ["tile", "蔬", "小菜"], desserts: ["shu", "甜", "甜點"], sauces: ["tile", "醬", "醬料"],
+  [UNSORTED.id]: ["ink", "食", "未分"],
+};
+const TONES = ["indigo", "shu", "tile", "ledger", "ink"];
+export function chapterBand(id, chapters) {
+  const [tone, hanzi, tc] = BANDS[id] ?? [TONES[Math.max(0, chapters.findIndex((c) => c.id === id)) % TONES.length], "食", ""];
+  return { tone, hanzi, tc };
 }
 
 // A tile's English title: the part before the first comma ("Ribeye with Garlic Butter Pan Sauce").

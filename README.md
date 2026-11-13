@@ -177,7 +177,8 @@ python3 -m http.server                                                   # run l
 
 ## Design
 
-The look follows the Indigo Ledger design system: its color themes, IBM Plex type, keycap buttons
+The look follows the Indigo Ledger design system (v11): its color themes, full-width color bands
+with large cropped hanzi, big condensed headlines, paper cards, a faint print grain, keycap buttons
 and the 苗 seal as the app icon. IBM Plex Sans and IBM Plex Sans Condensed are in `fonts/` under the
 SIL Open Font License (`fonts/OFL.txt`).
 

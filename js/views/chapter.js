@@ -3,7 +3,7 @@
 import { UNSORTED, chapterOf } from "../cookbook.js";
 import { getChapters, listRecipes } from "../store.js";
 import { backButton, displayName, errorMessage, fill, h, navbar } from "../ui.js";
-import { tile } from "./tiles.js";
+import { chapterBand, tile } from "./tiles.js";
 
 const QUICK = 45 * 60;
 
@@ -29,10 +29,17 @@ export async function viewChapter(root, id) {
     return;
   }
   const mine = recipes.filter((r) => chapterOf(r, chapters) === id).sort((a, b) => displayName(a).localeCompare(displayName(b)));
-  fill(head, 
-    h("div", { class: "eyebrow" }, id === UNSORTED.id ? "Not in a chapter yet" : `Chapter ${index + 1}`),
-    h("h1", { class: "large-title serif" }, chapter.name),
-    id === UNSORTED.id && mine.length ? h("a", { class: "button primary", href: "#/sort" }, "Sort these") : null);
+  // The chapter opens on its band: the same color and character its recipes' headers use.
+  const band = chapterBand(id, chapters);
+  head.className = `chapter-head band band-${band.tone}`;
+  fill(head,
+    h("span", { class: "band-hanzi", "aria-hidden": "true" }, band.hanzi),
+    h("div", { class: "band-inner" },
+      band.tc ? h("span", { class: "band-v", lang: "zh-Hant-TW", "aria-hidden": "true" }, band.tc) : h("span"),
+      h("div", {},
+        h("div", { class: "eyebrow" }, id === UNSORTED.id ? "Not in a chapter yet" : `Chapter ${index + 1}`),
+        h("h1", { class: "large-title" }, chapter.name),
+        id === UNSORTED.id && mine.length ? h("a", { class: "button primary", href: "#/sort" }, "Sort these") : null)));
 
   // Filters: cuisines present in this chapter, favorites, quick.
   const cuisines = [...new Set(mine.map((r) => r.cuisine).filter(Boolean))].sort();
