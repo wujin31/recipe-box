@@ -3,12 +3,9 @@
 import { UNSORTED, formatTotal } from "../cookbook.js";
 import { h, displayName, nativeOf } from "../ui.js";
 
-// Chapters are colored by position (7 palettes, then they repeat); Unsorted is neutral.
-export function chapterClass(id, chapters) {
-  if (id === UNSORTED.id) return "pal-unsorted";
-  const i = chapters.findIndex((c) => c.id === id);
-  return `pal-${(i < 0 ? 0 : i) % 7}`;
-}
+// A chapter's color, as a class: the same tone as its band (see chapterBand), so tiles, swatches
+// and the chapter picker match the headers of its recipes.
+export const chapterClass = (id, chapters) => `tone-${chapterBand(id, chapters).tone}`;
 
 export const WIDE = /[\p{Script=Han}\p{Script=Hiragana}\p{Script=Katakana}\p{Script=Hangul}ー]/u;
 const ems = (s) => [...s].reduce((n, c) => n + (WIDE.test(c) ? 1 : c === " " ? 0.3 : 0.56), 0); // condensed bold Latin

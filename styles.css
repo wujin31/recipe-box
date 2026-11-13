@@ -529,13 +529,21 @@ body.cooking .timer-tray { bottom: calc(90px + env(safe-area-inset-bottom)); }
 .tab-title { padding-top: calc(env(safe-area-inset-top) + 18px); }
 .pill { background: var(--indigo); color: var(--on-indigo); border-radius: var(--radius-md); padding: 8px 14px; font-weight: 600; font-size: 0.875rem; white-space: nowrap; }
 /* Chapters are told apart by name, not by color: a view uses ink, indigo and at most one more. */
-.dot { display: none; }
+/* A chapter swatch: a small block in the chapter's color with its character, like a seal. */
+.dot {
+  display: inline-grid; place-items: center; flex: none; width: 1.5em; height: 1.5em; border-radius: var(--radius-sm);
+  background: var(--bb); color: var(--bt); font-family: var(--font-serif-tc); font-weight: 900; font-size: 0.875rem; line-height: 1;
+  outline: 1px solid var(--hairline); outline-offset: -1px;
+}
+/* The character is drawn by CSS so it stays out of the heading's text. */
+.dot::before { content: attr(data-hanzi); }
+h2 .dot { font-size: 1rem; align-self: center; }
 
 /* Tiles: panels set apart by tone. The dish's own name is the large type. */
 .tile {
   flex: none; width: 140px; height: 180px; border-radius: var(--radius-sm); padding: 14px 12px 12px;
   display: flex; flex-direction: column; justify-content: space-between; gap: 8px; position: relative;
-  background: var(--surface-raised); color: var(--ink); text-decoration: none; overflow: hidden;
+  background: var(--bb, var(--surface-raised)); color: var(--bt, var(--ink)); text-decoration: none; overflow: hidden;
   container-type: inline-size; /* the title sizes itself in cqi, a share of the tile's width */
   /* Paper: a sheet lying on another sheet. A hard offset, never a blur. */
   box-shadow: var(--shadow-paper); outline: 1px solid var(--hairline); outline-offset: -1px;
@@ -554,13 +562,13 @@ body.cooking .timer-tray { bottom: calc(90px + env(safe-area-inset-bottom)); }
 .tile-big.native, .hero-native { word-break: keep-all; overflow-wrap: anywhere; }
 .tile-foot { display: grid; gap: 2px; }
 .tile-en { font-weight: 600; font-size: 0.8125rem; line-height: 1.25; overflow: hidden; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; }
-.tile-meta { font-size: 0.75rem; color: var(--ink-muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-.tile-fav { position: absolute; top: 10px; right: 11px; font-size: 0.8125rem; color: var(--indigo); }
+.tile-meta { font-size: 0.75rem; opacity: .8; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.tile-fav { position: absolute; top: 10px; right: 11px; font-size: 0.8125rem; }
 .mini {
   width: 50px; height: 50px; border-radius: var(--radius-sm); flex: none; display: grid; place-items: center;
-  background: var(--surface-raised); color: var(--ink); font-family: "IBM Plex Sans", var(--font-serif-tc); font-weight: 900; font-size: 1.25rem; overflow: hidden;
+  background: var(--bb, var(--surface-raised)); color: var(--bt, var(--ink)); font-family: "IBM Plex Sans", var(--font-serif-tc); font-weight: 900; font-size: 1.25rem; overflow: hidden;
+  outline: 1px solid var(--hairline); outline-offset: -1px;
 }
-.card .mini { background: var(--surface); }
 
 /* Home */
 .home .section-head { align-items: center; margin-top: 12px; }
@@ -780,12 +788,13 @@ body.has-tabbar .timer-tray { bottom: calc(var(--tabbar-h) + 10px); }
 .picker { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
 .pick {
   display: flex; align-items: center; gap: 8px; min-height: 52px; padding: 10px 12px; border-radius: var(--radius-md);
-  border: 2px solid transparent; background: var(--surface-raised); color: var(--ink);
-  font-weight: 600; font-size: 0.9375rem; text-align: left;
+  border: 2px solid transparent; background: var(--bb, var(--surface-raised)); color: var(--bt, var(--ink));
+  font-weight: 600; font-size: 0.9375rem; text-align: left; outline: 1px solid var(--hairline); outline-offset: -1px;
 }
-.pick.on { border-color: var(--indigo); background: var(--indigo-soft); color: var(--indigo-ink); }
-.pick.guess { border-color: var(--hairline); border-style: dashed; }
-.pick.on.guess { border-color: var(--indigo); border-style: solid; }
+/* The chosen chapter: a heavy rule in the chapter's own text color, and a paper shadow. */
+.pick.on { border-color: currentColor; box-shadow: var(--shadow-paper); }
+.pick.guess { border-color: currentColor; border-style: dashed; }
+.pick.on.guess { border-style: solid; }
 .pick:focus-visible { outline-color: var(--indigo); }
 .guess-label { margin-left: auto; font-size: 0.75rem; font-weight: 500; color: var(--ink-muted); }
 .pick.on .guess-label { color: inherit; }
@@ -842,12 +851,13 @@ body::after { content: ""; position: fixed; inset: 0; pointer-events: none; z-in
   background: var(--bb); color: var(--bt);
   --riso: var(--shadow-riso);
 }
-.band-indigo { --bb: var(--band-indigo); --bt: var(--band-indigo-ink); --bm: var(--band-indigo-mark); }
+.band-indigo, .tone-indigo { --bb: var(--band-indigo); --bt: var(--band-indigo-ink); --bm: var(--band-indigo-mark); }
 .band-indigo::before { content: ""; position: absolute; inset: 0; z-index: -1; background-image: var(--mottle); background-size: 600px 400px; opacity: .35; mix-blend-mode: screen; }
-.band-shu { --bb: var(--band-shu); --bt: var(--band-shu-ink); --bm: var(--band-shu-mark); --riso: 3px 3px 0 var(--titlecard); }
-.band-tile { --bb: var(--band-tile); --bt: var(--band-tile-ink); --bm: var(--band-tile-mark); }
-.band-ledger { --bb: var(--band-ledger); --bt: var(--band-ledger-ink); --bm: var(--band-ledger-mark); }
-.band-ink { --bb: var(--band-ink); --bt: var(--band-ink-ink); --bm: var(--band-ink-mark); }
+.band-shu, .tone-shu { --bb: var(--band-shu); --bt: var(--band-shu-ink); --bm: var(--band-shu-mark); }
+.band-shu { --riso: 3px 3px 0 var(--titlecard); }
+.band-tile, .tone-tile { --bb: var(--band-tile); --bt: var(--band-tile-ink); --bm: var(--band-tile-mark); }
+.band-ledger, .tone-ledger { --bb: var(--band-ledger); --bt: var(--band-ledger-ink); --bm: var(--band-ledger-mark); }
+.band-ink, .tone-ink { --bb: var(--band-ink); --bt: var(--band-ink-ink); --bm: var(--band-ink-mark); }
 /* The light theme's riso ink is mint, which disappears on the light bands. */
 [data-theme="light"] .band-tile, [data-theme="light"] .band-ledger { --riso: 3px 3px 0 var(--band-shu); }
 .band-inner {
