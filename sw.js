@@ -3,7 +3,7 @@
 
 // Bump this with every change to the app's files: a changed sw.js is how phones learn there's a
 // new version (they then show "Recipe Box was updated · Reload").
-const SHELL = "rb-shell-v12";
+const SHELL = "rb-shell-v13";
 // Every file the app needs. A test checks this list against js/ so a missing file can't break
 // offline installs.
 const SHELL_FILES = [

@@ -4,7 +4,7 @@ import { UNSORTED, chapterOf } from "../cookbook.js";
 import { canWrite, getChapters, lastLoaded, listRecipes, loadLocal, saveLocal } from "../store.js";
 import { getTimers } from "../timers.js";
 import { displayName, errorMessage, fill, h, iconButton } from "../ui.js";
-import { chapterClass, miniTile, tile } from "./tiles.js";
+import { chapterBand, chapterClass, miniTile, tile } from "./tiles.js";
 import { cartButton } from "./shopping.js";
 
 const SHELF_SIZE = 12;
@@ -81,11 +81,13 @@ function draw(body, recipes, chapters, count) {
     location.replace("#/sort");
     return;
   }
+  // A chapter's swatch: its color, with its character (飯, 湯…) so chapters that share a color differ.
+  const swatch = (id) => ({ cls: chapterClass(id, chapters), hanzi: chapterBand(id, chapters).hanzi });
   const cooking = inProgress(recipes);
   const favorites = recipes.filter((r) => r.favorite).sort(byInterest);
-  const shelf = (title, list, { href, cls, count = list.length } = {}) => h("section", { class: "shelf-section" },
+  const shelf = (title, list, { href, mark, count = list.length } = {}) => h("section", { class: "shelf-section" },
     h("div", { class: "section-head" },
-      h("h2", {}, cls ? h("span", { class: `dot ${cls}`, "aria-hidden": "true" }) : null, title, h("span", { class: "count" }, count)),
+      h("h2", {}, mark ? h("span", { class: `dot ${mark.cls}`, "aria-hidden": "true", "data-hanzi": mark.hanzi }) : null, title, h("span", { class: "count" }, count)),
       href ? h("a", { class: "see-all", href }, "See all") : null),
     h("div", { class: "shelf", role: "list" }, list.slice(0, SHELF_SIZE).map((r) => tile(r, chapters))));
 
@@ -107,8 +109,8 @@ function draw(body, recipes, chapters, count) {
       h("span", { class: "pill" }, "Sort now")) : null,
 
     favorites.length ? shelf("★ Favorites", favorites) : null,
-    used.map((c) => shelf(c.name, groups.get(c.id).sort(byInterest), { href: `#/c/${c.id}`, cls: chapterClass(c.id, chapters) })),
-    unsorted.length ? shelf("Unsorted", unsorted.sort(byInterest), { href: `#/c/${UNSORTED.id}`, cls: "pal-unsorted" }) : null,
+    used.map((c) => shelf(c.name, groups.get(c.id).sort(byInterest), { href: `#/c/${c.id}`, mark: swatch(c.id) })),
+    unsorted.length ? shelf("Unsorted", unsorted.sort(byInterest), { href: `#/c/${UNSORTED.id}`, mark: swatch(UNSORTED.id) }) : null,
 
     // The chapter list on a mint band, 目錄 (table of contents) cropped behind it.
     h("section", { class: "band band-tile toc-band" },
@@ -121,7 +123,7 @@ function draw(body, recipes, chapters, count) {
         [...chapters, ...(unsorted.length ? [UNSORTED] : [])].map((c) => h("a", {
           class: `toc-row ${groups.get(c.id).length ? "" : "empty-chapter"}`, href: `#/c/${c.id}`,
         },
-        h("span", { class: `dot ${chapterClass(c.id, chapters)}`, "aria-hidden": "true" }),
+        h("span", { class: `dot ${chapterClass(c.id, chapters)}`, "aria-hidden": "true", "data-hanzi": chapterBand(c.id, chapters).hanzi }),
         h("span", { class: "toc-name" }, c.name),
         h("span", { class: "toc-count" }, groups.get(c.id).length || "—"))))))),
   );
