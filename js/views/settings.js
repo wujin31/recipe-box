@@ -1,6 +1,7 @@
 // Settings.
 
 import { getSettings, isPreview, setSettings, testConnection } from "../store.js";
+import { TEXT_SIZES, THEMES, getReading, setReading } from "../reading.js";
 import { backButton, errorMessage, h, navbar, segmented } from "../ui.js";
 
 // ---------- settings ----------
@@ -11,11 +12,24 @@ export function viewSettings(root) {
     h("input", { value: s[key] ?? "", autocapitalize: "off", autocomplete: "off", spellcheck: false, ...attrs, onChange: (e) => setSettings({ [key]: e.target.value.trim() }) }),
     help ? h("span", { class: "help" }, help) : null);
   const status = h("p", { class: "small" });
+  const reading = getReading();
+  const redraw = () => { root.replaceChildren(); viewSettings(root); };
 
   root.append(
     navbar(backButton(), ""),
     h("div", { class: "form" },
       h("h1", { class: "large-title flush" }, "Settings"),
+
+      h("h2", {}, "Reading"),
+      h("span", { class: "field-label" }, "Colors"),
+      segmented(THEMES, reading.theme, (theme) => { setReading({ theme }); redraw(); }),
+      h("p", { class: "muted small" }, "Calm is low contrast and also stops all motion."),
+      h("span", { class: "field-label" }, "Text size"),
+      segmented(TEXT_SIZES, reading.text, (text) => { setReading({ text }); redraw(); }),
+      h("button", {
+        class: "switch-row", role: "switch", "aria-checked": String(reading.motion === "reduce"),
+        onClick: () => { setReading({ motion: reading.motion === "reduce" ? "full" : "reduce" }); redraw(); },
+      }, h("span", {}, "Stop all motion"), h("span", { class: "switch-track", "aria-hidden": "true" }, h("span", { class: "switch-thumb" }))),
 
       h("h2", {}, "GitHub"),
       isPreview()

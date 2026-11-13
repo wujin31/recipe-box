@@ -2,6 +2,7 @@
 
 import { h, toast } from "./ui.js";
 import { isPreview } from "./store.js";
+import { applyReading } from "./reading.js";
 import { leavePage, onLeave } from "./lifecycle.js";
 import { mountTimerTray } from "./views/timer-tray.js";
 import { viewCook } from "./views/cook.js";
@@ -69,6 +70,7 @@ if (window.top !== window.self && !isPreview()) {
 
 if (isPreview()) document.body.prepend(h("div", { class: "preview-badge", role: "note" }, "Preview · read-only"));
 
+applyReading();
 window.addEventListener("hashchange", route);
 mountTimerTray();
 mountTabBar();

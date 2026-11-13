@@ -40,7 +40,7 @@ if (import.meta.url === `file://${process.argv[1]}`) {
   rmSync(out, { recursive: true, force: true });
   mkdirSync(out, { recursive: true });
   // No sw.js: a preview shouldn't install offline caching wherever it's hosted.
-  for (const f of ["styles.css", "manifest.webmanifest", "js", "icons"]) {
+  for (const f of ["styles.css", "manifest.webmanifest", "js", "icons", "fonts"]) {
     if (existsSync(join(ROOT, f))) cpSync(join(ROOT, f), join(out, f), { recursive: true });
   }
   if (process.argv.includes("--artifact")) {
@@ -48,6 +48,7 @@ if (import.meta.url === `file://${process.argv[1]}`) {
     writeFileSync(join(out, "index.html"), [
       "<title>Recipe Box Preview</title>",
       '<meta name="recipe-box-preview" content="true">',
+      '<script src="js/boot.js"></script>',
       '<link rel="stylesheet" href="styles.css">',
       '<main id="app"></main>',
       '<script type="module" src="js/app.js"></script>',

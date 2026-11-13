@@ -2,7 +2,7 @@
 
 A home-screen app for keeping the recipe cards Claude makes, and cooking from them.
 
-![Recipe Box on an iPhone: the cookbook, a recipe, cooking mode with a timer, the pasta tool, a chapter in dark mode](docs/screenshots.png)
+![Recipe Box on an iPhone: the cookbook, a recipe, cooking mode with a timer, the pasta tool, and a chapter in the light theme](docs/screenshots.png)
 
 Claude shows recipes as interactive cards, but they live inside a chat. Recipe Box gives them a
 permanent home. Copy a card, paste it in, and it keeps the same interactivity:
@@ -21,11 +21,13 @@ Plus what a chat can't do:
 - **scale to what you have**: "I have 700 g of pork belly" scales the whole recipe
 - a **Timers** tab: every running timer says what it's for and opens its step; presets and your own timers
 - **kitchen tools**: pasta water & salt, salt % for brines and ferments, cups ↔ grams, °F/°C and
-  gas marks. Pin them to the 🧰 drawer on every recipe, where they use that recipe's amounts.
+  gas marks. Pin them to the Kitchen tools drawer on every recipe, where they use that recipe's amounts.
 - a **shopping list**: add recipes (staples like salt and soy sauce left off), and it combines them
   ("Garlic · 8 cloves, for Lǔròufàn and Bulgogi"), sorts them by aisle and shares as text
 - **favorites**, **tags**, **ingredient check-offs**, and **my tweaks** kept apart from Claude's notes
 - a **cook log** (date, rating, what you changed, how it came out) for tuning a recipe over time
+- **reading settings**: dark, light, high-contrast and calm colors, larger text, and a switch that
+  stops all motion
 - the **whole cookbook offline**, not just the recipes you've opened
 
 It's a static site on GitHub Pages with no build step, no dependencies and no server. Your
@@ -167,10 +169,17 @@ python3 -m http.server                                                   # run l
 | `shopping.js` | The shopping list: names to shop by, merging across recipes and units, aisles. |
 | `store.js` | Reads and writes recipe files through the GitHub API, plus the offline copy. |
 | `timers.js` | Kitchen timers, chime, screen wake lock. |
+| `reading.js`, `boot.js` | Reading settings (color theme, text size, motion). `boot.js` applies them before the page draws. |
 | `ui.js` | The `h()` DOM helper, icons, toasts, bottom sheets. |
 | `app.js` | The router; screens are in `views/` (cookbook, chapter, search, recipe, cooking, add/edit, sort, shopping list, timers, tools, settings). |
 | `tools/` | The kitchen tools. Each renders from `{ recipe }`; add one there and in `tools/index.js`. |
 | `sw.js` | Service worker for offline use and updates. Bump `SHELL` with every change to the app's files. |
+
+## Design
+
+The look follows the Indigo Ledger design system: its color themes, IBM Plex type, keycap buttons
+and the 苗 seal as the app icon. IBM Plex Sans and IBM Plex Sans Condensed are in `fonts/` under the
+SIL Open Font License (`fonts/OFL.txt`).
 
 ## License
 
